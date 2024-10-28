@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <MatchCodes>
+        <MatchCode ID="ParentIDMatchCode" ContextID="Context1" WorkspaceID="Main"><!-- Definition:
+Binds=
+<BindMap>
+  <Bind Alias="node" ParameterClass="null" contractID="CurrentObjectBindContract"/>
+</BindMap>
+Template=if (node!=null) {
+	return node.getParent().getID();
+}
+return "";
+Type=JavaScript2 -->
+            <SetupGroupLink SetupGroupID="MatchCodesAndMatchingAlgorithms"></SetupGroupLink>
+            <Name>ParentIDMatchCode</Name>
+            <ValidObjectType ID="Item"></ValidObjectType>
+            <Template>H4sIAAAAAAAA/z2NQWrDMBBF19UpJrOyF02arAqxHBqHQAqlhaYHUOVpUJBlMRqHltK7xyomu8//b95sXWiTrjbfnYcLcXJ90LicPyBQsH3rwknjx3F//4ibWlXbkX4xsVYA/xlsH4SNlcNOYzMwU5DXzzNZyWszjQhP3pmkMfQtIbwZNh0JceNNyu3gPS5G++Kmr1L0TuojddEbIe2+oMjHM53hEn7VHZMMHCC38xPJKB1/F2XOh11RrtWfmhDE9U34E0k/m4t5t+yirKb6CmUwpu0FAQAA</Template>
+        </MatchCode>
+    </MatchCodes>
+</STEP-ProductInformation>

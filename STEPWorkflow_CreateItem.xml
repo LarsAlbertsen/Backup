@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <STEPWorkflows>
+        <STEPWorkflow ID="CreateItem" Referenced="true"><!-- Definition:
+<scxml name="CreateItem" initial="Initial" version="0.9">
+  <assignee id="$current" type="user"/>
+  <datamodel>
+    <data id="SubmitMessage"/>
+  </datamodel>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=239.88636363636363  </editorLayout>
+  <final id="Final" discontinued="false">
+    <editorLayout>   node-size-and-position x=20.0 y=194.88636363636363 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="RemoveFromWorkflow"/>
+  </final>
+  <state id="Enrich" discontinued="false">
+    <transition event="submit" target="Final"/>
+    <transition businessconditionid="con-3aa9f728-4f97-4888-8c94-daa520d6cb0e" event="reject" target="Initial">
+      <editorLayout>   edge-path [Initial]  x=60.0 y=93.5  </editorLayout>
+    </transition>
+    <editorLayout>   node-size-and-position x=20.0 y=118.94318181818183 w=100.0 h=25.0  </editorLayout>
+  </state>
+  <state id="Initial" discontinued="false">
+    <transition businessactionid="acn-81e11a0c-4f51-47e8-be22-1114613a97c8" businessconditionid="con-7b96603d-4e10-4ea0-9f2e-2d264a78ca97" event="submit" target="Enrich">
+      <editorLayout>   edge-path [Enrich]  x=110.0 y=90.0  </editorLayout>
+    </transition>
+    <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="ELFRLog"/>
+  </state>
+</scxml>
+<workflowViews>
+  <restriction displaySequence="0" includeSubgroups="false">
+    <mapping displaySequence="0" stateID="Enrich" viewID="MainView"/>
+    <mapping displaySequence="1" stateID="Initial" viewID="MainView"/>
+    <mapping displaySequence="2" stateID="Final" viewID="MainView"/>
+  </restriction>
+  <view id="MainView" automaticSort="false" defaultSortColumn="0">
+    <aspect id="id"/>
+    <aspect id="name"/>
+    <column name="IsActive" mandatory="false" readOnly="false">
+      <plugin pluginID="WorkflowVariable">
+        <parameter id="Variable" value="IsActive"/>
+      </plugin>
+    </column>
+    <column name="Message" mandatory="false" readOnly="false">
+      <plugin pluginID="WorkflowVariable">
+        <parameter id="Variable" value="SubmitMessage"/>
+      </plugin>
+    </column>
+  </view>
+</workflowViews> -->
+            <BusinessRuleLink ID="ELFRLog"></BusinessRuleLink>
+            <BusinessRuleLink ID="RemoveFromWorkflow"></BusinessRuleLink>
+            <SetupGroupLink SetupGroupID="ProductWorkflows"></SetupGroupLink>
+            <Name>Create Item</Name>
+            <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
+            <Configuration>H4sIAAAAAAAA/81WTY/bNhC951ewRK+0Pm1LC8lBkWYBAxtskW2SQ9EDLY21bCVKJSl73V/fISU5XjvObm6FAdMUOW/mvfmQeW/atRRGcAP38p0CXPMtrzVkuquFWcETFL2Bh0KJztyJRhgof1NiJ2qoQOdG9dPNWmgD8l6um65VBtSnrjwH08VTU+eZW4hwbuucDv5rSiRvIKdDEGsDDSU7UFq0Mqf+LKUEraTO6aMx3Y3n7ff72T6ataryQt+fe/7Sc8B0lf3EGCFEtiUwLf4FxmXJulajm1aSp9yf+eTgvvd5ENv1MQ+jdJYki+jrhxDGVm9Ihix4g1A1boYdEWVOH/oNivEBtOYVoE/PnqzeDOt4H6251qKSAM7m56JXCqShxBw6pNprUNZ0uuQstEH6pBS6aKURsgc0dCJShzGp9SLLcKAZRwNPf+Q5x2VgRrJWYjDqQDa9FtIyKayt9fL+7vbjXVvZ4MZLNjaSGcXl6OHSiBeSJQEEAfcLFm/nAYuXkLANhCELgiBeBBFPl0VCj7ZIsRSTOW7YcpMuFn5UshgCH7+4z9JtCCwsw0XMl0mBAJTADkPKqXYpQDG5qgD376USxeNRGSgrYB03j+SP4eRPgrIEwaBL6o9CZN5XUjZ/Tv/XZOLM3UuJCIJklsZRkEyf6FpaTkS+wvRWSFcCz0K/kp8LjSPO0+0yTDBF6ZLFSZKwpEhjVnI+D/1yUWx8OGqs4C8oTjyfl9+JyOORU3kxihzN5i+IvLVUros8MX2lxml83sU/XPofoWl3cKva5kur/t7W7f5ZF2Sei9iRsONmNc62nYB9nr21k+04tYKZj0LKoi2FrHL66fdbhsWP3GXJa0TM6QE0fYtYUoc3+9HdZ0TSw7C7wefPBp42YtPOirahlgXysG6dUB+4kNaSkhK2vK/NA07hd23dN3Z8UsJx0jfciMI+nyQeQBwQ1x0m2kGJknrfPrET+tlZ4RyMk3utf0EVd5g5HOHlvawPx1Q2lrJp1eHSs8Pp6r4SkgzL+tecTtp/5krwTX1uMBhxhX7xVeNiO94kO173p+F4Z868wc0JDW/gcY3YNOX/H7yev3l+kFzm2YoZfyvQBmeY6yEhi7ovAcEr1fadPlLE1uxqfniAf3osZbDFdALe8K7D4iauoS3BcSoS68buT+ryEsj7HtLxf8EroILvQw1T5DVA4QSUeSfq2G6/aFF8OLT+f9xwMT1FCQAA</Configuration>
+            <LocalBusinessRule ID="acn-81e11a0c-4f51-47e8-be22-1114613a97c8" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (SendEmailBusinessAction):
+Body=Hello
+Recipients=[@laal@stibosystems.com]
+Sender=@
+Subject=Subject
+ -->
+                <Configuration>H4sIAAAAAAAA/3WSTW+DMAyG7/0VUe6D7bZDoKzaplXaoWq7M0rBRa5CEuFQjX+/8CnYxvWx38cOxqq6QJ1KaxUCpXhNM6OvWAjywMW2L/csEtvvUrE7VIRGR/wpeOQMdGZy1EXEv87vD898G2/EribUQHSsFcQbxiZw6HRsXu/R/jXiJ9D5WylRjeWXzPk5vDV4x0FWsgTnh/dgjlib35m84ezcWIj4Td5loKQugpOr/HY8/gCljAinyCT5RHJd/ggZWgTtaGGpHaqgbeJjZAjtHZRxoqRUCTm8GGrIEwoyU4pwahjHdGRl8/blUK3vnvy39y9FfblB5tYdQ8Mf0wx0H1aEy2P5c4bLew6/xg/TC7cZOgIAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="con-3aa9f728-4f97-4888-8c94-daa520d6cb0e" Scope="Local" Type="Condition" RunPrivileged="false"><!-- Definition:
+Condition #1 (JavaScriptBusinessConditionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="web" type="WebUiContext" contract="WebUiContextBind"/>
+    <binding alias="dir" type="DataIssuesContext" contract="DataIssuesContextBind"/>
+    <binding alias="bc1" type="BusinessCondition" contract="BusinessConditionBindContract">
+      BC1
+    </binding>
+    <binding alias="attr" type="Attribute" contract="AttributeBindContract">
+      Bullet01
+    </binding>
+  </bindings>
+  <messages/>
+  <javaScript>
+//web.showAlert('WARNING', 'Headline', 'hello 1')
+dir.addWarning("Warning 1", node, attr);
+dir.addError("Warning 2", node, attr);
+dir.addWarning("Warning 3", node, attr);
+
+return dir;
+  </javaScript>
+</config> -->
+                <Name>CheckReject</Name>
+                <Configuration>H4sIAAAAAAAA/7VVTW/bMAy9+1cIPiQtkMnNdhmQLyTpumVYu6JNkWMg26yjQpE8SW67/fpRluPmq8mwdTeRIt97pCk6F0XG5ZzlueBg5vx+nih5z7Ned/C8FOQRtOFK9sI2PQsJyESlXGa98G568e5jOOgH3VFhuARjbgoBEdoGgWw/97D/gNUPCKkd1yUcWb/3rsl5L/zKHtltonluV/djJVNukWvG7WLEZWpCB4eA10yzJVhU4h3rLuLAfDSZ/syhFz4gMhVMZvTWatQa9hvCdjaKafwolO1gRf7wUpa3y9r8cdDIbCdwAI7jkuWlTcjKQ7BZVrPEogyfMS60Bmm/xw+QWBcyriIqrqHgzFSxUqVQueuCxoKZ+r4Qwp+io7wziO+444LnknYP3RPEb8V2ziybGFOAOUyZcv1WlDtzcqS5cdI+RJ2oJTWWx4omSgNN1ZJxSfkyFzSumDROLL3QSLHDPcE4j+N0j8Ztpzsqm3CsjqHFsYwLC0f0M4z7ywJqii2Z2G2wZ1taa2s13d2o5nvlvX3SWulL7AfL4H+/u28qYYL/YrGAinEKWBXD/hUyxfX1h5pfFs7rgoMgivCRULNQT0MB2p40Z8Obq8nV52aLNL8ASwWOgTsvQAhF2s3TACecsjSdMS0R46R6jN4i1QS2iHvpLeI+6WlnlVJ2cSvh/aGE/Rwf9qYEGmyhJcHUzk5z1hzlSu1Gmzsbt3q0udarP8RvRQRDgHkGAAA=</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="con-7b96603d-4e10-4ea0-9f2e-2d264a78ca97" Scope="Local" Type="Condition" RunPrivileged="false"><!-- Definition:
+Condition #1 (JavaScriptBusinessConditionWithBinds):
+<config>
+  <bindings>
+    <binding alias="transition" type="CurrentTransition" contract="CurrentTransitionBindContract"/>
+    <binding alias="web" type="WebUiContext" contract="WebUiContextBind"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var message = transition.getMessage();
+if (message!=null && message.length()>5) {
+	return "Message too long Length="+message.length()+" Message["+message+"]";
+}
+web.showAlert("INFO", "Headline", "OK")
+return true;
+  </javaScript>
+</config> -->
+                <Name>CheckTransitionMessage</Name>
+                <Configuration>H4sIAAAAAAAA/7VUXW/TMBR9Jr/ikoeq1SCBBySkNK3WwsRgYxPrtAeEKje5TY1cO9g33QDx37Fj9yPABAjxktjXx+ece23fWjQVl3NW14KjmfPlvFByyat8OL5bC9igNlzJPH6aPIkBZaFKLqs8vp6dPH4ej0fRcNIYLtGYd43A1M6NJaJR7Wn/gWsUAewCly0dHK770OmLPH7NNuyq0Lym7fpUyZKT1brhtJpwWZrY0VnCS6bZGsk68YHDEDgyj4bZ5xrz+KNlTgSTVXJF2nqNRz1BWSeZ3qdGUWYz8oN9Wn7e5uaH415FWeQInMY5q9s5wDYCtlikWUHWht8xbbRGSTPNpGnTcbBpQAW9Y8GZCXjaAcPiLrWpYGaLko0QfpT+1sENLq65U8Q7cohfiN7i4m/UnFZ6WIBhutt3z5G81Frpc3usrML/fTRnqmCCf2ELgUFxhutaMMJJI0t7w//Q8/5O3m94wzSsvQjksD+8pEIK4v1BFvEl9APsYe7KCT22rrP2s92fCJQVrfoDZ+/ZAL5GDzRSoyX4BAMdkFIglKzgrMWHShz9yHIUKha2ve/CwuoH/8uib5G9A4lZqdtjgZr6Pn769uTCjx4FE6+QlcK+z2704o3/D6LgmHSD2U8VPgi0T3eYdnuD7R5pt32ETvQdbaUlUuEEAAA=</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+        </STEPWorkflow>
+    </STEPWorkflows>
+</STEP-ProductInformation>

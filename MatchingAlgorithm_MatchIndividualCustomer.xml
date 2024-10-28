@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <MatchingAlgorithms>
+        <MatchingAlgorithm ID="MatchIndividualCustomer" ContextID="Context1" WorkspaceID="Main"><!-- Definition:
+DuplicateType=ConfirmedDuplicateItems
+MatchProcessingConfiguration=
+NonDuplicateType=ConfirmedNonDuplicateItems
+RankerDefinition=<matching_algorithm>
+  <ranking_plugin plugin_weight="10.0">
+<DecisionTableMatchCriteriaAndMatchCodesPlugin Name="">
+  <RulesTable>
+    <columndefs deselected="true"/>
+    <RulesStrategy>First</RulesStrategy>
+  </RulesTable>
+</DecisionTableMatchCriteriaAndMatchCodesPlugin>
+  </ranking_plugin>
+</matching_algorithm>
+SurvivorshipRuleConfiguration= -->
+            <EmbeddedMatchCode></EmbeddedMatchCode>
+            <SetupGroupLink SetupGroupID="MatchCodesAndMatchingAlgorithms"></SetupGroupLink>
+            <Name>Match Individual Customer</Name>
+            <MatchingAlgorithmConfiguration>H4sIAAAAAAAA/5WRTWrDMBCF9zmF0QHqdC8bSkShi4aQZB9UeSwP1Y+RRim5fSXbBQe86UrM05tvRk8ijQaVJLg+RmgO3vUYLHTiT/4gsJHHXFH7KUkNp+AVxIhOT2adgiT0brEcvRPbxPXNGnqW7huCgB4dFlDDbRmT+TdptA9Ig213VcVDNhZ1NEmjq+bj9gOoB2rY6/5lz9odF6AwZsxVfhmYFj5kBASUb66ba99BPM2Qo7TQMDbxz8lAnNpKmQXlTbKugz5WuQMMKIKuYRQSsHrxTE0XyhmAfrTvGCLx+lks7HoN5/W/lpwBz68vkK2YlkwvKdzx7kMccCyTt37qF/qpUB75AQAA</MatchingAlgorithmConfiguration>
+        </MatchingAlgorithm>
+    </MatchingAlgorithms>
+</STEP-ProductInformation>

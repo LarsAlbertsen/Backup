@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <MatchingAlgorithms>
+        <MatchingAlgorithm ID="MatchItems" ContextID="Context1" WorkspaceID="Main" MatchCodeID="ParentIDMatchCode"><!-- Definition:
+DuplicateType=ConfirmedDuplicateItems
+MatchProcessingConfiguration=
+NonDuplicateType=ConfirmedNonDuplicateItems
+RankerDefinition=<matching_algorithm>
+  <ranking_plugin plugin_weight="10.0">
+<LevenshteinRankingPlugin Formula="StepName()" Name="TitleDistance"/>
+  </ranking_plugin>
+  <ranking_plugin plugin_weight="10.0">
+<JavaScript2MatchCriteriaPlugin Name="JS">
+  <Formula>var m = manager;
+</Formula>
+  <BindMap>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;BindMap&gt;
+  &lt;Bind contractID=&quot;ManagerBindContract&quot; Alias=&quot;manager&quot; ParameterClass=&quot;null&quot;/&gt;
+&lt;/BindMap&gt;
+</BindMap>
+</JavaScript2MatchCriteriaPlugin>
+  </ranking_plugin>
+</matching_algorithm>
+SurvivorshipRuleConfiguration= -->
+            <SetupGroupLink SetupGroupID="MatchCodesAndMatchingAlgorithms"></SetupGroupLink>
+            <Name>MatchItems</Name>
+            <MatchingAlgorithmConfiguration>H4sIAAAAAAAA/5VSTUvDQBC991csORQ92LSehCYp2lCoWCltPcuQTpPB/Yi7k6j/3nxspEIRPO3MvLdv3sxuWpWSMmA8fJUYL40+kVV4TIfymlG5yDUZJxvgrNhak6FzpPOOnFcWmIz2lGej08uK58i56A70G9oUT6SpFYoj1bZp9F9B5sYSFyoZCRHZhthWS1nlpEV/vH4g5QXHwWw6mQbJKHrCGrUrGEnv+gvbnr8yVlUS4mDPWD6DwqvrQLRnHByIJabkGHSGQdh1C3+3+4eDR6hhn1kq+bZb2LIZAS2B99G3fNwHnaR3ldRghRKxUKAhRzsfReEAtbQH0scNlMlY8nzxqaSo0bp2WeP3yvB8Npn2gUCdmWPj0QMvh9XNXR8uxjnPR62AF+tyIYaKyIxmCxmvU39503tpwaXHfJd7SeA8yzv2yBZsM18z71KCGyi6krKPwh8T4bmLaMia9YV/7+/y40ThpU/jf9i+sjXVxrqCyl0l8dK//QYJC8v5BwMAAA==</MatchingAlgorithmConfiguration>
+        </MatchingAlgorithm>
+    </MatchingAlgorithms>
+</STEP-ProductInformation>

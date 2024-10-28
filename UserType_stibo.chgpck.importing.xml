@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="stibo.chgpck.importing">
+            <Name>Re-testing change package</Name>
+            <AttributeLink AttributeID="ChangePackageDescription"></AttributeLink>
+            <AttributeLink AttributeID="ChangePackageTeam"></AttributeLink>
+            <AttributeLink AttributeID="GITBranch"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

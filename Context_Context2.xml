@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ContextList>
+        <Context ID="Context2" Locale="de_DE">
+            <Name>German</Name>
+            <DimensionPointLink DimensionPointID="German"></DimensionPointLink>
+        </Context>
+    </ContextList>
+</STEP-ProductInformation>

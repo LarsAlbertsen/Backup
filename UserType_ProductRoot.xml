@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="ProductRoot" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="ProductRoot" NamePattern="Product Root">
+            <Name>ProductRoot</Name>
+            <UserTypeLink UserTypeID="Product user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="11bc245d-14db-4b62-89e5-57e658301860"></AttributeLink>
+            <AttributeLink AttributeID="14de4d00-568c-4d22-87fe-c5162ea89df4"></AttributeLink>
+            <AttributeLink AttributeID="18a2f6bd-81b5-4c8e-9cff-15ca6824eb5a"></AttributeLink>
+            <AttributeLink AttributeID="3b26f0b2-60f8-43b8-bfa8-1cb447688907"></AttributeLink>
+            <AttributeLink AttributeID="3e356427-932c-4291-adf5-c729eac2de07"></AttributeLink>
+            <AttributeLink AttributeID="542b2138-e766-4426-aa1a-250eadc74b50"></AttributeLink>
+            <AttributeLink AttributeID="737a2ca4-509b-4664-b64c-a605c7722c89"></AttributeLink>
+            <AttributeLink AttributeID="9a995e7d-cf05-47cf-8d0f-b4d94e4b23a0"></AttributeLink>
+            <AttributeLink AttributeID="ac0f9ad9-ce83-4a79-9c29-d4d4403908ff"></AttributeLink>
+            <AttributeLink AttributeID="b44c067c-ef28-4d82-898e-f6644b13de5b"></AttributeLink>
+            <AttributeLink AttributeID="ba1b757d-4b00-43bb-b2d1-f92a2464facc"></AttributeLink>
+            <AttributeLink AttributeID="c9ade755-6b4f-4ca5-92d1-66b29a549af5"></AttributeLink>
+            <AttributeLink AttributeID="deb1be6a-7173-442e-91ef-3ae3c2ef1486"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

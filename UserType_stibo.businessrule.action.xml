@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="stibo.businessrule.action">
+            <Name>Business Action Type</Name>
+            <UserTypeLink UserTypeID="AssetAnalyzer.SetupGroup"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessRuleGroup"></UserTypeLink>
+            <UserTypeLink UserTypeID="GlobalBusinessRules"></UserTypeLink>
+            <UserTypeLink UserTypeID="Workflow Auditing"></UserTypeLink>
+            <UserTypeLink UserTypeID="Workflows"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="AssetLevel1" ClassificationOwnsProductLinks="false" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+            <Name>Asset Level 1</Name>
+            <UserTypeLink UserTypeID="IconRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="IllustrationRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="InstallationManualRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="LogoRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="MSDSRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="OwnersManualRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="ProductImageRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="VideoRoot"></UserTypeLink>
+            <AttributeLink AttributeID="Purpose"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

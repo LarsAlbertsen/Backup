@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Group user-type root">
+            <Name>User Group</Name>
+            <AttributeLink AttributeID="ConfigurationEntityReferences"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

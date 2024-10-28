@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="StatusFlags">
+            <Name>Status Flags</Name>
+            <UserTypeLink UserTypeID="Setup Group user-type root"></UserTypeLink>
+            <UserTypeLink UserTypeID="Workflows"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <TagList>
+        <Tag Start="&lt;MyHyperLink&gt;" Stop="&lt;/MyHyperLink&gt;"></Tag>
+        <HyperlinkTag ID="MyHyperLink" ParentID="Hyperlink tag root" Tag="MyHyperLink"></HyperlinkTag>
+    </TagList>
+</STEP-ProductInformation>

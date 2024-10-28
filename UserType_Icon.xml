@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Icon" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+            <Name>Icon</Name>
+            <Icon>H4sIAAAAAAAA/3P3dLOwTBRgEGC4asKwePHiOXPmrFq16vTp0/v371+4cOHy5ctnzJhx4MCBU6dOHTx48OTJk4sWLTp+/Pjs2bNXrFixZ8+eJUuWzJ07d/v27TNnziwuLq6qql6/fv3WrVu7urpmzZo1YcKEyZMnV1RUtLa0rFmzpqSkZNmyZUuXLl2wYMGRI0cam5rq6+tXrlxZVla2ZcuWHTt27N69u729vba2duPGjYcPH543b15vb+9/B4b/YMBACCj+ZGFkYDBh0AFxQH5iYOs/cPigIMeBPnfPA46WF0yMb6wxYHZRYnBjXNZz0I1h4kNFjfk8igfMjs3Yef+DuUJax+l3H919Puw7nVaXL28oXlvRmKdnqJlXV9+XJ2Eo3Fs41VjLULu3cYKxgKFAW39FHoshy+KGpcYchhxla/K41k/btoVFn5ebk5N5PzMnN6/KFhNRBQ1ZMV01VTkdSUNpGUNHBmsA7BaO3HIBAAA=</Icon>
+            <UserTypeLink UserTypeID="Asset user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="AssetAnalyzer.Keywords"></AttributeLink>
+            <AttributeLink AttributeID="AssetDownload.AssetURLAttribute"></AttributeLink>
+            <AttributeLink AttributeID="ImageDeduplicationConfirmedDuplicates"></AttributeLink>
+            <AttributeLink AttributeID="ImageDeduplicationConfirmedNonDuplicates"></AttributeLink>
+            <AttributeLink AttributeID="ImageDeduplicationDeleteFlag"></AttributeLink>
+            <MIMEType>application/postscript</MIMEType>
+            <MIMEType>image/tif</MIMEType>
+            <MIMEType>image/tiff</MIMEType>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

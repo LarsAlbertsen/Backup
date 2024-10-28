@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Uncategorized Setup Group Type">
+            <Name>Uncategorized Setup Group Type</Name>
+            <UserTypeLink UserTypeID="Setup Group user-type root"></UserTypeLink>
+            <UserTypeLink UserTypeID="Uncategorized Setup Group Type"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

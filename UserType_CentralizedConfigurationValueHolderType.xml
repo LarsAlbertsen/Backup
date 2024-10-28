@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="CentralizedConfigurationValueHolderType" IDPattern="[id]">
+            <Name>Centralized Configuration Value Holder Type</Name>
+            <UserTypeLink UserTypeID="ConfigurationSystem"></UserTypeLink>
+            <AttributeLink AttributeID="CC_ConfigurationItemIDs"></AttributeLink>
+            <AttributeLink AttributeID="CC_ConfigurationOwnerURLs"></AttributeLink>
+            <AttributeLink AttributeID="CC_ConfigurationSystemID"></AttributeLink>
+            <AttributeLink AttributeID="CC_ConfigurationTypeID"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

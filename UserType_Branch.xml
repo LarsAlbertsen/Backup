@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Branch" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+            <Name>Branch</Name>
+            <Icon>H4sIAAAAAAAA/3P3dLOwTBRgEGD4zgACaTPPzASCM/+BcOb/mWln0v7//5+Wlvb/TNqZmcb/Z878f+YMUAXDf6BShjNnwJyZQHlj45nGQMAwCkbBkAWKP1kYGRj4GHRAHFCeYOCIY5DlkPHYsOBgM7ughssDhwZnRjZBmRkVDkquHcyCLBIHCh0aWrmN5TgcjBhcu5gZOKbc2Jh6nEFLdkPJTaFnp5hNso/NmXn5sd8c29p1XyI2ZZycwTBJK3aXyMLLywMWsrEwWAMA2mzM54EDAAA=</Icon>
+            <UserTypeLink UserTypeID="Branch"></UserTypeLink>
+            <UserTypeLink UserTypeID="ProductRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="Products"></UserTypeLink>
+            <AttributeLink AttributeID="01e282ba-be8c-477b-b70a-dcf78dfe065f"></AttributeLink>
+            <AttributeLink AttributeID="0615ff3f-82ef-4a35-a2a2-069b1662db2c"></AttributeLink>
+            <AttributeLink AttributeID="086da95c-ac75-43e1-a661-211447cace6c"></AttributeLink>
+            <AttributeLink AttributeID="08d15fb0-6d59-4f1b-be70-5641f7aec2e7"></AttributeLink>
+            <AttributeLink AttributeID="11bc245d-14db-4b62-89e5-57e658301860"></AttributeLink>
+            <AttributeLink AttributeID="14de4d00-568c-4d22-87fe-c5162ea89df4"></AttributeLink>
+            <AttributeLink AttributeID="18a2f6bd-81b5-4c8e-9cff-15ca6824eb5a"></AttributeLink>
+            <AttributeLink AttributeID="28a75ca2-0196-430e-b831-d20c53baee14"></AttributeLink>
+            <AttributeLink AttributeID="35e71636-812f-497a-ba3e-b27ba16cf145"></AttributeLink>
+            <AttributeLink AttributeID="3a2d81ff-467a-4ba5-897c-0ac471a130ba"></AttributeLink>
+            <AttributeLink AttributeID="3b26f0b2-60f8-43b8-bfa8-1cb447688907"></AttributeLink>
+            <AttributeLink AttributeID="3e356427-932c-4291-adf5-c729eac2de07"></AttributeLink>
+            <AttributeLink AttributeID="40acb3b4-3368-4aaf-a2c7-cf0c4c6d267c"></AttributeLink>
+            <AttributeLink AttributeID="4d58f626-8d3d-4ce9-b0fb-aec213e60eb0"></AttributeLink>
+            <AttributeLink AttributeID="542b2138-e766-4426-aa1a-250eadc74b50"></AttributeLink>
+            <AttributeLink AttributeID="725a4be5-66c9-40e2-a67c-da1435da58a2"></AttributeLink>
+            <AttributeLink AttributeID="737a2ca4-509b-4664-b64c-a605c7722c89"></AttributeLink>
+            <AttributeLink AttributeID="83dea409-2be9-4c87-813a-6d39da582424"></AttributeLink>
+            <AttributeLink AttributeID="90099098-6e54-4207-ae2a-1a5ad01de515"></AttributeLink>
+            <AttributeLink AttributeID="9a995e7d-cf05-47cf-8d0f-b4d94e4b23a0"></AttributeLink>
+            <AttributeLink AttributeID="9d32fd81-7282-4f86-a350-e031c80cfb78"></AttributeLink>
+            <AttributeLink AttributeID="a3c6966e-2f12-411e-8c44-7b73674cc1f8"></AttributeLink>
+            <AttributeLink AttributeID="a6dd167b-b650-415b-95b1-da14acd9a2ba"></AttributeLink>
+            <AttributeLink AttributeID="a7c518bb-4f9a-42fb-be62-787d9e448413"></AttributeLink>
+            <AttributeLink AttributeID="ac0f9ad9-ce83-4a79-9c29-d4d4403908ff"></AttributeLink>
+            <AttributeLink AttributeID="af82a960-d5a1-4c92-80d8-d4126d86c33c"></AttributeLink>
+            <AttributeLink AttributeID="b44c067c-ef28-4d82-898e-f6644b13de5b"></AttributeLink>
+            <AttributeLink AttributeID="ba1b757d-4b00-43bb-b2d1-f92a2464facc"></AttributeLink>
+            <AttributeLink AttributeID="c3875de8-93c1-4918-96c6-ee21d166c36b"></AttributeLink>
+            <AttributeLink AttributeID="c9ade755-6b4f-4ca5-92d1-66b29a549af5"></AttributeLink>
+            <AttributeLink AttributeID="cc48227f-850a-435c-973f-4f5785eb299e"></AttributeLink>
+            <AttributeLink AttributeID="cd462bf6-7a1d-4465-ab2d-16217bd1eafa"></AttributeLink>
+            <AttributeLink AttributeID="dbaf5555-b5bc-4154-9107-de8914e69bee"></AttributeLink>
+            <AttributeLink AttributeID="deb1be6a-7173-442e-91ef-3ae3c2ef1486"></AttributeLink>
+            <AttributeLink AttributeID="e16f19d5-129a-4a43-93ef-5d960ed24da1"></AttributeLink>
+            <AttributeLink AttributeID="eaa34cc9-3a5e-40ce-9043-491ca000dbc6"></AttributeLink>
+            <AttributeLink AttributeID="f4aa0254-6ff7-452f-8581-8259bbdd87d7"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

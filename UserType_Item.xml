@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserTypes>
-        <UserType ID="Item" ManuallySorted="true" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+        <UserType ID="Item" ManuallySorted="true" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]" Referenced="true">
             <Name>Item</Name>
             <Icon>H4sIAAAAAAAA/3P3dLOwTBRgEGD4zgACaTPPzASCM/+BcOb/mWln0v7//5+Wlvb/TNqZmcb/Z878f+YMUAXDf4b/qIBhFIyCIQ4Uf7IwMjDwMeiAOKA8wcARzyDLIeOxYcHBZg52LoEJAQsbGJnFlGI4Nia5tLHIR93pCFzQwMxuxsfAqZDcwKCg2GQTGfTw5GTt+G1ffhgdaJjFmGYlEPA5zXeuTfyvKZECDA2TnXuVTKqCM53Z/eab8XAwWAMAeUXbfYIDAAA=</Icon>
             <UserTypeLink UserTypeID="DiscontinuedProducts"></UserTypeLink>
@@ -93,8 +93,8 @@
             <AttributeLink AttributeID="RetailPrice"></AttributeLink>
             <AttributeLink AttributeID="Bullet02"></AttributeLink>
             <AttributeLink AttributeID="ELFRFraction"></AttributeLink>
-            <AttributeLink AttributeID="New Attr"></AttributeLink>
             <AttributeLink AttributeID="ItemKey"></AttributeLink>
+            <AttributeLink AttributeID="New Attr"></AttributeLink>
             <AttributeLink AttributeID="RawLOV"></AttributeLink>
             <AttributeLink AttributeID="LanguageDependant"></AttributeLink>
             <AttributeLink AttributeID="a1"></AttributeLink>

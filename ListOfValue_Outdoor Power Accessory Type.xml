@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="Outdoor Power Accessory Type" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">Outdoor Power Accessory Type</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value>Bagger</Value>
+            <Value>Canopy</Value>
+            <Value>Cover</Value>
+            <Value>Gas Can</Value>
+            <Value>Gas Can Accessory</Value>
+            <Value>Leaf Blower Replacement Bag</Value>
+            <Value>Mulching Kit</Value>
+            <Value>Other Accessories</Value>
+            <Value>Striping Kit</Value>
+            <Value>Tire Chains</Value>
+            <Value>Utility Bin</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

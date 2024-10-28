@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="NASCARCar" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">NASCAR Car</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value>00 - David Reutimann</Value>
+            <Value>1 - Jamie McMurray</Value>
+            <Value>102 - Brandon Ash</Value>
+            <Value>11 - Denny Hamlin</Value>
+            <Value>12 - Brad Keselowski</Value>
+            <Value>127 - Kirk Shelmerdine</Value>
+            <Value>127 - Todd Bodine</Value>
+            <Value>13 - Max Papis</Value>
+            <Value>132 - Reed Sorenson</Value>
+            <Value>135 - Johnny Sauter</Value>
+            <Value>14 - Tony Stewart</Value>
+            <Value>157 - Norm Benning</Value>
+            <Value>16 - Greg Biffle</Value>
+            <Value>17 - Matt Kenseth</Value>
+            <Value>175 - Derrike Cope</Value>
+            <Value>18 - Kyle Busch</Value>
+            <Value>19 - Elliott Sadler</Value>
+            <Value>190 - Casey Mears</Value>
+            <Value>190 - Scott Riggs</Value>
+            <Value>192 - Mike Wallace</Value>
+            <Value>197 - Jeff Fuller</Value>
+            <Value>2 - Kurt Busch</Value>
+            <Value>20 - Joey Logano</Value>
+            <Value>21 - Bill Elliott</Value>
+            <Value>24 - Jeff Gordon</Value>
+            <Value>26 - Boris Said</Value>
+            <Value>26 - David Stremme</Value>
+            <Value>29 - Kevin Harvick</Value>
+            <Value>3 - Dale Earnhardt Sr.</Value>
+            <Value>31 - Jeff Burton</Value>
+            <Value>33 - Clint Bowyer</Value>
+            <Value>34 - John Andretti</Value>
+            <Value>34 - Travis Kvapil</Value>
+            <Value>36 - Mike Bliss</Value>
+            <Value>37 - David Gilliland</Value>
+            <Value>38 - Robert Richardson Jr</Value>
+            <Value>39 - Ryan Newman</Value>
+            <Value>43 - A.J. Allmendinger</Value>
+            <Value>46 - Terry Cook</Value>
+            <Value>47 - Marcos Ambrose</Value>
+            <Value>5 - Mark Martin</Value>
+            <Value>55 - Dave Blaney</Value>
+            <Value>55 - Michael Waltrip</Value>
+            <Value>56 - Martin Truex Jr</Value>
+            <Value>6 - David Ragan</Value>
+            <Value>66 - Michael McDowell</Value>
+            <Value>7 - Robby Gordon</Value>
+            <Value>71 - Bobby Labonte</Value>
+            <Value>77 - Sam Hornish Jr</Value>
+            <Value>78 - Regan Smith</Value>
+            <Value>82 - Ken Schrader</Value>
+            <Value>82 - Scott Speed</Value>
+            <Value>83 - Brian Vickers</Value>
+            <Value>87 - Joe Nemechek</Value>
+            <Value>88 - Dale Earnhardt Jr</Value>
+            <Value>9 - Kasey Kahne</Value>
+            <Value>99 - Carl Edwards</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

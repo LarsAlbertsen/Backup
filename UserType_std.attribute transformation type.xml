@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserTypes>
-        <UserType ID="std.attribute transformation type" IDPattern="[id]">
+        <UserType ID="std.attribute transformation type" IDPattern="[id]" Referenced="true">
             <Name>Attribute Transformation</Name>
             <UserTypeLink UserTypeID="std.attribute transformation type"></UserTypeLink>
         </UserType>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserTypes>
-        <UserType ID="Asset Push Configuration">
+        <UserType ID="Asset Push Configuration" Referenced="true">
             <Name>Asset Push Configuration</Name>
             <UserTypeLink UserTypeID="Asset Push EventQueue"></UserTypeLink>
         </UserType>

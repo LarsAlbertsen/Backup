@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="ConcreteToolType" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">ConcreteToolType</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value>Adapter</Value>
+            <Value>Anchor Setting Tool</Value>
+            <Value>Brush</Value>
+            <Value>Concrete Rub Brick</Value>
+            <Value>Edger</Value>
+            <Value>Electric/Hydraulic Rebar Bender</Value>
+            <Value>Electric/Hydraulic Rebar Cutter</Value>
+            <Value>Float</Value>
+            <Value>Groover</Value>
+            <Value>Handle</Value>
+            <Value>Jointer/Pointer</Value>
+            <Value>Knee Board</Value>
+            <Value>Line Block / Spacer</Value>
+            <Value>Manual Rebar Bender</Value>
+            <Value>Manual Rebar Cutter</Value>
+            <Value>Masonry Wire Block</Value>
+            <Value>Mixer</Value>
+            <Value>Mixing Tub/Pan</Value>
+            <Value>Other</Value>
+            <Value>Rake</Value>
+            <Value>Trowel</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="OutdoorLivingProductType" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">OutdoorLivingProductType</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value>Analog Thermometer</Value>
+            <Value>Arbor</Value>
+            <Value>Arbor/Trellis Accessory</Value>
+            <Value>Awning Accessory</Value>
+            <Value>Backpacks and Carriers</Value>
+            <Value>Battery Operated Snow Pump</Value>
+            <Value>Beverage Jug Cooler</Value>
+            <Value>Beverage Tubs</Value>
+            <Value>Bike/Trike/Car</Value>
+            <Value>Built-in Griddles</Value>
+            <Value>Built-in Grills</Value>
+            <Value>Built-in Smokers</Value>
+            <Value>Camping Lantern</Value>
+            <Value>Camping Tent</Value>
+            <Value>Canopy Accessory</Value>
+            <Value>Canopy/Tent</Value>
+            <Value>Charcoal/Wood Grill</Value>
+            <Value>Chest Cooler</Value>
+            <Value>Combination Grill</Value>
+            <Value>Commercial Playground Component</Value>
+            <Value>Commercial Playground Set</Value>
+            <Value>Complete Playhouse/Play Set</Value>
+            <Value>Composite Mounting Block</Value>
+            <Value>Composite Siding</Value>
+            <Value>Composite Trim</Value>
+            <Value>Cooking Accessory</Value>
+            <Value>Cooler Accessory</Value>
+            <Value>Coolers</Value>
+            <Value>Deck Box</Value>
+            <Value>Dual Fuel Grill</Value>
+            <Value>Electric Grill</Value>
+            <Value>Enclosed Patio</Value>
+            <Value>Fire Glass</Value>
+            <Value>Fire Pit</Value>
+            <Value>Fireplace/Chimnea</Value>
+            <Value>Firepot</Value>
+            <Value>Firepot Accessory</Value>
+            <Value>Firepot Fuel</Value>
+            <Value>Firewood/Solid Fuel</Value>
+            <Value>Fishing Supplies</Value>
+            <Value>Fixed Awning</Value>
+            <Value>Flag/Flagpole Bracket</Value>
+            <Value>Flagpole</Value>
+            <Value>Flagpole Accessory</Value>
+            <Value>Fryer</Value>
+            <Value>Fryer Accessory</Value>
+            <Value>Full Outdoor Kitchens Cabinets</Value>
+            <Value>Gazebo</Value>
+            <Value>Grill Cart</Value>
+            <Value>Grill Cover</Value>
+            <Value>Grill Light</Value>
+            <Value>Grill Lighter</Value>
+            <Value>Grill Lighter Fluid</Value>
+            <Value>Grill Mat/Pad</Value>
+            <Value>Hammock Accessory</Value>
+            <Value>Hammock Stand</Value>
+            <Value>Hammock Swing with Stand</Value>
+            <Value>Hammock Swing without Stand</Value>
+            <Value>Hot Tub</Value>
+            <Value>Hunting Supplies</Value>
+            <Value>Ice Melt</Value>
+            <Value>Ice Storage</Value>
+            <Value>Ice Torch</Value>
+            <Value>Inflatable Boat</Value>
+            <Value>Jumphouse</Value>
+            <Value>Kid's Toy/ Activity Set</Value>
+            <Value>Lanterns</Value>
+            <Value>Liquid Propane</Value>
+            <Value>Lump Charcoal/Wood</Value>
+            <Value>Manual Snow Pump</Value>
+            <Value>Matches</Value>
+            <Value>Metal Detector</Value>
+            <Value>Military Flag</Value>
+            <Value>Miscellaneous Camping Supplies</Value>
+            <Value>Natural Gas Grill</Value>
+            <Value>Other National Flag</Value>
+            <Value>Other Weather Monitoring Device</Value>
+            <Value>Outdoor Beverage Center</Value>
+            <Value>Outdoor Curtain</Value>
+            <Value>Outdoor Heating Accessory</Value>
+            <Value>Outdoor Kitchen</Value>
+            <Value>Outdoor Kitchen Accessories</Value>
+            <Value>Outdoor Kitchen Islands</Value>
+            <Value>Outdoor Kitchen Sinks</Value>
+            <Value>Outdoor Kitchen Storage</Value>
+            <Value>Outdoor Pizza Ovens</Value>
+            <Value>Outdoor Refrigerator</Value>
+            <Value>Outdoor Toy/ Game</Value>
+            <Value>Patio Bar</Value>
+            <Value>Patio Bar Set</Value>
+            <Value>Patio Bar Table</Value>
+            <Value>Patio Bench/Glider</Value>
+            <Value>Patio Bistro Table</Value>
+            <Value>Patio Chair</Value>
+            <Value>Patio Chaise</Value>
+            <Value>Patio Coffee Table</Value>
+            <Value>Patio Cover</Value>
+            <Value>Patio Dining Table</Value>
+            <Value>Patio End/Side Table</Value>
+            <Value>Patio Furniture Accessory</Value>
+            <Value>Patio Furniture Bistro Set</Value>
+            <Value>Patio Furniture Cover</Value>
+            <Value>Patio Furniture Cushion/Throw Pillow</Value>
+            <Value>Patio Furniture Dining Set</Value>
+            <Value>Patio Furniture Fabric by Length</Value>
+            <Value>Patio Furniture Seating Set</Value>
+            <Value>Patio Furniture Set with Firepit</Value>
+            <Value>Patio Furniture Tableware</Value>
+            <Value>Patio Gazebo/Canopy</Value>
+            <Value>Patio Heater</Value>
+            <Value>Patio High Dining Table</Value>
+            <Value>Patio Ottoman</Value>
+            <Value>Patio Serving Cart/Tray</Value>
+            <Value>Patio Sofa/Loveseat</Value>
+            <Value>Patio Stool</Value>
+            <Value>Patio Swing</Value>
+            <Value>Patio Torch</Value>
+            <Value>Patio Umbrella</Value>
+            <Value>Patio Umbrella Base</Value>
+            <Value>Pergola</Value>
+            <Value>Pergola/Gazebo Accessory</Value>
+            <Value>Personal / Handheld Umbrella</Value>
+            <Value>Picnic Table</Value>
+            <Value>Play Set Slide/Wall</Value>
+            <Value>Play Set Swing</Value>
+            <Value>Playhouse Accessory</Value>
+            <Value>Pool</Value>
+            <Value>Pool/Spa/Sauna Accessory</Value>
+            <Value>Portable Grill</Value>
+            <Value>Portable Spa</Value>
+            <Value>Propane Grill</Value>
+            <Value>Replacement Canopy Part</Value>
+            <Value>Replacement Grill Part</Value>
+            <Value>Retractable Awning</Value>
+            <Value>Roaster</Value>
+            <Value>Rope Hammock with Stand</Value>
+            <Value>Rope Hammock without Stand</Value>
+            <Value>Sand Box</Value>
+            <Value>Sauna</Value>
+            <Value>Seasonal/Holiday Flags</Value>
+            <Value>Shade Cloth</Value>
+            <Value>Shade Cloth/Sun Shade Accessory</Value>
+            <Value>Side Burners</Value>
+            <Value>Single Unit Weather Center</Value>
+            <Value>Sled/Saucer/Toboggan</Value>
+            <Value>Smoker</Value>
+            <Value>Smoker/Charcoal Box</Value>
+            <Value>Soft-Side Cooler</Value>
+            <Value>Spa/Whirlpool</Value>
+            <Value>Specialty Grill</Value>
+            <Value>State/Territory Flag</Value>
+            <Value>Steam Generator</Value>
+            <Value>Steamer Control</Value>
+            <Value>Steamer Nozzle</Value>
+            <Value>Stone Patio Furniture</Value>
+            <Value>Sun Shade</Value>
+            <Value>Swing Canopies</Value>
+            <Value>Team Themed Flags</Value>
+            <Value>Telescope</Value>
+            <Value>Traction Control</Value>
+            <Value>Trellis</Value>
+            <Value>USA Flag</Value>
+            <Value>Umbrella Lights</Value>
+            <Value>Umbrella Pole w/ Base</Value>
+            <Value>Umbrella Pole w/o Base</Value>
+            <Value>Warming Drawers</Value>
+            <Value>Weather Center with Sensor</Value>
+            <Value>Wood Pellet Grill</Value>
+            <Value>Wood Pellets</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

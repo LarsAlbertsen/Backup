@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UnitList>
+        <Unit ID="unece.unit.GLI" ParentID="Volume">
+            <Name>gal (UK)</Name>
+            <UnitConversion BaseUnitID="unece.unit.MTQ" Factor=".004546092" Offset="0"></UnitConversion>
+        </Unit>
+    </UnitList>
+</STEP-ProductInformation>

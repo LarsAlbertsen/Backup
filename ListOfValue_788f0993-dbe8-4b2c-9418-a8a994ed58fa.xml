@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="788f0993-dbe8-4b2c-9418-a8a994ed58fa" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">Reference Type</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value>Accessory-Display</Value>
+            <Value>Accessory-Do Not Display</Value>
+            <Value>Alternate Image View</Value>
+            <Value>Alternate Image View 1</Value>
+            <Value>Alternate Image View 2</Value>
+            <Value>Alternate Image View 3</Value>
+            <Value>Alternate Image View 4</Value>
+            <Value>Alternate Image View 5</Value>
+            <Value>Alternate Image View 6</Value>
+            <Value>Approval Coordinating Item</Value>
+            <Value>Approval Packaging Hierarchy</Value>
+            <Value>Back View</Value>
+            <Value>Bottom View</Value>
+            <Value>Brand Name Logo</Value>
+            <Value>Buying Guide</Value>
+            <Value>Catalog View</Value>
+            <Value>Color Swatch</Value>
+            <Value>Cycles Guide</Value>
+            <Value>DD_OPTIONAL_PRODUCT</Value>
+            <Value>DfE Certification</Value>
+            <Value>Energy Guide</Value>
+            <Value>Extended Service Plan</Value>
+            <Value>FAQ</Value>
+            <Value>FSC Chain of Custody</Value>
+            <Value>FSC Forest Certification</Value>
+            <Value>Finish Swatch</Value>
+            <Value>Full Product Manual</Value>
+            <Value>Generic Brand Logo</Value>
+            <Value>Generic PDF Document References</Value>
+            <Value>Generic Product Assets</Value>
+            <Value>Generic Product Images</Value>
+            <Value>Grading Guide</Value>
+            <Value>Installation Guide</Value>
+            <Value>Instructions / Assembly</Value>
+            <Value>Lacey Act Declaration Form</Value>
+            <Value>Left Side View</Value>
+            <Value>Lifestyle Image</Value>
+            <Value>MSDS</Value>
+            <Value>Measurement Guide</Value>
+            <Value>Merchandising Image</Value>
+            <Value>OMRI Listed Certification</Value>
+            <Value>Open View</Value>
+            <Value>PLM Image</Value>
+            <Value>Pre-Delivery/Install Checklist</Value>
+            <Value>Primary Image</Value>
+            <Value>Product Brochure</Value>
+            <Value>Product Image</Value>
+            <Value>Project Ideas</Value>
+            <Value>Rebate Form</Value>
+            <Value>Replacement Part List</Value>
+            <Value>Required-Display</Value>
+            <Value>Required-Do Not Display</Value>
+            <Value>Right Side View</Value>
+            <Value>SDS</Value>
+            <Value>Safer Choice Standard</Value>
+            <Value>Specification</Value>
+            <Value>THD Brand Logo</Value>
+            <Value>THD Proprietary Brand Logo</Value>
+            <Value>THD Proprietary Brand Product Image</Value>
+            <Value>Third Party Verification Claim</Value>
+            <Value>Top View</Value>
+            <Value>Troubleshooting Guide</Value>
+            <Value>USDA Certification</Value>
+            <Value>Use and Care Manual</Value>
+            <Value>VOC Label</Value>
+            <Value>Warranty</Value>
+            <Value>YMAL_MANUAL</Value>
+            <Value>YMAL_PRIMARY</Value>
+            <Value>YMAL_SECONDARY</Value>
+            <Value>true</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

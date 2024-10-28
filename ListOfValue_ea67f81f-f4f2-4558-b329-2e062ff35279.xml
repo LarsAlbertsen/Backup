@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="ea67f81f-f4f2-4558-b329-2e062ff35279" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">ProductCertificationsListings</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value>1-UL Listed</Value>
+            <Value>2-UL Recognized</Value>
+            <Value>3-UL Classified</Value>
+            <Value>4-UL Certified</Value>
+            <Value>ADA Compliant</Value>
+            <Value>AHAM Certified</Value>
+            <Value>AMCA Certified</Value>
+            <Value>ANSI Certified</Value>
+            <Value>API Certified</Value>
+            <Value>ASTM Compliant</Value>
+            <Value>CARB Compliant</Value>
+            <Value>CSA Certified</Value>
+            <Value>CSA Listed</Value>
+            <Value>DOT Rated</Value>
+            <Value>DfE Certification</Value>
+            <Value>EPA Approved</Value>
+            <Value>ETL Classified</Value>
+            <Value>ETL Listed</Value>
+            <Value>FCC Listed</Value>
+            <Value>FVIR Certified</Value>
+            <Value>HVI Certified</Value>
+            <Value>IAPMO Certified</Value>
+            <Value>IC Rated</Value>
+            <Value>JPMA Certified</Value>
+            <Value>NSF Certified</Value>
+            <Value>NSF Listed</Value>
+            <Value>No Certifications or Listings</Value>
+            <Value>OSHA Certified</Value>
+            <Value>OSHA Compliant</Value>
+            <Value>SSPMA Certified</Value>
+            <Value>UL Marine Listed</Value>
+            <Value>USCG Certified</Value>
+            <Value>USDA Approved</Value>
+            <Value>cUL Listed</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

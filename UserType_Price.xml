@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserTypes>
-        <UserType ID="Price" AllowOverlappingTerms="false">
+        <UserType ID="Price" AllowOverlappingTerms="false" Referenced="true">
             <Name>Price</Name>
             <Icon>H4sIAAAAAAAA/31TTU8TQRjeBCxKIMpR9DAspmJC96Nf291QSbtbpJEltVRtoiLb3Wm7wu6su4NtCYZiPGBiNEZJPHjxxsFwNiFGY+LBGE/GC2c9kWj4A+IstGgMMsnuzLx5nvd95v14kJu80Nvd301RVG92XMn7u/8dDZC/u/VtkWwncaaIp1AZ1zQXUikDlSDIWloF5qFmNG5/hCMU1TFkFoq4qE5IOrIYzccwdcuh/DUyWnc0fRZiUIIV007SPzfe0sA0kvTVmMqpjgyr5viCC6cWJgv6wqwuGvToeTBSl4gDC2IN1K0525PqSXrXr0TOvpmlwS4EzybpPVFFNQdk5EIQY+IhnY8kgCAyfExMhKPDIMzxcZYTWT4a4niJEyWOB61Fk2iuUZbyylgrFrkl6SrGjsSytVqNqUUY5FZYXhRFlguz4XCIIEJew8ZaPWR7g20PCvR013SwiWzg37USmsdJmm4/wXJUdd+x7bUSRVLG1jWH5RmOtSy2jfZwHpYPR3uFhgPZPPTQvKuTepQH/wp1ONUHEjWSgvR5C9o4qyRpYmEM05DSSjSlJBReUJQ0z2eEVCYWk4WMLMs8n45EUm1u1vawZuuwzTX/cLlDuZLsQg0jt4DQXLt6uSrCyKsiB8iyXy0BDKmabtq+8Zyf4JZe6Jp3oDHmIgvsZkgyD1AhiEoqmojHhbQoH6xij2sc8PoWV/gvlyVi2H/K3TaRHvKP+81LLvvtD23S8y5p7mbzMk0Go5lVUoX6ZulF49aPpWC5HAgGg6BszMx0lgInjrzUwPTZbubd2un17ZsDudWBscjD5b61vht8eOXLo86L4eWVri0UGd540/9q+ckxYXrx7oel1yr39Nn7r9ubnR0TPUbzEpmv2pXrlTOfgvlY+NfO8cfXAqvO550epdp1lKMKz0/d/77d3/CnNJuZVNbTM/d+A8vQ3rMSBAAA</Icon>
             <VisibleTermFields>

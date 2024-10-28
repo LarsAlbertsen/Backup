@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <IntegrationEndpoints>
+        <GatewayIntegrationEndpoint ID="AssetAnalyzer.GatewayEndpoint" Description="A gateway endpoint for asset keyword requests" UserTypeID="GatewayEndpoint user-type root" Enabled="false"><!-- Definition:
+CheckConnectivityProgram=
+PluginConfiguration=
+<plugin id="RESTPlugin">
+  <simple id="BusinessFunction" null="true"/>
+  <simple id="CertificateKeyStore"/>
+  <simple id="DefaultContentType"/>
+  <simple id="ProxyConfiguration" null="true"/>
+  <simple id="SSLTrustStoreLocation" null="true"/>
+  <simple id="ServerURL" null="true"/>
+  <simple id="StatisticsGroups" null="true"/>
+  <simple id="UsePreemptiveAuth">false</simple>
+  <simple id="Username" null="true"/>
+</plugin> -->
+            <SetupGroupLink SetupGroupID="AssetAnalyzer.SetupGroup"></SetupGroupLink>
+            <Name>Asset Analyzer Gateway Endpoint</Name>
+            <Configuration>H4sIAAAAAAAA/51TsW7CMBDd+YrIA1tLu1WCBNEQGJohImGuLHMJVh07tc+U/H2dOFLKUEBMucvde/eefY6VLHllNUWuZLhYnmsRnECbLiOvzy8kAMnUgcsqJPti8/RGltFk0QhbcRnwQ0i2FOGHtvFfHhJNgmBheN0I6JviI7Av1yKBIT9xbFNqMLeMgTEkkFaIkKC2QGY3kZlWlab1ddQgKutlfq6TbJfEqyJZk2gqcH5hcvptFc6dUx+Mdn3eex5KBqk8UKEkDEWp/Hc5rXDeMY/n4gu7JC+8CJ93fU5q1zqq9aUctJO036XDsN6ejzuPPppdIVhDSa1Ad1YIEou2uQOTo7svg5yZrVa2MY/OzvO00NZdKSoNqWL9FjxKFoNGXnJHAh/Q9pS3QW4tzpdL+Oj4vQEtaQ334P+nyDRA3biVhZXF43j7JRUGOszMg64IebeGS/dANlay+wz1vH4Hu3wxzHAPdvjrItMIjtEvI4a9kvcDAAA=</Configuration>
+        </GatewayIntegrationEndpoint>
+    </IntegrationEndpoints>
+</STEP-ProductInformation>

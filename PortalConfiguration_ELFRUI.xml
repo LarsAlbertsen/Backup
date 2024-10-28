@@ -1,0 +1,1892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <PortalConfigurations>
+        <PortalConfiguration ID="ELFRUI"><!-- Definition:
+<portal-config portalId="customerportal" xmlns="http://stibosystems.com/step/portal-config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <screens>
+    <loginscreen>
+      <parameter id="PortalTitle" value="STEP Web UI"/>
+    </loginscreen>
+    <screen id="AdvancedSearchScreenA" type="AdvancedSearchScreen">
+      <component id="NodeList" type="NodeList">
+        <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
+        <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
+        <parameter id="DefaultSortingOrder" value="None"/>
+        <parameter id="EnableDefaultSorting" value="true"/>
+        <parameter id="HideSelectAllButton" value="false"/>
+        <parameter id="HideStandardButtons" value="false"/>
+        <parameter id="ID" value="Default"/>
+        <parameter id="IncludeLabels" value="true"/>
+        <parameter id="LookupScreenTypeForNavigation" value="true"/>
+        <parameter id="PageSize" value="50"/>
+        <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
+        <parameter id="ToolbarHeight" value="30"/>
+        <parameter id="UseDetailsOverlay" value="false"/>
+        <parameter-list id="Actions">
+          <component id="Actions" type="ExportCurrentViewActionComponent">
+            <parameter id="ButtonLabel" value="Export Current View"/>
+            <parameter id="IncludeEmptyColumnsInExport" value="false"/>
+            <parameter id="ProcessDescription" value="Export Current View"/>
+            <parameter id="ToolTip" value="Export Current View"/>
+          </component>
+        </parameter-list>
+        <parameter-list id="DisplayModes">
+          <component id="DisplayModes" type="MultiEditDisplayMode">
+            <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.MultiEditDisplayMode"/>
+            <parameter id="DisplayModeHeight" value="600"/>
+            <parameter id="EnableFiltering" value="false"/>
+            <parameter id="EnableFreezePanes" value="false"/>
+            <parameter id="EnableItemSelection" value="false"/>
+            <parameter id="EnableUserConfigurableView" value="false"/>
+            <parameter id="GroupsInitiallyOpen" value="false"/>
+            <parameter id="HideSidePanel" value="false"/>
+            <parameter id="PropertyDirection" value="HORIZONTAL"/>
+            <parameter id="ReloadAfterSave" value="false"/>
+            <parameter id="ShowDetails" value="false"/>
+            <parameter id="ShowEmptyGroupHeaders" value="true"/>
+            <parameter id="ShowGroupHeaders" value="true"/>
+            <parameter id="ShowOnlyValidAttributes" value="false"/>
+            <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.MultiEditDisplayMode"/>
+            <parameter id="UseImmediateSave" value="false"/>
+            <parameter id="showTopItemDetailsOnLoad" value="false"/>
+            <parameter-list id="Headers">
+              <component id="Headers" type="IDHeader">
+                <parameter id="EnableLink" value="true"/>
+              </component>
+              <component id="Headers" type="NameHeader"/>
+              <component id="Headers" type="ObjectTypeHeader"/>
+              <component id="Headers" type="PathHeader"/>
+              <component id="Headers" type="ValueHeader">
+                <parameter id="Attribute" value="ELFRISODate"/>
+                <parameter id="DisplayContextHelp" value="true"/>
+                <parameter id="EnableLocaleFormatting" value="false"/>
+                <parameter id="EscapeTagsBeforeSave" value="true"/>
+                <parameter id="Mandatory" value="NotMandatory"/>
+                <parameter id="Readonly" value="false"/>
+                <parameter id="ShowInvalidInheritedValues" value="false"/>
+                <parameter id="ShowLOVIDs" value="false"/>
+                <parameter id="nowrap" value="false"/>
+              </component>
+            </parameter-list>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter id="ClearFiltersAfterSearch" value="true"/>
+      <parameter id="CollapseSearchCanvas" value="false"/>
+      <parameter id="EnableWorkflowSelection" value="false"/>
+      <parameter id="ShouldSearchDataContainers" value="true"/>
+      <parameter id="ShowTitle" value="true"/>
+      <parameter id="Title" value="Advanced Search A"/>
+      <parameter-list id="SearchCriteria">
+        <component id="SearchCriteria" type="BelowSearchDescriptor">
+          <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.BelowSearchDescriptor.Title"/>
+        </component>
+        <component id="SearchCriteria" type="ValueSearchDescriptor">
+          <parameter id="IncludeInheritedValues" value="false"/>
+          <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.ValueSearchDescriptor.Title"/>
+        </component>
+        <component id="SearchCriteria" type="ObjectTypeSearchDescriptor">
+          <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.ObjectTypeSearchDescriptor.Title"/>
+        </component>
+        <component id="SearchCriteria" type="SearchFromListDescriptor">
+          <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.SearchFromListDescriptor.Title"/>
+        </component>
+        <component id="SearchCriteria" type="NameIdSearchDescriptor">
+          <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.NameIdSearchDescriptor.Title"/>
+        </component>
+        <component id="SearchCriteria" type="MissingMandatorySearchDescriptor">
+          <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.MissingMandatorySearchDescriptor.Title"/>
+        </component>
+        <component id="SearchCriteria" type="UnapprovedSearchDescriptor">
+          <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.ApprovalStatusSearchDescriptor.Title"/>
+        </component>
+        <component id="SearchCriteria" type="WorkflowSearchDescriptor">
+          <parameter id="StatusFlagEnabled" value="false"/>
+          <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.WorkflowSearchDescriptor.Title"/>
+        </component>
+      </parameter-list>
+    </screen>
+    <screen id="AdvancedSearchScreenB" type="AdvancedSearchScreen">
+      <component id="NodeList" type="NodeList">
+        <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
+        <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
+        <parameter id="DefaultSortingOrder" value="Ascending"/>
+        <parameter id="EnableDefaultSorting" value="true"/>
+        <parameter id="HideSelectAllButton" value="false"/>
+        <parameter id="HideStandardButtons" value="false"/>
+        <parameter id="ID" value="Default"/>
+        <parameter id="IncludeLabels" value="true"/>
+        <parameter id="LookupScreenTypeForNavigation" value="true"/>
+        <parameter id="PageSize" value="50"/>
+        <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
+        <parameter id="ToolbarHeight" value="30"/>
+        <parameter id="UseDetailsOverlay" value="false"/>
+        <parameter-list id="DisplayModes">
+          <component id="DisplayModes" type="TableDisplayMode">
+            <parameter id="ColumnsResizable" value="false"/>
+            <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+            <parameter id="DisplayModeHeight" value="600"/>
+            <parameter id="EnableFiltering" value="false"/>
+            <parameter id="MinColumnsWidth" value="0"/>
+            <parameter id="ShowDetails" value="false"/>
+            <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+            <parameter id="showTopItemDetailsOnLoad" value="false"/>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter id="ClearFiltersAfterSearch" value="true"/>
+      <parameter id="CollapseSearchCanvas" value="false"/>
+      <parameter id="EnableWorkflowSelection" value="false"/>
+      <parameter id="ShouldSearchDataContainers" value="true"/>
+      <parameter id="ShowTitle" value="true"/>
+      <parameter id="Title" value="Advanced Search B"/>
+      <parameter-list id="GroupIDS">
+        <parameter value="LAAL"/>
+      </parameter-list>
+      <parameter-list id="SearchCriteria">
+        <component id="SearchCriteria" type="BelowSearchDescriptor">
+          <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.BelowSearchDescriptor.Title"/>
+        </component>
+        <component id="SearchCriteria" type="ValueSearchDescriptor">
+          <parameter id="IncludeInheritedValues" value="false"/>
+          <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.ValueSearchDescriptor.Title"/>
+        </component>
+        <component id="SearchCriteria" type="ObjectTypeSearchDescriptor">
+          <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.ObjectTypeSearchDescriptor.Title"/>
+        </component>
+        <component id="SearchCriteria" type="SearchFromListDescriptor">
+          <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.SearchFromListDescriptor.Title"/>
+        </component>
+        <component id="SearchCriteria" type="NameIdSearchDescriptor">
+          <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.NameIdSearchDescriptor.Title"/>
+        </component>
+        <component id="SearchCriteria" type="MissingMandatorySearchDescriptor">
+          <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.MissingMandatorySearchDescriptor.Title"/>
+        </component>
+        <component id="SearchCriteria" type="UnapprovedSearchDescriptor">
+          <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.ApprovalStatusSearchDescriptor.Title"/>
+        </component>
+        <component id="SearchCriteria" type="WorkflowSearchDescriptor">
+          <parameter id="StatusFlagEnabled" value="false"/>
+          <parameter id="Title" value="i18n.stibo.portal.advancedsearch.server.domain.impl.WorkflowSearchDescriptor.Title"/>
+        </component>
+      </parameter-list>
+    </screen>
+    <screen id="CreateItem_Enrich" type="NodeDetails">
+      <component id="Breadcrumb" type="ProductSufficiencyCard">
+        <parameter id="BreadcrumbType" value="COPY_AND_SHARE"/>
+      </component>
+      <component id="Buttons" type="Buttons">
+        <parameter-list id="Actions">
+          <component id="Actions" type="SubmitAction">
+            <component id="NavigateToHandler" type="TaskListNavigateToHandler">
+              <parameter id="FollowTask" value="false"/>
+              <parameter id="OnlySimpleTasks" value="true"/>
+              <parameter id="ScreenID" value="TaskList_CreateItem"/>
+            </component>
+            <parameter id="AssignCaption" value="i18n.stibo.SubmitAction.AssignCaption"/>
+            <parameter id="ButtonLabel" value="i18n.stibo.SubmitAction.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+            <parameter id="CssClass" value="SubmitButton"/>
+            <parameter id="DefaultAssigneeLabel" value="i18n.stibo.SubmitAction.DefaultAssigneeLabel"/>
+            <parameter id="DefaultButtonLabel" value="i18n.stibo.SubmitAction.DefaultLabel"/>
+            <parameter id="EnforceValidity" value="true"/>
+            <parameter id="ExpandGroups" value="false"/>
+            <parameter id="GoToOldStateSelection" value="false"/>
+            <parameter id="GroupEvents" value="false"/>
+            <parameter id="GroupListPrefix" value="i18n.stibo.SubmitAction.GroupListPrefix"/>
+            <parameter id="ProcessNoteCaption" value="i18n.stibo.SubmitAction.ProcessNoteCaption"/>
+            <parameter id="ShowSubmitDialog" value="false"/>
+            <parameter id="SubmitDialogCaption" value="i18n.stibo.SubmitAction.SubmitDialogCaption"/>
+            <parameter id="UserListPrefix" value="i18n.stibo.SubmitAction.UserListPrefix"/>
+            <parameter-list id="WorkflowVariables">
+              <parameter value="SubmitMessage"/>
+            </parameter-list>
+          </component>
+          <component id="Actions" type="SaveAction">
+            <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+            <parameter id="EnforceValidity" value="false"/>
+            <parameter id="ReloadAfterSave" value="true"/>
+          </component>
+          <component id="Actions" type="ResetAction">
+            <parameter id="ButtonLabel" value="i18n.stibo.ResetAction.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+          </component>
+        </parameter-list>
+      </component>
+      <component id="Main" type="TabControl">
+        <parameter id="DirtyWarning" value="false"/>
+        <parameter-list id="TabPages">
+          <component id="TabPages" type="TabPage">
+            <component id="TabContent" type="NodeEditor">
+              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+              <parameter id="LabelLayout" value="LEFT"/>
+              <parameter-list id="Rows">
+                <component id="Rows" type="ApprovalStatus">
+                  <parameter id="Label" value="i18n.stibo.portal.server.components.value.ApprovalStatusServerComponent.default.Label"/>
+                  <parameter id="MessageFormatCompleteApproved" value="i18n.stibo.portal.server.components.value.ApprovalStatusServerComponent.default.approved.complete"/>
+                  <parameter id="MessageFormatContextApproved" value="i18n.stibo.portal.server.components.value.ApprovalStatusServerComponent.default.approved.context"/>
+                  <parameter id="MessageFormatNeverApproved" value="i18n.stibo.portal.server.components.value.ApprovalStatusServerComponent.default.approved.never"/>
+                  <parameter id="MessageFormatNotApproved" value="i18n.stibo.portal.server.components.value.ApprovalStatusServerComponent.default.approved.not"/>
+                </component>
+                <component id="Rows" type="IdValue">
+                  <parameter id="CssClass" value="stibo-IdValue"/>
+                  <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+                </component>
+                <component id="Rows" type="NameValue">
+                  <parameter id="CssClass" value="stibo-NameValue"/>
+                  <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+                  <parameter id="Mandatory" value="false"/>
+                  <parameter id="ReadOnly" value="false"/>
+                </component>
+              </parameter-list>
+            </component>
+            <parameter id="Lazy" value="true"/>
+            <parameter id="Title" value="ID"/>
+          </component>
+          <component id="TabPages" type="TabPage">
+            <component id="TabContent" type="NodeEditor">
+              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+              <parameter id="LabelLayout" value="LEFT"/>
+              <parameter-list id="Rows">
+                <component id="Rows" type="ValueGroup">
+                  <parameter id="AttributeGroup" value="Global"/>
+                  <parameter id="DisplayContextHelp" value="true"/>
+                  <parameter id="DisplayMode" value="Merged"/>
+                  <parameter id="DisplayValueHistory" value="false"/>
+                  <parameter id="EnableLocaleFormatting" value="false"/>
+                  <parameter id="EnableStepTags" value="false"/>
+                  <parameter id="EnableTagConversion" value="false"/>
+                  <parameter id="FilterAttributeType" value="Both"/>
+                  <parameter id="IncludeReferences" value="true"/>
+                  <parameter id="MandatoryGroup" value="false"/>
+                  <parameter id="MaxSuggestions" value="10"/>
+                  <parameter id="ReadOnly" value="false"/>
+                  <parameter id="RichTextEditing" value="Never"/>
+                  <parameter id="ShowLOVIDs" value="false"/>
+                  <parameter id="SortLOVByID" value="false"/>
+                  <parameter id="SuggestOracle" value="false"/>
+                </component>
+              </parameter-list>
+            </component>
+            <parameter id="Lazy" value="true"/>
+            <parameter id="Title" value="Global Attributes"/>
+          </component>
+          <component id="TabPages" type="TabPage">
+            <component id="TabContent" type="NodeEditor">
+              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+              <parameter id="LabelLayout" value="LEFT"/>
+              <parameter-list id="Rows">
+                <component id="Rows" type="ValueGroup">
+                  <parameter id="AttributeGroup" value="Category Specific"/>
+                  <parameter id="DisplayContextHelp" value="true"/>
+                  <parameter id="DisplayMode" value="Merged"/>
+                  <parameter id="DisplayValueHistory" value="false"/>
+                  <parameter id="EnableLocaleFormatting" value="false"/>
+                  <parameter id="EnableStepTags" value="false"/>
+                  <parameter id="EnableTagConversion" value="false"/>
+                  <parameter id="FilterAttributeType" value="Both"/>
+                  <parameter id="IncludeReferences" value="true"/>
+                  <parameter id="MandatoryGroup" value="false"/>
+                  <parameter id="MaxSuggestions" value="10"/>
+                  <parameter id="ReadOnly" value="false"/>
+                  <parameter id="RichTextEditing" value="Never"/>
+                  <parameter id="ShowLOVIDs" value="false"/>
+                  <parameter id="SortLOVByID" value="false"/>
+                  <parameter id="SuggestOracle" value="false"/>
+                </component>
+              </parameter-list>
+            </component>
+            <parameter id="Lazy" value="true"/>
+            <parameter id="Title" value="Category Specific"/>
+          </component>
+          <component id="TabPages" type="TabPage">
+            <component id="TabContent" type="NodeEditor">
+              <parameter id="ContextHelpMode" value="HIDEBEHINDICON"/>
+              <parameter id="LabelLayout" value="LEFT"/>
+              <parameter-list id="Rows">
+                <component id="Rows" type="Value">
+                  <parameter id="Attribute" value="3b8d7d7e-9ff9-4b2b-99ca-57a1ba19eb94"/>
+                  <parameter id="DisplayContextHelp" value="true"/>
+                  <parameter id="DisplayValueHistory" value="true"/>
+                  <parameter id="EnableLocaleFormatting" value="false"/>
+                  <parameter id="EnableStepTags" value="false"/>
+                  <parameter id="EnableTagConversion" value="false"/>
+                  <parameter id="Mandatory" value="false"/>
+                  <parameter id="MaxSuggestions" value="10"/>
+                  <parameter id="ReadOnly" value="false"/>
+                  <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+                  <parameter id="ShowLOVIDs" value="false"/>
+                  <parameter id="SortLOVByID" value="false"/>
+                  <parameter id="SuggestOracle" value="false"/>
+                </component>
+                <component id="Rows" type="Value">
+                  <parameter id="Attribute" value="15271107-6854-40a9-bcd6-b320407d8544"/>
+                  <parameter id="DisplayContextHelp" value="true"/>
+                  <parameter id="DisplayValueHistory" value="true"/>
+                  <parameter id="EnableLocaleFormatting" value="false"/>
+                  <parameter id="EnableStepTags" value="false"/>
+                  <parameter id="EnableTagConversion" value="false"/>
+                  <parameter id="Mandatory" value="false"/>
+                  <parameter id="MaxSuggestions" value="10"/>
+                  <parameter id="ReadOnly" value="false"/>
+                  <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+                  <parameter id="ShowLOVIDs" value="false"/>
+                  <parameter id="SortLOVByID" value="false"/>
+                  <parameter id="SuggestOracle" value="false"/>
+                </component>
+                <component id="Rows" type="Value">
+                  <parameter id="Attribute" value="fed33381-f352-458d-9732-11e1053008c2"/>
+                  <parameter id="DisplayContextHelp" value="true"/>
+                  <parameter id="DisplayValueHistory" value="true"/>
+                  <parameter id="EnableLocaleFormatting" value="false"/>
+                  <parameter id="EnableStepTags" value="false"/>
+                  <parameter id="EnableTagConversion" value="false"/>
+                  <parameter id="Mandatory" value="false"/>
+                  <parameter id="MaxSuggestions" value="10"/>
+                  <parameter id="ReadOnly" value="false"/>
+                  <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+                  <parameter id="ShowLOVIDs" value="false"/>
+                  <parameter id="SortLOVByID" value="false"/>
+                  <parameter id="SuggestOracle" value="false"/>
+                </component>
+              </parameter-list>
+            </component>
+            <parameter id="Lazy" value="false"/>
+            <parameter id="Title" value="Marketing"/>
+          </component>
+          <component id="TabPages" type="TabPage">
+            <component id="TabContent" type="NodeEditor">
+              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+              <parameter id="LabelLayout" value="LEFT"/>
+              <parameter-list id="Rows">
+                <component id="Rows" type="ValueGroup">
+                  <parameter id="AttributeGroup" value="Attribute group root"/>
+                  <parameter id="DisplayContextHelp" value="true"/>
+                  <parameter id="DisplayMode" value="Sectioned"/>
+                  <parameter id="DisplayValueHistory" value="false"/>
+                  <parameter id="EnableLocaleFormatting" value="false"/>
+                  <parameter id="EnableStepTags" value="false"/>
+                  <parameter id="EnableTagConversion" value="false"/>
+                  <parameter id="FilterAttributeType" value="Both"/>
+                  <parameter id="IncludeReferences" value="true"/>
+                  <parameter id="MandatoryGroup" value="false"/>
+                  <parameter id="MaxSuggestions" value="10"/>
+                  <parameter id="ReadOnly" value="false"/>
+                  <parameter id="RichTextEditing" value="Never"/>
+                  <parameter id="ShowLOVIDs" value="false"/>
+                  <parameter id="SortLOVByID" value="false"/>
+                  <parameter id="SuggestOracle" value="false"/>
+                </component>
+              </parameter-list>
+            </component>
+            <parameter id="Lazy" value="true"/>
+            <parameter id="Title" value="All Attributes"/>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter id="EnforceValidity" value="false"/>
+      <parameter id="ShowTitle" value="true"/>
+      <parameter id="ShowWarning" value="false"/>
+      <parameter id="Title" value="Create Item - Enrich"/>
+    </screen>
+    <screen id="CreateItem_Final" type="NodeDetails">
+      <component id="Buttons" type="Buttons">
+        <parameter-list id="Actions">
+          <component id="Actions" type="SubmitAction">
+            <component id="NavigateToHandler" type="TaskListNavigateToHandler">
+              <parameter id="ScreenID" value="TaskList_CreateItem"/>
+            </component>
+            <parameter id="AssignCaption" value="i18n.stibo.SubmitAction.AssignCaption"/>
+            <parameter id="ButtonLabel" value="i18n.stibo.SubmitAction.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+            <parameter id="CssClass" value="SubmitButton"/>
+            <parameter id="DefaultAssigneeLabel" value="i18n.stibo.SubmitAction.DefaultAssigneeLabel"/>
+            <parameter id="DefaultButtonLabel" value="i18n.stibo.SubmitAction.DefaultLabel"/>
+            <parameter id="EnforceValidity" value="true"/>
+            <parameter id="ExpandGroups" value="false"/>
+            <parameter id="GoToOldStateSelection" value="false"/>
+            <parameter id="GroupEvents" value="false"/>
+            <parameter id="GroupListPrefix" value="i18n.stibo.SubmitAction.GroupListPrefix"/>
+            <parameter id="ProcessNoteCaption" value="i18n.stibo.SubmitAction.ProcessNoteCaption"/>
+            <parameter id="ShowSubmitDialog" value="false"/>
+            <parameter id="SubmitDialogCaption" value="i18n.stibo.SubmitAction.SubmitDialogCaption"/>
+            <parameter id="UserListPrefix" value="i18n.stibo.SubmitAction.UserListPrefix"/>
+            <parameter-list id="WorkflowVariables">
+              <parameter value="SubmitMessage"/>
+            </parameter-list>
+          </component>
+        </parameter-list>
+      </component>
+      <component id="Main" type="NodeEditor">
+        <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+        <parameter id="LabelLayout" value="LEFT"/>
+        <parameter-list id="Rows">
+          <component id="Rows" type="IdValue">
+            <parameter id="CssClass" value="stibo-IdValue"/>
+            <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+          </component>
+          <component id="Rows" type="NameValue">
+            <parameter id="CssClass" value="stibo-NameValue"/>
+            <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+            <parameter id="Mandatory" value="false"/>
+            <parameter id="ReadOnly" value="false"/>
+          </component>
+          <component id="Rows" type="WorkflowVariable">
+            <parameter id="Columns" value="1"/>
+            <parameter id="EnableStepTags" value="false"/>
+            <parameter id="Mandatory" value="false"/>
+            <parameter id="ReadOnly" value="false"/>
+            <parameter id="ShowLOVIDs" value="false"/>
+            <parameter id="SortLOVByID" value="false"/>
+            <parameter id="Variable" value="SubmitMessage"/>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter id="EnforceValidity" value="false"/>
+      <parameter id="ShowTitle" value="true"/>
+      <parameter id="ShowWarning" value="false"/>
+      <parameter id="Title" value="i18n.stibo.NodeDetailsServerComponent.Title"/>
+    </screen>
+    <screen id="CreateItem_Initial" type="NodeDetails">
+      <component id="Buttons" type="Buttons">
+        <parameter-list id="Actions">
+          <component id="Actions" type="SubmitAction">
+            <component id="NavigateToHandler" type="TaskListNavigateToHandler">
+              <parameter id="FollowTask" value="false"/>
+              <parameter id="OnlySimpleTasks" value="true"/>
+              <parameter id="ScreenID" value="TaskList_CreateItem"/>
+            </component>
+            <parameter id="AssignCaption" value="i18n.stibo.SubmitAction.AssignCaption"/>
+            <parameter id="ButtonLabel" value="i18n.stibo.SubmitAction.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+            <parameter id="CssClass" value="SubmitButton"/>
+            <parameter id="DefaultAssigneeLabel" value="i18n.stibo.SubmitAction.DefaultAssigneeLabel"/>
+            <parameter id="DefaultButtonLabel" value="i18n.stibo.SubmitAction.DefaultLabel"/>
+            <parameter id="EnforceValidity" value="true"/>
+            <parameter id="ExpandGroups" value="false"/>
+            <parameter id="GoToOldStateSelection" value="false"/>
+            <parameter id="GroupEvents" value="false"/>
+            <parameter id="GroupListPrefix" value="i18n.stibo.SubmitAction.GroupListPrefix"/>
+            <parameter id="ProcessNoteCaption" value="i18n.stibo.SubmitAction.ProcessNoteCaption"/>
+            <parameter id="ShowSubmitDialog" value="true"/>
+            <parameter id="SubmitDialogCaption" value="i18n.stibo.SubmitAction.SubmitDialogCaption"/>
+            <parameter id="UserListPrefix" value="i18n.stibo.SubmitAction.UserListPrefix"/>
+            <parameter-list id="WorkflowVariables">
+              <parameter value="SubmitMessage"/>
+            </parameter-list>
+          </component>
+        </parameter-list>
+      </component>
+      <component id="Main" type="NodeEditor">
+        <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+        <parameter id="LabelLayout" value="LEFT"/>
+        <parameter-list id="Rows">
+          <component id="Rows" type="IdValue">
+            <parameter id="CssClass" value="stibo-IdValue"/>
+            <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+          </component>
+          <component id="Rows" type="NameValue">
+            <parameter id="CssClass" value="stibo-NameValue"/>
+            <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+            <parameter id="Mandatory" value="false"/>
+            <parameter id="ReadOnly" value="false"/>
+          </component>
+          <component id="Rows" type="WorkflowVariable">
+            <parameter id="Columns" value="1"/>
+            <parameter id="EnableStepTags" value="false"/>
+            <parameter id="Mandatory" value="false"/>
+            <parameter id="ReadOnly" value="false"/>
+            <parameter id="ShowLOVIDs" value="false"/>
+            <parameter id="SortLOVByID" value="false"/>
+            <parameter id="Variable" value="SubmitMessage"/>
+          </component>
+          <component id="Rows" type="Value">
+            <parameter id="Attribute" value="LeafType"/>
+            <parameter id="DisplayContextHelp" value="true"/>
+            <parameter id="DisplayValueHistory" value="false"/>
+            <parameter id="EnableLocaleFormatting" value="false"/>
+            <parameter id="EnableStepTags" value="false"/>
+            <parameter id="EnableTagConversion" value="true"/>
+            <parameter id="Mandatory" value="false"/>
+            <parameter id="MaxSuggestions" value="10"/>
+            <parameter id="ReadOnly" value="true"/>
+            <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+            <parameter id="ShowLOVIDs" value="false"/>
+            <parameter id="SortLOVByID" value="false"/>
+            <parameter id="SuggestOracle" value="false"/>
+          </component>
+          <component id="Rows" type="Value">
+            <parameter id="Attribute" value="PrimarySpecies"/>
+            <parameter id="DisplayContextHelp" value="true"/>
+            <parameter id="DisplayValueHistory" value="false"/>
+            <parameter id="EnableLocaleFormatting" value="false"/>
+            <parameter id="EnableStepTags" value="false"/>
+            <parameter id="EnableTagConversion" value="true"/>
+            <parameter id="Mandatory" value="false"/>
+            <parameter id="MaxSuggestions" value="10"/>
+            <parameter id="ReadOnly" value="true"/>
+            <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+            <parameter id="ShowLOVIDs" value="false"/>
+            <parameter id="SortLOVByID" value="false"/>
+            <parameter id="SuggestOracle" value="false"/>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter id="EnforceValidity" value="false"/>
+      <parameter id="ShowTitle" value="true"/>
+      <parameter id="ShowWarning" value="false"/>
+      <parameter id="Title" value="i18n.stibo.NodeDetailsServerComponent.Title"/>
+    </screen>
+    <screen id="ELFRAttributeManagementScreen" type="AttributeManagementScreen">
+      <component id="Buttons" type="Buttons">
+        <parameter-list id="Actions">
+          <component id="Actions" type="SaveAction"/>
+          <component id="Actions" type="DeleteAction"/>
+          <component id="Actions" type="ResetAction"/>
+        </parameter-list>
+      </component>
+      <component id="Main" type="TabControl">
+        <parameter id="DirtyWarning" value="false"/>
+        <parameter-list id="TabPages">
+          <component id="TabPages" type="TabPage">
+            <component id="TabContent" type="NodeEditor">
+              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+              <parameter id="LabelLayout" value="LEFT"/>
+              <parameter-list id="Rows">
+                <component id="Rows" type="Headline">
+                  <parameter id="CssClass" value="stb-header"/>
+                  <parameter id="HeaderText" value="i18n.stibo.AttributeManagementScreen.Header.Description"/>
+                </component>
+                <component id="Rows" type="Line"/>
+                <component id="Rows" type="IdValue"/>
+                <component id="Rows" type="NameValue"/>
+                <component id="Rows" type="LastEditedBy"/>
+                <component id="Rows" type="AttributeExternallyMaintained"/>
+                <component id="Rows" type="HierarchicalFiltering"/>
+                <component id="Rows" type="AttributeCalculated"/>
+                <component id="Rows" type="ValueTemplate"/>
+                <component id="Rows" type="AttributeType"/>
+                <component id="Rows" type="AttributeDimensionDependencies"/>
+                <component id="Rows" type="MandatoryForApproval"/>
+                <component id="Rows" type="Headline">
+                  <parameter id="CssClass" value="stb-header"/>
+                  <parameter id="HeaderText" value="i18n.stibo.AttributeManagementScreen.Header.Validation"/>
+                </component>
+                <component id="Rows" type="Line"/>
+                <component id="Rows" type="AttributeValidation"/>
+                <component id="Rows" type="Headline">
+                  <parameter id="CssClass" value="stb-header"/>
+                  <parameter id="HeaderText" value="i18n.stibo.AttributeManagementScreen.Header.Groups"/>
+                </component>
+                <component id="Rows" type="Line"/>
+                <component id="Rows" type="AttributeGroupsServerComponent"/>
+              </parameter-list>
+            </component>
+            <parameter id="Lazy" value="false"/>
+            <parameter id="Title" value="i18n.stibo.AttributeManagementScreen.Tab.AttributeDetails"/>
+          </component>
+          <component id="TabPages" type="TabPage">
+            <component id="TabContent" type="AttributeValidityTable"/>
+            <parameter id="Lazy" value="false"/>
+            <parameter id="Title" value="i18n.stibo.AttributeManagementScreen.Tab.Validity"/>
+          </component>
+          <component id="TabPages" type="TabPage">
+            <component id="TabContent" type="AttributeLinkManagement"/>
+            <parameter id="Lazy" value="false"/>
+            <parameter id="Title" value="i18n.stibo.AttributeManagementScreen.Tab.Links"/>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter id="Title" value="i18n.stibo.AttributeManagementScreen.Title"/>
+    </screen>
+    <screen id="ELFRLovManagementScreen" type="ListOfValuesManagementScreen">
+      <component id="Buttons" type="Buttons">
+        <parameter-list id="Actions">
+          <component id="Actions" type="SaveAction">
+            <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+            <parameter id="EnforceValidity" value="false"/>
+            <parameter id="ReloadAfterSave" value="true"/>
+          </component>
+          <component id="Actions" type="DeleteAction">
+            <parameter id="ApproveDeletion" value="false"/>
+            <parameter id="ButtonLabel" value="i18n.stibo.DeleteAction.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+            <parameter id="CssClass" value="DeleteButton"/>
+            <parameter id="DeleteFromWorkflow" value="false"/>
+          </component>
+          <component id="Actions" type="ResetAction">
+            <parameter id="ButtonLabel" value="i18n.stibo.ResetAction.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+          </component>
+        </parameter-list>
+      </component>
+      <component id="Main" type="TabControl">
+        <parameter id="DirtyWarning" value="false"/>
+        <parameter-list id="TabPages">
+          <component id="TabPages" type="TabPage">
+            <component id="TabContent" type="NodeEditor">
+              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+              <parameter id="LabelLayout" value="LEFT"/>
+              <parameter-list id="Rows">
+                <component id="Rows" type="IdValue">
+                  <parameter id="CssClass" value="stibo-IdValue"/>
+                  <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+                </component>
+                <component id="Rows" type="NameValue">
+                  <parameter id="CssClass" value="stibo-NameValue"/>
+                  <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+                  <parameter id="Mandatory" value="false"/>
+                  <parameter id="ReadOnly" value="false"/>
+                </component>
+                <component id="Rows" type="LastEditedBy">
+                  <parameter id="Label" value="i18n.stibo.LastEditedByValue.Label"/>
+                </component>
+                <component id="Rows" type="ListOfValuesDimensionDependencies">
+                  <parameter id="Label" value="i18n.stibo.DimensionDependencies.Label"/>
+                </component>
+                <component id="Rows" type="Headline">
+                  <parameter id="CssClass" value="stb-header"/>
+                  <parameter id="HeaderText" value="i18n.stibo.ListOfValuesManagementScreen.Header.Validation"/>
+                </component>
+                <component id="Rows" type="Line">
+                  <parameter id="CssClass" value="stb-line"/>
+                </component>
+                <component id="Rows" type="ListOfValuesValidation"/>
+                <component id="Rows" type="Headline">
+                  <parameter id="CssClass" value="stb-header"/>
+                  <parameter id="HeaderText" value="i18n.stibo.ListOfValuesManagementScreen.Header.Values"/>
+                </component>
+                <component id="Rows" type="Line">
+                  <parameter id="CssClass" value="stb-line"/>
+                </component>
+                <component id="Rows" type="ListOfValuesValueIds"/>
+              </parameter-list>
+            </component>
+            <parameter id="Lazy" value="false"/>
+            <parameter id="Title" value="i18n.stibo.ListOfValuesManagementScreen.Tab.Details.Title"/>
+          </component>
+          <component id="TabPages" type="TabPage">
+            <component id="TabContent" type="ListOfValuesValues">
+              <parameter id="MaxValues" value="5000"/>
+            </component>
+            <parameter id="Lazy" value="false"/>
+            <parameter id="Title" value="i18n.stibo.ListOfValuesManagementScreen.Tab.Values.Title"/>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter id="Title" value="i18n.stibo.ListOfValuesManagementScreen.Title"/>
+    </screen>
+    <screen id="ELFRUserDetailsScreen" type="UserDetails">
+      <component id="Buttons" type="Buttons">
+        <parameter-list id="Actions">
+          <component id="Actions" type="SaveAction">
+            <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+            <parameter id="EnforceValidity" value="false"/>
+            <parameter id="ReloadAfterSave" value="true"/>
+          </component>
+          <component id="Actions" type="ResetAction">
+            <parameter id="ButtonLabel" value="i18n.stibo.ResetAction.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+          </component>
+        </parameter-list>
+      </component>
+      <component id="Main" type="NodeEditor">
+        <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+        <parameter id="LabelLayout" value="LEFT"/>
+        <parameter-list id="Rows">
+          <component id="Rows" type="UserId">
+            <parameter id="CssClass" value="stibo-UserId"/>
+            <parameter id="Label" value="i18n.stibo.UserId.Label"/>
+          </component>
+          <component id="Rows" type="UserEmail">
+            <parameter id="CssClass" value="stibo-UserEmail"/>
+            <parameter id="Label" value="i18n.stibo.UserEmail.Label"/>
+            <parameter id="Mandatory" value="false"/>
+            <parameter id="ReadOnly" value="false"/>
+          </component>
+          <component id="Rows" type="NameValue">
+            <parameter id="CssClass" value="stibo-NameValue"/>
+            <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+            <parameter id="Mandatory" value="false"/>
+            <parameter id="ReadOnly" value="false"/>
+          </component>
+          <component id="Rows" type="UserPassword">
+            <parameter id="NewPasswordCssClass" value="stibo-UserPassword"/>
+            <parameter id="NewPasswordLabel" value="i18n.stibo.UserPassword.NewPassword"/>
+            <parameter id="OldPasswordCssClass" value="stibo-UserPassword"/>
+            <parameter id="OldPasswordLabel" value="i18n.stibo.UserPassword.CurrentPassword"/>
+            <parameter id="RepeatPasswordCssClass" value="stibo-UserPassword"/>
+            <parameter id="RepeatPasswordLabel" value="i18n.stibo.UserPassword.RepeatedPassword"/>
+            <parameter id="requestExistingPassword" value="false"/>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter id="CssClass" value="stibo-UserDetails"/>
+      <parameter id="Title" value="i18n.stibo.UserDetails.Title"/>
+    </screen>
+    <screen id="Generic Product Screen" type="NodeDetails">
+      <component id="Buttons" type="Buttons">
+        <parameter-list id="Actions">
+          <component id="Actions" type="SaveAction">
+            <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+            <parameter id="EnforceValidity" value="false"/>
+            <parameter id="ReloadAfterSave" value="true"/>
+          </component>
+        </parameter-list>
+      </component>
+      <component id="Main" type="TabControl">
+        <parameter id="DirtyWarning" value="false"/>
+        <parameter-list id="TabPages">
+          <component id="TabPages" type="TabPage">
+            <component id="TabContent" type="NodeEditor">
+              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+              <parameter id="LabelLayout" value="LEFT"/>
+              <parameter-list id="Rows">
+                <component id="Rows" type="IdValue">
+                  <parameter id="CssClass" value="stibo-IdValue"/>
+                  <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+                </component>
+                <component id="Rows" type="ObjectType">
+                  <parameter id="Label" value="i18n.stibo.ObjectType.Label"/>
+                  <parameter id="Mandatory" value="false"/>
+                  <parameter id="ReadOnly" value="false"/>
+                </component>
+                <component id="Rows" type="NameValue">
+                  <parameter id="CssClass" value="stibo-NameValue"/>
+                  <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+                  <parameter id="Mandatory" value="false"/>
+                  <parameter id="ReadOnly" value="false"/>
+                </component>
+                <component id="Rows" type="ProductAttributeLinks">
+                  <parameter id="Label" value="i18n.stibo.ProductAttributeLinks.Label"/>
+                  <parameter id="ReadOnly" value="false"/>
+                  <parameter id="ShowInherited" value="false"/>
+                  <parameter id="TableTitle" value="i18n.stibo.ProductAttributeLinks.TableTitle"/>
+                </component>
+              </parameter-list>
+            </component>
+            <parameter id="Lazy" value="true"/>
+            <parameter id="Title" value="ID"/>
+          </component>
+          <component id="TabPages" type="SubScreenTabPage">
+            <parameter id="DetailsScreen" value="Generic_Children"/>
+            <parameter id="Lazy" value="true"/>
+            <parameter id="Title" value="Children"/>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter id="EnforceValidity" value="false"/>
+      <parameter id="ShowTitle" value="true"/>
+      <parameter id="ShowWarning" value="false"/>
+      <parameter id="Title" value="i18n.stibo.NodeDetailsServerComponent.Title"/>
+    </screen>
+    <screen id="Generic_Children" type="ChildrenOfTypes">
+      <component id="Component" type="NodeList">
+        <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
+        <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
+        <parameter id="DefaultSortingOrder" value="Ascending"/>
+        <parameter id="EnableDefaultSorting" value="true"/>
+        <parameter id="HideSelectAllButton" value="false"/>
+        <parameter id="HideStandardButtons" value="true"/>
+        <parameter id="ID" value="aadeabebbd"/>
+        <parameter id="IncludeLabels" value="true"/>
+        <parameter id="LookupScreenTypeForNavigation" value="true"/>
+        <parameter id="PageSize" value="50"/>
+        <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
+        <parameter id="ToolbarHeight" value="30"/>
+        <parameter id="UseDetailsOverlay" value="false"/>
+        <parameter-list id="Actions">
+          <component id="Actions" type="CreateProductAction">
+            <parameter id="ButtonLabel" value="i18n.stibo.portal.server.components.actions.CreateProductActionServerComponent.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+            <parameter id="CancelButtonLabel" value="i18n.stibo.portal.server.components.actions.CreateObjectActionServerComponent.CancelButton.Label"/>
+            <parameter id="DialogTitle" value="i18n.stibo.portal.server.components.actions.CreateProductActionServerComponent.Dialog.Title"/>
+            <parameter id="Label" value="i18n.stibo.portal.server.components.actions.CreateObjectActionServerComponent.Label"/>
+            <parameter id="OkButtonLabel" value="i18n.stibo.portal.server.components.actions.CreateObjectActionServerComponent.OkButton.Label"/>
+            <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.CreateProductActionServerComponent.ToolTip"/>
+            <parameter-list id="ObjectTypesAllowed">
+              <parameter value="Products"/>
+              <parameter value="Level1"/>
+              <parameter value="Level2"/>
+              <parameter value="Level3"/>
+              <parameter value="Level4"/>
+            </parameter-list>
+          </component>
+          <component id="Actions" type="BusinessActionWithWebUIBindToolBar">
+            <parameter id="BusinessAction" value="PrefixNameOnSelected"/>
+            <parameter id="ContextHelp" value="i18n.stibo.BusinessActionWithWebUIBind.tooltip"/>
+            <parameter id="DisableForEmptySelection" value="true"/>
+            <parameter id="DisableReload" value="false"/>
+            <parameter id="EnableOnWorkflowOnly" value="false"/>
+            <parameter id="Label" value="Add Prefix"/>
+            <parameter id="MaxNumberOfNodes" value="50"/>
+            <parameter id="NodePickerPosition" value="TOP"/>
+            <parameter id="PopupLabel" value="i18n.stibo.BusinessActionWithWebUIBindPopUp.label"/>
+          </component>
+        </parameter-list>
+        <parameter-list id="DisplayModes">
+          <component id="DisplayModes" type="MultiEditDisplayMode">
+            <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.MultiEditDisplayMode"/>
+            <parameter id="DisplayModeHeight" value="600"/>
+            <parameter id="EnableFiltering" value="true"/>
+            <parameter id="EnableFreezePanes" value="false"/>
+            <parameter id="EnableItemSelection" value="false"/>
+            <parameter id="EnableUserConfigurableView" value="false"/>
+            <parameter id="GroupsInitiallyOpen" value="true"/>
+            <parameter id="HeaderTitleInformation" value="CHECKBOX_ONLY="/>
+            <parameter id="HideSidePanel" value="false"/>
+            <parameter id="PropertyDirection" value="HORIZONTAL"/>
+            <parameter id="ReloadAfterSave" value="false"/>
+            <parameter id="ShowDetails" value="false"/>
+            <parameter id="ShowEmptyGroupHeaders" value="false"/>
+            <parameter id="ShowGroupHeaders" value="false"/>
+            <parameter id="ShowOnlyValidAttributes" value="true"/>
+            <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.MultiEditDisplayMode"/>
+            <parameter id="UseImmediateSave" value="false"/>
+            <parameter id="showTopItemDetailsOnLoad" value="false"/>
+            <parameter-list id="Headers">
+              <component id="Headers" type="IDHeader">
+                <parameter id="EnableLink" value="true"/>
+              </component>
+              <component id="Headers" type="TitleHeader">
+                <parameter id="EnableLink" value="true"/>
+              </component>
+              <component id="Headers" type="ObjectTypeHeader"/>
+              <component id="Headers" type="NameHeader"/>
+            </parameter-list>
+          </component>
+          <component id="DisplayModes" type="TableDisplayMode">
+            <parameter id="ColumnsResizable" value="false"/>
+            <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+            <parameter id="DisplayModeHeight" value="600"/>
+            <parameter id="EnableFiltering" value="false"/>
+            <parameter id="MinColumnsWidth" value="0"/>
+            <parameter id="ShowDetails" value="false"/>
+            <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+            <parameter id="showTopItemDetailsOnLoad" value="false"/>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter-list id="ObjectTypes">
+        <parameter value="Product user-type root"/>
+        <parameter value="Products"/>
+        <parameter value="DiscontinuedProducts"/>
+        <parameter value="PackagingHierarchyRoot"/>
+        <parameter value="ProductOverrides"/>
+        <parameter value="BusinessUnitRoot"/>
+        <parameter value="Level4"/>
+        <parameter value="Level3"/>
+        <parameter value="Level2"/>
+        <parameter value="Level1"/>
+        <parameter value="Family"/>
+        <parameter value="Leaf"/>
+        <parameter value="Branch"/>
+        <parameter value="ProductRoot"/>
+        <parameter value="Item"/>
+      </parameter-list>
+    </screen>
+    <screen id="Initiate_Item" type="InitiateItem">
+      <component id="Buttons" type="Buttons">
+        <parameter-list id="Actions">
+          <component id="Actions" type="SaveAction">
+            <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+            <parameter id="EnforceValidity" value="false"/>
+            <parameter id="ReloadAfterSave" value="true"/>
+          </component>
+        </parameter-list>
+      </component>
+      <component id="Main" type="NodeEditor">
+        <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+        <parameter id="LabelLayout" value="LEFT"/>
+        <parameter-list id="Rows">
+          <component id="Rows" type="ParentSelector">
+            <component id="NodePickerDialog" type="NodePickerDialog">
+              <component id="RootNodePlugin" type="StaticRootNodes">
+                <parameter-list id="RootNodeURLs">
+                  <parameter value="step://product?id=ProductsRoot"/>
+                </parameter-list>
+              </component>
+              <parameter id="Title" value="i18n.stibo.NodePickerDialog.Title"/>
+              <parameter-list id="TabPages">
+                <component id="TabPages" type="NodesOfObjectTypeTab">
+                  <parameter id="MaxListSize" value="100"/>
+                  <parameter-list id="Headers">
+                    <component id="Headers" type="TitleHeader">
+                      <parameter id="EnableLink" value="true"/>
+                    </component>
+                  </parameter-list>
+                  <parameter-list id="ValidObjectTypes">
+                    <parameter value="Level4"/>
+                  </parameter-list>
+                </component>
+              </parameter-list>
+            </component>
+            <parameter id="Label" value="i18n.stibo.ParentSelector.Label"/>
+            <parameter id="Mandatory" value="true"/>
+            <parameter-list id="LeafObjectTypes">
+              <parameter value="Leaf"/>
+            </parameter-list>
+          </component>
+          <component id="Rows" type="NameValue">
+            <parameter id="CssClass" value="stibo-NameValue"/>
+            <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+            <parameter id="Mandatory" value="false"/>
+            <parameter id="ReadOnly" value="false"/>
+          </component>
+          <component id="Rows" type="Value">
+            <parameter id="Attribute" value="ItemKey"/>
+            <parameter id="DisplayContextHelp" value="true"/>
+            <parameter id="DisplayValueHistory" value="false"/>
+            <parameter id="EnableLocaleFormatting" value="false"/>
+            <parameter id="EnableStepTags" value="false"/>
+            <parameter id="EnableTagConversion" value="true"/>
+            <parameter id="Mandatory" value="false"/>
+            <parameter id="MaxSuggestions" value="10"/>
+            <parameter id="ReadOnly" value="false"/>
+            <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+            <parameter id="ShowLOVIDs" value="false"/>
+            <parameter id="SortLOVByID" value="false"/>
+            <parameter id="SuggestOracle" value="false"/>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter id="CssClass" value="stibo-InitiateItem"/>
+      <parameter id="DisableAutoVendor" value="true"/>
+      <parameter id="ForwardingScreen" value="homepage"/>
+      <parameter id="ObjectTypeID" value="Item"/>
+      <parameter id="Root" value="step://product?id=102609"/>
+      <parameter id="Title" value="i18n.stibo.InitiateItem.Title"/>
+    </screen>
+    <screen id="Item_Screen" type="NodeDetails">
+      <component id="Breadcrumb" type="ProductSufficiencyCard">
+        <parameter id="BreadcrumbType" value="COPY_AND_SHARE"/>
+      </component>
+      <component id="Buttons" type="Buttons">
+        <parameter-list id="Actions">
+          <component id="Actions" type="SaveAction">
+            <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+            <parameter id="EnforceValidity" value="false"/>
+            <parameter id="ReloadAfterSave" value="true"/>
+          </component>
+          <component id="Actions" type="BusinessActionWithWebUIBindButton">
+            <component id="NodePickerDialog" type="NodePickerDialog">
+              <component id="RootNodePlugin" type="StaticRootNodes">
+                <parameter-list id="RootNodeURLs">
+                  <parameter value="step://classification?id=ConfigurationsRoot"/>
+                </parameter-list>
+              </component>
+              <parameter id="Title" value="i18n.stibo.NodePickerDialog.Title"/>
+              <parameter-list id="TabPages">
+                <component id="TabPages" type="SearchTableTab">
+                  <parameter id="AutoWildcard" value="false"/>
+                  <parameter id="CharactersBeforeWildcard" value="1"/>
+                  <parameter id="Title" value="i18n.stibo.NodePickerDialog.SearchTabTitle"/>
+                  <parameter id="TypeAheadEnabled" value="false"/>
+                  <parameter id="UseSearchPluginsForTypeahead" value="true"/>
+                </component>
+              </parameter-list>
+            </component>
+            <parameter id="BusinessAction" value="PrintDataContainers"/>
+            <parameter id="ButtonType" value="ICON_AND_TEXT"/>
+            <parameter id="ContextHelp" value="i18n.stibo.BusinessActionWithWebUIBind.tooltip"/>
+            <parameter id="EnableOnWorkflowOnly" value="false"/>
+            <parameter id="EnforceValidity" value="false"/>
+            <parameter id="Icon" value="play_arrow"/>
+            <parameter id="Label" value="i18n.stibo.BusinessActionWithWebUIBind.label"/>
+            <parameter id="NodePickerPosition" value="TOP"/>
+            <parameter id="PopupLabel" value="i18n.stibo.BusinessActionWithWebUIBindPopUp.label"/>
+            <parameter id="SaveBeforeExecuting" value="false"/>
+          </component>
+          <component id="Actions" type="BusinessActionWithWebUIBindButton">
+            <component id="NodePickerDialog" type="NodePickerDialog">
+              <component id="RootNodePlugin" type="StaticRootNodes">
+                <parameter-list id="RootNodeURLs">
+                  <parameter value="step://product?id=102609"/>
+                </parameter-list>
+              </component>
+              <parameter id="Title" value="i18n.stibo.NodePickerDialog.Title"/>
+              <parameter-list id="TabPages">
+                <component id="TabPages" type="SearchTableTab">
+                  <parameter id="AutoWildcard" value="true"/>
+                  <parameter id="CharactersBeforeWildcard" value="1"/>
+                  <parameter id="Title" value="i18n.stibo.NodePickerDialog.SearchTabTitle"/>
+                  <parameter id="TypeAheadEnabled" value="false"/>
+                  <parameter id="UseSearchPluginsForTypeahead" value="true"/>
+                </component>
+                <component id="TabPages" type="BrowseTab"/>
+              </parameter-list>
+            </component>
+            <parameter id="BusinessAction" value="ELFRLog"/>
+            <parameter id="ButtonType" value="ICON_AND_TEXT"/>
+            <parameter id="ContextHelp" value="i18n.stibo.BusinessActionWithWebUIBind.tooltip"/>
+            <parameter id="EnableOnWorkflowOnly" value="false"/>
+            <parameter id="EnforceValidity" value="false"/>
+            <parameter id="Icon" value="play_arrow"/>
+            <parameter id="Label" value="ELFRLog"/>
+            <parameter id="NodePickerPosition" value="TOP"/>
+            <parameter id="PopupLabel" value="i18n.stibo.BusinessActionWithWebUIBindPopUp.label"/>
+            <parameter id="SaveBeforeExecuting" value="false"/>
+          </component>
+        </parameter-list>
+      </component>
+      <component id="Main" type="TabControl">
+        <parameter id="DirtyWarning" value="false"/>
+        <parameter-list id="TabPages">
+          <component id="TabPages" type="TabPage">
+            <component id="TabContent" type="NodeEditor">
+              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+              <parameter id="LabelLayout" value="LEFT"/>
+              <parameter-list id="Rows">
+                <component id="Rows" type="IdValue">
+                  <parameter id="CssClass" value="stibo-IdValue"/>
+                  <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+                </component>
+                <component id="Rows" type="NameValue">
+                  <parameter id="CssClass" value="stibo-NameValue"/>
+                  <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+                  <parameter id="Mandatory" value="false"/>
+                  <parameter id="ReadOnly" value="false"/>
+                </component>
+                <component id="Rows" type="GloballyConfiguredMultiEditDataContainerServerComponent">
+                  <parameter id="DataContainerType" value="LAALDC"/>
+                  <parameter id="MaxHeight" value="304"/>
+                </component>
+                <component id="Rows" type="GloballyConfiguredMultiEditDataContainerServerComponent">
+                  <parameter id="DataContainerType" value="LAAL_Single_DC"/>
+                  <parameter id="MaxHeight" value="304"/>
+                </component>
+                <component id="Rows" type="Value">
+                  <parameter id="Attribute" value="ELFRFraction"/>
+                  <parameter id="DisplayContextHelp" value="true"/>
+                  <parameter id="DisplayValueHistory" value="false"/>
+                  <parameter id="EnableLocaleFormatting" value="false"/>
+                  <parameter id="EnableStepTags" value="false"/>
+                  <parameter id="EnableTagConversion" value="true"/>
+                  <parameter id="Label" value="Fraction"/>
+                  <parameter id="Mandatory" value="false"/>
+                  <parameter id="MaxSuggestions" value="10"/>
+                  <parameter id="ReadOnly" value="false"/>
+                  <parameter id="ReverseLOVValueIDPresentation" value="false"/>
+                  <parameter id="ShowLOVIDs" value="false"/>
+                  <parameter id="SortLOVByID" value="false"/>
+                  <parameter id="SuggestOracle" value="false"/>
+                </component>
+              </parameter-list>
+            </component>
+            <parameter id="Lazy" value="true"/>
+            <parameter id="Title" value="ID"/>
+          </component>
+          <component id="TabPages" type="TabPage">
+            <component id="TabContent" type="NodeEditor">
+              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+              <parameter id="LabelLayout" value="LEFT"/>
+              <parameter-list id="Rows">
+                <component id="Rows" type="ValueGroup">
+                  <parameter id="AttributeGroup" value="Global"/>
+                  <parameter id="DisplayContextHelp" value="true"/>
+                  <parameter id="DisplayMode" value="Merged"/>
+                  <parameter id="DisplayValueHistory" value="true"/>
+                  <parameter id="EnableLocaleFormatting" value="false"/>
+                  <parameter id="EnableStepTags" value="false"/>
+                  <parameter id="EnableTagConversion" value="false"/>
+                  <parameter id="FilterAttributeType" value="Both"/>
+                  <parameter id="IncludeReferences" value="true"/>
+                  <parameter id="MandatoryGroup" value="false"/>
+                  <parameter id="MaxSuggestions" value="10"/>
+                  <parameter id="ReadOnly" value="false"/>
+                  <parameter id="RichTextEditing" value="Never"/>
+                  <parameter id="ShowLOVIDs" value="false"/>
+                  <parameter id="SortLOVByID" value="false"/>
+                  <parameter id="SuggestOracle" value="false"/>
+                </component>
+              </parameter-list>
+            </component>
+            <parameter id="Lazy" value="true"/>
+            <parameter id="Title" value="Global Attributes"/>
+          </component>
+          <component id="TabPages" type="TabPage">
+            <component id="TabContent" type="NodeEditor">
+              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+              <parameter id="LabelLayout" value="LEFT"/>
+              <parameter-list id="Rows">
+                <component id="Rows" type="ValueGroup">
+                  <parameter id="AttributeGroup" value="Marketing"/>
+                  <parameter id="DisplayContextHelp" value="true"/>
+                  <parameter id="DisplayMode" value="Merged"/>
+                  <parameter id="DisplayValueHistory" value="true"/>
+                  <parameter id="EnableLocaleFormatting" value="false"/>
+                  <parameter id="EnableStepTags" value="false"/>
+                  <parameter id="EnableTagConversion" value="false"/>
+                  <parameter id="FilterAttributeType" value="Both"/>
+                  <parameter id="IncludeReferences" value="true"/>
+                  <parameter id="MandatoryGroup" value="false"/>
+                  <parameter id="MaxSuggestions" value="10"/>
+                  <parameter id="ReadOnly" value="false"/>
+                  <parameter id="RichTextEditing" value="Never"/>
+                  <parameter id="ShowLOVIDs" value="false"/>
+                  <parameter id="SortLOVByID" value="false"/>
+                  <parameter id="SuggestOracle" value="false"/>
+                </component>
+              </parameter-list>
+            </component>
+            <parameter id="Lazy" value="true"/>
+            <parameter id="Title" value="Marketing"/>
+          </component>
+          <component id="TabPages" type="TabPage">
+            <component id="TabContent" type="NodeEditor">
+              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+              <parameter id="LabelLayout" value="LEFT"/>
+              <parameter-list id="Rows">
+                <component id="Rows" type="ValueGroup">
+                  <parameter id="AttributeGroup" value="Category Specific"/>
+                  <parameter id="DisplayContextHelp" value="true"/>
+                  <parameter id="DisplayMode" value="Merged"/>
+                  <parameter id="DisplayValueHistory" value="true"/>
+                  <parameter id="EnableLocaleFormatting" value="false"/>
+                  <parameter id="EnableStepTags" value="false"/>
+                  <parameter id="EnableTagConversion" value="false"/>
+                  <parameter id="FilterAttributeType" value="Both"/>
+                  <parameter id="IncludeReferences" value="true"/>
+                  <parameter id="MandatoryGroup" value="false"/>
+                  <parameter id="MaxSuggestions" value="10"/>
+                  <parameter id="ReadOnly" value="false"/>
+                  <parameter id="RichTextEditing" value="Never"/>
+                  <parameter id="ShowLOVIDs" value="false"/>
+                  <parameter id="SortLOVByID" value="false"/>
+                  <parameter id="SuggestOracle" value="false"/>
+                </component>
+              </parameter-list>
+            </component>
+            <parameter id="Lazy" value="true"/>
+            <parameter id="Title" value="Category Specific"/>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter id="EnforceValidity" value="false"/>
+      <parameter id="ShowTitle" value="true"/>
+      <parameter id="ShowWarning" value="false"/>
+      <parameter id="Title" value="Item Screen"/>
+    </screen>
+    <screen id="LeafScreen" type="NodeDetails">
+      <component id="Buttons" type="Buttons">
+        <parameter-list id="Actions">
+          <component id="Actions" type="SaveAction">
+            <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+            <parameter id="EnforceValidity" value="false"/>
+            <parameter id="ReloadAfterSave" value="true"/>
+          </component>
+        </parameter-list>
+      </component>
+      <component id="Main" type="TabControl">
+        <parameter id="DirtyWarning" value="false"/>
+        <parameter-list id="TabPages">
+          <component id="TabPages" type="TabPage">
+            <component id="TabContent" type="NodeEditor">
+              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+              <parameter id="LabelLayout" value="LEFT"/>
+              <parameter-list id="Rows">
+                <component id="Rows" type="IdValue">
+                  <parameter id="CssClass" value="stibo-IdValue"/>
+                  <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+                </component>
+                <component id="Rows" type="ObjectType">
+                  <parameter id="Label" value="i18n.stibo.ObjectType.Label"/>
+                  <parameter id="Mandatory" value="false"/>
+                  <parameter id="ReadOnly" value="false"/>
+                </component>
+                <component id="Rows" type="NameValue">
+                  <parameter id="CssClass" value="stibo-NameValue"/>
+                  <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+                  <parameter id="Mandatory" value="false"/>
+                  <parameter id="ReadOnly" value="false"/>
+                </component>
+              </parameter-list>
+            </component>
+            <parameter id="Lazy" value="true"/>
+            <parameter id="Title" value="ID"/>
+          </component>
+          <component id="TabPages" type="SubScreenTabPage">
+            <parameter id="DetailsScreen" value="Leaf_Children"/>
+            <parameter id="Lazy" value="true"/>
+            <parameter id="Title" value="Children"/>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter id="EnforceValidity" value="false"/>
+      <parameter id="ShowTitle" value="true"/>
+      <parameter id="ShowWarning" value="false"/>
+      <parameter id="Title" value="Leaf"/>
+    </screen>
+    <screen id="Leaf_Children" type="ChildrenOfTypes">
+      <component id="Component" type="NodeList">
+        <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
+        <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
+        <parameter id="DefaultSortingOrder" value="Ascending"/>
+        <parameter id="EnableDefaultSorting" value="true"/>
+        <parameter id="HideSelectAllButton" value="false"/>
+        <parameter id="HideStandardButtons" value="true"/>
+        <parameter id="ID" value="aadeabebbd"/>
+        <parameter id="IncludeLabels" value="true"/>
+        <parameter id="LookupScreenTypeForNavigation" value="true"/>
+        <parameter id="PageSize" value="50"/>
+        <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
+        <parameter id="ToolbarHeight" value="30"/>
+        <parameter id="UseDetailsOverlay" value="false"/>
+        <parameter-list id="Actions">
+          <component id="Actions" type="CreateProductAction">
+            <parameter id="ButtonLabel" value="i18n.stibo.portal.server.components.actions.CreateProductActionServerComponent.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+            <parameter id="CancelButtonLabel" value="i18n.stibo.portal.server.components.actions.CreateObjectActionServerComponent.CancelButton.Label"/>
+            <parameter id="DialogTitle" value="i18n.stibo.portal.server.components.actions.CreateProductActionServerComponent.Dialog.Title"/>
+            <parameter id="Label" value="i18n.stibo.portal.server.components.actions.CreateObjectActionServerComponent.Label"/>
+            <parameter id="OkButtonLabel" value="i18n.stibo.portal.server.components.actions.CreateObjectActionServerComponent.OkButton.Label"/>
+            <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.CreateProductActionServerComponent.ToolTip"/>
+            <parameter-list id="ObjectTypesAllowed">
+              <parameter value="Products"/>
+              <parameter value="Level1"/>
+              <parameter value="Level2"/>
+              <parameter value="Level3"/>
+              <parameter value="Level4"/>
+            </parameter-list>
+          </component>
+          <component id="Actions" type="BusinessActionWithWebUIBindToolBar">
+            <parameter id="BusinessAction" value="PrefixNameOnSelected"/>
+            <parameter id="ContextHelp" value="i18n.stibo.BusinessActionWithWebUIBind.tooltip"/>
+            <parameter id="DisableForEmptySelection" value="true"/>
+            <parameter id="DisableReload" value="false"/>
+            <parameter id="EnableOnWorkflowOnly" value="false"/>
+            <parameter id="Label" value="Add Prefix"/>
+            <parameter id="MaxNumberOfNodes" value="50"/>
+            <parameter id="NodePickerPosition" value="TOP"/>
+            <parameter id="PopupLabel" value="i18n.stibo.BusinessActionWithWebUIBindPopUp.label"/>
+          </component>
+          <component id="Actions" type="BusinessActionWithWebUIBindToolBar">
+            <parameter id="BusinessAction" value="CreateFamilyFromSelectedItems"/>
+            <parameter id="ContextHelp" value="i18n.stibo.BusinessActionWithWebUIBind.tooltip"/>
+            <parameter id="DisableForEmptySelection" value="true"/>
+            <parameter id="DisableReload" value="false"/>
+            <parameter id="EnableOnWorkflowOnly" value="false"/>
+            <parameter id="Label" value="Create Family From Selected Items"/>
+            <parameter id="MaxNumberOfNodes" value="100"/>
+            <parameter id="NodePickerPosition" value="TOP"/>
+            <parameter id="PopupLabel" value="i18n.stibo.BusinessActionWithWebUIBindPopUp.label"/>
+          </component>
+        </parameter-list>
+        <parameter-list id="DisplayModes">
+          <component id="DisplayModes" type="MultiEditDisplayMode">
+            <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.MultiEditDisplayMode"/>
+            <parameter id="DisplayModeHeight" value="600"/>
+            <parameter id="EnableFiltering" value="true"/>
+            <parameter id="EnableFreezePanes" value="false"/>
+            <parameter id="EnableItemSelection" value="false"/>
+            <parameter id="EnableUserConfigurableView" value="false"/>
+            <parameter id="GroupsInitiallyOpen" value="true"/>
+            <parameter id="HeaderTitleInformation" value="CHECKBOX_ONLY="/>
+            <parameter id="HideSidePanel" value="false"/>
+            <parameter id="PropertyDirection" value="HORIZONTAL"/>
+            <parameter id="ReloadAfterSave" value="false"/>
+            <parameter id="ShowDetails" value="false"/>
+            <parameter id="ShowEmptyGroupHeaders" value="false"/>
+            <parameter id="ShowGroupHeaders" value="false"/>
+            <parameter id="ShowOnlyValidAttributes" value="true"/>
+            <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.MultiEditDisplayMode"/>
+            <parameter id="UseImmediateSave" value="false"/>
+            <parameter id="showTopItemDetailsOnLoad" value="false"/>
+            <parameter-list id="Headers">
+              <component id="Headers" type="IDHeader">
+                <parameter id="EnableLink" value="true"/>
+              </component>
+              <component id="Headers" type="TitleHeader">
+                <parameter id="EnableLink" value="true"/>
+              </component>
+              <component id="Headers" type="ObjectTypeHeader"/>
+              <component id="Headers" type="NameHeader"/>
+            </parameter-list>
+          </component>
+          <component id="DisplayModes" type="TableDisplayMode">
+            <parameter id="ColumnsResizable" value="false"/>
+            <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+            <parameter id="DisplayModeHeight" value="600"/>
+            <parameter id="EnableFiltering" value="false"/>
+            <parameter id="MinColumnsWidth" value="0"/>
+            <parameter id="ShowDetails" value="false"/>
+            <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+            <parameter id="showTopItemDetailsOnLoad" value="false"/>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter-list id="ObjectTypes">
+        <parameter value="Product user-type root"/>
+        <parameter value="Products"/>
+        <parameter value="DiscontinuedProducts"/>
+        <parameter value="PackagingHierarchyRoot"/>
+        <parameter value="ProductOverrides"/>
+        <parameter value="BusinessUnitRoot"/>
+        <parameter value="Level4"/>
+        <parameter value="Level3"/>
+        <parameter value="Level2"/>
+        <parameter value="Level1"/>
+        <parameter value="Family"/>
+        <parameter value="Leaf"/>
+        <parameter value="Branch"/>
+        <parameter value="ProductRoot"/>
+        <parameter value="Item"/>
+      </parameter-list>
+    </screen>
+    <screen id="Name and ID" type="NodeDetails">
+      <component id="Main" type="NodeEditor">
+        <parameter id="LabelLayout" value="LEFT"/>
+        <parameter-list id="Rows">
+          <component id="Rows" type="IdValue">
+            <parameter id="CssClass" value="stibo-IdValue"/>
+            <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+          </component>
+          <component id="Rows" type="NameValue">
+            <parameter id="CssClass" value="stibo-NameValue"/>
+            <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+            <parameter id="Mandatory" value="false"/>
+            <parameter id="ReadOnly" value="false"/>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter id="EnforceValidity" value="false"/>
+      <parameter id="ShowWarning" value="false"/>
+      <parameter id="Title" value="Name and ID"/>
+    </screen>
+    <screen id="Screen_BackgroundProcessNodeDetails" type="BackgroundProcessNodeDetails">
+      <component id="Main" type="NodeEditor">
+        <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+        <parameter id="LabelLayout" value="LEFT"/>
+        <parameter-list id="Rows">
+          <component id="Rows" type="BackgroundProcessStartedBy">
+            <parameter id="Label" value="i18n.stibo.BackgroundProcesses.StartedBy"/>
+          </component>
+          <component id="Rows" type="IdValue">
+            <parameter id="CssClass" value="stibo-IdValue"/>
+            <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+          </component>
+          <component id="Rows" type="BackgroundProcessTemplateID">
+            <parameter id="Label" value="i18n.stibo.BackgroundProcesses.Template"/>
+          </component>
+          <component id="Rows" type="BackgroundProcessStatus">
+            <parameter id="Label" value="i18n.stibo.BackgroundProcesses.Status"/>
+          </component>
+          <component id="Rows" type="BackgroundProcessStartDate">
+            <parameter id="Label" value="i18n.stibo.BackgroundProcesses.Started"/>
+          </component>
+          <component id="Rows" type="BackgroundProcessElapsedTime">
+            <parameter id="Label" value="i18n.stibo.BackgroundProcesses.Elapsed"/>
+          </component>
+          <component id="Rows" type="BackgroundProcessFinishedDate">
+            <parameter id="Label" value="i18n.stibo.BackgroundProcesses.Finished"/>
+          </component>
+          <component id="Rows" type="BackgroundProcessReport">
+            <component id="NodeList" type="NodeList">
+              <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
+              <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
+              <parameter id="DefaultSortingOrder" value="Ascending"/>
+              <parameter id="EnableDefaultSorting" value="true"/>
+              <parameter id="HideSelectAllButton" value="false"/>
+              <parameter id="HideStandardButtons" value="false"/>
+              <parameter id="ID" value="e4b7c493-01a6-415e-8cd0-e2d6bf1709a5"/>
+              <parameter id="IncludeLabels" value="true"/>
+              <parameter id="LookupScreenTypeForNavigation" value="true"/>
+              <parameter id="PageSize" value="50"/>
+              <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
+              <parameter id="ToolbarHeight" value="30"/>
+              <parameter id="UseDetailsOverlay" value="false"/>
+              <parameter-list id="Actions">
+                <component id="Actions" type="DownloadReportAction">
+                  <parameter id="ButtonLabel" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.ToolTip"/>
+                  <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.ActionTitle"/>
+                </component>
+              </parameter-list>
+              <parameter-list id="DisplayModes">
+                <component id="DisplayModes" type="TableDisplayMode">
+                  <parameter id="ColumnsResizable" value="false"/>
+                  <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+                  <parameter id="DisplayModeHeight" value="600"/>
+                  <parameter id="EnableFiltering" value="false"/>
+                  <parameter id="MinColumnsWidth" value="0"/>
+                  <parameter id="ShowDetails" value="false"/>
+                  <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.TableDisplayMode"/>
+                  <parameter id="showTopItemDetailsOnLoad" value="false"/>
+                  <parameter-list id="Headers">
+                    <component id="Headers" type="ReportRowSeqID"/>
+                    <component id="Headers" type="ReportRowType"/>
+                    <component id="Headers" type="ReportRowText"/>
+                  </parameter-list>
+                </component>
+              </parameter-list>
+            </component>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter id="EnforceValidity" value="false"/>
+      <parameter id="ShowTitle" value="true"/>
+      <parameter id="ShowWarning" value="false"/>
+      <parameter id="Title" value="i18n.stibo.NodeDetailsServerComponent.Title"/>
+    </screen>
+    <screen id="TaskList_CreateItem" type="TaskList">
+      <component id="NodeList" type="NodeList">
+        <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
+        <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
+        <parameter id="DefaultSortingOrder" value="Ascending"/>
+        <parameter id="EnableDefaultSorting" value="true"/>
+        <parameter id="HideSelectAllButton" value="false"/>
+        <parameter id="HideStandardButtons" value="false"/>
+        <parameter id="ID" value="ddaffbefdec"/>
+        <parameter id="IncludeLabels" value="true"/>
+        <parameter id="LookupScreenTypeForNavigation" value="true"/>
+        <parameter id="PageSize" value="50"/>
+        <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
+        <parameter id="ToolbarHeight" value="30"/>
+        <parameter id="UseDetailsOverlay" value="false"/>
+        <parameter-list id="Actions">
+          <component id="Actions" type="SubmitFromGridAction">
+            <parameter id="AssignCaption" value="i18n.stibo.SubmitAction.AssignCaption"/>
+            <parameter id="ButtonLabel" value="i18n.stibo.SubmitAction.ToolTip"/>
+            <parameter id="CssClass" value="SubmitButton"/>
+            <parameter id="DefaultAssigneeLabel" value="i18n.stibo.SubmitAction.DefaultAssigneeLabel"/>
+            <parameter id="DefaultButtonLabel" value="i18n.stibo.SubmitAction.DefaultLabel"/>
+            <parameter id="ExpandGroups" value="false"/>
+            <parameter id="GoToOldStateSelection" value="false"/>
+            <parameter id="GroupListPrefix" value="i18n.stibo.SubmitAction.GroupListPrefix"/>
+            <parameter id="ProcessNoteCaption" value="i18n.stibo.SubmitAction.ProcessNoteCaption"/>
+            <parameter id="SubmitDialogCaption" value="i18n.stibo.SubmitAction.SubmitDialogCaption"/>
+            <parameter id="ToolTip" value="i18n.stibo.SubmitAction.EventCaption"/>
+            <parameter id="UserListPrefix" value="i18n.stibo.SubmitAction.UserListPrefix"/>
+            <parameter-list id="WorkflowVariables">
+              <parameter value="SubmitMessage"/>
+            </parameter-list>
+          </component>
+          <component id="Actions" type="CustomExportAction">
+            <parameter id="ButtonLabel" value="Custom Export"/>
+            <parameter id="Charset" value="utf8"/>
+            <parameter id="Delimiter" value="semicolon"/>
+            <parameter id="EnableMapping" value="true"/>
+            <parameter id="ExportOption" value="ONLY_SELECTED_OBJECTS"/>
+            <parameter id="IncludeEmptyColumnsInExport" value="false"/>
+            <parameter id="InheritDataAndReferences" value="false"/>
+            <parameter id="NewLine" value="convert"/>
+            <parameter id="NumberOfSuggestedAttributes" value="50"/>
+            <parameter id="ValueFormatting" value="quotes"/>
+          </component>
+          <component id="Actions" type="ExportCurrentViewActionComponent">
+            <parameter id="ButtonLabel" value="Export Current View"/>
+            <parameter id="IncludeEmptyColumnsInExport" value="false"/>
+            <parameter id="ProcessDescription" value="Export Current View"/>
+            <parameter id="ToolTip" value="Export Current View"/>
+          </component>
+          <component id="Actions" type="ExportAction">
+            <parameter id="ActionTitle" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.ActionTitle"/>
+            <parameter id="CancelDownloadButtonText" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.CancelExportButton"/>
+            <parameter id="DialogTitle" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.DialogTitle"/>
+            <parameter id="IconStyleClass" value="stibo-AssetPort-Toolbar-ActiveIcon-download"/>
+            <parameter id="NoExportConfigurationsMessage" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.NoExportConfigurationsMessage"/>
+            <parameter id="NoSelectionMessage" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.NoSelection"/>
+            <parameter id="ProcessDescription" value="{Action} &quot;{Configuration}&quot;"/>
+            <parameter id="SelectionHeader" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.SelectionHeader"/>
+            <parameter id="StartDownloadButtonText" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.StartExportButton"/>
+            <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.ExportActionServerComponent.ToolTip"/>
+          </component>
+        </parameter-list>
+        <parameter-list id="DisplayModes">
+          <component id="DisplayModes" type="MultiEditDisplayMode">
+            <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.MultiEditDisplayMode"/>
+            <parameter id="DisplayModeHeight" value="600"/>
+            <parameter id="EnableFiltering" value="true"/>
+            <parameter id="EnableFreezePanes" value="false"/>
+            <parameter id="EnableItemSelection" value="false"/>
+            <parameter id="EnableUserConfigurableView" value="false"/>
+            <parameter id="GroupsInitiallyOpen" value="true"/>
+            <parameter id="HeaderTitleInformation" value="CHECKBOX_ONLY="/>
+            <parameter id="HideSidePanel" value="false"/>
+            <parameter id="PropertyDirection" value="HORIZONTAL"/>
+            <parameter id="ReloadAfterSave" value="true"/>
+            <parameter id="ShowDetails" value="false"/>
+            <parameter id="ShowEmptyGroupHeaders" value="false"/>
+            <parameter id="ShowGroupHeaders" value="false"/>
+            <parameter id="ShowOnlyValidAttributes" value="true"/>
+            <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.MultiEditDisplayMode"/>
+            <parameter id="UseImmediateSave" value="true"/>
+            <parameter id="showTopItemDetailsOnLoad" value="false"/>
+            <parameter-list id="Headers">
+              <component id="Headers" type="IDHeader">
+                <parameter id="EnableLink" value="true"/>
+              </component>
+              <component id="Headers" type="NameHeader"/>
+              <component id="Headers" type="ValueGroupHeader">
+                <parameter id="AttributeGroup" value="Global"/>
+                <parameter id="DisplayContextHelp" value="true"/>
+                <parameter id="EnableLocaleFormatting" value="false"/>
+                <parameter id="IncludeNestedGroups" value="false"/>
+                <parameter id="Mandatory" value="NotMandatory"/>
+                <parameter id="ReadOnly" value="false"/>
+                <parameter id="ShowLOVIDs" value="false"/>
+                <parameter id="nowrap" value="false"/>
+              </component>
+            </parameter-list>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter id="AutoNavigateOnAssignment" value="false"/>
+      <parameter id="TitleFormatter" value="i18n.stibo.UserTaskList.TitleFormatter"/>
+    </screen>
+    <screen id="homepage" type="HomePage">
+      <parameter id="CssClass" value="stibo-HomePage"/>
+      <parameter id="DisableTitle" value="false"/>
+      <parameter id="PagingEnabled" value="false"/>
+      <parameter id="Title" value="Welcome to the STEP Web UI"/>
+      <parameter-list id="Content">
+        <component id="Content" type="WidgetGrid">
+          <parameter-list id="Widgets">
+            <component id="Widgets" type="TextWidget">
+              <parameter id="CssClass" value="stb-staticText"/>
+              <parameter id="DoubleWidth" value="true"/>
+              <parameter id="Text" value="Click the gear icon in the corner bar to begin configuring the Web UI. For help and guidance on configuring Web UIs, see the Web User Interfaces section of the online help."/>
+              <parameter id="Title" value="Welcome"/>
+            </component>
+            <component id="Widgets" type="UserWidget">
+              <parameter id="Title" value="i18n.stibo.UserWidgetServerComponent.Title"/>
+              <parameter id="UserDetailsScreen" value="userdetails"/>
+            </component>
+            <component id="Widgets" type="SimpleImporterWidget">
+              <parameter id="ImportNodeType" value="Product"/>
+              <parameter id="ProcessDescription" value="My Process Description"/>
+              <parameter id="Title" value="Simple Importer Widget"/>
+              <parameter-list id="ObjectTypes">
+                <parameter value="Item"/>
+              </parameter-list>
+            </component>
+          </parameter-list>
+        </component>
+        <component id="Content" type="WidgetGrid">
+          <parameter-list id="Widgets">
+            <component id="Widgets" type="StatusSelectorHomepageWidget">
+              <parameter id="AutoRefreshInterval" value="5"/>
+              <parameter id="DoubleWidth" value="false"/>
+              <parameter id="InitiateLabel" value="Initiate"/>
+              <parameter id="ResultScreen" value="TaskList_CreateItem"/>
+              <parameter id="ShowAll" value="true"/>
+              <parameter id="ShowCollectionFilter" value="false"/>
+              <parameter id="ShowGroup" value="true"/>
+              <parameter id="ShowInitiate" value="true"/>
+              <parameter id="ShowStatusFlagHeaders" value="false"/>
+              <parameter id="ShowTotal" value="false"/>
+              <parameter id="ShowUser" value="true"/>
+              <parameter id="StatusFlagsEnabled" value="false"/>
+              <parameter id="TotalLabel" value="Total"/>
+              <parameter id="UseContentIndicator" value="false"/>
+              <parameter id="Workflow" value="CreateItem"/>
+              <parameter-list id="InitiateScreens">
+                <parameter value="Initiate_Item"/>
+              </parameter-list>
+              <parameter-list id="States">
+                <parameter value="Initial"/>
+                <parameter value="Enrich"/>
+                <parameter value="Final"/>
+              </parameter-list>
+            </component>
+          </parameter-list>
+        </component>
+        <component id="Content" type="WidgetGrid">
+          <parameter-list id="Widgets">
+            <component id="Widgets" type="FileLoadingWidget">
+              <parameter id="Label" value="InboundSTEPXML"/>
+              <parameter id="SwapUser" value="false"/>
+              <parameter-list id="InboundIntegrationEndpointParameters">
+                <component id="InboundIntegrationEndpointParameters" type="InboundIntegrationEndpointParameter">
+                  <parameter id="InboundIntegrationEndpoint" value="InboundSTEPXML"/>
+                  <parameter id="Label" value="InboundSTEPXML"/>
+                </component>
+              </parameter-list>
+            </component>
+            <component id="Widgets" type="LinksWidget">
+              <parameter id="DoubleWidth" value="false"/>
+              <parameter id="Title" value="i18n.stibo.LinksWidgetServerComponent.Title"/>
+              <parameter-list id="Rows">
+                <component id="Rows" type="ScreenNavigation">
+                  <parameter id="Screen" value="DataImportScreen"/>
+                </component>
+                <component id="Rows" type="ScreenNavigation">
+                  <parameter id="Screen" value="AdvancedSearchScreenA"/>
+                </component>
+                <component id="Rows" type="ScreenNavigation">
+                  <parameter id="Screen" value="AdvancedSearchScreenB"/>
+                </component>
+                <component id="Rows" type="ScreenNavigation">
+                  <parameter id="Screen" value="ELFRAttributeManagementScreen"/>
+                </component>
+                <component id="Rows" type="ScreenNavigation">
+                  <parameter id="Screen" value="ELFRLovManagementScreen"/>
+                </component>
+              </parameter-list>
+            </component>
+          </parameter-list>
+        </component>
+      </parameter-list>
+    </screen>
+    <screen id="login" type="LoginScreen"/>
+    <screen id="main" type="Main">
+      <parameter id="BottomHeight" value="64"/>
+      <parameter id="DefaultSidePanel" value="SHOWN"/>
+      <parameter id="InfoAlertCloseDelay" value="3"/>
+      <parameter id="LeftWidth" value="-1"/>
+      <parameter id="Resizeable" value="true"/>
+      <parameter id="RightWidth" value="120"/>
+      <parameter id="TopHeight" value="64"/>
+      <parameter-list id="BusinessConditions">
+        <component id="BusinessConditions" type="BusinessCondition">
+          <parameter id="BusinessCondition" value="WebUI_HideBullets"/>
+          <parameter id="Usage" value="Validation"/>
+        </component>
+      </parameter-list>
+      <parameter-list id="Left">
+        <component id="Left" type="PrimaryNavigation">
+          <parameter-list id="MenuItems">
+            <component id="MenuItems" type="GlobalNavigationSearch">
+              <parameter id="Icon" value="search"/>
+              <parameter id="Label" value="Global Search"/>
+              <parameter-list id="SearchConfigurations">
+                <component id="SearchConfigurations" type="GlobalNavigationSearchConfiguration">
+                  <parameter id="Title" value="Name/Id/Attributes"/>
+                  <parameter-list id="SearchPlugins">
+                    <component id="SearchPlugins" type="NameOrIdOrAttributes">
+                      <parameter id="ForceIDNameSearch" value="false"/>
+                      <parameter id="SearchInDataContainers" value="false"/>
+                    </component>
+                  </parameter-list>
+                </component>
+              </parameter-list>
+            </component>
+            <component id="MenuItems" type="TreeItem">
+              <parameter id="HideLeaves" value="false"/>
+              <parameter id="Icon" value="account_tree"/>
+              <parameter id="Label" value="i18n.stibo.webui.primarynavigation.TreeItem.Label"/>
+              <parameter id="ShowLeaves" value="false"/>
+              <parameter id="showRecycle" value="false"/>
+            </component>
+            <component id="MenuItems" type="TreeItem">
+              <parameter id="ForwardingScreen" value="ELFRLovManagementScreen"/>
+              <parameter id="HideLeaves" value="false"/>
+              <parameter id="Icon" value="account_tree"/>
+              <parameter id="Label" value="LOVs"/>
+              <parameter id="ShowLeaves" value="true"/>
+              <parameter id="showRecycle" value="false"/>
+              <parameter-list id="RootNodeURLs">
+                <parameter value="step://ListOfValuesGroup?id=List+Of+Values+group+root"/>
+              </parameter-list>
+            </component>
+            <component id="MenuItems" type="TreeItem">
+              <parameter id="ForwardingScreen" value="ELFRAttributeManagementScreen"/>
+              <parameter id="HideLeaves" value="false"/>
+              <parameter id="Icon" value="account_tree"/>
+              <parameter id="Label" value="Attributes"/>
+              <parameter id="ShowLeaves" value="true"/>
+              <parameter id="showRecycle" value="false"/>
+              <parameter-list id="RootNodeURLs">
+                <parameter value="step://attributegroup?id=Attribute+group+root"/>
+              </parameter-list>
+            </component>
+          </parameter-list>
+        </component>
+      </parameter-list>
+      <parameter-list id="Mappings">
+        <component id="Mappings" type="ScreenMapping">
+          <parameter id="Screen" value="CreateItem_Initial"/>
+          <parameter-list id="Conditions">
+            <component id="Conditions" type="WorkflowCondition">
+              <parameter id="WorkflowDetails" value="CreateItem#PARAMETER_SEPARATOR#Initial#PARAMETER_SEPARATOR#"/>
+            </component>
+          </parameter-list>
+        </component>
+        <component id="Mappings" type="ScreenMapping">
+          <parameter id="Screen" value="CreateItem_Enrich"/>
+          <parameter-list id="Conditions">
+            <component id="Conditions" type="WorkflowCondition">
+              <parameter id="WorkflowDetails" value="CreateItem#PARAMETER_SEPARATOR#Enrich#PARAMETER_SEPARATOR#"/>
+            </component>
+          </parameter-list>
+        </component>
+        <component id="Mappings" type="ScreenMapping">
+          <parameter id="Screen" value="CreateItem_Final"/>
+          <parameter-list id="Conditions">
+            <component id="Conditions" type="WorkflowCondition">
+              <parameter id="WorkflowDetails" value="CreateItem#PARAMETER_SEPARATOR#Final#PARAMETER_SEPARATOR#"/>
+            </component>
+          </parameter-list>
+        </component>
+        <component id="Mappings" type="ScreenMapping">
+          <parameter id="Screen" value="LeafScreen"/>
+          <parameter-list id="Conditions">
+            <component id="Conditions" type="ObjectTypeCondition">
+              <parameter id="ObjectType" value="Leaf"/>
+            </component>
+          </parameter-list>
+        </component>
+        <component id="Mappings" type="ScreenMapping">
+          <parameter id="Screen" value="Item_Screen"/>
+          <parameter-list id="Conditions">
+            <component id="Conditions" type="ObjectTypeCondition">
+              <parameter id="ObjectType" value="Item"/>
+            </component>
+          </parameter-list>
+        </component>
+        <component id="Mappings" type="ScreenMapping">
+          <parameter id="Screen" value="Screen_BackgroundProcessNodeDetails"/>
+          <parameter-list id="Conditions">
+            <component id="Conditions" type="BackgroundProcessCondition"/>
+          </parameter-list>
+        </component>
+        <component id="Mappings" type="ScreenMapping">
+          <parameter id="Screen" value="Generic Product Screen"/>
+          <parameter-list id="Conditions">
+            <component id="Conditions" type="ProductCondition"/>
+          </parameter-list>
+        </component>
+        <component id="Mappings" type="ScreenMapping">
+          <parameter id="Screen" value="userdetails"/>
+          <parameter-list id="Conditions">
+            <component id="Conditions" type="UserCondition"/>
+          </parameter-list>
+        </component>
+        <component id="Mappings" type="ScreenMapping">
+          <parameter id="Screen" value="Name and ID"/>
+          <parameter-list id="Conditions">
+            <component id="Conditions" type="AlwaysTrueCondition"/>
+          </parameter-list>
+        </component>
+      </parameter-list>
+      <parameter-list id="RepresentationList">
+        <component id="RepresentationList" type="DataContainerEditorRepresentation">
+          <parameter-list id="DataContainerTypeRepresentations">
+            <component id="DataContainerTypeRepresentations" type="DataContainerEditorTypeConfiguration">
+              <parameter id="DataContainerType" value="LAALDC"/>
+              <parameter-list id="Representations">
+                <component id="Representations" type="MultiEditTableViewDataContainer">
+                  <parameter id="DataContainerHeaderTitleDisplayInformation" value="CHECKBOX_ONLY="/>
+                  <parameter id="EnableDefaultSorting" value="false"/>
+                  <parameter id="EnableFiltering" value="true"/>
+                  <parameter id="EnableFreezePanes" value="false"/>
+                  <parameter id="EnableSorting" value="true"/>
+                  <parameter id="GroupsInitiallyOpen" value="true"/>
+                  <parameter id="HideSelectAllButton" value="false"/>
+                  <parameter id="Mandatory" value="false"/>
+                  <parameter id="ReadOnly" value="false"/>
+                  <parameter id="ReloadAfterSave" value="true"/>
+                  <parameter id="ShowEmptyGroupHeaders" value="true"/>
+                  <parameter id="ShowGroupHeaders" value="true"/>
+                  <parameter id="showOnlyValidAttributes" value="true"/>
+                  <parameter-list id="Actions">
+                    <component id="Actions" type="AddDataContainerAction">
+                      <parameter id="ButtonLabel" value="i18n.stibo.AddDataContainer.Label"/>
+                      <parameter id="EnforceValidity" value="false"/>
+                      <parameter id="ToolTip" value="i18n.stibo.AddDataContainer.Tooltip"/>
+                    </component>
+                    <component id="Actions" type="DeleteFromGridAction">
+                      <parameter id="ApproveDeletion" value="false"/>
+                      <parameter id="ButtonLabel" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.Label"/>
+                      <parameter id="CancelButtonLabel" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.CancelButton.Label"/>
+                      <parameter id="ConfirmSelection" value="false"/>
+                      <parameter id="CssClass" value="stibo-AssetPort-Toolbar-ActiveIcon-delete"/>
+                      <parameter id="DeleteFromWorkflow" value="false"/>
+                      <parameter id="DialogTitle" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.Dialog.Title"/>
+                      <parameter id="OkButtonLabel" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.OkButton.Label"/>
+                      <parameter id="ToolTip" value="i18n.stibo.portal.server.components.actions.DeleteFromGridActionServerComponent.ToolTip"/>
+                    </component>
+                  </parameter-list>
+                  <parameter-list id="Headers">
+                    <component id="Headers" type="IDHeader">
+                      <parameter id="EnableLink" value="true"/>
+                    </component>
+                    <component id="Headers" type="ValueHeader">
+                      <parameter id="Attribute" value="LAALDC_Attr_1"/>
+                      <parameter id="DisplayContextHelp" value="true"/>
+                      <parameter id="EnableLocaleFormatting" value="false"/>
+                      <parameter id="EscapeTagsBeforeSave" value="true"/>
+                      <parameter id="Mandatory" value="NotMandatory"/>
+                      <parameter id="Readonly" value="false"/>
+                      <parameter id="ShowInvalidInheritedValues" value="false"/>
+                      <parameter id="ShowLOVIDs" value="false"/>
+                      <parameter id="nowrap" value="false"/>
+                    </component>
+                    <component id="Headers" type="ValueHeader">
+                      <parameter id="Attribute" value="LAALDC_Attr_2"/>
+                      <parameter id="DisplayContextHelp" value="true"/>
+                      <parameter id="EnableLocaleFormatting" value="false"/>
+                      <parameter id="EscapeTagsBeforeSave" value="true"/>
+                      <parameter id="Mandatory" value="NotMandatory"/>
+                      <parameter id="Readonly" value="false"/>
+                      <parameter id="ShowInvalidInheritedValues" value="false"/>
+                      <parameter id="ShowLOVIDs" value="false"/>
+                      <parameter id="nowrap" value="false"/>
+                    </component>
+                  </parameter-list>
+                </component>
+              </parameter-list>
+            </component>
+          </parameter-list>
+        </component>
+        <component id="RepresentationList" type="ContextGlobalRepresentation">
+          <parameter-list id="Contexts">
+            <parameter value="Context3"/>
+            <parameter value="Context1"/>
+            <parameter value="Context2"/>
+          </parameter-list>
+        </component>
+        <component id="RepresentationList" type="WorkspaceGlobalRepresentation">
+          <parameter-list id="Workspaces">
+            <parameter value="Main"/>
+          </parameter-list>
+        </component>
+      </parameter-list>
+    </screen>
+    <screen id="userdetails" type="UserDetails">
+      <component id="Buttons" type="Buttons">
+        <parameter-list id="Actions">
+          <component type="SaveAction">
+            <parameter id="CssClass" value="SaveButton"/>
+          </component>
+          <component type="ResetAction">
+            <parameter id="CssClass" value="ResetButton"/>
+          </component>
+        </parameter-list>
+      </component>
+      <component id="Main" type="NodeEditor">
+        <parameter-list id="Rows">
+          <component id="UserId" type="IdValue">
+            <parameter id="Label" value="User ID"/>
+          </component>
+          <component id="UserEmail" type="UserEmail">
+            <parameter id="Label" value="Email Address"/>
+            <parameter id="Mandatory" value="True"/>
+          </component>
+          <component id="UserPassword" type="UserPassword">
+            <parameter id="NewPasswordLabel" value="New password"/>
+            <parameter id="OldPasswordLabel" value="Old password"/>
+            <parameter id="RepeatPasswordLabel" value="Repeat new password"/>
+          </component>
+        </parameter-list>
+      </component>
+    </screen>
+  </screens>
+  <theme>
+    <property id="action-button-color" value="BRIGHT"/>
+    <property id="color-theme" value="DARK"/>
+  </theme>
+</portal-config> -->
+            <SetupGroupLink SetupGroupID="WebUIs"></SetupGroupLink>
+            <Name>ELFRUI</Name>
+            <Configuration>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</Configuration>
+        </PortalConfiguration>
+    </PortalConfigurations>
+</STEP-ProductInformation>

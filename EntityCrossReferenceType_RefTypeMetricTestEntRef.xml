@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <CrossReferenceTypes>
+        <EntityCrossReferenceType ID="RefTypeMetricTestEntRef" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" MultiValued="true">
+            <Name>Ref Type Metric Test Ent Reference</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="MyEntity"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="MyEntity"></TargetUserTypeLink>
+        </EntityCrossReferenceType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <DerivedEventTypes>
+        <DerivedEventType>Add</DerivedEventType>
+        <DerivedEventType>ElasticsearchReindexingFinish</DerivedEventType>
+        <DerivedEventType>MJAN_test</DerivedEventType>
+        <DerivedEventType>Asset Keywords Event</DerivedEventType>
+        <DerivedEventType>ElasticsearchReindexingCancel</DerivedEventType>
+        <DerivedEventType>ElasticsearchReindexingStart</DerivedEventType>
+    </DerivedEventTypes>
+</STEP-ProductInformation>

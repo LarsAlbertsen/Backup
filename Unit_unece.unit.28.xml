@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <UnitList>
+        <Unit ID="unece.unit.28" ParentID="Pressure">
+            <Name>kg/m²</Name>
+            <MetaData>
+                <Value QualifierID="en-US" AttributeID="UnitDescription">kilogram per square metre</Value>
+            </MetaData>
+        </Unit>
+    </UnitList>
+</STEP-ProductInformation>

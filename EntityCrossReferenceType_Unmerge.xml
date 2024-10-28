@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <CrossReferenceTypes>
+        <EntityCrossReferenceType ID="Unmerge" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" ParentChildRelation="NONE" MultiValued="false">
+            <Name>Unmerge</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <UserTypeLink UserTypeID="Merge_Golden_Record"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="Source_System"></TargetUserTypeLink>
+        </EntityCrossReferenceType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>

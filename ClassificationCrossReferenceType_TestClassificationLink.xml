@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <CrossReferenceTypes>
+        <ClassificationCrossReferenceType ID="TestClassificationLink" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" MultiValued="true">
+            <Name>TestClassificationLink</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="TestClassification"></TargetUserTypeLink>
+        </ClassificationCrossReferenceType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>

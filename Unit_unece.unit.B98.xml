@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <UnitList>
+        <Unit ID="unece.unit.B98" ParentID="Time">
+            <Name>Microsecond</Name>
+            <UnitConversion BaseUnitID="unece.unit.SEC" Factor=".000001" Offset="0"></UnitConversion>
+            <MetaData>
+                <Value QualifierID="en-US" AttributeID="UnitDescription">microsecond</Value>
+            </MetaData>
+        </Unit>
+    </UnitList>
+</STEP-ProductInformation>

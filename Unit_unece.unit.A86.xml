@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <UnitList>
+        <Unit ID="unece.unit.A86" ParentID="Frequency">
+            <Name>GHz</Name>
+            <UnitConversion BaseUnitID="unece.unit.HTZ" Factor="1000000000" Offset="0"></UnitConversion>
+            <MetaData>
+                <Value QualifierID="en-US" AttributeID="UnitDescription">gigahertz</Value>
+            </MetaData>
+        </Unit>
+    </UnitList>
+</STEP-ProductInformation>

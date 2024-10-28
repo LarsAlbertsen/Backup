@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <CrossReferenceTypes>
+        <EntityCrossReferenceType ID="PotentialDuplicate" Inherited="false" Accumulated="false" Revised="false" Mandatory="false" ParentChildRelation="NONE" MultiValued="false">
+            <Name>Potential Duplicate</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeLink AttributeID="PotentialDuplicateMatchScore"></AttributeLink>
+            <UserTypeLink UserTypeID="Merge_Golden_Record"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="Merge_Golden_Record"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Source_System"></TargetUserTypeLink>
+        </EntityCrossReferenceType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>

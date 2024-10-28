@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <CrossReferenceTypes>
+        <AssetCrossReferenceType ID="Product Image" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" MultiValued="false">
+            <Name>Product Image</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeLink AttributeID="MyCalc Attr 2"></AttributeLink>
+            <AttributeLink AttributeID="MyCalc Attr"></AttributeLink>
+            <AttributeLink AttributeID="MyLinkAttr2"></AttributeLink>
+            <AttributeGroupLink AttributeGroupID="Asset References"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="_LAAL Attributes"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Family"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Variant"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="JPEGImage"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="ProductImage"></TargetUserTypeLink>
+        </AssetCrossReferenceType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <CrossReferenceTypes>
+        <AssetCrossReferenceType ID="PrimaryProductImage" Inherited="true" Accumulated="false" Revised="true" Mandatory="false" MultiValued="false">
+            <Name>Primary Product Image</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+                <Value QualifierID="en-US" AttributeID="Purpose">Used for the single product image that is the primary image to show in STEP and potentially in downstream systems</Value>
+            </MetaData>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="ProductImage"></TargetUserTypeLink>
+        </AssetCrossReferenceType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>

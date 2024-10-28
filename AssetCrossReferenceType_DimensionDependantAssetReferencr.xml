@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <CrossReferenceTypes>
+        <AssetCrossReferenceType ID="DimensionDependantAssetReferencr" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" MultiValued="true">
+            <Name>DimensionDependantAssetReferencr</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <AttributeGroupLink AttributeGroupID="Asset References"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Family"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Variant"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="Asset user-type root"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="DEFAULT"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="JPEGImage"></TargetUserTypeLink>
+        </AssetCrossReferenceType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>

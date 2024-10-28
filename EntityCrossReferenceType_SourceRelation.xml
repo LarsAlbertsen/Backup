@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <CrossReferenceTypes>
+        <EntityCrossReferenceType ID="SourceRelation" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" ParentChildRelation="NONE" MultiValued="true">
+            <Name>Source Relation</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeLink AttributeID="SourceRecordID"></AttributeLink>
+            <AttributeLink AttributeID="SourceSystemID"></AttributeLink>
+            <UserTypeLink UserTypeID="Merge_Golden_Record"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="Source_System"></TargetUserTypeLink>
+        </EntityCrossReferenceType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>

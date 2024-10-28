@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="DiscontinuedProducts" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="DiscontinuedProductsRoot" NamePattern="Discontinued Products">
+            <Name>Discontinued Products</Name>
+            <Icon>H4sIAAAAAAAA/3P3dLOwTBRgEGBYxMIw5f79////i8THa+zbB2QwwIDiTxZGBgYWBh0QB6SWgVnHY9edfwZejqsDtvEJVDEwK/KkzMxMXrmO+ei+XK7V73xOl82ZvSP2/f47mRmeDAzWAHWrQHdnAAAA</Icon>
+            <MetaData>
+                <Value AttributeID="ObjectTypeDescription">A description on the discontinued ObjType</Value>
+            </MetaData>
+            <UserTypeLink UserTypeID="Product user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="ALCO_TestCP"></AttributeLink>
+            <AttributeLink AttributeID="ObjectTypeDescription"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

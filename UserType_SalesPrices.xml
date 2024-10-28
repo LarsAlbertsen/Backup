@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="SalesPrices" AllowOverlappingTerms="false">
+            <Name>SalesPrices</Name>
+            <VisibleTermFields>
+                <VisibleTermField Field="Dates"></VisibleTermField>
+                <VisibleTermField Field="Quantities"></VisibleTermField>
+            </VisibleTermFields>
+            <UserTypeLink UserTypeID="Term-list user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="Default End-date"></AttributeLink>
+            <AttributeLink AttributeID="Default Start-date"></AttributeLink>
+            <AttributeLink AttributeID="Expiry date"></AttributeLink>
+            <AttributeLink AttributeID="Last modification time"></AttributeLink>
+            <Validation BaseType="novalidation" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

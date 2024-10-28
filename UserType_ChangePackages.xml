@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="ChangePackages">
+            <Name>Change Packages</Name>
+            <UserTypeLink UserTypeID="ChangePackages"></UserTypeLink>
+            <UserTypeLink UserTypeID="Setup Group user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="AutoUpdatedChangePackages"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Merge_Golden_Record" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="CustomerGR_[id]">
+            <Name>Individual Customer (Merge Golden Record)</Name>
+            <Icon>H4sIAAAAAAAA/3VWsW4cRwzt/RWLS50VOSRnyMBykQ0CF+c2hbsgukgCFEmwFcmfn0fO3UUR4kp6s1wO+d4j995/fb5eXm6vnm4ud013y83h9vrmaf7/fHt4+fnh2+WOFlqaLnn25+3d3eXu/uH+sFu+/XV3//Vyd/P09PjTxcXLy8v6IuvDl+uLRkQXSLz78O794+9PN8vV5e6TrGqd28K2MmtswBTkiUm5L7JKG7iFdY1wwKaU4Qkjw9kkuMJJGM9pWJtYKx6nx/RNYk9rB2ZbONbWJTZaVXoMzwOLkAUHhhLG0mgl7gMHfRip54GIMV7x6Im6CQpbm3MiZ0PateOClhgvxV5XMp1Y1BK7j8QNheB6lMnRPHHEaIshLAj50KixAw+ESWEfY+tgyd0SS5Ox9FUjASM7QD8ld6TdO4qp5mPVzrEBR7TCEmMsvg7qvSCDKzx2bpMaDctws0jIAyUAEmmFMwTx1YRmcgoPVKZWzHu20BcFbaBi4b6GtVTiP0J/PpnmB/lVf7G2u3jtimwPtU+V+h7sBWisd7cETL0kBkdFvaSisMQolYYekfWtZPLpnyEVbQOq5ttsJaO1o4Hct+KCo6pGewsPtAntsytJGxqopCqswqFXUJHALPk0HVKwl4eFZ3CTCm5e9Ap53diiSWG3GS0zWm2Pi9OoU0vZsg7yMaU2zboc59MHmuU1uPFoE9s4tUNdZSOKfB4jTZs2s6nhMXuXtgcMneTAR3ucVhtl4g1o8NBpca07mJrOAWhHJ06Hi+gGbCoxx0erYus05nyNGX+Wtv02Ff6+G/L4xy9/3x0ud4fnw/3D1dVu+ePu9vHtWbqGeQ2HTVA2hh/iQ0VnOPx0UB0JImDO1vRfnJTDtOmWkeMMtzTXsgF6LlNjQoCPNyTfZNvA9uGuR5jLCclkvg3GTviU/YRPt59eP5f3toHPn8pCmHMGixA0PYRdxInFpUxkPQpjqqz8OZJd2GbEHpWoJkyXb4kou8KOazUiih2YUHiOjBFVcFOYoq+CicWgK2f1wCaca6KZp2+Bg3IvEDkVV6iwoavhkR7s+SID2ygOe3KowLCa1/xGLghg7Nv+ES24Yr3i71Dsm+N5tga/BLB4/k3cKN9r+AL0PVq1zI8BlpZ1tjU3LjatUFgykdooKJWcMs4t0U94A8YHQ14/N7VXrzPKkHP2fZKlVbUQ5W3A8HlVN7i4bQVVOYunXNh8wh+TLGKBc0a3EUUGBjtJsvmeDdMkUTHPeY7V2xjxgqpTDGKu5lUGNEwxwjMeu5WlxDKUmRu/rFhabpg9GUg7pXY40sxdTk4ARJEybYLPhkbmmh7CZ0AieJwt5pXazhbMVaPGZ4s6ZFSveOyNtuSqid4KKzYv1p3WskwddQ+C0RhPnTT1CBklG08fk+TPgTNkGqfgtHdvg4+p0t+u3s83zY++nit5M0z/u3TyB8qHd/8Aq6BFBwAJAAA=</Icon>
+            <UserTypeLink UserTypeID="IndividualCustomerRoot"></UserTypeLink>
+            <AttributeLink AttributeID="DeactivatedAttribute"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

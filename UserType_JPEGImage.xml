@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="JPEGImage" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+            <Name>JPEG Image</Name>
+            <Icon>H4sIAAAAAAAA/62T+TvbdwCA42nn0XVPV1t1fVSf0XRlrqXmrM7VInvU89A+alH1RJBmFuaumYccglyIhAqhkqDuIe4mQxxx1102gmqizg0jinw/m/9h72/v7+/r/r2brV2gNkwHpoKdAgCoo2fUpGWWERlNXEEVu0CYkssMJ6YFJ6b9mCRMKxj4vU/2qqe7pbOzUVKaI5C2dEoaXonr2xfn5K1VzQ2ldXMTsxMD41srW5vKTeWy8t3iuyPVkfpYfXJ0AiAAqaHsuJwiCr8yt3Zb+feaYn1pfpnDyhnoHs0hlr9ktxcwKnnMqjJu4+b7nWxizc9oPjGmkk5oFBQ2UZOb2FmCiFBRft5AUaEqhSzx9KwNCWmvrlaJRComs1zcAQZHQGSihP58Hp8gJbNmGFw5mVZFzSzGk1sS6A0dE2psqgyf3hlNa+t+A40sqINoY1G5g6xmRVHnhjVp+gG1H5s3Wi7b6F2CZtYgG7o8s+sf7jConAK0qiHRHBDLwYgSyLdODo4gu5zV93tqJH/7t7Gt7QO1TxMEF5xYVIBACaCMgtxZcHioUq3SVCtp+4sUoCBA8oSd2RTVdMKUOL6rngK9id4cTt58TZpqi9sfjlb0EcEQFjo5BJPJoAejkCTUCNmQJGCvFfNHC6lOkLHZHHoifbYqCoMaUX/V+B91xH4ocWeizUDto4MCZ+ZjY4UAfdwaOVxN28913ObcBULvP/k/TZb+2htutM7x6Ce6KtheTc+cozy/Oa7Fr5WG5XlfVWUjAc9zguYzXhA9WJIOWG4qxj116dN51uMZTohcEE/2vT2ZGeJtaxTggtiNNgdkx/X42+oCzFgGbrqYCAjfdadiqRjPJD8kFGuzGmEDsfxxTmaoO+bCOAzYeAsirI7DreRYayj1EcjEUDwsexkxtfafK/2NRSjrwULGvDdc6WO0/cSE6OO24AEXF+WMOOhNu34ppid337qMv2XYSiO2GGp3mOoQTa415XHKdc83OloJOGyuhkaFiQkEQf8VC/ufMPhwVgMGW4WZnsrpEzAtABs5p4cz99K3jZgo5u9I72qRzgwg7wdp0vNNzBycLhmxPnE1xs/8sFZXD3f99uEgvkLAL5GxgwgwVEOXf32wLXlZN2RtHO4hbMChpF08iyBZ0pZfaQWL78y8wbyaIPW3CHqdNOf31UCWvrOXjIpy6aqsD/FDLWCmy1lfP9XqC0D4Zsw3YxfET6puhuWLQs/1YRDug5MvkVyLQFIw7gHmEirXUv/MkI6xN9/pl6iY1Sy4F/K6PUFo8rwaVe/fVlmCuyD0RUpNI7P6dG3CGxO1VywNM3iOPE5/UlZZJ0HDHnNxKRU3queQziOgXHg9pI/uBOt5xVI/veZwPv/+w2S0poyxh0AzEOiRzBce3mJTLuIm5cL1eyladrvCi0UO1AiDF2eDcHzKFS0sy/VKIGG5+ItdV4QmCWPUiiajnbSWP7uM0+hN+9jB4G06PE7D2Qlm/y8kByihdgQAAA==</Icon>
+            <UserTypeLink UserTypeID="Asset user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="APPath"></AttributeLink>
+            <AttributeLink AttributeID="APStatus"></AttributeLink>
+            <AttributeLink AttributeID="APVersion"></AttributeLink>
+            <AttributeLink AttributeID="AssetAnalyzer.Keywords"></AttributeLink>
+            <AttributeLink AttributeID="AssetAttribute"></AttributeLink>
+            <AttributeLink AttributeID="AssetDownload.AssetURLAttribute"></AttributeLink>
+            <AttributeLink AttributeID="ImageDeduplicationConfirmedDuplicates"></AttributeLink>
+            <AttributeLink AttributeID="ImageDeduplicationConfirmedNonDuplicates"></AttributeLink>
+            <AttributeLink AttributeID="ImageDeduplicationDeleteFlag"></AttributeLink>
+            <AttributeLink AttributeID="att_Visibility"></AttributeLink>
+            <MIMEType>image/jpeg</MIMEType>
+            <MIMEType>image/jpg</MIMEType>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

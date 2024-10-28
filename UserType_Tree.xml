@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Tree" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="TREE-[id]" NamePattern="TREE-[id]">
+            <Name>Tree</Name>
+            <UserTypeLink UserTypeID="Products"></UserTypeLink>
+            <UserTypeLink UserTypeID="Tree"></UserTypeLink>
+            <AttributeLink AttributeID="New Attr"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

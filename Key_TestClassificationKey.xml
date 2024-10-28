@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Keys>
+        <Key ID="TestClassificationKey" State="Active">
+            <Name>TestClassificationKey</Name>
+            <KeyFormula>value('TestClassificationKey')</KeyFormula>
+            <UserTypeLink UserTypeID="TestClassification"></UserTypeLink>
+            <AttributeLink AttributeID="TestClassificationKey"></AttributeLink>
+        </Key>
+    </Keys>
+</STEP-ProductInformation>

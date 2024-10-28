@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Historic Reporting_EP">
+            <UserTypeLink UserTypeID="Event Processor user-type root"></UserTypeLink>
+            <UserTypeLink UserTypeID="RevisionAnalyzer"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

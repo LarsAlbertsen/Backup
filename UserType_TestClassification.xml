@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="TestClassification" ClassificationOwnsProductLinks="false" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+            <Name>TestClassification</Name>
+            <UserTypeLink UserTypeID="TestClassifications"></UserTypeLink>
+            <AttributeLink AttributeID="TestClassificationKey"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

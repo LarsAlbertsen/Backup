@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ComponentModels version="2">
+        <Model id="com.stibo.matching.domain.impl.MatchingComponent.Component">
+            <NodeAspectDescriptors>
+                <NodeAspectDescriptor id="com.stibo.matching.domain.matchexpression.matchingaliasgroups.MatchingAliasGroupsFile"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.matching.domain.matchtuningfile.MatchTuningFile"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.matching.domain.rankscorable.RankScorable"></NodeAspectDescriptor>
+            </NodeAspectDescriptors>
+            <LinkAspectDescriptors>
+                <LinkAspectDescriptor id="com.stibo.matching.domain.impl.DuplicateRelationImpl"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.matching.domain.impl.NonDuplicateRelationImpl"></LinkAspectDescriptor>
+            </LinkAspectDescriptors>
+            <ValueAspectDescriptors>
+                <ValueAspectDescriptor id="com.stibo.matching.domain.impl.DataSourceIDImpl"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.matching.domain.impl.JustificationImpl"></ValueAspectDescriptor>
+            </ValueAspectDescriptors>
+        </Model>
+    </ComponentModels>
+</STEP-ProductInformation>

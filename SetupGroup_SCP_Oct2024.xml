@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <SetupGroups>
+        <SetupGroup ID="SCP_Oct2024" UserTypeID="ChangePackages" ParentID="ChangePackages">
+            <Name>SCP_Oct2024</Name>
+        </SetupGroup>
+    </SetupGroups>
+</STEP-ProductInformation>

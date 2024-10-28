@@ -115,8 +115,8 @@
             <AttributeLink AttributeID="LAALDummyAttr"></AttributeLink>
             <AttributeLink AttributeID="New Attr"></AttributeLink>
             <AttributeLink AttributeID="ItemKey"></AttributeLink>
-            <AttributeLink AttributeID="Quantity"></AttributeLink>
             <AttributeLink AttributeID="URL"></AttributeLink>
+            <AttributeLink AttributeID="Quantity"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

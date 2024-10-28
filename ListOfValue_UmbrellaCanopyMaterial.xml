@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <ListsOfValues>
-        <ListOfValue ID="UmbrellaCanopyMaterial" ParentID="CategorySpecific" AllowUserValueAddition="false" UseValueID="false">
+        <ListOfValue ID="UmbrellaCanopyMaterial" ParentID="CategorySpecific" AllowUserValueAddition="false" UseValueID="false" Referenced="true">
             <Name QualifierID="en-US">D28 - Umbrella Canopy Material</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
             <Value>Acrylic Fabric</Value>

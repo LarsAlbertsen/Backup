@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <UnitList>
-        <Unit ID="unece.unit.KGM" ParentID="Mass">
+        <Unit ID="unece.unit.KGM" Referenced="true" ParentID="Mass">
             <Name>kg</Name>
             <UnitConversion BaseUnitID="unece.unit.GRM" Factor="1000" Offset="0"></UnitConversion>
             <MetaData>

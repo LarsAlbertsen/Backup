@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <DataContainerTypes>
+        <DataContainerType ID="ItemPrices" MultiValued="true" Inherited="false" Restricted="false" Mandatory="false" IDPattern="[id]">
+            <Name>Item Prices</Name>
+            <AttributeGroupLink AttributeGroupID="_LAAL Attributes"></AttributeGroupLink>
+            <AttributeLink AttributeID="ItemPrice"></AttributeLink>
+            <AttributeLink AttributeID="ItemPriceFrom"></AttributeLink>
+            <AttributeLink AttributeID="ItemPriceTo"></AttributeLink>
+            <AttributeLink AttributeID="a1"></AttributeLink>
+            <AttributeLink AttributeID="a11"></AttributeLink>
+            <AttributeLink AttributeID="a2"></AttributeLink>
+            <AttributeLink AttributeID="a3"></AttributeLink>
+            <AttributeLink AttributeID="a5"></AttributeLink>
+            <AttributeLink AttributeID="a7"></AttributeLink>
+            <AttributeLink AttributeID="a8"></AttributeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+        </DataContainerType>
+    </DataContainerTypes>
+</STEP-ProductInformation>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserGroupList>
+        <UserGroup ID="Stibo" ReadOnly="false" MultifactorAuthenticationRequired="false">
+            <Name>Stibo Users</Name>
+            <MetaData>
+                <MultiValue AttributeID="ConfigurationEntityReferences">
+                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160638</Value>
+                </MultiValue>
+            </MetaData>
+            <PrivilegeRule ActionSetID="All setup actions"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="All user actions" ClassificationID="Classification 1 root"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="All user actions" CollectionGroupID="CollectionGroup root"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="All user actions" EntityID="Entity hierarchy root"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="All user actions" ProductID="Product hierarchy root"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="All user actions" PublicationGroupID="Publication hierarchy root"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="All user actions" TradingTermsID="eCatalog root"></PrivilegeRule>
+        </UserGroup>
+    </UserGroupList>
+</STEP-ProductInformation>

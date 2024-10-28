@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserGroupList>
+        <UserGroup ID="Marketing" ReadOnly="false" MultifactorAuthenticationRequired="false">
+            <Name>Marketing</Name>
+            <MetaData>
+                <MultiValue AttributeID="ConfigurationEntityReferences">
+                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160643</Value>
+                </MultiValue>
+            </MetaData>
+            <PrivilegeRule ActionSetID="Sufficiency"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="SufficiencyUserActions" ProductID="Product hierarchy root" AttributeGroupID="Data Sufficiency Attribute Group"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="SufficiencyUserActions" ProductID="Product hierarchy root"></PrivilegeRule>
+        </UserGroup>
+    </UserGroupList>
+</STEP-ProductInformation>

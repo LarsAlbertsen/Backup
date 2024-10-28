@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <ListsOfValues>
-        <ListOfValue ID="697f7e06-bbed-413f-9708-f6d8d0036e18" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+        <ListOfValue ID="697f7e06-bbed-413f-9708-f6d8d0036e18" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false" Referenced="true">
             <Name QualifierID="en-US">Yes|No</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
             <Value>No</Value>

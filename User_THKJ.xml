@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserList>
+        <User ID="THKJ" ForceAuthentication="false" EMail="thkj@stibosystems.com">
+            <Name>Thomas Kjærgaard</Name>
+            <MetaData>
+                <MultiValue AttributeID="ConfigurationEntityReferences">
+                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160614</Value>
+                </MultiValue>
+            </MetaData>
+            <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
+            <SystemSetup>
+                <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>
+            </SystemSetup>
+        </User>
+    </UserList>
+</STEP-ProductInformation>

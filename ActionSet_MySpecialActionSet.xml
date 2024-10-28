@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ActionSetList>
+        <ActionSet ID="MySpecialActionSet" Type="user">
+            <Name>MySpecialActionSet</Name>
+            <ActionLink ActionID="Create asset"></ActionLink>
+            <ActionLink ActionID="Delete product"></ActionLink>
+        </ActionSet>
+    </ActionSetList>
+</STEP-ProductInformation>

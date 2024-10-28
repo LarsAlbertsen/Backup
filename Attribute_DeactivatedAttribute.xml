@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeList>
+        <Attribute ID="DeactivatedAttribute" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Mandatory="false">
+            <Name>Deactivated</Name>
+            <ListOfValueLink ListOfValueID="DeactivatedLOV"></ListOfValueLink>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="MatchandMergeAttributes"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Merge_Golden_Record"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

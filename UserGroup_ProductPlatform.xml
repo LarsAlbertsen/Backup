@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserGroupList>
+        <UserGroup ID="ProductPlatform" ReadOnly="false" MultifactorAuthenticationRequired="false">
+            <Name>Product Platform</Name>
+            <MetaData>
+                <MultiValue AttributeID="ConfigurationEntityReferences">
+                    <Value>WorkArea#Instrument#CC_DSFVH_Instrument#32158923</Value>
+                    <Value>Perspective#Instrument#CC_DSFVH_Instrument#32158924</Value>
+                    <Value>PerspectiveTableConfiguration#Instrument#CC_DSFVH_Instrument#32158924</Value>
+                    <Value>PerspectiveFilterItem#Instrument#CC_DSFVH_Instrument#32158924</Value>
+                    <Value>PerspectiveSortingItem#Instrument#CC_DSFVH_Instrument#32158924</Value>
+                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32158924</Value>
+                </MultiValue>
+            </MetaData>
+        </UserGroup>
+    </UserGroupList>
+</STEP-ProductInformation>

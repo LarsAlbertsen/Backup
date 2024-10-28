@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <UnitList>
-        <Unit ID="unece.unit.LBR" ParentID="Mass">
+        <Unit ID="unece.unit.LBR" Referenced="true" ParentID="Mass">
             <Name>lb</Name>
             <UnitConversion BaseUnitID="unece.unit.GRM" Factor="453.59237" Offset="0"></UnitConversion>
             <MetaData>

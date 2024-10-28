@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserList>
+        <User ID="REVISIONMANAGEMENT" ForceAuthentication="false">
+            <Name>Revision Management</Name>
+            <MetaData>
+                <MultiValue AttributeID="ConfigurationEntityReferences">
+                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160616</Value>
+                </MultiValue>
+            </MetaData>
+            <UserGroupLink UserGroupID="Service Users"></UserGroupLink>
+            <SystemSetup></SystemSetup>
+        </User>
+    </UserList>
+</STEP-ProductInformation>

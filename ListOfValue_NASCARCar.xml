@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <ListsOfValues>
-        <ListOfValue ID="NASCARCar" ParentID="CategorySpecific" AllowUserValueAddition="false" UseValueID="false">
+        <ListOfValue ID="NASCARCar" ParentID="CategorySpecific" AllowUserValueAddition="false" UseValueID="false" Referenced="true">
             <Name QualifierID="en-US">NASCAR Car</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
             <Value>00 - David Reutimann</Value>

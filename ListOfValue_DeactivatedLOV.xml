@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <ListsOfValues>
-        <ListOfValue ID="DeactivatedLOV" ParentID="MetaDataLOVs" AllowUserValueAddition="false" UseValueID="true">
+        <ListOfValue ID="DeactivatedLOV" ParentID="MetaDataLOVs" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
             <Name QualifierID="en-US">Deactivated LOV</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
             <Value ID="false">No</Value>

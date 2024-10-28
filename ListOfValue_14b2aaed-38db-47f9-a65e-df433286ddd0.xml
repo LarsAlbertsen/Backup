@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <ListsOfValues>
-        <ListOfValue ID="14b2aaed-38db-47f9-a65e-df433286ddd0" ParentID="CategorySpecific" AllowUserValueAddition="false" UseValueID="false">
+        <ListOfValue ID="14b2aaed-38db-47f9-a65e-df433286ddd0" ParentID="CategorySpecific" AllowUserValueAddition="false" UseValueID="false" Referenced="true">
             <Name QualifierID="en-US">Automatic/Manual</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
             <Value>Automatic</Value>

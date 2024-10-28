@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserTypes>
-        <UserType ID="Matching Algorithm">
+        <UserType ID="Matching Algorithm" Referenced="true">
             <Name>Matching Algorithm</Name>
             <UserTypeLink UserTypeID="MatchCodesAndMatchingAlgorithms"></UserTypeLink>
         </UserType>

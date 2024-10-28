@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="3510ca76-5d35-4d2f-a9a8-fd3795c58815" ParentID="CategorySpecific" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">Outdoor Power Equipment Application</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value>ATV's &amp; Go Carts</Value>
+            <Value>Accessory</Value>
+            <Value>Augers</Value>
+            <Value>Blowers</Value>
+            <Value>Brush Cutters</Value>
+            <Value>Chainsaw Part/Accessory</Value>
+            <Value>Chainsaws</Value>
+            <Value>Chippers</Value>
+            <Value>Combo Kit</Value>
+            <Value>Cultivator</Value>
+            <Value>Edgers</Value>
+            <Value>Fuel</Value>
+            <Value>Fuel Additive</Value>
+            <Value>Fuel wih Oil Mix</Value>
+            <Value>Hedge Trimmers</Value>
+            <Value>Kit</Value>
+            <Value>Lawn Mower</Value>
+            <Value>Lawn Sweeper</Value>
+            <Value>Log Splitter</Value>
+            <Value>Log Splitters</Value>
+            <Value>Lubricant</Value>
+            <Value>Oil</Value>
+            <Value>Other</Value>
+            <Value>Part</Value>
+            <Value>Power Washers</Value>
+            <Value>Pre-Mixed Gasoline</Value>
+            <Value>Pressure Washer</Value>
+            <Value>Pressure Washer Accessory</Value>
+            <Value>Pressure Washer Part</Value>
+            <Value>Push Lawn Mowers</Value>
+            <Value>Recreational Vehicles</Value>
+            <Value>Riding Lawn Tractors</Value>
+            <Value>Riding Mower/Tractor Attachment</Value>
+            <Value>Salt Spreader</Value>
+            <Value>Shredders &amp; Mulchers</Value>
+            <Value>Snow Blower</Value>
+            <Value>Snow Blower Part/Accessory</Value>
+            <Value>Snow Plow</Value>
+            <Value>String Trimmers</Value>
+            <Value>Tiller</Value>
+            <Value>Tillers &amp; Cultivators</Value>
+            <Value>Trimmer</Value>
+            <Value>Trimmer Attachment</Value>
+            <Value>Trimmer Combo Kit</Value>
+            <Value>Trimmer Part</Value>
+            <Value>Universal</Value>
+            <Value>Utility Vehicle</Value>
+            <Value>Utility Vehicle Part/Accessory</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserTypes>
-        <UserType ID="Product user-type root" ManuallySorted="true" AllowInDesignTemplate="false" AllowQuarkTemplate="true" IsCategory="false" ReferenceTargetLockPolicy="Strict">
+        <UserType ID="Product user-type root" ManuallySorted="true" AllowInDesignTemplate="false" AllowQuarkTemplate="true" IsCategory="false" ReferenceTargetLockPolicy="Strict" Referenced="true">
             <Name>Primary Product Classification</Name>
             <Icon>H4sIAAAAAAAA/11QwW6DMAy99yus7DwTOwmQqelhSFUP27WH3abBAIkBalnp58+hZZp2if1e8p6dtz1fapjbcmqCYqugqdq6mW79pa3m5+EalAYNbCFyn23XBdUPfaXg+tX156CaaRqfkmSeZ5wNDqc6Ya11IsZqt9mO71OzqB5P310VVHWp+qEsFXx07fifK4N6ZUYHFp140IEIM5MWUpxN85UGwSYzERtvyEfMuRfIbDW9kEZjGRhNhIVAnWcOCHNKpXp0Uoxg6zPrQfTrOHSFxjQjl5mVjH9HEspLZ1BH7shUCC2GnFv4VSyri2xpDvEo2MgS8ma5ihneNUt7TG92hSB3n7EK1q/+jeNtzf+B9uTsXiUScAx6t/kBdpJFy8gBAAA=</Icon>
             <MetaData>

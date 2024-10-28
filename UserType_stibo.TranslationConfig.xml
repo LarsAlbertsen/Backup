@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserTypes>
-        <UserType ID="stibo.TranslationConfig" ReferenceTargetLockPolicy="Strict">
+        <UserType ID="stibo.TranslationConfig" ReferenceTargetLockPolicy="Strict" Referenced="true">
             <Name>Translation Configuration</Name>
             <UserTypeLink UserTypeID="Asset user-type root"></UserTypeLink>
             <AttributeLink AttributeID="AssetAnalyzer.Keywords"></AttributeLink>

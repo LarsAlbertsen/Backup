@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserTypes>
-        <UserType ID="Asset user-type root" ReferenceTargetLockPolicy="Strict">
+        <UserType ID="Asset user-type root" ReferenceTargetLockPolicy="Strict" Referenced="true">
             <Name>Assets</Name>
             <Icon>H4sIAAAAAAAA/3P3dLOwTBRgEGD4zgACaTPPzASCM/+BcOb/mWln0v7//5+Wlvb/TNqZmcb/Z878f+YMUAXDf6BShjNnwJyZQHlj45nGQHAGiIAazjCMglEw5IDiTxZGBgY+Bh0QB5QnGDiKGWQ5ZDQCGBiaONi5BAoeJji18ujzSDwQeHiIW0g8605F4CMXRnanLpsGB4eGTg1HOYYDRipM7GqBfAycDilnpxsG98V4bnpwst8s+1vLz+JlvhP1a5nuWk55ETRPj/OYSMOCVVdXBfmzcRz4tNBpneheqxevTBUYrAFaPp1nlgMAAA==</Icon>
             <UserTypeLink UserTypeID="Asset user-type root"></UserTypeLink>

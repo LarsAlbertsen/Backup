@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="Team" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="true">
+            <Name QualifierID="en-US">Team</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value ID="1">Team 1</Value>
+            <Value ID="2">Team 2</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

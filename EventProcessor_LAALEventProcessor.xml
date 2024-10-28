@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <EventProcessors>
+        <EventProcessor ID="LAALEventProcessor" UserTypeID="Event Processor user-type root"><!-- Definition:
+Configuration=
+<plugin id="LAALEventProcessor">
+  <simple id="BatchSize">1000</simple>
+  <simple id="DaysToRetainEvents">1</simple>
+  <simple id="FailRetryEnabled">true</simple>
+  <simple id="FailRetryPeriod">30d</simple>
+  <simple id="HoursToRetainOldProcesses">168</simple>
+  <simple id="LinesPerBGP">1000</simple>
+  <simple id="MaxOldProcesses">100</simple>
+  <simple id="OptimisticLockRetryEnabled">false</simple>
+  <simple id="OptimisticLockRetryPeriod"/>
+  <simple id="Priority">1</simple>
+  <simple id="Queue">EVPROC</simple>
+  <simple id="ResponsibleUser">step://user?id=STEPSYS</simple>
+</plugin>
+PluginConfiguration=
+<plugin id="BusinessActionEventProcessorPlugin">
+  <simple id="BusinessAction">step://businessrule?id=EventsProcessorAction</simple>
+  <simple id="Context">step://context?id=Context1</simple>
+  <simple id="SkipDeletedNodes">false</simple>
+  <simple id="Workspace">step://workspace?id=Main</simple>
+  <simple id="WorkspaceTriggering">MainAndApproved</simple>
+  <simple id="collateNodes">false</simple>
+</plugin>
+ScheduleSpecification=
+<entries>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleNever"/>
+</entries> -->
+            <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
+            <Name>LAALEventProcessor</Name>
+            <Configuration>H4sIAAAAAAAA/6VTW2/aMBR+76+IrIm3EapJUzUgiEu6PUDJCN3laTLOIT3C2JkvFPbr5xDImrZm0vbmc/Jdjp3zjaVYY24VNShFvzfYb3mwA6XLily3OyQAwWSGIu+T++Xt2xsyiK56Bbc5igCzPol3IEyiJAOtpRpRDeOnkiS6CoKexm3B4YhfgC6k0LjicK9BkUgbKD6EoXXFwAHSZZyk39NeWHGe00fUsIcUfwGJrjudjg82oQe9lAswFMVxQu3wPnCiUCo0hwuQzxass4y/JIv52Aea0f2cZ6e3AH2c0If9JK2qJ3zGen/jY01RgE5AjT4ml+9/S5E7bXWIBXUvnZHIKAt/RTtplA78rpP5sPPC4Ba1QTaVbNP0WFOuvSavEM92PkrKHiCzHL7Npj8mcbKIx8NlPCFRi5tuY1NbP600Xbeu1WHQyk33qkS5P68Q9LEOgnPnEDBOtT7RmNy23Vgr2bYGeVufTDNYo8Byh9vnOSZ16825dQduhkonrF3Dp7Z/LtcLq9y4ky44mihWSqoFFFIZUP8SPjcQtdw0M9hQJWHtlhx54/8N/Mjqcgv1kJUKTevK4kXmm5Q68qtTW7l3LKNfBbUWq9C+3XD3MLA3tRir6lLn9Mkb5q9SbXRBGdTkx3OnpM9cIn1UJjmnBu5kVib14r7XLkuFee42XeQkKrWHIhsWhZI78IYs3WAxAQ4GstetXqzSbxdh9mXIBQAA</Configuration>
+            <EventQueue QueueStatus="Read" DaysRetained="1"><!-- Definition:
+AssetTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">
+    <Asset/>
+  </Assets>
+</STEP-ProductInformation>
+AttributeLinksTriggering=
+AttributeTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <AttributeList/>
+</STEP-ProductInformation>
+ClassificationTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Classifications ExportSize="Minimum">
+    <Classification IncludeParent="true"/>
+  </Classifications>
+</STEP-ProductInformation>
+IndexWordHierarchyTriggering=
+NameTriggering=
+ObjectTypeGroupings=
+<ObjectTypeRules>
+  <ObjectTypeRules ActionID="EventsProcessorAction" ConditionID="EventsFilter">
+    <ObjectType ObjectTypeID="Item"/>
+  </ObjectTypeRules>
+</ObjectTypeRules>
+ParentTriggering=
+ProductTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Products DontFollowClassificationToProductReference="true" ExportSize="Minimum">
+    <Product IncludeParent="true">
+      <AssetCrossReference/>
+      <AttributeLink/>
+      <ClassificationReference/>
+      <DataContainers/>
+      <Name/>
+      <OverrideSubProduct/>
+      <OverrideSubProduct/>
+      <ProductCrossReference/>
+      <Values/>
+    </Product>
+  </Products>
+</STEP-ProductInformation>
+TriggeringWorkspace=MainAndApproved
+UnitTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <UnitList/>
+</STEP-ProductInformation>
+Version=3
+attribute=LAAL_1
+objecttype=Item -->
+                <Configuration>H4sIAAAAAAAA/9VUy1LbMBTd8xUa7cFl2LCww3jyoJ4JkEkMLDuKfZMKZMmjK6ehX1/ZlnATu0O6g511Xzrn+OjGiGBSKErBDEThzb4QZAcauZIRvbz4RgnITOVcbiP6mM7Or+nN6CxcpdPF+UKrvMpMIjdKF8zYDrIEVGIHiRRcwhI2GNENEwiUzJQQ6teDHa15Dqtq7bq7ium+VNpMQPMd5LEx+j01OiMkjGug6KpW/DdE9I5LXlQFJRMlTXvBWDBEvuFZgydVTZcFAtrSsC1GV+08PzFohgftdMss+Ae1UYil4GZUA+PrysCcy1dMNd9uLWK5PU5/CUk7LlgL8SH5I3W/AMVDxMP2cXY4LCWJzESVw4JZ5xhnHGeWo6EnCJfIHPbPSuffOWims59vPefcswJ6wYf1C2QmfSvhVquqtAmMwi64rARgg+koRuKsvj6ZRHS6s/jRQssAUek2QclYyZwf1sy4MKC9HN1E0n3WxYmBwivRg9IPOSatjj2CTrJPb6XQV//vAnJ9QyvIzxy0mvsLtSsCv6/+Xj3BoGvfr/HpPl+fccexVoi9tmYdDqeemKgA/WnCDLNWMszKrfGjW8PAHVv3eE1PeECdcewresWSWSXv7KWxzOOy1Mr+MVf5KPnnt5NlX+M8de8+OQJX7sy8E6J5HM9/XLqwap6esU8vqh+pi/4BiRKzVeIHAAA=</Configuration>
+            </EventQueue>
+        </EventProcessor>
+    </EventProcessors>
+</STEP-ProductInformation>

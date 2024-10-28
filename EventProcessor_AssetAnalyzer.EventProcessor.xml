@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <EventProcessors>
+        <EventProcessor ID="AssetAnalyzer.EventProcessor" UserTypeID="Event Processor user-type root"><!-- Definition:
+Configuration=
+<plugin id="AssetAnalyzer.EventProcessor">
+  <simple id="BatchSize">1000</simple>
+  <simple id="DaysToRetainEvents">0</simple>
+  <simple id="FailRetryEnabled">false</simple>
+  <simple id="FailRetryPeriod" null="true"/>
+  <simple id="HoursToRetainOldProcesses">168</simple>
+  <simple id="LinesPerBGP">1000</simple>
+  <simple id="MaxOldProcesses">100</simple>
+  <simple id="OptimisticLockRetryEnabled">false</simple>
+  <simple id="OptimisticLockRetryPeriod" null="true"/>
+  <simple id="Priority">0</simple>
+  <simple id="Queue">EVPROC</simple>
+  <simple id="ResponsibleUser" null="true"/>
+</plugin>
+PluginConfiguration=
+<plugin id="BusinessActionEventProcessorPlugin">
+  <simple id="BusinessAction">step://businessrule?id=AssetAnalyzer.SetAssetKeywords</simple>
+  <simple id="Context" null="true"/>
+  <simple id="SkipDeletedNodes">false</simple>
+  <simple id="Workspace" null="true"/>
+  <simple id="WorkspaceTriggering">Approved</simple>
+  <simple id="collateNodes" null="true"/>
+</plugin>
+ScheduleSpecification=
+<entries>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleNever"/>
+</entries> -->
+            <SetupGroupLink SetupGroupID="AssetAnalyzer.SetupGroup"></SetupGroupLink>
+            <Name>Asset Analyzer Event Processor</Name>
+            <Configuration>H4sIAAAAAAAA/6VTTXPaMBC951d4NB1uxeTSyRQww4fTzpQEF0jbW0fYi7ODkNxdmeL8+soYaCA1Tac3afV231vt26HRS0xzkhaN7nZ627XyNkBc3sR1syU80LFJUKdd8TC/fXsjesFVJ1N5itrDpCvCDWgbkYmB2dBAMgyflxTBled1GNeZgh1+CpwZzbhQ8MBAwtO5Ul1hKQfhn4MH0saPM3wCEVy3Wq2OX72dw0ay4LmZgpWod3pYBLXgiNAQ2uIC5HMOTk0Qfommk2Ed6E5uJyrZdw68U1iH/WhyOio8y3p3U5c1Rg0cAQ0+RJf7v5WoXG0qQi3dvyYiWErF8Fe4q40muTyCSWZxjWwxHpt49Q8sf0h8Dd8sfoQkV/Dtbvx9FEbTcNifhyMRNJRtn7iz8SM3tu0sWh16jdS2r0qUmz8h8O7ueYdI4cVKMu/TYrNuOmkL08wtqibvSRNYosbSt82DjtEx9OYQugenoarjH1n957S//6TjV7viTpwptEFIZGgKmSELtI9FO8jwf1dxkHPpGO7HZYXTxawoXmzjaYoI2EL23vcX+zC5bnsO13detX0tVfEE1Jy5cxn4BMVPQwnXOcA1ZGFrL8/7q6EVZzKGy7DYKCUt3JvELc3rCs4J09Q5Tqci6GcZmQ0kdVJnK8xGoMBCUlGce/vFHH8Bv3+3JTkFAAA=</Configuration>
+            <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
+AssetTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">
+    <Asset/>
+  </Assets>
+</STEP-ProductInformation>
+AttributeTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <AttributeList/>
+</STEP-ProductInformation>
+ClassificationTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Classifications ExportSize="Minimum">
+    <Classification IncludeParent="true"/>
+  </Classifications>
+</STEP-ProductInformation>
+ObjectTypeGroupings=
+<ObjectTypeRules>
+  <ObjectTypeRules ConditionID="AssetAnalyzer.AssetKeywordsEventFilter">
+    <ObjectType ObjectTypeID="Asset user-type root"/>
+    <ObjectType ObjectTypeID="AutoClassificationRuleSet"/>
+    <ObjectType ObjectTypeID="BusinessRuleExample"/>
+    <ObjectType ObjectTypeID="Configuration"/>
+    <ObjectType ObjectTypeID="DEFAULT"/>
+    <ObjectType ObjectTypeID="Icon"/>
+    <ObjectType ObjectTypeID="Illustration"/>
+    <ObjectType ObjectTypeID="InstallationManual"/>
+    <ObjectType ObjectTypeID="JPEGImage"/>
+    <ObjectType ObjectTypeID="Logo"/>
+    <ObjectType ObjectTypeID="MSDS"/>
+    <ObjectType ObjectTypeID="OwnersManual"/>
+    <ObjectType ObjectTypeID="PDF"/>
+    <ObjectType ObjectTypeID="ProductImage"/>
+    <ObjectType ObjectTypeID="ProductVideo"/>
+    <ObjectType ObjectTypeID="Swatch"/>
+    <ObjectType ObjectTypeID="TIFFImage"/>
+    <ObjectType ObjectTypeID="XML"/>
+    <ObjectType ObjectTypeID="stibo.BulkUpdateConfig"/>
+    <ObjectType ObjectTypeID="stibo.ExportManagerConfig"/>
+    <ObjectType ObjectTypeID="stibo.ImageConversionConfig"/>
+    <ObjectType ObjectTypeID="stibo.ImportManagerConfig"/>
+    <ObjectType ObjectTypeID="stibo.TranslationConfig"/>
+    <ObjectType ObjectTypeID="stibo.ValueSubstitutionTransConfig"/>
+  </ObjectTypeRules>
+</ObjectTypeRules>
+ProductTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Products DontFollowClassificationToProductReference="true" ExportSize="Minimum">
+    <Product IncludeParent="true">
+      <AssetCrossReference/>
+      <AttributeLink/>
+      <ClassificationReference/>
+      <DataContainers/>
+      <Name/>
+      <OverrideSubProduct/>
+      <OverrideSubProduct/>
+      <ProductCrossReference/>
+      <Values/>
+    </Product>
+  </Products>
+</STEP-ProductInformation>
+TriggeringWorkspace=Approved
+UnitTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <UnitList/>
+</STEP-ProductInformation>
+Version=3
+objecttype=Asset user-type root;AutoClassificationRuleSet;BusinessRuleExample;Configuration;DEFAULT;Icon;Illustration;InstallationManual;JPEGImage;Logo;MSDS;OwnersManual;PDF;ProductImage;ProductVideo;Swatch;TIFFImage;XML;stibo.BulkUpdateConfig;stibo.ExportManagerConfig;stibo.ImageConversionConfig;stibo.ImportManagerConfig;stibo.TranslationConfig;stibo.ValueSubstitutionTransConfig -->
+                <Configuration>H4sIAAAAAAAA/9VWyXLaMBi+5yk8vidA9sxYZEiAjFtomGDSXgUWVI2QPFogydNXsmU2maD2lNxs/d+/ry0hkEzQPCNQIhDdvs5JsEBcYEZB2DiphwGiE5ZiOgPhKOkeX4e3zaNomHQGxwPOUjWRMZ0yPodScwRPSDCyQDElmKInNBUgnEIiUBh0GSFs+ahFc5yioRpb7jWi85oxLtuI4wVKW1LyFal5FARRyxgqLGqI3xEI+5jiuZqHQZtRWSi4J1AIPMWT3J6E5VzaEMS1G5pFclXIKyXWcuG1Qrr2rLbHtWYkMoJl0xiGx0qiLxGz0tgeFsbTg97thO8LuLhtcXV92HxvQ4OYTohK0QDq0pC2Mmw17Aj1CNzj+A+ayOQtQw+cqUzHRYBo/fikCBK57J234J7RFBtJcRuEeRW2KCRv74if5H/f0duS8VR0FtrKLiYS8dKftahg/WnEtDvd1qiXFN58BLT+POvQs8PolpJsOzLGhSGSh1mFxGN2UuSmDymcIa4dn+KZL2s8/w/W4RLKyW9fFQmHVJDcL18FBU7xnMlXzzMkylS6/pMqbzOj2Fflt0HnIZ7rKHhkt931D6+WqE2wLe5rTBJ3u57GFHruFHkZZameKb4q8iYIlED8WBoqZ8yj3mJClJC+eYmpkJAUqdclpiDx4Jn4SO6xmUdj/er3DoPulNDDUwjTc51XqCezTwnYgeWXo/6wPTyMelxSXSWbcYpqzqRzn+ygtBZ9+tUSleh/vTgsX9XNUcqsXD027D/gHJUp2Fjf9KVWucVWalZpc/wtKfb3njNdRLtseZtVk/J5Jcq/NpRQ966E2FTBIa1Rzf4WZVLG1GOhJhzP9KjXVfCT8ReRQR3JVpZxplNlISOKP38dabeNnb4H2LN14Mz+s7yLzOQDVZPQQdXB3i3tYBugYqa4qDrY7HiX3gB60bjPp2Bz+Lj0M7B5fbj0c1Csb5dyAVZ7xyVeAj1N3ecrUL2AXOQ12HusuOAb8MH+dOCnYOtgcOl1sPfaccENsOducaGn4PDp4XCdAXtHOpRzYLaf83wBNteuQ74E7p51QFdgdeA4tGtg1qnzfAPM3rLPfwEKcBNczw4AAA==</Configuration>
+            </EventQueue>
+        </EventProcessor>
+    </EventProcessors>
+</STEP-ProductInformation>

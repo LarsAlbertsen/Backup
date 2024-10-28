@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserTypes>
-        <UserType ID="Setup Group user-type root">
+        <UserType ID="Setup Group user-type root" Referenced="true">
             <Name>Setup Group type root</Name>
         </UserType>
     </UserTypes>

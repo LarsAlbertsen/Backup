@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserTypes>
-        <UserType ID="stibo.STEPWorkflow Type">
+        <UserType ID="stibo.STEPWorkflow Type" Referenced="true">
             <Name>STEP Workflow Type</Name>
             <UserTypeLink UserTypeID="Workflows"></UserTypeLink>
         </UserType>

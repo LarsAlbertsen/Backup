@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="Theme" ParentID="CategorySpecific" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">Theme</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value>Collegiate</Value>
+            <Value>Disney</Value>
+            <Value>Helmet</Value>
+            <Value>Holiday</Value>
+            <Value>Kids &amp; Teens</Value>
+            <Value>MLB</Value>
+            <Value>MLS</Value>
+            <Value>Mascot</Value>
+            <Value>Military</Value>
+            <Value>Miscellaneous</Value>
+            <Value>NASCAR</Value>
+            <Value>NBA</Value>
+            <Value>NFL</Value>
+            <Value>NHL</Value>
+            <Value>Nickelodeon</Value>
+            <Value>Player</Value>
+            <Value>Seasame Street</Value>
+            <Value>Star Wars</Value>
+            <Value>State</Value>
+            <Value>Superhero</Value>
+            <Value>Team Logo</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

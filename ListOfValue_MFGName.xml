@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="MFGName" ParentID="GlobalAttributes" AllowUserValueAddition="true" UseValueID="false">
+            <Name QualifierID="en-US">MFG Name</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value>Ariat International</Value>
+            <Value>BOGS</Value>
+            <Value>Big Time Products </Value>
+            <Value>Billy Boots</Value>
+            <Value>Briggs Healthcare</Value>
+            <Value>Calcutta</Value>
+            <Value>Calm Corp.</Value>
+            <Value>Clam Corp.</Value>
+            <Value>Cordova</Value>
+            <Value>Cycle Fource Group LLC.</Value>
+            <Value>DEER STAGS</Value>
+            <Value>DMI</Value>
+            <Value>Deer Stags, LLC</Value>
+            <Value>Eagle Claw</Value>
+            <Value>FANSHOE</Value>
+            <Value>FANSHOES</Value>
+            <Value>Honeywell International, Inc</Value>
+            <Value>Jaydee</Value>
+            <Value>Jaydee Group</Value>
+            <Value>Jollys</Value>
+            <Value>MCR Safety</Value>
+            <Value>Marshalltown</Value>
+            <Value>Marshalltown </Value>
+            <Value>Marshalltown Company</Value>
+            <Value>Radians</Value>
+            <Value>Rocky Brands</Value>
+            <Value>Safety Works</Value>
+            <Value>Servus by Honeywell</Value>
+            <Value>Shoefan</Value>
+            <Value>Skechers USA Inc.</Value>
+            <Value>Timberland</Value>
+            <Value>Totes</Value>
+            <Value>West Chester</Value>
+            <Value>West Chester Holdings</Value>
+            <Value>Wolverine World Wide</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

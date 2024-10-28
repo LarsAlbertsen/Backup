@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserTypes>
-        <UserType ID="Unique Key">
+        <UserType ID="Unique Key" Referenced="true">
             <Name>Key</Name>
         </UserType>
     </UserTypes>

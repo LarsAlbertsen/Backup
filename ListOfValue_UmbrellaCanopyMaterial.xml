@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="UmbrellaCanopyMaterial" ParentID="CategorySpecific" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">D28 - Umbrella Canopy Material</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value>Acrylic Fabric</Value>
+            <Value>Canvas Fabric</Value>
+            <Value>Filament Polyester Fabric</Value>
+            <Value>Nylon Fabric</Value>
+            <Value>Nylon and Polyester Fabric</Value>
+            <Value>Olefin Fabric</Value>
+            <Value>PVC Fabric</Value>
+            <Value>T-Spun Polyester Fabric</Value>
+            <Value>Woven Polymer Fabric</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

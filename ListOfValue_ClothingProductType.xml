@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="ClothingProductType" ParentID="CategorySpecific" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">Clothing Product Type</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value>Belts</Value>
+            <Value>Bibs</Value>
+            <Value>Clothing Sets</Value>
+            <Value>Coveralls</Value>
+            <Value>Footwear</Value>
+            <Value>Gloves</Value>
+            <Value>Jackets &amp; Coats</Value>
+            <Value>Mittens</Value>
+            <Value>Other</Value>
+            <Value>Pants</Value>
+            <Value>Rainwear</Value>
+            <Value>Shirts</Value>
+            <Value>Shorts</Value>
+            <Value>Suspenders</Value>
+            <Value>Sweatshirts &amp; Fleece</Value>
+            <Value>Vests</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

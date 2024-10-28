@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserTypes>
-        <UserType ID="Reference-Type user-type root">
+        <UserType ID="Reference-Type user-type root" Referenced="true">
             <Name>Reference-Type</Name>
             <AttributeLink AttributeID="Completeness Score"></AttributeLink>
             <AttributeLink AttributeID="GetCompleteness"></AttributeLink>

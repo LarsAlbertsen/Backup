@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="bf2ce0c2-399c-4a65-b4d1-e4e13cc4b5b3" ParentID="CategorySpecific" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="en-US">Country Name</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value>AFGHANISTAN</Value>
+            <Value>ALAND ISLANDS</Value>
+            <Value>ALBANIA</Value>
+            <Value>ALGERIA</Value>
+            <Value>AMERICAN SAMOA</Value>
+            <Value>ANDORRA</Value>
+            <Value>ANGOLA</Value>
+            <Value>ANGUILLA</Value>
+            <Value>ANTARCTICA</Value>
+            <Value>ANTIGUA AND BARBUDA</Value>
+            <Value>ARGENTINA</Value>
+            <Value>ARMENIA</Value>
+            <Value>ARUBA</Value>
+            <Value>AUSTRALIA</Value>
+            <Value>AUSTRIA</Value>
+            <Value>AZERBAIJAN</Value>
+            <Value>BAHAMAS</Value>
+            <Value>BAHRAIN</Value>
+            <Value>BANGLADESH</Value>
+            <Value>BARBADOS</Value>
+            <Value>BELARUS</Value>
+            <Value>BELGIUM</Value>
+            <Value>BELIZE</Value>
+            <Value>BENIN</Value>
+            <Value>BERMUDA</Value>
+            <Value>BHUTAN</Value>
+            <Value>BOLIVIA</Value>
+            <Value>BOSNIA AND HERZEGOVINA</Value>
+            <Value>BOTSWANA</Value>
+            <Value>BOUVET ISLAND</Value>
+            <Value>BRAZIL</Value>
+            <Value>BRITISH INDIAN OCEAN TERRITORY</Value>
+            <Value>BRUNEI DARUSSALAM</Value>
+            <Value>BULGARIA</Value>
+            <Value>BURKINA FASO</Value>
+            <Value>BURUNDI</Value>
+            <Value>CAMBODIA</Value>
+            <Value>CAMEROON</Value>
+            <Value>CANADA</Value>
+            <Value>CAPE VERDE</Value>
+            <Value>CAYMAN ISLANDS</Value>
+            <Value>CENTRAL AFRICAN REPUBLIC</Value>
+            <Value>CHAD</Value>
+            <Value>CHILE</Value>
+            <Value>CHINA</Value>
+            <Value>CHRISTMAS ISLAND</Value>
+            <Value>COCOS ISLANDS</Value>
+            <Value>COLOMBIA</Value>
+            <Value>COMOROS</Value>
+            <Value>CONGO</Value>
+            <Value>COOK ISLANDS</Value>
+            <Value>COSTA RICA</Value>
+            <Value>COTE DIVOIRE</Value>
+            <Value>CROATIA</Value>
+            <Value>CUBA</Value>
+            <Value>CURACAO</Value>
+            <Value>CYPRUS</Value>
+            <Value>CZECH REPUBLIC</Value>
+            <Value>DEMOCRATIC PEOPLES REPUBLIC OF KOREA</Value>
+            <Value>DEMOCRATIC REPUBLIC OF THE CONGO</Value>
+            <Value>DENMARK</Value>
+            <Value>DJIBOUTI</Value>
+            <Value>DOMINICA</Value>
+            <Value>DOMINICAN REPUBLIC</Value>
+            <Value>ECUADOR</Value>
+            <Value>EGYPT</Value>
+            <Value>EL SALVADOR</Value>
+            <Value>EQUATORIAL GUINEA</Value>
+            <Value>ERITREA</Value>
+            <Value>ESTONIA</Value>
+            <Value>ETHIOPIA</Value>
+            <Value>FALKLAND ISLANDS</Value>
+            <Value>FAROE ISLANDS</Value>
+            <Value>FIJI</Value>
+            <Value>FINLAND</Value>
+            <Value>FRANCE</Value>
+            <Value>FRENCH GUIANA</Value>
+            <Value>FRENCH POLYNESIA</Value>
+            <Value>FRENCH SOUTHERN TERRITORIES</Value>
+            <Value>GABON</Value>
+            <Value>GAMBIA</Value>
+            <Value>GEORGIA</Value>
+            <Value>GERMANY</Value>
+            <Value>GHANA</Value>
+            <Value>GIBRALTAR</Value>
+            <Value>GREECE</Value>
+            <Value>GREENLAND</Value>
+            <Value>GRENADA</Value>
+            <Value>GUADELOUPE</Value>
+            <Value>GUAM</Value>
+            <Value>GUATEMALA</Value>
+            <Value>GUERNSEY</Value>
+            <Value>GUINEA</Value>
+            <Value>GUINEA BISSAU</Value>
+            <Value>GUYANA</Value>
+            <Value>HAITI</Value>
+            <Value>HEARD ISLAND AND MCDONALD ISLANDS</Value>
+            <Value>HOLY SEE</Value>
+            <Value>HONDURAS</Value>
+            <Value>HONG KONG</Value>
+            <Value>HUNGARY</Value>
+            <Value>ICELAND</Value>
+            <Value>INDIA</Value>
+            <Value>INDONESIA</Value>
+            <Value>IRAN</Value>
+            <Value>IRAQ</Value>
+            <Value>IRELAND</Value>
+            <Value>ISLE OF MAN</Value>
+            <Value>ISRAEL</Value>
+            <Value>ITALY</Value>
+            <Value>JAMAICA</Value>
+            <Value>JAPAN</Value>
+            <Value>JERSEY</Value>
+            <Value>JORDAN</Value>
+            <Value>KAZAKHSTAN</Value>
+            <Value>KENYA</Value>
+            <Value>KIRIBATI</Value>
+            <Value>KUWAIT</Value>
+            <Value>KYRGYZSTAN</Value>
+            <Value>LAO PEOPLES DEMOCRATIC REPUBLIC</Value>
+            <Value>LATVIA</Value>
+            <Value>LEBANON</Value>
+            <Value>LESOTHO</Value>
+            <Value>LIBERIA</Value>
+            <Value>LIBYA</Value>
+            <Value>LIECHTENSTEIN</Value>
+            <Value>LITHUANIA</Value>
+            <Value>LUXEMBOURG</Value>
+            <Value>MACAO</Value>
+            <Value>MACEDONIA</Value>
+            <Value>MADAGASCAR</Value>
+            <Value>MALAWI</Value>
+            <Value>MALAYSIA</Value>
+            <Value>MALDIVES</Value>
+            <Value>MALI</Value>
+            <Value>MALTA</Value>
+            <Value>MARSHALL ISLANDS</Value>
+            <Value>MARTINIQUE</Value>
+            <Value>MAURITANIA</Value>
+            <Value>MAURITIUS</Value>
+            <Value>MAYOTTE</Value>
+            <Value>MEXICO</Value>
+            <Value>MICRONESIA</Value>
+            <Value>MOLDOVA</Value>
+            <Value>MONACO</Value>
+            <Value>MONGOLIA</Value>
+            <Value>MONTENEGRO</Value>
+            <Value>MONTSERRAT</Value>
+            <Value>MOROCCO</Value>
+            <Value>MOZAMBIQUE</Value>
+            <Value>MYANMAR</Value>
+            <Value>NAMIBIA</Value>
+            <Value>NAURU</Value>
+            <Value>NEPAL</Value>
+            <Value>NETHERLANDS</Value>
+            <Value>NEW CALEDONIA</Value>
+            <Value>NEW ZEALAND</Value>
+            <Value>NICARAGUA</Value>
+            <Value>NIGER</Value>
+            <Value>NIGERIA</Value>
+            <Value>NIUE</Value>
+            <Value>NORFOLK ISLAND</Value>
+            <Value>NORTHERN MARIANA ISLANDS</Value>
+            <Value>NORWAY</Value>
+            <Value>OMAN</Value>
+            <Value>PAKISTAN</Value>
+            <Value>PALAU</Value>
+            <Value>PALESTINIAN TERRITORY</Value>
+            <Value>PANAMA</Value>
+            <Value>PAPUA NEW GUINEA</Value>
+            <Value>PARAGUAY</Value>
+            <Value>PERU</Value>
+            <Value>PHILIPPINES</Value>
+            <Value>PITCAIRN</Value>
+            <Value>POLAND</Value>
+            <Value>PORTUGAL</Value>
+            <Value>PUERTO RICO</Value>
+            <Value>QATAR</Value>
+            <Value>REPUBLIC OF KOREA</Value>
+            <Value>REUNION</Value>
+            <Value>ROMANIA</Value>
+            <Value>RUSSIAN FEDERATION</Value>
+            <Value>RWANDA</Value>
+            <Value>SAINT BARTHELEMY</Value>
+            <Value>SAINT HELENA</Value>
+            <Value>SAINT KITTS AND NEVIS</Value>
+            <Value>SAINT LUCIA</Value>
+            <Value>SAINT MARTIN FRENCH PART</Value>
+            <Value>SAINT PIERRE AND MIQUELON</Value>
+            <Value>SAINT VINCENT AND THE GRENADINES</Value>
+            <Value>SAMOA</Value>
+            <Value>SAN MARINO</Value>
+            <Value>SAO TOME AND PRINCIPE</Value>
+            <Value>SAUDI ARABIA</Value>
+            <Value>SENEGAL</Value>
+            <Value>SERBIA</Value>
+            <Value>SEYCHELLES</Value>
+            <Value>SIERRA LEONE</Value>
+            <Value>SINGAPORE</Value>
+            <Value>SLOVAKIA</Value>
+            <Value>SLOVENIA</Value>
+            <Value>SOLOMON ISLANDS</Value>
+            <Value>SOMALIA</Value>
+            <Value>SOUTH AFRICA</Value>
+            <Value>SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</Value>
+            <Value>SOUTH SUDAN</Value>
+            <Value>SPAIN</Value>
+            <Value>SRI LANKA</Value>
+            <Value>SUDAN</Value>
+            <Value>SURINAME</Value>
+            <Value>SVALBARD AND JAN MAYEN</Value>
+            <Value>SWAZILAND</Value>
+            <Value>SWEDEN</Value>
+            <Value>SWITZERLAND</Value>
+            <Value>SYRIAN ARAB REPUBLIC</Value>
+            <Value>TAIWAN</Value>
+            <Value>TAJIKISTAN</Value>
+            <Value>TANZANIA</Value>
+            <Value>THAILAND</Value>
+            <Value>TIMOR LESTE</Value>
+            <Value>TOGO</Value>
+            <Value>TOKELAU</Value>
+            <Value>TONGA</Value>
+            <Value>TRINIDAD AND TOBAGO</Value>
+            <Value>TUNISIA</Value>
+            <Value>TURKEY</Value>
+            <Value>TURKMENISTAN</Value>
+            <Value>TURKS AND CAICOS ISLANDS</Value>
+            <Value>TUVALU</Value>
+            <Value>UGANDA</Value>
+            <Value>UKRAINE</Value>
+            <Value>UNITED ARAB EMIRATES</Value>
+            <Value>UNITED KINGDOM</Value>
+            <Value>UNITED STATES</Value>
+            <Value>UNITED STATES MINOR OUTLYING ISLANDS</Value>
+            <Value>URUGUAY</Value>
+            <Value>UZBEKISTAN</Value>
+            <Value>VANUATU</Value>
+            <Value>VENEZUELA</Value>
+            <Value>VIETNAM</Value>
+            <Value>VIRGIN ISLANDS BRITISH</Value>
+            <Value>VIRGIN ISLANDS US</Value>
+            <Value>WALLIS AND FUTUNA</Value>
+            <Value>WESTERN SAHARA</Value>
+            <Value>YEMEN</Value>
+            <Value>ZAMBIA</Value>
+            <Value>ZIMBABWE</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

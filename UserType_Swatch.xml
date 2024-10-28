@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserTypes>
-        <UserType ID="Swatch" ReferenceTargetLockPolicy="Strict" IDPattern="[id]">
+        <UserType ID="Swatch" ReferenceTargetLockPolicy="Strict" IDPattern="[id]" Referenced="true">
             <Name>Swatch</Name>
             <UserTypeLink UserTypeID="Asset user-type root"></UserTypeLink>
             <AttributeLink AttributeID="AssetAnalyzer.Keywords"></AttributeLink>

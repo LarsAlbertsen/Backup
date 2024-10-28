@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <SetupGroups>
+        <SetupGroup ID="CC_DSFVH_Instrument" UserTypeID="ConfigurationSystem" ParentID="Instrument">
+            <MetaData>
+                <Value AttributeID="ConfigurationSystem">CC_DSFVH_Instrument</Value>
+                <MultiValue AttributeID="ConfigurationEntityReferences">
+                    <Value>PerspectiveView#Instrument#CC_DSFVH_Instrument#24050015</Value>
+                    <Value>ZoomLevelConfig#Instrument#CC_DSFVH_Instrument#24050015</Value>
+                    <Value>ContextConfiguration#Instrument#CC_DSFVH_Instrument#24050015</Value>
+                </MultiValue>
+            </MetaData>
+        </SetupGroup>
+    </SetupGroups>
+</STEP-ProductInformation>

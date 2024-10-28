@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ComponentModels version="2">
+        <Model id="com.stibo.core.domain.impl.ExternalStorageComponent.Component">
+            <NodeAspectDescriptors>
+                <NodeAspectDescriptor id="com.stibo.core.domain.externalstorage.ExternalStorage"></NodeAspectDescriptor>
+            </NodeAspectDescriptors>
+            <LinkAspectDescriptors></LinkAspectDescriptors>
+            <ValueAspectDescriptors>
+                <ValueAspectDescriptor id="com.stibo.core.domain.impl.ExternalAssetURIAspect"></ValueAspectDescriptor>
+            </ValueAspectDescriptors>
+        </Model>
+    </ComponentModels>
+</STEP-ProductInformation>

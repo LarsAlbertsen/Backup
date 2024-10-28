@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeTransformationGroups>
+        <AttributeTransformationGroup ID="MyTransformationGroup">
+            <AttributeTransformation ID="MyTransformation">
+                <Name>MyTransformation</Name>
+                <Configuration>H4sIAAAAAAAA/12NwQrCMBBE7/2KZT/A6j0JCCIItgotxWukWwk0Sdkk4OcbI4j1OG8eM6Jn7cLk2epovAvQJnsnvkwSdwi35jwQh1zkuNkitNrSsciRWGLkRAinww+a9Bwya9IczaDnRB0txDr63KGqAMT6Ecwocb8s5MZSZ+GqOd/ktXInsadnRPVxjHtA5y3BG4r6q5blej2tqn8SVPUC5ROAJPEAAAA=</Configuration>
+            </AttributeTransformation>
+        </AttributeTransformationGroup>
+    </AttributeTransformationGroups>
+</STEP-ProductInformation>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ExportConfigurations>
+        <ExportConfiguration ID="33225803"><!-- Definition:
+<?xml version="1.0"?>
+<ExportManagerConfig Version="2" Name="testMJAN" ContextID="Context1" WorkspaceID="Main" UseContextLocale="false" ResolveInlineRefs="true" ExportDerivedAttrs="false" EffectiveDate="" EffectiveDateTimeZoneID="Europe/Amsterdam" ECatalogID="" SelfContainedReferences="false" VersionID="" ScheduleDate="" ProcessTemplate="Exporter" ContentMode="" ExecutionMode="" InheritProductData="true" LeafProductExport="true" ExportSelectedProducts="false" isSorted="false">
+  <ProductSelection>
+    <URL>step://classification?id=IconRoot</URL>
+  </ProductSelection>
+  <Format Name="Excel2">
+    <Parameter Name="ExcelVersion">ExcelVersion2007</Parameter>
+    <Parameter Name="ExportValidAndAbsent">No</Parameter>
+  </Format>
+  <ProductMapping SelectedURLType="product">
+    <CompositeMap Target="Column">
+      <Trigger><IDSource Aspect="ID"/></Trigger>
+    <Map Target="ColumnHeader">
+      <Expression><ConstantSource Constant="&lt;ID&gt;"/></Expression>
+    </Map>
+    <Map Target="ColumnValue">
+      <Expression><IDSource Aspect="ID"/></Expression>
+    </Map>
+    </CompositeMap>
+  </ProductMapping>
+  <Delivery Name="File">
+    <Parameter Name="FileNameTemplate">$filename-$timestamp(yyyy-MM-dd_HH.mm.ss).$extension</Parameter>
+  </Delivery>
+</ExportManagerConfig>
+ -->
+            <Name>testMJAN</Name>
+            <MetaData>
+                <Value AttributeID="asset.extension">xml</Value>
+                <Value AttributeID="asset.filename">ExportConfig18061156498672385761.xml</Value>
+                <Value AttributeID="asset.format">XML (Extensible Markup Language document)</Value>
+                <Value AttributeID="asset.mime-type">application/xml</Value>
+                <Value AttributeID="asset.size">1279</Value>
+                <Value AttributeID="asset.uploaded">2024-10-11 04:31:04</Value>
+            </MetaData>
+            <ClassificationReference ClassificationID="stibo.EMConfigFolder"></ClassificationReference>
+            <Configuration>H4sIAAAAAAAA/31Uy27bMBC8+ysIwgjaQ6wklwKNJEOIHERFZAS2kwK9FKy4UohSpEBShv33XVpU4jxcn6TZ4ezseKl4vmsl2YKxQquEXs4u6DydxItdp40rmWINmButatGQp5F0RcmStZBQB9aVP7IlJUhxsHNFntDweEnJT23+2o5V4OGSCUXJo4VQv9cVk6hRM2mBkhVYLbdQKCkUrKC2qG56LAxOcjBiCzxzztiXM4u6hsohnjOHSu+AjWjhl1aH5ove6A6irLUODGctUm+YY1I3vkrJGmTtfaFH4NgdDKgKXjuF0QO5egbey5euD0Yj126g7eQBGiyDCbEoV2o++NtB1TsUGoFCPeNgDhV4XzkUZOPY98DqAA9yb/NAwzgp8EB5dSrs2vfmI5BOCIkDaziE7T2I8OPqPsVAuu9RVElmrahFxXx9LnhSVFqttHZx5GleJfpMJr7VpmUuLMRiV4G8okH/gRlEMYjjaoiSpsdvVxcX31B/5J8870d/YlLwTPHsj8VoabrU707G0eDpePSSdZ1QDRlzw5k2+w41u6E+Wr7RbaetcIAHyIaZBpzfaNm3KlCQtDGiwWuRxkW+1r2pgGS2Q9mEFjmN0jgaCYPmR6k7YBzX40UQBzO4QT5SdKCsY8oF5fE1oWfSXRf5WeOuDz2OzgxtIuxzsiOG1sPnDU8N8b8G0XFOb5YjBH3AcpB4F80+/H23QsKp1fA1/zReIppOa4QUQudThzcZQ2i7L3v8nZflOee/7+5mbTuz9utsil8TUN7oh0UYHeAXLfrkk5ZO/gFm3gRY/wQAAA==</Configuration>
+        </ExportConfiguration>
+    </ExportConfigurations>
+</STEP-ProductInformation>

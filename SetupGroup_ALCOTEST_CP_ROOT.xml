@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <SetupGroups>
+        <SetupGroup ID="ALCOTEST_CP_ROOT" UserTypeID="ChangePackages" ParentID="ChangePackages">
+            <Name>2023 Spring</Name>
+        </SetupGroup>
+    </SetupGroups>
+</STEP-ProductInformation>

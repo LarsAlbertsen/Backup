@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ComponentModels version="2">
+        <Model id="com.stibo.matching.domain.impl.mergedgoldenrecord.componentmodel.MergedGoldenRecordComponent.Component">
+            <NodeAspectDescriptors>
+                <NodeAspectDescriptor id="com.stibo.matching.domain.goldenrecord.merged.MergedGoldenRecord">
+                    <UserTypeLink UserTypeID="Merge_Golden_Record"></UserTypeLink>
+                </NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.matching.domain.goldenrecord.merged.contributordata.ContributorSourceRecordsOwner"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.matching.domain.impl.mergedgoldenrecord.componentmodel.SourceSystem">
+                    <UserTypeLink UserTypeID="Source_System"></UserTypeLink>
+                </NodeAspectDescriptor>
+            </NodeAspectDescriptors>
+            <LinkAspectDescriptors>
+                <LinkAspectDescriptor id="com.stibo.matching.domain.impl.mergedgoldenrecord.componentmodel.MergedIntoRelationImpl"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.matching.domain.impl.mergedgoldenrecord.componentmodel.SourceRelationImpl"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.matching.domain.impl.mergedgoldenrecord.componentmodel.UnmergedFromRelationImpl"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.matching.domain.impl.mergedgoldenrecord.componentmodel.potentialduplicate.PotentialDuplicateRelationImpl"></LinkAspectDescriptor>
+            </LinkAspectDescriptors>
+            <ValueAspectDescriptors>
+                <ValueAspectDescriptor id="com.stibo.matching.domain.impl.mergedgoldenrecord.componentmodel.DeactivatedImpl">
+                    <AttributeLink AttributeID="DeactivatedAttribute"></AttributeLink>
+                </ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.matching.domain.impl.mergedgoldenrecord.componentmodel.SourceRecordIDImpl">
+                    <AttributeLink AttributeID="SourceRecordID"></AttributeLink>
+                </ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.matching.domain.impl.mergedgoldenrecord.componentmodel.SourceSystemIDImpl">
+                    <AttributeLink AttributeID="SourceSystemID"></AttributeLink>
+                </ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.matching.domain.impl.mergedgoldenrecord.componentmodel.potentialduplicate.PotentialDuplicateMatchScoreImpl">
+                    <AttributeLink AttributeID="PotentialDuplicateMatchScore"></AttributeLink>
+                </ValueAspectDescriptor>
+            </ValueAspectDescriptors>
+        </Model>
+    </ComponentModels>
+</STEP-ProductInformation>

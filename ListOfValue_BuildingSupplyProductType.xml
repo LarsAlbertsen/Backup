@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <ListsOfValues>
-        <ListOfValue ID="BuildingSupplyProductType" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+        <ListOfValue ID="BuildingSupplyProductType" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false" Referenced="true">
             <Name QualifierID="en-US">BuildingSupplyProductType</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
             <Value>Acrylic Sheet</Value>

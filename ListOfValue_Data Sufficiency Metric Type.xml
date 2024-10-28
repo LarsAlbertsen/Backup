@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <ListsOfValues>
-        <ListOfValue ID="Data Sufficiency Metric Type" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+        <ListOfValue ID="Data Sufficiency Metric Type" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false" Referenced="true">
             <Name QualifierID="std.lang.all">Data Sufficiency Metric Type</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
             <Value>Aggregate</Value>

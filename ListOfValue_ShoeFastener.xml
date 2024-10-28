@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <ListsOfValues>
-        <ListOfValue ID="ShoeFastener" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false">
+        <ListOfValue ID="ShoeFastener" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false" Referenced="true">
             <Name QualifierID="en-US">Fastener</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
             <Value>Buckle</Value>

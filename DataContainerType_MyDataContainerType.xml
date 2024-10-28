@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <DataContainerTypes>
+        <DataContainerType ID="MyDataContainerType" MultiValued="false" Inherited="false" Restricted="false" Mandatory="false">
+            <Name>MyDataContainerType</Name>
+            <AttributeGroupLink AttributeGroupID="Attribute group root"></AttributeGroupLink>
+            <AttributeLink AttributeID="DeleteMeViaXML"></AttributeLink>
+            <AttributeLink AttributeID="a1"></AttributeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+        </DataContainerType>
+    </DataContainerTypes>
+</STEP-ProductInformation>

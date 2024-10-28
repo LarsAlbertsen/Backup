@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeGroupList>
+        <AttributeGroup ID="Asset References" ShowInWorkbench="true" ManuallySorted="false" Referenced="true" ParentID="References">
+            <Name>Asset References</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <Configuration>H4sIAAAAAAAA/32Puw7CMAxF935FlA8gsDeVoAXEwIa6p62LLKVJFTtC/Xv6gLCx+VzdY8v5kTlgExmuwcexRnhV0KNDRu/ExYfBcA2BZtLysNvLIhMi/1VIPEx4Aqc1VBp3gnOHDJ2WvbEEUq1S6W0cHC3zTEnYYpH4Vml5n0pj2zXb5EWgEVr+tlfQskbCBi3y9Dmi0pVc/XutyN4o6eMR+gAAAA==</Configuration>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

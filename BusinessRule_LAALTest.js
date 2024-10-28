@@ -9,7 +9,7 @@
   "id" : "LAALTest",
   "type" : "BusinessAction",
   "setupGroups" : [ "Actions" ],
-  "name" : "LAALTest",
+  "name" : "LAALTest Change",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],

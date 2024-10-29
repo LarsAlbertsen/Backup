@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <CrossReferenceTypes>
+        <ProductCrossReferenceType ID="ItemToItem" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" MultiValued="true">
+            <Name QualifierID="en-US">ItemToItem</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">42</Value>
+            </MetaData>
+            <AttributeLink AttributeID="ELFRLovAttrWithID"></AttributeLink>
+            <AttributeLink AttributeID="ElfrDescAttr"></AttributeLink>
+            <AttributeGroupLink AttributeGroupID="ELFRAttrGroup"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="MarketingAttributes"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="Item"></TargetUserTypeLink>
+        </ProductCrossReferenceType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>

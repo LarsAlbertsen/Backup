@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="ELFRB" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Mandatory="false">
+            <Name QualifierID="en-US">ELFR B</Name>
+            <ListOfValueLink ListOfValueID="ELFRLov"></ListOfValueLink>
+            <MetaData>
+                <Value AttributeID="DisplaySequence">3</Value>
+                <Value Derived="true" AttributeID="GetCompleteness">42</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="ELFRAttrGroup"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ELFRAttrSubGroup"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ELFRAttrSubSubGroup"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Marketing"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

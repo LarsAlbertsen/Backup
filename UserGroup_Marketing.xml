@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserGroupList>
+        <UserGroup ID="Marketing" ReadOnly="true">
+            <Name>Marketing</Name>
+            <PrivilegeRule ActionSetID="LimitedApprove" ProductID="Product hierarchy root" AttributeGroupID="MarketingAttributes"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="Sufficiency" AttributeGroupID="MarketingAttributes"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="SufficiencyUserActions" ProductID="Product hierarchy root" AttributeGroupID="Data Sufficiency Attribute Group"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="SufficiencyUserActions" ProductID="Product hierarchy root" AttributeGroupID="Marketing"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="ViewSetupActions"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="ViewUserActions" ProductID="Product hierarchy root" AttributeGroupID="MarketingAttributes"></PrivilegeRule>
+        </UserGroup>
+    </UserGroupList>
+</STEP-ProductInformation>

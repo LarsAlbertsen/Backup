@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="ELFRLovLang" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false" Referenced="true">
+            <Name QualifierID="en-US">ELFRLovLang</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <Value QualifierID="en-US">AAAAXxx</Value>
+            <Value QualifierID="en-US">BB</Value>
+            <Value QualifierID="en-US">xx</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

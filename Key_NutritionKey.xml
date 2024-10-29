@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Keys>
+        <Key ID="NutritionKey" State="Active">
+            <Name>NutritionKey</Name>
+            <KeyFormula>concatenate(value('Manufacturer'),'-',value('ManPNO'))</KeyFormula>
+            <UserTypeLink UserTypeID="NutritionEntity"></UserTypeLink>
+            <AttributeLink AttributeID="ManPNO"></AttributeLink>
+            <AttributeLink AttributeID="Manufacturer"></AttributeLink>
+        </Key>
+    </Keys>
+</STEP-ProductInformation>

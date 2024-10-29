@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Item" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]" Referenced="true">
+            <Name>Item</Name>
+            <Icon>H4sIAAAAAAAAAH1Tz2sTQRTetlq0UkREiFJw3ApWMLs7SdNk18Y23U3agFtKGjAXsZvdabM0u7PuTsy2CK0VioGCFgTtRdqDV/8APbRFD3oQC3oSDx48CB68F7TOpk0UIR2YH+/xfe+9efNNbWJ8tLvrXBfDMN3ZMSUX7ME81klX98e3u3Q7S9IFMomnSVVzEZMycBGBrKXNoBzSjLnb79Agw3T0mfkCKajXJR1bnBZgON9ymGAMDvmOps8iAopoxrST7M9XmywwjSR7I6YKqiOjkjk276LJ+fG8Pj+riwY7dA0M+hINYCGiAd8q257kJ9l6XImeAzfPgjqEzCbZ/aIK6gSQsYtAjBsI6zCaAHGRgzExEem/AiICHOAFkYf9YQFKgigJEBwMlmZzjWkpp2QOclEryZYIcSSer1arXDXKYXeGh6Io8kKEj0TCFBH25myi+WHb621EUJCnu6ZDTGyDwNaKuEKSLNu4guU0w9reQZtow3hfc3jICfw/QFU9HGpZTbRHcmj6cLSXn3MQn0Merrg6fbjp3oDsSLKLNILdPMblRhcnSphgr4QdIMtB1+KgT9V00w6cl+ssVZWytkc0W0dZJclSD2eahgRhKpHJZCJxRclAmI6n0rGYHE/LsgzhSDSaanAVrFcsZJMG1/jLjbbkBoLYZyPXvIOMjIstUL+4ZLauRWhdyz7XaF0LbMnlaTH8f8/dcFENBcemeKnRlD+yqeZdKu6npx5s0o9Bs6by/ufil4W9vYVOdvF+e0fvyvtPOztbztc2TR2OOa/XttpPjH18Wzp/62R8+8LGvdCTkTJ75tHz2tGb69ttm8vLHYly0TDerGvl3d3a8dDoyvelvY3akbXfDx87Ia1nqufXpYFnoVWVMS9mTg8vtjGrVznzQ0V6GfzMbHpceTEytfQHzbCPOgYEAAA=</Icon>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <UserTypeLink UserTypeID="Level2"></UserTypeLink>
+            <UserTypeLink UserTypeID="Level3"></UserTypeLink>
+            <UserTypeLink UserTypeID="Level4"></UserTypeLink>
+            <AttributeLink AttributeID="ALCOCalc"></AttributeLink>
+            <AttributeLink AttributeID="ATD_ALCO2"></AttributeLink>
+            <AttributeLink AttributeID="ATD_ALCO_Text_MultiValue"></AttributeLink>
+            <AttributeLink AttributeID="ATS_ALCO1"></AttributeLink>
+            <AttributeLink AttributeID="BBB"></AttributeLink>
+            <AttributeLink AttributeID="CalcName"></AttributeLink>
+            <AttributeLink AttributeID="ELFRA"></AttributeLink>
+            <AttributeLink AttributeID="ELFRALov"></AttributeLink>
+            <AttributeLink AttributeID="ELFRB"></AttributeLink>
+            <AttributeLink AttributeID="ELFRCalc"></AttributeLink>
+            <AttributeLink AttributeID="ELFRCalc2"></AttributeLink>
+            <AttributeLink AttributeID="ELFRDesc"></AttributeLink>
+            <AttributeLink AttributeID="ELFRLang"></AttributeLink>
+            <AttributeLink AttributeID="ELFRLovAttrWithID"></AttributeLink>
+            <AttributeLink AttributeID="ELFRLovWithIDandDim"></AttributeLink>
+            <AttributeLink AttributeID="ELFRMultiLovNoID"></AttributeLink>
+            <AttributeLink AttributeID="ELFRNumber"></AttributeLink>
+            <AttributeLink AttributeID="ELFRNumber2"></AttributeLink>
+            <AttributeLink AttributeID="ELFRTriggerAttr"></AttributeLink>
+            <AttributeLink AttributeID="FoodType"></AttributeLink>
+            <AttributeLink AttributeID="FoodTypeDIMOnlyLov"></AttributeLink>
+            <AttributeLink AttributeID="FoodTypeSingle"></AttributeLink>
+            <AttributeLink AttributeID="GroupingAttribute"></AttributeLink>
+            <AttributeLink AttributeID="GroupingAttribute2"></AttributeLink>
+            <AttributeLink AttributeID="LOVAttribute"></AttributeLink>
+            <AttributeLink AttributeID="LargeLOVbasedAttr"></AttributeLink>
+            <AttributeLink AttributeID="MMATTR1"></AttributeLink>
+            <AttributeLink AttributeID="MMATTR2"></AttributeLink>
+            <AttributeLink AttributeID="ManPNO"></AttributeLink>
+            <AttributeLink AttributeID="Manufacturer"></AttributeLink>
+            <AttributeLink AttributeID="MarketingDescLang"></AttributeLink>
+            <AttributeLink AttributeID="MarketingDescription1"></AttributeLink>
+            <AttributeLink AttributeID="MarketingDescription2"></AttributeLink>
+            <AttributeLink AttributeID="MultiDesc"></AttributeLink>
+            <AttributeLink AttributeID="MultiDescDim"></AttributeLink>
+            <AttributeLink AttributeID="MultiValueNumber"></AttributeLink>
+            <AttributeLink AttributeID="MyBoolean"></AttributeLink>
+            <AttributeLink AttributeID="Regex_1"></AttributeLink>
+            <AttributeLink AttributeID="Regex_2"></AttributeLink>
+            <AttributeLink AttributeID="ShirtColor"></AttributeLink>
+            <AttributeLink AttributeID="ShirtNeck"></AttributeLink>
+            <AttributeLink AttributeID="ShirtSize"></AttributeLink>
+            <AttributeLink AttributeID="StartDate"></AttributeLink>
+            <AttributeLink AttributeID="StartDateTime"></AttributeLink>
+            <AttributeLink AttributeID="StartDateUS"></AttributeLink>
+            <AttributeLink AttributeID="boolean"></AttributeLink>
+            <AttributeLink AttributeID="booleanA"></AttributeLink>
+            <AttributeLink AttributeID="booleanB"></AttributeLink>
+            <AttributeLink AttributeID="booleanC"></AttributeLink>
+            <AttributeLink AttributeID="booleanD"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

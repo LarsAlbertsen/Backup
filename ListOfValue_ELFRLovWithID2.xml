@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="ELFRLovWithID2" ParentID="List Of Values group root" AllowUserValueAddition="true" UseValueID="false">
+            <Name QualifierID="en-US">ELFRLovWithID(2)</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value>five</Value>
+            <Value>four</Value>
+            <Value>one</Value>
+            <Value>ten</Value>
+            <Value>threexy</Value>
+            <Value>two</Value>
+            <Value>x</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserList>
+        <User ID="RAYN" ForceAuthentication="false" EMail="rayn@stibosystems.com">
+            <Name>Rayna Popova</Name>
+            <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
+            <SystemSetup></SystemSetup>
+        </User>
+    </UserList>
+</STEP-ProductInformation>

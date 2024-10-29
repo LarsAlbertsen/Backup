@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ActionSetList>
+        <ActionSet ID="SetupAttributes" Type="setup">
+            <Name>SetupAttributes</Name>
+            <ActionLink ActionID="Add attribute to attribute group"></ActionLink>
+            <ActionLink ActionID="Create attribute group"></ActionLink>
+            <ActionLink ActionID="Create product attribute"></ActionLink>
+            <ActionLink ActionID="Delete attribute group"></ActionLink>
+            <ActionLink ActionID="Delete product attribute"></ActionLink>
+            <ActionLink ActionID="Modify metadata for product attribute"></ActionLink>
+            <ActionLink ActionID="Modify name/description of attribute gro"></ActionLink>
+            <ActionLink ActionID="Modify name/description of product attri"></ActionLink>
+            <ActionLink ActionID="Modify valid (node) types for product at"></ActionLink>
+            <ActionLink ActionID="Remove attribute from attribute group"></ActionLink>
+            <ActionLink ActionID="View attribute group"></ActionLink>
+            <ActionLink ActionID="View attribute"></ActionLink>
+            <ActionLink ActionID="View metadata for attribute"></ActionLink>
+        </ActionSet>
+    </ActionSetList>
+</STEP-ProductInformation>

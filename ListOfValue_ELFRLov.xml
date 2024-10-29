@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="ELFRLov" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+            <Name QualifierID="en-US">ELFRLovName</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value ID="111">hide</Value>
+            <Value ID="114822">ACxxx</Value>
+            <Value ID="114823">Bbc</Value>
+            <Value ID="114825">Bcxc</Value>
+            <Value ID="114826">ACxxx</Value>
+            <Value ID="114827">ccccxxx</Value>
+            <Value ID="218343">AA This is a longer value
+spanning several lines
+This is the 3rd line
+and this the 4th
+5th line</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

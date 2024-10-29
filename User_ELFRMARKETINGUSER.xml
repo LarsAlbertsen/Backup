@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserList>
+        <User ID="ELFRMARKETINGUSER" ForceAuthentication="false">
+            <Name>elfrMarketingUser</Name>
+            <MetaData>
+                <MultiValue AttributeID="ConfigurationEntityReferences">
+                    <Value>ContextConfiguration#Instrument#CC_DSFVH_Instrument#42047010</Value>
+                    <Value>WorkArea#Instrument#CC_DSFVH_Instrument#42047011</Value>
+                    <Value>Perspective#Instrument#CC_DSFVH_Instrument#42047012</Value>
+                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#42047010</Value>
+                    <Value>ColumnWidthsView#Instrument#CC_DSFVH_Instrument#42047010</Value>
+                    <Value>PerspectiveFilterItem#Instrument#CC_DSFVH_Instrument#42047010</Value>
+                    <Value>PerspectiveSortingItem#Instrument#CC_DSFVH_Instrument#42047010</Value>
+                </MultiValue>
+            </MetaData>
+            <UserGroupLink UserGroupID="Marketing"></UserGroupLink>
+            <SystemSetup>
+                <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>
+            </SystemSetup>
+        </User>
+    </UserList>
+</STEP-ProductInformation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <UnitList>
+        <Unit ID="unece.unit.LUM" ParentID="Light and Related Electromagnetic Radiat">
+            <Name QualifierID="std.lang.all">lm</Name>
+            <MetaData>
+                <Value QualifierID="en-US" AttributeID="UnitDescription">lumen</Value>
+            </MetaData>
+        </Unit>
+    </UnitList>
+</STEP-ProductInformation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Keys>
+        <Key ID="ALCO_Key01" State="Active">
+            <Name>ALCO_Key01</Name>
+            <KeyFormula>value('ATS_ALCO1')</KeyFormula>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <AttributeLink AttributeID="ATS_ALCO1"></AttributeLink>
+        </Key>
+    </Keys>
+</STEP-ProductInformation>

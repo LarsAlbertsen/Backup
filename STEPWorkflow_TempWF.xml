@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <STEPWorkflows>
+        <STEPWorkflow ID="TempWF" Referenced="true"><!-- Definition:
+<scxml name="TempWF" initial="State-2" version="0.9">
+  <assignee id="$current" type="user"/>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=664.0 h=590.0  </editorLayout>
+  <final id="State-3" name="End" discontinued="false">
+    <editorLayout>   node-size-and-position x=292.0 y=302.0 w=100.0 h=25.0  </editorLayout>
+  </final>
+  <state id="State-2" name="Init DK" discontinued="false">
+    <transition businessconditionid="con-792f8444-1f77-43a0-ba6f-4a0b5d6dd1f0" event="Submit" target="State-3"/>
+    <editorLayout>   node-size-and-position x=244.0 y=130.0 w=100.0 h=25.0  </editorLayout>
+  </state>
+</scxml> -->
+            <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
+            <Name QualifierID="std.lang.all">TempWF</Name>
+            <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
+            <Configuration>H4sIAAAAAAAAAI2STYvbMBCG7/kVquhVsWI7yWaxfOkHLC1sYVt6VqxxdsAeG2kcZ/vrK6ubLiyF7cWDzMy8z2PZTjzcETJahnv64CFW09ouQBXGDrmGCzQTw0PjceSv2COD++bxjB2cIBj207Wzw8BA93TXj4Nn8D9G93pZaC59Z6pUBKbYzsgHjn0ql4JsD0Z+h378+VmKM/iAAxmp1wcp4gQFIx+Zx9ssm+d5PRfrwZ+yXOttpvdZWirr6p1SQggaHKiAv0BZcmocQswaSFyMXmvxlJ6z2e3KWB/N9rCchVL1SlQ2BDwRgEBn5Ptm8h6IpeCnMbJNAXzMyK5N9SpOhIVfOAzNQIw0QRxM1jLteKW3fG3x8cvbpHlZJtZN8Yd2o3Wizbd/YUXF3tLzxHEKSBAWCpfeLOHxoPaHvL0py1Jt2v1elYXV6mh3rSqtPm7dzrlNq6WAc/SMtNMx3nH0tf4EfKUvFumXrHpVZck6+bdItnvLv7j6fyL3H+6HPLkXOv+3e5Wl1ASyXHz9/If9Bu1T9lnQAgAA</Configuration>
+            <LocalBusinessRule ID="con-792f8444-1f77-43a0-ba6f-4a0b5d6dd1f0" Scope="Local" Type="Condition" RunPrivileged="false"><!-- Definition:
+Condition #1 (JavaScriptBusinessConditionWithBinds):
+<config>
+  <bindings>
+    <binding alias="item" type="Node" contract="CurrentObjectBindContract"/>
+  </bindings>
+  <messages>
+    <message key="msg">
+      <default>The error message for {item}</default>
+      <localizations>
+        <localized locale="da">Dette er en fejl for {item}</localized>
+      </localizations>
+    </message>
+  </messages>
+  <javaScript>
+if ('40016617x' == item.getID() || '40016617xx' == item.getID()) {
+	var m = new msg()
+	m.item = item.getID()
+	return m;
+}
+return true;
+  </javaScript>
+</config> -->
+                <Name>Can Submit</Name>
+                <Configuration>H4sIAAAAAAAAALVUTW/TQBA9x79i5EOaHLATCRUk24lIChIfFRU14hht7bG70Xpt9iO0tP3v7GY3iUMV4MJt9s3sm3lv7O2Yrilfka5jFOWKVqui5RWtU2kANetc2mFZOr9rGGxQSNryLJxGkxCQF21JeZ2FX/N3L16H81mQLrSkHKX8ohnOAoA9cLWlg37eQe8vsvAD2ZDrQtBO7fLLlpdUmV7fqLpdUF7K0NIZwisiSIPKTOKAPgSWzFVDft9hFq4Nc8QIr6NrJcys4WzIVHIkZvhdtyoxilxwkOXOW20unA9rlQSWwPa4JN32DLBDwJilBCmUGcPdWGohkKvPN2sslC1Z+grf6w2jRPpaqrDx8F7QkhG5y3PNmIvi/Rxxf5A03t87Yc1bIVpxaewlNf5viz61BWH0J7lh6Dvm2HSMKFxoXjLseXe6FPzZN8pvEdBqgMbhUJn4wTr35Ef7iPe+uJG1C3wn1ysXhEtDbWT9Rn6BSll6ow4qXLM/cZekvwnHHJ+WcdjXP7ny90UefpjTW6QVjM5eTibT8/Ppq7szyDKwYqIazfc5GsPjIxzSz/NjeAgGG2Kshgw4/gDj52gcDJrIVsFxcTAQqLTg0CTBU+BjJTQmz7T0gO0fnMbHT4R5ROLjV8Q/SL8AHVbgcrAEAAA=</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+        </STEPWorkflow>
+    </STEPWorkflows>
+</STEP-ProductInformation>

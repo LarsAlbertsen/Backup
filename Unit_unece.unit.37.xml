@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <UnitList>
+        <Unit ID="unece.unit.37" ParentID="Pressure">
+            <Name QualifierID="en-US">oz/ft²</Name>
+            <MetaData>
+                <Value QualifierID="en-US" AttributeID="UnitDescription">ounce per square foot</Value>
+            </MetaData>
+        </Unit>
+    </UnitList>
+</STEP-ProductInformation>

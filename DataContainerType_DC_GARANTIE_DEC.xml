@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <DataContainerTypes>
+        <DataContainerType ID="DC_GARANTIE_DEC" MultiValued="true" Inherited="false" Restricted="false" Mandatory="false">
+            <Name>Garantie Décennale</Name>
+            <AttributeGroupLink AttributeGroupID="ATG_DATA_CONTAINER"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ELFRAttrSubGroup"></AttributeGroupLink>
+            <AttributeLink AttributeID="ATD_DOCUMENT"></AttributeLink>
+            <AttributeLink AttributeID="ATD_NUMBER"></AttributeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+        </DataContainerType>
+    </DataContainerTypes>
+</STEP-ProductInformation>

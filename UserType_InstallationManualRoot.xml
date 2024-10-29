@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="InstallationManualRoot" ClassificationOwnsProductLinks="false" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" ReferenceTargetLockPolicy="Strict" IDPattern="InstallationManualRoot">
+            <Name>Installation Manuals</Name>
+            <UserTypeLink UserTypeID="AssetRoot"></UserTypeLink>
+            <AttributeLink AttributeID="AttributeOnAClassification"></AttributeLink>
+            <AttributeLink AttributeID="Purpose"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

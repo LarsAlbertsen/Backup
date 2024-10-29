@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserGroupList>
+        <UserGroup ID="SYS US" ReadOnly="false">
+            <Name>SYS US</Name>
+        </UserGroup>
+    </UserGroupList>
+</STEP-ProductInformation>

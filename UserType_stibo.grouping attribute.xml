@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="stibo.grouping attribute">
+            <Name>Attribute Group</Name>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <UserTypeLink UserTypeID="stibo.grouping attribute"></UserTypeLink>
+            <AttributeLink AttributeID="DisplaySequence"></AttributeLink>
+            <AttributeLink AttributeID="GetCompleteness"></AttributeLink>
+            <AttributeLink AttributeID="LinkedAttributeGroups"></AttributeLink>
+            <AttributeLink AttributeID="Purpose"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

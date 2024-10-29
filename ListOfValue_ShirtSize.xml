@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="ShirtSize" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+            <Name QualifierID="en-US">ShirtSize</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value ID="1">Small</Value>
+            <Value ID="2">Medium</Value>
+            <Value ID="3">Large</Value>
+            <Value ID="4">XLarge</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

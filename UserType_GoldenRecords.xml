@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="GoldenRecords" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="GoldenRecords" NamePattern="Golden Records">
+            <Name>Golden Records</Name>
+            <UserTypeLink UserTypeID="Product user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="ObjectTypeDescription"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

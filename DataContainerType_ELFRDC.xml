@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <DataContainerTypes>
+        <DataContainerType ID="ELFRDC" MultiValued="true" Inherited="true" Restricted="false" Mandatory="false" IDPattern="[id]">
+            <Name>ELFRDC</Name>
+            <AttributeGroupLink AttributeGroupID="ELFRAttrGroup"></AttributeGroupLink>
+            <AttributeLink AttributeID="ELFRDesc"></AttributeLink>
+            <AttributeLink AttributeID="ElfrDescAttr"></AttributeLink>
+            <AttributeLink AttributeID="MultiValueDCNumber"></AttributeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Level4"></UserTypeLink>
+        </DataContainerType>
+    </DataContainerTypes>
+</STEP-ProductInformation>

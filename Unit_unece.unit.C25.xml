@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <UnitList>
+        <Unit ID="unece.unit.C25" ParentID="Angle">
+            <Name QualifierID="std.lang.all">mrad</Name>
+            <MetaData>
+                <Value QualifierID="en-US" AttributeID="UnitDescription">milliradian</Value>
+            </MetaData>
+        </Unit>
+    </UnitList>
+</STEP-ProductInformation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="ImportConfigurationsRoot" ClassificationOwnsProductLinks="false" ManuallySorted="true" AllowInDesignTemplate="false" AllowQuarkTemplate="false" ReferenceTargetLockPolicy="Strict" IDPattern="stibo.IMConfigFolder">
+            <Name>Import Configurations Root</Name>
+            <UserTypeLink UserTypeID="ConfigurationsRoot"></UserTypeLink>
+            <AttributeLink AttributeID="Purpose"></AttributeLink>
+            <AttributeLink AttributeID="AttributeOnAClassification"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

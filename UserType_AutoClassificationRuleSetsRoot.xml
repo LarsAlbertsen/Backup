@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="AutoClassificationRuleSetsRoot" ClassificationOwnsProductLinks="false" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" ReferenceTargetLockPolicy="Strict" IDPattern="AutoClassificationRuleSetsRoot">
+            <Name>Auto Classification Rule Sets Root</Name>
+            <UserTypeLink UserTypeID="ConfigurationsRoot"></UserTypeLink>
+            <AttributeLink AttributeID="AttributeOnAClassification"></AttributeLink>
+            <AttributeLink AttributeID="Purpose"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserList>
+        <User ID="READUSER" ForceAuthentication="false">
+            <Name>ReadUser</Name>
+            <UserGroupLink UserGroupID="ReadOnly"></UserGroupLink>
+            <SystemSetup></SystemSetup>
+        </User>
+    </UserList>
+</STEP-ProductInformation>

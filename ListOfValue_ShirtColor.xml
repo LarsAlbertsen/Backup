@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="ShirtColor" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+            <Name QualifierID="en-US">ShirtColor</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value ID="BLK">Black</Value>
+            <Value ID="BLU">Blue</Value>
+            <Value ID="GRN">Green</Value>
+            <Value ID="RED">Red</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

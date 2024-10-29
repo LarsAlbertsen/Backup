@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeGroupList>
+        <AttributeGroup ID="GE1" ShowInWorkbench="true" ManuallySorted="false" Referenced="true" ParentID="GroupingExample">
+            <Name QualifierID="en-US">GE1</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">42</Value>
+            </MetaData>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

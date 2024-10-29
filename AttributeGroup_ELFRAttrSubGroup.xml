@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeGroupList>
+        <AttributeGroup ID="ELFRAttrSubGroup" ShowInWorkbench="true" ManuallySorted="false" Referenced="true" ParentID="ELFRAttrGroup">
+            <Name QualifierID="en-US">ELFRAttrSubGroup</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">42</Value>
+            </MetaData>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

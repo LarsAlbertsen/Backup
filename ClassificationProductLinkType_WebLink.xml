@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <CrossReferenceTypes>
+        <ClassificationProductLinkType ID="WebLink" Inherited="false" Accumulated="false" DefinesValidAttributes="false" IgnoreLOVFilters="false" Revised="true" Mandatory="false" MultiValued="true">
+            <Name>WebLink</Name>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Level4"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="WebL3"></TargetUserTypeLink>
+        </ClassificationProductLinkType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>

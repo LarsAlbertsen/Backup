@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="MMATTR1" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Mandatory="false">
+            <Name QualifierID="en-US">MMATTR1</Name>
+            <ListOfValueLink ListOfValueID="ELFRLovWithID"></ListOfValueLink>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">42</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="GE1"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="MarketingAttributes"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

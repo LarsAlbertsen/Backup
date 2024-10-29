@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="ATD_NUMBER" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+            <Name QualifierID="en-US">Number</Name>
+            <Validation BaseType="number" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">42</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="ATG_DATA_CONTAINER"></AttributeGroupLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

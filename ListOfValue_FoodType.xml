@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="FoodType" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+            <Name QualifierID="en-US">FoodType</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <Value ID="1" QualifierID="en-US">Snack</Value>
+            <Value ID="2" QualifierID="en-US">Fruit</Value>
+            <Value ID="3" QualifierID="en-US">Vegetable</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

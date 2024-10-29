@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="CP-Link-Type user-type root">
+            <Name>CP-Link-Type</Name>
+            <AttributeLink AttributeID="Completeness Score"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeTransformationGroups>
+        <AttributeTransformationGroup ID="AttributeTransformationGroup1">
+            <AttributeTransformation ID="AttrTransform">
+                <Name>AttrTransform</Name>
+                <AttributeLink AttributeID="ELFRNumber2"></AttributeLink>
+                <Configuration>H4sIAAAAAAAAAF2NwQrCMBBE7/2KZT/A6r3NpSIIbRWU4nXFrRaSRjYJ/r5rDmI9zszjTXUWmsPoxVGc/BygT+7Kchhr3CBcunZgCTpoXK0RenK8y3BkqXEkGxhhv/3poiStumTjNJBNfOInC0WvE5oCoFo+wnSrsXnQfOeGVPZBFDqS6JUK86USeWv9i6Uqv2P2lUuhKf6bYIo3nnIrLucAAAA=</Configuration>
+            </AttributeTransformation>
+        </AttributeTransformationGroup>
+    </AttributeTransformationGroups>
+</STEP-ProductInformation>

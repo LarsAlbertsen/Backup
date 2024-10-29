@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ActionSetList>
+        <ActionSet ID="ViewData" Type="setup">
+            <Name>View Data</Name>
+            <ActionLink ActionID="View attribute group"></ActionLink>
+            <ActionLink ActionID="View attribute"></ActionLink>
+            <ActionLink ActionID="View unit"></ActionLink>
+        </ActionSet>
+    </ActionSetList>
+</STEP-ProductInformation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeTransformationGroups>
+        <AttributeTransformationGroup ID="AttributeTransformationGroup1">
+            <AttributeTransformation ID="AttrTransform2">
+                <Name>AttrTransform2</Name>
+            </AttributeTransformation>
+        </AttributeTransformationGroup>
+    </AttributeTransformationGroups>
+</STEP-ProductInformation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <TransformationLookupTableConfigurations>
+        <TransformationLookupTableConfiguration ID="LookupTable"><!-- Definition:
+<Configuration IgnoreCase="false" ReplaceEmptyWithKey="true">
+  <ValuePair>
+    <FromValue>a</FromValue>
+    <ToValue>aaaaa</ToValue>
+  </ValuePair>
+  <ValuePair>
+    <FromValue>b</FromValue>
+    <ToValue>bbbbb</ToValue>
+  </ValuePair>
+</Configuration>
+ -->
+            <Name>LookupTable</Name>
+            <MetaData>
+                <Value AttributeID="asset.extension">txt</Value>
+                <Value AttributeID="asset.filename">ValueSubstitutionTransformationConfiguration.xml</Value>
+                <Value AttributeID="asset.format">Text (Plain ASCII text)</Value>
+                <Value AttributeID="asset.mime-type">text/plain; charset=us-ascii</Value>
+                <Value AttributeID="asset.size">253</Value>
+                <Value AttributeID="asset.uploaded">2023-03-15 13:10:01</Value>
+            </MetaData>
+            <ClassificationReference ClassificationID="ConfigurationsRoot"></ClassificationReference>
+            <Configuration>H4sIAAAAAAAAALNxzs9Ly0wvLUosyczPU/BMz8svSnVOLE61VUpLzClOVVIISi3ISUxOdc0tKKkMzyzJ8E6ttFUqKSpNVbLjUlCwCUvMKU0NSMwsAvGAfLei/FywmF2ijT6CA5EMyYdKgYCNPowLMkcfxSA8xibhNjYJBHAba6OP4lk7LgA0/SZL/QAAAA==</Configuration>
+        </TransformationLookupTableConfiguration>
+    </TransformationLookupTableConfigurations>
+</STEP-ProductInformation>

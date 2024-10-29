@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <CrossReferenceTypes>
+        <ProductCrossReferenceType ID="SmartsheetTemplateProduct" Inherited="true" Accumulated="false" Revised="true" Mandatory="false" MultiValued="false">
+            <Name QualifierID="std.lang.all">Smartsheet Template Product</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">42</Value>
+            </MetaData>
+            <TargetUserTypeLink UserTypeID="BusinessUnitRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="BuySideRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Case"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="DiscontinuedProducts"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Level1"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Level2"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Level3"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Level4"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="OverrideLevel1"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="OverrideLevel2"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Pack"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="PackagingHierarchyRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Pallet"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Product user-type root"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="ProductOverrides"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Products"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="SellSideRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="std.AdaptorType"></TargetUserTypeLink>
+        </ProductCrossReferenceType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>

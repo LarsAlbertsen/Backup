@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Default publication type" ManuallySorted="false" IDPattern="[id]">
+            <Name>Publication</Name>
+            <UserTypeLink UserTypeID="Publication group root"></UserTypeLink>
+            <UserTypeLink UserTypeID="Publication root"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

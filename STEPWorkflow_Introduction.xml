@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <STEPWorkflows>
+        <STEPWorkflow ID="Introduction" Referenced="true"><!-- Definition:
+<scxml name="Introduction" initial="Init" version="0.9">
+  <assignee id="$current" type="user"/>
+  <datamodel>
+    <data id="Note"/>
+  </datamodel>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=420.0 h=514.0  </editorLayout>
+  <final id="Done" discontinued="false">
+    <editorLayout>   node-size-and-position x=160.0 y=469.0 w=100.0 h=25.0  </editorLayout>
+  </final>
+  <parallel id="Parallel" discontinued="false">
+    <transition target="Done"/>
+    <editorLayout>   node-size-and-position x=20.0 y=193.0 w=380.0 h=226.0  </editorLayout>
+    <state id="ClusterA" discontinued="false" initial="AInit">
+      <editorLayout>   node-size-and-position x=20.0 y=43.0 w=140.0 h=163.0  </editorLayout>
+      <final id="ADone" discontinued="false">
+        <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
+      </final>
+      <state id="AInit" discontinued="false">
+        <transition target="ADone"/>
+        <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+      </state>
+    </state>
+    <state id="ClusterB" discontinued="false" initial="BInit">
+      <editorLayout>   node-size-and-position x=220.0 y=43.0 w=140.0 h=163.0  </editorLayout>
+      <final id="BDone" discontinued="false">
+        <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
+      </final>
+      <state id="BInit" discontinued="false">
+        <transition target="BDone"/>
+        <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+      </state>
+    </state>
+  </parallel>
+  <state id="Init" discontinued="false">
+    <transition businessactionid="acn-a91b8b6d-981a-46c4-9cba-084e13b9798d" event="Submit" target="Work"/>
+    <editorLayout>   node-size-and-position x=160.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="acn-13504c6b-ac0a-47fb-93a1-469d492828d1"/>
+  </state>
+  <state id="Work" name="WORK" discontinued="false">
+    <transition target="Parallel"/>
+    <transition businessconditionid="con-f542685d-1a0b-4ce6-af90-fd303093594d" event="resub"/>
+    <assignee id="Stibo" type="group"/>
+    <editorLayout>   node-size-and-position x=160.0 y=120.0 w=100.0 h=25.0  </editorLayout>
+  </state>
+</scxml>
+<workflowViews>
+  <restriction displaySequence="0" includeSubgroups="false">
+    <mapping displaySequence="0" stateID="Init" viewID="MainView"/>
+    <mapping displaySequence="1" stateID="Work" viewID="MainView"/>
+    <mapping displaySequence="2" stateID="Done" viewID="MainView"/>
+    <mapping displaySequence="3" stateID="AInit" viewID="MainView"/>
+    <mapping displaySequence="4" stateID="BInit" viewID="MainView"/>
+    <mapping displaySequence="5" stateID="ADone" viewID="MainView"/>
+    <mapping displaySequence="6" stateID="BDone" viewID="MainView"/>
+  </restriction>
+  <view id="MainView" automaticSort="false" defaultSortColumn="0">
+    <aspect id="id"/>
+    <aspect id="name"/>
+    <column name="Note" mandatory="false" readOnly="false">
+      <plugin pluginID="WorkflowVariable">
+        <parameter id="Variable" value="Note"/>
+      </plugin>
+    </column>
+    <column name="Assignee" mandatory="false" readOnly="false">
+      <plugin pluginID="WorkflowAssignee">
+        <parameter id="ExpandGroups" value="false"/>
+      </plugin>
+    </column>
+  </view>
+</workflowViews> -->
+            <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
+            <Name QualifierID="std.lang.all">Introduction</Name>
+            <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
+            <StartCondition ID="canEnterIntroduction"></StartCondition>
+            <Configuration>H4sIAAAAAAAAALVW23LbNhB9z1egnL5CvIomPaQystN2PG3iTNU0zyAJKZiCIAuAktWv7wKkZMnWhUnTF4GAsOfsnl1gQTrdPAimGdH0UdxLCmO+JFzRTLWc6Rl9omWn6aKUrNW/sZppWn2UbM04XVGVa9ntdnKmNBWP4qFuG6mp/NRWL8FU+VTzPLMDYpaW547hd5AgNTXfWjZVV2rWCAetqVTwkTveJHUQGAmVO1+0bm9dd7PZTDbhpJErN/C8qevduBbXmWU/YIwQEk1FsWL/UExEhdtGMQOKnnJv4qGt/d3kUWDGL/nUj2BEGM/eoAz8JjVYc5j0M8Sq3PnQaArorlmYvenHYRsYEaXYSlBqt/5YdlJSAWHpbQthdYpKY7rbZC2UBn1QxVTZCM1ER8HQquVYDCvL1WD8uA8nCm08vtfHE0z34aCsEeCK3KKiU0xQpYiV13CQUmA/nHpRGReYlB7B0c2ywGlIfBzFaRWlQRIklW98H1CM6yjTkojBh9OoJPWLpIgrnCY+oMZlhNOyINhLIuqHRXqTJpWD6Bowc2fRFbWpAU3kisL8cyP/MpTPLEZvq9cY5az5UFCfH3//dbyKfuCdl/Eg5p2jH4kknFP+0tkzEoG7FdupBBO8nEZBnEwr7BOvwFFJY0yWqYeXVeiFXhpO0+hZJUlVV5xiOiq9hWZFs6u7lWy69rjwDnVcMkH4eR3fQcq/ogLj9LR2mWt5LGM7CHae9EDSK8TBkLO0L/0wGXiD+HLShrBeyXilqu55BxecnDvPN9d83BkNjo9o1Pvpx+Gzn1fZv43qRBmf1mR+SpSDUkFXi2U+rlp2SfOTK8VySD4yNXcHqbkbqdf3yM1Yrm/Mzd1/zs3d/5WbzN0daLto+u9s6PVrRjd59tZ0+n0b9yce3GaibComVrnz6Y+fceIgwBIV4eBi7mypct4CllDB7Qau8SVvNn8Ckuq7/y2sH70AlLntJmVTO4N+htbG/J4wYSwdVNEl6bhewKvkvuFdbd4TDiLw8qmJZqVZ36nVg1ggolpaagvFKsc9/Y/pMUf/lZZg6D32wYDgTVU9Cr7dZ6Q24epGbl+zWoyWdysmUD88vOv7mRWCSEYK/tKgN4I81BQOgfVrvxOtCe92rrgviNye4sB9t/f/XEDzoYt8z6D2mFeD+umpBZJfTEtT+8B6sq+MLHNNmQzf0Fa1ZPbxAtdHybuKwnvEdk61Dw+OVsvJdkH/7qB+qamgA/CatC1UNLKnwgTXP2kNiZkdlOJrGPcSTv+SGYHjX8ax538MTnAZZz46sPAy0N1ooOiKR6NDm17xaDRQvAPK3IPaMRfgq1sLFvvb8F9heua+aA0AAA==</Configuration>
+            <LocalBusinessRule ID="acn-13504c6b-ac0a-47fb-93a1-469d492828d1" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (BulkUpdateTriggerStateFlowEvent):
+currentStateID=Init
+eventID=Submit
+processNote=
+stateFlowID=Introduction
+ -->
+                <Configuration>H4sIAAAAAAAAAI2Sz0/DIBSA7/srCHdbvXkoXbJsS3oxi+3ODdI3glIg8Kj630tbXbqYTW/ke7yP9wOno1Sm5c5pBaFVp1ZYc1KyCAlg6ebwzFix/ug1GcAHZQ2jD9k9JWCE7ZSRjB6b/d0jXZerYhODMhDCc9RQrgg5g8OkI8v4jKoto5uo346u4wiNV1KCrzGd99q+7wYwSEdTch245z1gKmIGS0RGj4jep/tTdrWlpPl0wOgrH3imuZFZjT7VS8vKKCzyc+4VG4xv39LU8aX/j8h5K1LPTxbhuuxvTfgZyu3W0NsuCkx7+qVcgGmERX65nrTA/HKD35/hC5+oCJAsAgAA</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-a91b8b6d-981a-46c4-9cba-084e13b9798d" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="logger" type="Logger" contract="LoggerBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+logger.info('Introduction before checking ' + node.getID() + ' name is ' + node.getName())
+
+if(node.getName() == null) {
+	logger.info('Introduction ' + node.getID() + ' name is null')
+}
+  </javaScript>
+</config> -->
+                <Configuration>H4sIAAAAAAAAALVUTY/TMBA9k18xyqFthEjghtSk1baAtGgXVmwRx8p1Jl4vrh1sZ8WH+O+M42y3ESoLB27jNx9vnsfjVnVC6i1rWyXRbWWz5UY3UpSOAL9ooztiVbn8uldwh9ZJo6v0Rf48BdTc1FKLKv24efPsZbpcJOWqc1Kjcx86hYsE4ABc9eXg2B+h81dV+pbdsWtuZevv/WfcE9En6W9WUtcuDbWo2hWzbI+e2ojAMQShUoyGzbcWq/SWyuaKaZFfe0uNpouJ8vORksmXzvg5yYnGg6Z47oVFczkRfp6EAoHjkrX9GeAeAbopbxn31EbMWHfWovbvd7fIfQhZDxED15mSzA2x2tQ4wAdBa8Xcwd8pFa3iUd4LIwTaRwhVH/QvlIGwONZeFoe8E9N4ba2xlzROJvB/T+XCcKbkd7ZTODBucN8q5nHV6Vph8Zc9P7zF0w3Hy8ulbsxsek53bOquf7Cww8ZYBH6D/DOFwhSeQphtLpAGNMvoOAVNdCDdyPmOsFmWJYlsZmMMqgrCLDL4kTw5zfxHppA/zZKfv+s/AvqdKovxxtJOF+OlHv6HX2HHFvY/BAAA</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="con-f542685d-1a0b-4ce6-af90-fd303093594d" Scope="Local" Type="Condition" RunPrivileged="false"><!-- Definition:
+Condition #1 (JavaScriptBusinessConditionWithBinds):
+<config>
+  <bindings>
+    <binding alias="dir" type="DataIssuesContext" contract="DataIssuesContextBind"/>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="attr" type="Attribute" contract="AttributeBindContract">
+      ELFRDesc
+    </binding>
+    <binding alias="webui" type="WebUiContext" contract="WebUiContextBind"/>
+    <binding alias="cond" type="BusinessCondition" contract="BusinessConditionBindContract">
+      TestCondition
+    </binding>
+  </bindings>
+  <messages/>
+  <javaScript>
+dir.addIssuesReportHeader('header')
+cond.evaluate(node).getLocalizableMessages().forEach(m=>dir.addWarning(m, node))
+logger.info(cond.evaluate(node).getLocalizableMessages().get(0))
+cond.evaluate(node).getLocalizableMessages().forEach(m=>logger.info(m))
+return dir
+  </javaScript>
+</config> -->
+                <Configuration>H4sIAAAAAAAAALVVyW7bMBC96ysIHRwZaKj0VsCWjcQL6iJBA8eBjwYljWUGFKlycdN+fUaLFRtu4rRJT+Iseu/NkEMWwmVcrlhRCA5mxderRMk1z6L+8DEXZAvacCUj/zO98AnIRKVcZpF/v5ief/GHA69/5QyXYMzcCQjRNghkB0UN+w6sgUdI67it4Mh+vHbNxpH/jW3ZXaJ5YXfxkZIpt8i15HZzxWVq/BIOAW+ZZjlYVFI79l2kBKuzyeJXAZH/gMhUMJnRO6tRqz/oCNs7KKbzwynbw4rqxXNZtV3VVi+Hncz2vBKg5LhhRWUTsvMQbJbVLLEoo/5jzCybGeOgLMjCoy3TGp5LwZlp8lKuG29by0gwswtLJ0S9Ck9SjpzWIO33+AGSim7UZPyBVqoUPor30mKDY2fhBCfDvNc4E5VTY3msaKI00FTljEvK80LQlmKGVp1dyppcT+djMEmpLawafErrEuJ7/vqO/ITY8Y/qzdGpPtEjBEj/sUdxQ6VxwOhUI8cR+WH3FmBsGzpsYWvtjno/bOW8MHwTrZW+QTaWwf8ewmuVMMF/s1hAw7gALI3hEXQyxbvsjZqfb5+XBXs4oZSlaT3McyiUtl+BpaCDs031Pet65bZR2DLhUENQDleXZmCPdZqgS9dKT1iyCfKolNnAL5mWyBfkn0j1e9cTKstAUy7XKvgrfAwEF913idrnzhFKg3VaEtR61NQ9R3Uv98PDix+fhvDwbWiemScOiVbRvgYAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+        </STEPWorkflow>
+    </STEPWorkflows>
+</STEP-ProductInformation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <DataContainerTypes>
+        <DataContainerType ID="LicenseType" MultiValued="false" Inherited="false" Restricted="false" Mandatory="false">
+            <Name>License Type</Name>
+            <AttributeGroupLink AttributeGroupID="DataContainers"></AttributeGroupLink>
+        </DataContainerType>
+    </DataContainerTypes>
+</STEP-ProductInformation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserList>
+        <User ID="SSOUSER2" ForceAuthentication="false">
+            <Name>ssoUser2</Name>
+            <MetaData>
+                <MultiValue AttributeID="ConfigurationEntityReferences">
+                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32560</Value>
+                </MultiValue>
+            </MetaData>
+            <UserGroupLink UserGroupID="Super user"></UserGroupLink>
+            <SystemSetup></SystemSetup>
+        </User>
+    </UserList>
+</STEP-ProductInformation>

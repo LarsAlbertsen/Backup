@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserList>
+        <User ID="ACMEUSER02" ForceAuthentication="false">
+            <Name>AcmeUser02</Name>
+            <UserGroupLink UserGroupID="AcmeCorporation"></UserGroupLink>
+            <SystemSetup>
+                <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>
+            </SystemSetup>
+        </User>
+    </UserList>
+</STEP-ProductInformation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <STEPWorkflows>
+        <STEPWorkflow ID="ErrorNotification" Referenced="true"><!-- Definition:
+<scxml name="ErrorNotification" initial="Init" version="0.9">
+  <assignee id="$current" type="user"/>
+  <datamodel>
+    <data id="Message"/>
+  </datamodel>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=238.0  </editorLayout>
+  <final id="Done" name="Done" discontinued="false">
+    <editorLayout>   node-size-and-position x=20.0 y=193.0 w=100.0 h=25.0  </editorLayout>
+  </final>
+  <state id="Init" name="Init" discontinued="false">
+    <transition target="Work"/>
+    <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+  </state>
+  <state id="Work" name="Work" discontinued="false">
+    <transition target="Done"/>
+    <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
+  </state>
+</scxml>
+<workflowViews>
+  <restriction displaySequence="0" includeSubgroups="false">
+    <mapping displaySequence="0" stateID="Init" viewID="Main"/>
+    <mapping displaySequence="1" stateID="Work" viewID="Main"/>
+  </restriction>
+  <view id="Main" automaticSort="false" defaultSortColumn="0">
+    <aspect id="id"/>
+    <aspect id="name"/>
+    <column name="Message" mandatory="false" readOnly="false">
+      <plugin pluginID="WorkflowVariable">
+        <parameter id="Variable" value="Message"/>
+      </plugin>
+    </column>
+  </view>
+</workflowViews> -->
+            <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
+            <Name QualifierID="en-US">Error Notification</Name>
+            <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
+            <Configuration>H4sIAAAAAAAAAJVUTVPbMBC98ytUTa+OnQDTwFjhAO0MM21hJqU9C3tjdipLriTHpL++K8lJw1ehF+tz3763emvZe3Op0aP0cKXPLdAoVlI5KF2n0C/gHqrew7Ky2PnP2KKH+triGhU04IS3/famQudBX+nLtjPWg73p6sdgrrpvlSjjwDCmVYKH/Jxp2YLgH6019qvxuMJKejSaszVYRxPBi8kJZxSpneB33neneT4Mw2Q4nBjb5LOiOM6LD3kE54vyXZYxxrSpIXP4GzKp66wzDgMouxfFpGCb+B3E9CiMd2J2OKeRZdnigJVEXrYUrWiRVgxrwb+Ac7IBSpCHvcVBGsebFCedw0YDxNvvq95a0CTPbzqS1zuwIXR7KUY4T3ViNbrKaI+6BwqMVeMRY788cf6qtlkSd3SY1BWjuuOdOFZ6K/V430vbgBf8h7E/A7e/R0FcJBdprlBL9TLNC6NhSzPO30pzevICzzKPKd9So8h9TD7qeGPy6fy/ijQqe75IZTLfYnT7GmEQ5Vnw+s7D00nBGejK1KgbwW++fcrmnFG8rqUibME34PgZYWk3Ox1IykqZ4TshuWT9U9p/YH/n8dZMKtPywJlYh7TJqhKpfWpYyV75JfXkuVF9GxqJM0l931KDVWF/W8oEEEGk66DyEQZrnj9/Eur94KyKCcZ32HYKo59KfaXVZvdibVDrjd08TRxhOtU3qFkaLi/Sk8Y6SIvyVj0OSEHSUlr670Rqu5tsLVW/xyZ/lCtPWfZE5EnFWM08lHOcW3DeYhUNgbpSfQ3L/raxpu/cThx5tFNys4RfPb0zhGrvgbey6+jlWXRMkJa6OyQJq/HJnkLk/8JI7n8FY7rFKPM9HcG0T5xGm8nBfwDXIktLHgYAAA==</Configuration>
+        </STEPWorkflow>
+    </STEPWorkflows>
+</STEP-ProductInformation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Unit">
+            <Name>Unit</Name>
+            <DimensionLink DimensionID="Language"></DimensionLink>
+            <UserTypeLink UserTypeID="Unit Group"></UserTypeLink>
+            <UserTypeLink UserTypeID="Unit user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="UnitDescription"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

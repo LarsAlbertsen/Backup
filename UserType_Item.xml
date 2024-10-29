@@ -93,12 +93,12 @@
             <AttributeLink AttributeID="RetailPrice"></AttributeLink>
             <AttributeLink AttributeID="Bullet02"></AttributeLink>
             <AttributeLink AttributeID="ELFRFraction"></AttributeLink>
-            <AttributeLink AttributeID="New Attr"></AttributeLink>
             <AttributeLink AttributeID="ItemKey"></AttributeLink>
+            <AttributeLink AttributeID="New Attr"></AttributeLink>
             <AttributeLink AttributeID="RawLOV"></AttributeLink>
             <AttributeLink AttributeID="LanguageDependant"></AttributeLink>
-            <AttributeLink AttributeID="ValueFromVG"></AttributeLink>
             <AttributeLink AttributeID="a1"></AttributeLink>
+            <AttributeLink AttributeID="ValueFromVG"></AttributeLink>
             <AttributeLink AttributeID="LAALTestDescriptionAttribute"></AttributeLink>
             <AttributeLink AttributeID="MyLOV"></AttributeLink>
         </UserType>

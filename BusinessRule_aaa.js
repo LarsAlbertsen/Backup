@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "aa",
+  "id" : "aaa",
   "type" : "BusinessAction",
   "setupGroups" : [ "Actions" ],
-  "name" : "aa",
+  "name" : "aaa",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ "Item" ],
@@ -34,5 +34,12 @@
 }
 */
 exports.operation0 = function (product) {
+
+
+
+
+var children = product.getChildren()
+
+
 
 }

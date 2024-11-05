@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <STEPWorkflows>
+        <STEPWorkflow ID="StartExport" Referenced="true"><!-- Definition:
+<scxml name="StartExport" initial="Initial" version="0.9">
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=163.00000000000003  </editorLayout>
+  <final id="Final" discontinued="false">
+    <assignee id="$current" type="user"/>
+    <deadline businessactionid="acn-7e187838-14dd-4e07-99bb-31869c8e038e"/>
+    <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="acn-184d1538-c258-45a1-9069-a45f21aa5cb2"/>
+  </final>
+  <state id="Initial" discontinued="false">
+    <transition event="submit" target="Final"/>
+    <assignee id="$current" type="user"/>
+    <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="acn-3692759c-821a-4f90-a1b1-f49a9c3d0fc2"/>
+  </state>
+</scxml> -->
+            <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
+            <Name>Start Export</Name>
+            <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
+            <Configuration>H4sIAAAAAAAA/52T22rcMBCG7/cpVJFbrSUfdq1i+Sa0ECikEPoAsjTeCLyykeQ99Okr2bskUEIPvvBgM///zfyy5RzGJ2uCkQGe7aODWEVwMzR+Gkxo4QJqDvCinJnCN3M0AfR3Z05mgAP4952D8QHss306TqML4H5MOnn1cvD3Fq8ux0E0S0FmoQ4Cr/gBIyuPIPBLkC58uSQTjE7gvBmtwHTLMYoy6wV+DWH6nGXn83l7LrajO2Q5pVVG99nijNvmEyEIITtqIN78BCKtJtPoI2e06CLolqLrcj8LVqb6Ktiu2NL3V4EQIe0GNT7EPZA2Xo02GDuDFnjZCiOj38b/IzVfsWWxcunKzatYVhJqRgs2uCvqZm8seC9V0iaKVJYUO57vK65InTNJyp5TIlnHSF9yyVWhaa/yOEZ2c2k3yTI4aW8jwCm+F9jPXTxGjGLOB4jPX41dxs/eWlep9N4cLMCy5oOanYv6qLtO8ZhmDy6J7k3tpsmWpJK26ZPnx5ndkX+XGGP1/0bG6lKzqqiJyqualJVkhNMdJ7Ks+hiirFT3e2T/uHeSaJB6iPwPxtgDq/d1HIOVWpMS6J5w3nWkYPWOqxpoUUMyvdukMJcIl1TTR93efqFfoZL6FrADAAA=</Configuration>
+            <LocalBusinessRule ID="acn-184d1538-c258-45a1-9069-a45f21aa5cb2" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (RemoveObjectFromWorkflowAction):
+Workflow=
+Message=
+ -->
+                <Configuration>H4sIAAAAAAAA/5WQMY7CMBBFe05hTU8CHYUdBEJIFAgUgraMvGFiGRzbsp2we3sM2UWhoKB9o3nz51vVCqlLbq2S6EtZl5XRtRTURxAy2497xuj8p1GkQ+el0QymyQQI6sqcpBYMjsV6PIN5NqLL1kuN3uetwmxEyBPsHzoynPdos2KQY2M63H2fsQprZ5ov4y61MtdFFeI5uIuias8dbzDEDD0YInLX/K8BKX4tMjjzjieKa5EcgotBIaPpc+ONYxvDcYEfKAbgEYymrz/HVtLXWv4avgEbm6IRgQEAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-3692759c-821a-4f90-a1b1-f49a9c3d0fc2" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="item" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="transition" type="CurrentTransition" contract="CurrentTransitionBindContract"/>
+    <binding alias="wf" type="Workflow" contract="CurrentWorkflowBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+logger.info("Item "+item)
+logger.info("WF "+wf)
+logger.info("Transition "+transition)
+
+var wfI = item.getWorkflowInstance(wf);
+var tasks = wfI.getTasks();
+var task = tasks.iterator().next();
+logger.info("Task " + task);
+
+var serviceDescriptor = com.stibo.exportservices.descriptor.ExportServiceDescriptor;
+
+var parameters = new com.stibo.exportservices.descriptor.ExportServiceDescriptor.Parameter();
+parameters.configurationID = "32160505";
+var nodeUrlsList = new java.util.ArrayList();
+nodeUrlsList.add(item.getURL());
+parameters.nodeURLs = nodeUrlsList;
+
+var bgp = task.startBackgroundProcess(serviceDescriptor, parameters, "Started from WF");
+
+logger.info("BGP " + bgp.getID());
+  </javaScript>
+</config>
+Action #2 (BulkUpdateTriggerStateFlowEvent):
+currentStateID=Initial
+eventID=submit
+processNote=AutoSubmit
+stateFlowID=CreateItem
+ -->
+                <Name>Do Export</Name>
+                <Configuration>H4sIAAAAAAAA/7VWW2/aMBR+51dYeahA7UK7qdMkLhWXMmWiGyogHiuTOJmLsTPbAbpfv2M7hHSUwtbtLT7n83e+c7GdlGUJ5Q84TRkl6oHGD6HgMU1azZvNkqEVkYoK3vKu/EsPER6KiPKk5U0ng3efvJt2pdnNFOVEqfuMkTqsFRDpdupo38DVriBUGEaWDpX9zhT0W94XvMLjUNJUb/2dUEOgGdXfu5RHyjNcwDbCEi+JBhnOUDYhw+TQaPKUkpb3CLQ+wzzxx1qCUK99xnTjWSZnPzKhG5CO+9jl5NY2Mfd5c5boRsUQmBh3OLVrhLYWBJXSEocaZLgdvUxKwvW3+SMJtYH0ckQeq8MoVjmWarLMzUVCPYbV1s8zxtxX/dS4E4m5oqaMR2LrAviPFcyEXMRMrI/EX8d/EtdErZdb0KwX+w4Mxa2UQt7BVOGE/O/hGIoQM/oTzxnJI07IMmVYk27GIzhgJ2reHYnDgplIEiJ9ymNRdToCGCPkPs/NSNUq+5jZYItYxy/5d3Ozxe0GpFaprLBE6zhALWQC+Akp2hxwpTEPSRV4GxansVooQALeACdmWS35wGUhPlBJrIWs1nxONtpgXhBmduStOLcbAWa5FJErGpI+UbZiQgJxKJa+0nQufLJJhdQ5RvlRgfJvrWf8++6cNS0uG6DjZP0WSr/orsltx+y7+zWD7KG8QR8iuQw/vL/6eHl9ee1WrmRcRGQqmRpSpXNJdigyTZnfkRI/GY8JUEb6OIqq215N74fV2nMFFns/tEmWtuVFmCdp3iVIHUvdxeEikQJmeSQF5K6qe8W/KFXuIk9nbPaSCMVSLNFs4Iymfftt7n4e7boM4Y3soG9V7x2bksG+CM368/fm9Ceom7HFNI3gnE4kNZJAsSYDGOvbFVxlJz9Aobv67O6gf/jsBhwOFGbHLwJiwr/GpLL5kurjRKnr11ehyWGyTqbF+ERCta3Qa+p6kphKwPj9RfN2Fvc/kf+a/AL58uiz8ggAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-7e187838-14dd-4e07-99bb-31869c8e038e" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (RemoveObjectFromWorkflowAction):
+Workflow=
+Message=AutoCleanup
+ -->
+                <Configuration>H4sIAAAAAAAA/3WQy27CMBBF93yFNfsmdMfCDuIhJBZVEQ+xjEyYWKaObfmRwt9jSIuCENszmjN3rlVRSF1ya5VEX8q6rIyupaA+gVDYbtwxRsfnRpEWnZdGM/jMhkBQV+YotWCw2y4+RjAuBnQavdTo/ToqLAaEPMDqriP9eYeWcwZrbEyL34cTVmHhTLM37qdW5ndShXQObqKkWnHHGwwpQwf6iNw0/2tAtheLDE685ZniWmSb4FJQKGj+2Hjj+ErhuMD3ikkMZqaQ62hfbD1wz0jz5/dTQflzQ39lXwE2oRpmjAEAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+        </STEPWorkflow>
+    </STEPWorkflows>
+</STEP-ProductInformation>

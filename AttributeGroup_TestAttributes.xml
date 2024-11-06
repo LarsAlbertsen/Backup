@@ -8,8 +8,6 @@
             </MetaData>
             <AttributeSequence>
                 <AttributeLink AttributeID="TestClassificationKey"></AttributeLink>
-                <AttributeLink AttributeID="LAAL_1"></AttributeLink>
-                <AttributeLink AttributeID="LAAL_2"></AttributeLink>
                 <AttributeLink AttributeID="ISODateAttribute"></AttributeLink>
             </AttributeSequence>
         </AttributeGroup>

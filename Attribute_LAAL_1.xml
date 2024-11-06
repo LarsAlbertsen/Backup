@@ -7,7 +7,8 @@
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>
-            <AttributeGroupLink AttributeGroupID="TestAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ATG_LAAL"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Global"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
         </Attribute>
     </AttributeList>

@@ -3,11 +3,12 @@
     <AttributeList>
         <Attribute ID="LAAL_2" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
             <Name>LAAL_2</Name>
-            <Validation BaseType="number" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>
-            <AttributeGroupLink AttributeGroupID="TestAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ATG_LAAL"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Global"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
         </Attribute>
     </AttributeList>

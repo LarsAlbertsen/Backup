@@ -106,8 +106,8 @@
             <AttributeLink AttributeID="LAAL_1"></AttributeLink>
             <AttributeLink AttributeID="LAALTestDescriptionAttribute"></AttributeLink>
             <AttributeLink AttributeID="ItemUniqueID"></AttributeLink>
-            <AttributeLink AttributeID="IsActive"></AttributeLink>
             <AttributeLink AttributeID="ValueFromVG"></AttributeLink>
+            <AttributeLink AttributeID="IsActive"></AttributeLink>
             <AttributeLink AttributeID="GenerateProof"></AttributeLink>
             <AttributeLink AttributeID="LAAL_2"></AttributeLink>
             <AttributeLink AttributeID="cpg.impact.ATD_ALCO_2DD"></AttributeLink>

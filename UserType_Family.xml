@@ -70,6 +70,8 @@
             <AttributeLink AttributeID="eaa34cc9-3a5e-40ce-9043-491ca000dbc6"></AttributeLink>
             <AttributeLink AttributeID="f4aa0254-6ff7-452f-8581-8259bbdd87d7"></AttributeLink>
             <AttributeLink AttributeID="f7e66e4f-d14a-4665-a40b-720b82d4bb20"></AttributeLink>
+            <AttributeLink AttributeID="newAttr3"></AttributeLink>
+            <AttributeLink AttributeID="newAttr5"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

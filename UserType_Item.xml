@@ -49,6 +49,7 @@
             <AttributeLink AttributeID="b44c067c-ef28-4d82-898e-f6644b13de5b"></AttributeLink>
             <AttributeLink AttributeID="ShortDescription"></AttributeLink>
             <AttributeLink AttributeID="f7e66e4f-d14a-4665-a40b-720b82d4bb20"></AttributeLink>
+            <AttributeLink AttributeID="newAttr3"></AttributeLink>
             <AttributeLink AttributeID="c9ade755-6b4f-4ca5-92d1-66b29a549af5"></AttributeLink>
             <AttributeLink AttributeID="ac0f9ad9-ce83-4a79-9c29-d4d4403908ff"></AttributeLink>
             <AttributeLink AttributeID="9d32fd81-7282-4f86-a350-e031c80cfb78"></AttributeLink>
@@ -65,6 +66,7 @@
             <AttributeLink AttributeID="eaa34cc9-3a5e-40ce-9043-491ca000dbc6"></AttributeLink>
             <AttributeLink AttributeID="36a01b04-6c05-4865-bfad-e995a85a8b74"></AttributeLink>
             <AttributeLink AttributeID="Bullet06"></AttributeLink>
+            <AttributeLink AttributeID="newAttr5"></AttributeLink>
             <AttributeLink AttributeID="11bc245d-14db-4b62-89e5-57e658301860"></AttributeLink>
             <AttributeLink AttributeID="0615ff3f-82ef-4a35-a2a2-069b1662db2c"></AttributeLink>
             <AttributeLink AttributeID="MarketingCopy"></AttributeLink>
@@ -92,12 +94,12 @@
             <AttributeLink AttributeID="RetailPrice"></AttributeLink>
             <AttributeLink AttributeID="Bullet02"></AttributeLink>
             <AttributeLink AttributeID="ELFRFraction"></AttributeLink>
-            <AttributeLink AttributeID="New Attr"></AttributeLink>
             <AttributeLink AttributeID="ItemKey"></AttributeLink>
+            <AttributeLink AttributeID="New Attr"></AttributeLink>
             <AttributeLink AttributeID="RawLOV"></AttributeLink>
             <AttributeLink AttributeID="LanguageDependant"></AttributeLink>
-            <AttributeLink AttributeID="a1"></AttributeLink>
             <AttributeLink AttributeID="ValueFromVG"></AttributeLink>
+            <AttributeLink AttributeID="a1"></AttributeLink>
             <AttributeLink AttributeID="LAALTestDescriptionAttribute"></AttributeLink>
             <AttributeLink AttributeID="MyLOV"></AttributeLink>
             <AttributeLink AttributeID="a2"></AttributeLink>

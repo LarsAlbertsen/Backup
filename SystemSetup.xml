@@ -75,7 +75,7 @@
         <SystemSetupValue Type="Config" Name="VendorPortalFallbackBatches"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="VendorPortalProductsType"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="VendorPortalProofViewStylesheet"></SystemSetupValue>
-        <SystemSetupValue Type="Config" Name="VendorPortalVendortype"></SystemSetupValue>
+        <SystemSetupValue Type="Config" Name="VendorPortalVendortype">SupplierClassification</SystemSetupValue>
         <SystemSetupValue Type="Config" Name="VendorPortalWorkspace">Main</SystemSetupValue>
         <SystemSetupValue Type="Config" Name="WebServiceTagFormat"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="invalidPwdLockoutPeriod">30</SystemSetupValue>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="SupplierClassification" ClassificationOwnsProductLinks="false" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" ReferenceTargetLockPolicy="Strict">
+            <Name>Supplier Account</Name>
+            <Icon>H4sIAAAAAAAA/11UTW/bMAy991cI3nmORH1RQ93DPAw+tNccdhsaLwmQJUGbJf35IynJanuxH6mnx0dK0P3rdatu+81lN3TgOrWb99vdJePrfr59P70NnVZagVOc+7M/HIbueDrOnXr7ezi+Dt3ucjl/W61ut1t/s/3pZbsCrfWKhLuHu/vz78tOdn19+XeYh26+zsfTZtOp58P+/Dm3Gbongz14ZXo/VgRgMSiKXLRJGUaR8hMwiT4xBkoqgIUr0K9xJEAitE7ugRcTxZ6xZzCBZQmbJWTF0S9mEafSmpkjyG7hVC5YhsS3k9HsVWd1yhu9sDP0axOoE+Io4/vETSRZdxxTK4mEBE2BpEJtWNbCsocQy2RLYanhixRV9tkQ+xE76JHTzU+xgz0acGnU1GsAQ4ze6KSBh+NcQEcJQI3Iw7DB6vAY+2jQonJ9tCHhiL322gPFPhLgjZbcOlIOqUa+NxicWUcScTGNJU1a1kkxBOeQ4kTmeAzGhwAUo3EAj9S4mKk1KUat/VKTxmGwFa1hrUobSqZeAYqdMU4OmnDIa34y5Eium4ZyDfLVW/blaE136tcTGTWOT1z+cuhkLP/lQDk/GT5J+uRrQPnY2ALpUnimRDlnYVW2HDQ7nDKlqvNVaGyBpOLEFMnEIhcrvRBjkYuf5KJoVLZAksPSGtYyZT2V1tKn1rIQtlrIKlFMYZkUtt6xTQrLpBJT0jIp0As7wzIp0K331CaVyqSwPBh1UtjY+H5SLBOLXO09NfepTOqDXBSNysb3k8LWO7ZJYZnUh9ZyP4WdYZlUfVa/2J/uh4duRe8mv58Pd/8BCVLTAJ8FAAA=</Icon>
+            <UserTypeLink UserTypeID="SupplierClassificationsRoot"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

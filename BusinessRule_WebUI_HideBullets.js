@@ -69,13 +69,13 @@ if (currentNode==null) {
 	return true;
 }
 
-logger.info("WebUI_HideBullets on "+currentNode);
+//logger.info("WebUI_HideBullets on "+currentNode);
 var attrHome = manager.getAttributeHome();
 var bullet01A = attrHome.getAttributeByID("Bullet01");
 var bullet02A = attrHome.getAttributeByID("Bullet02");
 var bullet03A = attrHome.getAttributeByID("Bullet03");
 
-logger.info("WebUI_HideBullets_2");
+//logger.info("WebUI_HideBullets_2");
 
 if (bullet01A==null || bullet02A==null) {
 	logger.info("WebUI_HideBullets_2 - NULL Bullets");
@@ -84,17 +84,17 @@ if (bullet01A==null || bullet02A==null) {
 mandatory.setMandatory(currentNode, bullet01A);
 mandatory.setMandatory(currentNode, bullet02A);
 
-logger.info("WebUI_HideBullets_3");
+//logger.info("WebUI_HideBullets_3");
 
 if (bullet01V==null) {
-	logger.info("Hiding Bullet02");
+	logger.info("Hiding Bullet02 on "+currentNode.getID());
 	hidden.setHidden(currentNode, bullet02A)
 }
 if (bullet02V==null) {
-	logger.info("Hiding Bullet03");
+	logger.info("Hiding Bullet03 on "+currentNode.getID());
 	hidden.setHidden(currentNode, bullet03A)
 }
-logger.info("Done hiding")
+//logger.info("Done hiding")
 //hidden.setHidden(currentNode, bullet02A)
 //return "["+bullet01V+"]";
 return true;

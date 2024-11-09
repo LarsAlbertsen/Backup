@@ -37,9 +37,9 @@ exports.operation0 = function (manager) {
 
 var bgpHome = manager.getBackgroundProcessHome()
 
-
+logger.info("Home "+bgpHome)
 // Set<BackgroundProcess> getBackgroundProcessesByType(String templateID, boolean onlyOwnProcesses);
 
-var bgps = bgpHome.getBackgroundProcessesByType(new java.util.HashSet(), false);
-logger.info("BGPs "+bgps)
+var bgps = bgpHome.getBackgroundProcessesByType("stibo.Exporter", false);
+logger.info("BGPs "+bgps.size())
 }

@@ -98,8 +98,8 @@
             <AttributeLink AttributeID="ItemKey"></AttributeLink>
             <AttributeLink AttributeID="RawLOV"></AttributeLink>
             <AttributeLink AttributeID="LanguageDependant"></AttributeLink>
-            <AttributeLink AttributeID="a1"></AttributeLink>
             <AttributeLink AttributeID="ValueFromVG"></AttributeLink>
+            <AttributeLink AttributeID="a1"></AttributeLink>
             <AttributeLink AttributeID="LAALTestDescriptionAttribute"></AttributeLink>
             <AttributeLink AttributeID="MyLOV"></AttributeLink>
             <AttributeLink AttributeID="a2"></AttributeLink>

@@ -7,17 +7,17 @@
   <datamodel>
     <data id="SubmitMessage"/>
   </datamodel>
-  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=260.0 h=238.0  </editorLayout>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=238.0  </editorLayout>
   <final id="Final" discontinued="false">
     <editorLayout>   node-size-and-position x=20.0 y=193.0 w=100.0 h=25.0  </editorLayout>
     <onentry businessactionid="RemoveFromWorkflow"/>
   </final>
   <state id="Enrich" discontinued="false">
     <transition target="Final"/>
-    <editorLayout>   node-size-and-position x=160.0 y=120.00000000000001 w=100.0 h=25.0  </editorLayout>
+    <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
   </state>
   <state id="Initial" discontinued="false">
-    <transition businessactionid="e-signature" businessconditionid="con-7b96603d-4e10-4ea0-9f2e-2d264a78ca97" target="Enrich"/>
+    <transition businessactionid="e-signature" businessconditionid="con-7b96603d-4e10-4ea0-9f2e-2d264a78ca97" event="submit" target="Enrich"/>
     <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
   </state>
 </scxml> -->
@@ -27,7 +27,7 @@
             <Name>Create Item</Name>
             <ValidUserTypeLink UserTypeID="Family"></ValidUserTypeLink>
             <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
-            <Configuration>H4sIAAAAAAAA/42TTY+bMBCG7/srXKtXB0OyZKkwl6orRWq1VVdVzw5MiFVjI9uEpL++toHdqtqPcPBo5Jl532cs+OD0TgknuIMH9dmAj+zApYXS9lK4Cs5QDw4eayN691V0wkHz3YiTkNCCZc4MS6UU1oF6ULuu18aB+dk3/w+z9bmTrIwBiSgrGZ70JUaKd8DwZGLnoMPoBMYKrRimqwIj36Usw0fn+k9JMo7jalyvtGmTjNLbhG6TOBhX5QdCEEJKN0Cs+AOEq4b02noZrdCZ0RVFl3iOLMtDPLJsfecjIqS6QaU3zjvfLX0yZUg0DD8Oe8//DazlLXiZJNxUN1Oc6303t1a0CiD2fKwHY0A5jNyl93SDBRNal6LYYZ0nRo2wtVZOqAF8Y9wbjjOWBb0Llk1km3VES+mMdvtEhkpnuJrr94MVKsDUIQ1CYWqruBuMV16uvadGLBU+Idt9ked03ZANpNQfnJLikAHJmizf8O1dzYutx+WmBcfwF2VEfQzIz9JhZ5E50h+E4vJ1+vtwfTV7WrwBr5V/CXN5gfwHdPoE90Z3v7T5fZB6DI7n+mA3mrzmsZ543/Gb5rPhYPzfL73i6ZblLrt5ebfl9ENU89/3F9V9BYHsAwAA</Configuration>
+            <Configuration>H4sIAAAAAAAA/42TTYvbMBCG7/srVNGrYsfJJnGxfCldCLRs6VJ6VuyJIypLRpLjpL++I9nehbK7zUXDoPl430dI9N7stfRSeHjUny1g5EehHBSuU9KXcIGq9/BUWdn5r7KVHurvVp6lggYc97afK5V0HvSj3redsR7sz67+d5irLq3iRQxExrWK03G/okSLFjgdRew9tJScwTppNKfpIqcEu7Tj9OR99ylJhmFYDKuFsU2Spel9km6TOJiWxQfGCCHa1MCc/ANM6Jp1xuEao8mFp4uUXOM58OU6xBPPVjuMhLHyjhQoXLTYrTAZMyJrTp/6A/r/Bs6JBnBNEm7KuzFO9dgtnJONBog9H6veWtCeEn/t0F3vwIbWuSh2OI+OSS1dZbSXugdsjNxonDED+q+xbHS2Xo3W0sna/bMzUngr9FR/6J3UwUwV0rAoTG208L3FzfM1aqrlXIEJ2x7yzSZd1WwNyxQPkbL8mAHL6myzFttdJfItJXBG15y6yAzdC9sA5l+0ldUpEHhREhBGBBHGUWqh3obxEK5vRrHM32FhNEq011dA/IDWnOHBmvaXsb+PygxB8VQf5EaRt7zds98b9S53N73djHOm8TrNYvwR5fT9/gIegDGq7QMAAA==</Configuration>
             <LocalBusinessRule ID="con-7b96603d-4e10-4ea0-9f2e-2d264a78ca97" Scope="Local" Type="Condition" RunPrivileged="false"><!-- Definition:
 Condition #1 (JavaScriptBusinessConditionWithBinds):
 <config>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="MJAN" ForceAuthentication="false">
+        <User ID="MJAN" ForceAuthentication="false" EMail="mjan@stibosystems.com">
             <Name>Mark Janssen</Name>
             <MetaData>
                 <MultiValue AttributeID="ConfigurationEntityReferences">

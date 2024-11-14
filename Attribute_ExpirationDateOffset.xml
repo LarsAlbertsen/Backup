@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="ExpirationDateOffset" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
+            <Name>Expiration Date offset</Name>
+            <Validation BaseType="integer" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <MetaData>
+                <Value QualifierID="en-US" AttributeID="AttributeHelpText">Rentention - keep for x number of days before deleting permanently</Value>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="AllEmployeesView"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="CAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LegalContracts"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LegalView"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SandboxOrderform"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupportView"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Environment"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

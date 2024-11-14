@@ -8,13 +8,15 @@
     <AttributeList>
         <Attribute ID="AttributeHelpText" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" Mandatory="false">
             <Name>Attribute Help Text</Name>
-            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
             <DimensionLink DimensionID="Language"></DimensionLink>
             <MetaData>
+                <Value QualifierID="en-US" AttributeID="AttributeUsedFor">System</Value>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
                 <Value QualifierID="en-US" AttributeID="Purpose">Used to enter mouse-over help into product attributes for display to STEP users</Value>
             </MetaData>
             <AttributeGroupLink AttributeGroupID="Metadata"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Reference-Type user-type root"></UserTypeLink>
             <UserTypeLink UserTypeID="stibo.normalattribute"></UserTypeLink>
         </Attribute>
     </AttributeList>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="STEPPrismMetricAboutCounters" ParentID="STEPEnvironment" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+            <Name QualifierID="en-US">STEP Prism Metric About Counters</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value ID="MetricAbout-asset-counter">MetricAbout-asset-counter</Value>
+            <Value ID="MetricAbout-classification-counter">MetricAbout-classification-counter</Value>
+            <Value ID="MetricAbout-context-counter">MetricAbout-context-counter</Value>
+            <Value ID="MetricAbout-dimension-counter">MetricAbout-dimension-counter</Value>
+            <Value ID="MetricAbout-entity-counter">MetricAbout-entity-counter</Value>
+            <Value ID="MetricAbout-inmemory-enabled">MetricAbout-inmemory-enabled</Value>
+            <Value ID="MetricAbout-language-counter">MetricAbout-language-counter</Value>
+            <Value ID="MetricAbout-metric-time">MetricAbout-metric-time</Value>
+            <Value ID="MetricAbout-product-counter">MetricAbout-product-counter</Value>
+            <Value ID="MetricAbout-supplier-counter">MetricAbout-supplier-counter</Value>
+            <Value ID="MetricAbout-user-counter">MetricAbout-user-counter</Value>
+            <Value ID="MetricAbout-user-licenses">MetricAbout-user-licenses</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

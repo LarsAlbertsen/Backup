@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="STEPUserTypes" ParentID="STEPEnvironment" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+            <Name QualifierID="en-US">STEP User Types</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value ID="FullUser">Full User</Value>
+            <Value ID="ReadUser">Read User</Value>
+            <Value ID="Supplier">Supplier</Value>
+            <Value ID="SupplierUser">Supplier User</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

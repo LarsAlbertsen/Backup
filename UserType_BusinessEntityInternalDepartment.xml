@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="BusinessEntityInternalDepartment" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Relaxed" IDPattern="[id]" Referenced="true">
+            <Name>Business Entity Internal Department</Name>
+            <UserTypeLink UserTypeID="BusinessEntityInternal"></UserTypeLink>
+            <AttributeLink AttributeID="Description"></AttributeLink>
+            <AttributeLink AttributeID="JIRAKey"></AttributeLink>
+            <AttributeLink AttributeID="LegalName"></AttributeLink>
+            <AttributeLink AttributeID="PrismCustomerCodeName"></AttributeLink>
+            <AttributeLink AttributeID="PrismCustomerLicenseMode"></AttributeLink>
+            <AttributeLink AttributeID="PrismCustomerStatus"></AttributeLink>
+            <AttributeLink AttributeID="PrismCustomerType"></AttributeLink>
+            <AttributeLink AttributeID="PrismCustomerURI"></AttributeLink>
+            <AttributeLink AttributeID="PrismJiraKey"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

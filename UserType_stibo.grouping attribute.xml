@@ -4,6 +4,7 @@
         <UserType ID="stibo.grouping attribute" Referenced="true">
             <Name>Attribute Group</Name>
             <UserTypeLink UserTypeID="stibo.grouping attribute"></UserTypeLink>
+            <AttributeLink AttributeID="ConditionAttribute"></AttributeLink>
             <AttributeLink AttributeID="DisplaySequence"></AttributeLink>
             <AttributeLink AttributeID="GetCompleteness"></AttributeLink>
             <AttributeLink AttributeID="LinkedAttributeGroups"></AttributeLink>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="SandboxVariantLOV" ParentID="SoftwareLicenses" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+            <Name QualifierID="en-US">Prism Sandbox Variant</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value ID="PSDemo">A partner standbox with pre configured demo configuration installed</Value>
+            <Value ID="PSNot">Not a a partner standbox at all</Value>
+            <Value ID="PSPIMForRetail">A partner standbox with the pim for retail setup installed</Value>
+            <Value ID="PSPlain">A partner standbox with no pre installed configuration - blank system</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

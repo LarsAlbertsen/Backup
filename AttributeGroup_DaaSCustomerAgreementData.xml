@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeGroupList>
+        <AttributeGroup ID="DaaSCustomerAgreementData" ShowInWorkbench="true" ManuallySorted="true" Referenced="true" ParentID="DaaSEnvironmentRelevant">
+            <Name>DaaS Customer Agreement Data</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeSequence>
+                <AttributeLink AttributeID="DateOfAgreementEffectiveDate"></AttributeLink>
+                <AttributeLink AttributeID="DateOfContractExpiration"></AttributeLink>
+            </AttributeSequence>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

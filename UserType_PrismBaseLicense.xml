@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="PrismBaseLicense" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Relaxed" IDPattern="[id]">
+            <Name>Prism Base License</Name>
+            <Icon>H4sIAAAAAAAA/+sM8HPn5ZLiYmBg4PX0cAkC0kIgzMEGJMPO9YUDKQ9PF8eQCsZkiX8ObB3fmT/WC31MU3jmaLZCRivQn6vtVWfbbCZxFUGHr0f4S5vdeLvYOSd1yk6Ivcxz5PtJgydGNoVOrBrHD4szMLS4RNV4fKv9CTSTwdPVz2WdU0ITADw1tTGBAAAA</Icon>
+            <UserTypeLink UserTypeID="BusinessEntityExternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternalDepartment"></UserTypeLink>
+            <AttributeLink AttributeID="BaseLicenseName"></AttributeLink>
+            <AttributeLink AttributeID="DateOfLastEditRequest"></AttributeLink>
+            <AttributeLink AttributeID="Deleted"></AttributeLink>
+            <AttributeLink AttributeID="JIRAKey"></AttributeLink>
+            <AttributeLink AttributeID="PrismBaseLicenseID"></AttributeLink>
+            <AttributeLink AttributeID="PrismCustomerCodeName"></AttributeLink>
+            <AttributeLink AttributeID="STEPAgreedFullUserCount"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

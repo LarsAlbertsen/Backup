@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="PrismSAAS" ParentID="Customers" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+            <Name QualifierID="en-US">Prism SAAS</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value ID="NoSaas">Not SAAS</Value>
+            <Value ID="SaaSv2">SaaS v2 - Stibo managed and kubernetes based</Value>
+            <Value ID="SaasLW">SAAS managed by Logicworks</Value>
+            <Value ID="SaasStibo">SAAS managed by Stibo</Value>
+            <Value ID="VMWare-Docker">VMWare-Docker</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

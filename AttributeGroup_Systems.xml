@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeGroupList>
+        <AttributeGroup ID="Systems" ShowInWorkbench="true" ManuallySorted="false" Referenced="true" ParentID="SystemAndSoftwareRelevant">
+            <Name>Systems</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <Configuration>H4sIAAAAAAAA/5WQwQ6CQAxE73zFZj9A9A4kCmpI9KThvkqBRuiabonx7wUJ683orZP2TScTrUUYL73Anm1/LxAeGVRIKGhJ7Sx3RgpgN6hYrxZLnQRKRZ8Tp86GaxBv41JDG9iWKFDGujKtAx2+odS2fUdunAd1QLp5aFopr/Ms1jkJ1GzGJ0eQxpaTzS/o6ekEOjc7WP4DBcPXZks10pw79MGj8FtbSfACyok8lE0BAAA=</Configuration>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <CrossReferenceTypes>
+        <EntityCrossReferenceType ID="ProcessLog" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" ParentChildRelation="NONE" MultiValued="false">
+            <Name QualifierID="en-US">Process Log</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <UserTypeLink UserTypeID="BusinessEntityExternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="Entity user-type root"></UserTypeLink>
+            <UserTypeLink UserTypeID="Environment"></UserTypeLink>
+            <UserTypeLink UserTypeID="MEssage"></UserTypeLink>
+            <UserTypeLink UserTypeID="Messages"></UserTypeLink>
+            <UserTypeLink UserTypeID="OtherEnvironment"></UserTypeLink>
+            <UserTypeLink UserTypeID="PrismBaseLicense"></UserTypeLink>
+            <UserTypeLink UserTypeID="SecondEntityType"></UserTypeLink>
+            <UserTypeLink UserTypeID="SecondEntityTypeChildren"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="Entity user-type root"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="MEssage"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Messages"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="SecondEntityType"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="SecondEntityTypeChildren"></TargetUserTypeLink>
+        </EntityCrossReferenceType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeGroupList>
+        <AttributeGroup ID="Department" ShowInWorkbench="true" ManuallySorted="false" Referenced="true" ParentID="InternalBusinessRelevant">
+            <Name>Department</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <Configuration>H4sIAAAAAAAA/32OywrCMBBF9/2KkA8wuk8K2oe4VrqPdCoDeZTMhNK/tz6IO3dzLvceRh+ZE94zwznFPA8ISwsTBmSMQfQxecsDJNrIyMNuL+tKCP2rkLjZ9AAuGmpsOEE3IsNo5GQdgVTvURNd9oFe90Zl8IlF4UtrZOdnF1cPga9sOdPXoIpCq39/19UT3N9/w9cAAAA=</Configuration>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

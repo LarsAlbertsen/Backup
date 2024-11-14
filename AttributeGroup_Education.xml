@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeGroupList>
+        <AttributeGroup ID="Education" ShowInWorkbench="true" ManuallySorted="false" Referenced="true" ParentID="LegacyFunctionsToCleanUp">
+            <Name>Education</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <Configuration>H4sIAAAAAAAA/5WRwQ6CMAyG7z7FsgcQvYMJghITbxLuFTrTCJvpOn19ERRvBk/rn/Xr3/2LUxGmcxAs2IVbRfjI0ZAlIWfV3nEHUiH7XiV6vVzpzUKp+NviVQl8QZnG+AzsFncNCTaJNtB61NEAZa4NnfWvuldHstcJGq/UpA95okuG3sNeTgIS/DhjDneqHaNPjSDPhz5mGbKQoRoE58MFQxPglUb+Fzdseuhu7O7YoZV/37hF0x/vdKMp3jj69aebxROfDGWS8wEAAA==</Configuration>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

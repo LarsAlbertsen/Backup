@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeGroupList>
+        <AttributeGroup ID="PDXEnvironmentsConsumptionData" ShowInWorkbench="true" ManuallySorted="false" Referenced="true" ParentID="PDXEnvironmentRelevant">
+            <Name>PDX Environments Consumption Data</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <Configuration>H4sIAAAAAAAA/5WRwQqCQBCG7z7Fsg+QdVfB1CIIDArpurmjLepuzM5Sj59WGF2Cvc3PzDf/z0yUEqG6OIItGnerFNxzaJRWpIxmG4ODoArQjirmq8WSJwFj0XfEspPAFmheYzOh11BIRSBj3ojeAg9fUGZ6N2g71aPaK93N0LvFZr3LY37IzyVKwCMJpFzQZ40PWmjpDaYtAsjMOE1e3GRUNtkV6s7PryYnen+/4lGPOX+SRuF84ij899ckeAIszPCZ9wEAAA==</Configuration>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

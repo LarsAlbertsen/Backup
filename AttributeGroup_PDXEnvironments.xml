@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeGroupList>
+        <AttributeGroup ID="PDXEnvironments" ShowInWorkbench="true" ManuallySorted="false" Referenced="true" ParentID="PDXEnvironmentRelevant">
+            <Name>PDX Environments</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <Configuration>H4sIAAAAAAAA/5XRSwoCMQwG4L2nKD2Ao/vOgLYqgjKCD9xWm2oZbSVN0eP7ZHQldJef5MsiEQMidLtEMMGQLhsHVwXWeUcueDYOeNa0AYyPVPJ+t8erDmPiOxLZSuMBqF0TpfZDGBlHYEpu9SkCL15IhlM6+/isH2nmfNOid4u1eapKvlDbGg3gkjSS0vRZk0NH3mTDJ6itPMK+yXJzfZMhecpC6wgmXylnLSD4PfxYUbT3FcW/p1adO0i0jXj0AQAA</Configuration>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

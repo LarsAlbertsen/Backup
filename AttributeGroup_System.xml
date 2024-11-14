@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <AttributeGroupList>
-        <AttributeGroup ID="System" ShowInWorkbench="false" ManuallySorted="false">
-            <Name>System</Name>
+        <AttributeGroup ID="System" ShowInWorkbench="false" ManuallySorted="false" Referenced="true" ParentID="SystemAndSoftwareRelevant">
+            <Name>System / Licenses /3 RD Party</Name>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>

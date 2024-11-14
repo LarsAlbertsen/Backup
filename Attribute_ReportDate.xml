@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="ReportDate" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
+            <Name>Report Date</Name>
+            <Validation BaseType="isodate" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <MetaData>
+                <Value QualifierID="en-US" AttributeID="AttributeHelpText">The To date for the consumption data</Value>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="DaaSEnvironmentBusinessData2"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PDXBusinessData"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PDXEnvironmentsConsumptionDataHermes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PDXEnvironmentsOnboardingDataHermes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PDXEnvironmentsSyndicationDataHermes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="STEPEnvironmentBusinessData"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="STEPEnvironmentConsumptionData"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Environment"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

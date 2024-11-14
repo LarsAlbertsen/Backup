@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="NumberOfMonths" ParentID="Systems" AllowUserValueAddition="false" UseValueID="true" DefaultUnitID="unece.unit.MON" Referenced="true">
+            <Name QualifierID="en-US">Number Of Months</Name>
+            <Validation BaseType="integer" MinValue="" MaxValue="" MaxLength="" InputMask="">
+                <UnitLink UnitID="unece.unit.MON"></UnitLink>
+            </Validation>
+            <Value ID="0" UnitID="unece.unit.MON">0</Value>
+            <Value ID="1" UnitID="unece.unit.MON">1</Value>
+            <Value ID="12" UnitID="unece.unit.MON">12</Value>
+            <Value ID="2" UnitID="unece.unit.MON">2</Value>
+            <Value ID="3" UnitID="unece.unit.MON">3</Value>
+            <Value ID="6" UnitID="unece.unit.MON">6</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

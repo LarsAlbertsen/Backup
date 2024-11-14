@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Environment" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Relaxed" IDPattern="[id]" NamePattern="STEP Environment">
+            <Name>STEP Environment</Name>
+            <Icon>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</Icon>
+            <UserTypeLink UserTypeID="BusinessEntityExternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternalDepartment"></UserTypeLink>
+            <AttributeLink AttributeID="AgreementEffectiveForMonths"></AttributeLink>
+            <AttributeLink AttributeID="BaseLicenseName"></AttributeLink>
+            <AttributeLink AttributeID="Components"></AttributeLink>
+            <AttributeLink AttributeID="ContractStatus"></AttributeLink>
+            <AttributeLink AttributeID="DataQualityTopics"></AttributeLink>
+            <AttributeLink AttributeID="DateOfAgreementEffectiveDate"></AttributeLink>
+            <AttributeLink AttributeID="DateOfContractExpiration"></AttributeLink>
+            <AttributeLink AttributeID="DateOfLastEditRequest"></AttributeLink>
+            <AttributeLink AttributeID="Deleted"></AttributeLink>
+            <AttributeLink AttributeID="Description"></AttributeLink>
+            <AttributeLink AttributeID="EnvironmentPurpose"></AttributeLink>
+            <AttributeLink AttributeID="EnvironmentUsage"></AttributeLink>
+            <AttributeLink AttributeID="ExpirationDateOffset"></AttributeLink>
+            <AttributeLink AttributeID="LegalName"></AttributeLink>
+            <AttributeLink AttributeID="MetricAbout-asset-counter"></AttributeLink>
+            <AttributeLink AttributeID="MetricAbout-classification-counter"></AttributeLink>
+            <AttributeLink AttributeID="MetricAbout-context-counter"></AttributeLink>
+            <AttributeLink AttributeID="MetricAbout-dimension-counter"></AttributeLink>
+            <AttributeLink AttributeID="MetricAbout-entity-counter"></AttributeLink>
+            <AttributeLink AttributeID="MetricAbout-inmemory-enabled"></AttributeLink>
+            <AttributeLink AttributeID="MetricAbout-language-counter"></AttributeLink>
+            <AttributeLink AttributeID="MetricAbout-metric-time"></AttributeLink>
+            <AttributeLink AttributeID="MetricAbout-product-counter"></AttributeLink>
+            <AttributeLink AttributeID="MetricAbout-supplier-counter"></AttributeLink>
+            <AttributeLink AttributeID="MetricAbout-user-counter"></AttributeLink>
+            <AttributeLink AttributeID="MetricAbout-user-licenses"></AttributeLink>
+            <AttributeLink AttributeID="PrismBaseLicenseID"></AttributeLink>
+            <AttributeLink AttributeID="PrismCustomerCodeName"></AttributeLink>
+            <AttributeLink AttributeID="PrismHosting"></AttributeLink>
+            <AttributeLink AttributeID="PrismOwner"></AttributeLink>
+            <AttributeLink AttributeID="PrismRole"></AttributeLink>
+            <AttributeLink AttributeID="PrismSAAS"></AttributeLink>
+            <AttributeLink AttributeID="PrismSandboxVariant"></AttributeLink>
+            <AttributeLink AttributeID="PrismSupportable"></AttributeLink>
+            <AttributeLink AttributeID="PrismSystemName"></AttributeLink>
+            <AttributeLink AttributeID="PrismSystemSnapshotURI"></AttributeLink>
+            <AttributeLink AttributeID="PrismSystemURI"></AttributeLink>
+            <AttributeLink AttributeID="PrismUnreleasedCoreCode"></AttributeLink>
+            <AttributeLink AttributeID="PrismUnreleasedCustomerCode"></AttributeLink>
+            <AttributeLink AttributeID="PrismUsage"></AttributeLink>
+            <AttributeLink AttributeID="ReportDate"></AttributeLink>
+            <AttributeLink AttributeID="STEPVersion"></AttributeLink>
+            <AttributeLink AttributeID="cfg.Cassandra.Url"></AttributeLink>
+            <AttributeLink AttributeID="cfg.OAuthSSO.Enabled"></AttributeLink>
+            <AttributeLink AttributeID="cfg.Oracle.Url"></AttributeLink>
+            <AttributeLink AttributeID="cfg.System.LoadBalancer.URI"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="PrismHostingTypes" ParentID="Servers" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+            <Name QualifierID="en-US">Prism Hosting Types</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value ID="AWS">Step is running on Amazon AWS Cloud solutions</Value>
+            <Value ID="Azure">Step is running on Microsoft Azure Cloud solutions</Value>
+            <Value ID="Docker">Running in a container, possibly on kubernetes</Value>
+            <Value ID="Hardware">Step is running directly on the hardware, no virtualization</Value>
+            <Value ID="OracleCloud">Step is running on Oracle Cloud solutions</Value>
+            <Value ID="Vmware">Step is running insite a vmware machine</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

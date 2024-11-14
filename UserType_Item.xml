@@ -40,7 +40,6 @@
             <AttributeLink AttributeID="deb1be6a-7173-442e-91ef-3ae3c2ef1486"></AttributeLink>
             <AttributeLink AttributeID="3e356427-932c-4291-adf5-c729eac2de07"></AttributeLink>
             <AttributeLink AttributeID="086da95c-ac75-43e1-a661-211447cace6c"></AttributeLink>
-            <AttributeLink AttributeID="Description"></AttributeLink>
             <AttributeLink AttributeID="triggeringAttribute"></AttributeLink>
             <AttributeLink AttributeID="cd462bf6-7a1d-4465-ab2d-16217bd1eafa"></AttributeLink>
             <AttributeLink AttributeID="Bullet09"></AttributeLink>
@@ -94,14 +93,15 @@
             <AttributeLink AttributeID="RetailPrice"></AttributeLink>
             <AttributeLink AttributeID="Bullet02"></AttributeLink>
             <AttributeLink AttributeID="ELFRFraction"></AttributeLink>
-            <AttributeLink AttributeID="New Attr"></AttributeLink>
             <AttributeLink AttributeID="ItemKey"></AttributeLink>
+            <AttributeLink AttributeID="New Attr"></AttributeLink>
             <AttributeLink AttributeID="RawLOV"></AttributeLink>
             <AttributeLink AttributeID="LanguageDependant"></AttributeLink>
             <AttributeLink AttributeID="a1"></AttributeLink>
             <AttributeLink AttributeID="ValueFromVG"></AttributeLink>
             <AttributeLink AttributeID="LAALTestDescriptionAttribute"></AttributeLink>
             <AttributeLink AttributeID="MyLOV"></AttributeLink>
+            <AttributeLink AttributeID="Description"></AttributeLink>
             <AttributeLink AttributeID="a2"></AttributeLink>
         </UserType>
     </UserTypes>

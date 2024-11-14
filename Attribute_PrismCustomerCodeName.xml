@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="PrismCustomerCodeName" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" Mandatory="false">
+            <Name>Prism Customer Code Name</Name>
+            <Validation BaseType="regexp" MinValue="" MaxValue="" MaxLength="" InputMask="^(([a-z][0-9a-z]{2,15})|flfr-test|hewlett-packard|udneue-test|mitchellsandbutlers|linux-test|abercrombieandfitch|ic-companys|angst-pfister|us-tech-support|us-demo|hardwareandgeneralsupplies|saas2pimtestoracle|demo-automotive|seco-tools|solaris-test|saasprodjapaneast|us-sandbox|windows-test|_Deleted|windows-demo|stibo-cn)$"></Validation>
+            <MetaData>
+                <Value QualifierID="en-US" AttributeID="AttributeHelpText">The unique ID of the customer in Prism. Don't introduce here anything, unless you're certain of the final key.</Value>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="BusinessEntityInternalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="CustomerInfo"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EBEAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnvironmentAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ExternalBusinesses"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LicenseTasksValidation_NC"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LicenseTasksValidation_NP"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LicenseTasks_NC"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LicenseTasks_NP"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SYSLegalOperationsValidation_EC"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SYSLegalOperationsValidation_EP"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SYSLegalOperations_EC"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SYSLegalOperations_EP"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SaasLicense"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupportModify"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupportModifyBusinessEntity"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupportView"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="UP_CustomerSuccessManagementView"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="BusinessEntityExternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternalDepartment"></UserTypeLink>
+            <UserTypeLink UserTypeID="Environment"></UserTypeLink>
+            <UserTypeLink UserTypeID="PrismBaseLicense"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

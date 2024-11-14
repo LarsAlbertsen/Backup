@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeGroupList>
+        <AttributeGroup ID="Environment-BasicInformation" ShowInWorkbench="true" ManuallySorted="true" Referenced="true" ParentID="EnvironmentDetails">
+            <Name>Basic Information</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeSequence>
+                <AttributeLink AttributeID="PrismJiraKey"></AttributeLink>
+                <AttributeLink AttributeID="PrismSystemName"></AttributeLink>
+                <AttributeLink AttributeID="PrismSystemSnapshotURI"></AttributeLink>
+                <AttributeLink AttributeID="STEPVersion"></AttributeLink>
+                <AttributeLink AttributeID="Description"></AttributeLink>
+            </AttributeSequence>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

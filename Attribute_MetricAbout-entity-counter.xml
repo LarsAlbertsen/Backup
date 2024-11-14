@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="MetricAbout-entity-counter" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" Mandatory="false">
+            <Name>Prism Metrics About Entity Counter</Name>
+            <Validation BaseType="integer" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <MetaData>
+                <Value QualifierID="en-US" AttributeID="AttributeHelpText">The total count of Entities on (customer production) system based on the last profile with metrics that was delivered to Prism</Value>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="CSMSTEPMetrics"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnvironmentAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Environments"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ExternalBusinesses"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Environment"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

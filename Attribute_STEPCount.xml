@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeList>
+        <Attribute ID="STEPCount" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
+            <Name>STEP Count</Name>
+            <Validation BaseType="integer" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="PDXEnvironmentsOnboardingDataHermes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PDXEnvironmentsSyndicationDataHermes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="STEPEnvironmentConsumptionData"></AttributeGroupLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

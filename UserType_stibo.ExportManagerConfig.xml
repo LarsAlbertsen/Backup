@@ -9,6 +9,7 @@
             <AttributeLink AttributeID="ImageDeduplicationConfirmedDuplicates"></AttributeLink>
             <AttributeLink AttributeID="ImageDeduplicationConfirmedNonDuplicates"></AttributeLink>
             <AttributeLink AttributeID="ImageDeduplicationDeleteFlag"></AttributeLink>
+            <AttributeLink AttributeID="Purpose"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

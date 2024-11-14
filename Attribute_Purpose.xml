@@ -1,21 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
     <AttributeList>
         <Attribute ID="Purpose" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
             <Name>Purpose</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="255" InputMask=""></Validation>
             <DimensionLink DimensionID="Language"></DimensionLink>
             <MetaData>
+                <Value QualifierID="en-US" AttributeID="AttributeHelpText">Describe the purpose of this function</Value>
+                <Value QualifierID="en-US" AttributeID="AttributeUsedFor">Multi Usages</Value>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>
+            <AttributeGroupLink AttributeGroupID="BusinessEntityInternalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="CAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Definitions"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Department"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EBEAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ManagersView"></AttributeGroupLink>
             <AttributeGroupLink AttributeGroupID="Metadata"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SecurityOptions"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupportModify"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupportView"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="System group"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="System"></AttributeGroupLink>
             <UserTypeLink UserTypeID="AssetLevel1"></UserTypeLink>
             <UserTypeLink UserTypeID="AssetLevel2"></UserTypeLink>
             <UserTypeLink UserTypeID="AssetPushConfigurationsRoot"></UserTypeLink>
             <UserTypeLink UserTypeID="AssetRoot"></UserTypeLink>
             <UserTypeLink UserTypeID="AutoClassificationRuleSetsRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntitiesRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityExternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityGroup"></UserTypeLink>
             <UserTypeLink UserTypeID="BusinessRulesDownloadsRoot"></UserTypeLink>
             <UserTypeLink UserTypeID="ConfigurationsRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="Context qualifier"></UserTypeLink>
+            <UserTypeLink UserTypeID="Domain user-type root"></UserTypeLink>
             <UserTypeLink UserTypeID="ExportConfigurationsLevel1"></UserTypeLink>
             <UserTypeLink UserTypeID="ExportConfigurationsLevel2"></UserTypeLink>
             <UserTypeLink UserTypeID="ExportConfigurationsRoot"></UserTypeLink>
@@ -35,6 +60,7 @@
             <UserTypeLink UserTypeID="Reference-Type user-type root"></UserTypeLink>
             <UserTypeLink UserTypeID="SmartSheetConfigurationsRoot"></UserTypeLink>
             <UserTypeLink UserTypeID="VideoRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="stibo.ExportManagerConfig"></UserTypeLink>
             <UserTypeLink UserTypeID="stibo.grouping attribute"></UserTypeLink>
             <UserTypeLink UserTypeID="stibo.normalattribute"></UserTypeLink>
         </Attribute>

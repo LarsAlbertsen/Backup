@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="InternalAgreement" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Relaxed" IDPattern="[id]" NamePattern="Internal Agreement">
+            <Name>Internal Agreement</Name>
+            <Icon>H4sIAAAAAAAA/7VVa2wUVRid2lJqeaRJjamCYZg2AsLsPPY1M7CUdrfQbbrtWqoWaEJnZ+52x+7ODDPTJ/4oSEJ52ALaECwG/IFSSEl9FDAqtQUiCKJiitEUbSqiYgQUTDQQ6p19gQSa/nGSuztz53znft/5zty7yV+2bFrmk5kIgkzzFnsq4H+WOTLS4e+sG2M8gqTYJbfbXyAqAYBWLCtE51Isy8xDkLnbOzv6S477H9vYP6Po5JvPZ4yOqHOe9YeHBrZ6V21Gqw66d/R43Z3n84arx27OnnmRO3r0VlpZ+/qXR7P/Tt+8fPLGjIHum13HbvyoMvnkMw0XpRyQc2JlX1e74Vp9rp/+dCpiDC7oW9WT28psyr2TO/Jzasr1w5Fv3kj/+p2ct0pShZojM8Dstswv+y90p1OPnN2758Wsjtbuc9/Zs75Y0r3z1kJ/pjaWVvLZXy9l/dD6re6atXXSJ1O11amlT10Mta7cMX2o6Fr1mQNgxfmrTxfklW/c1Z6+a9HW4559m678sn/KpbGU3t3E4a724f0rLwxcfu3jOaMtx87+/ltaSlvnTmx+BjE0tCdTUP6sHs7pGfwj9Wz7lvDY41eP1Px66NSFg/7v1739FTH4Xvmdte/uK4I6PqoWr9ARZEq2OVKQ13fnIEh6WKqsMqp8pZygRCy8qa6lKaIi5rUov0nlhTpgoAFQK8ku7NqH/RgqiS7sBbuP9KluEJKKWzSwvKWsUmipE1gRy1+MLmriIEEEGDzaFAnLOtfkwqK8HLw3pwkMjUKMOhcWa2eVz4+6FQ2gdosDFygbgzpZC+WwkVbHApQmKZYgGYKy4iTFkQ7O7kTjFwZX08QgV+FZGl8LPrmwkGGoHEE0NjZaGq0WRasloFUgB03QNA4RuN4sG3wTLuu5CQYP0AVNUg1JkVHzmQ8o9YYLwxIlRNQkrazHZYKCEU28SlAWkrgH6POND41EkmjdKGowxkfrlc0qICqArtRrAihqALKRmwhXQ4qh6CHlIbklX/8nQ1FIotV6LRyVRxQIEAYRyK1DLBXFqpxbA7yhaJWKEk40yp+gRGmIQ+f6eEGSzZl594QADxwujCZpEietOGWtJFmOsnKUbb7ZQDIG9UEniLzBTwysiFKweSJQn4/zyrrBywLwelwYnLFIksgFggxDB0UnbuUDAm6z0k6cpUgbzlNBmrTyNGMP2BPxHkWoN7Uw42PGFRUBciT15GinlRGEgANnBBYaVrCJeEAAATzgoBjKIdIi7RQSbOWaBL8dPnwvq5mVCBkBG3RYbQ47TjsAi9tIxo4zAYbFRbvDQTMBgedFBkPvrutWwooGtYAqWDFUFLigokV46CApwtcCQpVrTT/H1i2WdNi85ri/l4M18buwhEZtx/GC6XYXJkR7JmLxaekB6k0sz1h8YwjI4zYpBtOVoNHIa6CgFmoyAXsRD0tf5xvGT35irf9fk4+HCSFergVw+ySi5RB3G0Pc37O7PU/4pgCWZb7V40IU8rVJSRY/2KZWMUg7gyLAAQ83T9Fmg0XTFI0HWYfNyTrtrJUkY1lAing+MVpi/PWJ+7bMxBTch6PFJA4A+JA8QoAMC9fgAXEJWXwCHi4tXk9BJfNK347T0zYsmZp2pu2jjMjpjMLWUy2zZo6Gpuf22jqe+KBErtu2Ia81fRubX/r5cOHIiNu71L/Qu7T1VXHSwtPZAyX0GmrQc+LwP+/nTVqyfV115+We/poDP50sapsy0NtLre9C+7aUN6jzB3ftPVN6/Up+KPv28K3Jw8w2ae1zebfNM85bVOY5VFiz/l9d6RySgQgAAA==</Icon>
+            <UserTypeLink UserTypeID="BusinessEntityInternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternalDepartment"></UserTypeLink>
+            <AttributeLink AttributeID="DateOfAgreementEffectiveDate"></AttributeLink>
+            <AttributeLink AttributeID="DateOfContractExpiration"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

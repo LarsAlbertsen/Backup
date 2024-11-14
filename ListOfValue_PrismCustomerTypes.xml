@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="PrismCustomerTypes" ParentID="BusinessEntities" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+            <Name QualifierID="en-US">Prism Customer Types</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value ID="D">Normal</Value>
+            <Value ID="P">Partner</Value>
+            <Value ID="S">Sales/Demo</Value>
+            <Value ID="T">Test</Value>
+            <Value ID="U">Unknown</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

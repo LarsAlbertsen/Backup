@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ListOfValuesGroupList>
+        <ListOfValuesGroup ID="CRD" ParentID="EMDM">
+            <Name>CRD</Name>
+        </ListOfValuesGroup>
+    </ListOfValuesGroupList>
+</STEP-ProductInformation>

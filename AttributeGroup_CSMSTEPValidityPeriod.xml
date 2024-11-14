@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeGroupList>
+        <AttributeGroup ID="CSMSTEPValidityPeriod" ShowInWorkbench="false" ManuallySorted="true" Referenced="true" ParentID="CSMSTEPEnvironmentColumnOne">
+            <Name>STEP Validity Period</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeSequence>
+                <AttributeLink AttributeID="DateOfAgreementEffectiveDate"></AttributeLink>
+                <AttributeLink AttributeID="DateOfContractExpiration"></AttributeLink>
+                <AttributeLink AttributeID="ContractStatus"></AttributeLink>
+            </AttributeSequence>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

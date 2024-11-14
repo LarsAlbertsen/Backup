@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="STEPRelease" ParentID="KnowledgeCenter" AllowUserValueAddition="false" UseValueID="false" Referenced="true">
+            <Name QualifierID="en-US">STEP Release</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value>10.0</Value>
+            <Value>10.1</Value>
+            <Value>10.2</Value>
+            <Value>10.3</Value>
+            <Value>11.0</Value>
+            <Value>11.1</Value>
+            <Value>11.2</Value>
+            <Value>11.3</Value>
+            <Value>2023.3</Value>
+            <Value>2023.4</Value>
+            <Value>2024.1</Value>
+            <Value>2024.2</Value>
+            <Value>2024.3</Value>
+            <Value>2024.4</Value>
+            <Value>4.5</Value>
+            <Value>4.6.1</Value>
+            <Value>4.7</Value>
+            <Value>4.8.1</Value>
+            <Value>5.0</Value>
+            <Value>5.1</Value>
+            <Value>5.2</Value>
+            <Value>5.3</Value>
+            <Value>5.3.1</Value>
+            <Value>6.0.0</Value>
+            <Value>6.1.0</Value>
+            <Value>7.0</Value>
+            <Value>7.1</Value>
+            <Value>7.2</Value>
+            <Value>7.3</Value>
+            <Value>7.4</Value>
+            <Value>8.0</Value>
+            <Value>8.1</Value>
+            <Value>8.2</Value>
+            <Value>8.3</Value>
+            <Value>9.0</Value>
+            <Value>9.1</Value>
+            <Value>9.2</Value>
+            <Value>9.3</Value>
+            <Value>Old</Value>
+            <Value>Other</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

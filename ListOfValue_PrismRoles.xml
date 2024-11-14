@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="PrismRoles" ParentID="BusinessEntities" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+            <Name QualifierID="en-US">Prism Roles</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value ID="Build">The system contains SPOT to sign components</Value>
+            <Value ID="GDSN">The system runs the GDSN STEP server</Value>
+            <Value ID="Mirror">The system runs an updates mirror, not STEP</Value>
+            <Value ID="STEP">The system runs STEP</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

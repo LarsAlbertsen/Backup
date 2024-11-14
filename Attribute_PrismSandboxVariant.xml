@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="PrismSandboxVariant" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Mandatory="false">
+            <Name>Sandbox Variant</Name>
+            <ListOfValueLink ListOfValueID="SandboxVariantLOV"></ListOfValueLink>
+            <MetaData>
+                <Value QualifierID="en-US" AttributeID="AttributeHelpText">The official License name in Prism</Value>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="EnvironmentAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LicenseAttributesforDataContainer"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SaasDataContainer"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SoftwareLicenses"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Environment"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

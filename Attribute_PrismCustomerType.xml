@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeList>
+        <Attribute ID="PrismCustomerType" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Mandatory="false">
+            <Name>Prism Customer Type</Name>
+            <ListOfValueLink ListOfValueID="PrismCustomerTypes"></ListOfValueLink>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="BusinessEntityInternalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EBEAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ExternalBusinesses"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LicenseTasksValidation_NC"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LicenseTasksValidation_NP"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LicenseTasks_NC"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LicenseTasks_NP"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SaasLicense"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupportModify"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupportModifyBusinessEntity"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupportView"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="BusinessEntityExternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternalDepartment"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

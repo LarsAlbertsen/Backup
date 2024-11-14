@@ -3,6 +3,7 @@
     <UserTypes>
         <UserType ID="Context qualifier" Referenced="true">
             <Name>Context</Name>
+            <AttributeLink AttributeID="Purpose"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

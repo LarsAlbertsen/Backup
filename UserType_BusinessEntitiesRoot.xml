@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="BusinessEntitiesRoot" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="true" ReferenceTargetLockPolicy="Relaxed" IDPattern="BusinessEntitiesRoot" NamePattern="Busines Entity Definitions">
+            <Name>Business Entities Root</Name>
+            <Icon>H4sIAAAAAAAA/31TW0gUURgelTbbsoxMaos6jF002p2ZddfdGdxcm9nVBceWdUB7CceZo046l2aO7epLVi8ZBXaBIigUepCIiN5EIYmKhB566KHLQxFBPQjdHurBsjPqWgTbgZlz/p/v+893/vOdkXRrU5nX5yUIoizVLGTwXO5+pR783/ltQcbTVpToQG1mN8rKNiQaVbMLgpQu98AMlNXBY7OwniBKqjWpA3WILZxi6gHZxQRyukW4o74hZ8lKH0SgC/ZoRoz8NHWfBJoaI9vDIi1aPOzVmods2DbUKilDfQqrkg0HQH2OwwV0iGSQ0/sNh8vFyMW6HF67aYoEixDUFyOXRHWIacCbNgThQJ1fYWqjIMIGmDAbDYb2gyDN1FE0SzEhP81wNMvRDFgeJN7NVru5jJBc3gtHMbIXIYujqGw2G8jWBky7h2JYlqXoIBUM+jHC7wwaSM75DacqX0GAjmJrFtJMA7ix3GUOoBhJ5o+gWytlDWe5TbhhVE62KCZAU38BRfH/UF1fQTsoA7v/j3akQQtSGeiYA7aCL667yiVbHG9DGZm2ZJr9+S6me01kOr2mBXje7VoEVIuyohlusmaRJYpcynCQbCgwJcRInAlomsoJUYbhg4lQXV00wTCJCJuIRgUhHIxEk8lkiI3muYKpDOjQQHmu+ocbLsh1DbHEhrZ2HKpJ29TB4sE5rbCWYGEtS1y1sJbaglwKi6H+ue58CnvIXa6YFwcr9ocG9ryNze233k7ih/E8JTRKuVdd8wsLDSW7hy/s80iS1E/c+3lsYuPc3Nz8sFh888qakRM7zmwan5tMt5TfLR/fc2t6en5b5Zem+PSGlwQPbmyAe6tGDj2SPydHi54ceeH5Sl2+XvYIjBGbmx6/7rw2WkYXv1uVPu6tOD0Tmtje8itSoWyJV8bXn74089FLeLZUyy2nzp58sMtX4/t+snTMd9vzgw/XglV7SqdXn91Ljqwlp4avIsL7tCq97uJC8ihHFG17j4oe2s/QTDzFxRngO3M4dW74jTR7nijyEA/CfGv7h8l59+WnEq3CnYOdp34DavuOGWYEAAA=</Icon>
+            <UserTypeLink UserTypeID="Entity user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="Description"></AttributeLink>
+            <AttributeLink AttributeID="Purpose"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

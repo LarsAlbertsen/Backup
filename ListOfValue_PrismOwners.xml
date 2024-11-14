@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="PrismOwners" ParentID="Systems" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+            <Name QualifierID="en-US">Prism Owners</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="200" InputMask=""></Validation>
+            <Value ID="CustomerOwned">The customer owns this system and must be asked before patching or changing anything</Value>
+            <Value ID="PartnerOwned">The partner, not the customer itself owns this system and must be asked before patching or changing anything</Value>
+            <Value ID="StiboOwned">Stibo Systems owns this system and can change it without asking the customer</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

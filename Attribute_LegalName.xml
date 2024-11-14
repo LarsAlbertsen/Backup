@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="LegalName" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" Mandatory="false">
+            <Name>Legal Entity Name</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <MetaData>
+                <Value AttributeID="Attribute Completeness Score">10</Value>
+                <Value QualifierID="en-US" AttributeID="AttributeHelpText">The Legal Name of the Business</Value>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="AllEmployeeReadOnlyInfo"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="AllEmployeeViewNew"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="AllEmployeesView"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="BusinessEntityInternalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="CAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="CompanyInformation"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EBEAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnvironmentAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ExternalBusinesses"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="FinanceModify"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LegalModify"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LegalTasksValidation_Perpetual"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LegalTasksValidation_SaaS"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LegalTasks_NC_All"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LegalTasks_Perpetual"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LegalTasks_SaaS"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PMOApprove"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PMOModify"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PerplegalRequired"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SYSLegalOperationsValidation_NP"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SYSLegalOperations_NP"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SaaSLegalRequiredforSaaS"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupportLicenseManagement - View"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupportView"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="UP_CustomerSuccessManagementView"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="leaserequired"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="BusinessEntityExternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternalDepartment"></UserTypeLink>
+            <UserTypeLink UserTypeID="Environment"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

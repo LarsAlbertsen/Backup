@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="AgreementEffectiveForMonths" MultiValued="false" DefaultUnitID="unece.unit.MON" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Mandatory="false">
+            <Name>Agreement Effective For Months</Name>
+            <ListOfValueLink ListOfValueID="NumberOfMonths"></ListOfValueLink>
+            <MetaData>
+                <Value QualifierID="en-US" AttributeID="AttributeHelpText">Select the period the Sandbox shall exists (use 0 Month for Co-terminus with the OGPP, the end date will follow the program)</Value>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="EnvironmentAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SandboxOrderform"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Environment"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

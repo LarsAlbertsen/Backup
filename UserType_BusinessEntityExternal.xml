@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="BusinessEntityExternal" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Relaxed" IDPattern="[id]">
+            <Name>Business Entity (External)</Name>
+            <Icon>H4sIAAAAAAAA//t/4/8DBgEvN083BkZGRoYEIGT4f5vBmYGZiQmEgIAFiFg5WFlZWFi52NnZOHi4eHi4ubi5efmEBHj5BPm4uQXEBASFRURFRXn4xSXERCSERERFQIYwMgP1sLBysrJyivBy84qQDP4fYBDkYBBiEGJmVGJgEmRkFmT8f4RBnoGBkZURDBiggJEJ6EY2dg5OLm6ggq0CDEyMzMxMLMwgVwNla4HyDCyCrEKKho5swoGJ7EqFIkaNExdyKDttPCgadPGDinFSURMnl5i4hKSUqpq6hqaWiamZuYWllbOLq5u7h6dXcEhoWHhEZFRySmpaekZmVnFJaVl5RWVVc0trW3tHZ9ekyVOmTps+Y+asRYuXLF22fMXKVZs2b9m6bfuOnbsOHT5y9NjxEydPXbp85eq16zdu3nr46PGTp8+ev3j56uOnz1++fvv+4+cvkL8YGZgZYQCrvwSB/mJiYWFmYQf5i5GpHKRAkIVV0ZBNyDGQPbFQWMmokUPEaeLCjQc5lY2DPogmFV3kElMxeaj6EeQ1sM+I81gTWT6Dewzhr1sMPMyMwMhjFmSwZ/hyvjdeUGdNfcZ78Ze/7veLe/bxi92K4uY+321+TypijX977rNbukkFGw/lRey/xcC6RNV6cnzMvzO7tn7vsE/7z9AqNW95deGKV+H7hC/l6a3XW5qZNi98c+c8T9nOtLQkzyRPlUl+2Q/qb/k//M9wiF+07uo8y50fv7Y3rysN/5jbu+b8I37Zk4t8ctjb3saGLgxwcn6e0N239D9DeeR+TjthXud/onsyPzySfsv0Tp+pE2Sd8/L7t/3zC5e7/Wo2W3QiyqXcetnOnBkRD1JmMfyNWLRn9Te//wyTI3+Y/2dISuv9z7DE4KKD1Dz1v/P+iVU8j9l57Y/nh8sH/ylcW9f181ffygW37tzx3eqk91PO6GxraODkAwFWXKf/M7T5/VD8z+CSD3TyP6Fv9n+yujSYL5icNTrvcDkXSF3iNffd1Km7NuetcsTCJpWAlVJKDaKhDowOBxgYXUUC2P/fBADCBbRswwMAAA==</Icon>
+            <UserTypeLink UserTypeID="BusinessEntityGroup"></UserTypeLink>
+            <AttributeLink AttributeID="DataQualityTopics"></AttributeLink>
+            <AttributeLink AttributeID="DateOfAgreementEffectiveDate"></AttributeLink>
+            <AttributeLink AttributeID="DateOfContractExpiration"></AttributeLink>
+            <AttributeLink AttributeID="DateOfLastEditRequest"></AttributeLink>
+            <AttributeLink AttributeID="Description"></AttributeLink>
+            <AttributeLink AttributeID="JIRAKey"></AttributeLink>
+            <AttributeLink AttributeID="LegalName"></AttributeLink>
+            <AttributeLink AttributeID="PrismCustomerCodeName"></AttributeLink>
+            <AttributeLink AttributeID="PrismCustomerLicenseMode"></AttributeLink>
+            <AttributeLink AttributeID="PrismCustomerStatus"></AttributeLink>
+            <AttributeLink AttributeID="PrismCustomerType"></AttributeLink>
+            <AttributeLink AttributeID="PrismCustomerURI"></AttributeLink>
+            <AttributeLink AttributeID="PrismJiraKey"></AttributeLink>
+            <AttributeLink AttributeID="PrismSystemName"></AttributeLink>
+            <AttributeLink AttributeID="Purpose"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

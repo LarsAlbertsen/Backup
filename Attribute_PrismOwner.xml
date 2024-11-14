@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeList>
+        <Attribute ID="PrismOwner" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Mandatory="false">
+            <Name>Prism Owner</Name>
+            <ListOfValueLink ListOfValueID="PrismOwners"></ListOfValueLink>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="CSMSTEPEnvironmentInformation"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="CSMSTEPOverviewTable"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnvironmentAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnvironmentData"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LicenseAttributesforDataContainer"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SaasDataContainer"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SandboxOrderform"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Environment"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

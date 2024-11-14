@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="STEPPricingCategories" ParentID="STEPEnvironment" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+            <Name QualifierID="en-US">STEP Pricing Categories</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value ID="HighVolume">High Volume</Value>
+            <Value ID="LowVolume">Low Volume</Value>
+            <Value ID="NotRelevant">Not Relevant</Value>
+            <Value ID="OnboardingProduct">Onboarding Product</Value>
+            <Value ID="Product">Product</Value>
+            <Value ID="SustainabilityCard">Sustainability Card</Value>
+            <Value ID="Unhandled">?</Value>
+            <Value ID="User">User</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

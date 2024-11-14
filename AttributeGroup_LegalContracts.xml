@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeGroupList>
+        <AttributeGroup ID="LegalContracts" ShowInWorkbench="true" ManuallySorted="false" Referenced="true" ParentID="ExternalBusinessRelevant">
+            <Name>Agreements</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <Configuration>H4sIAAAAAAAA/53SwYrCMBAG4LtPEfIA2917K2hbxdMeLN5j/SMDbSKTya6+vUahHgSX7C3/kG/gJykXIkz7KFizj6cd4beBJUdC3qmV59HIDhxuqdJfH596PlOqfF4JqjN8hExrQm3cEu2BBIdKWzME6OKOaj/E0YV0vqUJPMZqypum0o3v4wgnWzESw8P/aYzg2y6ODCTaWote6AdpnrOh9k7Y9NKeT8QmdczRHXgkl80aDMgxl9D5/5j8Ukm9lCqL6THL4t0Pms+uSTzLlmECAAA=</Configuration>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

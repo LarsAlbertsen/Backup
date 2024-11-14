@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="DateOfAgreementEffectiveDate" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" Mandatory="false">
+            <Name>Commercial Start Date</Name>
+            <Validation BaseType="legacyisodate" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <MetaData>
+                <Value QualifierID="en-US" AttributeID="AttributeHelpText">The first date when the commercial relationship was started</Value>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="AllEmployeesView"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="CAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="CSMSTEPValidityPeriod"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="CustomerInfo"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DaaSCustomerAgreementData"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DaaSEnvironmentBusinessData1"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DaaSEnvironmentConsumptionData"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DaaSEnvironmentRequest"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="DaaSEnvironments"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EBEAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnvironmentAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Facility"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LegalContracts"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LegalView"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PDXEnvironments"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PDXEnvironmentsConsumptionData"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Purchase"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="STEPEnvironmentRequest"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="STEPEnvironments"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SandboxOrderform"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SandboxOrderformMandatory"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupportConnectionAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupportEnvironmentAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupportView"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="UP_CustomerSuccessManagementView"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ValidityProcessAttributes"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="BusinessEntityExternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="Environment"></UserTypeLink>
+            <UserTypeLink UserTypeID="InternalAgreement"></UserTypeLink>
+            <UserTypeLink UserTypeID="OtherEnvironment"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

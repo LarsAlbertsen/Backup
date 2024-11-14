@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="OtherEnvironment" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Relaxed" IDPattern="[id]">
+            <Name>Other Environment</Name>
+            <Icon>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</Icon>
+            <UserTypeLink UserTypeID="BusinessEntityExternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternalDepartment"></UserTypeLink>
+            <AttributeLink AttributeID="ContractStatus"></AttributeLink>
+            <AttributeLink AttributeID="DateOfAgreementEffectiveDate"></AttributeLink>
+            <AttributeLink AttributeID="DateOfContractExpiration"></AttributeLink>
+            <AttributeLink AttributeID="DateOfLastEditRequest"></AttributeLink>
+            <AttributeLink AttributeID="EnvironmentName"></AttributeLink>
+            <AttributeLink AttributeID="EnvironmentPurpose"></AttributeLink>
+            <AttributeLink AttributeID="EnvironmentUsage"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

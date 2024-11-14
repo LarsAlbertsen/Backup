@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeGroupList>
+        <AttributeGroup ID="SoftwareLicenses" ShowInWorkbench="true" ManuallySorted="false" Referenced="true" ParentID="SystemAndSoftwareRelevant">
+            <Name>Software Licenses (STEP components)</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <Configuration>H4sIAAAAAAAA/42PwQ6CMBBE73xF0w8QvQOJUjQmJFwI92oXsxFast1GP19QUm/G20523+xMtmcmvASGE7kwdQgPBT1aZHRWHB2NmjsgP6tc7jZbWSRCZN8TL1pNN+Bo40ttD1AZZDC5ZAog0zdTuiGM1i/zrGq098h8ViLqs8pljVewHhoyQErz6vIP2eIITV89JyS9RFz/pzFAlv4qXSQvFLhNhhQBAAA=</Configuration>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

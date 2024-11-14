@@ -8,6 +8,7 @@
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>
             <AttributeGroupLink AttributeGroupID="Metadata"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SAattributes"></AttributeGroupLink>
             <UserTypeLink UserTypeID="stibo.grouping attribute"></UserTypeLink>
             <UserTypeLink UserTypeID="stibo.normalattribute"></UserTypeLink>
             <LinkType LinkTypeID="CA"></LinkType>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeGroupList>
+        <AttributeGroup ID="ExternalBusinesses" ShowInWorkbench="true" ManuallySorted="false" Referenced="true" ParentID="ExternalBusinessRelevant">
+            <Name>External Businesses</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <Configuration>H4sIAAAAAAAA/32OQQrCMBBF9z1FyAGM7pOCtlYEVyLdRzuVwXRGkgle36oYd+7m8f9/jF2LRDxngV3kfO8RHi2MSCjIpDqOk5ceYprJ6dViqetKKfurJHXy8QpSNKnxtIHtgAKD06MPCbR5jxoOeaL0umc6IN3K6BOpwvvW6YZJ/EWOHL4CUwzW/Hu7rp4Yse0X1gAAAA==</Configuration>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

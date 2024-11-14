@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="DataQualityTopics" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" Mandatory="false">
+            <Name>Data Quality Topics</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <MetaData>
+                <Value QualifierID="en-US" AttributeID="AttributeHelpText">Calculated Data Quality Topics for Business Entity, Agreements, and Environments </Value>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="AllEmployeesView"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="CAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="CustomerDetailPage"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EnvironmentAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Facility"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ImplementationPartnerAgreement"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LegalContracts"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LegalView"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="Purchase"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupportView"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="BusinessEntityExternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="Environment"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

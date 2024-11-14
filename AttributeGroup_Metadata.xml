@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <AttributeGroupList>
-        <AttributeGroup ID="Metadata" ShowInWorkbench="true" ManuallySorted="false" Referenced="true">
+        <AttributeGroup ID="Metadata" ShowInWorkbench="true" ManuallySorted="false" Referenced="true" ParentID="COMPANYID">
             <Name>Metadata</Name>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>

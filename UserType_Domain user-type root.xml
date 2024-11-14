@@ -6,6 +6,7 @@
             <DimensionLink DimensionID="Language"></DimensionLink>
             <UserTypeLink UserTypeID="Domain user-type root"></UserTypeLink>
             <UserTypeLink UserTypeID="List Of Values group type"></UserTypeLink>
+            <AttributeLink AttributeID="Purpose"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

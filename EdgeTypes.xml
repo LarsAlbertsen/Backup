@@ -3,6 +3,7 @@
     <EdgeTypes>
         <EdgeType ID="C"></EdgeType>
         <EdgeType ID="CA">
+            <AttributeLink AttributeID="Attribute Completeness Score"></AttributeLink>
             <AttributeLink AttributeID="Completeness Score"></AttributeLink>
             <AttributeLink AttributeID="DisplaySequence"></AttributeLink>
             <AttributeLink AttributeID="LinkedAttributeGroups"></AttributeLink>
@@ -10,7 +11,9 @@
         <EdgeType ID="P"></EdgeType>
         <EdgeType ID="PA">
             <AttributeLink AttributeID="554d2b67-c2b2-478b-91c8-8cbbf52a9741"></AttributeLink>
+            <AttributeLink AttributeID="Attribute Completeness Score"></AttributeLink>
             <AttributeLink AttributeID="Completeness Score"></AttributeLink>
+            <AttributeLink AttributeID="ConditionAttribute"></AttributeLink>
             <AttributeLink AttributeID="DisplaySequence"></AttributeLink>
             <AttributeLink AttributeID="Variant Priority"></AttributeLink>
         </EdgeType>

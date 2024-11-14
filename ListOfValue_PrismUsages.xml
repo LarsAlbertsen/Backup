@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="PrismUsages" ParentID="Systems" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+            <Name QualifierID="en-US">Prism Usages (System types)</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="200" InputMask=""></Validation>
+            <Value ID="Acceptance">The system is used for pre-production acceptance testing</Value>
+            <Value ID="Development">The system is used for development, so nothing can be expected to work</Value>
+            <Value ID="PermSandbox">Permanent sandbox</Value>
+            <Value ID="PreProduction">The system is used for pre-production acceptance testing, sized for production</Value>
+            <Value ID="Production">The system is in production for the customer</Value>
+            <Value ID="RPVSandbox">The system is a Release Preview Sandbox</Value>
+            <Value ID="Retired">The system is no longer in use</Value>
+            <Value ID="Sandbox">The system is a short term sandbox</Value>
+            <Value ID="Support">The system is meant for the support team to reproduce, verify and work with reported issues. Automatically created and deleted.</Value>
+            <Value ID="Test">The system is used for QA/testing</Value>
+            <Value ID="Training">The system is used for STEP training</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

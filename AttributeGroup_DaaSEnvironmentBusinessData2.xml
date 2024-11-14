@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeGroupList>
+        <AttributeGroup ID="DaaSEnvironmentBusinessData2" ShowInWorkbench="true" ManuallySorted="true" Referenced="true" ParentID="DaaSEnvironmentBusinessData">
+            <Name>DaaS Environment Business Data - DW reporting</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeSequence>
+                <AttributeLink AttributeID="ReportDate"></AttributeLink>
+            </AttributeSequence>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

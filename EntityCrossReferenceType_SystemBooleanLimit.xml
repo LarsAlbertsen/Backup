@@ -6,16 +6,21 @@
         </Qualifier>
     </Qualifiers>
     <CrossReferenceTypes>
-        <EntityCrossReferenceType ID="SystemLimitRef" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" MultiValued="false">
-            <Name QualifierID="en-US">SystemLimitRef</Name>
+        <EntityCrossReferenceType ID="SystemBooleanLimit" Inherited="true" Accumulated="false" Revised="true" Mandatory="false" MultiValued="true">
+            <Name QualifierID="en-US">System Boolean Limit</Name>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>
+            <AttributeLink AttributeID="SystemBooleanLimit"></AttributeLink>
             <AttributeGroupLink AttributeGroupID="SystemLimits"></AttributeGroupLink>
             <UserTypeLink UserTypeID="BusinessEntityExternal"></UserTypeLink>
             <UserTypeLink UserTypeID="BusinessEntityInternal"></UserTypeLink>
-            <UserTypeLink UserTypeID="SystemLimitDC"></UserTypeLink>
-            <TargetUserTypeLink UserTypeID="SystemLimit"></TargetUserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternalDepartment"></UserTypeLink>
+            <UserTypeLink UserTypeID="DiscontinuedProducts"></UserTypeLink>
+            <UserTypeLink UserTypeID="Environment"></UserTypeLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Product user-type root"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="SystemBooleanLimit"></TargetUserTypeLink>
         </EntityCrossReferenceType>
     </CrossReferenceTypes>
 </STEP-ProductInformation>

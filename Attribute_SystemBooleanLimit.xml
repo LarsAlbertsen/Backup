@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeList>
+        <Attribute ID="SystemBooleanLimit" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Referenced="true" Mandatory="false">
+            <Name>System Boolean Limit</Name>
+            <ListOfValueLink ListOfValueID="Boolean"></ListOfValueLink>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="SystemLimits"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="SystemBooleanLimit"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

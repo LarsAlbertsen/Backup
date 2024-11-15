@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserTypes>
-        <UserType ID="BusinessEntityInternalDepartment" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Relaxed" IDPattern="[id]" Referenced="true">
+        <UserType ID="BusinessEntityInternalDepartment" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Relaxed" IDPattern="[id]">
             <Name>Business Entity Internal Department</Name>
             <UserTypeLink UserTypeID="BusinessEntityInternal"></UserTypeLink>
             <AttributeLink AttributeID="Description"></AttributeLink>

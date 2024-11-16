@@ -12,16 +12,19 @@
   <state id="Initial" discontinued="false">
     <transition target="Maintain"/>
     <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="LongRunning"/>
   </state>
   <state id="Maintain" discontinued="false">
     <transition target="Final"/>
     <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
   </state>
 </scxml> -->
+            <BusinessRuleLink ID="LongRunning"></BusinessRuleLink>
             <BusinessRuleLink ID="RemoveFromWorkflow"></BusinessRuleLink>
             <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
             <Name>Maintain Item</Name>
-            <Configuration>H4sIAAAAAAAA/5WST2/bMAzF7/kUmrCrY+dPsWSwfBkQIMCGFC2KnVWbSYjZlCHScbJPP1lJ1mFA2/Qg8+D3+H6kZDtxa0JBK7Chbx5CNVtbM+Tc1igFHKHsBB5Lj618xwYFqnuPB6xhB2zEd1dljSxAG1o3rfMC/qmt/m/G5bGpTR6LwhhbG33Or7Ui24DRPyyShLMWaLQ6gGd0ZHQ2XmoVfMRG70Xar2na9/24n42d36XTLLtLsy9pbK2L/FOSKKXIVZAw/obEUpW0jkOQI3U02ThTp/jtzWQ+1L2ZzhahqiQpRiq3zLgjAIWV0Z/Lznsg0UpObSDsGHzISK+iYhQcLGFaVSGXjgSpg2CMs+vY4zrku2jTM9t8dobLLnB3f9lULt7SRS/W70BeljZgvfwuRnkauW4h/KfFbYiTyeJDjCukuIBXAbeD4HXAq/9GuuUbG3QUrtOf1HPHSMBsy8E8hDxA4w6w8q756fyvbe36gfiiH3AjZOQenlpxedl/AMTX1UBIAwAA</Configuration>
+            <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
+            <Configuration>H4sIAAAAAAAA/52TT2/bMAzF7/kUrLCrYydp0T+wfBkQIECHFh2GnTWbcYjZlCHRcbJPX1lJ2m1YsKAHiwfx8f0eIZte7IpJyAg+8WeHoeq1aTzmvmtICtxh2Qt+LR118kgtCVbPjrbUYI1ei+tPnQ15QX7iVdtZJ+i+ddXfw3y5axudxwIUbRutDv6NAjYtavXFEEv4VoKtgi06T5a1yqb3CoKOvVYbke4hTYdhmA6LqXV1Os+ymzS7TeNoVeRXSQIAbCtMPP3CxHCVdNYHI8uw09k0g308Bz27HutGzxd3oUKSFBPIjfdUMyJQpdWnsncOWRTIvguEvUcXPNJTUzEJCi8hLVTkS8tC3GMQxuwqzjiF/C/a/MB2vTjAZUe4mzc2yC0HGLeHH70nRu9NOWpHl0fL9UvPTFyPgMfGkQ9ycYaPLmJcjfK+6rH3/bqY5GlMc0mu30ZcFmw2uzuf7B+MS+K4trOA67HhPOBJfyHd/Yf2/oKt3eLS2fa7dT/XjR3+WH+eRsjIPT7Q4vg/vALE2YHWfgMAAA==</Configuration>
         </STEPWorkflow>
     </STEPWorkflows>
 </STEP-ProductInformation>

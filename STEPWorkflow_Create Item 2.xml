@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <STEPWorkflows>
-        <STEPWorkflow ID="CreateItem" Referenced="true"><!-- Definition:
-<scxml name="CreateItem" initial="Initial" version="0.9">
+        <STEPWorkflow ID="Create Item 2" Referenced="true"><!-- Definition:
+<scxml name="Create Item 2" initial="Initial" version="0.9">
   <assignee id="$current" type="user"/>
   <datamodel>
     <data id="SubmitMessage"/>
   </datamodel>
-  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=238.0  </editorLayout>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.00000000000003 h=238.0  </editorLayout>
   <final id="Final" discontinued="false">
     <editorLayout>   node-size-and-position x=20.0 y=193.0 w=100.0 h=25.0  </editorLayout>
     <onentry businessactionid="RemoveFromWorkflow"/>
   </final>
   <state id="Enrich" discontinued="false">
     <transition target="Final"/>
-    <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
+    <transition businessactionid="ApprovalCheck" event="stay"/>
+    <editorLayout>   node-size-and-position x=60.0 y=150.0 w=100.0 h=25.0  </editorLayout>
   </state>
   <state id="Initial" discontinued="false">
-    <transition businessactionid="e-signature" businessconditionid="con-7b96603d-4e10-4ea0-9f2e-2d264a78ca97" event="submit" target="Enrich"/>
-    <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+    <transition businessactionid="e-signature" businessconditionid="con-037e4f44-2344-47bf-a91a-8873e99482e5" event="submit" target="Enrich"/>
+    <editorLayout>   node-size-and-position x=20.0 y=43.00000000000001 w=100.0 h=25.0  </editorLayout>
     <onexit businessactionid="ApprovalCheck"/>
   </state>
 </scxml> -->
@@ -26,11 +27,11 @@
             <BusinessRuleLink ID="RemoveFromWorkflow"></BusinessRuleLink>
             <BusinessRuleLink ID="e-signature"></BusinessRuleLink>
             <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
-            <Name>Create Item</Name>
+            <Name>Create Item 2</Name>
             <ValidUserTypeLink UserTypeID="Family"></ValidUserTypeLink>
             <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
-            <Configuration>H4sIAAAAAAAA/42TUW/bIBSF3/srGNorseOkSTyZSFO1SpE2dWo17ZnYNw4qBguu42S/foDtbtraLS9cIe7hnvMhRIdmpyVKgfCg7yz4yg9COShcqyRu4Qxlh/BUWtniZ9lIhOqrlSepoAbH0XZTp5IOQT/oXdMai2C/tdWfl7ny3ChexEJkHKs4HeYrSrRogNPBxA6hoeQE1kmjOU1nOSVepR2nR8T2Q5L0fT/rFzNj6yRL09skXSfxYrot3jFGCNGmAubkD2BCV6w1zo8xmpx5OkvJJa49ny9DPfJssfGVMLa9IYU3LhqvVn4z7IisOH3q9j7/F3BO1ODHJOFkezPUsd+rhXOy1gBR877srAWNlOCl9ek6BzZIp6aocOgTk0q60miUugMvjNxovGMC9N9g2ZBsuRiipWO025dkpDAazhLJvnNShyBlkIYhH9vWmpNQd0con4PDoTP4IwVaoccpfyuDl1oL7Kz3Ox37JJWcOvyGrff5apUuKraEeeoXkbL8kAHLqmy1FOtNKfI1JXDyrDh1kbRnJmwNfv9JW1keg6tfTgL4CC4iPEgt1NsI78Px1QDn+b8JarSXV0A8QmNOcG9N893Y54My/cgx9Ae70eQ1L/6S90q/883bfn97uwnnRON1msXwj7bjp/0JafNLwCMEAAA=</Configuration>
-            <LocalBusinessRule ID="con-7b96603d-4e10-4ea0-9f2e-2d264a78ca97" Scope="Local" Type="Condition" RunPrivileged="false"><!-- Definition:
+            <Configuration>H4sIAAAAAAAA/42UXW/aMBSG7/srPGu3ISEJA6YYaapWCWlTp1VTr01yCFYdO7JPCOzXz3YIK+sQ5SKWdb7e9zkhvEO9VgIFR3hU9wbcybZcWihsKwWu4ABlh/BUGtHiN9EIhOqHEXshoQbL0HRjphQWQT2qddNqg2B+tdW/zWx5aCQrwkFEGCsZHeZLShRvgNFBBFkjNCSlZA/GCq0YTSZLSlyhsozuENvPcdz3/aTPJtrUcZoksziZx6E3XRUfoogQonQFkRW/IeKqilpt3SStyIElk4Qcw7Nn09ydr38Z2bE0W7ggiaLVHSmcEd64VtJdhhsRFaNP3cbx+A7W8hrczNhHVnfDecp31dxaUSuAUPOx7IwBhZTgsXVuOwvGl45JocKiJ1AJW2qFQnXgCgNHGnqMwG66TAebeXbpb+pNJz7mfM7ONkmhFRwEkk1nhfKuSt/HT/zStkbvubzfQfni5Q6ZXiwp0HB1Gvm20gurFcfOOPFj2NmqxJjhLlGSzSHf5nmUZu6RzzfbiC+nPFos5hksl/kihRklsHfgGLUBuwPITQ3u/lUZUe68qr9K/BYCxcBzKxSX13k++PC7aU6X2fDaXCGo0Bz/A+InNHoPD0Y3z9q8bKXuTxx9vpcbRL5n/We/N/R+OumdJdf1vtrdiHOkcUHz5p4v35DzqpAfry6mGP6sq9PH4Q9iAxs5iwQAAA==</Configuration>
+            <LocalBusinessRule ID="con-037e4f44-2344-47bf-a91a-8873e99482e5" Scope="Local" Type="Condition" RunPrivileged="false"><!-- Definition:
 Condition #1 (JavaScriptBusinessConditionWithBinds):
 <config>
   <bindings>

@@ -61,7 +61,7 @@
         <SystemSetupValue Type="Config" Name="UsePathAsClassificationTitleOnProductReferenceTab">Y</SystemSetupValue>
         <SystemSetupValue Type="Config" Name="UserSecurityPasswordExpirationDays"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="UserSecurityPasswordLimitReuseDays"></SystemSetupValue>
-        <SystemSetupValue Type="Config" Name="UserSecurityPasswordStrengthValidation">false</SystemSetupValue>
+        <SystemSetupValue Type="Config" Name="UserSecurityPasswordStrengthValidation">true</SystemSetupValue>
         <SystemSetupValue Type="Config" Name="VendorPortalAssetsType"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="VendorPortalBatchType"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="VendorPortalBatchesType"></SystemSetupValue>

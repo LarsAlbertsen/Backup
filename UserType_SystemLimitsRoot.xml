@@ -4,6 +4,7 @@
         <UserType ID="SystemLimitsRoot" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="SystemLimitsRoot" NamePattern="System Limits Root">
             <Name>SystemLimitsRoot</Name>
             <UserTypeLink UserTypeID="Entity user-type root"></UserTypeLink>
+            <UserTypeLink UserTypeID="SystemsRoot"></UserTypeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

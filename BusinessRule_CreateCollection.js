@@ -40,7 +40,7 @@
 }
 */
 exports.operation0 = function (manager,itemType) {
-var collection = manager.getNodeCollectionHome().getTopNodeCollectionGroup().createNodeCollection("myCold2");
+var collection = manager.getNodeCollectionHome().getTopNodeCollectionGroup().createNodeCollection("myCol5");
 
 var rootProduct = manager.getProductHome().getTopProduct();
 
@@ -55,18 +55,25 @@ l.add(rootProduct)
  var query = querySpecification.execute();
 
 var count = 0;
- 
+var total = 0;
+
  query.forEach(function(node) {
      //handle node here
      count++;
-     if (count<1000) {
-     	if ((count%100)==0) {
-		    	logger.info("count "+count);
+     if (count<1000000) {
+     	if ((count%1000)==0) {
+		    	//logger.info("count "+count);
      	}
      	//var set = new java.util.HashSet();
      	//set.add(node);
      	//collection.addNodes(set);
 	     l.add(node);
+	     if (l.size()>999) {
+	     	total += l.size()
+			logger.info("Adding "+total+ " " +l.size()) 
+	     	collection.addNodes(l);
+	     	l = new java.util.HashSet()
+	     }
 	     return true;
      }
      else {
@@ -74,7 +81,7 @@ var count = 0;
      }
  });
 
- 
+logger.info("Adding Rest "+l.size()) 
 collection.addNodes(l);
-
+logger.info("Done")
 }

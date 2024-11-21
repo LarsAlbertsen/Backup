@@ -37,7 +37,11 @@ exports.operation0 = function (item) {
 
 var cpLinks = item.getClassificationProductLinks()
 var zz = cpLinks.getByID("Display")
-
 logger.info("zz="+zz);
+
+
+var l = item.getReferences();
+var t = l.getByID("Generic Asset");
+logger.info("t="+t)
 
 }

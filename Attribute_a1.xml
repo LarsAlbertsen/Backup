@@ -2,7 +2,7 @@
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <AttributeList>
         <Attribute ID="a1" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
-            <Name>a1 v2</Name>
+            <Name>a 1 v2</Name>
             <Validation BaseType="number" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>

@@ -34,11 +34,7 @@
 }
 */
 exports.operation0 = function (node) {
-logger.info("This is a INFO message for new jslog");
+logger.info("This is an INFO message for new jslog");
 logger.warning("This is a WARNING message for new jslog");
 logger.severe("This is a SEVERE message for new jslog");
-logger.finest("This is a FINEST message for new jslog");
-logger.finer("This is a FINER message for new jslog");
-logger.fine("This is a FINE message for new jslog");
-logger.config("This is a CONFIG message for new jslog");
 }

@@ -3,7 +3,6 @@
     <UserTypes>
         <UserType ID="Operator user-type root" Referenced="true">
             <Name>User</Name>
-            <AttributeLink AttributeID="ConfigurationEntityReferences"></AttributeLink>
             <AttributeLink AttributeID="SCIM.emails"></AttributeLink>
             <AttributeLink AttributeID="UserInformation"></AttributeLink>
         </UserType>

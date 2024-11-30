@@ -4,7 +4,6 @@
         <UserType ID="ConfigurationSystem">
             <Name>Configuration System</Name>
             <UserTypeLink UserTypeID="ConfigurationType"></UserTypeLink>
-            <AttributeLink AttributeID="ConfigurationEntityReferences"></AttributeLink>
             <AttributeLink AttributeID="ConfigurationSystem"></AttributeLink>
         </UserType>
     </UserTypes>

@@ -3,11 +3,6 @@
     <UserGroupList>
         <UserGroup ID="Suppliers" ReadOnly="false" MultifactorAuthenticationRequired="false">
             <Name>Suppliers</Name>
-            <MetaData>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160642</Value>
-                </MultiValue>
-            </MetaData>
         </UserGroup>
     </UserGroupList>
 </STEP-ProductInformation>

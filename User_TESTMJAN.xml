@@ -3,11 +3,6 @@
     <UserList>
         <User ID="TESTMJAN" ForceAuthentication="false" EMail="mjan@stibosystems.com">
             <Name>testmjan</Name>
-            <MetaData>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160629</Value>
-                </MultiValue>
-            </MetaData>
             <UserGroupLink UserGroupID="Marketing"></UserGroupLink>
             <SystemSetup>
                 <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>

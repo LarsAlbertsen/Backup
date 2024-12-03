@@ -5,9 +5,6 @@
             <Name>Peder Vestbjerg Madsen</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Stibo standard user</Value>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160637</Value>
-                </MultiValue>
             </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>

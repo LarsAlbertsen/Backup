@@ -3,11 +3,6 @@
     <UserList>
         <User ID="ELFRREADONLY" ForceAuthentication="false">
             <Name>ELFRReadOnly</Name>
-            <MetaData>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160631</Value>
-                </MultiValue>
-            </MetaData>
             <UserGroupLink UserGroupID="ReadOnly"></UserGroupLink>
             <SystemSetup>
                 <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>

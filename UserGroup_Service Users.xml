@@ -3,11 +3,6 @@
     <UserGroupList>
         <UserGroup ID="Service Users" ReadOnly="false" MultifactorAuthenticationRequired="false">
             <Name>Service Users</Name>
-            <MetaData>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160639</Value>
-                </MultiValue>
-            </MetaData>
             <PrivilegeRule ActionSetID="All setup actions"></PrivilegeRule>
             <PrivilegeRule ActionSetID="All user actions" CollectionGroupID="CollectionGroup root"></PrivilegeRule>
             <PrivilegeRule ActionSetID="All user actions" EntityID="Entity hierarchy root"></PrivilegeRule>

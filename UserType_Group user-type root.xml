@@ -3,7 +3,6 @@
     <UserTypes>
         <UserType ID="Group user-type root" Referenced="true">
             <Name>User Group</Name>
-            <AttributeLink AttributeID="ConfigurationEntityReferences"></AttributeLink>
             <AttributeLink AttributeID="UserGroupMetadata"></AttributeLink>
         </UserType>
     </UserTypes>

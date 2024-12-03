@@ -3,11 +3,6 @@
     <UserGroupList>
         <UserGroup ID="ReadOnly" ReadOnly="false" MultifactorAuthenticationRequired="false">
             <Name>Read Only</Name>
-            <MetaData>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160644</Value>
-                </MultiValue>
-            </MetaData>
             <PrivilegeRule ActionSetID="ViewSetupActions"></PrivilegeRule>
             <PrivilegeRule ActionSetID="ViewUserActions" ClassificationID="Classification 1 root"></PrivilegeRule>
             <PrivilegeRule ActionSetID="ViewUserActions" CollectionGroupID="CollectionGroup root"></PrivilegeRule>

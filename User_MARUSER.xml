@@ -3,11 +3,6 @@
     <UserList>
         <User ID="MARUSER" ForceAuthentication="false">
             <Name>maruser</Name>
-            <MetaData>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160626</Value>
-                </MultiValue>
-            </MetaData>
             <UserGroupLink UserGroupID="Marketing"></UserGroupLink>
             <SystemSetup></SystemSetup>
         </User>

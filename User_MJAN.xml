@@ -3,16 +3,6 @@
     <UserList>
         <User ID="MJAN" ForceAuthentication="false" EMail="mjan@stibosystems.com">
             <Name>Mark Janssen</Name>
-            <MetaData>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>WorkArea#Instrument#CC_DSFVH_Instrument#32160009</Value>
-                    <Value>Perspective#Instrument#CC_DSFVH_Instrument#32160010</Value>
-                    <Value>PerspectiveTableConfiguration#Instrument#CC_DSFVH_Instrument#32160010</Value>
-                    <Value>PerspectiveFilterItem#Instrument#CC_DSFVH_Instrument#32160010</Value>
-                    <Value>PerspectiveSortingItem#Instrument#CC_DSFVH_Instrument#32160010</Value>
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160010</Value>
-                </MultiValue>
-            </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>
                 <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>

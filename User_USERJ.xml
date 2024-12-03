@@ -5,9 +5,6 @@
             <Name>USERJ</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Info about UserJ entered in LAAL-SAAS</Value>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160605</Value>
-                </MultiValue>
             </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>

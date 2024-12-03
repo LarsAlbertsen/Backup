@@ -3,11 +3,6 @@
     <UserList>
         <User ID="LUKL" ForceAuthentication="false" EMail="lukl@stibosystems.com">
             <Name>Lukas Löw</Name>
-            <MetaData>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160632</Value>
-                </MultiValue>
-            </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup></SystemSetup>
         </User>

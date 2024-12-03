@@ -5,9 +5,6 @@
             <Name>OutboundExportUser</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Stibo standard user</Value>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160617</Value>
-                </MultiValue>
             </MetaData>
             <UserGroupLink UserGroupID="Service Users"></UserGroupLink>
             <SystemSetup>

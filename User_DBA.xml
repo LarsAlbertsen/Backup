@@ -5,10 +5,6 @@
             <Name>DBA</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Stibo standard user</Value>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>ColumnWidthsView#Instrument#CC_DSFVH_Instrument#32160607</Value>
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160607</Value>
-                </MultiValue>
             </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <UserGroupLink UserGroupID="Super user"></UserGroupLink>

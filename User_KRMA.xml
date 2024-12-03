@@ -3,11 +3,6 @@
     <UserList>
         <User ID="KRMA" ForceAuthentication="false">
             <Name>Kay Jensen</Name>
-            <MetaData>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160628</Value>
-                </MultiValue>
-            </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>
                 <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>

@@ -3,11 +3,6 @@
     <UserList>
         <User ID="PRODUCTSUFFICIENCYUSER" ForceAuthentication="false">
             <Name>Product Sufficiency User</Name>
-            <MetaData>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160608</Value>
-                </MultiValue>
-            </MetaData>
             <UserGroupLink UserGroupID="Service Users"></UserGroupLink>
             <SystemSetup></SystemSetup>
         </User>

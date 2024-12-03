@@ -5,15 +5,6 @@
             <Name>SIAP</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Stibo standard user</Value>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>ContextConfiguration#Instrument#CC_DSFVH_Instrument#32158626</Value>
-                    <Value>WorkArea#Instrument#CC_DSFVH_Instrument#32158628</Value>
-                    <Value>Perspective#Instrument#CC_DSFVH_Instrument#32158629</Value>
-                    <Value>PerspectiveTableConfiguration#Instrument#CC_DSFVH_Instrument#32158629</Value>
-                    <Value>PerspectiveFilterItem#Instrument#CC_DSFVH_Instrument#32158629</Value>
-                    <Value>PerspectiveSortingItem#Instrument#CC_DSFVH_Instrument#32158629</Value>
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32158629</Value>
-                </MultiValue>
             </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>

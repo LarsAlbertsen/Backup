@@ -5,16 +5,6 @@
             <Name>PMIL</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Stibo standard user</Value>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>ContextConfiguration#Instrument#CC_DSFVH_Instrument#24050006</Value>
-                    <Value>WorkArea#Instrument#CC_DSFVH_Instrument#24050008</Value>
-                    <Value>Perspective#Instrument#CC_DSFVH_Instrument#24050009</Value>
-                    <Value>PerspectiveTableConfiguration#Instrument#CC_DSFVH_Instrument#24050009</Value>
-                    <Value>BrowsePerspectiveView#Instrument#CC_DSFVH_Instrument#24050009</Value>
-                    <Value>PerspectiveFilterItem#Instrument#CC_DSFVH_Instrument#24050009</Value>
-                    <Value>PerspectiveSortingItem#Instrument#CC_DSFVH_Instrument#24050009</Value>
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#24050009</Value>
-                </MultiValue>
             </MetaData>
             <UserGroupLink UserGroupID="NewUserGroup"></UserGroupLink>
             <UserGroupLink UserGroupID="ProductPlatform"></UserGroupLink>

@@ -3,11 +3,6 @@
     <UserList>
         <User ID="PRODUCTOIEPUSER" ForceAuthentication="false">
             <Name>User for Product OIEP</Name>
-            <MetaData>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160602</Value>
-                </MultiValue>
-            </MetaData>
             <UserGroupLink UserGroupID="Service Users"></UserGroupLink>
             <SystemSetup></SystemSetup>
         </User>

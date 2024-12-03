@@ -3,11 +3,6 @@
     <UserGroupList>
         <UserGroup ID="NoRemoveFromWF" ReadOnly="false" MultifactorAuthenticationRequired="false">
             <Name>NoRemoveFromWF</Name>
-            <MetaData>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160640</Value>
-                </MultiValue>
-            </MetaData>
             <PrivilegeRule ActionSetID="All user actions" ClassificationID="Classification 1 root"></PrivilegeRule>
             <PrivilegeRule ActionSetID="All user actions" CollectionGroupID="CollectionGroup root"></PrivilegeRule>
             <PrivilegeRule ActionSetID="All user actions" EntityID="Entity hierarchy root"></PrivilegeRule>

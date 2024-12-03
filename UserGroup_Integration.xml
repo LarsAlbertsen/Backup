@@ -3,11 +3,6 @@
     <UserGroupList>
         <UserGroup ID="Integration" ReadOnly="false" MultifactorAuthenticationRequired="false">
             <Name>Integration</Name>
-            <MetaData>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160646</Value>
-                </MultiValue>
-            </MetaData>
             <PrivilegeRule ActionSetID="All setup actions"></PrivilegeRule>
             <PrivilegeRule ActionSetID="All user actions" ObjectCreation="true"></PrivilegeRule>
         </UserGroup>

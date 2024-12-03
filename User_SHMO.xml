@@ -3,11 +3,6 @@
     <UserList>
         <User ID="SHMO" ForceAuthentication="false" EMail="shmo@stibosystems.com">
             <Name>Shannon Mølhave</Name>
-            <MetaData>
-                <MultiValue AttributeID="ConfigurationEntityReferences">
-                    <Value>TableConfigurationView#Instrument#CC_DSFVH_Instrument#32160623</Value>
-                </MultiValue>
-            </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup></SystemSetup>
         </User>

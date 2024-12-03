@@ -8,7 +8,7 @@
 {
   "id" : "ELFRUserTest",
   "type" : "BusinessAction",
-  "setupGroups" : [ "ELFRRules" ],
+  "setupGroups" : [ "ELFRBRGroup" ],
   "name" : "ELFRUserTest",
   "description" : null,
   "scope" : "Global",

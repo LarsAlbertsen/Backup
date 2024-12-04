@@ -76,4 +76,10 @@ for (var i=0;i<envK.length; i++) {
 	var val = props.getProperty(key)
 	logger.info(key+"="+val);
 }
+
+var name = java.lang.System.getenv("STEP_EXTERNAL_SYSTEM_NAME")
+logger.info(name)
+
+logger.info(java.lang.System.getenv("HOSTNAME"))
+
 }

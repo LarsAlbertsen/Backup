@@ -19,7 +19,7 @@ DeliveryMethodPluginConfiguration:
   <Parameter ID="BusinessFunction" Type="com.stibo.integrationendpointplugins.impl.outbound.delivery.restdirectdelivery.RESTDirectDeliveryPlugin$AuthFunction">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BusinessFunctionProxy&gt;&lt;Mappings/&gt;&lt;/BusinessFunctionProxy&gt;</Parameter>
   <Parameter ID="CertificateKeyStore" Type="com.stibo.util.integrationendpoints.ConfigStringLOVParameter"/>
   <Parameter ID="Header" Type="com.stibo.util.integrationendpoints.StringMapParameter">#1.0
-#Wed Nov 13 14:43:08 EST 2024Content-Type=application/octet-stream</Parameter>
+#Tue Dec 10 23:11:28 CST 2024Content-Type=application/octet-stream</Parameter>
   <Parameter ID="HttpMethod" Type="com.stibo.integrationendpointplugins.impl.outbound.delivery.restdirectdelivery.RESTDirectHttpMethod">POST</Parameter>
   <Parameter ID="ProxyConfig" Type="com.stibo.util.integrationendpoints.ConfigStringLOVParameter"/>
   <Parameter ID="QueryString" Type="com.stibo.util.integrationendpoints.MultiValueMapParameter"/>
@@ -61,7 +61,7 @@ ErrorReporterPluginConfiguration:
             <Name>Transfer Change Package To QA</Name>
             <ScheduleSpecification>H4sIAAAAAAAA/z2NOw6DQAwFe06xslKbpOfTQJkqJwiLEZaWXQl7Ubg9TkR41dMUM1X7WYLbaBVOsYYH3qFtioqirkzSFM79/u58eIvU4NOCojwkzMoBxc805kAjTRxZzYGvE3UXuv1Rb539yTErgZnP0ZdaGkoLl1f5AOswyiiaAAAA</ScheduleSpecification>
             <DataSourcePluginConfiguration>H4sIAAAAAAAA/7WQuwrCQBBFe79imd7VdBZ5QIhCCkElfsCYDHFlMxuym2D+3g1otLCwsTww99zLhMm90WKgzirDEQRyDYK4NJXiOoJzsVtuIIkX4QE7bMj5u3ghxBtFnkWQ4WgLcyKHircDsbMgirGlCG44oNTItczZUU0dxOtwNae/uGjKH3vqKUVXXv2Ml6s0jbROXYzsndJSTcIOnd9NXLXGs5WpMZqQn2WzGeLg59aeK017shZrsn/o/gD/ywe3+NFpgAEAAA==</DataSourcePluginConfiguration>
-            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAA/7VUTXPaMBC9+1donE5uyJBwyCRgpoRk2mkILh/pWbEXRx1Zq5HWTOivr2yokxZKyrQ97q7fe/tW6+0NngvFVmCdRN0PO7wdMtApZlLn/XAxv21dhMyR0JlQqKEfagwHcS8RVhRAHhYHjL2E7OOoH07B0WJ6F7L52nhEigV3JB+RlyQVl5ogt4K8HujMoI8dv0a9lHlDE8adXtREeyQSi8/rDeh4mRlZ7+5u8vCiF+3R+EBkxkBPmO1K7GE3qsyldlwWRnEs6RFLnfEMlPTTXXPrh5JJCyk1qenNbD6qU6+k4mQymx82/7n06I2JY8yPS0XyQagSxsK8YR1E5ktHkG/a+Yk4PvHbFJx8gYzd44p1zlmne9k9v2xfMG+cnbXPuoF/EAJNrVpIGKNkWhNHmBJQy5EFUQSHx/FNmi3Nj4a/ipXgSuicDxEVCB3GS6EcHOaxYNCSX16D2sEQs/VE31iL9u9oFw7svY93WbZPGCsh1JsciQUoDPnNeV/S05Et7TIOSyc1OHdb6rQa+H9f8dE2ldQc7yoTjXZ8qujqDw7R4DSnq6D6+Nf263tQVxmr6n4RjQe6qEFEv4ccnv01WJLLai/hE/jfDi38q5PzStjF3wGfXVUuigUAAA==</DeliveryMethodPluginConfiguration>
+            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAA/7VUwXLaMBC98xUapZMbMqY9ZBIwUyCZdhqKCyZ3xV4cdWRJI60yoV9f2VAnLZSUaXvcXb/39q3WOxg9VZI8gnVCqyGNWY8SULkuhCqHdJXddC8occhVwaVWMKRK01EySLnlFWCAJR1CnkPycTqkC3C4WtxSkm1MQOS6Yg7FvWYehWRCIZSWY9ADVRgdYscmWq1F2dLQJB5EbXRAIrX6abMFnS6zRBvc3c7vnvWiAxofEM0M8EEX+xIH2I30pVCOicpIpj3ea68KVoAUYbobZsNQCmEhxza1uF5m0yb1QipJ58vsuPkvPqC3Jk4xP/MSxR2XHmbcvGIdeBFKJ5Bv2/mJODkL29Q5yzyQKeQk7pH+28s4vuxfkMkyI/1e/10nPAiCwm4jxI2RIm+II50jYNehBV51jo/jmzA7mh8Nf+WPnEmuSjbWWgJXNFlz6eA4jwWjLYblNVo5GOtiM1fX1mr7d7QrB/ZziPdZdk+YSM7lqxypBagMhs157/HhxJb2GcfeCQXO3XiV1wP/7ys+3aXShuNNbaLVTs4lXv3BIRqdl3jVqT/+tf3mHjRVQup6WEQTgC5qEdHvIcdnPwGLYl3vJXyC8NtpC//q5LwQdsl3BAv+J4oFAAA=</DeliveryMethodPluginConfiguration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

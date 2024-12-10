@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
-    <Qualifiers>
-        <Qualifier ID="en-US">
-            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
-        </Qualifier>
-    </Qualifiers>
     <CrossReferenceTypes>
         <EntityCrossReferenceType ID="InternalEnvironmentOwner" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" ParentChildRelation="NONE" MultiValued="false">
-            <Name QualifierID="en-US">Internal Environment Owner</Name>
+            <Name>Internal Environment Owner</Name>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>

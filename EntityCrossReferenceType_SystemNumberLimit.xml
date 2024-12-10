@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
-    <Qualifiers>
-        <Qualifier ID="en-US">
-            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
-        </Qualifier>
-    </Qualifiers>
     <CrossReferenceTypes>
         <EntityCrossReferenceType ID="SystemNumberLimit" Inherited="true" Accumulated="false" Revised="true" Mandatory="false" ParentChildRelation="NONE" MultiValued="true">
-            <Name QualifierID="en-US">System Number Limit</Name>
+            <Name>System Number Limit</Name>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>

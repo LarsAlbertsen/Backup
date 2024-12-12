@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <STEPWorkflows>
+        <STEPWorkflow ID="SetDefaultValue" Referenced="true"><!-- Definition:
+<scxml name="SetDefaultValue" initial="Initial" version="0.9">
+  <assignee id="$current" type="user"/>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=163.0  </editorLayout>
+  <final id="Final" discontinued="false">
+    <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
+  </final>
+  <state id="Initial" discontinued="false">
+    <transition target="Final"/>
+    <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="acn-fde47e9a-0024-4f79-9d85-e9cf4ab92b74"/>
+  </state>
+</scxml> -->
+            <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
+            <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
+            <Configuration>H4sIAAAAAAAA/42SQY/TMBCF7/0VxuLq2k1TukFxLiCklZAWaQV3N5l0LbnjyB5vWn49jtsCBxBcPAe/N+97sk0i/4iWrCF4wg8B8tQUErRxcpY6OEOfCJ77YCf6bE+WYPgS7Kt1cIT4u9LZSIBP+HiafCAIX6dh2TUaF++S2J9PTrdlMFtSnebXeMcZmhNo/gz0EUaTHH0zLgFnrxCi9ai5WjecZStGzV+IpvdSzvO8nrdrH46yUmon1V6W7bxr3wjBGEM/gIj2OwiDg5h8zFke2VmrtWKXcs56Uy/zRW/ebfNkQnQr1poY7REBmB00f9unEACJM7pMGTJFCDlD3kXdKjsi5cJssLH3SBYTZGOpz8uOe89/olVXtnp7hVNXuGr3k421HjNMuLBDihYhRtMv3iXF9CjGAeo9NEYoVdWiHveNaIaHnYCmH2tzaKrDvl7ob1sWeNZSMHhDIBOOQJp/slh45a+7btXK0rM0HhfB3xvf/f/Xd7N5+HPhVpacEr08bnf7Tj8A4Lf7SbwCAAA=</Configuration>
+            <LocalBusinessRule ID="acn-fde47e9a-0024-4f79-9d85-e9cf4ab92b74" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (SetAttributeValueBusinessAction):
+FromAttribute=
+FromWorkflow=
+FromWorkflowVariableName=
+TextValue=666
+ToAttribute=Attribute_With_Default_Value
+ -->
+                <Configuration>H4sIAAAAAAAA/62SzU7DMBCE730Ky3cSuEQc4lRFVSUuqKKhPVrbsHFdHDvyTylvj5tAlAqBKpWjZ9ffrHanVUFIzaFtlUTHZc0ro2spWD49Nooc0DppNKN3yS0lqCvzKrVg9KVc3NzTaTHJH4KTGp17DgrT+HYR5Iu2x17BKiaEDMKyw5FxvZce54yu0M+8t3IbPK5BBfxum1U++tETKbKWYKFBH4fohbFETpyFNc0AoqT8aJHRPRwgUaBFsooVLWiRp8O3P0AbY99qZd7/i7MGK2Gr8CnWr2GWePTdkn6HZFl2AcdcsKqhhW+k3/E51hCU553/D4uR0F0oT8+vH/ORngfkK2ufGCroFsMCAAA=</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+        </STEPWorkflow>
+    </STEPWorkflows>
+</STEP-ProductInformation>

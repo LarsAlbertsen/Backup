@@ -106,8 +106,8 @@
             <AttributeLink AttributeID="New Attr"></AttributeLink>
             <AttributeLink AttributeID="ItemKey"></AttributeLink>
             <AttributeLink AttributeID="LAAL_1"></AttributeLink>
-            <AttributeLink AttributeID="LAALTestDescriptionAttribute"></AttributeLink>
             <AttributeLink AttributeID="laal_number"></AttributeLink>
+            <AttributeLink AttributeID="LAALTestDescriptionAttribute"></AttributeLink>
             <AttributeLink AttributeID="ItemUniqueID"></AttributeLink>
             <AttributeLink AttributeID="IsActive"></AttributeLink>
             <AttributeLink AttributeID="ValueFromVG"></AttributeLink>

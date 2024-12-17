@@ -14,6 +14,7 @@
             <AttributeLink AttributeID="a5"></AttributeLink>
             <AttributeLink AttributeID="a7"></AttributeLink>
             <AttributeLink AttributeID="a8"></AttributeLink>
+            <AttributeLink AttributeID="a9"></AttributeLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
         </DataContainerType>
     </DataContainerTypes>

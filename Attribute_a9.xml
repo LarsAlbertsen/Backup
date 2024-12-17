@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <AttributeList>
-        <Attribute ID="a1" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
-            <Name>a 1 v2</Name>
-            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="9" InputMask=""></Validation>
+        <Attribute ID="a9" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+            <Name>a9</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="8" InputMask=""></Validation>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>

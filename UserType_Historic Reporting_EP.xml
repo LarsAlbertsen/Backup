@@ -4,6 +4,7 @@
         <UserType ID="Historic Reporting_EP">
             <UserTypeLink UserTypeID="Event Processor user-type root"></UserTypeLink>
             <UserTypeLink UserTypeID="HistoricReporting"></UserTypeLink>
+            <UserTypeLink UserTypeID="RevisionAnalyzer"></UserTypeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

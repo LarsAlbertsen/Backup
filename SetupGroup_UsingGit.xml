@@ -2,7 +2,7 @@
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <SetupGroups>
         <SetupGroup ID="UsingGit" UserTypeID="ChangePackages" ParentID="ChangePackages">
-            <Name>2024 Summer</Name>
+            <Name>UsingGit</Name>
         </SetupGroup>
     </SetupGroups>
 </STEP-ProductInformation>

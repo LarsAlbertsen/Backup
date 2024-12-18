@@ -88,7 +88,7 @@ if (node != null) {
 	if (node instanceof com.stibo.core.domain.AttributeGroup ||
 		node instanceof com.stibo.core.domain.setupgroup.SetupGroup) {
 		//logger.info("AddToChangePackage addHierarchy " + node.getClass().getName())
-		cp.addHierarchy(node)
+		//cp.addHierarchy(node)
 	}
 	else {
 		//logger.info("AddToChangePackage addItem " + node.getClass().getName())

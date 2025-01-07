@@ -28,17 +28,13 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
-  }, {
-    "contract" : "CurrentWorkflowBindContract",
-    "alias" : "wf",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,wf) {
+exports.operation0 = function (node) {
 logger.info("approve "+node.getTitle())
+return true
+
 }

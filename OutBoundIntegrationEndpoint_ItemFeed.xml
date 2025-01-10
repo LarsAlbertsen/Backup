@@ -10,7 +10,7 @@ ScheduleSpecification:
 DataSourcePluginConfiguration:
 <Parameters>
   <Parameter ID="DaysToRetainEvents" Type="java.lang.Integer">0</Parameter>
-  <Parameter ID="eventQueueBatching" Type="com.stibo.util.integrationendpoints.BooleanIntegerParameter">1</Parameter>
+  <Parameter ID="eventQueueBatching" Type="com.stibo.util.integrationendpoints.BooleanIntegerParameter">1000</Parameter>
   <Parameter ID="eventQueueBundleMessages" Type="com.stibo.util.integrationendpoints.BooleanIntegerParameter">1</Parameter>
 </Parameters>
 
@@ -121,7 +121,7 @@ ErrorReporterPluginConfiguration:
             <SetupGroupLink SetupGroupID="Outbound Integration Endpoints"></SetupGroupLink>
             <Name>ItemFeed</Name>
             <ScheduleSpecification>H4sIAAAAAAAA/7Oxr8jNUShLLSrOzM+zVTLUM1Cyt+OySc0rKcpMLbbjUlAAsysVknMSi4ttlZLzc/WKSzKT8vVKSzJz9IKTM1JTSnNSXVLTMvMyS4BmqMCEXIGGVvpm5pWWpCoBjYGCVJAo0B4lfaAt+jBrADtwci2GAAAA</ScheduleSpecification>
-            <DataSourcePluginConfiguration>H4sIAAAAAAAA/7WQuwrCQBBFe79imd7VdBZ5QIhCCkElfsCYDHFlMxuym2D+3g1otLCwsTww99zLhMm90WKgzirDEQRyDYK4NJXiOoJzsVtuIIkX4QE7bMj5u3ghxBtFnkWQ4WgLcyKHircDsbMgirGlCG44oNTItczZUU0dxOtwNae/uGjKH3vqKUVXXv2Ml6s0jbROXYzsndJSTcIOnd9NXLXGs5WpMZqQn2WzGeLg59aeK017shZrsn/o/gD/ywe3+NFpgAEAAA==</DataSourcePluginConfiguration>
+            <DataSourcePluginConfiguration>H4sIAAAAAAAA/62QywrCMBBF935FmL2x3bnoA0QFF4JK/YCxHWoknUiTFPv3pqBVwYULlxfmnnOZJL81WnTUWmU4hVhGIIhLUymuUzgW6+kc8myS7LDFhly4yyZCvKLYLFNYYm8LcyCHilcdsbMgiv5KKVywQ6mRa7lhRzW1kEXJbGx/YdHQ33vytEBXnsOMJ6s0jbROnYz0TmmpBmCLLuwmrq4mZCsXxmhCfshGMmRxFP0u9lxp2pK1WJP9j/7D/RbCO+9hpBTugwEAAA==</DataSourcePluginConfiguration>
             <DeliveryMethodPluginConfiguration>H4sIAAAAAAAA/32RMU/DMBCFd36FZWWAIS7dGBJXAlQFoaJKaWdkmmtkZJ8j+1oSfj0HQ4Gmircn3Xvf3XOx6L0TR4jJBizlXN1KAbgLjcW2lNvNMr+TIpHBxriAUEoMcqGLtYnGA7FNXwnxK8XTYymrkOiFtRSboWPLLniVyL4FdSDrlEWCNhpiIGDTBdZJPQTc2/aUI/W8mJ3UBcY6hn44B72bo1HOYKtqinyAnF1wbhPESZP+2TV9nC0wTqrr6hmGafjYtbQOpvnZnkeQR/KMrAdu33fXA798tcqb5rWqlOdG043KoCfA76+bbuvTdlwwj9KYeh+CA4NSUzzAv5g/IukvmR51cykCAAA=</DeliveryMethodPluginConfiguration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=

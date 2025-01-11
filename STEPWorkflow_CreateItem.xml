@@ -61,6 +61,7 @@ Recipients=[@laal@stibosystems.com]
 Sender=@
 Subject=Subject
  -->
+                <Name>Send mail on create</Name>
                 <Configuration>H4sIAAAAAAAA/3WSTW+DMAyG7/0VUe6D7bZDoKzaplXaoWq7M0rBRa5CEuFQjX+/8CnYxvWx38cOxqq6QJ1KaxUCpXhNM6OvWAjywMW2L/csEtvvUrE7VIRGR/wpeOQMdGZy1EXEv87vD898G2/EribUQHSsFcQbxiZw6HRsXu/R/jXiJ9D5WylRjeWXzPk5vDV4x0FWsgTnh/dgjlib35m84ezcWIj4Td5loKQugpOr/HY8/gCljAinyCT5RHJd/ggZWgTtaGGpHaqgbeJjZAjtHZRxoqRUCTm8GGrIEwoyU4pwahjHdGRl8/blUK3vnvy39y9FfblB5tYdQ8Mf0wx0H1aEy2P5c4bLew6/xg/TC7cZOgIAAA==</Configuration>
                 <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
             </LocalBusinessRule>

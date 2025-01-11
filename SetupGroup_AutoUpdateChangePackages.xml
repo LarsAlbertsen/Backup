@@ -12,6 +12,7 @@
                     <Value>ChangedItems-DBA</Value>
                     <Value>ChangedItems-STEPSYS</Value>
                     <Value>ChangedItems-ALCO</Value>
+                    <Value>ChangedItems-ELFR</Value>
                 </MultiValue>
             </MetaData>
         </SetupGroup>

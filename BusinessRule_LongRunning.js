@@ -40,8 +40,8 @@ function sleep(ms) {
 }
 
 function main() {
-	for (var min=0; min<20; min++) {
-        for (var i=0; i<60; i++) {
+	for (var min=0; min<2; min++) {
+        for (var i=0; i<6; i++) {
             logger.info('Sleeping ' + min+'/'+i + ' seconds...');
             logger.info(manager.getProductHome().getTopProduct().getName())
             sleep(1000)

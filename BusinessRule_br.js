@@ -8,7 +8,7 @@
 {
   "id" : "br",
   "type" : "BusinessAction",
-  "setupGroups" : [ "aa" ],
+  "setupGroups" : [ "dd" ],
   "name" : "br",
   "description" : null,
   "scope" : "Global",

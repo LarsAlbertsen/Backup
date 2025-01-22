@@ -4,6 +4,7 @@
         <UserType ID="Operator user-type root" Referenced="true">
             <Name>User</Name>
             <AttributeLink AttributeID="UserInformation"></AttributeLink>
+            <AttributeLink AttributeID="UserLastActivityDate"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

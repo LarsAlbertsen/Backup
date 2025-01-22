@@ -13,6 +13,8 @@
                     <Value>ChangedItems-STEPSYS</Value>
                     <Value>ChangedItems-ALCO</Value>
                     <Value>ChangedItems-ELFR</Value>
+                    <Value>ChangedItems-RM2</Value>
+                    <Value>ChangedItems-PRODUCTSUFFICIENCYUSER</Value>
                 </MultiValue>
             </MetaData>
         </SetupGroup>

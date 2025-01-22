@@ -5,6 +5,7 @@
             <Name>ELFR</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Stibo standard user</Value>
+                <Value AttributeID="UserLastActivityDate">2025-01-21</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>

@@ -3,6 +3,9 @@
     <UserList>
         <User ID="MJAN" ForceAuthentication="false" EMail="mjan@stibosystems.com">
             <Name>Mark Janssen</Name>
+            <MetaData>
+                <Value AttributeID="UserLastActivityDate">2025-01-21</Value>
+            </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>
                 <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>

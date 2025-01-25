@@ -5,7 +5,7 @@
             <Name>DBA</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Stibo standard user</Value>
-                <Value AttributeID="UserLastActivityDate">2025-01-24</Value>
+                <Value AttributeID="UserLastActivityDate">2025-01-25</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <UserGroupLink UserGroupID="Super user"></UserGroupLink>

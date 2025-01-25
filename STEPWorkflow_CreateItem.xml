@@ -24,7 +24,6 @@
       <editorLayout>   edge-path [Enrich]  x=110.0 y=90.0  </editorLayout>
     </transition>
     <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
-    <onentry businessactionid="ELFRLog"/>
   </state>
 </scxml>
 <workflowViews>
@@ -48,21 +47,20 @@
     </column>
   </view>
 </workflowViews> -->
-            <BusinessRuleLink ID="ELFRLog"></BusinessRuleLink>
             <BusinessRuleLink ID="RemoveFromWorkflow"></BusinessRuleLink>
             <SetupGroupLink SetupGroupID="ProductWorkflows"></SetupGroupLink>
             <Name>Create Item</Name>
             <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
-            <Configuration>H4sIAAAAAAAA/81WTY/bNhC951ewRK+0Pm1LC8lBkWYBAxtskW2SQ9EDLY21bCVKJSl73V/fISU5XjvObm6FAdMUOW/mvfmQeW/atRRGcAP38p0CXPMtrzVkuquFWcETFL2Bh0KJztyJRhgof1NiJ2qoQOdG9dPNWmgD8l6um65VBtSnrjwH08VTU+eZW4hwbuucDv5rSiRvIKdDEGsDDSU7UFq0Mqf+LKUEraTO6aMx3Y3n7ff72T6ataryQt+fe/7Sc8B0lf3EGCFEtiUwLf4FxmXJulajm1aSp9yf+eTgvvd5ENv1MQ+jdJYki+jrhxDGVm9Ihix4g1A1boYdEWVOH/oNivEBtOYVoE/PnqzeDOt4H6251qKSAM7m56JXCqShxBw6pNprUNZ0uuQstEH6pBS6aKURsgc0dCJShzGp9SLLcKAZRwNPf+Q5x2VgRrJWYjDqQDa9FtIyKayt9fL+7vbjXVvZ4MZLNjaSGcXl6OHSiBeSJQEEAfcLFm/nAYuXkLANhCELgiBeBBFPl0VCj7ZIsRSTOW7YcpMuFn5UshgCH7+4z9JtCCwsw0XMl0mBAJTADkPKqXYpQDG5qgD376USxeNRGSgrYB03j+SP4eRPgrIEwaBL6o9CZN5XUjZ/Tv/XZOLM3UuJCIJklsZRkEyf6FpaTkS+wvRWSFcCz0K/kp8LjSPO0+0yTDBF6ZLFSZKwpEhjVnI+D/1yUWx8OGqs4C8oTjyfl9+JyOORU3kxihzN5i+IvLVUros8MX2lxml83sU/XPofoWl3cKva5kur/t7W7f5ZF2Sei9iRsONmNc62nYB9nr21k+04tYKZj0LKoi2FrHL66fdbhsWP3GXJa0TM6QE0fYtYUoc3+9HdZ0TSw7C7wefPBp42YtPOirahlgXysG6dUB+4kNaSkhK2vK/NA07hd23dN3Z8UsJx0jfciMI+nyQeQBwQ1x0m2kGJknrfPrET+tlZ4RyMk3utf0EVd5g5HOHlvawPx1Q2lrJp1eHSs8Pp6r4SkgzL+tecTtp/5krwTX1uMBhxhX7xVeNiO94kO173p+F4Z868wc0JDW/gcY3YNOX/H7yev3l+kFzm2YoZfyvQBmeY6yEhi7ovAcEr1fadPlLE1uxqfniAf3osZbDFdALe8K7D4iauoS3BcSoS68buT+ryEsj7HtLxf8EroILvQw1T5DVA4QSUeSfq2G6/aFF8OLT+f9xwMT1FCQAA</Configuration>
+            <Configuration>H4sIAAAAAAAA/81VTY/bNhC951ewRK60Pm1LC8tBkXYBAw226DbJIciBlsZethKpkpS9zq/vkJIcrzfOOrfAgGiKnDd8jzNPvLNqJYUV3MKdfKsBx2LDawML09bCLuERys7CfalFa/8QjbBQ/anFTtSwBVNY3Y07a2EsyDu5alqlLej3bXUOZsrHpi4WfiDCp60L2uevKZG8gYL2h1hZaCjZgTZCyYKGk5wSjJKmoA/WtjdBsN/vJ/tkovQ2iMNwGoTzwAPT5eIXxgghUlXAjPgCjMuKtcpgGiXJYxFOQnLwz30RpW58KOIkn2TZLPn6I4Sx5SuyQBa8QagaJ/2MiKqg990axXgHxvAtYM7ArSxf9eOwH6O5MWIrAXzM67LTGqSlxB5apNoZ0C503OQjjEX6pBKmVNIK2QEGehGpxxjVepFl3NNMk55nOPCc4tAzIwuruRz2rzsjpCNTuqlLxEvJsgiiiIclSzfTiKVzyNga4phFUZTOooTn8zKjx1g8cCXGcJyw+TqfzcKkYilEIT54yPJNDCyu4lnK51mJAJTADiUpqPGCojRcbwHnv0styocjT6i2wFpuH8infuUzQZJR1LPMw4HWIvhKyt2GV/MaXc/SvSRrFGWTPE2ibPwlV4h8gemtkP5Cnxz9wv080zjhPN/M4wyvKJ+zNMsylpV5yirOp3FYzcp1CEeNNfwD5Unm82I6EXlY8irPBpGTyfQFkTeOymWRR6ZXapyn5z15QWMlkZ4+fKOK/4JG7eBWq+aj0v9uarV3Qg/73dn9iT0JZx7Lwal2AvbF4o3zqaMHRZMQhZSlqoTcFvT937cMix+5y4rXiFjQAxj6BrGkiW/2Q7oPiGR667rB90/sy1ixVpNSNdSxQB4urRfqHRfSRVJSwYZ3tb1HT32r6q5xZkgJR99uuBWlez9K3IN4IG5avGgPJSoafHvF+e2TtdInGHx4ZX5FFXd4c2jI1Z2sD8erbBxlq/TheWaP09bdVkjSD6vfCjpq/4Frwdf1eUAfxDXmxQ+HP9txJ9nxujs9TnCWLOjTnNAIeh6XiI2e/XPwevod+UFyi8BVzPBfg7HoYb6HhCzrrgIE32rVteZIEVuzrfnhHv7rsJTBFdMJeMPbFoub+IZ2BAdXJC6Nm5/U5XOg4HtIx6/8FVDR96F6F7kGKB6BFsGJOq7bn7Uovuxb/3//ERshEwkAAA==</Configuration>
             <LocalBusinessRule ID="acn-81e11a0c-4f51-47e8-be22-1114613a97c8" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
 Action #1 (SendEmailBusinessAction):
 Body=Hello
-Recipients=[@laal@stibosystems.com]
+Recipients=[@elfr@stibosystems.com]
 Sender=@
 Subject=Subject
  -->
                 <Name>Send mail on create</Name>
-                <Configuration>H4sIAAAAAAAA/3WSTW+DMAyG7/0VUe6D7bZDoKzaplXaoWq7M0rBRa5CEuFQjX+/8CnYxvWx38cOxqq6QJ1KaxUCpXhNM6OvWAjywMW2L/csEtvvUrE7VIRGR/wpeOQMdGZy1EXEv87vD898G2/EribUQHSsFcQbxiZw6HRsXu/R/jXiJ9D5WylRjeWXzPk5vDV4x0FWsgTnh/dgjlib35m84ezcWIj4Td5loKQugpOr/HY8/gCljAinyCT5RHJd/ggZWgTtaGGpHaqgbeJjZAjtHZRxoqRUCTm8GGrIEwoyU4pwahjHdGRl8/blUK3vnvy39y9FfblB5tYdQ8Mf0wx0H1aEy2P5c4bLew6/xg/TC7cZOgIAAA==</Configuration>
+                <Configuration>H4sIAAAAAAAA/6WSP2+DMBDF93wKy3uh3ToAoVFbNVKHKEln5MCBLjK2xZmofPuav4K2TBn97t7vnn02si5QJcIYiUAJ5kmqVY5FGGy/S8luUBFqFfIn75EzUKnOUBUh/zq/PzzzbbQJdjWhAqJjLcF3Z3IgG5keewcr2jA2CYcOx+b1Xtq/hvwEKnsrBcqx/JJaN4e3BMc4iEqUYN3wXphLrPXvdNZwdm4MhPwqbsKTQhXeyVYuHY8+QEod+JNlgnwi2c5/hBQNgrK0oNQWpdc28dEymPYWyigGmVcxWbxoasgp5KW6DPypYRzTKSvJ25tDtZ49/i/3L0R9uUJq1xlDwx/STOgeNvCXy3Lr9Jf7HL7GD8OXqsxyAgAA</Configuration>
                 <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
             </LocalBusinessRule>
             <LocalBusinessRule ID="con-3aa9f728-4f97-4888-8c94-daa520d6cb0e" Scope="Local" Type="Condition" RunPrivileged="false"><!-- Definition:

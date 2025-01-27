@@ -5,7 +5,7 @@
             <Name>stepsys</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Stibo standard user</Value>
-                <Value AttributeID="UserLastActivityDate">2025-01-26</Value>
+                <Value AttributeID="UserLastActivityDate">2025-01-27</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>

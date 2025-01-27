@@ -3,7 +3,7 @@
     <UserList>
         <User ID="RM2" ForceAuthentication="false">
             <MetaData>
-                <Value AttributeID="UserLastActivityDate">2025-01-26</Value>
+                <Value AttributeID="UserLastActivityDate">2025-01-27</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Service Users"></UserGroupLink>
             <SystemSetup></SystemSetup>

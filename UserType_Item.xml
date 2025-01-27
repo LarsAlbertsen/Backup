@@ -100,6 +100,7 @@
             <AttributeLink AttributeID="ValueFromVG"></AttributeLink>
             <AttributeLink AttributeID="a1"></AttributeLink>
             <AttributeLink AttributeID="LAALTestDescriptionAttribute"></AttributeLink>
+            <AttributeLink AttributeID="URLAttribute"></AttributeLink>
             <AttributeLink AttributeID="MyLOV"></AttributeLink>
             <AttributeLink AttributeID="Description"></AttributeLink>
             <AttributeLink AttributeID="a2"></AttributeLink>

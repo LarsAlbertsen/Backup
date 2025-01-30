@@ -62,7 +62,7 @@
         <SystemSetupValue Type="Config" Name="UserSecurityPasswordExpirationDays"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="UserSecurityPasswordLimitReuseDays"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="UserSecurityPasswordStrengthValidation">false</SystemSetupValue>
-        <SystemSetupValue Type="Config" Name="VendorPortalAssetsType"></SystemSetupValue>
+        <SystemSetupValue Type="Config" Name="VendorPortalAssetsType">SupplierAssets</SystemSetupValue>
         <SystemSetupValue Type="Config" Name="VendorPortalBatchType"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="VendorPortalBatchesType"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="VendorPortalClassificationLinkType"></SystemSetupValue>
@@ -73,9 +73,9 @@
         <SystemSetupValue Type="Config" Name="VendorPortalEntityType"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="VendorPortalFallbackAssets"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="VendorPortalFallbackBatches"></SystemSetupValue>
-        <SystemSetupValue Type="Config" Name="VendorPortalProductsType"></SystemSetupValue>
+        <SystemSetupValue Type="Config" Name="VendorPortalProductsType">SupplierProducts</SystemSetupValue>
         <SystemSetupValue Type="Config" Name="VendorPortalProofViewStylesheet"></SystemSetupValue>
-        <SystemSetupValue Type="Config" Name="VendorPortalVendortype">SupplierClassification</SystemSetupValue>
+        <SystemSetupValue Type="Config" Name="VendorPortalVendortype">Supplier</SystemSetupValue>
         <SystemSetupValue Type="Config" Name="VendorPortalWorkspace">Main</SystemSetupValue>
         <SystemSetupValue Type="Config" Name="WebServiceTagFormat"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="invalidPwdLockoutPeriod">30</SystemSetupValue>

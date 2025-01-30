@@ -5,6 +5,7 @@
             <Name>MNOR</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Stibo standard user</Value>
+                <Value AttributeID="UserLastActivityDate">2025-01-29</Value>
             </MetaData>
             <UserGroupLink UserGroupID="NewUserGroup"></UserGroupLink>
             <UserGroupLink UserGroupID="ProductPlatform"></UserGroupLink>

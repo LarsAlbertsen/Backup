@@ -45,12 +45,12 @@ for (var j=0; j<5; j++) {
 				//logger.info("skipLOV "+attribute.getTitle());
 			}
 			else if ("text".equals(validatorName)) {
-				//logger.info("setTEXT "+attribute.getTitle());
+				logger.info("setTEXT "+attribute.getTitle());
 				node.setSimpleValue(attribute, "Lars-"+j);
 			}
 			else if ("number".equals(validatorName) || "numeric_text".equals(validatorName)) {
 				//logger.info("setTEXT "+attribute.getTitle());
-				node.setSimpleValue(attribute, ""+j);
+				//node.setSimpleValue(attribute, ""+j);
 			}
 			else {
 				//logger.warning("UNKNOWN "+validatorName);

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="SKU" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Relaxed">
+            <Name>SKU</Name>
+            <UserTypeLink UserTypeID="Level4"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

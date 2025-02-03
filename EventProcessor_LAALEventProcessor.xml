@@ -28,11 +28,11 @@ PluginConfiguration=
 </plugin>
 ScheduleSpecification=
 <entries>
-  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleNever"/>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>LAALEventProcessor</Name>
-            <Configuration>H4sIAAAAAAAA/6VTW2/aMBR+76+IrIm3EapJUzUgiEu6PUDJCN3laTLOIT3C2JkvFPbr5xDImrZm0vbmc/Jdjp3zjaVYY24VNShFvzfYb3mwA6XLily3OyQAwWSGIu+T++Xt2xsyiK56Bbc5igCzPol3IEyiJAOtpRpRDeOnkiS6CoKexm3B4YhfgC6k0LjicK9BkUgbKD6EoXXFwAHSZZyk39NeWHGe00fUsIcUfwGJrjudjg82oQe9lAswFMVxQu3wPnCiUCo0hwuQzxass4y/JIv52Aea0f2cZ6e3AH2c0If9JK2qJ3zGen/jY01RgE5AjT4ml+9/S5E7bXWIBXUvnZHIKAt/RTtplA78rpP5sPPC4Ba1QTaVbNP0WFOuvSavEM92PkrKHiCzHL7Npj8mcbKIx8NlPCFRi5tuY1NbP600Xbeu1WHQyk33qkS5P68Q9LEOgnPnEDBOtT7RmNy23Vgr2bYGeVufTDNYo8Byh9vnOSZ16825dQduhkonrF3Dp7Z/LtcLq9y4ky44mihWSqoFFFIZUP8SPjcQtdw0M9hQJWHtlhx54/8N/Mjqcgv1kJUKTevK4kXmm5Q68qtTW7l3LKNfBbUWq9C+3XD3MLA3tRir6lLn9Mkb5q9SbXRBGdTkx3OnpM9cIn1UJjmnBu5kVib14r7XLkuFee42XeQkKrWHIhsWhZI78IYs3WAxAQ4GstetXqzSbxdh9mXIBQAA</Configuration>
+            <Configuration>H4sIAAAAAAAA/6VUSY/aMBS+8ysiq+JWwqhSNSoQxJJpD1BSwnQ5VSZ5ZJ4wduqFQn99HbJ0MjOmUssl8cu3PJv3eSb4DjMjqUbBR8Px6cC8I0hVrMhNr0884IlIkWcjcr+5e31LxkFnmDOTIfcwHZHwCFxHUiSglJBTqmD2WJIEHc8bKjzkDC74NahccIVbBvcKJAmUhvyd7xu7GFtAvAmj+Fs89EvOU/qU6uQhxl9Agpt+v++CzelZbcQaNEV+6VBZvAscSRQS9fkK5JMBYy3Dz9F6NXOBlvS0Yml1FqAuHbqwH4SRTYdPWG9vXawFclARyOn76Pr+7ygyqy3PIaf2pFMSaGngr2grjcKC3/RTF3aVazyg0pgsRLJve+woU06TF4i1nYsSJw+QGgZfl4vv8zBah7PJJpyToMv0oDWp3R9G6IEd1/Jl3M30oFOg7D8vEdRl7Xl15ewljCpV0RJx6Nm2tqJnNLKeqkxT2CHHYoZ7dR/zpvSqLtnhkuclcqOhVLM21Q+KT3Vr5cNvGvMfd/Zn/0O/jJZ9UzlDHYRSCrmGXEgN8l/yaXumhul2TFuqxG/cogtv9r93wtSoYlDVJCkU2talxbNroU1pboVtVZb2qIvbocxyI1aiXeNj96HhpBuxpFwXOtUnZ96/CLlXOU2gIf+sKwV9aUProiaCMarho0iLMF+NROOykZhlNgw8I0GhPeHpJM+lOIIzh/Ee8zkw0JC+bPVslH4DhcG7UusFAAA=</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="1"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

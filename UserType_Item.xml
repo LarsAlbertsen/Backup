@@ -104,15 +104,15 @@
             <AttributeLink AttributeID="542b2138-e766-4426-aa1a-250eadc74b50"></AttributeLink>
             <AttributeLink AttributeID="Bullet06"></AttributeLink>
             <AttributeLink AttributeID="New Attr"></AttributeLink>
-            <AttributeLink AttributeID="ItemKey"></AttributeLink>
             <AttributeLink AttributeID="LAAL_1"></AttributeLink>
+            <AttributeLink AttributeID="ItemKey"></AttributeLink>
             <AttributeLink AttributeID="LAALTestDescriptionAttribute"></AttributeLink>
             <AttributeLink AttributeID="laal_number"></AttributeLink>
-            <AttributeLink AttributeID="a9"></AttributeLink>
             <AttributeLink AttributeID="a1"></AttributeLink>
+            <AttributeLink AttributeID="a9"></AttributeLink>
             <AttributeLink AttributeID="ItemUniqueID"></AttributeLink>
-            <AttributeLink AttributeID="IsActive"></AttributeLink>
             <AttributeLink AttributeID="ValueFromVG"></AttributeLink>
+            <AttributeLink AttributeID="IsActive"></AttributeLink>
             <AttributeLink AttributeID="GenerateProof"></AttributeLink>
             <AttributeLink AttributeID="LAAL_2"></AttributeLink>
             <AttributeLink AttributeID="cpg.impact.ATD_ALCO_2DD"></AttributeLink>
@@ -120,8 +120,8 @@
             <AttributeLink AttributeID="ISODateAttribute"></AttributeLink>
             <AttributeLink AttributeID="LAALDummyAttr"></AttributeLink>
             <AttributeLink AttributeID="Attribute_With_Default_Value"></AttributeLink>
-            <AttributeLink AttributeID="URL"></AttributeLink>
             <AttributeLink AttributeID="Quantity"></AttributeLink>
+            <AttributeLink AttributeID="URL"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

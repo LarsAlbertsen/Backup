@@ -93,8 +93,8 @@
             <AttributeLink AttributeID="RetailPrice"></AttributeLink>
             <AttributeLink AttributeID="Bullet02"></AttributeLink>
             <AttributeLink AttributeID="ELFRFraction"></AttributeLink>
-            <AttributeLink AttributeID="ItemKey"></AttributeLink>
             <AttributeLink AttributeID="New Attr"></AttributeLink>
+            <AttributeLink AttributeID="ItemKey"></AttributeLink>
             <AttributeLink AttributeID="RawLOV"></AttributeLink>
             <AttributeLink AttributeID="LanguageDependant"></AttributeLink>
             <AttributeLink AttributeID="ValueFromVG"></AttributeLink>

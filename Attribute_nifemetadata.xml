@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeList>
+        <Attribute ID="nifemetadata" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" Referenced="true" Mandatory="false">
+            <Name>NIFE Metadata</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="Meta-Data Attributes"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

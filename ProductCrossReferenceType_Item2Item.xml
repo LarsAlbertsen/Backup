@@ -8,6 +8,7 @@
             </MetaData>
             <AttributeLink AttributeID="LinkAttr1"></AttributeLink>
             <AttributeLink AttributeID="LinkAttr2"></AttributeLink>
+            <AttributeLink AttributeID="nifemetadata"></AttributeLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
             <TargetUserTypeLink UserTypeID="Item"></TargetUserTypeLink>
         </ProductCrossReferenceType>

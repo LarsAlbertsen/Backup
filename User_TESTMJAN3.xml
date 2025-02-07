@@ -3,6 +3,9 @@
     <UserList>
         <User ID="TESTMJAN3" ForceAuthentication="false">
             <Name>testmjan3</Name>
+            <MetaData>
+                <Value AttributeID="UserLastActivityDate">2025-02-06</Value>
+            </MetaData>
             <UserGroupLink UserGroupID="MFAUsers"></UserGroupLink>
             <SystemSetup></SystemSetup>
         </User>

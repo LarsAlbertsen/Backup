@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="ELFR" ForceAuthentication="false">
+        <User ID="ELFR" ForceAuthentication="false" EMail="elfr@stibosystems.com">
             <Name>ELFR</Name>
             <MetaData>
-                <Value AttributeID="UserInformation">Stibo standard user</Value>
-                <Value AttributeID="UserLastActivityDate">2025-02-05</Value>
+                <Value AttributeID="UserInformation">Stibo standard user....</Value>
+                <Value AttributeID="UserLastActivityDate">2025-02-06</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>

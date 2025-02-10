@@ -40,6 +40,7 @@ exports.operation0 = function (product) {
 
 var children = product.getChildren()
 
+Hello;
 
 
 }

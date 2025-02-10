@@ -9,7 +9,7 @@
   "id" : "aa",
   "type" : "BusinessAction",
   "setupGroups" : [ "Actions" ],
-  "name" : "aa",
+  "name" : "aa hello",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ "Item" ],

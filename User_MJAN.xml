@@ -4,7 +4,7 @@
         <User ID="MJAN" ForceAuthentication="false" EMail="mjan@stibosystems.com">
             <Name>Mark Janssen</Name>
             <MetaData>
-                <Value AttributeID="UserLastActivityDate">2025-02-10</Value>
+                <Value AttributeID="UserLastActivityDate">2025-02-11</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>

@@ -23,7 +23,7 @@ PluginConfiguration=
   <simple id="Context">step://context?id=Context1</simple>
   <simple id="SkipDeletedNodes">false</simple>
   <simple id="Workspace">step://workspace?id=Main</simple>
-  <simple id="WorkspaceTriggering">Approved</simple>
+  <simple id="WorkspaceTriggering">MainAndApproved</simple>
   <simple id="collateNodes">false</simple>
 </plugin>
 ScheduleSpecification=
@@ -32,7 +32,7 @@ ScheduleSpecification=
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>CatchEverything</Name>
-            <Configuration>H4sIAAAAAAAA/6VTS4/aMBC+8ysiq+JWwqpStSoQBCHbHnikhO3jVJlkCCOMnfrBQn99nQTSZXe9ldpbZvw9xs58oeAbzI2kGgUf9IfHPfMOIFVZkZtOl3jAU5EhzwfkfnX39pYMg1a/YCZH7mE2INEBuI6lSEEpIcdUQfhYkgQtz+sr3BcMKvwSVCG4wjWDewWSBEpD8cH3jS2GFpCsojj5nvT9mvOUPqY63Sb4C0hw0+12XbAJPamVWIKmyKsJFQmc4FiikKhPVtIF+WzAWMvoS7xchC7QjB4XLDu/BahqQhf2kzCymfAJ6/2tizVFDioGOf4Yv6p+R5FZaXmKOLUPnZFASwN/RVtlFBb8rpu5sItC4x6VxnQq0t21x4Yy5TR5gXixc1GSdAuZYfBtNv0xieJlFI5W0YQEbaZ7V4va/mmE7tltrT+G7Vz3WiXK/niJoKra8y6dk5cyqtSZlop9x461Fh2jkXXU2TSDDXIsV7hzmWPStN5cWnOwM9Q6fuPqP7b9c7m+X8fGfqmCoQ4iKYVcQiGkBvkv2bMDUcP0dQSvVInfuMUVL/zfvI+NKpdQjdJS4dq6tngW+WtKk/j1uS3tO1bJP9mDfbilPIf5InZthb2BhqNuZNK6LhXOR84UfxVypwqaQkN+uHRK+sxG0UVNBWNUw1xkZURf3fTGZSUxz+2O85wEo6KQ4gDOXCU7LCbAQEP2ssez7fkNvFK45LoFAAA=</Configuration>
+            <Configuration>H4sIAAAAAAAA/6VTS4/aMBC+8ysiq+JWwqpStSoQBCHbHnikhO3jVJlkCCOMnfrBQn99nQTSZXe9ldpbZvw9xs58oeAbzI2kGgUf9IfHPfMOIFVZkZtOl3jAU5EhzwfkfnX39pYMg1a/YCZH7mE2INEBuI6lSEEpIcdUQfhYkgQtz+sr3BcMKvwSVCG4wjWDewWSBEpD8cH3jS2GFpCsojj5nvT9mvOUPqY63Sb4C0hw0+12XbAJPamVWIKmyKsJFQmc4FiikKhPVtIF+WzAWMvoS7xchC7QjB4XLDu/BahqQhf2kzCymfAJ6/2tizVFDioGOf4Yv6p+R5FZaXmKOLUPnZFASwN/RVtlFBb8rpu5sItC4x6VxnQq0t21x4Yy5TR5gXixc1GSdAuZYfBtNv0xieJlFI5W0YQEbaZ7V4va/mmE7tltrT+G7Vz3WiXK/niJoKra8y6dk5cyqtSZlop9x461Fh2jkXXU2TSDDXIsV7hzmWPStN5cWnOwM9Q6fuPqP7b9c7m+X8fGfqmCoQ4iKYVcQiGkBvkv2bMDUcP0dQSvVInfuMUVL/zfvI+NKpdQjdJS4dq6tngW+WtKk/j1uS3tO1bJP9mDfbilPIf5InZthb2BhqNuZNK6LhXOR84UfxVypwqaQkN+uHRK+sxG0UVNBWNUw1xkZURf3fTGZSUxz+2O85wEpfaIZ6OikOIAznglOywmwEBD9rLVsyX6DQMOIsLBBQAA</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
@@ -106,6 +106,9 @@ ObjectTypeGroupings=
     <ObjectType ObjectTypeID="WebUISetupGroupCategory"/>
     <ObjectType ObjectTypeID="WebUIs"/>
   </ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="stibo.ValueSubstitutionTransConfig"/>
+  </ObjectTypeRules>
 </ObjectTypeRules>
 ProductTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
@@ -123,14 +126,14 @@ ProductTemplate=
     </Product>
   </Products>
 </STEP-ProductInformation>
-TriggeringWorkspace=Approved
+TriggeringWorkspace=MainAndApproved
 UnitTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <UnitList/>
 </STEP-ProductInformation>
 Version=3
-objecttype=Asset Push Configuration;Asset Push EventQueue;Availability;CP-Link-Type user-type root;ChangePackages;Classification 1 user-type root;Context qualifier;Dimension qualifier;Domain user-type root;Entity user-type root;Event Processor user-type root;Group user-type root;InboundEndpoint user-type root;List Of Values group type;Match Code;Matching Algorithm;Matching Algorithm Linked Match Code;Operator user-type root;OutboundEndpoint user-type root;Price;Product user-type root;Real qualifier;Reference-Type user-type root;SalesPrices;SteppersConfigurationType;Term-list user-type root;Unique Key;Unit;Unit Group;WebServiceEndpoint;WebUISetupGroupCategory;WebUIs;std.attribute transformation type;stibo.STEPWorkflow Type;stibo.businessrule.action;stibo.businessrule.condition;stibo.businessrule.function;stibo.businessrule.library;stibo.grouping attribute;stibo.normalattribute;stibo.portal Type;stibo.taskstatus Type -->
-                <Configuration>H4sIAAAAAAAA/9VYTXPiOBC9z69QcSeBfKeKzhQVMrvU7mzYQGbOwm6INkby6INN9tevbGw8pEVsZ3KYuYH7PUndane/9tAYtDNcpQm3CIOPT6uErVEboSR0+ge9DkMZqVjIJXTuZ5+6F52PVx8G09nNpDvRKnaRHcuF0ituPYPdoVHJGscyERLvcGGgs+CJwQ77pJJE/Xvrl9YixqmbF+wKcfOUKm1HqMUa46G1emu6+sDYYJgd1BSoqfgPofNZSLFyqw4bKWk3G1wn3BixEFF+npnKWf4gqL0bnmK126xXrniYL364Wd17drjHtauBSRNhr7KDibmz+KeQj2amxXLpTyyXL82/REgrX0wWiFrnX0T3F3Bx98Th9CnSYRfKxjJKXIwT7jPHFolTJMuLRZsEzsPcCvXUmRRljHHxfOx/P31VOv5doOY6engmGfUXXyF5eDv/ByM7e07xN61c6g0GBtXDO5egyc8aeLbzlFU/xyPoGCvm6mDujL8IY7SnHPAoc2Tj+mvUwnnmDOquzexaKVvPu0OesG+OJz6gqOvxU+79mGgRoakHB/xJxNxH+rmeO0O96ib+zWjt0kisUGbvQhu/fIpYfLJtKDfSCvvc+nj3UnxzyP7ABkG4TX1eWqVbb5LnZWtW4L4WTjbMwM/cRg/sWsVYjx2uuUj4XPiXqUEU8nRrcB9rXyqYfxF8bpo3xGzbp7q5sS0972Fs4swDy0/yt0PX4NTXk27Wy962Zx5zX37YMFkqLezDqp6TdRt2u2BfeOLQsGWeKdmeb9mOZWfHmLW5/JFacSF/JL7+ZV2IpdO8WWZu0lpmXcE3zKLpNqUtiwrPWjHjgy2cWc2lqdpts1BvNrfcPBrLrTNs1og2lnPlZHwj41QJ2b523jr7Ywv46mZZXn2aYZtGItMNvlM1i8KGkokC39wfF17DtCLuFMBIyVhUeTY4fIc+/0Lr9INRfp+dHrhcehUVPfJl2bHfZeGvOL8fN5AAOW6K1qV5Ulx7wepLR4Oi74lT1Gtf+ctcbCBOLKa+Y5qd+lDdfMBx+qiQeIWe+ulF9qBEtx3NCl5oOCvXDIrw4g4yXVzex85QVj7c3W+7zfYOib+lpfh7rZUxhJY3gbBp08/KfyNueabpfKfxd1a36+Cw+LtJkzKmDUaLajbISo1JuY/kME21Wm+njKzM/fR55N3Oztl0FP1SOHBc/Ff5W5RVMNjXpwmyB0HJRHB9+F4uUnMPQmqX4vrwenekjCPYK5Yo+BgqEUStJ0DFE0WdBlBUYlHeGeyZFCj0HGp6PKVcQK7AqeESwmMnQR7BKzKXonuwO5ZSRB9eVeuUcATfTa7UfAx7ewcFn8C+4ZRiT6Ga96j1LLMGWOdQ6ShqvQDaHCnqEvb0XgI9hl2ZQAG9zVoBSx9qxS4lHcEehUahx7D3owgFn4TAWwFH8achfDnxUvhZCF580KDoc9g3QFDsBQRnFAq8BCKHCegEavQlZfQgOG8Q4CmQ7yQEcwaBDzAEdQ7BMZDgLiD4mYXgLuH18b8g/A9dqNkEcBcAAA==</Configuration>
+objecttype=Asset Push Configuration;Asset Push EventQueue;Availability;CP-Link-Type user-type root;ChangePackages;Classification 1 user-type root;Context qualifier;Dimension qualifier;Domain user-type root;Entity user-type root;Event Processor user-type root;Group user-type root;InboundEndpoint user-type root;List Of Values group type;Match Code;Matching Algorithm;Matching Algorithm Linked Match Code;Operator user-type root;OutboundEndpoint user-type root;Price;Product user-type root;Real qualifier;Reference-Type user-type root;SalesPrices;SteppersConfigurationType;Term-list user-type root;Unique Key;Unit;Unit Group;WebServiceEndpoint;WebUISetupGroupCategory;WebUIs;std.attribute transformation type;stibo.STEPWorkflow Type;stibo.ValueSubstitutionTransConfig;stibo.businessrule.action;stibo.businessrule.condition;stibo.businessrule.function;stibo.businessrule.library;stibo.grouping attribute;stibo.normalattribute;stibo.portal Type;stibo.taskstatus Type -->
+                <Configuration>H4sIAAAAAAAA/9VY23LbOAx971dw/O7Ezj0zRjqeON317Gbtxk77TEu0w0YiVV68yX79UjerDqhISvPQvtnCOSQBQsCBxlozs2RxElHDYPTxKY7IlinNpYDe8GDQI0wEMuRiA7375af+Re/j1YfRYnkz78+VDG1gpmItVUyNY5A7pmW0ZVMRccHu2FpDb00jzXrkk4wi+e/MLa14yBZ2VbArxM1TIpWZMMW3LBwbo3amqw+EjMbpQXWBWvD/GPRuueCxjXtkIoXJN7iOqNZ8zYPsPEuZsdxBmHJuOIpRNl+vXPEwW/wwX915dljj2tVIJxE3V+nB+Moa9jcXj3qp+GbjTiw2L82/RUgrX3QaiEbnX0T3N3Bx/8T+9CnSYR9KpiKIbMjm1GWOKRKnSJYXi7YJnIPZmKmF1QkTIQuL51P3++mrVOGfnCmqgodnlFH/0Jihh7PVNxaY5XPC/lDSJs6gYVQ9vLMR09lZPc/2npLq53QCPW34Sh6srHYXobVylAMapI7krr9GLZwnVjPVN6ldSWmaeXeMRuS7pZELKFPN+AV1fswVD5huBnv8ifjKRfq5mbtkKu5H7s3o7NKEx0yk70IXv1yKGPZkulBuhOHmufPx7gX/bhn5i7UIwixxeWmk6rxJlpedWZ77WlvRMgNvqQkeyLUMWTN2vKU8oivuXqYWUcjSrcV9bF2pIO5FcLmp3xCzXZ/qZ8au9KyHkbnVDyQ7yWfLbItTX8/7aS97255ZzF35IeNoIxU3D3EzJ+02ZLYmX2hkmSabLFPSPd+yHUnPzkLS5fInMqZc/Ex83cu65huraLvMzNNapF3BNcyi6balbYoKTzoxw4MdnBhFha7abbtQ55sbqh+1ocZqsmxFm4qVtCK8EWEiueheO2fW/NwCrroZklWfdti2kUh1g+tU7aKQU1JR4Jr749ppmE7EvQIYSBHyKs9Gh+/Q519onaE3yu+z0wMVG6eigke6KTv2uyz8la3upy0kQIZbMGOTLCmunWB1paNF0XfEBVNbV/nLXGwhTgxLXMfUe/Whuvl3cTxPkax4OkHs/hmb7ZK+5Pm+tZvhR4WeLMTbL6/oRyW66xxY8HyTYLmmV/EXl5GK8PLy9ybA8uH+frttdgmD/C0txd9rJbVGtKzj+E158yz/TaihqYB0bc3dWdOuo8Pib54mZUxbzDHVIJLWNZ1QF8lbt+lYhOMkUXK7m2zS0vrLp5PzPj1n2/H3S+HAcfFfZi9TWjWhThsg5AC8Mg3hhvCjRMXmAfgUNsYN4fWOjBlHUCvQMPgYKuGFrSeABRtGnXpQWNZh3hnUTCcYeg4NugJTLiBT/dhwCf5RFyGP4BVpjdED2B+FMWIIr04ImHAEP0zL2HwMtf0Kg0+gbiDG2FOoZkxsPUutHtY5VNoNWy8AN2SMuoSafo+gx7AvTTBgkK/lsQyhUWBj0hHUqEIMPYbmJo9ZJ1D7+QaDT33gndTE+DMfvpzNMfzcBy8+vWD0BdSNOhh7Cd5pCgFPoEHkYsYAkNTHoCF4JyMEPAX0RQdhzsDzqQihzsE7sCLcBXg/CCHcJbz+oaIg/A9YqCCIGhgAAA==</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

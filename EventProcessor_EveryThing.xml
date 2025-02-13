@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <EventProcessors>
+        <EventProcessor ID="EveryThing" UserTypeID="Event Processor user-type root"><!-- Definition:
+Configuration=
+<plugin id="EveryThing">
+  <simple id="BatchSize">1000</simple>
+  <simple id="DaysToRetainEvents">0</simple>
+  <simple id="FailRetryEnabled">true</simple>
+  <simple id="FailRetryPeriod">30d</simple>
+  <simple id="HoursToRetainOldProcesses">168</simple>
+  <simple id="LinesPerBGP">1000</simple>
+  <simple id="MaxOldProcesses">100</simple>
+  <simple id="OptimisticLockRetryEnabled">false</simple>
+  <simple id="OptimisticLockRetryPeriod"/>
+  <simple id="Priority">1</simple>
+  <simple id="Queue">EVPROC</simple>
+  <simple id="ResponsibleUser">step://user?id=STEPSYS</simple>
+</plugin>
+PluginConfiguration=
+<plugin id="ExpandLOVChangesEventProcessorPlugin"/>
+ScheduleSpecification=
+<entries>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleNever"/>
+</entries> -->
+            <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
+            <Name>EveryThing</Name>
+            <Configuration>H4sIAAAAAAAA/6VT3W/TMBB/718RWVPfSDIhoYmmqWiawUNHQ9JN4wl5yTU94drBZ0/t/nrc9INmIiDBm+/0+7J9lyi5wtpqblDJcTTZboT3DJr2Fbv2Q+aBLFWFsh6z++Xtmxs2iQdRI2yN0sNqzNJnkCbTqgQipaecILmUZPHA8yLCTSOgxedAjZKETwLuCTSLyUDzPgisKyYOUCzTrPhaRMGB85o+5aZcF/gCLL4Ow7APNuM7WqocDEfZJiQW94IzjUqj2TnJPsgXC9ZZpg9Zvkj6QHd8uxDV8S2A2oR92E/K6nPCV6x3N32sOUqgDPT0Y/bn+99yFE5b71LJ3UtXLDbawl/RThqVA78Nqz7sojG4QTJYzlX5veux4oJ6TX5DPNn1UYpyDZUV8Hg3/zZLszxNPizTGYuHwow6kzr8YZUZuXE9HCbD2owGe5T7eY1Abe15p87OKwUnOtJKtfFdrCflW4PCp6NpBSuUuJ9h/5Rjdm5dnVqfwWU46ARn1+DS9tflouCwN+5EjUATp1ornUOjtAH9L8vnAnErTHcHO6osOLtlLS/574XfNlxW88VDsuayBuqaH0wuXH8CBYnW+mEEAAA=</Configuration>
+            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
+AssetTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">
+    <Asset/>
+  </Assets>
+</STEP-ProductInformation>
+AttributeLinksTriggering=
+AttributeTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <AttributeList/>
+</STEP-ProductInformation>
+ClassificationTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Classifications ExportSize="Minimum">
+    <Classification IncludeParent="true"/>
+  </Classifications>
+</STEP-ProductInformation>
+IndexWordHierarchyTriggering=
+ObjectTypeGroupings=
+<ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="GlobalBusinessRules"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="BusinessRuleGroup"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="stibo.businessrule.action"/>
+  </ObjectTypeRules>
+</ObjectTypeRules>
+ParentTriggering=
+ProductTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Products DontFollowClassificationToProductReference="true" ExportSize="Minimum">
+    <Product IncludeParent="true">
+      <AssetCrossReference/>
+      <AttributeLink/>
+      <ClassificationReference/>
+      <DataContainers/>
+      <Name/>
+      <OverrideSubProduct/>
+      <OverrideSubProduct/>
+      <ProductCrossReference/>
+      <Values/>
+    </Product>
+  </Products>
+</STEP-ProductInformation>
+TriggeringWorkspace=Approved
+UnitTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <UnitList/>
+</STEP-ProductInformation>
+Version=3
+objecttype=BusinessRuleGroup;GlobalBusinessRules;stibo.businessrule.action -->
+                <Configuration>H4sIAAAAAAAA/9VUTVPbMBC98ys8vhPD9NKDFSZNgHqmLZnE0LNsb1IVWfJopTT013djy5jEzpDOcICbpP18T293ggg2hbKS3AKLr7alDDZgUGjFwsvRRRiAynUh1JqF9+nN+efwanwWL9Pr+fnc6MLlNlErbUpuKSJYAGq5gURJoWABK2ThikuEMLjRUuo/d5TaiAKWLvPRncf1ttLGzsCIDRQTa82zaXwWBPFk1yh6r6X4Cyz8LpQoXRkGM61sU2AqOaJYibzuJ9V1FDUChmBQiDWuyddmjOrkUZOdkEVHoI1jrKSw411jInMWvgn1iKkR6zV1rNaH5g9BaYcFd0S8Cv6A3Q8Acb/jYfl4Oey7BonKpStgzkk51gvHi+Ug6QnEJaqA7U9tiq8CDDf5r6eecu6y35Db9KmCW6NdRQZkcfe4cBKwLj/wtvcadMdkxsJbqTMuvzgkbhHrkBbHG2R/mbfu+w1zoxWZHmW+gqGQEc93rB6t0X/y5Da/2OPcf9i7F3Lcev/v+vNxQwuwzTkodP81P3gJUbstXy6+aHBmnsu05j7e1uKvU6NJO4dh9TIeNj1w6QDb24xbPiXwnOg2+FrVOPLXRj0tpyeMbyccmuFHrDgxOakqo+mrvMu9Eu9fRwR71+ep6/7BA/jk77oeLkvDxXpz33O5YAObp+d1yY5Ouff9B+X/UmuhCAAA</Configuration>
+            </EventQueue>
+        </EventProcessor>
+    </EventProcessors>
+</STEP-ProductInformation>

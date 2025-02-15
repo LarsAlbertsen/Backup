@@ -3,6 +3,9 @@
     <UserList>
         <User ID="LAAL_SUP" ForceAuthentication="false">
             <Name>Lars Albertsen(Supplier)</Name>
+            <MetaData>
+                <Value AttributeID="UserLastActivityDate">2025-02-14</Value>
+            </MetaData>
             <UserGroupLink UserGroupID="AcmeSupplier"></UserGroupLink>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup></SystemSetup>

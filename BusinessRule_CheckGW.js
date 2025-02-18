@@ -28,18 +28,16 @@
     "parameterClass" : "com.stibo.core.domain.impl.integrationendpoint.gateway.FrontGatewayIntegrationEndpointImpl",
     "value" : "LAAL_Gateway",
     "description" : null
-  }, {
-    "contract" : "CurrentWorkflowBindContract",
-    "alias" : "wf",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (gw,wf) {
+exports.operation0 = function (gw) {
 
-logger.info(gw.getClass().getName())
+//logger.info(gw.getClass().getName())
+
+let foo = 'Lars'
+
+logger.info(foo)
 }

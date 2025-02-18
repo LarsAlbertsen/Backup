@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <ComponentModels version="2">
-        <Model id="com.stibo.industrystandard.eclass.domain.impl.aspects.EClassAdvancedModel.Component">
+        <Model id="com.stibo.industrystandard.eclass.domain.impl.aspects.EclassAdvancedModel.Component">
             <NodeAspectDescriptors>
-                <NodeAspectDescriptor id="com.stibo.industrystandard.eclass.domain.interfaces.EClassAdvanced"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.industrystandard.eclass.domain.interfaces.model.EclassAdvancedProduct"></NodeAspectDescriptor>
             </NodeAspectDescriptors>
             <LinkAspectDescriptors></LinkAspectDescriptors>
             <ValueAspectDescriptors></ValueAspectDescriptors>

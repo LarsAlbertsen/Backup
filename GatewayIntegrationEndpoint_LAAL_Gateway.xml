@@ -17,7 +17,7 @@ PluginConfiguration=
 </plugin> -->
             <SetupGroupLink SetupGroupID="Gateway Integration Endpoints"></SetupGroupLink>
             <Name>LAAL_Gateway</Name>
-            <Configuration>H4sIAAAAAAAA/51Uy07DMBC88xWRD71B4IbUl0ragkRQqyY9IyvdphaObew1tH+PYwfSh2gRp3izM7Oz3k0SKdastJoik6LfG24rHn2ANnVE7m5uSQSikCsmyj5Z5tPrezIcXPUUtyUTEVv1ySNF+KS7ZF+HDK6iqGdYpTh4ULKB4s1BBBTIPhjuUmows0UBxpBIWM77BLUFEl9kzrUsNa3OsxpTc2/zdTyZLybJKJ+MyaDDsXvQZOfdSuy6TsOhbTfEvucmZZCKFeVSQJMUMjyHnRK7tXJ7LyGxmGR5MBHiGues1tDWbUhloJ2l5SJtkeksGaVPsyyv8XEgnFEYw5paju6yEATmOwXhfXzC4czgXmV0QzPICvOopVXmN9YeI0tzbd0EUWpIZeGH3lySH0s417O5LJaARrZmTgSeYeclL5PcFmwPd+6/5ZcGtKDVEfJ38FwDVMrtIowsbtphrSk38LdBPVjDhNv8qRVFa93vEK1U9/8bOvT8uvC30HEpf28/KGevwb1QpZykiU8U4vMSxx37OHwGddxrcu6f0bx1J6M4w8EXOFYfg3oEAAA=</Configuration>
+            <Configuration>H4sIAAAAAAAA/6VUXU/CMBR991csNeFNJ28m4yM4UBNnJGw8m2ZcRmPX1vZW5d/btTMDQ4Do09rec07P/ehSKdasspoik2I4GH/VPPoAbZod6V/fkAhEKVdMVEOyLO6vbsl4dDFQ3FZMRGw1JA8U4ZNu010dMrqIooFhteLgQekGyjcHEVAi+2C4zajB3JYlGEMiYTkfEtQWSHySOdey0rQ+zmpNzb3N1+lsvpilk2I2JaMex2Qvyd67lZi4TMOiSzfsfc5tyCAVK8qlgDYoZPiOexUmjXJXlxBYzPIimAh7j7vs3yRR1MA7xyGcg3a2lousQ2cv6SR7fMmLBh8HwgmVKayp5eiKhiCw2CoI5/FBHmcGdxyga6BBVpoHLa0yx5g7rDwrtHUdRakhk6UfgrZovk1h3fTqPMEUNLI1c0LwBFsvex7RTcfX/iz+x8bSgBa0PoQ+SpprgFq5eYWJxU3XzDXlBs5v5J01TLgXcm9F2aXiSbRWyd8neez5P5f/iP2+ztdyD+lstthnqpSTNvFBpfi01KEq+LPwhJqzQRt3/5v21K2M4gxH35Bcdfi2BAAA</Configuration>
         </GatewayIntegrationEndpoint>
     </IntegrationEndpoints>
 </STEP-ProductInformation>

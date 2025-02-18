@@ -17,7 +17,7 @@ PluginConfiguration=
 </plugin> -->
             <SetupGroupLink SetupGroupID="AssetAnalyzer.SetupGroup"></SetupGroupLink>
             <Name>Asset Analyzer Gateway Endpoint</Name>
-            <Configuration>H4sIAAAAAAAA/51TsW7CMBDd+YrIA1tLu1WCBNEQGJohImGuLHMJVh07tc+U/H2dOFLKUEBMucvde/eefY6VLHllNUWuZLhYnmsRnECbLiOvzy8kAMnUgcsqJPti8/RGltFk0QhbcRnwQ0i2FOGHtvFfHhJNgmBheN0I6JviI7Av1yKBIT9xbFNqMLeMgTEkkFaIkKC2QGY3kZlWlab1ddQgKutlfq6TbJfEqyJZk2gqcH5hcvptFc6dUx+Mdn3eex5KBqk8UKEkDEWp/Hc5rXDeMY/n4gu7JC+8CJ93fU5q1zqq9aUctJO036XDsN6ejzuPPppdIVhDSa1Ad1YIEou2uQOTo7svg5yZrVa2MY/OzvO00NZdKSoNqWL9FjxKFoNGXnJHAh/Q9pS3QW4tzpdL+Oj4vQEtaQ334P+nyDRA3biVhZXF43j7JRUGOszMg64IebeGS/dANlay+wz1vH4Hu3wxzHAPdvjrItMIjtEvI4a9kvcDAAA=</Configuration>
+            <Configuration>H4sIAAAAAAAA/6VTPW/CMBDd+RWRK7G1wFYpH4iGwNAMiIS5ssIlWHXs1D5T8u/rxJEoC0Ri8p3v3vN79jmWomSVURSZFGGwvNTcO4PSXUYWb3PigSjkkYkqJId88/pOltEkaLipmPDYMSRbivBL2/g/D4kmnhdoVjcc+qb4BMW3bRFQIDszbFOqMTNFAVoTTxjOQ4LKAJk9RO6UrBSt76MGUbte5tc62e2TeJUnaxJNOfo3Jqc/RqJvnbrgatflveehpJGKI+VSwFAU0q3LaYV+x3y9F1fYJ1nuRLi873tZzH3P69qvil05A2VlHfbpcGBv0cWdTxfNHpCsoaSGo70zBIF524zEZWjfTiMr9FZJ0+hnNGRZmitjnxilglQW/VQ8QxiDQlYySwSf0Pa044B2XC63w/mMjIMGJWgNoznuUu0UQN3YsYaVwdN1QkrKNXSYmQM9EPVhNBP2I22MKMYb7PndvHZ7wXCW/dzDro10wxlGf4XqQsMjBAAA</Configuration>
         </GatewayIntegrationEndpoint>
     </IntegrationEndpoints>
 </STEP-ProductInformation>

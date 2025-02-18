@@ -32,11 +32,7 @@ ProcessPluginConfiguration:
         </Delivery>
         <Format Name="GenericJSON">
           <Parameter Name="FormatDocument">false</Parameter>
-          <Parameter Name="Template">{&quot;products&quot;: [
-    {&quot;__type&quot;:&quot;__record&quot;,&quot;id&quot;:&quot;__target ID&quot;,&quot;name&quot;:&quot;__target Name&quot;,&quot;values&quot;: [
-        {&quot;attributeName&quot;:&quot;__target&quot;,&quot;attributeID&quot;:&quot;__target&quot;,&quot;value&quot;:&quot;__target&quot;}
-      ]}
-  ]}</Parameter>
+          <Parameter Name="Template">{&quot;products&quot;: [&#10;    {&quot;__type&quot;:&quot;__record&quot;,&quot;id&quot;:&quot;__target ID&quot;,&quot;name&quot;:&quot;__target Name&quot;,&quot;values&quot;: [&#10;        {&quot;attributeName&quot;:&quot;__target&quot;,&quot;attributeID&quot;:&quot;__target&quot;,&quot;value&quot;:&quot;__target&quot;}&#10;      ]}&#10;  ]}</Parameter>
         </Format>
         <ProductMapping SelectedURLType="product">
           <CompositeMap Target="values">

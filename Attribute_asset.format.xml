@@ -13,6 +13,7 @@
             <UserTypeLink UserTypeID="AutoClassificationRuleSet"></UserTypeLink>
             <UserTypeLink UserTypeID="BusinessRuleExample"></UserTypeLink>
             <UserTypeLink UserTypeID="Configuration"></UserTypeLink>
+            <UserTypeLink UserTypeID="Excel"></UserTypeLink>
             <UserTypeLink UserTypeID="Icon"></UserTypeLink>
             <UserTypeLink UserTypeID="Illustration"></UserTypeLink>
             <UserTypeLink UserTypeID="InstallationManual"></UserTypeLink>

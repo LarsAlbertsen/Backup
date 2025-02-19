@@ -11,6 +11,7 @@
             <UserTypeLink UserTypeID="Actual Page"></UserTypeLink>
             <UserTypeLink UserTypeID="Asset user-type root"></UserTypeLink>
             <UserTypeLink UserTypeID="Configuration"></UserTypeLink>
+            <UserTypeLink UserTypeID="Excel"></UserTypeLink>
             <UserTypeLink UserTypeID="Icon"></UserTypeLink>
             <UserTypeLink UserTypeID="Illustration"></UserTypeLink>
             <UserTypeLink UserTypeID="InstallationManual"></UserTypeLink>

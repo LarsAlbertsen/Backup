@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Excel" ReferenceTargetLockPolicy="Relaxed">
+            <Name>Excel</Name>
+            <UserTypeLink UserTypeID="Asset user-type root"></UserTypeLink>
+            <MIMEType>application/vnd.ms-excel</MIMEType>
+            <MIMEType>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</MIMEType>
+            <MIMEType>text/csv</MIMEType>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

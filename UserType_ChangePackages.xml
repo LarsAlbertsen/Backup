@@ -5,6 +5,7 @@
             <Name>Change Packages</Name>
             <UserTypeLink UserTypeID="ChangePackages"></UserTypeLink>
             <UserTypeLink UserTypeID="Setup Group user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="AutoUpdatedChangePackages"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <EventProcessors>
+        <EventProcessor ID="UpdateChangePackage" UserTypeID="Event Processor user-type root"><!-- Definition:
+Configuration=
+<plugin id="UpdateChangePackage">
+  <simple id="BatchSize">1000</simple>
+  <simple id="DaysToRetainEvents">0</simple>
+  <simple id="FailRetryEnabled">true</simple>
+  <simple id="FailRetryPeriod">30d</simple>
+  <simple id="HoursToRetainOldProcesses">168</simple>
+  <simple id="LinesPerBGP">1000</simple>
+  <simple id="MaxOldProcesses">100</simple>
+  <simple id="OptimisticLockRetryEnabled">true</simple>
+  <simple id="OptimisticLockRetryPeriod">10h</simple>
+  <simple id="Priority">1</simple>
+  <simple id="Queue">EVPROC</simple>
+  <simple id="ResponsibleUser">step://user?id=LAAL</simple>
+</plugin>
+PluginConfiguration=
+<plugin id="BusinessActionWithEventBatchEventProcessorPlugin">
+  <simple id="BusinessAction">step://businessrule?id=SealChangePackage</simple>
+  <simple id="Context">step://context?id=Context1</simple>
+  <simple id="SkipDeletedNodes">true</simple>
+  <simple id="Workspace">step://workspace?id=Main</simple>
+</plugin>
+ScheduleSpecification=
+<entries>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
+</entries> -->
+            <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
+            <Name>Update ChangePackage</Name>
+            <Configuration>H4sIAAAAAAAA/6VU247aMBB95yuiqOKtXFSpWnUhFEJoK0FJgS19q4wzCyOMnXrsLfTr61ygCzTdSuQlmck5Z8bjmQmVfMS11cygkt1Ob78T3hNoyiy/3Wj5HkiuEpTrrv+wGL2+83tBrZMKu0bpYdL1oyeQJtaKA5HSA0YQPpf0g5rndQh3qYAcPwNKlSRcCXgg0H5ABtJ3zaZ1Rs8Bxv3+uNMsCJfcATN8M8df4AftVqtVBRuyAy3UDAxDmadHflAJjjUqjebgJKsgXyxYFzL6Gs+mYRVowvZTkZSFAMozrMJ+VFafMrxgvb2rYo1RAsWgBx/if59/xFA4bX2IJHNlTvzAaAsvop00Kgd+00qqsNPU4A7JIB8rvv3/GH/hHaO1W5sq1pxvILECvk3G34dRPIvC/iIa+kFdmPuzRq3/sMrcu24tPnr1tbmvZSh39xqBctvzjp6DxwUjKmlc7Rous5VqWIOiQWXQBB5RYtbCjWMew5Pr1dHl2ksfJiitgULNhSkfyH4dUytezVNizeeZ/Tl/p1lMlvuiVKAJIq2VnkGqtAF9+3hGO3fZZ5pX8zlihokc108S7Vh+IBgT7/MS0cFN644armZVl3YD9ZPkwiawZFq6A9FlS10VJ87N8NYNNrCUTRb1eaawRLPJi5Yvm/PyFQGvSnYucNpoq9KtXZ9km20OTIQbJtcQM75l68ppcScysDcnIV7YmUb5q3JVLZXeUso4nMg/j56MPnH7pnLatpgOQYCB5LNK4OXy/waClJADOwYAAA==</Configuration>
+            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
+AssetTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">
+    <Asset/>
+  </Assets>
+</STEP-ProductInformation>
+AttributeLinksTriggering=
+AttributeTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <AttributeList/>
+</STEP-ProductInformation>
+ClassificationTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Classifications ExportSize="Minimum">
+    <Classification IncludeParent="true"/>
+  </Classifications>
+</STEP-ProductInformation>
+ConsumerSuspended=
+NameTriggering=
+ObjectTypeGroupings=
+<ObjectTypeRules>
+  <ObjectTypeRules ActionID="UpdateChangePackage">
+    <ObjectType ObjectTypeID="Product user-type root"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ActionID="UpdateChangePackage">
+    <ObjectType ObjectTypeID="stibo.businessrule.action"/>
+    <ObjectType ObjectTypeID="stibo.businessrule.condition"/>
+    <ObjectType ObjectTypeID="stibo.businessrule.function"/>
+    <ObjectType ObjectTypeID="stibo.businessrule.library"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ActionID="UpdateChangePackage">
+    <ObjectType ObjectTypeID="Reference-Type user-type root"/>
+    <ObjectType ObjectTypeID="stibo.grouping attribute"/>
+    <ObjectType ObjectTypeID="stibo.normalattribute"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ActionID="UpdateChangePackage">
+    <ObjectType ObjectTypeID="stibo.STEPWorkflow Type"/>
+    <ObjectType ObjectTypeID="stibo.portal Type"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ActionID="UpdateChangePackage">
+    <ObjectType ObjectTypeID="Group user-type root"/>
+    <ObjectType ObjectTypeID="Operator user-type root"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ActionID="UpdateChangePackage">
+    <ObjectType ObjectTypeID="Unit"/>
+    <ObjectType ObjectTypeID="Unit Group"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ActionID="UpdateChangePackage">
+    <ObjectType ObjectTypeID="Matching Algorithm"/>
+    <ObjectType ObjectTypeID="Matching Algorithm Linked Match Code"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ActionID="UpdateChangePackage">
+    <ObjectType ObjectTypeID="Domain user-type root"/>
+    <ObjectType ObjectTypeID="List Of Values group type"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ActionID="UpdateChangePackage">
+    <ObjectType ObjectTypeID="Unique Key"/>
+    <ObjectType ObjectTypeID="stibo.taskstatus Type"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ActionID="UpdateChangePackage">
+    <ObjectType ObjectTypeID="GatewayEndpoint user-type root"/>
+    <ObjectType ObjectTypeID="InboundEndpoint user-type root"/>
+    <ObjectType ObjectTypeID="OutboundEndpoint user-type root"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ActionID="UpdateChangePackage">
+    <ObjectType ObjectTypeID="Event Processor user-type root"/>
+    <ObjectType ObjectTypeID="Event Queue object-type root"/>
+    <ObjectType ObjectTypeID="EventProcessors"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ActionID="UpdateChangePackage">
+    <ObjectType ObjectTypeID="Setup Group user-type root"/>
+    <ObjectType ObjectTypeID="SetupEntity user-type root"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ActionID="UpdateChangePackage">
+    <ObjectType ObjectTypeID="Classification 1 user-type root"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ActionID="UpdateChangePackage">
+    <ObjectType ObjectTypeID="Entity user-type root"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ActionID="UpdateChangePackage">
+    <ObjectType ObjectTypeID="ChangePackages"/>
+  </ObjectTypeRules>
+</ObjectTypeRules>
+ParentTriggering=
+ProductTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Products DontFollowClassificationToProductReference="true" ExportSize="Minimum">
+    <Product IncludeParent="true">
+      <AssetCrossReference/>
+      <AttributeLink/>
+      <ClassificationReference/>
+      <DataContainers/>
+      <Name/>
+      <OverrideSubProduct/>
+      <OverrideSubProduct/>
+      <ProductCrossReference/>
+      <Values/>
+    </Product>
+  </Products>
+</STEP-ProductInformation>
+TriggeringWorkspace=Approved
+UnitTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <UnitList/>
+</STEP-ProductInformation>
+Version=3
+attributeGroup=Attribute group root
+objecttype=ChangePackages;Classification 1 user-type root;Domain user-type root;Entity user-type root;Event Processor user-type root;Event Queue object-type root;EventProcessors;GatewayEndpoint user-type root;Group user-type root;InboundEndpoint user-type root;List Of Values group type;Matching Algorithm;Matching Algorithm Linked Match Code;Operator user-type root;OutboundEndpoint user-type root;Product user-type root;Reference-Type user-type root;Setup Group user-type root;SetupEntity user-type root;Term-list user-type root;Unique Key;Unit;Unit Group;stibo.STEPWorkflow Type;stibo.businessrule.action;stibo.businessrule.condition;stibo.businessrule.function;stibo.businessrule.library;stibo.grouping attribute;stibo.normalattribute;stibo.portal Type;stibo.taskstatus Type -->
+                <Configuration>H4sIAAAAAAAA/9VY23LaMBB971doeCeB3DOD0mECyTC9JA20fRa2IGpsydWFNv36SrZsF9bG0E4heQPtOdqLdqVd95WiekLjJCKa4t7bn3GEFlQqJjhudQ86LUR5IELG57j1eXLTvmi9vXrTG0+G9+17KUIT6BGfCRkTbRnogSoRLeiIR4zTBzpTuDUjkaItdCOiSPy4s1tLFtKxmXp2iRj+TITUAyrZgoZ9rWUhunqDUK/vDFUeNWa/KG59YJzFJm6hgeA6U3AdEaXYjAWpPRORsqwhVFo3LEVLk+2X73iYbn6Y7W49O6xx7aqnkojpK2cYmxpN3zP+pCaSzefWYj5fFb+KkJa+KBeIRudXovsKXFy2uDp9fDosQ9GIB5EJ6T2xmaN94vhkWdl0k8BZmImpHBuVUB7S0K9/JDEFOXQ3/UYDPXlO6K0UJrEChXvl4oOJqEoNWVlD/cDpHA1szJPQHsz1I+Fz60HwROZF1pckVP50HG89MorKtnZyKYTOff7/+pVmU3EwNcomgVLS7nhA0g0zE7akzgz/e3LEppLI57/iBoKHrNS8u8hxl3S2Hn1NNxtfXIvtVFh17s1a5z5F0Yri3fntCppEyC1uarSr1q9CPs3s5fIHcRc23yVUEi3k1uFO74K9FednzjRKTWi21GF3Z9kHooNHl4D9aC4k049xs4WQg9xzTkOUStC1CHeYEgMRE8a3Tgj3aKO7GfpCImNtSAsR6Z0msz3p74aid3Tjq1IT9aQ00UbtuO5GfCoMD4c8TATj1a/c2ro1+t82uLUm/yDPa/m7CMRwYfsZ+9YH9sESUjUbnhLQJ0PtSYtUso3bGbvQtze3x1Tb8qi/RBu5Q66Zft6b/SvdaXd/+bPnOPyJVrV64ZJvrrN+HvTcvvl98SNNL0dvOwh7XtUonO9ZOfL483CDSl4nSyNwvrisr1BT1BbwN5f4v9dSKAVo6VheLcqevfzfgGhihyxtH1J7Zk1ae4f+b5Y9eUw3GOTKxHH9o0qIjWQ/SaRYFDOda39efB5Zt52dmw7+X7wDx/5/0eynFyouMsJ3Ie5K8MjsxXAXBV4uXSDv4IY7DjC6uLJ1grgOhh0fRHUrULAvhLwjXNPUQ+gxbugjIOUEVw/mEHmK1050kHCG619FiD7H9e8gRF/gCZVxO3JNahP2EpeNJJAe4c00HnXcLhXrXVwOL1B6hGtGQgg9xrWfKCD4pApcfBuA+NMqfP4RA8LPquD+swVEn+O6YR1iL3Dl5wQIvMRg/gagY7y+/4OEDq4cFADwBK/rSwH8FK/0vQBxhtd36IBwjjeqmwu8fvQAhEtcO9l57G8247jNtBcAAA==</Configuration>
+            </EventQueue>
+        </EventProcessor>
+    </EventProcessors>
+</STEP-ProductInformation>

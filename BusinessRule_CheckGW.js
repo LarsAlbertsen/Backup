@@ -34,6 +34,7 @@
 }
 */
 exports.operation0 = function (gw) {
+var workbook = loadClassAndGetObject(jars, "org.apache.poi.xssf.usermodel.XSSFWorkbook");
 
 //logger.info(gw.getClass().getName())
 

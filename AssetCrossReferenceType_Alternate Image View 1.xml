@@ -9,6 +9,7 @@
             <AttributeGroupLink AttributeGroupID="Asset References"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
             <UserTypeLink UserTypeID="Variant"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="Excel"></TargetUserTypeLink>
             <TargetUserTypeLink UserTypeID="JPEGImage"></TargetUserTypeLink>
         </AssetCrossReferenceType>
     </CrossReferenceTypes>

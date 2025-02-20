@@ -9,6 +9,7 @@
             <AttributeGroupLink AttributeGroupID="Asset References"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
             <UserTypeLink UserTypeID="Variant"></UserTypeLink>
+            <TargetUserTypeLink UserTypeID="Asset user-type root"></TargetUserTypeLink>
             <TargetUserTypeLink UserTypeID="JPEGImage"></TargetUserTypeLink>
         </AssetCrossReferenceType>
     </CrossReferenceTypes>

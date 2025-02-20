@@ -10,6 +10,7 @@
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
             <UserTypeLink UserTypeID="Variant"></UserTypeLink>
             <TargetUserTypeLink UserTypeID="JPEGImage"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="PDF"></TargetUserTypeLink>
         </AssetCrossReferenceType>
     </CrossReferenceTypes>
 </STEP-ProductInformation>

@@ -19,22 +19,3 @@
   "dependencies" : [ ]
 }
 */
-/*===== business rule plugin definition =====
-{
-  "pluginId" : "SetAssetKeywordsBusinessAction",
-  "parameters" : [ {
-    "id" : "ScoreThreshold",
-    "type" : "java.lang.Integer",
-    "value" : null
-  }, {
-    "id" : "AssetReferenceTypes",
-    "type" : "java.util.List",
-    "values" : [ ]
-  }, {
-    "id" : "AssetTypes",
-    "type" : "java.util.List",
-    "values" : [ ]
-  } ],
-  "pluginType" : "Operation"
-}
-*/

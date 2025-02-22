@@ -4,10 +4,12 @@
         <User ID="MJANMFA" ForceAuthentication="false">
             <Name>mjanmfa</Name>
             <MetaData>
-                <Value AttributeID="UserLastActivityDate">2025-02-14</Value>
+                <Value AttributeID="UserLastActivityDate">2025-02-21</Value>
             </MetaData>
             <UserGroupLink UserGroupID="MFAUsers"></UserGroupLink>
-            <SystemSetup></SystemSetup>
+            <SystemSetup>
+                <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>
+            </SystemSetup>
         </User>
     </UserList>
 </STEP-ProductInformation>

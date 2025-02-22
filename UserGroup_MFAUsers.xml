@@ -6,6 +6,7 @@
             <MetaData>
                 <Value AttributeID="UserGroupMetadata">asdfa</Value>
             </MetaData>
+            <PrivilegeRule ActionSetID="All setup actions"></PrivilegeRule>
         </UserGroup>
     </UserGroupList>
 </STEP-ProductInformation>

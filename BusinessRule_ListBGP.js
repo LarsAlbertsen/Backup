@@ -35,7 +35,7 @@
 */
 exports.operation0 = function (manager) {
 
-var bgpHome = manager.getBackgroundProcessHome()
+let bgpHome = manager.getBackgroundProcessHome()
 
 logger.info("Home "+bgpHome)
 // Set<BackgroundProcess> getBackgroundProcessesByType(String templateID, boolean onlyOwnProcesses);

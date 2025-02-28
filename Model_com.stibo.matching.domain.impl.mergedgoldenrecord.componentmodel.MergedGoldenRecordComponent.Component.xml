@@ -6,6 +6,7 @@
                 <NodeAspectDescriptor id="com.stibo.matching.domain.goldenrecord.merged.MergedGoldenRecord">
                     <UserTypeLink UserTypeID="Merge_Golden_Record"></UserTypeLink>
                 </NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.matching.domain.goldenrecord.merged.contributordata.ContributorSourceRecordsOwner"></NodeAspectDescriptor>
                 <NodeAspectDescriptor id="com.stibo.matching.domain.impl.mergedgoldenrecord.componentmodel.SourceSystem">
                     <UserTypeLink UserTypeID="Source_System"></UserTypeLink>
                 </NodeAspectDescriptor>

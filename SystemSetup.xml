@@ -34,6 +34,12 @@
         <SystemSetupValue Type="Config" Name="MerchandiserReapplyFlatplanRules"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="MerchandiserUseBorderRectangleCalculation">Y</SystemSetupValue>
         <SystemSetupValue Type="Config" Name="MerchandiserUseKeepLayoutEntry"></SystemSetupValue>
+        <SystemSetupValue Type="Config" Name="MonitoringBackgroundServiceContextEntry"></SystemSetupValue>
+        <SystemSetupValue Type="Config" Name="MonitoringBackgroundServiceEvaluateExistingEntry"></SystemSetupValue>
+        <SystemSetupValue Type="Config" Name="MonitoringBackgroundServiceEvaluateIncomingEntry"></SystemSetupValue>
+        <SystemSetupValue Type="Config" Name="MonitoringBackgroundServiceSendNotifications"></SystemSetupValue>
+        <SystemSetupValue Type="Config" Name="MonitoringBackgroundServiceUserEntry"></SystemSetupValue>
+        <SystemSetupValue Type="Config" Name="MonitoringDataQualityWebURLEntry"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="PrimaryImage">PrimaryProductImage</SystemSetupValue>
         <SystemSetupValue Type="Config" Name="ProductAttributeContextHelpAttribute">AttributeHelpText</SystemSetupValue>
         <SystemSetupValue Type="Config" Name="ProductEditorGroupAttributesByTopGroup">N</SystemSetupValue>

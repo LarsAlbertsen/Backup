@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserGroupList>
+        <UserGroup ID="Supplier5" ParentID="Suppliers" ReadOnly="false" VendorRoot="Supplier5" MultifactorAuthenticationRequired="false">
+            <Name>Supplier5</Name>
+        </UserGroup>
+    </UserGroupList>
+</STEP-ProductInformation>

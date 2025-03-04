@@ -46,6 +46,16 @@
 }
 */
 exports.operation0 = function (manager,assetType,logFileRoot) {
+
+
+
+var path = java.nio.file.Paths.get("/opt/stibo/step/diag/logs/startup-stderr.log");
+var encoded = java.nio.file.Files.readAllBytes(path);
+var content = new java.lang.String(encoded, "UTF8");
+logger.info(content);
+
+
+/*
 var profilingDir = new java.io.File("/opt/stibo/step/diag/logs");
 var maxCount = 1000;
 var count = 0;
@@ -110,6 +120,5 @@ function copyFileToAsset(pFile, pAsset) {
 	var is = new java.io.FileInputStream(pFile);
 	pAsset.upload(is, pFile.getName());
 	is.close();
-}
-
+}*/
 }

@@ -4,7 +4,7 @@
         <User ID="ALCO" ForceAuthentication="false" EMail="alco@stibo.com">
             <Name>Alain Colleu</Name>
             <MetaData>
-                <Value AttributeID="UserLastActivityDate">2025-02-27</Value>
+                <Value AttributeID="UserLastActivityDate">2025-03-03</Value>
             </MetaData>
             <UserGroupLink UserGroupID="ProductPlatformTeam2"></UserGroupLink>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>

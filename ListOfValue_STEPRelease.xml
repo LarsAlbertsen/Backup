@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <ListsOfValues>
-        <ListOfValue ID="STEPRelease" ParentID="KnowledgeCenter" AllowUserValueAddition="false" UseValueID="false" Referenced="true">
+        <ListOfValue ID="STEPRelease" ParentID="KnowledgeCenter" AllowUserValueAddition="false" UseValueID="false">
             <Name QualifierID="en-US">STEP Release</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
             <Value>10.0</Value>

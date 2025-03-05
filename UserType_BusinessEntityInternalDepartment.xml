@@ -4,10 +4,7 @@
         <UserType ID="BusinessEntityInternalDepartment" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Relaxed" IDPattern="[id]">
             <Name>Business Entity Internal Department</Name>
             <UserTypeLink UserTypeID="BusinessEntityInternal"></UserTypeLink>
-            <AttributeLink AttributeID="Description"></AttributeLink>
             <AttributeLink AttributeID="JIRAKey"></AttributeLink>
-            <AttributeLink AttributeID="LegalName"></AttributeLink>
-            <AttributeLink AttributeID="PrismCustomerCodeName"></AttributeLink>
             <AttributeLink AttributeID="PrismCustomerLicenseMode"></AttributeLink>
             <AttributeLink AttributeID="PrismCustomerStatus"></AttributeLink>
             <AttributeLink AttributeID="PrismCustomerType"></AttributeLink>

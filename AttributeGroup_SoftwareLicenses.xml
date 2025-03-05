@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <AttributeGroupList>
-        <AttributeGroup ID="SoftwareLicenses" ShowInWorkbench="true" ManuallySorted="false" Referenced="true" ParentID="SystemAndSoftwareRelevant">
+        <AttributeGroup ID="SoftwareLicenses" ShowInWorkbench="true" ManuallySorted="false" ParentID="SystemAndSoftwareRelevant">
             <Name>Software Licenses (STEP components)</Name>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>

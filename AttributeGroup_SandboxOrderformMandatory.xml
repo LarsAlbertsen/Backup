@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <AttributeGroupList>
-        <AttributeGroup ID="SandboxOrderformMandatory" ShowInWorkbench="true" ManuallySorted="false" Referenced="true" ParentID="SandboxOrderform">
+        <AttributeGroup ID="SandboxOrderformMandatory" ShowInWorkbench="true" ManuallySorted="false" ParentID="SandboxOrderform">
             <Name>STEP Environment Orderform Mandatory</Name>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>

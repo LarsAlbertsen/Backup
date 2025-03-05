@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <AttributeGroupList>
-        <AttributeGroup ID="CloudAttributesforDataContainer" ShowInWorkbench="true" ManuallySorted="false" Referenced="true" ParentID="SaasLicense">
+        <AttributeGroup ID="CloudAttributesforDataContainer" ShowInWorkbench="true" ManuallySorted="false" ParentID="SaasLicense">
             <Name>Cloud Attributes for Data Container</Name>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>

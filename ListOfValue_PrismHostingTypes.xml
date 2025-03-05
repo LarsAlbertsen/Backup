@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <ListsOfValues>
-        <ListOfValue ID="PrismHostingTypes" ParentID="Servers" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+        <ListOfValue ID="PrismHostingTypes" ParentID="Servers" AllowUserValueAddition="false" UseValueID="true">
             <Name QualifierID="en-US">Prism Hosting Types</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
             <Value ID="AWS">Step is running on Amazon AWS Cloud solutions</Value>

@@ -8,10 +8,6 @@
             </MetaData>
             <AttributeSequence>
                 <AttributeLink AttributeID="PrismJiraKey"></AttributeLink>
-                <AttributeLink AttributeID="PrismSystemName"></AttributeLink>
-                <AttributeLink AttributeID="PrismSystemSnapshotURI"></AttributeLink>
-                <AttributeLink AttributeID="STEPVersion"></AttributeLink>
-                <AttributeLink AttributeID="Description"></AttributeLink>
             </AttributeSequence>
         </AttributeGroup>
     </AttributeGroupList>

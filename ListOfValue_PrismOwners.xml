@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <ListsOfValues>
-        <ListOfValue ID="PrismOwners" ParentID="Systems" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+        <ListOfValue ID="PrismOwners" ParentID="Systems" AllowUserValueAddition="false" UseValueID="true">
             <Name QualifierID="en-US">Prism Owners</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="200" InputMask=""></Validation>
             <Value ID="CustomerOwned">The customer owns this system and must be asked before patching or changing anything</Value>

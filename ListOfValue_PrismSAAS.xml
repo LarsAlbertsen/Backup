@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <ListsOfValues>
-        <ListOfValue ID="PrismSAAS" ParentID="Customers" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+        <ListOfValue ID="PrismSAAS" ParentID="Customers" AllowUserValueAddition="false" UseValueID="true">
             <Name QualifierID="en-US">Prism SAAS</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
             <Value ID="NoSaas">Not SAAS</Value>

@@ -9,8 +9,6 @@
             <AttributeSequence>
                 <AttributeLink AttributeID="PrismBaseLicenseID"></AttributeLink>
                 <AttributeLink AttributeID="BaseLicenseName"></AttributeLink>
-                <AttributeLink AttributeID="MetricAbout-inmemory-enabled"></AttributeLink>
-                <AttributeLink AttributeID="Components"></AttributeLink>
             </AttributeSequence>
         </AttributeGroup>
     </AttributeGroupList>

@@ -7,13 +7,7 @@
             <UserTypeLink UserTypeID="BusinessEntityExternal"></UserTypeLink>
             <UserTypeLink UserTypeID="BusinessEntityInternal"></UserTypeLink>
             <UserTypeLink UserTypeID="BusinessEntityInternalDepartment"></UserTypeLink>
-            <AttributeLink AttributeID="ContractStatus"></AttributeLink>
-            <AttributeLink AttributeID="DateOfAgreementEffectiveDate"></AttributeLink>
-            <AttributeLink AttributeID="DateOfContractExpiration"></AttributeLink>
-            <AttributeLink AttributeID="DateOfLastEditRequest"></AttributeLink>
             <AttributeLink AttributeID="EnvironmentName"></AttributeLink>
-            <AttributeLink AttributeID="EnvironmentPurpose"></AttributeLink>
-            <AttributeLink AttributeID="EnvironmentUsage"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

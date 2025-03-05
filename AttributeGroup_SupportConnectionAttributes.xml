@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <AttributeGroupList>
-        <AttributeGroup ID="SupportConnectionAttributes" ShowInWorkbench="true" ManuallySorted="false" Referenced="true" ParentID="SupportRelevant">
+        <AttributeGroup ID="SupportConnectionAttributes" ShowInWorkbench="true" ManuallySorted="false" ParentID="SupportRelevant">
             <Name>Support Connection Attributes</Name>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>

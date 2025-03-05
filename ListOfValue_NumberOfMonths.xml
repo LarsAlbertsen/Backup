@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <ListsOfValues>
-        <ListOfValue ID="NumberOfMonths" ParentID="Systems" AllowUserValueAddition="false" UseValueID="true" DefaultUnitID="unece.unit.MON" Referenced="true">
+        <ListOfValue ID="NumberOfMonths" ParentID="Systems" AllowUserValueAddition="false" UseValueID="true" DefaultUnitID="unece.unit.MON">
             <Name QualifierID="en-US">Number Of Months</Name>
             <Validation BaseType="integer" MinValue="" MaxValue="" MaxLength="" InputMask="">
                 <UnitLink UnitID="unece.unit.MON"></UnitLink>

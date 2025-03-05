@@ -5,6 +5,7 @@
             <Name>PMIL</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Stibo standard user</Value>
+                <Value AttributeID="UserLastActivityDate">2025-03-04</Value>
             </MetaData>
             <UserGroupLink UserGroupID="NewUserGroup"></UserGroupLink>
             <UserGroupLink UserGroupID="ProductPlatform"></UserGroupLink>

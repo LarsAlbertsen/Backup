@@ -4,7 +4,12 @@
         <Attribute ID="ItemBulletCalc" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="true" Mandatory="false">
             <Name>ItemBulletCalc</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
-            <ValueTemplate>&lt;derive expr="value('Bullet05')"/&gt;</ValueTemplate>
+            <ValueTemplate>&lt;derive expr="{
+  a := value('Bullet01'),
+  b := value('Bullet02')
+}
+
+concatenate(a,':',b)"/&gt;</ValueTemplate>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>

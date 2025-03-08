@@ -56,6 +56,10 @@ ObjectTypeGroupings=
   <ObjectTypeRules>
     <ObjectType ObjectTypeID="stibo.businessrule.action"/>
   </ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="Group user-type root"/>
+    <ObjectType ObjectTypeID="Operator user-type root"/>
+  </ObjectTypeRules>
 </ObjectTypeRules>
 ParentTriggering=
 ProductTemplate=
@@ -80,8 +84,9 @@ UnitTemplate=
   <UnitList/>
 </STEP-ProductInformation>
 Version=3
-objecttype=BusinessRuleGroup;GlobalBusinessRules;stibo.businessrule.action -->
-                <Configuration>H4sIAAAAAAAA/9VUTVPbMBC98ys8vhPD9NKDFSZNgHqmLZnE0LNsb1IVWfJopTT013djy5jEzpDOcICbpP18T293ggg2hbKS3AKLr7alDDZgUGjFwsvRRRiAynUh1JqF9+nN+efwanwWL9Pr+fnc6MLlNlErbUpuKSJYAGq5gURJoWABK2ThikuEMLjRUuo/d5TaiAKWLvPRncf1ttLGzsCIDRQTa82zaXwWBPFk1yh6r6X4Cyz8LpQoXRkGM61sU2AqOaJYibzuJ9V1FDUChmBQiDWuyddmjOrkUZOdkEVHoI1jrKSw411jInMWvgn1iKkR6zV1rNaH5g9BaYcFd0S8Cv6A3Q8Acb/jYfl4Oey7BonKpStgzkk51gvHi+Ug6QnEJaqA7U9tiq8CDDf5r6eecu6y35Db9KmCW6NdRQZkcfe4cBKwLj/wtvcadMdkxsJbqTMuvzgkbhHrkBbHG2R/mbfu+w1zoxWZHmW+gqGQEc93rB6t0X/y5Da/2OPcf9i7F3Lcev/v+vNxQwuwzTkodP81P3gJUbstXy6+aHBmnsu05j7e1uKvU6NJO4dh9TIeNj1w6QDb24xbPiXwnOg2+FrVOPLXRj0tpyeMbyccmuFHrDgxOakqo+mrvMu9Eu9fRwR71+ep6/7BA/jk77oeLkvDxXpz33O5YAObp+d1yY5Ouff9B+X/UmuhCAAA</Configuration>
+attributeGroup=Attribute group root
+objecttype=BusinessRuleGroup;GlobalBusinessRules;Group user-type root;Operator user-type root;stibo.businessrule.action -->
+                <Configuration>H4sIAAAAAAAA/9VVTXPaMBC951dofAfycenBIkMhSZlpCwNOepbthaqRJY9WoqS/vrIt44JNQ2Y4JDdLevvxdt+uR4hgIshywQzQ8HabCbIBjVxJGlz1LwMCMlEpl2saPEb3vU/B7fAiXEZ3895cq9QmZipXSmfMOAuyAFRiA1MpuIQFrJAGKyYQAnKvhFC/Z8615iksbeytG8TdNlfaTEDzDaQjY/TuaXhBSDgqEkWPWvI/QINvXPLMZgGZKGmqAGPBEPmKJ2U+kSqtXCKgHQ1nYrSt/NUeB6XzQeXdMRscoTYMMRfcDIvEeGwNfOXyGSPN12uXsVwfPn+IkjZcsCjEq+QPqvsBKO5n3C0fL4d9KJnKRNgU5swpx3jheLEcOD2hcFOZwvaH0ukXDprp5OdLSzmz+BckJnrJ4UErm7sHpGFzubACsAzfcbd3S5rP6YQGD0LFTHy26GqLWJrUPM7g/V+/Zd5n9I2Gx6of+wjamfRZUlT1jDFmueuHUZpYBN0zBUArZaoI/y1rQbbTqiOv9pVveqWulha8kN79gIU1+q1r2dt1LebaZ+cA+q58ZxnUHdpbyIPOWd6F2XW1xbd+8cexVk7Th2blT6L76YkJC1ifJsywsSPPXLk1vhY1HPhjpZ66pieslUY4brc8Y85cJUd5rpVrlYc8Sv7+deRoF3me+ht68gRu/JnVEiiHku4UQdblkBaj6ZGqHMNiYGlrc7Ugl7Rjd7ZQV7RrFbRg1/TIqmkhb+jRxeexfwHx0R1VtAkAAA==</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

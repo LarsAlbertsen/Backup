@@ -4,7 +4,7 @@
         <User ID="ELFR" ForceAuthentication="false" EMail="elfr@stibosystems.com">
             <Name>Eli Frandsen.</Name>
             <MetaData>
-                <Value AttributeID="UserLastActivityDate">2025-03-11</Value>
+                <Value AttributeID="UserLastActivityDate">2025-03-12</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <UserGroupLink UserGroupID="SupplierI"></UserGroupLink>

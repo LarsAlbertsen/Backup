@@ -3,8 +3,14 @@
     <UserList>
         <User ID="MIBR" ForceAuthentication="false">
             <Name>MIBR</Name>
+            <MetaData>
+                <Value AttributeID="UserLastActivityDate">2025-03-12</Value>
+            </MetaData>
             <UserGroupLink UserGroupID="ProductPlatform"></UserGroupLink>
-            <SystemSetup></SystemSetup>
+            <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
+            <SystemSetup>
+                <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context3</SystemSetupValue>
+            </SystemSetup>
         </User>
     </UserList>
 </STEP-ProductInformation>

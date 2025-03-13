@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="SUPPLIER3-USER114" ForceAuthentication="false">
+        <User ID="SUPPLIER3-USER114" Deactivated="false">
             <Name>Supplier3-User114</Name>
             <UserGroupLink UserGroupID="Supplier3"></UserGroupLink>
             <SystemSetup></SystemSetup>

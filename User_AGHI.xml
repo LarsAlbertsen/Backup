@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="AGHI" ForceAuthentication="false" EMail="aghi@stibosystems.com">
+        <User ID="AGHI" EMail="aghi@stibosystems.com" Deactivated="false">
             <Name>Agata Hilaszek</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Software Developer Build - 521-GLOBAL Platform</Value>

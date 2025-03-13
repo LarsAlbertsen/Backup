@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="MJANMFA" ForceAuthentication="false">
+        <User ID="MJANMFA" Deactivated="false">
             <Name>mjanmfa</Name>
             <MetaData>
                 <Value AttributeID="UserLastActivityDate">2025-02-21</Value>

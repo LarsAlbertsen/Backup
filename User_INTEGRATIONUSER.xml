@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="INTEGRATIONUSER" ForceAuthentication="false" EMail="laal@stibosystems.com">
+        <User ID="INTEGRATIONUSER" EMail="laal@stibosystems.com" Deactivated="false">
             <Name>Integration User</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">User running all integrations</Value>

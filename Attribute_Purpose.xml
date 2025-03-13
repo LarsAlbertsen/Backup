@@ -23,6 +23,7 @@
             <UserTypeLink UserTypeID="BusinessRulesDownloadsRoot"></UserTypeLink>
             <UserTypeLink UserTypeID="ConfigurationsRoot"></UserTypeLink>
             <UserTypeLink UserTypeID="Context qualifier"></UserTypeLink>
+            <UserTypeLink UserTypeID="Event Processor user-type root"></UserTypeLink>
             <UserTypeLink UserTypeID="ExportConfigurationsLevel1"></UserTypeLink>
             <UserTypeLink UserTypeID="ExportConfigurationsLevel2"></UserTypeLink>
             <UserTypeLink UserTypeID="ExportConfigurationsRoot"></UserTypeLink>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="SIAP" ForceAuthentication="false">
+        <User ID="SIAP" Deactivated="false">
             <Name>SIAP</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Stibo standard user</Value>

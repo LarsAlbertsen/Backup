@@ -40,6 +40,12 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
+  }, {
+    "contract" : "SecretBindContract",
+    "alias" : "xx",
+    "parameterClass" : "com.stibo.passwordparameter.PasswordParameter",
+    "value" : "eRAjNzxQJ81jAUVjF4v9QDWSsyZ7tvnYsjF88Kkmyk8=",
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation",
@@ -47,7 +53,7 @@
   "functionParameterBinds" : [ ]
 }
 */
-exports.operation0 = function (root,logger,manager) {
+exports.operation0 = function (root,logger,manager,xx) {
 function isSupplierUser(u) {
 	var isVendor = true
 	u.getGroups().toArray().forEach(g => {
@@ -71,5 +77,6 @@ root.queryAllUsers().forEach(function(u){
 })
 logger.info(cnt)
 logger.info(cntNotVendor)
+logger.info(xx)
 return '';
 }

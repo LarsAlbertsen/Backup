@@ -9,6 +9,7 @@
             </MetaData>
             <AttributeGroupLink AttributeGroupID="TestAttributes"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Variant"></UserTypeLink>
         </Attribute>
     </AttributeList>
 </STEP-ProductInformation>

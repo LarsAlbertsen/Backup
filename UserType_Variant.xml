@@ -57,6 +57,7 @@
             <AttributeLink AttributeID="ELFRAttr2"></AttributeLink>
             <AttributeLink AttributeID="ELFRAttr3"></AttributeLink>
             <AttributeLink AttributeID="GTIN"></AttributeLink>
+            <AttributeLink AttributeID="ISODateAttribute"></AttributeLink>
             <AttributeLink AttributeID="MFGPartNo"></AttributeLink>
             <AttributeLink AttributeID="MarketingCopy"></AttributeLink>
             <AttributeLink AttributeID="PortionOfWood"></AttributeLink>

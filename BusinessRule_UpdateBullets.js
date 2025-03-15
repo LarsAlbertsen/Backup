@@ -6,13 +6,13 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "SetISODateAttribute",
+  "id" : "UpdateBullets",
   "type" : "BusinessAction",
   "setupGroups" : [ "PAExampleRules" ],
-  "name" : "SetISODateAttribute",
+  "name" : "UpdateBullets",
   "description" : null,
   "scope" : "Global",
-  "validObjectTypes" : [ "Branch", "Item", "Leaf", "ProductRoot", "Variant" ],
+  "validObjectTypes" : [ "Branch", "Family", "Item", "Leaf", "ProductRoot", "Variant" ],
   "allObjectTypesValid" : false,
   "runPrivileged" : false,
   "onApprove" : "Never",
@@ -34,34 +34,40 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
-  }, {
-    "contract" : "AttributeBindContract",
-    "alias" : "attr",
-    "parameterClass" : "com.stibo.core.domain.impl.AttributeImpl",
-    "value" : "ISODateAttribute",
-    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (root,logger,attr) {
+exports.operation0 = function (root,logger) {
 function log(msg) {
 	logger.info(msg)
 }
 
+function appendTo(n, aid, txt) {
+	var v = n.getValue(aid).getSimpleValue()
+	n.getValue(aid).setSimpleValue(v + txt)
+}
+
 var count = 0
 function handle(n) {
-	if (n.getObjectType().getID() == "Item" || n.getObjectType().getID() == "Variant") {
+	if (n.getObjectType().getID() == "Family" || n.getObjectType().getID() == 'Variant') {
 		var now = new Date().toISOString();
 		count++
-		n.getValue(attr.getID()).setSimpleValue(now.substring(0,10) + ' ' + now.substring(11,19))
-	} else {
-		n.queryChildren().forEach(child => {
-			handle(child)
-			return true;
-		})	
-	}
+		appendTo(n, 'Bullet02', 'x')
+		appendTo(n, 'Bullet03', 'x')
+		appendTo(n, 'Bullet04', 'x')
+		appendTo(n, 'Bullet05', 'x')
+		appendTo(n, 'Bullet06', 'x')
+		appendTo(n, 'Bullet07', 'x')
+		appendTo(n, 'Bullet08', 'x')
+		appendTo(n, 'Bullet09', 'x')
+		appendTo(n, 'Bullet10', 'x')
+	} 
+	n.queryChildren().forEach(child => {
+		handle(child)
+		return true;
+	})	
 }
 
 handle(root)

@@ -4,7 +4,7 @@
         <User ID="PRODUCTSUFFICIENCYUSER" Deactivated="false">
             <Name>Product Sufficiency User</Name>
             <MetaData>
-                <Value AttributeID="UserLastActivityDate">2025-03-15</Value>
+                <Value AttributeID="UserLastActivityDate">2025-03-16</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Service Users"></UserGroupLink>
             <SystemSetup></SystemSetup>

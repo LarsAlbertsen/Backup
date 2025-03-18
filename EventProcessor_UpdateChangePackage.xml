@@ -31,7 +31,7 @@ ScheduleSpecification=
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>Update ChangePackage</Name>
             <Configuration>H4sIAAAAAAAA/6VU247aMBB95yuiqOKtXFSpWnUhFEJoK0FJgS19q4wzCyOMnXrsLfTr61ygCzTdSuQlmck5Z8bjmQmVfMS11cygkt1Ob78T3hNoyiy/3Wj5HkiuEpTrrv+wGL2+83tBrZMKu0bpYdL1oyeQJtaKA5HSA0YQPpf0g5rndQh3qYAcPwNKlSRcCXgg0H5ABtJ3zaZ1Rs8Bxv3+uNMsCJfcATN8M8df4AftVqtVBRuyAy3UDAxDmadHflAJjjUqjebgJKsgXyxYFzL6Gs+mYRVowvZTkZSFAMozrMJ+VFafMrxgvb2rYo1RAsWgBx/if59/xFA4bX2IJHNlTvzAaAsvop00Kgd+00qqsNPU4A7JIB8rvv3/GH/hHaO1W5sq1pxvILECvk3G34dRPIvC/iIa+kFdmPuzRq3/sMrcu24tPnr1tbmvZSh39xqBctvzjp6DxwUjKmlc7Rous5VqWIOiQWXQBB5RYtbCjWMew5Pr1dHl2ksfJiitgULNhSkfyH4dUytezVNizeeZ/Tl/p1lMlvuiVKAJIq2VnkGqtAF9+3hGO3fZZ5pX8zlihokc108S7Vh+IBgT7/MS0cFN644armZVl3YD9ZPkwiawZFq6A9FlS10VJ87N8NYNNrCUTRb1eaawRLPJi5Yvm/PyFQGvSnYucNpoq9KtXZ9km20OTIQbJtcQM75l68ppcScysDcnIV7YmUb5q3JVLZXeUso4nMg/j56MPnH7pnLatpgOQYCB5LNK4OXy/waClJADOwYAAA==</Configuration>
-            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
+            <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">

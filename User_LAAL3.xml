@@ -5,7 +5,7 @@
             <Name>Lars Albertsen (Extension)</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Stibo standard user</Value>
-                <Value AttributeID="UserLastActivityDate">2025-03-13</Value>
+                <Value AttributeID="UserLastActivityDate">2025-03-17</Value>
             </MetaData>
             <UserGroupLink UserGroupID="NewUserGroup"></UserGroupLink>
             <UserGroupLink UserGroupID="ProductPlatform"></UserGroupLink>

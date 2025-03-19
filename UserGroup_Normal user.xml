@@ -5,6 +5,7 @@
             <Name>Normal user</Name>
             <PrivilegeRule ActionSetID="All setup actions"></PrivilegeRule>
             <PrivilegeRule ActionSetID="ViewSetupActions"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="ViewUserActions" ClassificationID="TestClassifications"></PrivilegeRule>
         </UserGroup>
     </UserGroupList>
 </STEP-ProductInformation>

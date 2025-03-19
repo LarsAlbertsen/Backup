@@ -4,6 +4,9 @@
         <STEPWorkflow ID="MaintainItem" Referenced="true"><!-- Definition:
 <scxml name="MaintainItem" initial="Initial" version="0.9">
   <assignee id="$current" type="user"/>
+  <datamodel>
+    <data id="ShortVariable" attribute="ShortVariable"/>
+  </datamodel>
   <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=238.0  </editorLayout>
   <final id="Final" discontinued="false">
     <editorLayout>   node-size-and-position x=20.0 y=193.0 w=100.0 h=25.0  </editorLayout>
@@ -18,13 +21,29 @@
     <transition target="Final"/>
     <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
   </state>
-</scxml> -->
+</scxml>
+<workflowViews>
+  <restriction displaySequence="0" includeSubgroups="false">
+    <mapping displaySequence="0" stateID="Initial" viewID="MainView"/>
+    <mapping displaySequence="1" stateID="Maintain" viewID="MainView"/>
+    <mapping displaySequence="2" stateID="Final" viewID="MainView"/>
+  </restriction>
+  <view id="MainView" automaticSort="false" defaultSortColumn="0">
+    <aspect id="id"/>
+    <aspect id="name"/>
+    <column name="ShortVariable" mandatory="false" readOnly="false">
+      <plugin pluginID="WorkflowVariable">
+        <parameter id="Variable" value="ShortVariable"/>
+      </plugin>
+    </column>
+  </view>
+</workflowViews> -->
             <BusinessRuleLink ID="LongRunning"></BusinessRuleLink>
             <BusinessRuleLink ID="RemoveFromWorkflow"></BusinessRuleLink>
             <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
             <Name>Maintain Item</Name>
             <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
-            <Configuration>H4sIAAAAAAAA/52TT2/bMAzF7/kUrLCrYydp0T+wfBkQIECHFh2GnTWbcYjZlCHRcbJPX1lJ2m1YsKAHiwfx8f0eIZte7IpJyAg+8WeHoeq1aTzmvmtICtxh2Qt+LR118kgtCVbPjrbUYI1ei+tPnQ15QX7iVdtZJ+i+ddXfw3y5axudxwIUbRutDv6NAjYtavXFEEv4VoKtgi06T5a1yqb3CoKOvVYbke4hTYdhmA6LqXV1Os+ymzS7TeNoVeRXSQIAbCtMPP3CxHCVdNYHI8uw09k0g308Bz27HutGzxd3oUKSFBPIjfdUMyJQpdWnsncOWRTIvguEvUcXPNJTUzEJCi8hLVTkS8tC3GMQxuwqzjiF/C/a/MB2vTjAZUe4mzc2yC0HGLeHH70nRu9NOWpHl0fL9UvPTFyPgMfGkQ9ycYaPLmJcjfK+6rH3/bqY5GlMc0mu30ZcFmw2uzuf7B+MS+K4trOA67HhPOBJfyHd/Yf2/oKt3eLS2fa7dT/XjR3+WH+eRsjIPT7Q4vg/vALE2YHWfgMAAA==</Configuration>
+            <Configuration>H4sIAAAAAAAA/51Uy27bMBC85ytYoldZspOgTiA6hxQBDKRIETfpmZbWClGKVPmw4n59l5T8TlKjB5sSxZ3ZmeUu905PlXCCO3hQtwZwZQsuLeS2kcJN4BUK72BWGNG4e1ELB+V3I5ZCQgWWOePXJ6WwDtSDmtaNNg7MU1MegtnitZYsjwsRkVYy2vFLShSvgdFvXCiHv6mDmpIlGCu0YjQbXFGCccoy+uJcc52mbdsO2vOBNlU6yrLLNPuSRmg6yT8lCSFE6RISK/5AwlWZNNoikVbklWWDjKzif8uGF2F9YaPzMa4kSSZnJMfUeY3REl+6N8KdM2KOXjA6e0GFz9wIPpdAiSgPtyZ5GmImZ93aIyEut1ZUCiDGfC68MaAcJW7VIKy3YELo+lCMsA5dJKWwhVZOKA8YGD3teNfm/VPyqNN8cd6JznrRlxvNJNcKkzErMvdWKLCWFyE2sNxrVT16pYSqQoL9wZAfyZ3hqmdx3FTgtiUMZ7efgxtRzSm6diBOEzYcjt9X9kaOd0JF295NcBEOvJ/gOv7E7K7+y/dHqPUS7oyuf2rzayF1u2d/nsYkY97h4k/6PlsKaFl+E7ps0z/DQUYJqEKXWERGn37cJWNKUK4quURERldg6Q1iKTu6bnu6Z0SyXdtd4/5e61kn5npQ6JoGFagj0G6KFyIpKWHBvXQzbI5bLX0dGpkSjlOn5k4UYX/tagcSgbhtoHARSpQ0fftLmBZ734pI0E+RgxbFwVY+KLnalLAOup02q2P6CNZIXwlFumX6ldF1AbY9vhfQBXGD5Dj7YoJb9iWX/iin9IAx7bh2BKWdot7dNNjbPxuwOIziNcE5WkhfwszPK6N9YzcS8eo2kq9m8Ntj3SE4vwNe86bBm0DihQ8CN2M48ISNnSoeI6UfQW2a9xSs4cdYXZ+dAjRaA+Xpjj+hOY5uNG52nfIXxNQDRwAHAAA=</Configuration>
         </STEPWorkflow>
     </STEPWorkflows>
 </STEP-ProductInformation>

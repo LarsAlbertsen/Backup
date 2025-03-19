@@ -55,10 +55,12 @@ exports.operation0 = function (logger,source,result,elogger) {
 var data = source.getContentAsString();
 var before = java.lang.System.currentTimeMillis();
 elogger.logInfo('Splitter data length=' + data.length())
+logger.info('Splitter data length=' + data.length())
 var doc = JSON.parse(data)
 doc.data.forEach(function(l) {
 	result.addMessage(l)
 })
 var after = java.lang.System.currentTimeMillis();
 elogger.logInfo('Done with splitting ' + (after - before))
+logger.info('Done with splitting ' + (after - before))
 }

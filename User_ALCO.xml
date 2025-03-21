@@ -4,12 +4,13 @@
         <User ID="ALCO" EMail="alco@stibo.com" Deactivated="false">
             <Name>Alain Colleu</Name>
             <MetaData>
-                <Value AttributeID="UserLastActivityDate">2025-03-19</Value>
+                <Value AttributeID="UserLastActivityDate">2025-03-20</Value>
             </MetaData>
             <UserGroupLink UserGroupID="ProductPlatformTeam2"></UserGroupLink>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>
                 <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">GL</SystemSetupValue>
+                <SystemSetupValue Type="Config" Name="PIMGUILocalizeDates">Y</SystemSetupValue>
             </SystemSetup>
         </User>
     </UserList>

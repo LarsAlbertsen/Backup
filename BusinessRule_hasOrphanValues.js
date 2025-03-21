@@ -52,6 +52,7 @@ var oCount = 0;
 var nodeCount = 0;
 var seen = {}
 function checkNode(n) {
+	var orphans = {}
 	nodeCount++
 	n.getValues().toArray().forEach(v => {
 		if (v.isLocal()) {
@@ -62,26 +63,28 @@ function checkNode(n) {
 				}
 				seen[a].push(n.getID()+'');
 				oCount++
+				orphans[a] = v.getSimpleValue()
 			}
 		}
 	})
 	
-	n.queryChildren().forEach(child => {
-		checkNode(child)
-		return true;	
-	})
+	//n.queryChildren().forEach(child => {
+	//	checkNode(child)
+	//	return true;	
+	//})
+	return orphans
 }
 
 
 
 //############################## MAIN ##############################
-checkNode(root)
+var res = checkNode(root)
 log('Node Count ' + nodeCount)
 log('Orphan Count ' + oCount)
-
-Object.keys(seen).forEach(a=> {
-	log(a + '\t' + seen[a].length + '\t\t' + seen[a].slice(0,5) + '......')
-})
-
+//log(JSON.stringify(seen))
+//Object.keys(seen).forEach(a=> {
+//	log(a + '\t' + seen[a].length + '\t\t' + seen[a].slice(0,5) + '......')
+//})
+return JSON.stringify(res)
 
 }

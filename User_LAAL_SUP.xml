@@ -8,7 +8,9 @@
             </MetaData>
             <UserGroupLink UserGroupID="AcmeSupplier"></UserGroupLink>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
-            <SystemSetup></SystemSetup>
+            <SystemSetup>
+                <SystemSetupValue Type="Config" Name="PIMGUILocalizeDates">N</SystemSetupValue>
+            </SystemSetup>
         </User>
     </UserList>
 </STEP-ProductInformation>

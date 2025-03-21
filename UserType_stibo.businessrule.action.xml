@@ -7,6 +7,7 @@
             <UserTypeLink UserTypeID="BusinessRuleGroup"></UserTypeLink>
             <UserTypeLink UserTypeID="GlobalBusinessRules"></UserTypeLink>
             <UserTypeLink UserTypeID="InboundSetupGroupCategory"></UserTypeLink>
+            <UserTypeLink UserTypeID="OutboundSetupGroupCategory"></UserTypeLink>
             <UserTypeLink UserTypeID="Workflow Auditing"></UserTypeLink>
             <UserTypeLink UserTypeID="Workflows"></UserTypeLink>
         </UserType>

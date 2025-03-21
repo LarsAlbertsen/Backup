@@ -40,12 +40,18 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
+  }, {
+    "contract" : "BusinessFunctionBindContract",
+    "alias" : "hov",
+    "parameterClass" : "com.stibo.core.domain.impl.businessrule.function.javascript.reference.BusinessFunctionReferenceImpl",
+    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>hasOrphanValues</BusinessFunction>\n</BusinessFunctionReference>\n",
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,logger,manager) {
+exports.operation0 = function (node,logger,manager,hov) {
 /*var user = manager.getUserHome().getUserByID('ELFR')
 
 user.getValues().toArray().forEach(function(v) {
@@ -57,18 +63,25 @@ var res = method.invoke(user)
 logger.info(res)
 */
 
+function checkNode(n) {
+	var orphans = {}
+	n.getValues().toArray().forEach(v => {
+		if (v.isLocal()) {
+			if (v.isOrphan()) {
+				var a = v.getAttribute().getID() + ''
+				orphans[a] = v.getSimpleValue()
+			}
+		}
+	})
+	return orphans
+}
 
 //var nc = manager.getNodeCollectionHome().getNodeCollectionByID('32159714')
-var nc = manager.getNodeCollectionHome().getNodeCollectionByID('108118')
+var x = checkNode(node)
+logger.info(x)
+logger.info(Object.keys(x).length)
 
-logger.info(nc)
-var q = nc.queryNodes()
-q.forEach(function(n){
-	logger.info(n)
-	return true;
-})
-
-
+//logger.info(hov.evaluate({root:node}))
 /*
 var a = manager.getAttributeHome().getAttributeByID('Bullet01')
 logger.info(a.getValidatorName())

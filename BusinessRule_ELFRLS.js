@@ -59,7 +59,7 @@ var tmp = (dir.getName() + '').split('/')
 var fileToPrint = tmp[tmp.length - 1]
 
 files.forEach(function(f) {
-	logger.info((f.isDirectory()?'d':(f.isFile()?'f':'UnknownType')) + ' ' + f)	
+	logger.info((f.isDirectory()?'d':(f.isFile()?'f':'UnknownType')) + ' ' + f + (f.isDirectory()?'':'   length=' + f.length()))	
 	if (f.isFile() &&  fileToPrint == f.getName()) {
 		var sb = new java.lang.StringBuilder()
 		var br = new java.io.BufferedReader(new java.io.FileReader(f))

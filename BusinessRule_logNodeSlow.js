@@ -40,6 +40,7 @@
 }
 */
 exports.operation0 = function (node,logger) {
-java.lang.Thread.sleep(310*1000)
+//java.lang.Thread.sleep(310*1000)
+java.lang.Thread.sleep(22)
 logger.info('node ' + node)
 }

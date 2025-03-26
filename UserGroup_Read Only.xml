@@ -3,6 +3,7 @@
     <UserGroupList>
         <UserGroup ID="Read Only" ReadOnly="false" MultifactorAuthenticationRequired="false">
             <Name>Read Only</Name>
+            <PrivilegeRule ActionSetID="ViewSetupActions"></PrivilegeRule>
         </UserGroup>
     </UserGroupList>
 </STEP-ProductInformation>

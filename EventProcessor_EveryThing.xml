@@ -18,14 +18,21 @@ Configuration=
   <simple id="ResponsibleUser">step://user?id=STEPSYS</simple>
 </plugin>
 PluginConfiguration=
-<plugin id="ExpandLOVChangesEventProcessorPlugin"/>
+<plugin id="BusinessActionEventProcessorPlugin">
+  <simple id="BusinessAction">step://businessrule?id=DebugMessages</simple>
+  <simple id="Context">step://context?id=Context1</simple>
+  <simple id="SkipDeletedNodes">false</simple>
+  <simple id="Workspace">step://workspace?id=Main</simple>
+  <simple id="WorkspaceTriggering">Main</simple>
+  <simple id="collateNodes">false</simple>
+</plugin>
 ScheduleSpecification=
 <entries>
   <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleNever"/>
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>EveryThing</Name>
-            <Configuration>H4sIAAAAAAAA/6VT3W/TMBB/718RWVPfSDIhoYmmqWiawUNHQ9JN4wl5yTU94drBZ0/t/nrc9INmIiDBm+/0+7J9lyi5wtpqblDJcTTZboT3DJr2Fbv2Q+aBLFWFsh6z++Xtmxs2iQdRI2yN0sNqzNJnkCbTqgQipaecILmUZPHA8yLCTSOgxedAjZKETwLuCTSLyUDzPgisKyYOUCzTrPhaRMGB85o+5aZcF/gCLL4Ow7APNuM7WqocDEfZJiQW94IzjUqj2TnJPsgXC9ZZpg9Zvkj6QHd8uxDV8S2A2oR92E/K6nPCV6x3N32sOUqgDPT0Y/bn+99yFE5b71LJ3UtXLDbawl/RThqVA78Nqz7sojG4QTJYzlX5veux4oJ6TX5DPNn1UYpyDZUV8Hg3/zZLszxNPizTGYuHwow6kzr8YZUZuXE9HCbD2owGe5T7eY1Abe15p87OKwUnOtJKtfFdrCflW4PCp6NpBSuUuJ9h/5Rjdm5dnVqfwWU46ARn1+DS9tflouCwN+5EjUATp1ornUOjtAH9L8vnAnErTHcHO6osOLtlLS/574XfNlxW88VDsuayBuqaH0wuXH8CBYnW+mEEAAA=</Configuration>
+            <Configuration>H4sIAAAAAAAA/6VUW2/aMBR+76+IvIm3kaBJUzUgqJB0e4CSEbrL02ScQ3qEiTNfWtivn0MgW2jNpO3NPvluds7xRBRrzI2kGkUxHIx2W+49glTVjvS6AfGgYCLDIh+S++Xtm2syCq8GJTc5Fh5mQxI/QqETKRgoJeSYKpj8KUnCK88bKNyWHA74BahSFApXHO4VSBIqDeV73zd2M7KAdBkn6bd04Necc/qYavaQ4k8gYS8IAhcsonu1FAvQFItDQkVCJziRKCTqvZV0QT4ZMNYy/pws5hMXaEZ3c54d7wLUIaEL+1EY2SQ8Y727drGmWIBKQI4/JJfPf0uRW225jwtqbzojoZYG/oq20igs+G2QubDzUuMWlUY2FWzT9lhTrpwmLxBPdi5Kyh4gMxy+zqbfozhZxJObZRyRsMN1v9WpnR9G6L5t13ox6uS633nVC/oV0v59iaCamuedqnuPcarUkc7EtmvjrUTXaORddTTPYI0FVr3cPeWJmtLrU+kObJZax2+5++f2vw878Os5sitVctRhLKWQCyiF1CD/ZRhtMGq4bs9kS5X4jVty4E3+9wEYG1V1pbphlULburZ49ga0Kc0TsDqWpb3P6imIYGXymS3QHJSrR2x+DTvdiLB6X/GPn5xD/UXIjSopg4b8dKpU9JmdTBeVCc6phjuRVRN7se8bl6XEPLcdX+QkvKSdbrCMgIOG7GX9Z33zC0nlWqnFBQAA</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
@@ -45,6 +52,7 @@ ClassificationTemplate=
   </Classifications>
 </STEP-ProductInformation>
 IndexWordHierarchyTriggering=
+NameTriggering=
 ObjectTypeGroupings=
 <ObjectTypeRules>
   <ObjectTypeRules>
@@ -59,6 +67,9 @@ ObjectTypeGroupings=
   <ObjectTypeRules>
     <ObjectType ObjectTypeID="Group user-type root"/>
     <ObjectType ObjectTypeID="Operator user-type root"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="Item"/>
   </ObjectTypeRules>
 </ObjectTypeRules>
 ParentTriggering=
@@ -78,15 +89,15 @@ ProductTemplate=
     </Product>
   </Products>
 </STEP-ProductInformation>
-TriggeringWorkspace=Approved
+TriggeringWorkspace=Main
 UnitTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <UnitList/>
 </STEP-ProductInformation>
 Version=3
 attributeGroup=Attribute group root
-objecttype=BusinessRuleGroup;GlobalBusinessRules;Group user-type root;Operator user-type root;stibo.businessrule.action -->
-                <Configuration>H4sIAAAAAAAA/9VVTXPaMBC951dofAfycenBIkMhSZlpCwNOepbthaqRJY9WoqS/vrIt44JNQ2Y4JDdLevvxdt+uR4hgIshywQzQ8HabCbIBjVxJGlz1LwMCMlEpl2saPEb3vU/B7fAiXEZ3895cq9QmZipXSmfMOAuyAFRiA1MpuIQFrJAGKyYQAnKvhFC/Z8615iksbeytG8TdNlfaTEDzDaQjY/TuaXhBSDgqEkWPWvI/QINvXPLMZgGZKGmqAGPBEPmKJ2U+kSqtXCKgHQ1nYrSt/NUeB6XzQeXdMRscoTYMMRfcDIvEeGwNfOXyGSPN12uXsVwfPn+IkjZcsCjEq+QPqvsBKO5n3C0fL4d9KJnKRNgU5swpx3jheLEcOD2hcFOZwvaH0ukXDprp5OdLSzmz+BckJnrJ4UErm7sHpGFzubACsAzfcbd3S5rP6YQGD0LFTHy26GqLWJrUPM7g/V+/Zd5n9I2Gx6of+wjamfRZUlT1jDFmueuHUZpYBN0zBUArZaoI/y1rQbbTqiOv9pVveqWulha8kN79gIU1+q1r2dt1LebaZ+cA+q58ZxnUHdpbyIPOWd6F2XW1xbd+8cexVk7Th2blT6L76YkJC1ifJsywsSPPXLk1vhY1HPhjpZ66pieslUY4brc8Y85cJUd5rpVrlYc8Sv7+deRoF3me+ht68gRu/JnVEiiHku4UQdblkBaj6ZGqHMNiYGlrc7Ugl7Rjd7ZQV7RrFbRg1/TIqmkhb+jRxeexfwHx0R1VtAkAAA==</Configuration>
+objecttype=BusinessRuleGroup;GlobalBusinessRules;Group user-type root;Item;Operator user-type root;stibo.businessrule.action -->
+                <Configuration>H4sIAAAAAAAA/9VVy3LaMBTd5ys03gNJ00UXFhkKSeqZpjDgpGvZvlA1suTRg5J+fSVbhoJMQ2dYJDtL93muzj0eKQU6hbJiRAOObzYlQ2uQigqOo6v+ZYSA56KgfIWjx/Su9ym6GV7Ei/R21ptJUZhcJ3wpZEm0jUBzUIKtIeGMcpjDUuFoSZiCCN0JxsSvqU0taQELk/noncftphJST0DSNRQjreXWNLxAKB65RpX3WtDfgKMHymlpyghNBNdNgTEjStElzet+UlFH2UZAWhg2REvT5GszDurkgya7RTY4Am0Yq4pRPXSN0cxo+Er5s0olXa1sx3x1aH4XI91hUW4Qr4I/mO47gLjfcTd9PB32XVHCc2YKmBHLHO2J48lykPSEwSW8gM13IYsvFCSR+Y+XgDnfSAnB5TT7CblOXyq4l8JU1qBwvLucGwaq7qnjbu8W7T6TCY7umcgI+2yUHbhSdUgL7gzZ/85b933G3ErTTPQzX0HakD7J3ajPWGNa2UfSQiKjQPa0c5BC6KbCP8fqwHZGnaWvREN5NF145TnUMDiglifrm1/iuPX+X+n3cV3i3+bsXHL/Cm4f2wffE/1Bp15sy2xJEuBtLf44lsKuyGFY/SPqNj0RZkC1pwnRZGzBEztuqV6rGg/8sWFPO9MTpGtHHKtfz6oidpIPtqg3P3L69jlkIbs+T/3NPXkA1/5M2uev9xtv2YBW9b67Lfeeol5Bt/s4EMHA5RJ3yHDgdYW7VCVw+4CdOgTX1/iImAWeH/FRafW+fwAyq2EaKwoAAA==</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

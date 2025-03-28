@@ -62,8 +62,14 @@ ClassificationTemplate=
 NameTriggering=
 ObjectTypeGroupings=
 <ObjectTypeRules>
-  <ObjectTypeRules>
+  <ObjectTypeRules ConditionID="ELFRTrueWithLog">
     <ObjectType ObjectTypeID="Item"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ConditionID="ELFRTrueWithLog">
+    <ObjectType ObjectTypeID="Operator user-type root"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ConditionID="ELFRTrueWithLog">
+    <ObjectType ObjectTypeID="Group user-type root"/>
   </ObjectTypeRules>
 </ObjectTypeRules>
 ParentTriggering=
@@ -90,8 +96,9 @@ UnitTemplate=
 </STEP-ProductInformation>
 Version=3
 attribute=Bullet01;Bullet02;Bullet03;Bullet04;Bullet05;Bullet06
-objecttype=Item -->
-                <Configuration>H4sIAAAAAAAA/9VUwVLbMBC98xUe36kToJ0erDAhgY5nCmQSA2fF3mRUZMmjlQLt11e2JUxsM4Qb3Kx92t33Vs87RQSdQlFyqoHE588FD3agkElBwvG3URiAyGTOxJaEd+nV8c/wfHIUr9LLxfFCydxkOhEbqQqqbUawBJR8B4ngTMASNkjCDeUIYXAlOZdPt7a0YjmszNpltzcun0up9BwU20E+1Vq9QJOjIIinFVF0t1bsH5DwmglWmCIM5lLopsGMU0S2YVnNJ5V1liUCysqwKVqZpp6vGNXFo6a6VRa9IW0SY8mZnlTE2Npo+M3EI6aKbbeWsdh24S8x0lYLVoN4V3xnul9A4j7jYfs4O+xfDRKRcZPDglrnaGccZ5ZO0QMGd0ML6Hnldv0HMp3+LeGXkqa0AJK4DS4NB6wbDsT2okH7mcxJmGgoPNVeaj/k2DRCeySdpk//1rG//dEN4fKGdoSvOegF9wrVy0Z+obzeDdGgrV7aeLiv1yPuOFMSsZdW76th6J5yA+hPc6rpzIqndtwK3+saR+7YuMfP9ACHt8Z5kOoRS2oneW2bOvhOsM/vISu54nnoNrx3Ak7dmfrnJxeGc9CjcRcYeeSki4w90it24pGzLnLqke9d5MwjPxwi639e23+eVNvBRf8DdkiSsPwHAAA=</Configuration>
+attributeGroup=Attribute group root
+objecttype=Group user-type root;Item;Operator user-type root -->
+                <Configuration>H4sIAAAAAAAA/9VVy3LaMBTd5ys03lNDXtOFRYby6DBDCgNOshb44qqRJY8k07RfX8mWcGI7E7poJ9lZOvd9j45HSoGOIcsZ0YCjm6eMoQNIRQXHweBTP0DAdyKhPMXBXTzrfQ5uhmfRJp6ueispkmKn53wvZEa08UBrUIIdYM4Z5bCGvcLBnjAFAZoJxsTPpQktaQKbYuu8a4vpUy6knoCkB0hGWssjNDxDKBrZQpWz2tDfgINbymlWZAGaCK6rBGNGlKJ7uivriUXpZQoBadowLloWVTwfMSyDh1V001n4SmvDSOWM6qEtjG4LDQvKH1UsaZqainnahD/ESOtelB3Em803pvsBWnxZcTd9HB1emqI537EigRUxzNGOOI4sjaAnDO4byaDFleX2B+x0/CuHr1IUuQEUjurLdcFAlQkbd2gseEJt+PkEB9PFbB2b4h6o/r4Qqe+m9kH1p7Wfa8h8I/882TIHSbSQqFAge9oaSCH0f8tfDvbU5O0rt6iKA639uXW/+2cQeeu/FU/n1yWfPmbnM3FbsaQPvdY+l82w88Ud03i43a9H3HEshVItt1LKu6F7wgpQ/jQhmhh2aWLGLdVbWaPQHSv2+Jme8Phr4jwI+ahyYiZ5a5I6+I7T988h07Kt89Qfxb1r4MKdiV8//lIwBro/aAJ9j5w3kYFHWsHOPXLZRC48ctVELj1y3URKrcBHoqK01A6rGM5SlOpgdQR36UrL6gpbrW1dX+NXVNFZ/gELaf8CkgkAAA==</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

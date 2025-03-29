@@ -4,7 +4,7 @@
         <User ID="MJANMFA" Deactivated="false">
             <Name>mjanmfa</Name>
             <MetaData>
-                <Value AttributeID="UserLastActivityDate">2025-02-21</Value>
+                <Value AttributeID="UserLastActivityDate">2025-03-28</Value>
             </MetaData>
             <UserGroupLink UserGroupID="MFAUsers"></UserGroupLink>
             <SystemSetup>

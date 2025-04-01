@@ -4,6 +4,9 @@
         <UserType ID="AutoTest" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Strict">
             <Name>AutoTest</Name>
             <UserTypeLink UserTypeID="Entity user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="DescrptionOnEntity"></AttributeLink>
+            <AttributeLink AttributeID="LastEdited"></AttributeLink>
+            <AttributeLink AttributeID="LastEdited_manuel"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

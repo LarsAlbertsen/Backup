@@ -4,6 +4,9 @@
         <UserType ID="MyEntity" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]" NamePattern="MyEntity">
             <Name>MyEntity</Name>
             <UserTypeLink UserTypeID="MyEntities"></UserTypeLink>
+            <AttributeLink AttributeID="DescrptionOnEntity"></AttributeLink>
+            <AttributeLink AttributeID="LastEdited"></AttributeLink>
+            <AttributeLink AttributeID="LastEdited_manuel"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

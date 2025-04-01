@@ -27,6 +27,7 @@
             <UserTypeLink UserTypeID="ExportConfigurationsLevel1"></UserTypeLink>
             <UserTypeLink UserTypeID="ExportConfigurationsLevel2"></UserTypeLink>
             <UserTypeLink UserTypeID="ExportConfigurationsRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="GatewayEndpoint user-type root"></UserTypeLink>
             <UserTypeLink UserTypeID="IconRoot"></UserTypeLink>
             <UserTypeLink UserTypeID="IllustrationRoot"></UserTypeLink>
             <UserTypeLink UserTypeID="ImportConfigurationsLevel1"></UserTypeLink>
@@ -35,6 +36,7 @@
             <UserTypeLink UserTypeID="InstallationManualRoot"></UserTypeLink>
             <UserTypeLink UserTypeID="LogoRoot"></UserTypeLink>
             <UserTypeLink UserTypeID="MSDSRoot"></UserTypeLink>
+            <UserTypeLink UserTypeID="OutboundEndpoint user-type root"></UserTypeLink>
             <UserTypeLink UserTypeID="OwnersManualRoot"></UserTypeLink>
             <UserTypeLink UserTypeID="PortalConfigurationsLevel1"></UserTypeLink>
             <UserTypeLink UserTypeID="PortalConfigurationsRoot"></UserTypeLink>

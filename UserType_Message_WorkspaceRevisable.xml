@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserTypes>
-        <UserType ID="Merge_Golden_Record_Root" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Strict">
-            <Name>Merge_Golden_Record_Root</Name>
-            <UserTypeLink UserTypeID="Entity user-type root"></UserTypeLink>
+        <UserType ID="Message_WorkspaceRevisable" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Workspace" IsCategory="false" ReferenceTargetLockPolicy="Relaxed" Referenced="true">
+            <Name>Message_WorkspaceRevisable</Name>
+            <UserTypeLink UserTypeID="Messages"></UserTypeLink>
             <AttributeLink AttributeID="DescrptionOnEntity"></AttributeLink>
             <AttributeLink AttributeID="LastEdited"></AttributeLink>
             <AttributeLink AttributeID="LastEdited_manuel"></AttributeLink>
+            <AttributeLink AttributeID="MessageAttr"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

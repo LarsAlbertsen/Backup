@@ -5,6 +5,7 @@
             <Name>Gateway Integration Endpoint Type</Name>
             <UserTypeLink UserTypeID="AssetAnalyzer.SetupGroup"></UserTypeLink>
             <UserTypeLink UserTypeID="Gateway Integration Endpoints"></UserTypeLink>
+            <AttributeLink AttributeID="Purpose"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

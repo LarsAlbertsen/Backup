@@ -108,10 +108,10 @@
             <AttributeLink AttributeID="ItemKey"></AttributeLink>
             <AttributeLink AttributeID="LAAL_1"></AttributeLink>
             <AttributeLink AttributeID="nifemetadata"></AttributeLink>
-            <AttributeLink AttributeID="laal_number"></AttributeLink>
             <AttributeLink AttributeID="LAALTestDescriptionAttribute"></AttributeLink>
-            <AttributeLink AttributeID="a9"></AttributeLink>
+            <AttributeLink AttributeID="laal_number"></AttributeLink>
             <AttributeLink AttributeID="a1"></AttributeLink>
+            <AttributeLink AttributeID="a9"></AttributeLink>
             <AttributeLink AttributeID="ItemUniqueID"></AttributeLink>
             <AttributeLink AttributeID="LastEdited"></AttributeLink>
             <AttributeLink AttributeID="IsActive"></AttributeLink>

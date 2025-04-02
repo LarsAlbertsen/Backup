@@ -28,6 +28,8 @@
 }
 */
 exports.operation0 = function () {
+
 throw "STOP IT!";
+
 
 }

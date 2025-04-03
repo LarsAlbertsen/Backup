@@ -5,8 +5,6 @@
             <Name>Tree</Name>
             <UserTypeLink UserTypeID="Products"></UserTypeLink>
             <UserTypeLink UserTypeID="Tree"></UserTypeLink>
-            <AttributeLink AttributeID="New Attr Dup"></AttributeLink>
-            <AttributeLink AttributeID="New Attr"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

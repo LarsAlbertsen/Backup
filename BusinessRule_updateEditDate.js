@@ -6,16 +6,16 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "approveEntity",
+  "id" : "updateEditDate",
   "type" : "BusinessAction",
   "setupGroups" : [ "ApproveActions" ],
-  "name" : "approveEntity",
+  "name" : "updateEditDate",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ "MEssage", "Message_WorkspaceRevisable" ],
-  "allObjectTypesValid" : false,
+  "allObjectTypesValid" : true,
   "runPrivileged" : false,
-  "onApprove" : "Trigger",
+  "onApprove" : "Never",
   "dependencies" : [ ]
 }
 */

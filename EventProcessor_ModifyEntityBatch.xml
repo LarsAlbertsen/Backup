@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <EventProcessors>
-        <EventProcessor ID="LAALEventProcessor" UserTypeID="Event Processor user-type root"><!-- Definition:
+        <EventProcessor ID="ModifyEntityBatch" UserTypeID="Event Processor user-type root"><!-- Definition:
 Configuration=
-<plugin id="LAALEventProcessor">
+<plugin id="ModifyEntityBatch">
   <simple id="BatchSize">1000</simple>
-  <simple id="DaysToRetainEvents">1</simple>
+  <simple id="DaysToRetainEvents">10</simple>
   <simple id="FailRetryEnabled">true</simple>
   <simple id="FailRetryPeriod">30d</simple>
   <simple id="HoursToRetainOldProcesses">168</simple>
@@ -18,22 +18,20 @@ Configuration=
   <simple id="ResponsibleUser">step://user?id=STEPSYS</simple>
 </plugin>
 PluginConfiguration=
-<plugin id="BusinessActionEventProcessorPlugin">
-  <simple id="BusinessAction">step://businessrule?id=EventsProcessorAction</simple>
-  <simple id="Context">step://context?id=Context1</simple>
-  <simple id="SkipDeletedNodes">false</simple>
+<plugin id="BusinessActionWithEventBatchEventProcessorPlugin">
+  <simple id="BusinessAction">step://businessrule?id=updateEditDateBatch</simple>
+  <simple id="Context">step://context?id=GL</simple>
+  <simple id="SkipDeletedNodes">true</simple>
   <simple id="Workspace">step://workspace?id=Main</simple>
-  <simple id="WorkspaceTriggering">MainAndApproved</simple>
-  <simple id="collateNodes">false</simple>
 </plugin>
 ScheduleSpecification=
 <entries>
-  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEverySecond" every="5"/>
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
-            <Name>LAALEventProcessor</Name>
-            <Configuration>H4sIAAAAAAAA/6VUSY/aMBS+8ysiq+JWwqhSNSoQxJJpD1BSwnQ5VSZ5ZJ4wduqFQn99HbJ0MjOmUssl8cu3PJv3eSb4DjMjqUbBR8Px6cC8I0hVrMhNr0884IlIkWcjcr+5e31LxkFnmDOTIfcwHZHwCFxHUiSglJBTqmD2WJIEHc8bKjzkDC74NahccIVbBvcKJAmUhvyd7xu7GFtAvAmj+Fs89EvOU/qU6uQhxl9Agpt+v++CzelZbcQaNEV+6VBZvAscSRQS9fkK5JMBYy3Dz9F6NXOBlvS0Yml1FqAuHbqwH4SRTYdPWG9vXawFclARyOn76Pr+7ygyqy3PIaf2pFMSaGngr2grjcKC3/RTF3aVazyg0pgsRLJve+woU06TF4i1nYsSJw+QGgZfl4vv8zBah7PJJpyToMv0oDWp3R9G6IEd1/Jl3M30oFOg7D8vEdRl7Xl15ewljCpV0RJx6Nm2tqJnNLKeqkxT2CHHYoZ7dR/zpvSqLtnhkuclcqOhVLM21Q+KT3Vr5cNvGvMfd/Zn/0O/jJZ9UzlDHYRSCrmGXEgN8l/yaXumhul2TFuqxG/cogtv9r93wtSoYlDVJCkU2talxbNroU1pboVtVZb2qIvbocxyI1aiXeNj96HhpBuxpFwXOtUnZ96/CLlXOU2gIf+sKwV9aUProiaCMarho0iLMF+NROOykZhlNgw8I0GhPeHpJM+lOIIzh/Ee8zkw0JC+bPVslH4DhcG7UusFAAA=</Configuration>
-            <EventQueue QueueStatus="Read" DaysRetained="1"><!-- Definition:
+            <Name>ModifyEntityBatch</Name>
+            <Configuration>H4sIAAAAAAAA/6VU3ZPSMBB/v7+iUx3epDCOzo1AmYP2zgc4KuU8fXJCusAOIan5OMG/3vSDajmjM9qXNNvfxzbZ3angG9waSTQKPhqOjwfmPYFUxc7vd3u+B5yKDPl25D+sbl9d++Pwapgzs0XuYTby4yfgOpGCglJCToiC6a+SfnjleUOFh5xBiV+CygVXuGbwoED6odKQvwsCYzdjC0hXcZJ+TodBxbmkT4imuxS/gx/2e72eCxaRk1qJJWiCvMxQFXgXOpEoJOqTxbggHwwY6xl/TJaLqQs0J8cFy+rDgNLS6fleGNmkeMF6e+1izZCDSkBO7pI/H8AtQWa15SnmxB515odaGvgr2kqjsODXvcyFXeQaD6g00pmg+7bHhjDlNPkN8WznoqR0B5lh8Gk++xLFyTKe3qziyA87TA9apdr5aoQe2HqtXsadrR50XvR7gwJpr18iqCbmeefoyaOMKFXTqTh0bXpr0TUaWVfV5hlskGNRzN1zPlETenkO2SqTpxSo4FmlVlvVDxSfa5831RK0kgwus/x5JsOg6jf7pnKGOoylFHIJuZAa5L80rc2fGKbbvdtS9YPGLSl50/8dFBOjiuJVN7RQeES9K+3Lhm4nUhk+mxxtgWZwrOuwtJdQDBCTZ0RDnKGO7FrKu8rL/pOGo26kaLUvVO5mLtKjkHuVEwoN7ds5UhDntp2d5bzHPAIGGrJ7kRWt3m7KZxf9A980lr6eBQAA</Configuration>
+            <EventQueue QueueStatus="Read" DaysRetained="10"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">
@@ -55,8 +53,9 @@ IndexWordHierarchyTriggering=
 NameTriggering=
 ObjectTypeGroupings=
 <ObjectTypeRules>
-  <ObjectTypeRules ActionID="EventsProcessorAction" ConditionID="EventsFilter">
-    <ObjectType ObjectTypeID="Item"/>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="MEssage"/>
+    <ObjectType ObjectTypeID="Message_WorkspaceRevisable"/>
   </ObjectTypeRules>
 </ObjectTypeRules>
 ParentTriggering=
@@ -76,14 +75,15 @@ ProductTemplate=
     </Product>
   </Products>
 </STEP-ProductInformation>
-TriggeringWorkspace=MainAndApproved
+TriggeringWorkspace=Approved
 UnitTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <UnitList/>
 </STEP-ProductInformation>
 Version=3
-objecttype=Item -->
-                <Configuration>H4sIAAAAAAAA/9VUTXPTMBC991dodC+G4cLBTseTD/AMpZnELWfF3gRRWfJo5ZDy61nbUk3iMA239mZpv957ftoUEVwOVa2EgyS+OVSK7cGiNDrhH9695wx0YUqpdwm/zxfXn/jN5Cpe5/Pl9dKasilcprfGVsJRBVsBGrWHTCupYQVbTPhWKATOFkYp8+uOWltZwrrZ+OohY36ojXUzsHIPZeqcfQ5NrhiL0xYo+qy1/A0Jv5VaVk3F2cxo1w+YKoEot7Lo8OSmqyIgYIkGlTjb9P1Cx6hrHvXdiVn0D2qTGGsl3aQFJjeNg69SP2Ju5W5HiPXuNPwmJB24YCvEi+RP1H0DFI8Rn7ePt8NxKst0oZoSloKc47xxvFlOml4gXKZLOHw3tvwiwQpb/HgaOeebqGB0ebf5CYXLn2r4bE1TUwCTeLhcNQqww3Ryx9KiHZ/NEj7fE34kaAUgGtsHOJsaXcrjnIVUDmyQY+jIhs82OXNQBSVGUMZXnkmv44igl+zVWykO2f+7gHzduRUUep61mv8LrSuisK/+Xj3RWdc+jwnhMd8Q8cepNYijsm4dng89CNUAhtNMOEFWcoLktvjS1Djyx949QdMLHtBgHHpFj1gLUvKWhqa6TOvaGvpjPvNey9dvJ2Lf4rx07z54Ah/92XRvzNEbS9rX6G//AAr1+A3LBwAA</Configuration>
+attributeGroup=Attribute group root
+objecttype=MEssage;Message_WorkspaceRevisable -->
+                <Configuration>H4sIAAAAAAAA/9VUTVPbMBC98ys0voPpcOnBCpNJQusZKJnE0GNHsTeuQJY8WjkN/fWVbcmexKaEG9y0n9r39LRTRDAJFKVgBmh0vS8E2YFGriQNvlxcBgRkqjIucxo8JDfnX4PryVm0ThbL86VWWZWaWG6VLpixFWQFqMQOYim4hBVskQZbJhACcqOEUH/ubWvNM1hXG1fdZyz2pdJmDprvIJsao7vQ5IyQaFoPii5rzf8CDe645EVVBGSupGkvmAmGyLc8beZJVFNlBwFtYdgSo6u2n+8YNs3DtrtFFr4CbRJhKbiZ1IPxTWXglstnTDTPczuxzI/Dn4LSHgvWRLwJ/ojdTwDxcOJx+Tg5HKaSWKaiymDJrHKME44Ty1HTE4iLZQb7n0pn3zloptPfLwPl/GAFDJz3mydITfJSwjetqtIGkEa9c1UJwGamEd+Bl/THeG6hAyLL4Zcd6RlLllrWdxzZRjiM/61dNLWejMHNQ5cD01I5wOhY+/Bqinz2e3eQqxvbQr7nqNrcQ9TC8I9ysH3CUeF213QPOcDrI86caYU4KGs24njokYkK0FtzZtjMgmeWbo1v3RqFzmzV4zk94Q/1wulUS6dlqZV9KpfyIPnH15GFXc956s59dACunM28BJqNQDtFkLy2iVbKuEzVfENjvyF1f3YQuKSvbwKX/A8l1tdRIQgAAA==</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

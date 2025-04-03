@@ -6,16 +6,16 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "approveEntity",
+  "id" : "updateEditDateBatch",
   "type" : "BusinessAction",
   "setupGroups" : [ "ApproveActions" ],
-  "name" : "approveEntity",
+  "name" : "updateEditDateBatch",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ "MEssage", "Message_WorkspaceRevisable" ],
-  "allObjectTypesValid" : false,
+  "allObjectTypesValid" : true,
   "runPrivileged" : false,
-  "onApprove" : "Trigger",
+  "onApprove" : "Never",
   "dependencies" : [ ]
 }
 */
@@ -23,8 +23,8 @@
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
-    "contract" : "CurrentObjectBindContract",
-    "alias" : "entity",
+    "contract" : "EventProcessorEventBatchBindContract",
+    "alias" : "eventBatch",
     "parameterClass" : "null",
     "value" : null,
     "description" : null
@@ -39,8 +39,20 @@
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (entity,LastEdited_manuel) {
+exports.operation0 = function (eventBatch,LastEdited_manuel) {
+logger.info("Lars");
 
+let it = eventBatch.getEvents().iterator();
+while (it.hasNext()) {
+    const curEvent = it.next();
+    const curNode = curEvent.getNode()
+    logger.info("CurEvent "+curNode.getName())
+	const lastEditDate = curNode.getRevision().getEditedDate()
+	logger.info(lastEditDate)
+	curNode.setSimpleValue(LastEdited_manuel, lastEditDate.toGMTString())
+	
+}
+/*
 var v = entity.getValue("LastEdited").getSimpleValue();
 logger.info("approveEntity "+entity.getID()+" "+v);
 //node.setSimpleValue(LastEdited_manuel, v);
@@ -48,5 +60,5 @@ logger.info("approveEntity "+entity.getID()+" "+v);
 var lastEditDate = entity.getRevision().getEditedDate()
 logger.info(lastEditDate)
 entity.setSimpleValue(LastEdited_manuel, lastEditDate.toGMTString())
-
+*/
 }

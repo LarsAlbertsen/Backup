@@ -19,20 +19,20 @@ Configuration=
 </plugin>
 PluginConfiguration=
 <plugin id="BusinessActionEventProcessorPlugin">
-  <simple id="BusinessAction">step://businessrule?id=approveEntity</simple>
+  <simple id="BusinessAction">step://businessrule?id=updateEditDate</simple>
   <simple id="Context">step://context?id=Context1</simple>
-  <simple id="SkipDeletedNodes">false</simple>
+  <simple id="SkipDeletedNodes">true</simple>
   <simple id="Workspace">step://workspace?id=Main</simple>
   <simple id="WorkspaceTriggering">Main</simple>
   <simple id="collateNodes">false</simple>
 </plugin>
 ScheduleSpecification=
 <entries>
-  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEverySecond" every="60"/>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEverySecond" every="5"/>
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>ModifyEntity</Name>
-            <Configuration>H4sIAAAAAAAA/6VUW2/aMBR+76+IvIm3kaBJVTUgqEC6PdCREbrL02ScQ3qEsTPbobBfP4eEbKE1k7Y8xSff5dg5nydSrDErFDUoxXAw2m+5twOlyxXpdQPigWAyRZENycPy7s0NGYVXg5wXGQoP0yGJdiBMrCQDraUaUw2TPyVJeOV5A43bnMMRvwCdS6FxxeFBgyKhNpC/8/3CLkYWkCyjOPmWDPyKc04fU8MeE/wJJOwFQeCCTelBL+UCDEVx7FCT0AmOFUqF5mAlXZBPBRTWMvocL+YTF+ie7uc8rc8C9LFDF/aDLFTT4Rnr+sbFmqEAHYMav48v7/+OIrfa6hAJak86JaFRBfwVbaVRWvDbIHVh57nBLWqDbCbZpu2xplw7TV4gnuxclIQ9Qlpw+Ho/+z6N4kU0uV1GUxJ2uOm3JrXzo5Cmb8e1ehl1MtPvvOoF/RJp/75C0E3N807Vg8c41bqmM7nt2vZWslsY5F1dm6ewRoHlLHdP/Uyb0utTyQ6ZOiTApEgrtdqqfqD8XPtc1136rS798zZ/H8rAr/Jm33TO0YSRUlItIJfKgPqX0NoN0IKbdnZbqsRv3OIjb/K/F8W40OX06ltWKrStK4tnd0Wb0lwVq7qs7LmXVwbNcyV3EAljQ+yaJdu/gb1pRFi1Lvn1J2f4v0i10Tll0JCfTpWSfm8T7KIyyTk18FGmZbIv5qNxWSrMMpsMkZHwknaywXwKHAykL+s/m5tfKoI3hu0FAAA=</Configuration>
+            <Configuration>H4sIAAAAAAAA/6VUW5OTMBR+31/BRKdvFjqOzo5t6WwLqw9di6Xr5clJwyl7pmmCuaytv95QKEpX6ozyAjl8N8I5mUmxwdwqalCK8Wiy33HvEZQuV2TQD4gHgskMRT4m96vbF9dkEl6NCm5zFB5mYxI/gjCJkgy0lmpKNcx+lyThleeNNO4KDkf8EnQhhcY1h3sNioTaQPHG961bTBwgXcVJ+iUd+RXnnD6lhj2k+ANIOAiCoAsW0YNeySUYiuKYUJOwE5wolArNwUl2QT5YsM4y/pgsF7Mu0B3dL3hW7wXoY8Iu7DtpVZPwjPX6uos1RwE6ATV9m1z+/luK3GmrQyyo2+mMhEZZ+CvaSaN04JdB1oVdFAZ3qA2yuWTbtseGct1p8gfiya6LkrIHyCyHz3fzr1GcLOPZzSqOSNjjZtjq1N43K83QtWv1MOnlZth7NgiGJdL9fYWgm5rnnaoHj3GqdU1nctd38daybw3yvq7NM9igwLKX+6c8UVN6fiq5JlOHFJgUWaVWW9UXlK9rn1fVzW+F9M9T/tqTkV+Nm3vSBUcTxkpJtYRCKgPqX2bW5aeWm/botlSJ37glR97sf8+JqdVl8+obViq0rSuLJ0dFm9KcFOu6rNy2lyeGLTJqIM7QRO7e1UvuAwzsTaPCqnUpUL/qHP5PUm11QRk05O+nSkm/cxPcRWWScxfqvczKyb44H43LSmGeu8kQOQkvaadbLCLgYCCr9dsz/qRvfgLK4caX7AUAAA==</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

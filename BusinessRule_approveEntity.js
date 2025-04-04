@@ -15,7 +15,7 @@
   "validObjectTypes" : [ "MEssage", "Message_WorkspaceRevisable" ],
   "allObjectTypesValid" : false,
   "runPrivileged" : false,
-  "onApprove" : "Trigger",
+  "onApprove" : "Never",
   "dependencies" : [ ]
 }
 */

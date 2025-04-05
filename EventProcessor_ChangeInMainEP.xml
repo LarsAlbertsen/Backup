@@ -33,7 +33,7 @@ ScheduleSpecification=
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>ChangeInMainEP</Name>
             <Configuration>H4sIAAAAAAAA/6VUW2/aMBR+51dE1sTbCNWkqVohqJB0e4CSEbrL02SSQzjC2JkvHezXzyGXNe3MpC0viU++W5xzPBN8i7mRVKPg49HkeGDeI0hVrsjVYEg84KnIkOdj8rC+e31NJkFvVDCTI/cwG5PoEbiOpUhBKSGnVMHsqSQJep43UngoGJzxK1CF4Ao3DB4USBIoDcU73zd2MbGAZB3Fyddk5Fec5/Qp1ekuwZ9AgqvhcOiChfSk1mIFmiI/J1QkcIJjiUKiPllJF+SjAWMto0/xajlzgRb0uGRZvRegzgld2A/CyDbhM9bbaxdrjhxUDHL6Pr78/XcUmdWWp4hTu9MZCbQ08Fe0lUZhwW+GmQu7LDQeUGlM5yLddz22lCmnyR+IjZ2LkqQ7yAyDL4v5tzCKV9Hsdh2FJOgzfdPp1P53I/SNbdfqYdLP9U2vRNk/LxHUee15TeXkpYwqVdNScRjYWBsxMBrZQNWmGWyRY9nDgyZH2JZeNSXbXPK0QG40VGrWpr6gfNVEq25+G8x/muz394/8arTskyoY6iCSUsgVFEJqkP8ynzYzNUx3x7SjSvzWLT7zZv97JkyNKhtV3aalQte6snhxLHQp7amwqcvSbnV5OoTiXuiddXa1jM2u4ahbgbRal9z6lXPGPwu5VwVNoSX/aColfWEH1UVNBWNUw73IygG+OAaty1pintsB4DkJLmkneyxCYKAhq/W7o/yiZX4B1n5TiNMFAAA=</Configuration>
-            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
+            <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">

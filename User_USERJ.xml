@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="USERJ" EMail="jobu@stibosystems.com" Deactivated="false">
+        <User ID="USERJ" EMail="jobu@stibosystems.com" Deactivated="true">
             <Name>USERJ</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Info about UserJ entered in LAAL-SAAS</Value>

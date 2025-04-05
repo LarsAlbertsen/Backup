@@ -34,7 +34,7 @@
 }
 */
 exports.operation0 = function (node) {
-/** @type{Product} */
+/** @type{Product} 
 var p = node;
 
 log("on "+p.getID()+ "/"+p.getManager().getCurrentWorkspace().getID());
@@ -51,5 +51,5 @@ function log(s) {
     logger.info("EventsProcessorAction "+s);
 }
 
-
+*/
 }

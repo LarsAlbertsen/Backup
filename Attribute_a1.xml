@@ -3,7 +3,7 @@
     <AttributeList>
         <Attribute ID="a1" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
             <Name>a 1 v2</Name>
-            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="9" InputMask=""></Validation>
+            <Validation BaseType="number" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>

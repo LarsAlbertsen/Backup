@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <UnitList>
-        <Unit ID="unece.unit.MMT" ParentID="Length">
+        <Unit ID="unece.unit.MMT" Referenced="true" ParentID="Length">
             <Name>mm</Name>
             <UnitConversion BaseUnitID="unece.unit.MTR" Factor=".001" Offset="0"></UnitConversion>
             <MetaData>

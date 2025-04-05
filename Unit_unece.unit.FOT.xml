@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <UnitList>
-        <Unit ID="unece.unit.FOT" ParentID="Length">
+        <Unit ID="unece.unit.FOT" Referenced="true" ParentID="Length">
             <Name>ft</Name>
             <UnitConversion BaseUnitID="unece.unit.MTR" Factor=".3048" Offset="0"></UnitConversion>
             <MetaData>

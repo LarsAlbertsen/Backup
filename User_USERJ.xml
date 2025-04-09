@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="USERJ" EMail="jobu@stibosystems.com" Deactivated="true">
+        <User ID="USERJ" EMail="jobu@stibosystems.com" Deactivated="false">
             <Name>USERJ</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Info about UserJ entered in LAAL-SAAS</Value>
                 <Value AttributeID="UserLastActivityDate">2025-04-02</Value>
             </MetaData>
-            <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
+            <UserGroupLink UserGroupID="Marketing"></UserGroupLink>
             <SystemSetup>
                 <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>
             </SystemSetup>

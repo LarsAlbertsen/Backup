@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ActionSetList>
+        <ActionSet ID="RestrictedViewSetupActions" Type="setup">
+            <Name>Restricted View Setup Actions</Name>
+        </ActionSet>
+    </ActionSetList>
+</STEP-ProductInformation>

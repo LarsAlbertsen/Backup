@@ -28,14 +28,20 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
+  }, {
+    "contract" : "CurrentObjectBindContract",
+    "alias" : "node",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (logger) {
+exports.operation0 = function (logger,node) {
 for (var i=0;i<100;i++) {
-	logger.info('')
+	logger.info(''+node.getID())
 }
 
 }

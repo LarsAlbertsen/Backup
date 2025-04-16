@@ -78,6 +78,7 @@ var replacer = function(key, value) {
 	return returnValue;
 };
 
+/*
 function checkNode(n) {
 	var orphans = {}
 	
@@ -92,19 +93,20 @@ function checkNode(n) {
 	})
 	return orphans
 }
+*/
 
 log(source.getNode())
-log(source.getNode().getManager().getCurrentContext())
-log(source.getNode().getManager().getCurrentWorkspace())
+//log(source.getNode().getManager().getCurrentContext())
+//log(source.getNode().getManager().getCurrentWorkspace())
 
 //java.lang.Thread.sleep(1000)
-var res = checkNode(source.getNode())
+//var res = checkNode(source.getNode())
 
 if (Object.keys(res).length > 0) {
 	result.addMessage(JSON.stringify(
 		{id:source.getNode().getID(), 
-		name:source.getNode().getTitle(),
-		orphanValues : res
+		name:source.getNode().getTitle()
+		//orphanValues : res
 		}, replacer))	
 }
 

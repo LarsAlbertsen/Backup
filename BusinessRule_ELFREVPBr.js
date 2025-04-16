@@ -34,5 +34,5 @@
 }
 */
 exports.operation0 = function (node) {
-logger.info('ELFREVP ' + node.getID() + ' ' + node.getTitle())
+logger.info('ELFREVP ' + node)
 }

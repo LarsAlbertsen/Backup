@@ -54,6 +54,6 @@ function checkNode(n) {
 	return orphans
 }
 
-
-logger.info(JSON.stringify(checkNode(node)))
+logger.info(node.getID())
+//logger.info(JSON.stringify(checkNode(node)))
 }

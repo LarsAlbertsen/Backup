@@ -6,6 +6,7 @@
             <MetaData>
                 <Value AttributeID="UserLastActivityDate">2025-04-02</Value>
             </MetaData>
+            <UserGroupLink UserGroupID="Messaging"></UserGroupLink>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup></SystemSetup>
         </User>

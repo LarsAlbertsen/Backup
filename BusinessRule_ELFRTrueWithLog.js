@@ -56,9 +56,9 @@ function log(msg) {
 	logger.info(msg)
 }
 
-log('node ' + node)
-log('Current Event Queue ' + ceq)
-log('Current Event Type ' + cet)
+//log('node ' + node)
+//log('Current Event Queue ' + ceq)
+//log('Current Event Type ' + cet)
 
 
 return true

@@ -35,4 +35,9 @@
 */
 exports.operation0 = function (node) {
 logger.info('ELFREVP ' + node)
+
+if ('203187875' == node.getID()) {
+	throw 'stop here please'
+}
+
 }

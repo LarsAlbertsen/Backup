@@ -35,4 +35,5 @@
 */
 exports.operation0 = function (source) {
 var data = source.getMessage();
+
 }

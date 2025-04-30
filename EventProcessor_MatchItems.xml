@@ -32,7 +32,7 @@ ScheduleSpecification=
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>MatchItems</Name>
             <Configuration>H4sIAAAAAAAA/6VU246bMBB9z1cgq8pbQ1aVqlVDiHJh20qJQkO2l6fKCxMyWmNT20Sb/foOELJLumyllhd8OWfOsT0zcyV3mBaaW1Ry7E0eMuEcQJtyxq4GQ+aAjFWCMh2z2+3N22s28XteLooUpYPJmAUHkDbUKgZjlJ5xA/PnIZnfcxzPYJYLqPAbMLmSBu8E3BrQzDcW8g+uW9BkQoBoG4TRj8hza84lfcZtvI/wEZh/NRwOu2ALfjRbtQHLUVYODfM7waFGpdEeKWQX5EsBBUkGX8PNet4FWvGHtUhOdwGmctiF/aQKfXZ4wXp/3cVaogQTgp59DF8//w1HQbH1MZCcbjphvtUF/BVNoVER+N0w6cKuc4sZGovxUsX3bY0dF6ZT5AViI9dFieI9JIWA76vlz0UQboL5dBssmN8XdtTK1P6vQtkRpWs9mPRTO+qVKHp5jWCqueM0K0cnFtyYEy1W2YBs3alBYVEMzEk0gR1KLHN40PhYnJfeNEuUXPq4QllYqKORzOmDcquxVv/cszH3ubOn83tuXVo0MrlA6wdaK72BXGkL+l/qkzzzQth2mbaiMvesFla8+f/2hFVZpLTdFq2D/9EQpjlJx5VWZEkTUipEJcWxiTIVaVme++yFNBGUUC3JM9hUQgSsHrzpMtkJxhtY2XIq7mcLmfHcGl0KuE8Kl5a/KX1vch7DVmOaUhLLlPkrKuSpTOg4Wh0geeVNfwMiFAfydAUAAA==</Configuration>
-            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
+            <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">

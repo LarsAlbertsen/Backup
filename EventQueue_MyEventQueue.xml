@@ -20,6 +20,7 @@ ClassificationTemplate=
     <Classification IncludeParent="true"/>
   </Classifications>
 </STEP-ProductInformation>
+ConsumerSuspended=
 IndexWordHierarchyTriggering=
 NameTriggering=
 ObjectTypeGroupings=
@@ -53,7 +54,7 @@ UnitTemplate=
 Version=3
 attributeGroup=Attribute group root
 objecttype=Item -->
-            <Configuration>H4sIAAAAAAAA/9VUTXObMBC951douCe000sPyBmPnbTM5MNjk+Qsw5qqERKjlVynv74CJFMbMnFuyY391HvL250igsmgqgUzQJPLXSXIFjRyJWn09eJLREDmquCypNFDdn3+PbqcnCWr7GpxvtCqsLlJ5UbpihlXQZaASmwhlYJLWMIGabRhAiEi10oI9efetda8gJVd++o+42pXK23moPkWiqkxeh+anBGSTBug6LNW/C/Q6JZLXtkqInMlTffATDBEvuF5iydTbZUDAtrRcCVG265f6Bi3zeOuu2MWv0JtkmAtuJk0wPjaGrjh8hkzzcvSIZblcfhTjLTngs0g3iR/NN1PQPEQ8bh8vBwOU0kqc2ELWDCnHOOF48Vy1PSEwaWygN2T0sVPDprp/NfLQDl3rIKB8379G3KTvdTwQytbuwDSpHcurQBsMY34Dryk/0znNEoNVIHNoHTo8mi6WQxAetofXg5JyH7vEfF1Y2ck9ByVi/8LzZ+Nw835/3zEo8rbPxPCQ74h4s2ZVoiDsvakjYcembCAwZozw2aOPHPj1vjWq0nszU49YaYnLEEvHLcJz1gzN8lpXWvlfpVPeZD84+vI0W5wnno0Hz2Bb95mQQLtStO9IkjZ2EQrZXymatfQuDWkzcJ67z/Am/QlsgcAAA==</Configuration>
+            <Configuration>H4sIAAAAAAAA/9VUTXObMBC951douKe000sP4IwnTlpm2sZjk+Qsw5qqERKzK7lOf30FSKY2dOLekhv7qfeWtzsnApND3UhuIE2u9rVkO0ASWqXRh3fvIwaq0KVQVRrd57eXn6Kr2UWyzm+Wl0vUpS1MprYaa25cBVsBabmDTEmhYAVbSqMtlwQRu9VS6l93rjWKEtZ246uHjJt9o9EsAMUOyrkxeAjNLhhL5i1Q8llr8RvS6JtQorZ1xBZamf6Ba8mJxFYUHZ5cd1UOCKCj4UoM2r5f6Bh3zeO+u2MW/4PaLKFGCjNrgYmNNfBVqCfKUVSVQ6yq0/CbGOnAhdpBvEj+ZLpvgOIx4mn5eDkcp7JMFdKWsOROOcYLx4vlpOk5g3NptgZcW2pAlVB6f+a+948ayy8CkGPx43mkqO+8hpHzbvMTCpM/N/AZtW1cgNJkcK6sBOqwTviOvGz4zBZplBmoA8tR6djl0fQzGoH043j1MklC9v8eF183dV5Cz0kZ+b/Q/tk43KK/z0o8qcjDMyE85hsi3rxGTTQq607ddOiBSwsUrAU33AnXcDdupJdeTWJv9uoJMz1jOQbhuE14ooa7Sc6bBvXusCf3Srx+HTnaLc5zj+mDJ/DR2zxIoFvp9KAIVrU2Q62Nz9TdGhq3hmm7sN77B87pHS3KBwAA</Configuration>
         </EventQueue>
     </EventQueues>
 </STEP-ProductInformation>

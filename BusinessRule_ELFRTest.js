@@ -52,6 +52,42 @@
 }
 */
 exports.operation0 = function (node,logger,manager,hov) {
+var n = manager.getNodeHome().getObjectByKey('ItemKey2', '54321')
+logger.info(n)
+if (n) {
+	logger.info(n.getID())
+	if (!manager.getProductHome().getProductByID(n.getID())) {
+		logger.info('Cannot get from ID')
+	}
+}
+
+var v = n.getValue('laal_number')
+logger.info(v)
+v.setSimpleValue('333')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*var user = manager.getUserHome().getUserByID('ELFR')
 
 user.getValues().toArray().forEach(function(v) {
@@ -76,10 +112,10 @@ function checkNode(n) {
 	return orphans
 }
 
-//var nc = manager.getNodeCollectionHome().getNodeCollectionByID('32159714')
-var x = checkNode(node)
-logger.info(x)
-logger.info(Object.keys(x).length)
+//var nc = manager.getNodeCollectionHome().getNodeCollectionByID('32159714')//
+//var x = checkNode(node)
+//logger.info(x)
+//logger.info(Object.keys(x).length)
 
 //logger.info(hov.evaluate({root:node}))
 /*

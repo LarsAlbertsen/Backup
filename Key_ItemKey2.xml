@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <Keys>
-        <Key ID="ItemKey2" State="Inactive">
+        <Key ID="ItemKey2" State="Active">
             <Name>ItemKey2</Name>
-            <KeyFormula>concatenate('x','y', value('ItemKey'))</KeyFormula>
+            <KeyFormula>value('ItemKey')</KeyFormula>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
             <AttributeLink AttributeID="ItemKey"></AttributeLink>
         </Key>

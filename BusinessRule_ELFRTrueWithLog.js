@@ -52,14 +52,10 @@
 }
 */
 exports.operation0 = function (logger,ceq,node,cet) {
-function log(msg) {
-	logger.info(msg)
+if (cet.equals(com.stibo.core.domain.eventqueue.BasicEventType.Modify)) {
+	return true
 }
-
-//log('node ' + node)
-//log('Current Event Queue ' + ceq)
-//log('Current Event Type ' + cet)
+return false
 
 
-return true
 }

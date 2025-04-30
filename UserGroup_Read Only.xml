@@ -3,6 +3,7 @@
     <UserGroupList>
         <UserGroup ID="Read Only" ReadOnly="false" MultifactorAuthenticationRequired="false">
             <Name>Read Only (restricted)</Name>
+            <PrivilegeRule ActionSetID="NoWebUIViewSetupAction"></PrivilegeRule>
         </UserGroup>
     </UserGroupList>
 </STEP-ProductInformation>

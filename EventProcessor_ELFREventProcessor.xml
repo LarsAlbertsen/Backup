@@ -62,13 +62,13 @@ ClassificationTemplate=
 NameTriggering=
 ObjectTypeGroupings=
 <ObjectTypeRules>
-  <ObjectTypeRules ConditionID="ELFRTrueWithLog">
+  <ObjectTypeRules>
     <ObjectType ObjectTypeID="Item"/>
   </ObjectTypeRules>
-  <ObjectTypeRules ConditionID="ELFRTrueWithLog">
+  <ObjectTypeRules>
     <ObjectType ObjectTypeID="Operator user-type root"/>
   </ObjectTypeRules>
-  <ObjectTypeRules ConditionID="ELFRTrueWithLog">
+  <ObjectTypeRules>
     <ObjectType ObjectTypeID="Group user-type root"/>
   </ObjectTypeRules>
 </ObjectTypeRules>
@@ -98,7 +98,7 @@ Version=3
 attribute=Bullet01;Bullet02;Bullet03;Bullet04;Bullet05;Bullet06
 attributeGroup=Attribute group root
 objecttype=Group user-type root;Item;Operator user-type root -->
-                <Configuration>H4sIAAAAAAAA/9VVy3LaMBTd5ys03lNDXtOFRYby6DBDCgNOshb44qqRJY8k07RfX8mWcGI7E7poJ9lZOvd9j45HSoGOIcsZ0YCjm6eMoQNIRQXHweBTP0DAdyKhPMXBXTzrfQ5uhmfRJp6ueispkmKn53wvZEa08UBrUIIdYM4Z5bCGvcLBnjAFAZoJxsTPpQktaQKbYuu8a4vpUy6knoCkB0hGWssjNDxDKBrZQpWz2tDfgINbymlWZAGaCK6rBGNGlKJ7uivriUXpZQoBadowLloWVTwfMSyDh1V001n4SmvDSOWM6qEtjG4LDQvKH1UsaZqainnahD/ESOtelB3Em803pvsBWnxZcTd9HB1emqI537EigRUxzNGOOI4sjaAnDO4byaDFleX2B+x0/CuHr1IUuQEUjurLdcFAlQkbd2gseEJt+PkEB9PFbB2b4h6o/r4Qqe+m9kH1p7Wfa8h8I/882TIHSbSQqFAge9oaSCH0f8tfDvbU5O0rt6iKA639uXW/+2cQeeu/FU/n1yWfPmbnM3FbsaQPvdY+l82w88Ud03i43a9H3HEshVItt1LKu6F7wgpQ/jQhmhh2aWLGLdVbWaPQHSv2+Jme8Phr4jwI+ahyYiZ5a5I6+I7T988h07Kt89Qfxb1r4MKdiV8//lIwBro/aAJ9j5w3kYFHWsHOPXLZRC48ctVELj1y3URKrcBHoqK01A6rGM5SlOpgdQR36UrL6gpbrW1dX+NXVNFZ/gELaf8CkgkAAA==</Configuration>
+                <Configuration>H4sIAAAAAAAA/9VUW2+bMBh976+weM9IetMecKosaSekdYkS2j078AV5NTbyJev262fADgtQNZP60L5hn+92Ph/OTCnQCRQlIxpwdPNcMLQHqajgOJh8GgcIeCoyynMcPCR3o8/BzfQs2iS3q9FKisykOuY7IQuibQZagxJsDzFnlMMadgoHO8IUBOhOMCZ+LW1pSTPYmK3LbiNun0sh9QIk3UM201oeoOkZQtGsGlS5qA39Azi4p5wWpgjQQnDdNJgzohTd0bSeJxF1lh0EpKVhU7Q0TT1fMayLh011yyx8gdo0UiWjeloNRrdGwzfKn1QiaZ7biXnehT/ESlsuqlrEq+Q72/0AFI8nHpaPk8NxKIp5ykwGK2KVo51wnFg6RU9Y3HdSQE8ry+1PSHXyu4SvUpjSAgpH7eXaMFB1w4G7o1vUfsYLHMQaCj/qG5RbliCJFhIZBXKkqwAphH7DDjX9U8v3r9w6m5fqbdk9yrsXa+Sj/9fiXN6Qyfmag2J2r1JJM/SO+K+5hYP/xaGNh/t8PeKOcymU6qXVhjsMPRJmQPnTgmgyt+SJXbdUr3WNQnds1ON3esIv2grnh5BPqiR2k/e2qYMfOH3/GrKUqzlPtfNHR+DCnYl/fvzFMAZ6POkCY4+cd5GJR3rFzj1y2UUuPHLVRS49ct1Faq/AB6GivPaOyjFcpKjdofIRPOQrvagrXPll7/oav+B7LvIvhO9unjgJAAA=</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

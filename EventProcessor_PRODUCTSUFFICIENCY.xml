@@ -5,7 +5,7 @@
 Configuration=
 <plugin id="PRODUCTSUFFICIENCY">
   <simple id="BatchSize">1000</simple>
-  <simple id="DaysToRetainEvents">1</simple>
+  <simple id="DaysToRetainEvents">0</simple>
   <simple id="FailRetryEnabled">true</simple>
   <simple id="FailRetryPeriod">30d</simple>
   <simple id="HoursToRetainOldProcesses">168</simple>
@@ -27,8 +27,8 @@ ScheduleSpecification=
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>Product Sufficiency</Name>
-            <Configuration>H4sIAAAAAAAA/6VU247TMBB971dEFuobTQoSWtE2FU1SWKmlIW24PCGvM82O1rWDL6sNX4/btGG7kIIgL7GdM+ecmcw4kmKLpVXUoBST8fRhx717UHq/I8NBQDwQTBYoygnJN/PnV2Qa9sYVtyUKD4sJSe5BmFRJBlpLNaMaoseUJOx53ljjruJwwGegKyk03nDINSgSagPVa9+3bjN1gDRbxXm0Wefz+XV0nbyPvuTrJBv7DcVTthk17HaN34GEwyAIumAxrfVGZmAoioNh7fBd4FShVGjqC5APFqyTTD46t1EXaEkfVrw4lgb0wWEX9p20qnX4JOrVVVfUAgXoFNTsbXo5/zlF7rhVnQjqCl+Q0CgLf0Q7apQO/DIourCryuAOtUG2kOzu7zV+E3dSG77ozGPNbqGwHD4vF1/jJM2S6M0miUnY52Z01rr9b1aakevfZjHtl2bU26Pcv1cI+rD3vNNJ7TFOtT6GMbkbOGc3cmAN8oE+ihawRYH7ph6cfMTt0bPTkWsvVS9RWAMNm5M5PrD/dLLWvPzWmP/Y2c/8x34za26lK44mTJSSKoNKKgPqXwbWeaaWm/O5PWMlfquWHuKi/70kYmro2m63yNAh64hyZjk1UrUGGqFfbotPUt3pijLYKCxL1yCiJOHSzciFCv0A69b+EtMEAAA=</Configuration>
-            <EventQueue QueueStatus="Read" DaysRetained="1"><!-- Definition:
+            <Configuration>H4sIAAAAAAAA/6VU247TMBB936+IDOobTQoSWtE0FU1SWKml2bTh8oS8zjQ7WtcOvqw2fD1u03ZpIQuCvMSenDnneDLjWIo1VlZRg1KMwvHDhnv3oPR2Rwb9gHggmCxRVCNSrKYvLsk4ughrbisUHpYjkt6DMJmSDLSWakI1xD9TkujC80KNm5rDDp+DrqXQeMOh0KBIpA3Ub3zfus3YAbJ8kRTxallMp1fxVfoh/lIs0zz0W4pztgk17HaJ34FEgyAIumAJbfRK5mAoip1hTaJOcKZQKjSNo+yCXFuwTjL96NzGXaA5fVjwcl8a0DuHXdj30qqjw7Os15ddWTMUoDNQk3fZ0+efUuSOWzWpoK7wJYmMsvBHtKNG6cCvgrILu6gNblAbZDPJ7v5e4zd5B7XBy85zLNktlJbD5/nsa5JmeRq/XaUJiXrcDE9at/fNSjN0/dsuxr3KDHvPBsFwi3T/XyHoY8zzDtHGY5xqvU9nctN3Dm9k3xrkfb0XL2GNArfN3T/4SY6h54eQazPVzFFYAy3bXmr/wPbzwWb78k9M+ucuH2sS+u38uZWuOZooVUqqHGqpDKh/GWLnn1puTmf5hJX4R7Vslxf/78WRUEOXdr1Ghg7ZxJQzy6mR6migFfrlBvkk1Z2uKYOVwqpyTSMqEs3d3DxRoR8yxJuQ5wQAAA==</Configuration>
+            <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">

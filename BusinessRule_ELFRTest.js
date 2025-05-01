@@ -63,7 +63,7 @@ if (n) {
 
 var v = n.getValue('laal_number')
 logger.info(v)
-v.setSimpleValue('333')
+//v.setSimpleValue('333')
 
 
 

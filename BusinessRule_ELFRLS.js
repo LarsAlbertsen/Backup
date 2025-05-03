@@ -71,6 +71,7 @@ files.forEach(function(f) {
 		logger.info(sb.toString())
 	}
 })
+logger.info(files.length)
 
 
 

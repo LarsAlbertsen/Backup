@@ -67,6 +67,7 @@ function isSupplierUser(u) {
 
 var cnt = 0;
 var cntNotVendor = 0;
+
 root.queryAllUsers().forEach(function(u){
 	cnt++
 	if (!isSupplierUser(u)) {
@@ -75,9 +76,9 @@ root.queryAllUsers().forEach(function(u){
 	}
 	return true;	
 })
-logger.info(cnt)
-logger.info(cntNotVendor)
-logger.info(xx)
+logger.info('Total users under ' + root.getID() + ' ' + cnt)
+logger.info('Not supplier user count ' + cntNotVendor)
+logger.info('Supplier User Count ' + (cnt-cntNotVendor))
 return '';
 
 }

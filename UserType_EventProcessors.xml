@@ -3,6 +3,7 @@
     <UserTypes>
         <UserType ID="EventProcessors" Referenced="true">
             <Name>Event Processors</Name>
+            <UserTypeLink UserTypeID="EventProcessors"></UserTypeLink>
             <UserTypeLink UserTypeID="Setup Group user-type root"></UserTypeLink>
         </UserType>
     </UserTypes>

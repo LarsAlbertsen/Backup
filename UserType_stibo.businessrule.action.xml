@@ -5,6 +5,7 @@
             <Name>Business Action Type</Name>
             <UserTypeLink UserTypeID="AssetAnalyzer.SetupGroup"></UserTypeLink>
             <UserTypeLink UserTypeID="BusinessRuleGroup"></UserTypeLink>
+            <UserTypeLink UserTypeID="EventProcessors"></UserTypeLink>
             <UserTypeLink UserTypeID="GlobalBusinessRules"></UserTypeLink>
             <UserTypeLink UserTypeID="InboundSetupGroupCategory"></UserTypeLink>
             <UserTypeLink UserTypeID="OutboundSetupGroupCategory"></UserTypeLink>

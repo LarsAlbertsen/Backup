@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <STEPWorkflows>
-        <STEPWorkflow ID="CreateNewItem" Referenced="true"><!-- Definition:
-<scxml name="CreateNewItem" initial="Initial" version="0.9">
+        <STEPWorkflow ID="TestWF" Referenced="true"><!-- Definition:
+<scxml name="TestWF" initial="Initial" version="0.9">
   <assignee id="$current" type="user"/>
   <editorLayout>   node-size-and-position x=0.0 y=0.0 w=479.7030924312381 h=654.0  </editorLayout>
   <final id="Final" name="Final" discontinued="false">
     <editorLayout>   node-size-and-position x=205.0 y=609.0 w=100.0 h=25.0  </editorLayout>
-    <onentry businessactionid="acn-2c101493-1dac-4877-8626-fa3afd0dbe67"/>
+    <onentry businessactionid="acn-ff494726-6f7b-4c27-a012-83ba2c8317db"/>
   </final>
   <parallel id="State-5" discontinued="false">
     <transition target="Enrich"/>
@@ -20,7 +20,7 @@
       <state id="Initial1" discontinued="false">
         <transition event="submit" target="Final1"/>
         <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
-        <onentry businessactionid="acn-162ef29f-7432-4172-95bd-23100d661494"/>
+        <onentry businessactionid="acn-0113e186-4829-46c3-9fda-1f9c220baf4b"/>
       </state>
     </state>
     <state id="State-7" discontinued="false" initial="State-10">
@@ -31,7 +31,7 @@
       <state id="State-10" discontinued="false">
         <transition event="submit" target="State-11"/>
         <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
-        <onentry businessactionid="acn-ec647937-2030-4377-8872-f2ccaa67d1d9"/>
+        <onentry businessactionid="acn-053542c4-74c3-4f0f-8b84-4fc9e5b9f7b0"/>
       </state>
     </state>
   </parallel>
@@ -45,7 +45,7 @@
   <state id="Enrich" discontinued="false">
     <transition event="submit" target="Approve"/>
     <editorLayout>   node-size-and-position x=247.0 y=394.0 w=100.0 h=90.0  </editorLayout>
-    <onentry businessactionid="acn-9e6c7e6e-9a12-43ca-8b9c-ff534f558b48"/>
+    <onentry businessactionid="acn-afcb1728-b121-4f43-bd83-bfb314e71218"/>
   </state>
   <state id="Initial" name="Initial" discontinued="false">
     <transition event="ToEnrich" target="Enrich">
@@ -56,11 +56,10 @@
   </state>
 </scxml> -->
             <SetupGroupLink SetupGroupID="ProductWorkflows"></SetupGroupLink>
-            <Name>Create New Item</Name>
-            <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
+            <Name>TestWF</Name>
             <ValidUserTypeLink UserTypeID="TestItem"></ValidUserTypeLink>
-            <Configuration>H4sIAAAAAAAA/61WTY/TMBC98ytMxNWN7XyjphJCIK2EWCTghDi4zqQ1Sp3Idre7/HocJ6W7bXebXbgksZ3xvHnzZmy+te2VklZyC9fqvQb3LmveGJibrpF2Abcgtha+Ci07+0lupIXqi5Y3soEVmNLq7f7PRhoL6lpdbbpWW9Dfu+p4MyNuN0059y8kvdumDAb/TYAU30AZDCA+w+7KwiZAN6CNbFUZkFkRIGeoTBmsre3ehuFut5vtolmrVyEjJAlJFvq9g8X8NcYIIdVWgI38DZirCnetcZ5ahW5LMiPozj93ZZwVs4xEpGBxRFmUU7Qu0yR2awjjxSs058bIlQJAsiqDN2KrNSgbIHvXObhbA9r5C/c/LV45C2NdCKiSRrTKSrUFZ+iJCPweRxHvhxdRs2zAHUceOCX9cF2y5C9WNLeaq9EAbhzOMvjWflBairVDzPUK3Mw43vuDagW443aNfgwrP5FzFkeDMxZR9+5aqezAm/8cyGvr2sA4PXwP8z2YeXiA0pNyDtoXrr/2VJkDNj/GSXBkPw89p57dWirePM7ux355z+0wuMwsSXywKSkep7ZVDrS+Q8utkQqM4aK37l1yoTATlNC4iDCtuMBxnmU4T1mKax7xuiLVEtKsj2rcpQ/JBzJFMEcJezyMOPNhREX8IIyCTA6jgFRkkAIuOGU4jgTH+bIQuK6TKK6TJF/G+YMwzmfWbJeuVxzS+q7rdHsDT6W145o3DTyR2YM2LqbT00Bp7mmI8jGbLD1fKSeFcaLdCwkakKXBSVejE8Cyh1UdD2BpGh3ATm0pU9xd7CEXNUJTBjUrapzFkdMIzRgukmWFXasgpEpTVwbxsUYmqcRXK31CJGha9U+nYS+REx7+Vud979NkkN2TwTBDybPz8iIVvNjbS1QAInVHZ5Rh5g5P1yn6hpc7KdRMCM7TrKJV8SIVjFH8mw7ubfLflTAP971qSvM+tL6Jh5BrtM85388W0bkedmqq4ReIE+aTczeDcclfDRjNRvUUZw/7e0T5+9hivP/9AZyIXz9uCgAA</Configuration>
-            <LocalBusinessRule ID="acn-162ef29f-7432-4172-95bd-23100d661494" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+            <Configuration>H4sIAAAAAAAA/61WTY/bNhC951ewQq60+KWvwjIQBAkQoEACpEUPRQ+UNLJZaCmBpNe7/fWlKDnetb1rdduLKJIazps3b0aUe9d/0cop6eCr/mjAj2UrOwtrO3TKbeAB6r2D77VRg/tF3SkHzTej7lUHW7ClM/vjl52yDvRX/eVu6I0D89vQnB9m64e7rlyHAangtiujyX8XIS3voIx+Bet+/xyhezBW9bqMyKqIkLfQtox2zg0/x/HhcFgd+Ko325gRksQki8Oh0Wb9E8YIId03gK36G7DUDR566130Gj2UZEXQY3geSpEVq4xwUjDBKeM5RbsyTYTfQxhv3qG1tFZtNQBSTRm9r/fGgHYRco+Dx7m3YLy/+PjR5p23sM7HjBpl6147pffgDQMDUTjjLNTj9CZqlk24BQ/AKRmnu5IlP7CitTNSzwZw73F6JvtP2qh65xFLswW/Ms+P/qDZAh6k26E/pp0/kXcm+OSMcerHoVfaTbyF14m8vm0tzMvT+7Q+glnHJygjKdegfZPm+0iVPWELc5xEZ/brOHAa2G2Vlt3L7H4et4/cTpPbzJIkBJuS4mVqe+1Bm0dU7a3SYK2sR+vRpaw1bltRiIylOG2zCouaZVgSynDOK8nqnNOsqcao5lPGkEIgSwRzlrCXwxBZCIMX4lkYBVkchmzrimYsxxVlFItWcFw1uX+0FacCMr+aPwvjembtvvJN4pTWD8Ng+nt4La2DNLLr4JXMnrRxM52BBkrzQAPP52yy9HqlXBTGhXZvJGhClkYX7YwuAMueV7WYwNKUn8AubSlL3N3sITc1QijlQPMUi5wVWKQ1x0XbSEzbovbRVLIV1blGFqkkVCt9RSRoWfUvp+EokQseflTnU+/LZJA9kcG0Qsm/zsubVPBmb29SQcITwWqBM+EFIFrS4rzKhX+rC0iqwrdB8iYVzFH8Nx08OeR/V8I6PvaqJc371PoW/oQSLl7MytIiutbDLk0N/AX1BfPJtZvBvBWuBoxms3qKqz/7J0SF+9hmvvj9A3mRloBnCgAA</Configuration>
+            <LocalBusinessRule ID="acn-0113e186-4829-46c3-9fda-1f9c220baf4b" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
 Action #1 (JavaScriptBusinessActionWithBinds):
 <config>
   <bindings>
@@ -95,16 +94,21 @@ function callMethod(clazz, method, para) {
                 <Configuration>H4sIAAAAAAAA/7VVXYvTQBR9bn7FJQ8lYWuy/RCENi3brsKKhcWN+CBSxnSSjk4ncTIpWtn/7nylmyAr0d2+lDn3npx7zmXoFLTKCNugoqAElxuSbpKcpSSblbIg5oVpm1o0W/zYUzhgXpKcRe4wuHQBsyTfEpZF7of4zYtX7mLuzJZVSRguy/cVxXMH4FS41XLQ7JvSzXXkvkUHdJdwUoi6f5UIOegjEbslYdvSVVpS7RZxtMdC2jCFZgmUkmFD/LPAkftVygYUsSy4E1waded9KqatJP3vVS6mMo45PGQyWAczx0U/E1NHCagZa1RoDFBXQG5KcJQIacN8sao4x0zEHLGSqDiKtrIsO++KElRavlBEWz+lWlFU1gRWUWpO4clM2HQzC0/fPbKf15znfC0XjDJ87j29yxNEyRF9odhOjPG+oEjgZcW2FIcdPT/cjscNhyHNswzzgLA094wTvfgRGHABer0X1n+MeIZF3ZM+6RqLXb71NGtgG5JiiAb6gTzeXHu+P3Wcp8zTreCk7rWE04rpyw8NVwlFx+MA9hoNoJD78eGX0yMpeApAH+2Lqf7RzYBilokdRBG81MQex6LiUlMJBYm6VGqmlW/qfrr8HAi5ZYuGLTRqoXELTQzy5UoO+Tdce641D4hWDdEmHLXhuA0nFvrg9O47RZ6cPfLzheyeanyGVE/I4Xf1PXoW3//itLO14X9a+6sZM72DZlvFd+7/+CtsFPSDNwvbz6l8cMP2i2sf799gb/bV3AcAAA==</Configuration>
                 <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
             </LocalBusinessRule>
-            <LocalBusinessRule ID="acn-2c101493-1dac-4877-8626-fa3afd0dbe67" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
-Action #1 (RemoveObjectFromWorkflowAction):
-Workflow=
-Message=AutoDelete
- -->
-                <Name>Delete New Item Workflow</Name>
-                <Configuration>H4sIAAAAAAAA/3WQwYrCMBRF935FePtpdeciqShFmIVM6Ti4LLG+hjhpEpK0o38/0apUxO153JOba1UnpK64tUqir2RT1UY3UlAfQcjscB4Yo4tTq0iPzkujGcySKRDUtTlILRj8bNcfc1hkE7rqvNTofdkpzCaEPEBx1ZHxfUCfOYMSW9Pj1/6IdVg70+6M+22U+VvWIT4HF1FUFdzxFkPsMIAxIhfNPQZke7bI4Mh7niiuRfIdXCwKGU0fiTeOTSzHBb5XLLtgclQx8CIbgWtFmj7/Pu6TPg902/ofQINa3osBAAA=</Configuration>
+            <LocalBusinessRule ID="acn-053542c4-74c3-4f0f-8b84-4fc9e5b9f7b0" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="trans" type="CurrentTransition" contract="CurrentTransitionBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+logger.info("Trans3 "+trans);
+  </javaScript>
+</config> -->
+                <Configuration>H4sIAAAAAAAA/4VSTUsDMRC991eEHIoi7ipehP0obVVQKBTb4rGEbRpH0iQms0X/vclmu90i1dvMm8mb9yZjZC1ArZkxErhbw3ZdabUFkTsPYGliOWJFPvraSbLn1oFWBb1NbijhqtIbUKKgq+XT9T0dlYN8UjtQ3LnXWvJyQEgHzBs60q9H6PmhoC9szxaVBYOH+rhCP+gN8H0CauNo4PJsc2bZjqOXEYE+RAJT7CbLb8ML+uFpE8mUSBZovVBaDiVmJ06Gn7XGzNuJwdFTzBtjMRwNBWaDQBBmzJhpckIOCPGbQssq9DLii2ltLVe4tEw5CHZC27TtaueNJTDX9mNobPHO1VQyd2hQtZQxSjsxaV9Nnnbvzuzn0VptZ37BTPA/9vQ/0fHLzrNILQS3Caitvoi6m13ckZhcNYYvs1/DekDzz3l6ekX+ztLTQ2tv9geICMLA0wIAAA==</Configuration>
                 <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
             </LocalBusinessRule>
-            <LocalBusinessRule ID="acn-9e6c7e6e-9a12-43ca-8b9c-ff534f558b48" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+            <LocalBusinessRule ID="acn-afcb1728-b121-4f43-bd83-bfb314e71218" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
 Action #1 (JavaScriptBusinessActionWithBinds):
 <config>
   <bindings>
@@ -132,18 +136,13 @@ if (workflowInstance){
                 <Configuration>H4sIAAAAAAAA/7VUUW/aMBB+Jr/CywOCrku2t0kQUKFsYlrVamTqIzLJJXVr7Mx2Qrup/73nOAQYq9pJ25vz3ef7vvNdruBlzsSSFgVnoJcsWyZSZCwfagTMqHBhh0XD8f2akwqUZlJE/ofgvU9AJDJlIo/87/Gndx/98cgbTkrNBGj9reQw8ghpgas6HdmPO2h+HvlfaEUXiWKF2cbPEoNC18zcTJhItW9zYbYrqugaDNpwwD5EbCbHJvFDAZF/i2kDTkUeLIxCo/6oy83goJLuj1KaAZbjDrua3HddmDuOu7kZeDaB1bigRf1NyBYh+FJG0cSgDXdjWioFwlyubiExljJtGI3WGWdUN1whU2jgtqApp7qNl5y7U/ha3Wup7jIuNy8obxraP1aPFRWa2Sa+oG8s8W/ErXS434Nh2N57ZipmSkl1gWNFc/jf0/FVJpSzn3TFoVGMYV1wamBSipRD+ErPu3/iecNc5jmogIlM9pyPmVAsuVnOBKZxSH/gHdPq7hB3flt3AGkVVWQ7DXOhDRUJkIjY0QxyaOdpG5o8zM97Wz5eZxnp/X69/8vrHKt/loZssnnrrxOeWG1D9d2eXoyfPUyjzMLg61melXhjaf0/kq36AbemooWOPQT4aNZJ7dsCswrn9LR5hZ2ZzgZWgaAVyzFTL5NqQ1WKnQDAXXVaK1ra40noPXrHjdwD6iU1DA9XIC7J8HBLNgv3Ccma2b+QBQAA</Configuration>
                 <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
             </LocalBusinessRule>
-            <LocalBusinessRule ID="acn-ec647937-2030-4377-8872-f2ccaa67d1d9" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
-Action #1 (JavaScriptBusinessActionWithBinds):
-<config>
-  <bindings>
-    <binding alias="trans" type="CurrentTransition" contract="CurrentTransitionBindContract"/>
-  </bindings>
-  <messages/>
-  <javaScript>
-logger.info("Trans3 "+trans);
-  </javaScript>
-</config> -->
-                <Configuration>H4sIAAAAAAAA/4VSTUsDMRC991eEHIoi7ipehP0obVVQKBTb4rGEbRpH0iQms0X/vclmu90i1dvMm8mb9yZjZC1ArZkxErhbw3ZdabUFkTsPYGliOWJFPvraSbLn1oFWBb1NbijhqtIbUKKgq+XT9T0dlYN8UjtQ3LnXWvJyQEgHzBs60q9H6PmhoC9szxaVBYOH+rhCP+gN8H0CauNo4PJsc2bZjqOXEYE+RAJT7CbLb8ML+uFpE8mUSBZovVBaDiVmJ06Gn7XGzNuJwdFTzBtjMRwNBWaDQBBmzJhpckIOCPGbQssq9DLii2ltLVe4tEw5CHZC27TtaueNJTDX9mNobPHO1VQyd2hQtZQxSjsxaV9Nnnbvzuzn0VptZ37BTPA/9vQ/0fHLzrNILQS3Caitvoi6m13ckZhcNYYvs1/DekDzz3l6ekX+ztLTQ2tv9geICMLA0wIAAA==</Configuration>
+            <LocalBusinessRule ID="acn-ff494726-6f7b-4c27-a012-83ba2c8317db" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (RemoveObjectFromWorkflowAction):
+Workflow=
+Message=AutoDelete
+ -->
+                <Name>Delete New Item Workflow</Name>
+                <Configuration>H4sIAAAAAAAA/3WQwYrCMBRF935FePtpdeciqShFmIVM6Ti4LLG+hjhpEpK0o38/0apUxO153JOba1UnpK64tUqir2RT1UY3UlAfQcjscB4Yo4tTq0iPzkujGcySKRDUtTlILRj8bNcfc1hkE7rqvNTofdkpzCaEPEBx1ZHxfUCfOYMSW9Pj1/6IdVg70+6M+22U+VvWIT4HF1FUFdzxFkPsMIAxIhfNPQZke7bI4Mh7niiuRfIdXCwKGU0fiTeOTSzHBb5XLLtgclQx8CIbgWtFmj7/Pu6TPg902/ofQINa3osBAAA=</Configuration>
                 <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
             </LocalBusinessRule>
         </STEPWorkflow>

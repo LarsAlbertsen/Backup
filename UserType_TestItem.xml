@@ -4,6 +4,16 @@
         <UserType ID="TestItem" ManuallySorted="false" AllowInDesignTemplate="false" AllowQuarkTemplate="false" IsCategory="false" ReferenceTargetLockPolicy="Strict" IDPattern="[id]" Referenced="true">
             <Name>TestItem</Name>
             <UserTypeLink UserTypeID="Tree"></UserTypeLink>
+            <AttributeLink AttributeID="Bullet01"></AttributeLink>
+            <AttributeLink AttributeID="Bullet02"></AttributeLink>
+            <AttributeLink AttributeID="Bullet03"></AttributeLink>
+            <AttributeLink AttributeID="Bullet04"></AttributeLink>
+            <AttributeLink AttributeID="Bullet05"></AttributeLink>
+            <AttributeLink AttributeID="Bullet06"></AttributeLink>
+            <AttributeLink AttributeID="Bullet07"></AttributeLink>
+            <AttributeLink AttributeID="Bullet08"></AttributeLink>
+            <AttributeLink AttributeID="Bullet09"></AttributeLink>
+            <AttributeLink AttributeID="Bullet10"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

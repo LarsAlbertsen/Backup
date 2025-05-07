@@ -11,6 +11,7 @@
             <AttributeGroupLink AttributeGroupID="Marketing"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Family"></UserTypeLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="TestItem"></UserTypeLink>
             <UserTypeLink UserTypeID="Variant"></UserTypeLink>
         </Attribute>
     </AttributeList>

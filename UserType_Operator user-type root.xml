@@ -3,6 +3,7 @@
     <UserTypes>
         <UserType ID="Operator user-type root" Referenced="true">
             <Name>User</Name>
+            <AttributeLink AttributeID="UPN"></AttributeLink>
             <AttributeLink AttributeID="UserInformation"></AttributeLink>
             <AttributeLink AttributeID="UserLastActivityDate"></AttributeLink>
         </UserType>

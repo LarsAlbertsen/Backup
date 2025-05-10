@@ -3,6 +3,9 @@
     <UserList>
         <User ID="OSVALDOARDILES" Deactivated="true">
             <Name>Osvaldo Ardiles</Name>
+            <MetaData>
+                <Value AttributeID="UPN">Osvaldo.Ardiles@Argentina.org</Value>
+            </MetaData>
             <UserGroupLink UserGroupID="ReadOnly"></UserGroupLink>
             <SystemSetup></SystemSetup>
         </User>

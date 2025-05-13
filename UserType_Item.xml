@@ -78,6 +78,7 @@
             <AttributeLink AttributeID="LastEdited"></AttributeLink>
             <AttributeLink AttributeID="MFGPartNo"></AttributeLink>
             <AttributeLink AttributeID="MarketingCopy"></AttributeLink>
+            <AttributeLink AttributeID="MultiTextLang"></AttributeLink>
             <AttributeLink AttributeID="Number"></AttributeLink>
             <AttributeLink AttributeID="NumericText"></AttributeLink>
             <AttributeLink AttributeID="PortionOfWood"></AttributeLink>

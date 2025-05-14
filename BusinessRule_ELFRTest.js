@@ -52,19 +52,12 @@
 }
 */
 exports.operation0 = function (node,logger,manager,hov) {
-var n = manager.getNodeHome().getObjectByKey('ItemKey2', '54321')
-logger.info(n)
-if (n) {
-	logger.info(n.getID())
-	if (!manager.getProductHome().getProductByID(n.getID())) {
-		logger.info('Cannot get from ID')
-	}
-}
-
-var v = n.getValue('laal_number')
-logger.info(v)
-//v.setSimpleValue('333')
-
+var val = node.getValue('Bullet07')
+val.setSimpleValue(val.getSimpleValue() + '7')
+val = node.getValue('Bullet08')
+val.setSimpleValue(val.getSimpleValue() + '8')
+val = node.getValue('Bullet09')
+val.setSimpleValue(val.getSimpleValue() + '9')
 
 
 

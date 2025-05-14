@@ -6,14 +6,14 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "TriggerTestCondition",
+  "id" : "EventTriggeringTestCondTrue",
   "type" : "BusinessCondition",
-  "setupGroups" : [ "TriggerTest" ],
-  "name" : "TriggerTestCondition",
+  "setupGroups" : [ "EventTriggeringTest" ],
+  "name" : "EventTriggeringTestCondTrue",
   "description" : null,
   "scope" : "Global",
-  "validObjectTypes" : [ "Item" ],
-  "allObjectTypesValid" : false,
+  "validObjectTypes" : [ ],
+  "allObjectTypesValid" : true,
   "runPrivileged" : false,
   "onApprove" : "Never",
   "dependencies" : [ ]
@@ -35,8 +35,8 @@
     "value" : null,
     "description" : null
   }, {
-    "contract" : "ManagerBindContract",
-    "alias" : "manager",
+    "contract" : "CurrentEventQueueBinding",
+    "alias" : "ceq",
     "parameterClass" : "null",
     "value" : null,
     "description" : null
@@ -45,10 +45,12 @@
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (logger,node,manager) {
-logger.info('node.WS ' + node.getManager().getCurrentWorkspace().getID())
-logger.info('manager.WS ' + manager.getCurrentWorkspace().getID())
-logger.info('node.laal_number ' + node.getValue('laal_number').getSimpleValue())
+exports.operation0 = function (logger,node,ceq) {
+var msg = {}
+msg.time = Date.now()
+msg.eq = ceq.getID()
+msg.node = node.getID()
+logger.info(JSON.stringify(msg))
 
-return true;
+return true
 }

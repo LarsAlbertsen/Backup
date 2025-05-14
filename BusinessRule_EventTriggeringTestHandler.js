@@ -6,14 +6,14 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "TriggerTestAction",
+  "id" : "EventTriggeringTestHandler",
   "type" : "BusinessAction",
-  "setupGroups" : [ "TriggerTest" ],
-  "name" : "TriggerTestAction",
+  "setupGroups" : [ "EventTriggeringTest" ],
+  "name" : "EventTriggeringTestHandler",
   "description" : null,
   "scope" : "Global",
-  "validObjectTypes" : [ "Item" ],
-  "allObjectTypesValid" : false,
+  "validObjectTypes" : [ ],
+  "allObjectTypesValid" : true,
   "runPrivileged" : false,
   "onApprove" : "Never",
   "dependencies" : [ ]
@@ -23,20 +23,14 @@
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
-    "contract" : "LoggerBindContract",
-    "alias" : "logger",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
-  }, {
     "contract" : "CurrentObjectBindContract",
     "alias" : "node",
     "parameterClass" : "null",
     "value" : null,
     "description" : null
   }, {
-    "contract" : "ManagerBindContract",
-    "alias" : "manager",
+    "contract" : "LoggerBindContract",
+    "alias" : "logger",
     "parameterClass" : "null",
     "value" : null,
     "description" : null
@@ -45,8 +39,7 @@
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (logger,node,manager) {
-logger.info('node.WS ' + node.getManager().getCurrentWorkspace().getID())
-logger.info('manager.WS ' + manager.getCurrentWorkspace().getID())
-logger.info('node.laal_number ' + node.getValue('laal_number').getSimpleValue())
+exports.operation0 = function (node,logger) {
+logger.info(node.getID())
+
 }

@@ -29,20 +29,8 @@
     "value" : null,
     "description" : null
   }, {
-    "contract" : "CurrentEventQueueBinding",
-    "alias" : "ceq",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
-  }, {
     "contract" : "CurrentObjectBindContract",
     "alias" : "node",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
-  }, {
-    "contract" : "CurrentEventTypeBinding",
-    "alias" : "cet",
     "parameterClass" : "null",
     "value" : null,
     "description" : null
@@ -51,11 +39,12 @@
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (logger,ceq,node,cet) {
-if (cet.equals(com.stibo.core.domain.eventqueue.BasicEventType.Modify)) {
-	return true
+exports.operation0 = function (logger,node) {
+for (var i = 7; i<10; i++) {
+	logger.info(node.getID() + ' Bullet0'+i + '=' + node.getValue('Bullet0' + i).getSimpleValue()) 	
 }
-return false
+logger.info('');
+return true
 
 
 }

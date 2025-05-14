@@ -5,11 +5,11 @@
             <Name>Eli Frandsen</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">22</Value>
-                <Value AttributeID="UserLastActivityDate">2025-05-12</Value>
+                <Value AttributeID="UserLastActivityDate">2025-05-14</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>
-                <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context2</SystemSetupValue>
+                <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>
             </SystemSetup>
         </User>
     </UserList>

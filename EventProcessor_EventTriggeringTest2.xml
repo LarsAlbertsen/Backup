@@ -55,7 +55,7 @@ IndexWordHierarchyTriggering=
 NameTriggering=
 ObjectTypeGroupings=
 <ObjectTypeRules>
-  <ObjectTypeRules>
+  <ObjectTypeRules ConditionID="EventTriggeringTestCondTrue">
     <ObjectType ObjectTypeID="Item"/>
   </ObjectTypeRules>
 </ObjectTypeRules>
@@ -84,7 +84,7 @@ UnitTemplate=
 Version=3
 attributeGroup=Attribute group root
 objecttype=Item -->
-                <Configuration>H4sIAAAAAAAA/9VUTXObMBC951douKe0k0sPyBnGTlpmmsZjk/Qsw5qqERKjlVynv74CJFMbOnFuyY391HvL200RweRQN4IZoMn1vhZkBxq5kjT69OFjREAWquSyotFDfnv5ObqeXSTr/GZ5udSqtIXJ5FbpmhlXQVaASuwgk4JLWMEWabRlAiEit0oI9fvetda8hLXd+Ooh42bfKG0WoPkOytQYfQjNLghJ0hYo+qw1/wM0uuOS17aOyEJJ0z8wFwyRb3nR4clVV+WAgHY0XInRtu8XOsZd87jv7pjF/6E2S7AR3MxaYHxjDXzj8glzzavKIZbVafhdjHTggu0gXiR/Mt13QPEY8bR8vByOU0kmC2FLWDKnHOOF48Vy0vSMwWWyhP0PpcuvHDTTxc/nkXK+sxpGzvvNLyhM/tzAF61s4wJIk8G5sgKwwzThO/KS4TNb0CgzUAc2o9Kxy6PpZzEC6Wm/eTkkIfu1R8TXTZ2R0HNSLv4vtH82Djfn3/MRTyrv8EwIj/mGiDfnWiGOyrqTNh16ZMICBmvBDJs78syNW+NLryaxN3v1hJmesQSDcNwmPGHD3CTv3KOpLNOm0cr9MZ/5IPnbl5Nj3+I893Y+egJX3mZBCd1m04MwSNXaRCtlfKbqttG4baTt3nrvXzOzZZ65BwAA</Configuration>
+                <Configuration>H4sIAAAAAAAA/9VUTXObMBC951douKe000sP4AxjOy0zTeOxSXKW0ZqqERKjFa7TX18JJJMYOnFvyY3Vfr23vN0MEUwBdSOogTS5OtSC7EEjVzKNPn34GBGQpWJcVml0V1xffomuZhfJpliuLldasbY0udwpXVNjM8gaUIk95FJwCWvYYRrtqECIyLUSQv2+taU1Z7Bptz57iFgeGqXNAjTfA8uM0UfX7IKQJHNA0Udt+B9Ioxsued3WEVkoafoGc0ER+Y6XHZ5CdVkWCGhLw6YY3fb1QsW4Kx731S2z+B/UZgk2gpuZA8a3rYHvXD5ioXlVWcSyOnW/i5EOXNAN4lXyJ9N9BxRfIp6Wj5fDy1CSy1K0DFbUKsd44XixnBQ9Y3C5ZHB4UJp946CpLn8+jZTzg9Ywerzd/oLSFE8NfNWqbawD02R4XLcCsMN08kbmSjLuEOSLNFruLYWhdgFonL94tgtDPhk+XW5uoA68R43HTx53P7URHT+gNy+cJET/77nxeVMHJ9ScFJb/C04DcbhOzw9NPKnRY5vgHvMNHm/OtUIcpXXHb9p1T0ULGKwFNdQqx1A7bo2vdU1ib/bqCTM9Y10G4didecSG2kne2KaZZFnTaGX/mI+8k/zty8mydzjPvbL3nsBnb9OghO4GpEdhkMrZRCtlfKTqttHYbUzd3vrXvwCCTpXjBwAA</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

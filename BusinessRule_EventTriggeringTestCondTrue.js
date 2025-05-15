@@ -50,6 +50,12 @@ var msg = {}
 msg.time = Date.now()
 msg.eq = ceq.getID()
 msg.node = node.getID()
+msg.valCount = 0;
+node.getValues().toArray().forEach(function(val) {
+	if (val.getSimpleValue()) {
+		msg.valCount++
+	}
+})
 logger.info(JSON.stringify(msg))
 
 return true

@@ -50,6 +50,8 @@ var msg = {}
 msg.time = Date.now()
 msg.eq = ceq.getID()
 msg.node = node.getID()
+msg.ItemUniqueID = node.getValue('ItemUniqueID').getSimpleValue()
+msg.Bullet05 = node.getValue('Bullet05').getSimpleValue()
 msg.valCount = 0;
 node.getValues().toArray().forEach(function(val) {
 	if (val.getSimpleValue()) {
@@ -57,6 +59,7 @@ node.getValues().toArray().forEach(function(val) {
 	}
 })
 logger.info(JSON.stringify(msg))
+
 
 return true
 }

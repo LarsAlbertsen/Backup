@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <AttributeList>
-        <Attribute ID="Purpose" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
+        <Attribute ID="Purpose" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
             <Name>Purpose</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="255" InputMask=""></Validation>
             <DimensionLink DimensionID="Language"></DimensionLink>

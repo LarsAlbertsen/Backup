@@ -13,7 +13,7 @@
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ "Item" ],
-  "allObjectTypesValid" : false,
+  "allObjectTypesValid" : true,
   "runPrivileged" : false,
   "onApprove" : "Never",
   "dependencies" : [ ]
@@ -34,6 +34,7 @@
 }
 */
 exports.operation0 = function (node) {
+/*
 var val = node.getValue('Bullet05')
 val.setSimpleValue(val.getSimpleValue() + '5')
 val = node.getValue('Bullet06')
@@ -44,7 +45,12 @@ val = node.getValue('Bullet08')
 val.setSimpleValue(val.getSimpleValue() + '8')
 val = node.getValue('Bullet09')
 val.setSimpleValue(val.getSimpleValue() + '9')
+*/
 
-
+node.getValue('DescrptionOnEntity').setSimpleValue('a')
+node.getValue('DescrptionOnEntity').setSimpleValue('b')
+node.getValue('DescrptionOnEntity').setSimpleValue('c')
+node.getValue('DescrptionOnEntity').setSimpleValue('d')
+node.getValue('DescrptionOnEntity').setSimpleValue('e')
 
 }

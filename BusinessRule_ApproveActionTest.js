@@ -6,16 +6,16 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "EventTriggeringTestHandler",
+  "id" : "ApproveActionTest",
   "type" : "BusinessAction",
   "setupGroups" : [ "EventTriggeringTest" ],
-  "name" : "EventTriggeringTestHandler",
+  "name" : "ApproveActionTest",
   "description" : null,
   "scope" : "Global",
-  "validObjectTypes" : [ ],
-  "allObjectTypesValid" : true,
+  "validObjectTypes" : [ "Item" ],
+  "allObjectTypesValid" : false,
   "runPrivileged" : false,
-  "onApprove" : "Never",
+  "onApprove" : "Trigger",
   "dependencies" : [ ]
 }
 */
@@ -34,14 +34,17 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
+  }, {
+    "contract" : "ApproveContextBindContract",
+    "alias" : "ac",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,logger) {
-logger.info(node.getID())
-
-
+exports.operation0 = function (node,logger,ac) {
 
 }

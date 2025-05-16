@@ -58,6 +58,9 @@ ObjectTypeGroupings=
   <ObjectTypeRules ConditionID="EventTriggeringTestCondTrue">
     <ObjectType ObjectTypeID="Item"/>
   </ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="Leaf"/>
+  </ObjectTypeRules>
 </ObjectTypeRules>
 ParentTriggering=
 ProductTemplate=
@@ -83,8 +86,8 @@ UnitTemplate=
 </STEP-ProductInformation>
 Version=3
 attributeGroup=Attribute group root
-objecttype=Item -->
-                <Configuration>H4sIAAAAAAAA/9VUTXObMBC951douKe000sP4AxjOy0zTeOxSXKW0ZqqERKjFa7TX18JJJMYOnFvyY3Vfr23vN0MEUwBdSOogTS5OtSC7EEjVzKNPn34GBGQpWJcVml0V1xffomuZhfJpliuLldasbY0udwpXVNjM8gaUIk95FJwCWvYYRrtqECIyLUSQv2+taU1Z7Bptz57iFgeGqXNAjTfA8uM0UfX7IKQJHNA0Udt+B9Ioxsued3WEVkoafoGc0ER+Y6XHZ5CdVkWCGhLw6YY3fb1QsW4Kx731S2z+B/UZgk2gpuZA8a3rYHvXD5ioXlVWcSyOnW/i5EOXNAN4lXyJ9N9BxRfIp6Wj5fDy1CSy1K0DFbUKsd44XixnBQ9Y3C5ZHB4UJp946CpLn8+jZTzg9Ywerzd/oLSFE8NfNWqbawD02R4XLcCsMN08kbmSjLuEOSLNFruLYWhdgFonL94tgtDPhk+XW5uoA68R43HTx53P7URHT+gNy+cJET/77nxeVMHJ9ScFJb/C04DcbhOzw9NPKnRY5vgHvMNHm/OtUIcpXXHb9p1T0ULGKwFNdQqx1A7bo2vdU1ib/bqCTM9Y10G4didecSG2kne2KaZZFnTaGX/mI+8k/zty8mydzjPvbL3nsBnb9OghO4GpEdhkMrZRCtlfKTqttHYbUzd3vrXvwCCTpXjBwAA</Configuration>
+objecttype=Item;Leaf -->
+                <Configuration>H4sIAAAAAAAA/9VUTXObMBC951douKek00sP4AxjOy0zSeOxSXqWYaFqhMRohev011cCySSGjN1bckP78Xbf8nYTRNAZ1A2nGuLoel9zsgOFTIo4+PzpKiAgclkwUcXBQ3Zz+TW4nl1Em2y5ulwpWbS5TkUpVU21ySBrQMl3kArOBKyhxDgoKUcIyI3kXP65N9CKFbBpty57iFjuG6n0AhTbQZForQ6u2QUhUWIbRRe1YX8hDu6YYHVbB2Qhhe4LzDlFZCXLu34y2WWZRkAZGiZFq7bH84hhBx726IZZ+Aa1WYQNZ3pmG2PbVsMtE0+YKVZVpmNRHbs/xEgHLmgHcZL80XQ/AMXXHU/Lx8nhdShJRc7bAlbUKEc74TixHIGeMbhUFLD/KVXxnYGiKv/1PFLOD1rDyHi//Q25zp4b+KZk2xgHxtFgXLccsOvpyEbmUhTMdpAu4mC5MxQG7AxQW3/2YheGfDJ82txUQ+15n1H4FNwt0PJNuLHJjaH/CaPpuHm/ex1GPvp/r5fLm7pfHnNSp+4vWEmF/ti9vFvhpOQPZbx7zNd73HOuJOIorbul065HyltA/1pQTY0QNTXjVniqahS6Z68eP9Mztm8QjlnBJ2yomeSdKZqIImkaJc0fc5EPgr1/ORn2ts9zj/ajI/DFvalXQndS4oMwSGXfREmpXaTstlGbbYztGRhZr2K7zs78D8MiLYVJCAAA</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

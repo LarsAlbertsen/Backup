@@ -23,7 +23,7 @@ PluginConfiguration=
   <simple id="Context">step://context?id=Context2</simple>
   <simple id="SkipDeletedNodes">false</simple>
   <simple id="Workspace">step://workspace?id=Main</simple>
-  <simple id="WorkspaceTriggering">MainAndApproved</simple>
+  <simple id="WorkspaceTriggering">Main</simple>
   <simple id="collateNodes">false</simple>
 </plugin>
 ScheduleSpecification=
@@ -32,7 +32,7 @@ ScheduleSpecification=
 </entries> -->
             <SetupGroupLink SetupGroupID="EventTriggeringTest"></SetupGroupLink>
             <Name>EventTriggeringTest</Name>
-            <Configuration>H4sIAAAAAAAA/6VUW2/aMBR+76+IvIm3EdikqRoQxCWsD7RkQLe9TcY5pEcYO/OFwn79HALpQutO2t7s4+9y7JwvIynWmFlFDUrR6/b3Wx7sQOliR9rNFglAMJmiyHrkfjl5d0360VU35zZDEWDaI/EOhEmUZKC1VEOqYfSnJImugqCrcZtzOOLnoHMpNK443GtQJNIG8k9haN2m7wDxdDLvhiXhkjukhj0s8BeQqN1q+VBjetBLOQdDURy70yTyghOFUqE5OEUf5IsF6xzjr8l8NvKBbul+xtPTO4B+tcEbaVXV4QXr47WPNUUBOgE1/Jwc1b3yE4rcaatDLKh75ZRERln4K9pJo3TgD63Uh53lBreoDbKpZJu6x5py7TV5gXi281EW7AFSy+H77fTHOE7m8WiwjMckanDTqU1p46eVpuNGtVz0G5npNN60W50C6b6+QtBVLQjO1UPAONX6RGdy23TtrWTTGuRNfTJPYY0CizlunvsZV6W359IduF5KnbDmHl7aP122G5YZciudczRRrJRUc8ilMqD+JYiuMWq5qeexpkrCyi058kb/G/6h1cVU6gErFOrWpcWz/NcpVfxXp7Jy73n8DRRaS4VZ5uZEZEvQ5oaKlIPyDYy7jIG9qRRZuS/ETkfvfdRvUm10ThlU5MdzpaDfupj6qExyTg3cybSI76shqFyerkWiQnsg0kGeK7kDb/IWG8zHwMFA+rLVs3n6DZx/CnrZBQAA</Configuration>
+            <Configuration>H4sIAAAAAAAA/6VUXW/aMBR976+IvIm3EdikqRoQVCCsD1AyoNveJuNcUgtjZ752C/v1cwikC62ZtL3Z1+fj2rknQyXXPLOaGq5kr9vfbUXwCBqLHWk3WyQAyVTKZdYj98vxu2vSj666ubAZlwFPeyR+BGkSrRggKj2gCMM/JUl0FQRd5NtcwAE/B8yVRL4ScI+gSYQG8k9haN2m7wDxZDzvhiXhnDughj0s+C8gUbvV8qFGdI9LNQdDuTx0hyTyghPNleZm7xR9kC8WrHOMvybz2dAHmtLdTKTHdwC82OCtsrrq8Iz18drHmnAJmIAefE4O6l75MeXCaet9LKl75ZRERlv4K9pJc+XAH1qpDzvLDd9yNJxNFNvUPdZUoNfkFeLJzkdZsAdIrYDv08mPUZzM4+HNMh6RqCFMpzaljZ9WmY4b1XLRb2Sm03jTbnUKpPv6mgNWtSA4VfcBExTxSGdq23TtrVTTGi6aeDRPYc0lL+a4eepnVJXenkp34HopdcKae3hu/3zZblhmyK0wF9xEsdZKzyFX2oD+lyC6xqgVpp7HmioJK7fkwBv+b/gHFoupxBtWKNStS4sX+a9TqvivjmXt3vPwGyi0lppnmZsTmS0BzS2VqQDtGxh3GQM7Uymycl+IHY/e+6jflN5gThlU5KdTpaBPXUx9VKaEoAbuVFrE92IIKpfna5HokvZiw/MRCDCQvq7/Yoh+A/mQRv3OBQAA</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
@@ -55,8 +55,14 @@ IndexWordHierarchyTriggering=
 NameTriggering=
 ObjectTypeGroupings=
 <ObjectTypeRules>
-  <ObjectTypeRules ConditionID="EventTriggeringTestCondTrue">
+  <ObjectTypeRules ActionID="EventTriggerTestCreateEvent" ConditionID="EventTriggeringTestCondTrue">
     <ObjectType ObjectTypeID="Item"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="Leaf"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules ActionID="EventTriggerTestCreateEvent" ConditionID="EventTriggeringTestCondTrue">
+    <ObjectType ObjectTypeID="MEssage"/>
   </ObjectTypeRules>
 </ObjectTypeRules>
 ParentTriggering=
@@ -76,15 +82,15 @@ ProductTemplate=
     </Product>
   </Products>
 </STEP-ProductInformation>
-TriggeringWorkspace=MainAndApproved
+TriggeringWorkspace=Main
 UnitTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <UnitList/>
 </STEP-ProductInformation>
 Version=3
 attributeGroup=Attribute group root
-objecttype=Item -->
-                <Configuration>H4sIAAAAAAAA/9VUTXObMBC951douKe000sP4AxjOy0zTeOxSXKW0ZqqERKjFa7TX18JJJMYOnFvyY3Vfr23vN0MEUwBdSOogTS5OtSC7EEjVzKNPn34GBGQpWJcVml0V1xffomuZhfJpliuLldasbY0udwpXVNjM8gaUIk95FJwCWvYYRrtqECIyLUSQv2+taU1Z7Bptz57iFgeGqXNAjTfA8uM0UfX7IKQJHNA0Udt+B9Ioxsued3WEVkoafoGc0ER+Y6XHZ5CdVkWCGhLw6YY3fb1QsW4Kx731S2z+B/UZgk2gpuZA8a3rYHvXD5ioXlVWcSyOnW/i5EOXNAN4lXyJ9N9BxRfIp6Wj5fDy1CSy1K0DFbUKsd44XixnBQ9Y3C5ZHB4UJp946CpLn8+jZTzg9Ywerzd/oLSFE8NfNWqbawD02R4XLcCsMN08kbmSjLuEOSLNFruLYWhdgFonL94tgtDPhk+XW5uoA68R43HTx53P7URHT+gNy+cJET/77nxeVMHJ9ScFJb/C04DcbhOzw9NPKnRY5vgHvMNHm/OtUIcpXXHb9p1T0ULGKwFNdQqx1A7bo2vdU1ib/bqCTM9Y10G4didecSG2kne2KaZZFnTaGX/mI+8k/zty8mydzjPvbL3nsBnb9OghO4GpEdhkMrZRCtlfKTqttHYbUzd3vrXvwCCTpXjBwAA</Configuration>
+objecttype=Item;Leaf;MEssage -->
+                <Configuration>H4sIAAAAAAAA/9VVTVPbMBC98ys0vlPD9NKDFSaTBOoZUjKJgbNir42KLHm0chr66ys7UgyxmYRLB27e77ert+sxIpgEykowAzS62paCbEAjV5IGl98uAgIyVRmXBQ3uk+vzH8HV6CxaJbPF+UKrrE5NLHOlS2ZsBFkCKrGBWAouYQk50iBnAiEg10oI9efOptY8g1W9dtGdx2xbKW2moPkGsrExem8anRESjRug6LxW/C/QYM4lL+syIFMlza7ARDBEnvO0xZOoNsoCAW3bsCFG17t8PmPYJg932W1n4TutjSKsBDejBhhf1wZuuXzGRPOisIhlcWj+EiPtesFmEEebP5juF2jxLeJh+jg6vHUlsUxFncGCWeYYRxxHloOkJwwulhlsH5XOfnLQTKdPLz3m/GIl9JR369+QmuSlghut6soakEadclkLwBbTgY6M06Z8PKXBbGPxu8QJoJlosG/WagMyUTLjQ562Uuts7cmrlenKkO6ziY0NlH48J+A7lu4WWP6BdP+93fkMkRXwLsS+yj3ojk69d3bM+fQbFXnvj95hFzd0iX3OwY1zD9EsR+jP9usLHA4u776MN/f79RYnTrRC7IW1f4Vh0wMTNaCXpswwSx7D7Lg1HqsahU7cscfP9IQ70hHHHpNnrJid5NwWdeZ7yT8/h2zLDc5T/zkProHvTmb++duLSPdsIEUjE62UcZ6qXUFjV5A256mnvaDNmempL6nbbmf5B/FdZm4iCQAA</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

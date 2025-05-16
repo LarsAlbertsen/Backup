@@ -6,6 +6,7 @@
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>
+            <AttributeLink AttributeID="Purpose"></AttributeLink>
             <AttributeGroupLink AttributeGroupID="Product References"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Family"></UserTypeLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>

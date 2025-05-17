@@ -4,7 +4,7 @@
         <User ID="ELFRREADONLY" Deactivated="false">
             <Name>ELFRReadOnly</Name>
             <MetaData>
-                <Value AttributeID="UserLastActivityDate">2025-04-30</Value>
+                <Value AttributeID="UserLastActivityDate">2025-05-16</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Read Only"></UserGroupLink>
             <SystemSetup>

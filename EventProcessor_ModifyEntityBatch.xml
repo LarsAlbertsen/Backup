@@ -23,14 +23,15 @@ PluginConfiguration=
   <simple id="Context">step://context?id=GL</simple>
   <simple id="SkipDeletedNodes">true</simple>
   <simple id="Workspace">step://workspace?id=Main</simple>
+  <simple id="WorkspaceTriggering">Approved</simple>
 </plugin>
 ScheduleSpecification=
 <entries>
-  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEverySecond" every="5"/>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEverySecond" every="60"/>
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>ModifyEntityBatch</Name>
-            <Configuration>H4sIAAAAAAAA/6VU3ZPSMBB/v7+iUx3epDCOzo1AmYP2zgc4KuU8fXJCusAOIan5OMG/3vSDajmjM9qXNNvfxzbZ3angG9waSTQKPhqOjwfmPYFUxc7vd3u+B5yKDPl25D+sbl9d++Pwapgzs0XuYTby4yfgOpGCglJCToiC6a+SfnjleUOFh5xBiV+CygVXuGbwoED6odKQvwsCYzdjC0hXcZJ+TodBxbmkT4imuxS/gx/2e72eCxaRk1qJJWiCvMxQFXgXOpEoJOqTxbggHwwY6xl/TJaLqQs0J8cFy+rDgNLS6fleGNmkeMF6e+1izZCDSkBO7pI/H8AtQWa15SnmxB515odaGvgr2kqjsODXvcyFXeQaD6g00pmg+7bHhjDlNPkN8WznoqR0B5lh8Gk++xLFyTKe3qziyA87TA9apdr5aoQe2HqtXsadrR50XvR7gwJpr18iqCbmeefoyaOMKFXTqTh0bXpr0TUaWVfV5hlskGNRzN1zPlETenkO2SqTpxSo4FmlVlvVDxSfa5831RK0kgwus/x5JsOg6jf7pnKGOoylFHIJuZAa5L80rc2fGKbbvdtS9YPGLSl50/8dFBOjiuJVN7RQeES9K+3Lhm4nUhk+mxxtgWZwrOuwtJdQDBCTZ0RDnKGO7FrKu8rL/pOGo26kaLUvVO5mLtKjkHuVEwoN7ds5UhDntp2d5bzHPAIGGrJ7kRWt3m7KZxf9A980lr6eBQAA</Configuration>
+            <Configuration>H4sIAAAAAAAA/6VUS4/aMBC+76+I0opbCajSalUgCEh2e4CSErbbnirjDGGEsVM/KPTX13mQNmzTldpcYk++x9iZmZngW0yNJBoFHw3HpwNzjiBVvnP73Z7rAKciQZ6O3Mf1/Zs7d+zfDDNmUuQOJiM3PALXkRQUlBJyShTMfpd0/RvHGSo8ZAwK/ApUJrjCDYNHBdL1lYbsnecZuxlbQLwOo/hLPPRKzjV9SjTdxfgDXL/f6/XaYAE5q7VYgSbIiwxVjm9DRxKFRH22mDbIRwPGeoafotVy1gZakNOSJdVlQGHZ6vleGFmneMW6vWtjzZGDikBOH6K/X8A9QWa15TnkxF514vpaGngRbaVRWPDbXtKGXWYaD6g00rmg+6bHljDVavIH4sWujRLTHSSGwefF/GsQRqtwNlmHget3mB40SrXzzQg9sPVaLsadVA86r/q9QY60v18iqDrmOJfo2aGMKFXRqTh0bXob0TUaWVdV5glskWNezN1LPkEden0J2SqT5xio4EmpVllVD+SfK5/bKkuvkaV3neavSxl6ZcPZlcoYaj+UUsgVZEJqkP/StfYAxDDdbN6GquvVblHBm/3vpJgalVevmtBc4Qn1rrAvOrqZSGn4bHQ0BerJsanC0v6FfIKYLCEawgR1YN+FfFt92TNpOOlaipb7XOVh3kZ6EnKvMkKhpn2/RHLiwvbzi9S1xDS1xc9T159kmRRHaG24eI9ZAAw0JB9Ekg+IZis/q46flS+9wdQFAAA=</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="10"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

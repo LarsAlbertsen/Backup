@@ -60,6 +60,5 @@ node.getValues().toArray().forEach(function(val) {
 })
 logger.info(JSON.stringify(msg))
 
-
 return true
 }

@@ -12,7 +12,7 @@
   "name" : "PrintName",
   "description" : null,
   "scope" : "Global",
-  "validObjectTypes" : [ "Item" ],
+  "validObjectTypes" : [ "Family", "Item" ],
   "allObjectTypesValid" : false,
   "runPrivileged" : false,
   "onApprove" : "Never",
@@ -34,5 +34,23 @@
 }
 */
 exports.operation0 = function (node) {
-logger.info("printName on "+node.getTitle());
+//logger.info("printName on "+node.getTitle());
+
+//node.getClassificationProductLinks()
+
+if (node.getName()==null) {
+	throw "NULL name on "+node.getID();
+}
+
+const sysName = node.getManager().getSystemInformation().getSystemName()
+logger.info("System Name: "+sysName+ "  Node Name: "+node.getName())
+
+
+/*node.queryChildren().forEach((child) => {
+	logger.info("Processing child: " + child.getTitle());
+	return true
+})*/
+
+
+
 }

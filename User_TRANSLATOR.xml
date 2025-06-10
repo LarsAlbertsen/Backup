@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="TRANSLATOR" ForceAuthentication="true" EMail="laal@stibosystems.com">
+        <User ID="TRANSLATOR" EMail="laal@stibosystems.com" Deactivated="false">
             <Name>Translator</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">a translator</Value>

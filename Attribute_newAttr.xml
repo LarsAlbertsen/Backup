@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <AttributeList>
-        <Attribute ID="newAttr" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
+        <Attribute ID="newAttr" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
             <Name>my new attr</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="400" InputMask=""></Validation>
             <MetaData>

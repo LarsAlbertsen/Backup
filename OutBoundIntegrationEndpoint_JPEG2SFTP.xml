@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <IntegrationEndpoints>
+        <OutBoundIntegrationEndpoint ID="JPEG2SFTP" Description="Export JPEG to SFTP" UserTypeID="OutboundEndpoint user-type root" ProcessPluginID="OutboundBusinessActionMessageProcessor" QueueForEndpoint="OutboundQueue" QueueForProcssing="Out" MaxNumberOfActiveBackgroundProcesses="1" MaximumAgeOfFailedBackgroundProcesses="604800000" MaximumNumberOfFailedBackgroundProcesses="100" MaximumAgeOfSucceededBackgroundProcesses="604800000" MaximumNumberOfSucceededBackgroundProcesses="100" TransactionType="STRICT" ResponsibleUserID="STEPSYS" EnableRetry="false" UseCrossContext="false" DataSourcePluginID="EventQueueDataSourcePlugin" DeliveryMethodPluginID="DeployDeliveryPlugin" MultiThreadCount="1" RefreshCollections="false"><!-- Definition:
+ScheduleSpecification:
+<entries>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleNever"/>
+</entries>
+
+DataSourcePluginConfiguration:
+<Parameters>
+  <Parameter ID="DaysToRetainEvents" Type="java.lang.Integer">10</Parameter>
+  <Parameter ID="eventQueueBatching" Type="com.stibo.util.integrationendpoints.BooleanIntegerParameter">1</Parameter>
+  <Parameter ID="eventQueueBundleMessages" Type="com.stibo.util.integrationendpoints.BooleanIntegerParameter">1</Parameter>
+</Parameters>
+
+DeliveryMethodPluginConfiguration:
+<Parameters>
+  <Parameter ID="properties" Type="java.lang.String">&lt;?xml version=&quot;1.0&quot;encoding=&quot;UTF-8&quot;?&gt;&lt;!DOCTYPE properties SYSTEM&quot;http://java.sun.com/dtd/properties.dtd&quot;&gt;&lt;properties&gt;&lt;comment&gt;Stored at Mon Apr 21 15:11:41 EDT 2025&lt;/comment&gt;&lt;entry key=&quot;CopyToFile&quot;&gt;/tmp/export-$timestamp.$extension&lt;/entry&gt;&lt;entry key=&quot;ExtractToDir&quot;&gt;&lt;/entry&gt;&lt;/properties&gt;</Parameter>
+</Parameters>
+
+ProcessPluginConfiguration:
+<Parameters>
+  <Parameter ID="CollateNodes" Type="java.lang.Boolean">false</Parameter>
+  <Parameter ID="JoinerBusinessAction" Type="com.stibo.core.domain.businessrule.BusinessAction">step://businessrule?id=AssetJoiner</Parameter>
+  <Parameter ID="NodeHandlerBusinessAction" Type="com.stibo.core.domain.businessrule.BusinessAction">step://businessrule?id=AssetHandler</Parameter>
+  <Parameter ID="OutputFileExtension" Type="java.lang.String">.jpg</Parameter>
+</Parameters>
+
+ErrorReporterPluginConfiguration:
+<Parameters/> -->
+            <SetupGroupLink SetupGroupID="Outbound Integration Endpoints"></SetupGroupLink>
+            <Name>JPEG2SFTP</Name>
+            <ScheduleSpecification>H4sIAAAAAAAA/z2Nyw5AMBAA776iaZy33NGLs4svoFZs0kfSLeHvNYLbZA4zjT6dFQdGpuBbWUMldVc06FMk5K4Q4uFLGDsxt9IEB5xoDrAnssBmw2W3uOBKnlJuwPiq/lflpwbMI6lyX/2DG/ynwpGBAAAA</ScheduleSpecification>
+            <DataSourcePluginConfiguration>H4sIAAAAAAAA/7WQvQrCMBSF9z5FyG5sN4f+QKlCB0GlPsC1vdRIelOStNi3NwWtDg4ujgfO/b7DjbN7p9iIxkpNCY9EyBlSrRtJbcLP1W614VkaxAcw0KHzvTRg7B1ZWSS8gMlW+oQOJG1HJGc5q6YeE36DEYQCakVJDls0PI3CeL2cf4HhDDgOOGAOrr76HS9YrTthnbxoMTiphJyJBpwfjtT02mcrcq0VAj1tC9lrf7YO1Cjco7XQov2D+yP4Zz4A7SPzC4EBAAA=</DataSourcePluginConfiguration>
+            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAA/31SS2vCQBC+91dMt5KbWVcqFGOUYiL0IBWyPXhczGLTZh/djJL8+26SYhSkt/mG7zGzs4tVrUo4S1cVRseEhRMCUh9MXuhjTD74ZvxCVsuHxU44oSR63vIBYIDwlsTEOmOlw0JWBHhjZUy+xFmEpdDHMEPnrcgyKDG6yQp+TgYjH9gXQ2qPu+i+XAVHjIInNolak8fkfc33uxSGVMj2GU+30NM/Ee2c0m6E6qTDg1E0x5wO/NDDnnvjPBBu2l6vpMa2l6FxMgeBsDUaXq2DKQM2mzM2f2aQJhymk+msFdEr1cXJY9fAt2z+dlwb23CzKUo5TENRWSpraxyOR1goWaFQNhzJGqVuH65z75z+9U5rdOKA3CSFu9r1vpjeWX1BL0f296fXH+AXLMDHVDUCAAA=</DeliveryMethodPluginConfiguration>
+            <EventQueue QueueStatus="Read" DaysRetained="10"><!-- Definition:
+AssetTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">
+    <Asset/>
+  </Assets>
+</STEP-ProductInformation>
+AttributeLinksTriggering=
+AttributeTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <AttributeList/>
+</STEP-ProductInformation>
+ClassificationTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Classifications ExportSize="Minimum">
+    <Classification IncludeParent="true"/>
+  </Classifications>
+</STEP-ProductInformation>
+IndexWordHierarchyTriggering=
+NameTriggering=
+ObjectTypeGroupings=
+<ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="JPEGImage"/>
+  </ObjectTypeRules>
+</ObjectTypeRules>
+ParentTriggering=
+ProductTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Products DontFollowClassificationToProductReference="true" ExportSize="Minimum">
+    <Product IncludeParent="true">
+      <AssetCrossReference/>
+      <AttributeLink/>
+      <ClassificationReference/>
+      <DataContainers/>
+      <Name/>
+      <OverrideSubProduct/>
+      <OverrideSubProduct/>
+      <ProductCrossReference/>
+      <Values/>
+    </Product>
+  </Products>
+</STEP-ProductInformation>
+TriggeringWorkspace=Approved
+UnitTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <UnitList/>
+</STEP-ProductInformation>
+Version=3
+attributeGroup=Attribute group root
+context=Context1
+objecttype=JPEGImage -->
+                <Configuration>H4sIAAAAAAAA/9VUTXObMBC951dodE9oJpcekDMe20nJpI3HJulZhjVRIiRGK1ynv74CBNSGTtxbcgLtl95bvd0pItgY8kJyCyy83ueS7MCg0IrRy4svlIBKdCpUxuhjfHP+lV5PzsJ1vFieL41Oy8RGaqtNzq3LICtALXcQKSkUrGCLjG65RKDkRkupfz240kaksC43PruPWOwLbewcjNhBOrXWdK7JGSHhtAKKPmotfgOj34USeZlTMtfKNhfMJEcUW5HUeGJdZzkgYBwNl2JN2dRrKwZ18aCp7pgF/6A2CbGQwk4qYGJTWrgX6hVjI7LMIVbZsftTtLTnglUj3iV/1N1PQPEQ8bh8vBwOQ0mkElmmsOROOdYLx4vlqOgJjYtUCvuf2qTfBBhukue3gXJ+8BwGxofNCyQ2fivg1uiycA5kYW9clRKwxjRiO7CS/jeaM3q3XNxGOc86SoP8oclDahoyQOq5f3hNhG30/24Snze2S9qao5rxT1E9b9Aunr93SDAqv+6a1j3k23r8cWY04iCt3mvjricuS8D2NOeWzxx57tpt8L1bw8AfG/W0PT1hEnrhuHF4xYK7Tk6Lwmj3VD7kUYmPryNHu8J56uZ88gSu/Jm3EqjnmnWKIFl1JkZr6yMT9yiwt2zWfC+9WdfTad10sm6YvesPuXeZN9MHAAA=</Configuration>
+            </EventQueue>
+            <ProcessPluginConfiguration>H4sIAAAAAAAA/72RzU7DMBCE730Ky3ccekMoTtRfAYeCRHmAbbxErhxv5N1U7dtjRAXhRz1yHGl25tNsWR+7oA6Y2FO0emqutcLYkPOxtfplu7660XU1KZ8gQYeSfdVEqS+p7pdWb8jhHUQXMM0H9hGZZ43kQK22px6tbqgzLH5HpqGExlEHPprd2ZuGgObHYcWC/W1RjD21d3bGjHLuKotPjD+gHigf/g/PR9VlnMdB+kHWPuDqKBh5RLOHA5gAsTXPkvLuujL7vr0ct6AQQPB9ef6dMycKCJn6FQLjt6SRyK98A3XySU3/AQAA</ProcessPluginConfiguration>
+            <ErrorReporterPluginConfiguration>H4sIAAAAAAAA/7Oxr8jNUShLLSrOzM+zVTLUM1BSSM1Lzk/JzEu3VQoNcdO1ULK347IJSCxKzE0tAarTt+MCABs9DU01AAAA</ErrorReporterPluginConfiguration>
+            <ContextLink ContextID="Context1"></ContextLink>
+            <WorkspaceID>Approved</WorkspaceID>
+        </OutBoundIntegrationEndpoint>
+    </IntegrationEndpoints>
+</STEP-ProductInformation>

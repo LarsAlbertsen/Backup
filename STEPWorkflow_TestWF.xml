@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <STEPWorkflows>
+        <STEPWorkflow ID="TestWF" Referenced="true"><!-- Definition:
+<scxml name="TestWF" initial="Initial" version="0.9">
+  <assignee id="$current" type="user"/>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=878.9975449951669 h=654.0  </editorLayout>
+  <final id="Final" name="Final" discontinued="false">
+    <editorLayout>   node-size-and-position x=20.0 y=471.0 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="acn-ff494726-6f7b-4c27-a012-83ba2c8317db"/>
+  </final>
+  <parallel id="State-5" discontinued="false">
+    <transition target="Enrich">
+      <editorLayout>   edge-path [Enrich]  x=457.0 y=270.5  </editorLayout>
+    </transition>
+    <editorLayout>   node-size-and-position x=149.00245500483317 y=333.0 w=709.9950899903337 h=301.0  </editorLayout>
+    <state id="State-14" discontinued="false" initial="State-15">
+      <editorLayout>   node-size-and-position x=20.0 y=43.0 w=205.99017998066728 h=238.0  </editorLayout>
+      <final id="Inner_Final" discontinued="false">
+        <editorLayout>   node-size-and-position x=60.0 y=193.0 w=100.0 h=25.0  </editorLayout>
+      </final>
+      <state id="Inner_Review" discontinued="false">
+        <transition event="submit" target="Inner_Final"/>
+        <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
+        <onentry businessactionid="acn-2ee0c197-55f1-426a-8828-63271eb5cf45"/>
+      </state>
+      <state id="State-15" name="InnerStart" discontinued="false">
+        <transition businessactionid="acn-0dd3fb4b-9a4a-4b06-a48d-9cc55d4b5da5" event="review" target="Inner_Review"/>
+        <transition businessactionid="acn-acf45290-6cc5-4f60-a116-00358f582ad0" event="no_review" target="Inner_Final">
+          <editorLayout>   edge-path [Inner_Final]  x=150.0 y=130.5 pointx=0.0 pointy=0.0 offsetx=3.0 offsety=0.0  </editorLayout>
+        </transition>
+        <editorLayout>   node-size-and-position x=60.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+        <onentry businessactionid="acn-00fc4264-33c6-49b0-8b7d-8d64979574cd"/>
+      </state>
+    </state>
+    <state id="State-6" discontinued="false" initial="Initial1">
+      <editorLayout>   node-size-and-position x=549.9950899903338 y=43.0 w=140.0 h=163.0  </editorLayout>
+      <final id="Final1" discontinued="false">
+        <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
+      </final>
+      <state id="Initial1" discontinued="false">
+        <transition event="submit" target="Final1"/>
+        <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+        <onentry businessactionid="acn-0113e186-4829-46c3-9fda-1f9c220baf4b"/>
+      </state>
+    </state>
+    <state id="State-7" discontinued="false" initial="State-10">
+      <editorLayout>   node-size-and-position x=284.99995034331226 y=43.0 w=205.9902792940428 h=238.0  </editorLayout>
+      <final id="State-11" discontinued="false">
+        <editorLayout>   node-size-and-position x=45.99027929404281 y=193.0 w=100.0 h=25.0  </editorLayout>
+      </final>
+      <state id="State-10" discontinued="false">
+        <transition event="No_Review" target="State-11">
+          <editorLayout>   edge-path [State-11]  x=55.99027929404281 y=130.5 pointx=0.0 pointy=0.0 offsetx=-3.0 offsety=0.0  </editorLayout>
+        </transition>
+        <transition businessactionid="acn-1161b43e-34df-4dbe-9f12-ce84a78b2392" event="Do_Review" target="State-13"/>
+        <editorLayout>   node-size-and-position x=45.99027929404281 y=43.0 w=100.0 h=25.0  </editorLayout>
+        <onentry businessactionid="acn-053542c4-74c3-4f0f-8b84-4fc9e5b9f7b0"/>
+      </state>
+      <state id="State-13" discontinued="false">
+        <transition event="submit" target="State-11"/>
+        <editorLayout>   node-size-and-position x=85.99027929404281 y=118.0 w=100.0 h=25.0  </editorLayout>
+      </state>
+    </state>
+  </parallel>
+  <state id="Approve" discontinued="false">
+    <transition event="submit" target="Final">
+      <editorLayout>   edge-path [Final]  pointx=0.0 pointy=0.0 offsetx=-73.0 offsety=0.0  </editorLayout>
+    </transition>
+    <transition event="reject" target="State-5"/>
+    <editorLayout>   node-size-and-position x=278.0 y=258.0 w=100.0 h=25.0  </editorLayout>
+  </state>
+  <state id="Enrich" discontinued="false">
+    <transition event="submit" target="Approve"/>
+    <editorLayout>   node-size-and-position x=361.0 y=118.0 w=100.0 h=90.0  </editorLayout>
+    <onentry businessactionid="acn-afcb1728-b121-4f43-bd83-bfb314e71218"/>
+  </state>
+  <state id="Initial" name="Initial" discontinued="false">
+    <transition event="ToEnrich" target="Enrich">
+      <editorLayout>   edge-path [Enrich]  pointx=0.0 pointy=0.0 offsetx=0.0 offsety=0.0  </editorLayout>
+    </transition>
+    <transition event="ParStates" target="State-5">
+      <editorLayout>   edge-path [State-5]  x=491.0 y=163.0 x=504.0 y=270.5 pointx=0.0 pointy=0.0 offsetx=4.0 offsety=0.0  </editorLayout>
+    </transition>
+    <editorLayout>   node-size-and-position x=401.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+  </state>
+</scxml> -->
+            <SetupGroupLink SetupGroupID="ProductWorkflows"></SetupGroupLink>
+            <Name>TestWF</Name>
+            <ValidUserTypeLink UserTypeID="TestItem"></ValidUserTypeLink>
+            <Configuration>H4sIAAAAAAAA/61Y227jNhB9369Qhb7S5mV4K6wARdsFFii6i26LfVgUC4qiEhUOJUhynOzXl5Ls+BI5UpK+2BZpac7MnHOGttm05QdftIVp3Uf/S+3Ce5KbdeNWTbUu2it37+ymdZ9tXVTt78Vt0brsU13cFWt37ZqkrTf7b66LpnX+o/9wW5V16+q/q+z8YY29v10nq/4tKvqw6yQe4q/jyJtbl8R/uab98j6O7lzdFKVPYrzQcRTu8E0S37Rt9dNyud1uF1u2KOvrJcWYL7Fc9g+Nr1Y/IBRFkS8zh5riu0PGZ6gqmxCi9NF9ghc4euhft4mSaqG15ABacyKEjm4SwSHsRQhdvYtWpmmKa+9cVGRJ/KPd1LXzbRy1D1XAuWlcHeIt91+6ehfuaNqQc5QVjS19W/iNCzf2FYj7Z5ylur+cRA2Y9LiB9cAJ7hK4SSh/xBqt2tr43Q3uLuAMlSx/83VhbwJiU1+7sLK73sdz2bVDlWlvoq/Dzj9RVJWFb4c69R+HYpV53rjd8vB5WO+Cr5aH0F0RxqB8MvXnrjTNAUt/jfgYmN1WQBNS10PqRHS53yccQ39NJV7wCbQwiXa17DvW9y4vvFlf7t37bnvfueFism90oBtIcrlvpQ8Vqh+idNMU3jWNsd3NXURjPcpz0CCpQCKXKQJLJTKYUKRYaqhVjMgs7Vi4e0qXUZ/HHDaeseFiFkzsWkDUSRoaz07D5DYlkiqUEkoQ5MBQmqnwkqeMgJNhVZ2kMU6jZpMGBzpw6Oeqqss7Fz/T1crUZr12zzT2nIgX60BALzCmwDnGoFiofSgKY4MmJdbBTDhWWmscFmUoEOtlOyLQF+gxsJjLI8aPK26i00OKIn5iumQ6aw6niakjH4KBCIM2d3nONcEZoffyuex6k8TDhDBHlECgqEYgLEM6zwwiubaU4tTkkJ4Tbxb1egcgzzAvmuco88twLr/HOjxK/jj6PErII0oMKwTPAKQgUKIjBYMgA0rFoUsU87CHqdRUAwaqOqRMvYAf83HAWSjyVrJwxoFaQBICTyDHOVKpgvDJasdTHSwYzyLLH+W3P91d4bbn446Qy/OOkF7ufCQpwqaHHWJzZvMp3PEyECJICswhBlmOIEtd0EyYOdYpMFKllGka71P99WKq7E3ieFKvF7GA6As0OBqPs5nIpjGoMQyX9DrXYo5KMF7Hl+udwFPBz5h8p0a8kziRWisshHy9xvnhJOxdd0Ks22kw4n+YCji3QAUgxmwYDTrFQegyQyoToKXmQf/Z80K/8NwsY3kKKdIGDIIUC2RAZUhby3kGKc8Mf1ROfSabvgZ7Mb1OucbmwKnGSISAwbYERiaoOeTLuMq5oibDj/F9+W0cwunh9sinjrZ7qyJ8N5lm2NO0O53aw+Qh4qRYb5ygczhDncOWaIk4z8MRlgqDlAonWsGoJC7lXelfdZI4LfrrHXOseVMimvbJI7PZH6Xn/LY4nMynWiPVcLrll3sz9zg2xtk9WyeGp5w1PUeA1O5fZ5+YNn/Os7t/Kq52f4n8B1MMYtuBEQAA</Configuration>
+            <LocalBusinessRule ID="acn-00fc4264-33c6-49b0-8b7d-8d64979574cd" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="currentTransition" type="CurrentTransition" contract="CurrentTransitionBindContract"/>
+    <binding alias="wf" type="Workflow" contract="CurrentWorkflowBindContract"/>
+    <binding alias="transitionEvaluation" type="TransitionEvaluation" contract="TransitionEvaluationBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+logger.info('Enter_Inner_Start '+node)
+logger.info('Enter_Inner_Start currentTransition source='+currentTransition.getSource())
+logger.info('Enter_Inner_Start currentTransition target='+currentTransition.getTarget())
+
+logger.info('transitionEvaluation '+transitionEvaluation.getTarget())
+
+/** @type{Product}  */
+var p = node;
+var wfI = p.getWorkflowInstance(wf)
+var notes = wf.getProcessNotes(p, 100) 
+logger.info('notest '+notes.size())
+
+
+/** @type{WorkflowLogHome} */
+var wfLogHome = node.getManager().getHome(com.stibo.core.domain.state.log.home.WorkflowLogHome)
+var logList = wfLogHome.queryWorkflowLogAssignmentEntries(wf, node).asList(13)
+logger.info('logList '+logList)
+
+logger.info("Done")
+  </javaScript>
+</config> -->
+                <Name>Enter_Inner_Start</Name>
+                <Configuration>H4sIAAAAAAAA/71VbW/aMBD+3l9hZRKQtnNA+zIJQgdtpzG1WzWY+hEZ46TuHDu1HVg79b/vnITwro69fYmc5+6ee+5yzqUii7kckzQVnJkxj8ZUyYjHYefseyLQjGnDlQy9Fm56iEmqplzGofd19P71W++se9TpZ4ZLZsyXTLAA3g0Q2W5a0P4BV/cIoQq4yenQqr2ABheh95HMyJBqntqFvUctJLrl9q7P5dR4jgvYbogmCbMgowBWIeSYCm80ekxZ6N0DLRZExnhoNQj1ujVh22uV1B4yZdtQTnFY1lS854UVx7NabNu1V61m25G4PNckrTCEFiiCjllNqAU5ReR5pjWT9vPknlHrXM5LjzJnT3BiSl+ppqyEq8LOBTGVPROiOAWH5B5pIg13LX0hP930/wdibpX+Fgk1f0HKPPqbuZcVXc6IyMgv9MLuCDlUkhMUbA5LJ6ji94zxpdZKX8M9IDH7H+N8pSgR/IlMBCuzjliSCmJZP5NT+C0coH15mfcLFyqOmcZcRqpRv5QQOh5ICc+hJdqi+om7B36e8AXXrYFFRmWasrB+smXCMbPD3Nrwf5McYCDZRz7KrQvy7Qy7JgqK3QXvoQuOj9E7C139caPVNKP2GaHjIDfNiEYpCpFrXbtC5tEAsNTRLe7dQBpLJDRhHvmVn1SWGfCcR84VyCnMwScHNtJT1Go2fbRdTx5UfC44YMOf2JraDckLAVcq/qAS9ryqfB6VaFmBU3FNJEyibvjuxdkaVCXYWD5RmCrN8FQlhEtAYFAxKMN34IQ30ixrBI8rDnrDZTb8kDH9uBLRM4bHMoFPC+OgYaFCl05zRT4mxoU3Wm92DM+Cu35SnvbMQHH7LpQsf/P+1oVaAfIt1wnWdyhs2WB9zZYb+ydFMfrvCQgAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-0113e186-4829-46c3-9fda-1f9c220baf4b" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="trans" type="CurrentTransition" contract="CurrentTransitionBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+//logger.info("Trans2 "+ trans+" Target "+callMethod(trans, "getTarget").getID());
+
+logger.info("Enter initial1 "+ trans+" Target "+trans.getTarget().getID());
+
+function callMethod(clazz, method, para) {
+	if (para && para.length == 5) {
+		return clazz.class.getMethod(method, para[0].type, para[1].type, para[2].type, para[3].type, para[4].type).invoke(clazz, para[0].value, para[1].value, para[2].value, para[3].value, para[4].value) 
+	}
+	if (para && para.length == 4) {
+		return clazz.class.getMethod(method, para[0].type, para[1].type, para[2].type, para[3].type).invoke(clazz, para[0].value, para[1].value, para[2].value, para[3].value) 
+	}
+	if (para && para.length == 3) {
+		return clazz.class.getMethod(method, para[0].type, para[1].type, para[2].type).invoke(clazz, para[0].value, para[1].value, para[2].value)
+	}
+	if (para && para.length == 2) {
+		return clazz.class.getMethod(method, para[0].type, para[1].type).invoke(clazz, para[0].value, para[1].value)
+	}
+	if (para && para.length == 1) {
+		return clazz.class.getMethod(method, para[0].type).invoke(clazz, para[0].value)
+	}
+	return clazz.class.getMethod(method).invoke(clazz)
+}
+  </javaScript>
+</config> -->
+                <Configuration>H4sIAAAAAAAA/71WXWvbMBR9bn/FxYMQ08zO12DgOKFJO+hYoKwZexgjaI7iaFNkT5bDltH/Pn3ZtdZ1JLTri9G59+rcc64VKzktU8KWKM8pwcWSrJdJxtYkHRUyIMa5SZtYPJr82FLYYV6QjMVeL+h6gFmSrQhLY+/D4s3L195kfDqalgVhuCjelxSPTwHqwLWmg2behK4uYu8t2qGbhJNcVPnzRMhGH4nYTAlbFZ7ikmzXiKMtFlKGCTRDoJhMNSx+5jj2vkragCKWBjeCS6HeuEVF5DhpfS8zEUk7ZnHnyWBtzCwnrVRErRe9bqRIVJ85yusYQBUFOTHBUSKkHLNzVnKOmVhwxAqibKmyma2yfc8pQYWtF6rQxmt3M4qKqoCVlJpV6IgK/1Q1Cuv9D8zrkvOMz+XAUYqfY27vsgRRskdfKLZdF3ibUyTwtGQrisMjtN+dmoeFhyHN0hTzgLB11jaK9IvogwFnoMd9Zn0sEE+xqHJSK51jsclWbV3VsQlZYgoN9AO5vLpo+741qh73+14ypZwweQYQ7R3SX6eCulv7r43WJdM/FmioTSja7zuw1agDuZybD790+QlZQ1sFoIW2eaQfuiCgmKViA3EMr+riE45FySW3IgwSdQiVBtumyf+p+zkQ8i1Y1HNQ30EDBw0N8uWodtk3XGmvOHeIlg3SJuy7cODCoYU+GCu3B9sfPov9pzN8vMPBf3L4CE/+sR76T+bhGNVHy+w9QuY/hblKDuB22cz223uf2UZAX7Kj0L3C5SUfure8/cPwG+g2J2lQCAAA</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="false">
+                    <ValidObjectType ID="TestItem"></ValidObjectType>
+                </ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-053542c4-74c3-4f0f-8b84-4fc9e5b9f7b0" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="trans" type="CurrentTransition" contract="CurrentTransitionBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+logger.info("Enter_State10 "+trans);
+  </javaScript>
+</config> -->
+                <Configuration>H4sIAAAAAAAA/71TXUvDMBR9368IEYoittub0I+xzQmKg+EqPpbYZTFyl8QkHeqvN226blX24Itv6bnn3nPO5VZBxbgoiFLAqSn4piil2HCWGAfYTPmyx9Jk/LEFtKPacClSPAqHGFFRyjUXLMVP+e3VNR5ng2RaGS6oMY8V0GyAUAcsm3HouO6hu5sU35MdWZWaK7uvT0rrhJ65fZ1ysTa4nuWmLYkmW2qdDQ8cQ6ie5Nko/1Q0xW9ubAhEsHBltTOKswBs3EsSvFfSxi6Ofxwy+e8mmH+OA2bj4Gw0jOshtc6CqA5DaI8itzGrSWmdHd85q7SmwuaaCMPrWDVt1rJa3QlwYlq+rYkt3qWbATF7gqgA/CvqmYp+ukqirv/EvuZaS71wCyeM/sfeHmRJgH+RF6Ctak63Coil00qsgUZ/8H64mtPGQTJGdcjFRp57P3Ph+ouVdZKjIfLYZbPyi9+aR0BzcUnUv2d38VH/5Nu/5xvQW+36XQMAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="false">
+                    <ValidObjectType ID="TestItem"></ValidObjectType>
+                </ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-0dd3fb4b-9a4a-4b06-a48d-9cc55d4b5da5" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="currentTransition" type="CurrentTransition" contract="CurrentTransitionBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var workflowStateID = currentTransition.getTarget().getID();
+logger.info("workflowStateID:" + workflowStateID);
+logger.info("workflowStateID source:" + currentTransition.getSource().getID());
+logger.info("workflowStateID target:" + currentTransition.getTarget().getID());
+  </javaScript>
+</config> -->
+                <Name>Goto Inner_Review</Name>
+                <Configuration>H4sIAAAAAAAA/71UXUvDMBR9368IFcqG2G5vYteNfShMHAxX8XFcuzRGs6Qm6ab+etOm++ocTgRfyu3JybnnXJKkLCOUzyBNGcVqRpNZLHhCSdjuvi8YWmKpqOCh0/KaDsI8FnPKSeg8RDcXl063U2v3M0U5Vuo+Y9g3/8oI6U5qZf+g1akhtAEmhRzaXbfQaBg6t7CEaSxpqtfrvVibRo9UP/cpnysn1zJqE5CwwNrYsMAuhHIly0bRR4pD58XIegw48aZaGqNOx2U62EvivmVCByaOLbaZ7H8RzJZdl+jAPWs1g1wk7zOGdIMhtEaRmZiWEGtjx+4cZFJiriMJXNE8Vk4blKyyb49RUCU/rvJLzibpgIFak3nGmK38PYN+1WHb3+w/MrtrKYUcm+EDwf8xwzsRA6Of8MRw2TXCi5SBxv2Mz81Z/IX37Qk6bnwJEq2EfE2YWE21aTMaohAdTNsjWEcgzbfeyOvRsN6wNpggBEuP8kTUbaCK3FU5gfNqn1MFkBKZjPFW51t304K0dXeyui5i/aBezd44HP8OUFzEtr9/zc1D4O+/BOWj8gWQwprwrAQAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-1161b43e-34df-4dbe-9f12-ce84a78b2392" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="currentTransition" type="CurrentTransition" contract="CurrentTransitionBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var workflowStateID = currentTransition.getTarget().getID();
+logger.info("workflowStateID:" + workflowStateID);
+logger.info("workflowStateID source:" + currentTransition.getSource().getID());
+logger.info("workflowStateID target:" + currentTransition.getTarget().getID());
+  </javaScript>
+</config> -->
+                <Name>Transition_Do_Review</Name>
+                <Configuration>H4sIAAAAAAAA/71UXUvDMBR9368IFcqG2G5vYteNfShMHAxX8XFcuzRGs6Qm6ab+etOm++ocTgRfyu3JybnnXJKkLCOUzyBNGcVqRpNZLHhCSdjuvi8YWmKpqOCh0/KaDsI8FnPKSeg8RDcXl063U2v3M0U5Vuo+Y9g3/8oI6U5qZf+g1akhtAEmhRzaXbfQaBg6t7CEaSxpqtfrvVibRo9UP/cpnysn1zJqE5CwwNrYsMAuhHIly0bRR4pD58XIegw48aZaGqNOx2U62EvivmVCByaOLbaZ7H8RzJZdl+jAPWs1g1wk7zOGdIMhtEaRmZiWEGtjx+4cZFJiriMJXNE8Vk4blKyyb49RUCU/rvJLzibpgIFak3nGmK38PYN+1WHb3+w/MrtrKYUcm+EDwf8xwzsRA6Of8MRw2TXCi5SBxv2Mz81Z/IX37Qk6bnwJEq2EfE2YWE21aTMaohAdTNsjWEcgzbfeyOvRsN6wNpggBEuP8kTUbaCK3FU5gfNqn1MFkBKZjPFW51t304K0dXeyui5i/aBezd44HP8OUFzEtr9/zc1D4O+/BOWj8gWQwprwrAQAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-2ee0c197-55f1-426a-8828-63271eb5cf45" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="currentTransition" type="CurrentTransition" contract="CurrentTransitionBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+logger.info('Enter_Inner_Review '+node.getID())
+logger.info('Enter_Inner_Review currentTransition source='+currentTransition.getSource())
+logger.info('Enter_Inner_Review currentTransition target='+currentTransition.getTarget())
+  </javaScript>
+</config> -->
+                <Name>Enter_Inner_Review</Name>
+                <Configuration>H4sIAAAAAAAA/71UXU/CMBR951c0MwEJcYM3EzaIICYYiUZmfCS1XGpJaWfb4cevt13HAAkx+ODL0p1ze+6592434zllYoazjDPQM7aYESkWjMbaAqaXedpjSdz/WHG0BqWZFEnQCdsBAkHknAmaBE/pzcVl0O/V4kGumQCtH3MOvRpCFfBQyKFd3kPj6yS4xWs8JYplZsNfEWMTPTPzOmBirgOnZdUesMIrMNaGB3Yh5JR8NEo/M0iCpZUNORY0nBpljQa9OjfdvUrqb7k0XVuOP2xr8u9FYf7Yr1PTrZ912l0n4vJMcFZhCG1QZDtmFCbG2vE3h7lSIMz9yxKIcSHDMqLMecUZ1mWskHMo4aqwIce64nPO/Sk6JXeqsNDMtfSX/ORn/KlmnJXoZ3fiqLp/ZG4jpaSa2MFjCv8xvztJMGdf+IVDmTWFVcaxgUEu5hyiE7xvv97jxrmkFFTIxEKeN0bCXp2NhbDPR1gzeEeNlpt8SMGO7rzZrP0WfzAnpGWuCCSN1gHlVKcF+zdlg5VVOKacFqxTPujUDlD8r3G0vw3svoj2F0a5e74BXcvZbZsEAAA=</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-acf45290-6cc5-4f60-a116-00358f582ad0" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="currentTransition" type="CurrentTransition" contract="CurrentTransitionBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var workflowStateID = currentTransition.getTarget().getID();
+logger.info(currentTransition.getClass().getName())
+logger.info("workflowStateID:" + workflowStateID);
+logger.info("workflowStateID source:" + currentTransition.getSource().getID());
+logger.info("workflowStateID target:" + currentTransition.getTarget().getID());
+  </javaScript>
+</config> -->
+                <Name>Goto_Inner_Final</Name>
+                <Configuration>H4sIAAAAAAAA/71UXU/CMBR991c0MyEsxg3ejLARPjTBiCEy4yO5jlKrpZ1tB+qvt1vHxwZ+xcSXpb0999xzT7ubsJRQPoUkYRSrKZ1PY8HnlATtzuuCoSWWigoeOE2v4SDMYzGjnATOXXR5euZ0wqN2L1WUY6VuU4Z9s1eGSIeJpf0DV3iE0CYwzunQ7rkNDQeBcwVLmMSSJnp93o21KXRP9WOP8plyMi7DNgYJC6yNDBvYDaGMyaJR9JbgwHkytB4DTryJlkaoE9aYbpU6qb2kQrdMO3ax7cnu88bsslMjulU7bjZaGUlWZwTJJobQOoqMY1pCrI0cm9lPpcRcRxK4ollbGaxfoIq6XUZBFfi4ii8wm077DNQazFPG7MovCfSrCtv+Jv8T7y6kFHJkzAeC/8PDaxEDo+/wwHBRNcKLhIHGvZTPzFv8hfbtC/pCeEa1BIlWQj7PmVhNtKk1HKAA7VnuEawjkOZbd7P1cFB3rRYmCMHSo3wu6gfT8tuxWTdGYd119/KsGxUZ54V9J1V9BwofJEBKpDLGW56D8iY5aNvVj9l1bsc37FXP3P272wnkf3HbL88IM0X88hgpJtIHYfq3h+kEAAA=</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-afcb1728-b121-4f43-bd83-bfb314e71218" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="workflow" type="Workflow" contract="CurrentWorkflowBindContract"/>
+    <binding alias="trans" type="CurrentTransition" contract="CurrentTransitionBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+logger.info("Enrich_Enter");
+logger.info("Trans "+trans);
+var workflowInstance = node.getWorkflowInstanceByID(workflow);
+if (workflowInstance){
+	logger.info("Got wfI");
+	/*var task = node.getTask(startState);
+	if (!task) task = node.getTask(workState);
+	if (task){
+		task.triggerByID(taskEvent, "");
+		web.navigate(forwardScreenID, node);
+	}*/
+}
+  </javaScript>
+</config> -->
+                <Name>Enrich_Enter</Name>
+                <Configuration>H4sIAAAAAAAA/7VUUW/aMBB+Jr/CywOCrku2t0kQUKFsYlrVamTqIzLJJXVr7Mx2Qrup/73nOAQYq9pJ25vz3ef7vvNdruBlzsSSFgVnoJcsWyZSZCwfagTMqHBhh0XD8f2akwqUZlJE/ofgvU9AJDJlIo/87/Gndx/98cgbTkrNBGj9reQw8ghpgas6HdmPO2h+HvlfaEUXiWKF2cbPEoNC18zcTJhItW9zYbYrqugaDNpwwD5EbCbHJvFDAZF/i2kDTkUeLIxCo/6oy83goJLuj1KaAZbjDrua3HddmDuOu7kZeDaB1bigRf1NyBYh+FJG0cSgDXdjWioFwlyubiExljJtGI3WGWdUN1whU2jgtqApp7qNl5y7U/ha3Wup7jIuNy8obxraP1aPFRWa2Sa+oG8s8W/ErXS434Nh2N57ZipmSkl1gWNFc/jf0/FVJpSzn3TFoVGMYV1wamBSipRD+ErPu3/iecNc5jmogIlM9pyPmVAsuVnOBKZxSH/gHdPq7hB3flt3AGkVVWQ7DXOhDRUJkIjY0QxyaOdpG5o8zM97Wz5eZxnp/X69/8vrHKt/loZssnnrrxOeWG1D9d2eXoyfPUyjzMLg61melXhjaf0/kq36AbemooWOPQT4aNZJ7dsCswrn9LR5hZ2ZzgZWgaAVyzFTL5NqQ1WKnQDAXXVaK1ra40noPXrHjdwD6iU1DA9XIC7J8HBLNgv3Ccma2b+QBQAA</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="false">
+                    <ValidObjectType ID="TestItem"></ValidObjectType>
+                </ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-ff494726-6f7b-4c27-a012-83ba2c8317db" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (RemoveObjectFromWorkflowAction):
+Workflow=
+Message=AutoDelete
+ -->
+                <Name>Delete New Item Workflow</Name>
+                <Configuration>H4sIAAAAAAAA/3WQwYrCMBRF935FePtpdeciqShFmIVM6Ti4LLG+hjhpEpK0o38/0apUxO153JOba1UnpK64tUqir2RT1UY3UlAfQcjscB4Yo4tTq0iPzkujGcySKRDUtTlILRj8bNcfc1hkE7rqvNTofdkpzCaEPEBx1ZHxfUCfOYMSW9Pj1/6IdVg70+6M+22U+VvWIT4HF1FUFdzxFkPsMIAxIhfNPQZke7bI4Mh7niiuRfIdXCwKGU0fiTeOTSzHBb5XLLtgclQx8CIbgWtFmj7/Pu6TPg902/ofQINa3osBAAA=</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="false">
+                    <ValidObjectType ID="TestItem"></ValidObjectType>
+                </ValidObjectTypes>
+            </LocalBusinessRule>
+        </STEPWorkflow>
+    </STEPWorkflows>
+</STEP-ProductInformation>

@@ -9,10 +9,11 @@
             <AttributeLink AttributeID="AttributeHelpText"></AttributeLink>
             <AttributeLink AttributeID="AttributeUsedFor"></AttributeLink>
             <AttributeLink AttributeID="Completeness Score"></AttributeLink>
-            <AttributeLink AttributeID="ConditionAttribute"></AttributeLink>
             <AttributeLink AttributeID="DisplaySequence"></AttributeLink>
             <AttributeLink AttributeID="GetCompleteness"></AttributeLink>
             <AttributeLink AttributeID="Purpose"></AttributeLink>
+            <AttributeLink AttributeID="SampleMetadataOnAttribute"></AttributeLink>
+            <AttributeLink AttributeID="ValidationErrorMessage"></AttributeLink>
             <AttributeLink AttributeID="WebUIControlOverride"></AttributeLink>
         </UserType>
     </UserTypes>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UnitList>
-        <Unit ID="unece.unit.A11" ParentID="Length">
+        <Unit ID="unece.unit.A11" Referenced="true" ParentID="Length">
             <Name>Å</Name>
             <UnitConversion BaseUnitID="unece.unit.MTR" Factor=".0000000001" Offset="0"></UnitConversion>
         </Unit>

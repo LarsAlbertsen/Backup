@@ -13,7 +13,6 @@
             <MetaData>
                 <Value QualifierID="en-US" AttributeID="AttributeUsedFor">System</Value>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
-                <Value QualifierID="en-US" AttributeID="Purpose">Used to enter mouse-over help into product attributes for display to STEP users</Value>
             </MetaData>
             <AttributeGroupLink AttributeGroupID="Metadata"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Reference-Type user-type root"></UserTypeLink>

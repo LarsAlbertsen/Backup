@@ -4,6 +4,7 @@
         <STEPWorkflow ID="NewItem" Referenced="true"><!-- Definition:
 <scxml name="NewItem" initial="Enrich" version="0.9">
   <assignee id="$current" type="user"/>
+  <auditaction businessactionid="AuditAction"/>
   <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=316.97752808988764  </editorLayout>
   <final id="Final" discontinued="false">
     <editorLayout>   node-size-and-position x=20.0 y=271.97752808988764 w=100.0 h=25.0  </editorLayout>
@@ -26,10 +27,11 @@
     <editorLayout>   node-size-and-position x=20.0 y=42.99999999999999 w=100.0 h=25.0  </editorLayout>
   </state>
 </scxml> -->
+            <BusinessRuleLink ID="AuditAction"></BusinessRuleLink>
             <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
             <Name>NewItem</Name>
             <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
-            <Configuration>H4sIAAAAAAAA/52US4+bMBSF9/kVrtUtLxMIVBipTylS1alUzWrUhQs3xBXYlm1Cpr++jknamWimg8qCK2T7nvOdC7DRyq3gljMLN+K9BlfpjvUGKqN6bms4QjNa+NZoruxnPnAL7VfND7yHDgy1erzs7LmxIG7EdlBSW9C3qr1uZprj0NPKF8S9bE/xR6F5s8dIsAEo/gLT1sKA0QG04VJQHIclRu6EMBTvrVVvomiapnBKQ6m7iMRxFsWbyDfFdfUqCBBCQrYQGP4LAibaQEnjtKRARxqHMbr394km61Pd0zTJw3KzyUgRF2VRbPI1QkFQr1DFjOGdAEC8pfh1M2oNwmJk75VzOhrQTjC6bKpX7oSxDhq13DRSWC5GcAd9BNj3OLO+aJPMPtckLB9dJ9fx7Jpkrsw+UWU1E+fDcHAeKTbjDzcs55XpDtzzW6W0PMAfaWg7CBSze3R3XvqOnHAxC5dpmPnmVfS3db2qIs+3hPRa7yXUJCnDlGTFmuRlnpOSJMtZNfyE5gHrVcoPUOcVT5r/k3RZqO9gJzV8kOLE+WxSOy5Y/3xSn07Li3Mim+T6ZX0ipyryoksG9Yhh4azKLMyzJC+ytPQzy/7/vbzQP51eNX/X9fkH8hv+0NyirwQAAA==</Configuration>
+            <Configuration>H4sIAAAAAAAA/52U24rbMBCG7/MUquitj4kPKpYhPUGgdBdKr0ovtPbEUbElI8lxtk9fWU66u2G3a+oLD2I08+v7R4gNRu4EN5wZuBEfFNhI96zVUOi+5aaEE1SDgW+V4r35wjtuoL5V/MhbaEBTo4bLzpZrA+JG7LpeKgPqe19fN9PVqWtp4QLiTral+JNQvDpgJFgHFH+FcWegw+gISnMpKA59gpGtEJrigzH9uyAYx9Ef175UTRCHYRKEWeCa4rJ443kIISFr8DT/DR4TtddLbbWkQCca+iG6d/+RRpspHug6Sn2SZUmchznJ8yzdIOR55QoVTGveCADEa4rfVoNSIAxG5r63Jx00KCsYXDaVq6liqLlhlVO7GzQXoPW8nFpsp+zWLV3lw2ZXrI11DNVcV1IYLgawJc4/7A5wNupVxniG3MQ+efJNyOGMHCc2zJCoMIqJczEcLSDFerizk7agTDVg19u+V/IIf6WhbsDrmTmgH+fUT2SF81mYrP3ENS+Ch9blqggc3xLSa73XUKOI+Os4yTdxStI0JnG0nFXBL6gesV65/Ah1zjjS9J+ky0x9D3up4KMUE+eLTu25YO3LTn2e0ot9irPo+qY/41MRONElg3rCsHBWJPHTJErzZE3czJL/v5cX+ufdK+ZHoTy/Pn8A2j2U/OwEAAA=</Configuration>
         </STEPWorkflow>
     </STEPWorkflows>
 </STEP-ProductInformation>

@@ -33,7 +33,7 @@ ScheduleSpecification=
             <SetupGroupLink SetupGroupID="EventTriggeringTest"></SetupGroupLink>
             <Name>EventTriggeringTest2</Name>
             <Configuration>H4sIAAAAAAAA/6VUS4/aMBC+76+I3IpbSVClalUgiEfoHmBJA9v2VhlnyI4wdmo7FPrr6xDINux6K7U3e/I9xs58HkuxwaxQ1KAU/d7gsOPeHpQud6TTDogHgskURdYnD6vpu1syCG96OS8yFB6mfRLtQZhYSQZaSzWiGsZ/SpLwxvN6Gnc5hxM+AZ1LoXHN4UGDIqE2kH/0/cJuBhYQzaZJz68I19wRNexxib+AhJ0gCFywCT3qlUzAUBSn9jQJneBYoVRojlbSBflcQGEtoy9xshi7QHN6WPD0fBGgTx26sHeyUHWHV6wPty7WDAXoGNToU/z6+acUudVWx0hQe80pCY0q4K9oK43Sgt8HqQu7yA3uUBtkM8m2TY8N5dpp8gLxYueiLNkjpAWHb/PZ90kUJ9F4uIomJGxx022MaetHIU3Xzmq1GLQy02296QTdEmn/vkLQdc3zLtWjxzjV+kxncte27a1luzDI2/psnsIGBZaD3L70M6lLby+le7C9VDp+w92/tn86bM+vQmRXOudowkgpqRLIpTKg/iWJtjFacNMMZEOV+LVbfOKN/zf9o0KXU6mHrFRoWlcWzx6AJqXO//pcVvY+T+9AqbVSmGV2TkS2Am3uqEg5KNfA2MMYOJhakVX7Uuz8yZnwr1JtdU4Z1OSfl0pJn9uYuqhMck4N3Mu0jO+rIahdno5FwmGeK7kHZ+SWW8wnwMFA+rLHs0H6DbGl/P/TBQAA</Configuration>
-            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
+            <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">
@@ -55,7 +55,7 @@ IndexWordHierarchyTriggering=
 NameTriggering=
 ObjectTypeGroupings=
 <ObjectTypeRules>
-  <ObjectTypeRules ConditionID="EventTriggeringTestCondTrue">
+  <ObjectTypeRules>
     <ObjectType ObjectTypeID="Item"/>
   </ObjectTypeRules>
   <ObjectTypeRules>
@@ -87,7 +87,7 @@ UnitTemplate=
 Version=3
 attributeGroup=Attribute group root
 objecttype=Item;Leaf -->
-                <Configuration>H4sIAAAAAAAA/9VUTXObMBC951douKek00sPyBmP7bTMpI3HJslZhoWqERKjFa7TX18JSyYxZOzekhv7qX2PtztFBJNB3QhmgCbXu1qQLWjkStLo86eriIDMVcFlRaP77Obya3Q9uUjW2WJ5udSqaHOTylLpmhlbQVaASmwhlYJLWEGJNCqZQIjIjRJC/bmzrTUvYN1ufHWfsdg1Sps5aL6FYmqMPoQmF4QkUzco+qw1/ws0+sElr9s6InMlzf6BmWCIvOR5N0+muio7CGgLw5YY3e77hY5x1zzed7fI4jegTRJsBDcTNxjftAZuuXzCTPOqshPL6jj8ISjtsaAj4iT4I3Y/AMTXE4/Lx8vhdSpJZS7aApbMKsd44XixHDU9g7hUFrB7VLr4zkEznf96HijnJ6th4Lzb/IbcZM8NfNOqbWwAadI7V60A7GY68pGZkgV3E6RzGi22FkLfOwM0Lp692IW+nvSfrjY1UAfcZzx8qt0tsPLNdkOXp2H/EwbseL7fvQ6TkP2/18vXjd2v0HNUp/4vOEnF4di9vFvxqOQPz4TwEG+IeHOmFeKgrLul46EHJlrAYM2ZYVaIhlm6NZ56NYm9uVdP4PSM7euFY1fwCRtmmZw2jVb2V/mUe8nfv44sbDfnudf6wQP44m0WJNDdEnpQBKmcTbRSxmeqbg2NXUPq9n/gvaJuj737H7i5ra9CCAAA</Configuration>
+                <Configuration>H4sIAAAAAAAA/9VUTU/jMBC98yus3CGs9sIhLqpaWCLBUrUBzm4yyXpx7MjjdMv++nUSu9k2QRSJA9wyX8/zJm9miggmgbISzACNLrelIBvQyJWkwbez84CATFXGZUGDh+T69CK4nJxEq+RqcbrQKqtTE8tc6ZIZW0GWgEpsIJaCS1hCjjTImUAIyLUSQv25t9CaZ7Cq1666z7jaVkqbOWi+gWxqjN6FJieERNOmUXRZK/4XaHDHJS/rMiBzJU33wEwwRJ7ztO0nUW2VbQS0pWFLjK47PI8YtuBhh26Zha9Qm0RYCW4mTWN8XRu45fIZE82LwnYsi8PwlxhpzwWbQbxJ/mC6X4Difsfj8nFy2E8lsUxFncGCWeUYJxwnlgPQIwYXywy2T0pnNxw00+mvl4FyfrISBs779W9ITfJSwQ+t6soGkEa9c1kLwLanEd+el/Sf8ZwGsYHSs/kAuFtg+atwQ5cj1412wNlN8dOrK/LZ771Jrm7sKnnMUfW5v9AIJfQn7P9rFI4KefeMDw/5+ogzZ1ohDsraCzkeemSiBvTWnBk2s+SZHbfGt16NQmd26vEzPWKneuHYxXrGitlJTqtKK/urXMqD5J9fR5Z20+exN/jREfjubOYl0F4IulMEKRqbaKWMy1TtGhq7hrTZ/4H3nDZ77Nz/AGOomJcYCAAA</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

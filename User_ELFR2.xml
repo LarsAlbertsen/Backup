@@ -4,10 +4,11 @@
         <User ID="ELFR2" Deactivated="false">
             <Name>ELFR222</Name>
             <MetaData>
-                <Value AttributeID="UserLastActivityDate">2025-05-05</Value>
+                <Value AttributeID="UserLastActivityDate">2025-06-11</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Messaging"></UserGroupLink>
             <UserGroupLink UserGroupID="Normal user"></UserGroupLink>
+            <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup></SystemSetup>
         </User>
     </UserList>

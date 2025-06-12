@@ -4,6 +4,7 @@
         <UserType ID="stibo.TranslationConfig" ReferenceTargetLockPolicy="Strict" Referenced="true">
             <Name>Translation Configuration</Name>
             <UserTypeLink UserTypeID="Asset user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="AssertFlags"></AttributeLink>
             <AttributeLink AttributeID="AssetAnalyzer.Keywords"></AttributeLink>
             <AttributeLink AttributeID="AssetAttribute"></AttributeLink>
             <AttributeLink AttributeID="ImageDeduplicationConfirmedDuplicates"></AttributeLink>

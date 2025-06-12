@@ -4,6 +4,7 @@
         <UserType ID="stibo.ImageConversionConfig" ReferenceTargetLockPolicy="Strict" Referenced="true">
             <Name>Image Conversion Configuration</Name>
             <UserTypeLink UserTypeID="Asset user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="AssertFlags"></AttributeLink>
             <AttributeLink AttributeID="AssetAnalyzer.Keywords"></AttributeLink>
             <AttributeLink AttributeID="AssetAttribute"></AttributeLink>
             <AttributeLink AttributeID="ImageDeduplicationConfirmedDuplicates"></AttributeLink>

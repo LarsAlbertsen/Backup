@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "isActive",
-  "type" : "BusinessCondition",
+  "id" : "ELFRApproveNode",
+  "type" : "BusinessAction",
   "setupGroups" : [ "ELFRBRGroup" ],
-  "name" : "isActive",
+  "name" : "ELFRApproveNode",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -21,7 +21,7 @@
 */
 /*===== business rule plugin definition =====
 {
-  "pluginId" : "JavaScriptBusinessConditionWithBinds",
+  "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
     "contract" : "CurrentObjectBindContract",
     "alias" : "node",
@@ -34,6 +34,5 @@
 }
 */
 exports.operation0 = function (node) {
-return "some error message"
-//return true;
+node.approve()
 }

@@ -13,7 +13,7 @@
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ "Item" ],
-  "allObjectTypesValid" : false,
+  "allObjectTypesValid" : true,
   "runPrivileged" : false,
   "onApprove" : "Trigger",
   "dependencies" : [ ]
@@ -98,8 +98,12 @@ function handleValuePartObject(po, nodeBefore, nodeAfter) {
 	}
 }
 function handleReferencePartObject(po, nodeBefore, nodeAfter) {
-	var a = hasRef(nodeAfter, po.getReferenceType(), po.getTargetID());
-	var b = hasRef(nodeBefore, po.getReferenceType(), po.getTargetID())
+	//NOTE, po is passed even if the target does not exist in Approved WS. 
+	//I.e., even the attempt to approve a reference, even though the target does not exist in Approved WS, results in a Part Object. 
+	//The approval will actually fail, so we may have to check if the target exists in Approved WS, and if not, ignore this po
+	//TODO: Ignore references to objects not found in Approved WS
+	var a = nodeAfter?hasRef(nodeAfter, po.getReferenceType(), po.getTargetID()):false;
+	var b = nodeBefore?hasRef(nodeBefore, po.getReferenceType(), po.getTargetID()):false;
 	var doc = {
 		type : po,
 		refType : po.getReferenceType(),
@@ -113,11 +117,11 @@ function handleReferencePartObject(po, nodeBefore, nodeAfter) {
 		doc.type = 'ProductReference'
 	}
 	var refType = manager.getReferenceTypeHome().getReferenceTypeByID(po.getReferenceType());
-	var bRef = getReference(nodeBefore, refType.getID(), po.getTargetID())
-	var aRef = getReference(nodeAfter, refType.getID(), po.getTargetID())
+	var bRef = nodeBefore?getReference(nodeBefore, refType.getID(), po.getTargetID()):'';
+	var aRef = nodeAfter?getReference(nodeAfter, refType.getID(), po.getTargetID()):'';
 	refType.getValidDescriptionAttributes().toArray().forEach(function(attr) {
-		var bVal = getValue(bRef, attr.getID());
-		var aVal = getValue(aRef, attr.getID());
+		var bVal = bRef?getValue(bRef, attr.getID()):'';
+		var aVal = aRef?getValue(aRef, attr.getID()):'';
 		if (aVal != bVal) {
 			doc.values.push({
 				aid : attr.getID(),
@@ -128,14 +132,36 @@ function handleReferencePartObject(po, nodeBefore, nodeAfter) {
 	})
 	return doc;
 }
+function handleClassificationLinkPartObject(po, nodeBefore, nodeAfter) {
+	var doc = {
+		type : 'ClassificationLink',
+		linkType : po.getLinkTypeID(),
+		classID : po.getClassificationID()
+		//TODO, check if new, update or delete
+	}
+	return doc;
+}
+
+function getBase(n) {
+	return n instanceof com.stibo.core.domain.Product ? 'Product' :
+			n instanceof com.stibo.core.domain.Classification ? 'Classification' : 
+			n instanceof com.stibo.core.domain.Entity ? 'Entity' :
+			n instanceof com.stibo.core.domain.Asset ? 'Asset' : node
+}
+
+function getNodeState(ac) {
+	return ac.getApprovedNode() ? 'Update' : 'New'
+}
 
 //############################## MAIN ##############################
+//NOTE: Rule is not invoked when approving a deletion (i.e., approve in Recycle Bin
 var data = {
-	type: node,
+	type: getBase(node),
 	id: node.getID(),
 	ctx: manager.getCurrentContext().getID(),
 	user: manager.getCurrentUser().getID(),
 	time: new Date(Date.now()).toISOString(),
+	state: getNodeState(ac),
 	changes: []
 }
 
@@ -148,6 +174,9 @@ ac.getPartObjects().forEach(function (po) {
 	}
 	else if (po instanceof com.stibo.core.domain.partobject.ReferencePartObject) {
 		data.changes.push(handleReferencePartObject(po, ac.getApprovedNode(), ac.getMainNode()))
+	}
+	else if (po instanceof com.stibo.core.domain.partobject.ClassificationLinkPartObject) {
+		data.changes.push(handleClassificationLinkPartObject(po, ac.getApprovedNode(), ac.getMainNode()))
 	}
      else {
 		logger.info('Unhandled ' + po)

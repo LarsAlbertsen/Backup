@@ -5,6 +5,7 @@
             <Name>Installation Manual</Name>
             <Icon>H4sIAAAAAAAA/3P3dLOwTBRgEGBYxMpQXl7eMPMCg2TA////GYwWgEgwUPzJwsjAwMqgA+KA1DIwe0ao3NFT1WJs28vsICn2Q0FDU7Y1tmFLicvrXdE/z3m7bDDJ4da5N03wJq84w6SYuU/Wmr38O2/j0c+pMX4TzzDpL5/MsWNt7/ePGioMDNYAXifKQoQAAAA=</Icon>
             <UserTypeLink UserTypeID="Asset user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="AssertFlags"></AttributeLink>
             <AttributeLink AttributeID="AssetAnalyzer.Keywords"></AttributeLink>
             <AttributeLink AttributeID="AssetAttribute"></AttributeLink>
             <AttributeLink AttributeID="AssetDownload.AssetURLAttribute"></AttributeLink>

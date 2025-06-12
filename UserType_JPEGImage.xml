@@ -8,6 +8,7 @@
             <AttributeLink AttributeID="APPath"></AttributeLink>
             <AttributeLink AttributeID="APStatus"></AttributeLink>
             <AttributeLink AttributeID="APVersion"></AttributeLink>
+            <AttributeLink AttributeID="AssertFlags"></AttributeLink>
             <AttributeLink AttributeID="AssetAnalyzer.Keywords"></AttributeLink>
             <AttributeLink AttributeID="AssetAttribute"></AttributeLink>
             <AttributeLink AttributeID="AssetDownload.AssetURLAttribute"></AttributeLink>

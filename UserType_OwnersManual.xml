@@ -5,6 +5,7 @@
             <Name>Owners Manual</Name>
             <Icon>H4sIAAAAAAAA/3P3dLOwTBRgEGBYxMpQXl4+5f59kfj4////a+zbByQZwEDxJwsjAwMrgw6IA1LLwOwZoXJHT1WLsW0vs4Ok2A8FDU3Z1tiGLSUur3dF/zzn7bLBJIdb5940wZu84gyTYuY+WWv28u+8jUc/p8b4TTzDpL98MseOtb3fP2qoMDBYAwD2PQCfhAAAAA==</Icon>
             <UserTypeLink UserTypeID="Asset user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="AssertFlags"></AttributeLink>
             <AttributeLink AttributeID="AssetAnalyzer.Keywords"></AttributeLink>
             <AttributeLink AttributeID="AssetAttribute"></AttributeLink>
             <AttributeLink AttributeID="AssetDownload.AssetURLAttribute"></AttributeLink>

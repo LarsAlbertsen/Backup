@@ -6,14 +6,14 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "isActive",
-  "type" : "BusinessCondition",
+  "id" : "ELFRGenerateEvents",
+  "type" : "BusinessAction",
   "setupGroups" : [ "ELFRBRGroup" ],
-  "name" : "isActive",
+  "name" : "ELFRGenerateEvents",
   "description" : null,
   "scope" : "Global",
-  "validObjectTypes" : [ ],
-  "allObjectTypesValid" : true,
+  "validObjectTypes" : [ "Item" ],
+  "allObjectTypesValid" : false,
   "runPrivileged" : false,
   "onApprove" : "Never",
   "dependencies" : [ ]
@@ -21,7 +21,7 @@
 */
 /*===== business rule plugin definition =====
 {
-  "pluginId" : "JavaScriptBusinessConditionWithBinds",
+  "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
     "contract" : "CurrentObjectBindContract",
     "alias" : "node",
@@ -34,6 +34,10 @@
 }
 */
 exports.operation0 = function (node) {
-return "some error message"
-//return true;
+
+for (var ix = 0; ix < 10000; ix++) {
+	node.getValue('ELFRColor').setSimpleValue('Yellow')	
+	node.getValue('ELFRColor').setSimpleValue('Blue')
+}
+
 }

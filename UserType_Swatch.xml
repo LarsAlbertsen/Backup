@@ -4,6 +4,7 @@
         <UserType ID="Swatch" ReferenceTargetLockPolicy="Strict" IDPattern="[id]" Referenced="true">
             <Name>Swatch</Name>
             <UserTypeLink UserTypeID="Asset user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="AssertFlags"></AttributeLink>
             <AttributeLink AttributeID="AssetAnalyzer.Keywords"></AttributeLink>
             <AttributeLink AttributeID="AssetAttribute"></AttributeLink>
             <AttributeLink AttributeID="AssetDownload.AssetURLAttribute"></AttributeLink>

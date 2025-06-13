@@ -46,8 +46,5 @@
 }
 */
 exports.operation0 = function (node,manager,logger) {
-var prod = manager.getProductHome().getProductByID(node.getID());
-
-var parent = prod.getParent();
-var childArray = parent.getChildren().toArray();
+logger.info(node.getID());
 }

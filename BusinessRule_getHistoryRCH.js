@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "getHistory",
+  "id" : "getHistoryRCH",
   "type" : "BusinessFunction",
   "setupGroups" : [ "Snapshot" ],
-  "name" : "getHistory",
+  "name" : "getHistory Revision Change Home version",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -61,6 +61,8 @@
 */
 exports.operation0 = function (logger,manager,node,fromDate,toDate) {
 const sdf = java.text.SimpleDateFormat("yyyy-MM-dd HH:mm.ss.SSS")
+const revHome = manager.getHome(com.stibo.core.domain.impl.unstable.revisionchange.RevisionChangeHomeImpl)
+
 function handleTitle(n, revisions) {
 	var titleInfo = {
 		title: n.getTitle(),
@@ -176,10 +178,10 @@ var res = {
 	objectType: node.getObjectType().getID()
 }
 
-//res.title  = handleTitle(node, revs)
+res.title  = handleTitle(node, revs)
 //res.values = handleValues(node, revs)
 //res.links  = handleReferences(node, revs)
 
-//logger.info(JSON.stringify(res,null, 2))
+logger.info(JSON.stringify(res,null, 2))
 return JSON.stringify(res,null, 2)
 }

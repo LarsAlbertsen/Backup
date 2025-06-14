@@ -33,7 +33,7 @@ ScheduleSpecification=
             <SetupGroupLink SetupGroupID="EventTriggeringTest"></SetupGroupLink>
             <Name>EventTriggeringTest</Name>
             <Configuration>H4sIAAAAAAAA/6VUXW/aMBR976+IvIm3EdikqRoQVCCsD1AyoNveJuNcUgtjZ752C/v1cwikC62ZtL3Z1+fj2rknQyXXPLOaGq5kr9vfbUXwCBqLHWk3WyQAyVTKZdYj98vxu2vSj666ubAZlwFPeyR+BGkSrRggKj2gCMM/JUl0FQRd5NtcwAE/B8yVRL4ScI+gSYQG8k9haN2m7wDxZDzvhiXhnDughj0s+C8gUbvV8qFGdI9LNQdDuTx0hyTyghPNleZm7xR9kC8WrHOMvybz2dAHmtLdTKTHdwC82OCtsrrq8Iz18drHmnAJmIAefE4O6l75MeXCaet9LKl75ZRERlv4K9pJc+XAH1qpDzvLDd9yNJxNFNvUPdZUoNfkFeLJzkdZsAdIrYDv08mPUZzM4+HNMh6RqCFMpzaljZ9WmY4b1XLRb2Sm03jTbnUKpPv6mgNWtSA4VfcBExTxSGdq23TtrVTTGi6aeDRPYc0lL+a4eepnVJXenkp34HopdcKae3hu/3zZblhmyK0wF9xEsdZKzyFX2oD+lyC6xqgVpp7HmioJK7fkwBv+b/gHFoupxBtWKNStS4sX+a9TqvivjmXt3vPwGyi0lppnmZsTmS0BzS2VqQDtGxh3GQM7Uymycl+IHY/e+6jflN5gThlU5KdTpaBPXUx9VKaEoAbuVFrE92IIKpfna5HokvZiw/MRCDCQvq7/Yoh+A/mQRv3OBQAA</Configuration>
-            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
+            <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">

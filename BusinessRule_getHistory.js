@@ -66,7 +66,7 @@ function handleTitle(n, revisions) {
 		title: n.getTitle(),
 		history: []
 	}
-	var prev = null;
+	var prev = revisions[0].getPredecessor();
 	revisions.forEach(function(rev) {
 		if (prev) {
 			if (!prev.getNode().getTitle().equals(rev.getNode().getTitle())) {
@@ -101,7 +101,7 @@ function handleValues(n, revisions) {
 		doc[v.getAttribute().getID()] = []	
 	})
 	
-	var prev = null;
+	var prev = revisions[0].getPredecessor();
 	revisions.forEach(function(rev) {
 		if (prev) {
 			for (var key in doc) {
@@ -141,7 +141,7 @@ function handleReferences(n, revisions) {
 			},
 			values: []
 		};
-	var prev = null;
+	var prev = revisions[0].getPredecessor();
 	revisions.forEach(function(rev) {
 		if (prev) {
 			var map = {}
@@ -176,10 +176,10 @@ var res = {
 	objectType: node.getObjectType().getID()
 }
 
-//res.title  = handleTitle(node, revs)
-//res.values = handleValues(node, revs)
-//res.links  = handleReferences(node, revs)
+res.title  = handleTitle(node, revs)
+res.values = handleValues(node, revs)
+res.links  = handleReferences(node, revs)
 
-//logger.info(JSON.stringify(res,null, 2))
+logger.info(JSON.stringify(res,null, 2))
 return JSON.stringify(res,null, 2)
 }

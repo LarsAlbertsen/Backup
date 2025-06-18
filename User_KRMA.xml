@@ -3,6 +3,9 @@
     <UserList>
         <User ID="KRMA" Deactivated="false">
             <Name>Kay Jensen</Name>
+            <MetaData>
+                <Value AttributeID="UserLastActivityDate">2025-06-17</Value>
+            </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>
                 <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>

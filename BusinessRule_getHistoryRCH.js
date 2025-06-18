@@ -14,7 +14,7 @@
   "scope" : "Global",
   "validObjectTypes" : [ ],
   "allObjectTypesValid" : true,
-  "runPrivileged" : false,
+  "runPrivileged" : true,
   "onApprove" : "Never",
   "dependencies" : [ ]
 }
@@ -77,7 +77,7 @@ function handleParent(rev, po) {
 		}
 	}
 	res.parent.history.push({
-		from: rev.getPredecessor() ? rev.getPredecessor().getNode().getParent().getID() : '',
+		from: rev.getPredecessor() && rev.getPredecessor().getNode() && rev.getPredecessor().getNode().getParent() ? rev.getPredecessor().getNode().getParent().getID() : '',
 		to: rev.getNode().getParent().getID(),
 		createdDate: sdf.format(rev.getCreatedDate()),
 		editedDate: sdf.format(rev.getEditedDate()),
@@ -107,6 +107,11 @@ function handleTitle(rev, po) {
 }
 
 function getValSafe(n, aid) {
+	
+	if (!manager.getAttributeHome().getAttributeByID(aid)) {
+		logger.info('Unknown attribute with id ' + aid)	
+		return '';
+	}
 	var v = n.getValue(aid);
 	if (v && v.getSimpleValue()) {
 		return v.getSimpleValue()
@@ -177,12 +182,14 @@ node.getRevisions().toArray().every(function (rev) {
 revs = revs.reverse()
 
 revs.forEach(function (rev) {
-	logger.info(rev.getName())
+	//logger.info(rev.getName())
 	revHome.getRevisionChanges(rev.getNode()).toArray().forEach(function (po) {
-		logger.info(po)
+		//logger.info(po)
 		if (po instanceof com.stibo.core.domain.partobject.NamePartObject) {
 			handleTitle(rev, po)
 		} else if (po instanceof com.stibo.core.domain.partobject.ProductReferenceValuePartObject) {
+			logger.info('Unhandled ' + po)
+		} else if (po instanceof com.stibo.core.domain.partobject.datacontainer.DataContainerValuePartObject) {
 			logger.info('Unhandled ' + po)
 		} else if (po instanceof com.stibo.core.domain.partobject.ValuePartObject) {
 			handleValue(rev, po)
@@ -198,6 +205,6 @@ revs.forEach(function (rev) {
 })
 
 
-logger.info(JSON.stringify(res, null, 2))
-return JSON.stringify(res, null, 2)
+//ogger.info(JSON.stringify(res, null, 2))
+return JSON.stringify(res)
 }

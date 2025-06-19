@@ -3,6 +3,9 @@
     <UserList>
         <User ID="DBA" Deactivated="false">
             <Name>DBA</Name>
+            <MetaData>
+                <Value AttributeID="UserLastActivityDate">2025-06-19</Value>
+            </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <UserGroupLink UserGroupID="Super user"></UserGroupLink>
             <SystemSetup>

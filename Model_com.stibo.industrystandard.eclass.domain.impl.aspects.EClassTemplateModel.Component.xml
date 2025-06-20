@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ComponentModels version="2">
+        <Model id="com.stibo.industrystandard.eclass.domain.impl.aspects.EClassTemplateModel.Component">
+            <NodeAspectDescriptors>
+                <NodeAspectDescriptor id="com.stibo.industrystandard.eclass.domain.impl.aspects.EClassTemplateDefinitionAspect"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.industrystandard.eclass.domain.impl.aspects.EClassTemplatedNodeAspect"></NodeAspectDescriptor>
+            </NodeAspectDescriptors>
+            <LinkAspectDescriptors>
+                <LinkAspectDescriptor id="com.stibo.industrystandard.eclass.domain.impl.aspects.EClassTemplateReferenceAspect"></LinkAspectDescriptor>
+            </LinkAspectDescriptors>
+            <ValueAspectDescriptors></ValueAspectDescriptors>
+        </Model>
+    </ComponentModels>
+</STEP-ProductInformation>

@@ -6,14 +6,14 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "AuditAction",
+  "id" : "CreatePublications",
   "type" : "BusinessAction",
-  "setupGroups" : [ "LAALRules" ],
-  "name" : "AuditAction",
+  "setupGroups" : [ "Actions" ],
+  "name" : "Create Publications",
   "description" : null,
   "scope" : "Global",
-  "validObjectTypes" : [ "Item" ],
-  "allObjectTypesValid" : true,
+  "validObjectTypes" : [ ],
+  "allObjectTypesValid" : false,
   "runPrivileged" : false,
   "onApprove" : "Never",
   "dependencies" : [ ]
@@ -23,8 +23,8 @@
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
-    "contract" : "CurrentTransitionBindContract",
-    "alias" : "currentTransition",
+    "contract" : "ManagerBindContract",
+    "alias" : "manager",
     "parameterClass" : "null",
     "value" : null,
     "description" : null
@@ -33,9 +33,8 @@
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (currentTransition) {
-logger.info('currentTransition from '+currentTransition.getSource().getID()+' to '+currentTransition.getTarget().getID());
+exports.operation0 = function (manager) {
 
 
-
+manager.getPubli
 }

@@ -45,13 +45,18 @@
         <parameter id="Variable" value="SubmitMessage"/>
       </plugin>
     </column>
+    <column name="Assignee" mandatory="false" readOnly="false">
+      <plugin pluginID="WorkflowAssignee">
+        <parameter id="ExpandGroups" value="false"/>
+      </plugin>
+    </column>
   </view>
 </workflowViews> -->
             <BusinessRuleLink ID="RemoveFromWorkflow"></BusinessRuleLink>
             <SetupGroupLink SetupGroupID="ProductWorkflows"></SetupGroupLink>
             <Name>Create Item</Name>
             <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
-            <Configuration>H4sIAAAAAAAA/81VTY/bNhC951ewRK60Pm1LC8tBkXYBAw226DbJIciBlsZethKpkpS9zq/vkJIcrzfOOrfAgGiKnDd8jzNPvLNqJYUV3MKdfKsBx2LDawML09bCLuERys7CfalFa/8QjbBQ/anFTtSwBVNY3Y07a2EsyDu5alqlLej3bXUOZsrHpi4WfiDCp60L2uevKZG8gYL2h1hZaCjZgTZCyYKGk5wSjJKmoA/WtjdBsN/vJ/tkovQ2iMNwGoTzwAPT5eIXxgghUlXAjPgCjMuKtcpgGiXJYxFOQnLwz30RpW58KOIkn2TZLPn6I4Sx5SuyQBa8QagaJ/2MiKqg990axXgHxvAtYM7ArSxf9eOwH6O5MWIrAXzM67LTGqSlxB5apNoZ0C503OQjjEX6pBKmVNIK2QEGehGpxxjVepFl3NNMk55nOPCc4tAzIwuruRz2rzsjpCNTuqlLxEvJsgiiiIclSzfTiKVzyNga4phFUZTOooTn8zKjx1g8cCXGcJyw+TqfzcKkYilEIT54yPJNDCyu4lnK51mJAJTADiUpqPGCojRcbwHnv0styocjT6i2wFpuH8infuUzQZJR1LPMw4HWIvhKyt2GV/MaXc/SvSRrFGWTPE2ibPwlV4h8gemtkP5Cnxz9wv080zjhPN/M4wyvKJ+zNMsylpV5yirOp3FYzcp1CEeNNfwD5Unm82I6EXlY8irPBpGTyfQFkTeOymWRR6ZXapyn5z15QWMlkZ4+fKOK/4JG7eBWq+aj0v9uarV3Qg/73dn9iT0JZx7Lwal2AvbF4o3zqaMHRZMQhZSlqoTcFvT937cMix+5y4rXiFjQAxj6BrGkiW/2Q7oPiGR667rB90/sy1ixVpNSNdSxQB4urRfqHRfSRVJSwYZ3tb1HT32r6q5xZkgJR99uuBWlez9K3IN4IG5avGgPJSoafHvF+e2TtdInGHx4ZX5FFXd4c2jI1Z2sD8erbBxlq/TheWaP09bdVkjSD6vfCjpq/4Frwdf1eUAfxDXmxQ+HP9txJ9nxujs9TnCWLOjTnNAIeh6XiI2e/XPwevod+UFyi8BVzPBfg7HoYb6HhCzrrgIE32rVteZIEVuzrfnhHv7rsJTBFdMJeMPbFoub+IZ2BAdXJC6Nm5/U5XOg4HtIx6/8FVDR96F6F7kGKB6BFsGJOq7bn7Uovuxb/3//ERshEwkAAA==</Configuration>
+            <Configuration>H4sIAAAAAAAA/81WTY/bNhS851ewRK+0Pm1LC8lBkGYLAw226DbpIciBlp69bCVKJSl73V/fR+ojXm+cddEeCgGiKfLNcIbiyLwzzVoKI7iBO/lWAbb5llcaMt1WwqzgEYrOwH2hRGt+ErUwUP6sxF5UsAOdG9WNMyuhDcg7ua7bRhlQH9ryHEwXj3WVZ64hwtFWOe35K0okryGn/SLWBmpK9qC0aGRO/VlKCVZJndMHY9obzzscDrNDNGvUzgt9f+75S88B01X2HWOEENmUwLT4CxiXJWsbjTSNJI+5P/PJ0d0PeRDb9iEPo3SWJIvoy0UIY6tXJEMVvEaoCjt9j4gyp/fdBs14D1rzHSCnZ0dWr/p2mI/VXGuxkwCu5vuiUwqkocQcW5TaaVC2dJzkKrRB+aQUumikEbIDLHQmUocxuvWiyrCXGUe9Tn/QOcemV0Yyo7gc5m86LaQVU9iuJeKFZEkAQcD9gsXbecDiJSRsA2HIgiCIF0HE02WR0KkWF1yKsRw7bLlJFws/KlkMgY837rN0GwILy3AR82VSIAAlsEdLcqqdoWgNVzvA/jupRPEw6YRyB6zl5oF86kc+ExQZBL3K1B9kZd4XUXY3nJvX+HpG95KtQZDM0jgKkvGKrjD5gtJbId2GPln6hf155nHEebpdhgluUbpkcZIkLCnSmJWcz0O/XBQbHyaPFfwOxQnz+ct0YvIw5FxeDCZHs/kLJm+tlMsmj0qv9DiNz8/kBY8bifLU8Stv8S9QN3u4VU39W6P+2FbNwRo9zLdrdyt2Imx4rIak2gs45Nlrm1NTBgUzH42URVMKucvph19vGb78qF2WvELEnB5B09eIJXV4cxjoPiKS7qPrBp8/iS9txKaZFU1NrQrUYWmdUe+5kLaSkhK2vKvMPWbq26bqahuGlHDM7ZobUdjno8U9iAPiusWNdlCipN7XR2zePhkrHMGQw2v9Bl3c485hIJd3sjpOW1lbyaZRx+fMDqetup2QpG/WP+R09P4jV4JvqvOCvogr5MUPh1vbNJPsedWdLsc7I/N6mhMZXq/jkrAxs/8fup5+R/61uDfDp+S/VDdhvqju3WOLJD+qpmv1pLAn+4fKMs+eheG3Am0wnV06CFlUXQlo287RTPIwdNqKH+/hzw4PKdhjcgJe87bFY0tcVFlxQ94TS2P7JyfuOZD3LaTp/8sVUMG3ofp8vAYoHIEy78Qdm2PPwgcf9qH2NzexdQHtCQAA</Configuration>
             <LocalBusinessRule ID="acn-81e11a0c-4f51-47e8-be22-1114613a97c8" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
 Action #1 (SendEmailBusinessAction):
 Body=Hello

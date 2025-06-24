@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <IntegrationEndpoints>
+        <OutBoundIntegrationEndpoint ID="MongoDB" UserTypeID="OutboundEndpoint user-type root" ProcessPluginID="Export" QueueForEndpoint="OutboundQueue" QueueForProcssing="Out" MaxNumberOfActiveBackgroundProcesses="1" MaximumAgeOfFailedBackgroundProcesses="604800000" MaximumNumberOfFailedBackgroundProcesses="10" MaximumAgeOfSucceededBackgroundProcesses="604800000" MaximumNumberOfSucceededBackgroundProcesses="10" TransactionType="STRICT" ResponsibleUserID="STEPSYS" EnableRetry="false" UseCrossContext="false" DataSourcePluginID="EventQueueDataSourcePlugin" DeliveryMethodPluginID="MongoDBDelivery40" MultiThreadCount="1" RefreshCollections="false"><!-- Definition:
+ScheduleSpecification:
+<entries>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
+</entries>
+
+DataSourcePluginConfiguration:
+<Parameters>
+  <Parameter ID="DaysToRetainEvents" Type="java.lang.Integer">0</Parameter>
+  <Parameter ID="eventQueueBatching" Type="com.stibo.util.integrationendpoints.BooleanIntegerParameter">1000</Parameter>
+  <Parameter ID="eventQueueBundleMessages" Type="com.stibo.util.integrationendpoints.BooleanIntegerParameter">1</Parameter>
+</Parameters>
+
+DeliveryMethodPluginConfiguration:
+<Parameters>
+  <Parameter ID="Actions" Type="java.util.List"/>
+  <Parameter ID="ClusterEnabledServerConfigurations" Type="com.stibo.util.integrationendpoints.ConfigStringCollectionLOVParameter">MongoDB.Server.Configuration._1</Parameter>
+  <Parameter ID="DatabaseName" Type="java.lang.String"/>
+  <Parameter ID="DollarReplacement" Type="java.lang.String"/>
+  <Parameter ID="UserName" Type="java.lang.String">stepsys</Parameter>
+  <Parameter ID="keyStoreLocation" Type="com.stibo.util.integrationendpoints.ConfigParameter"/>
+  <Parameter ID="trustStoreLocation" Type="com.stibo.util.integrationendpoints.ConfigParameter"/>
+  <Parameter ID="useSSL" Type="java.lang.String">No</Parameter>
+</Parameters>
+
+ProcessPluginConfiguration:
+<EventSpecificExportConfiguration>
+  <ExportConfiguration MatchAllTypes="false">
+    <EventType>15</EventType>
+    <EventType>16</EventType>
+    <EventType>17</EventType>
+    <ExportManagerConfig>
+      <ExportManagerConfig ContentMode="" ContextID="Context1" ECatalogID="" EffectiveDate="" EffectiveDateTimeZoneID="America/New_York" ExecutionMode="" ExportSelectedProducts="false" InheritProductData="true" LeafProductExport="true" Name="" ProcessTemplate="Exporter" ResolveInlineRefs="true" ScheduleDate="" SelfContainedReferences="false" UseContextLocale="false" Version="2" VersionID="" WorkspaceID="Main" isSorted="false">
+        <Delivery Name="File">
+          <Parameter Name="FileNameTemplate">$filename-$timestamp(yyyy-MM-dd_HH.mm.ss).$extension</Parameter>
+        </Delivery>
+        <Format Name="AdvancedSTEPXML">
+          <Parameter Name="CrossContextChooser">No</Parameter>
+          <Parameter Name="Recorder">&lt;?xml version='1.0'?&gt;&lt;STEP-ProductInformation ResolveInlineRefs=&quot;true&quot;ExportDeletedData=&quot;true&quot;EventsAsComments=&quot;true&quot;&gt;&lt;UserTypes ExportSize=&quot;Minimum&quot;/&gt;&lt;EdgeTypes/&gt;&lt;CrossReferenceTypes ExportSize=&quot;Minimum&quot;/&gt;&lt;UnitList ExportSize=&quot;Minimum&quot;/&gt;&lt;ListOfValuesGroupList/&gt;&lt;ListsOfValues ExportSize=&quot;Minimum&quot;/&gt;&lt;AttributeGroupList ExportSize=&quot;Minimum&quot;/&gt;&lt;AttributeList ExportSize=&quot;Minimum&quot;/&gt;&lt;Classifications ExportSize=&quot;Selected&quot;FlattenHierarchy=&quot;true&quot;&gt;&lt;Classification IncludeParent='true'/&gt;&lt;/Classifications&gt;&lt;Assets ExportSize=&quot;Selected&quot;&gt;&lt;Asset&gt;&lt;/Asset&gt;&lt;/Assets&gt;&lt;Entities ExportSize=&quot;Selected&quot;FlattenHierarchy=&quot;true&quot;&gt;&lt;Entity&gt;&lt;Name/&gt;&lt;AttributeLink/&gt;&lt;ClassificationCrossReference/&gt;&lt;Entity/&gt;&lt;ProductCrossReference/&gt;&lt;AssetCrossReference/&gt;&lt;EntityCrossReference/&gt;&lt;ContextCrossReference/&gt;&lt;Values/&gt;&lt;DataContainers/&gt;&lt;/Entity&gt;&lt;/Entities&gt;&lt;DeleteProducts/&gt;&lt;Products ExportSize=&quot;Selected&quot;FlattenHierarchy=&quot;true&quot;&gt;&lt;Product&gt;&lt;Name/&gt;&lt;AttributeLink/&gt;&lt;DataContainerTypeLink/&gt;&lt;ClassificationReference/&gt;&lt;Product/&gt;&lt;ProductCrossReference/&gt;&lt;AssetCrossReference/&gt;&lt;EntityCrossReference/&gt;&lt;ClassificationCrossReference/&gt;&lt;Values/&gt;&lt;OverrideSubProduct/&gt;&lt;DataContainers/&gt;&lt;/Product&gt;&lt;/Products&gt;&lt;/STEP-ProductInformation&gt;</Parameter>
+        </Format>
+        <ProductMapping SelectedURLType="product"/>
+        <ProductSelection/>
+      </ExportManagerConfig>
+    </ExportManagerConfig>
+    <ObjectType>Item</ObjectType>
+    <Postprocessor ID="MultiContextSplitter">H4sIAAAAAAAA/22Puw7CMAxFd74iMl0JsDG0RUIIqRtDYTetKUGpXaUugr8nDOUhMR7r3qPrdH1vvblR6J1wBku7AENcSe24yeBQ7mYrWOeTdI8BW9KYyyfGfNAU2wwq6R4FXyg4pfqIfqAeTPnoKIMr3tB65MZuRDwhQ65hoHT+NvzxnZ0njlxS23lUGmWVtLZXdxI7qPPWsVITUONy4rqTyL3dxe7Ye1shTyqJ6bsW9XSajH6bxAvx6/WfQV8Q330CgL46GiMBAAA=</Postprocessor>
+  </ExportConfiguration>
+</EventSpecificExportConfiguration>
+
+ErrorReporterPluginConfiguration:
+<Parameters/> -->
+            <SetupGroupLink SetupGroupID="Outbound Integration Endpoints"></SetupGroupLink>
+            <Name>MongoDB</Name>
+            <ScheduleSpecification>H4sIAAAAAAAA/z2NOw6DQAwFe06xslKbpOfTQJkqJwiLEZaWXQl7Ubg9TkR41dMUM1X7WYLbaBVOsYYH3qFtioqirkzSFM79/u58eIvU4NOCojwkzMoBxc805kAjTRxZzYGvE3UXuv1Rb539yTErgZnP0ZdaGkoLl1f5AOswyiiaAAAA</ScheduleSpecification>
+            <DataSourcePluginConfiguration>H4sIAAAAAAAA/62QywrCMBBF935FmL2x3bnoA0QFF4JK/YCxHWoknUiTFPv3pqBVwYULlxfmnnOZJL81WnTUWmU4hVhGIIhLUymuUzgW6+kc8myS7LDFhly4yyZCvKLYLFNYYm8LcyCHilcdsbMgiv5KKVywQ6mRa7lhRzW1kEXJbGx/YdHQ33vytEBXnsOMJ6s0jbROnYz0TmmpBmCLLuwmrq4mZCsXxmhCfshGMmRxFP0u9lxp2pK1WJP9j/7D/RbCO+9hpBTugwEAAA==</DataSourcePluginConfiguration>
+            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAA/7VSwU7DMAy98xVR7mTsxmHtBCtISGUgunFFXmuqQGpXcTqxvyesYmNQJnHgFsd+79nPnkzfGqfW6MUyJXpszrRCKrmyVCd6ubg+PddKAlAFjgkTTayn6eQePDQYIiw9UWofqpss0TPXSXxfEawcVgX6SD9jerZ15yFEHdFqsWkjWcmNkWBXbLpgnbEUsO5LkKqWYyymRxbBx45m7ByWH/n87nEnqtNbppqzS9NrmQMx8zSejHa1A+1mEGAFgvP499nYC6zBOKDa9MJ6NABcCvqjoDTa0MpGvun/ZOoEiyL/nWfOx0d4xU0R2GPO5Xbmv/u7N3No0uDjRv9V4aI8OIytBVvG3EoYRGTxFsA/YOugxAYpHNvdF/skfQczjD289AIAAA==</DeliveryMethodPluginConfiguration>
+            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
+AssetTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">
+    <Asset/>
+  </Assets>
+</STEP-ProductInformation>
+AttributeLinksTriggering=
+AttributeTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <AttributeList/>
+</STEP-ProductInformation>
+ClassificationTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Classifications ExportSize="Minimum">
+    <Classification IncludeParent="true"/>
+  </Classifications>
+</STEP-ProductInformation>
+IndexWordHierarchyTriggering=
+NameTriggering=
+ObjectTypeGroupings=
+<ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="Item"/>
+  </ObjectTypeRules>
+</ObjectTypeRules>
+ParentTriggering=
+ProductTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Products DontFollowClassificationToProductReference="true" ExportSize="Minimum">
+    <Product IncludeParent="true">
+      <AssetCrossReference/>
+      <AttributeLink/>
+      <ClassificationReference/>
+      <DataContainers/>
+      <Name/>
+      <OverrideSubProduct/>
+      <OverrideSubProduct/>
+      <ProductCrossReference/>
+      <Values/>
+    </Product>
+  </Products>
+</STEP-ProductInformation>
+TriggeringWorkspace=Approved
+UnitTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <UnitList/>
+</STEP-ProductInformation>
+Version=3
+attributeGroup=Attribute group root
+context=Context1
+objecttype=Item -->
+                <Configuration>H4sIAAAAAAAA/9VUTXObMBC951douCc0k0sPyBmPnbTM5MNjk/Qsw5qoERKjlVynv74CJFMbOnFvyQm0X3pv9XaniGAyqGrBDNDkelcJsgWNXEkaXV58iQjIXBVcljR6ym7Pv0bXk7Nkld0szhdaFTY3qdwoXTHjMsgSUIktpFJwCUvYII02TCBE5FYJoX49utKaF7Cya5/dR9zsaqXNHDTfQjE1Ru9dkzNCkmkDFH3Uiv8GGt1zyStbRWSupOkumAmGyDc8b/Fkqs1yQEA7Gi7FaNvVCxXjtnjcVXfM4n9QmyRYC24mDTC+tgbuuHzFTPOydIhleez+FC3tuWDTiHfJH3X3E1A8RDwuHy+Hw1CSylzYAhbMKcd44XixHBU9oXGpLGD3Q+niOwfNdP7yNlDOA6tgYHxc/4TcZG81fNPK1s6BNOmNSysAW0wjtgMr6X/TOY1SA1VgM0gdmjyarhcDkJ72h5dDEqL/d4n4vLE1EmqOysW/QvOycdg5f6+PeFR5+2uCe8g3ePxxphXiIK1daeOuZyYsYDjNmWEzR565dmt879Yk9sdOPaGnJwxBLxw3Ca9YM9fJaV1r5Z7KhzxJ/vF15Gg3OE9dms+ewJU/syCBdqTpXhGkbM5EK2V8ZO4eBXaGzrrvpTerdjqNm07azLG3/gEppO4AyQcAAA==</Configuration>
+            </EventQueue>
+            <ProcessPluginConfiguration>H4sIAAAAAAAA/31Vx67cSBK8z1cIuvJA3ySBJwF0Te9930g2vffm6/e91Sx2BiNM3SoiUMjKrIr44PesX50xS6u8SvlzHOaVHfq8KrY5Xquh//nHt28fv8G/afGalnTbuteYLT++53G7ZN+/1F/6r0O/iJ8w/gH+f/cP9vGvLPFP1kjqLP0FSGvWfYB/AX4pzGFZx3lIs2UZ5m8S9+O7trVr9Vn8mp2fN22rdc3m7z9FbJHoPxeIIOZ2EKxGn883gVVaC8kLJ0C2J0mTvXKRm62KJ4xh7G3FTPac4ZWaTczoZM5vEd73pLUfMnwwzUbQvJ46GYJdGWMRXTQHRua+JZIJKCW6rlzIddpDjmN62NgzvApszCcpn+jMNftBkbQZXZkHrr02mztK64GXg+gC+n6f/Qvq6/Z0ELT1hC7wV/UVvk+JmEwzWHzJ9Qz9wubJvVT0fWZElMFL6V6T/EiWgAqduBYfyUnv5wMMcssnLRSF2ELFHkKlMZ8t+PEB/q1z/5vGfyevxX1cZPOvB/D3zhF+gAZgrDEMiD8AaZjGhcMZeD68yTbauAotHzKIegzVmoVLndBORDCuHaXak2+VQqGMYATr7U1RqLmnG9z11ezRk9zXuQmsAMmSwvzGsd7qRotUZXqzJVIu1l1KHUoX0aRplPwNoo3il3NAbgBBEGZuUCokARN28pFWlNH7RonSw8DG5mVefHWspeQCqTiVNW8GL2M3+wxMn1JDvakNLZIWOEj5DtLfXnE/GwU9AvQ5RKPDxDbGvACzxznoKN68BzmLy6QovjJ8udcPurR0mncy2pnSRXziKWfzXZX5z2QfeXbpGiOWXy/vRcdNhaOzp3Psfvv85r2eciYIKsWftT0OYtd6jjZHcsNU9kV4vicm/D1pjSXDjT66Y5cIegXJBZ70lH1NPK/ebVkvo4/Jna2uVZ01Cibjg2rigIHPhioqNTdUTQQxxlpK7OSnhPdSJdsRzLnwY4XnxZJNrcpq9Kx2bZlEkenSk3cMGE90IPGkFCzycW98IrZLzydxr0M4iPNK3sGHn1942Z5FOy5BlzHZdVTKKKWxNW6vnYFFvPCgCccXzX82IlUsqdE56Ri2sSjJStQcYcT6U7PAIRyE4pTsvcsDEdSRgWZwJmnpctqy+agVt4VUl5+24EIpJTxKFG4PU51mqlh5sDOUjqpFL70LcwwpPkt7VP5dyYbYhxzr2FAo35si67db2d5Ldg+eeNpbhdYel2ydcBzWgj4m1qN3WJzx+XiUtneCozed+H27buLjG8it3YQ+bVHDVr967i2Wkv5qt+iCkrOnCMg8Ngl86IMAxHNXYMeFrZ1JvAfcGAd8RkhE8HVuGzyYf2vLHlCvBNrV4b7yCqmQgpjDM+E//28nDSh9M+HlzDCyAJYG7lS8x/4eju6iPTD6cmqNnN6rDgMz3ibAuoAwT3siNaTM/izdPWai4r2p2mW/zr1mlWMlTRyJWjOnZoMj6iicIDkWwsg1+aQ9WQBQ5JAZqnPKAGfP+ZwoZD5ybFjtbUOv7a5zXhuJAGLILrw5YqAP6xBCODO699uneXCZml5ZDBU6uVg+0XcXB3dUcxOKix7Nl7l8usvvnOQrW8Dfhs6fzv9vwfQf8qPVo7sGAAA=</ProcessPluginConfiguration>
+            <ErrorReporterPluginConfiguration>H4sIAAAAAAAA/7Oxr8jNUShLLSrOzM+zVTLUM1BSSM1Lzk/JzEu3VQoNcdO1ULK347IJSCxKzE0tAarTt+MCABs9DU01AAAA</ErrorReporterPluginConfiguration>
+            <ContextLink ContextID="Context1"></ContextLink>
+            <WorkspaceID>Approved</WorkspaceID>
+        </OutBoundIntegrationEndpoint>
+    </IntegrationEndpoints>
+</STEP-ProductInformation>

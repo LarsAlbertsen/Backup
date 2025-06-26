@@ -95,20 +95,17 @@ function checkNode(n) {
 }
 */
 
-log(source.getNode())
+//log(source.getNode())
 //log(source.getNode().getManager().getCurrentContext())
 //log(source.getNode().getManager().getCurrentWorkspace())
 
 //java.lang.Thread.sleep(1000)
 //var res = checkNode(source.getNode())
 
-if (Object.keys(res).length > 0) {
-	result.addMessage(JSON.stringify(
-		{id:source.getNode().getID(), 
-		name:source.getNode().getTitle()
-		//orphanValues : res
-		}, replacer))	
-}
+result.addMessage(JSON.stringify(
+	{id:source.getNode().getID(), 
+	name:source.getNode().getTitle()
+	}, replacer))	
 
 
 

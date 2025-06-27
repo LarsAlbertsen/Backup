@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "OnImport",
-  "type" : "BusinessAction",
+  "id" : "OnImportCondition",
+  "type" : "BusinessCondition",
   "setupGroups" : [ "ApproveActions" ],
-  "name" : "OnImport",
+  "name" : "OnImportCondition",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -21,22 +21,14 @@
 */
 /*===== business rule plugin definition =====
 {
-  "pluginId" : "JavaScriptBusinessActionWithBinds",
-  "binds" : [ {
-    "contract" : "CurrentObjectBindContract",
-    "alias" : "node",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
-  } ],
+  "pluginId" : "JavaScriptBusinessConditionWithBinds",
+  "binds" : [ ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node) {
-logger.info("ImportObject "+node);
+exports.operation0 = function () {
 //java.lang.Thread.sleep(10000)
-//logger.info("done")
-//throw "OnImport "+node
 
+return true
 }

@@ -174,15 +174,23 @@ var data = {
 ac.getPartObjects().forEach(function (po) {
 	if (po instanceof com.stibo.core.domain.partobject.NamePartObject) {
 		data.changes.push(handleNamePartObject(ac.getApprovedNode(), ac.getMainNode()))
+		var user = node.getEditRevision(po).getUserID()
+		logger.info("NamePartObject USER "+user);
 	}
 	else if (po instanceof com.stibo.core.domain.partobject.ValuePartObject) {
 		data.changes.push(handleValuePartObject(po, ac.getApprovedNode(), ac.getMainNode()))
+		var user = node.getEditRevision(po).getUserID()
+		logger.info("ValuePartObject USER "+user);
 	}
 	else if (po instanceof com.stibo.core.domain.partobject.ReferencePartObject) {
 		data.changes.push(handleReferencePartObject(po, ac.getApprovedNode(), ac.getMainNode()))
+		var user = node.getEditRevision(po).getUserID()
+		logger.info("ReferencePartObject USER "+user);
 	}
 	else if (po instanceof com.stibo.core.domain.partobject.ClassificationLinkPartObject) {
 		data.changes.push(handleClassificationLinkPartObject(po, ac.getApprovedNode(), ac.getMainNode()))
+		var user = node.getEditRevision(po).getUserID()
+		logger.info("ClassificationLinkPartObject USER "+user);
 	}
      else {
 		logger.info('Unhandled ' + po)

@@ -3,9 +3,14 @@
     <UserList>
         <User ID="LAAL_SUP" Deactivated="false">
             <Name>Lars Albertsen(Supplier)</Name>
+            <MetaData>
+                <Value AttributeID="UserLastActivityDate">2025-06-26</Value>
+            </MetaData>
             <UserGroupLink UserGroupID="AcmeSupplier"></UserGroupLink>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
-            <SystemSetup></SystemSetup>
+            <SystemSetup>
+                <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>
+            </SystemSetup>
         </User>
     </UserList>
 </STEP-ProductInformation>

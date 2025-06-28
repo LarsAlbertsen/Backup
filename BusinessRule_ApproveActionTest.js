@@ -8,7 +8,7 @@
 {
   "id" : "ApproveActionTest",
   "type" : "BusinessAction",
-  "setupGroups" : [ "EventTriggeringTest" ],
+  "setupGroups" : [ "ApproveActions" ],
   "name" : "ApproveActionTest",
   "description" : null,
   "scope" : "Global",
@@ -86,8 +86,9 @@ function handleNamePartObject(po, nodeBefore, nodeAfter) {
 	return {
 		type:'Name',
 		nameBefore: isNew?'':nvl(nodeBefore.getName()),
-		nameAfter : nvl(nodeAfter.getName()),
-		userid : nodeAfter.getEditRevision(po).getUserID()
+		nameAfter : nvl(nodeAfter.getName())
+		,userid : nodeAfter.getEditRevision(po).getUserID() //getEditRevision accesses data not in-memory, and makes the BR run 6 times slower
+		,time : new Date(nodeAfter.getEditRevision(po).getEditedDate()).toISOString()
 	}
 }
 function handleValuePartObject(po, nodeBefore, nodeAfter) {
@@ -95,9 +96,9 @@ function handleValuePartObject(po, nodeBefore, nodeAfter) {
 		type:'Value',
 		aid:po.getAttributeID(),
 		valBefore : nvl(getValue(nodeBefore, po.getAttributeID())),
-		valAfter : nvl(getValue(nodeAfter, po.getAttributeID())),
-		userid : nodeAfter.getEditRevision(po).getUserID(),
-		time : new Date(nodeAfter.getEditRevision(po).getEditedDate()).toISOString()
+		valAfter : nvl(getValue(nodeAfter, po.getAttributeID()))
+		,userid : nodeAfter.getEditRevision(po).getUserID()
+		,time : new Date(nodeAfter.getEditRevision(po).getEditedDate()).toISOString()
 	}
 }
 function handleReferencePartObject(po, nodeBefore, nodeAfter) {
@@ -140,8 +141,9 @@ function handleClassificationLinkPartObject(po, nodeBefore, nodeAfter) {
 	var doc = {
 		type : 'ClassificationLink',
 		linkType : po.getLinkTypeID(),
-		classID : po.getClassificationID(),
-		userid : nodeAfter.getEditRevision(po).getUserID()
+		classID : po.getClassificationID()
+		,userid : nodeAfter.getEditRevision(po).getUserID()
+		,time : new Date(nodeAfter.getEditRevision(po).getEditedDate()).toISOString()
 		//TODO, check if new, update or delete
 	}
 	return doc;
@@ -172,19 +174,19 @@ var data = {
 
 ac.getPartObjects().forEach(function (po) {
 	if (po instanceof com.stibo.core.domain.partobject.NamePartObject) {
-		logger.info(po + ' => NamePartObject')
+		//logger.info(po + ' => NamePartObject')
 		data.changes.push(handleNamePartObject(po, ac.getApprovedNode(), ac.getMainNode()))
 	}
 	else if (po instanceof com.stibo.core.domain.partobject.ValuePartObject) {
-		logger.info(po + ' => ValuePartObject')
+		//logger.info(po + ' => ValuePartObject')
 		data.changes.push(handleValuePartObject(po, ac.getApprovedNode(), ac.getMainNode()))
 	}
 	else if (po instanceof com.stibo.core.domain.partobject.ReferencePartObject) {
-		logger.info(po + ' => ReferencePartObject')
+		//logger.info(po + ' => ReferencePartObject')
 		data.changes.push(handleReferencePartObject(po, ac.getApprovedNode(), ac.getMainNode()))
 	}
 	else if (po instanceof com.stibo.core.domain.partobject.ClassificationLinkPartObject) {
-		logger.info(po + ' => ClassificationLinkPartObject')
+		//logger.info(po + ' => ClassificationLinkPartObject')
 		data.changes.push(handleClassificationLinkPartObject(po, ac.getApprovedNode(), ac.getMainNode()))
 	}
      else {

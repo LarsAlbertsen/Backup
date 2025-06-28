@@ -48,5 +48,5 @@
 exports.operation0 = function (logger,node,ceq) {
 var x = {nodeid:node.getID(), parentid:node.getParent().getID(), eq:ceq.getID()}
 logger.info(JSON.stringify(x))
-ceq.republish(node.getParent())
+//ceq.republish(node.getParent())
 }

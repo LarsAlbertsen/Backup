@@ -69,6 +69,30 @@ files.forEach(function(f) {
 		}
 		br.close()
 		logger.info(sb.toString())
+
+		if (f.getName().endsWith('.zip')) {
+			var fis = new java.io.FileInputStream(f)
+			var zis = new java.util.zip.ZipInputStream(fis)
+			while((entry = zis.getNextEntry()) !== null) {
+				logger.info('file: ' + entry.getName())
+				
+		    		var baos = new java.io.ByteArrayOutputStream();
+			     var buffer = java.lang.reflect.Array.newInstance(java.lang.Byte.TYPE, 1024);
+			     var len;
+	
+	 		     while ((len = zis.read(buffer)) > 0) {
+		     	    baos.write(buffer, 0, len);
+				 }
+		
+			     var content = new java.lang.String(baos.toByteArray(), "UTF-8");
+			     logger.info("Content:\n" + content);
+			     zis.closeEntry();
+		
+			}
+			zis.close()
+			fis.close()
+			
+		}
 	}
 })
 logger.info(files.length)

@@ -52,12 +52,18 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
+  }, {
+    "contract" : "OutboundBusinessProcessorExecutionReportLoggerBindContract",
+    "alias" : "report",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,manager,logger,source,result) {
+exports.operation0 = function (node,manager,logger,source,result,report) {
 function log(msg) {
 	logger.info(msg)
 }
@@ -95,18 +101,19 @@ function checkNode(n) {
 }
 */
 
-//log(source.getNode())
+
 //log(source.getNode().getManager().getCurrentContext())
 //log(source.getNode().getManager().getCurrentWorkspace())
 
 //java.lang.Thread.sleep(1000)
 //var res = checkNode(source.getNode())
 
+var startTime = java.lang.System.currentTimeMillis()
 result.addMessage(JSON.stringify(
 	{id:source.getNode().getID(), 
 	name:source.getNode().getTitle()
 	}, replacer))	
-
+log('handled ' + source.getNode() + ' in ' + (java.lang.System.currentTimeMillis() - startTime) + ' ms ' + java.lang.System.currentTimeMillis())
 
 
 

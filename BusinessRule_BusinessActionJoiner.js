@@ -62,8 +62,8 @@ result.appendToMessage('[')
 var isFirst = true
 while(source.hasNext()) {
 	var msg = source.getNextMessage()
-	logger.info('msg=[' + msg + ']')
-	logger.info('msg.length='+msg.length())
+//	logger.info('msg=[' + msg + ']')
+//	logger.info('msg.length='+msg.length())
 	if (!msg.isEmpty()) {
 		if (!isFirst) {
 			result.appendToMessage(',')

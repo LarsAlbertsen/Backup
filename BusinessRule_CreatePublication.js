@@ -13,7 +13,7 @@
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
-  "allObjectTypesValid" : false,
+  "allObjectTypesValid" : true,
   "runPrivileged" : false,
   "onApprove" : "Never",
   "dependencies" : [ ]
@@ -34,6 +34,15 @@
 }
 */
 exports.operation0 = function (manager) {
+/** @type{PublicationHome} */
+const pubHome = manager.getHome(com.stibo.core.domain.publishing.PublicationHome)
+pubHome.getPublicationByID('12193281767424670212');
+const pubGroup = pubHome.getPublicationGroupByID('100002')
+logger.info('pubGroup='+pubGroup);
+if (pubGroup) {
+    const pubType = manager.getObjectTypeHome().getObjectTypeByID('Publication');
+    logger.info('pubType='+pubType);
+    pubGroup.createPublication('myPub', pubType);
+}
 
-manager
 }

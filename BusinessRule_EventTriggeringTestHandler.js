@@ -40,7 +40,8 @@
 }
 */
 exports.operation0 = function (node,logger) {
-logger.info(node.getID())
+logger.info(node.getID() + ' ' + node.getTitle())
+//java.lang.Thread.sleep(1000)
 
 
 

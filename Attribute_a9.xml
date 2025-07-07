@@ -4,6 +4,7 @@
         <Attribute ID="a9" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
             <Name>a9</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="8" InputMask=""></Validation>
+            <DimensionLink DimensionID="Language"></DimensionLink>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>

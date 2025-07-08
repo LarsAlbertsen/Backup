@@ -74,6 +74,7 @@
             <AttributeLink AttributeID="ItemKey"></AttributeLink>
             <AttributeLink AttributeID="ItemUniqueID"></AttributeLink>
             <AttributeLink AttributeID="LAALDummyAttr"></AttributeLink>
+            <AttributeLink AttributeID="LOVWithIDAttr"></AttributeLink>
             <AttributeLink AttributeID="LanguageDependant"></AttributeLink>
             <AttributeLink AttributeID="LastEdited"></AttributeLink>
             <AttributeLink AttributeID="MFGPartNo"></AttributeLink>
@@ -82,6 +83,7 @@
             <AttributeLink AttributeID="MultiValueLOV"></AttributeLink>
             <AttributeLink AttributeID="Number"></AttributeLink>
             <AttributeLink AttributeID="NumericText"></AttributeLink>
+            <AttributeLink AttributeID="OpenLOVAttr"></AttributeLink>
             <AttributeLink AttributeID="PortionOfWood"></AttributeLink>
             <AttributeLink AttributeID="PrimaryMfrLocation"></AttributeLink>
             <AttributeLink AttributeID="PrimarySpecies"></AttributeLink>

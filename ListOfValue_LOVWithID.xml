@@ -6,14 +6,12 @@
         </Qualifier>
     </Qualifiers>
     <ListsOfValues>
-        <ListOfValue ID="OpenLOV" ParentID="List Of Values group root" AllowUserValueAddition="true" UseValueID="false" Referenced="true">
-            <Name QualifierID="en-US">OpenLOV</Name>
+        <ListOfValue ID="LOVWithID" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="true" IDPattern="[id]" Referenced="true">
+            <Name QualifierID="en-US">LOVWithID</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
-            <DimensionLink DimensionID="Language"></DimensionLink>
-            <Value QualifierID="en-US">E 1</Value>
-            <Value QualifierID="en-US">E 13</Value>
-            <Value QualifierID="en-US">E 2</Value>
-            <Value QualifierID="en-US">E 4</Value>
+            <Value ID="1">One</Value>
+            <Value ID="2">Two</Value>
+            <Value ID="3">Three</Value>
         </ListOfValue>
     </ListsOfValues>
 </STEP-ProductInformation>

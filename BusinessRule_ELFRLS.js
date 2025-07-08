@@ -58,8 +58,17 @@ if (!files) {
 var tmp = (dir.getName() + '').split('/')
 var fileToPrint = tmp[tmp.length - 1]
 
+var counterDoc = {}
+
 files.forEach(function(f) {
-	logger.info((f.isDirectory()?'d':(f.isFile()?'f':'UnknownType')) + ' ' + f + (f.isDirectory()?'':'   length=' + f.length() + ' modified=' + (new Date(f.lastModified())).toISOString()))	
+	//logger.info((f.isDirectory()?'d':(f.isFile()?'f':'UnknownType')) + ' ' + f + (f.isDirectory()?'':'   length=' + f.length() + ' modified=' + (new Date(f.lastModified())).toISOString()))	
+	if (f.isFile()) {
+		var ext = f.getName().substring(f.getName().lastIndexOf('.') + 1)
+		if (!counterDoc[ext]) {
+			counterDoc[ext] = 0;		
+		}
+		counterDoc[ext] = counterDoc[ext] + 1;
+	}
 	if (f.isFile() &&  fileToPrint == f.getName()) {
 		var sb = new java.lang.StringBuilder()
 		var br = new java.io.BufferedReader(new java.io.FileReader(f))
@@ -96,6 +105,7 @@ files.forEach(function(f) {
 	}
 })
 logger.info(files.length)
+logger.info(JSON.stringify(counterDoc,null, 2))
 
 
 

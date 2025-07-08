@@ -40,7 +40,7 @@
 }
 */
 exports.operation0 = function (manager,eq) {
-for (var ix = 1; ix <=200; ix++) {
+for (var ix = 1; ix <=1000; ix++) {
 	eq.republish(manager.getProductHome().getProductByID('BAProduct-'+ix))
 }
 

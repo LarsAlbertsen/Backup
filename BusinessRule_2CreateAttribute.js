@@ -19,18 +19,3 @@
   "dependencies" : [ ]
 }
 */
-/*===== business rule plugin definition =====
-{
-  "pluginId" : "com.productplatform.laal.businessrule.function.createattribute.CreateAttribute",
-  "parameters" : [ {
-    "id" : "ID",
-    "type" : "java.lang.String",
-    "value" : null
-  }, {
-    "id" : "Name",
-    "type" : "java.lang.String",
-    "value" : null
-  } ],
-  "pluginType" : "Operation"
-}
-*/

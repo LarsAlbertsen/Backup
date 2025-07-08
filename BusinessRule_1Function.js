@@ -19,14 +19,3 @@
   "dependencies" : [ ]
 }
 */
-/*===== business rule plugin definition =====
-{
-  "pluginId" : "com.productplatform.laal.businessrule.function.AssetExcelToJSON",
-  "parameters" : [ {
-    "id" : "Asset",
-    "type" : "com.stibo.core.domain.Asset",
-    "value" : null
-  } ],
-  "pluginType" : "Operation"
-}
-*/

@@ -19,10 +19,3 @@
   "dependencies" : [ ]
 }
 */
-/*===== business rule plugin definition =====
-{
-  "pluginId" : "CreateAttribute",
-  "parameters" : [ ],
-  "pluginType" : "Operation"
-}
-*/

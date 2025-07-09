@@ -66,12 +66,12 @@ while(source.hasNext()) {
 //	logger.info('msg.length='+msg.length())
 	if (!msg.isEmpty()) {
 		if (!isFirst) {
-			result.appendToMessage(',')
+			result.appendToMessage('\n' + ',')
 		}
-		result.appendToMessage('\n' + msg)
+		result.appendToMessage(msg)
 		isFirst = false;
 	}
 }
-result.appendToMessage('\n]')
+result.appendToMessage(']')
 
 }

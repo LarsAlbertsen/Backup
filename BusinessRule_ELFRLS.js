@@ -61,7 +61,7 @@ var fileToPrint = tmp[tmp.length - 1]
 var counterDoc = {}
 
 files.forEach(function(f) {
-	//logger.info((f.isDirectory()?'d':(f.isFile()?'f':'UnknownType')) + ' ' + f + (f.isDirectory()?'':'   length=' + f.length() + ' modified=' + (new Date(f.lastModified())).toISOString()))	
+	logger.info((f.isDirectory()?'d':(f.isFile()?'f':'UnknownType')) + ' ' + f + (f.isDirectory()?'':'   length=' + f.length() + ' modified=' + (new Date(f.lastModified())).toISOString()))	
 	if (f.isFile()) {
 		var ext = f.getName().substring(f.getName().lastIndexOf('.') + 1)
 		if (!counterDoc[ext]) {
@@ -104,8 +104,8 @@ files.forEach(function(f) {
 		}
 	}
 })
-logger.info(files.length)
-logger.info(JSON.stringify(counterDoc,null, 2))
+logger.info('Number of files ' + files.length)
+logger.info('Count by file extension ' + JSON.stringify(counterDoc,null, 2))
 
 
 

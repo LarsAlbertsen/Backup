@@ -8,7 +8,7 @@
 {
   "id" : "AuditApproval",
   "type" : "BusinessAction",
-  "setupGroups" : [ "LAALRules" ],
+  "setupGroups" : [ "ApprovalActions" ],
   "name" : "AuditApproval",
   "description" : null,
   "scope" : "Global",
@@ -52,12 +52,18 @@
     "parameterClass" : "com.stibo.auditmessaging.domain.impl.topic.AuditMessageTopicImpl",
     "value" : "approvals",
     "description" : null
+  }, {
+    "contract" : "AuditMessageTopicBindContract",
+    "alias" : "secondTopic",
+    "parameterClass" : "com.stibo.auditmessaging.domain.impl.topic.AuditMessageTopicImpl",
+    "value" : "MyTopic",
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,logger,ac,manager,topic) {
+exports.operation0 = function (node,logger,ac,manager,topic,secondTopic) {
 function nvl(v) {
 	return v?v:''
 }
@@ -202,5 +208,7 @@ ac.getPartObjects().forEach(function (po) {
 
 logger.info(JSON.stringify(data))
 topic.sendMessageAsync(JSON.stringify(data))
+secondTopic.sendMessageAsync(JSON.stringify(data))
+logger.info("Done sending to Kafka");
 
 }

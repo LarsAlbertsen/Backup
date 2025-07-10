@@ -8,7 +8,7 @@
 {
   "id" : "AuditAction",
   "type" : "BusinessAction",
-  "setupGroups" : [ "LAALRules" ],
+  "setupGroups" : [ "ApprovalActions" ],
   "name" : "AuditAction",
   "description" : null,
   "scope" : "Global",

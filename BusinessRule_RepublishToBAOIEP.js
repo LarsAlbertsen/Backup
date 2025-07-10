@@ -40,8 +40,10 @@
 }
 */
 exports.operation0 = function (manager,eq) {
-for (var ix = 1; ix <=1000; ix++) {
-	eq.republish(manager.getProductHome().getProductByID('BAProduct-'+ix))
+for (var x = 1; x <=10; x++) {
+	for (var ix = 1; ix <=1000; ix++) {
+		eq.republish(manager.getProductHome().getProductByID('BAProduct-'+ix))
+	}
 }
 
 }

@@ -82,9 +82,9 @@ function callMethod(clazz, method, para) {
 	return clazz.class.getMethod(method).invoke(clazz)
 }
 
-function printBGP(bgp) {
+function printBGP(bgp, force) {
 	var status = callMethod(bgp, 'getStatus')
-	if (status == 'running') {
+	if (status == 'running' || force) {
 		var doc = {}
 		var execTime = callMethod(bgp, 'getExecutionTime')
 		logger.info(execTime)
@@ -107,17 +107,19 @@ function printBGP(bgp) {
 
 
 var bgpHome = manager.getBackgroundProcessHome()
-var processes = callMethod(bgpHome, 'getBackgroundProcesses')
-
-var count = 0;
-processes.forEach(function(bgp) {
-	count++
-	printBGP(bgp)
-})
-logger.info('Count ' + count)
-
-//var bgp = bgpHome.getBackgroundProcessByID(bgpid)
-//printBGP(bgp)
+if (bgpid == '') {
+	var processes = callMethod(bgpHome, 'getBackgroundProcesses')
+	var count = 0;
+	processes.forEach(function(bgp) {
+		count++
+		printBGP(bgp)
+	})
+	logger.info('Count ' + count)
+} else {
+	logger.info(bgpid)
+	var bgp = bgpHome.getBackgroundProcessByID(bgpid)
+	printBGP(bgp, true)
+}
 
 return "done"
 }

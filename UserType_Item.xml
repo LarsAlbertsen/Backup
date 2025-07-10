@@ -66,6 +66,7 @@
             <AttributeLink AttributeID="ELFRISODate"></AttributeLink>
             <AttributeLink AttributeID="ELFRISODateTime"></AttributeLink>
             <AttributeLink AttributeID="ELFRLovAttr"></AttributeLink>
+            <AttributeLink AttributeID="ELFRTESTSPEC"></AttributeLink>
             <AttributeLink AttributeID="GTIN"></AttributeLink>
             <AttributeLink AttributeID="GenerateProof"></AttributeLink>
             <AttributeLink AttributeID="ISODateAttribute"></AttributeLink>

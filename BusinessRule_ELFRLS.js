@@ -44,10 +44,16 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : ""
+  }, {
+    "contract" : "BooleanBindContract",
+    "alias" : "justCount",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : ""
   } ]
 }
 */
-exports.operation0 = function (step,logger,fn) {
+exports.operation0 = function (step,logger,fn,justCount) {
 var dir = new java.io.File("/" + fn)
 var files = dir.listFiles()
 if (!files) {
@@ -61,7 +67,7 @@ var fileToPrint = tmp[tmp.length - 1]
 var counterDoc = {}
 
 files.forEach(function(f) {
-	logger.info((f.isDirectory()?'d':(f.isFile()?'f':'UnknownType')) + ' ' + f + (f.isDirectory()?'':'   length=' + f.length() + ' modified=' + (new Date(f.lastModified())).toISOString()))	
+	if (!justCount) logger.info((f.isDirectory()?'d':(f.isFile()?'f':'UnknownType')) + ' ' + f + (f.isDirectory()?'':'   length=' + f.length() + ' modified=' + (new Date(f.lastModified())).toISOString()))	
 	if (f.isFile()) {
 		var ext = f.getName().substring(f.getName().lastIndexOf('.') + 1)
 		if (!counterDoc[ext]) {

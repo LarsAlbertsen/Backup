@@ -36,5 +36,5 @@
 exports.operation0 = function (manager) {
 
 
-manager.getPubli
+manager.getPub
 }

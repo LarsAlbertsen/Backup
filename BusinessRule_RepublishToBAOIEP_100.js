@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "RepublishToBAOIEP",
+  "id" : "RepublishToBAOIEP_100",
   "type" : "BusinessAction",
   "setupGroups" : [ "BusinessActionOIEP" ],
-  "name" : "RepublishToBAOIEP",
+  "name" : "RepublishToBAOIEP_100",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -34,16 +34,21 @@
     "parameterClass" : "com.stibo.core.domain.impl.integrationendpoint.FrontOutboundIntegrationEndpointImpl",
     "value" : "step://OutBoundIntegrationEndpoint?id=BusinessActionOIEPonCollection",
     "description" : null
+  }, {
+    "contract" : "LoggerBindContract",
+    "alias" : "logger",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (manager,eq) {
-for (var x = 1; x <=10; x++) {
-	for (var ix = 1; ix <=1000; ix++) {
-		eq.republish(manager.getProductHome().getProductByID('BAProduct-'+ix))
-	}
+exports.operation0 = function (manager,eq,logger) {
+for (var ix = 1; ix <=100; ix++) {
+	var randomNum = Math.floor(Math.random() * 1000) + 1;
+	eq.republish(manager.getProductHome().getProductByID('BAProduct-'+randomNum))
 }
 
 }

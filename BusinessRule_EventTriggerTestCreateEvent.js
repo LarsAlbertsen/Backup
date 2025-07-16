@@ -35,8 +35,14 @@
     "value" : null,
     "description" : null
   }, {
-    "contract" : "CurrentEventQueueBinding",
+    "contract" : "EventQueueBinding",
     "alias" : "ceq",
+    "parameterClass" : "com.stibo.core.domain.impl.eventprocessor.EventProcessorImpl",
+    "value" : "step://eventprocessor?id=EventTriggeringTest2",
+    "description" : null
+  }, {
+    "contract" : "ManagerBindContract",
+    "alias" : "manager",
     "parameterClass" : "null",
     "value" : null,
     "description" : null
@@ -45,8 +51,14 @@
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (logger,node,ceq) {
-var x = {nodeid:node.getID(), parentid:node.getParent().getID(), eq:ceq.getID()}
-logger.info(JSON.stringify(x))
-//ceq.republish(node.getParent())
+exports.operation0 = function (logger,node,ceq,manager) {
+for (var i = 1; i <=100; i++) {
+	for (var x = 1; x <= 5; x++) {
+		ceq.republish(manager.getProductHome().getProductByID("BAProduct-" + x))
+	}
+	for (var x = 5; x >= 1; x--) {
+		ceq.republish(manager.getProductHome().getProductByID("BAProduct-" + x))
+	}	
+}
+
 }

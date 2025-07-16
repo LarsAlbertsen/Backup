@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "EventTriggeringTestHandler",
+  "id" : "EventTriggeringTestBatchHandler",
   "type" : "BusinessAction",
   "setupGroups" : [ "EventTriggeringTest" ],
-  "name" : "EventTriggeringTestHandler",
+  "name" : "EventTriggeringTestBatchHandler",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -34,14 +34,24 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
+  }, {
+    "contract" : "EventProcessorEventBatchBindContract",
+    "alias" : "batch",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,logger) {
-logger.info(node.getID() + ' ' + node.getTitle())
-//java.lang.Thread.sleep(10000)
+exports.operation0 = function (node,logger,batch) {
+logger.info(batch.size())
+java.lang.Thread.sleep(10000)
+batch.getEvents().forEach(function(e) {
+	logger.info(e.getNode().getID())
+	return true;
+})
 
 
 

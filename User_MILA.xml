@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="ELFR" EMail="elfr@stibosystems.com" Deactivated="false">
-            <Name>Eli Frandsen</Name>
+        <User ID="MILA" EMail="mila@stibosystems.com" Deactivated="false">
+            <Name>Michał Łaguna</Name>
             <MetaData>
-                <Value AttributeID="UserInformation">22</Value>
-                <Value AttributeID="UserLastActivityDate">2025-07-17</Value>
+                <Value AttributeID="UserLastActivityDate">2025-07-16</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>
-                <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>
+                <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context_xusenglish</SystemSetupValue>
             </SystemSetup>
         </User>
     </UserList>

@@ -58,7 +58,7 @@
 }
 */
 exports.operation0 = function (node,manager,logger,result,source) {
-logger.info('JOINER')
+//logger.info('JOINER')
 result.appendToMessage('[')
 var isFirst = true
 while(source.hasNext()) {

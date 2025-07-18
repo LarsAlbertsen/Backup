@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "RepublishToBAOIEP_100",
+  "id" : "RepublishToBAOIEP_BEGIN",
   "type" : "BusinessAction",
   "setupGroups" : [ "BusinessActionOIEP" ],
-  "name" : "RepublishToBAOIEP_100",
+  "name" : "RepublishToBAOIEP_BEGIN",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -47,9 +47,5 @@
 */
 exports.operation0 = function (manager,eq,logger) {
 eq.republish(manager.getProductHome().getProductByID('BAProduct-BEGIN'))
-for (var ix = 1; ix <=98; ix++) {
-	var randomNum = Math.floor(Math.random() * 1000) + 1;
-	eq.republish(manager.getProductHome().getProductByID('BAProduct-'+randomNum))
-}
-eq.republish(manager.getProductHome().getProductByID('BAProduct-END'))
+
 }

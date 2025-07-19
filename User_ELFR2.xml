@@ -2,7 +2,7 @@
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
         <User ID="ELFR2" Deactivated="true">
-            <Name>ELFR2223</Name>
+            <Name>ELFR222</Name>
             <MetaData>
                 <Value AttributeID="UserLastActivityDate">2025-06-11</Value>
             </MetaData>

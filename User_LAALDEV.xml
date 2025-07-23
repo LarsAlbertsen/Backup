@@ -2,7 +2,7 @@
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
         <User ID="LAALDEV" EMail="laal@stibosystems.com" Deactivated="false">
-            <Name>LAAL</Name>
+            <Name>LAALDEV</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Stibo standard user </Value>
                 <Value AttributeID="UserLastActivityDate">2025-07-07</Value>

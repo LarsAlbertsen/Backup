@@ -44,8 +44,8 @@ exports.operation0 = function (externalFunction,tmpStore) {
 const myFile = tmpStore.create("file.tmp");
 
 let args = new java.util.HashMap();
-args.put("booleanParameter", true);
-args.put("stringParameter", "Lars");
+args.put("booleanParameter1", true);
+args.put("stringParameter1", "Lars");
 //args.put("payload", myFile);
 const result = externalFunction.evaluate(args);
 

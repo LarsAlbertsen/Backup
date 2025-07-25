@@ -16,8 +16,15 @@ DataSourcePluginConfiguration:
 
 DeliveryMethodPluginConfiguration:
 <Parameters>
-  <Parameter ID="FileName" Type="java.lang.String">$filename-$timestamp(yyyy-MM-dd_HH.mm.ss).$extension</Parameter>
-  <Parameter ID="zipContent" Type="java.lang.Boolean">true</Parameter>
+  <Parameter ID="Actions" Type="java.util.List"/>
+  <Parameter ID="ClusterEnabledServerConfigurations" Type="com.stibo.util.integrationendpoints.ConfigStringCollectionLOVParameter">MongoDB.Server.Configuration._1</Parameter>
+  <Parameter ID="DatabaseName" Type="java.lang.String"/>
+  <Parameter ID="DollarReplacement" Type="java.lang.String"/>
+  <Parameter ID="Password" Type="com.stibo.passwordparameter.PasswordParameter">eRAjNzxQJ81jAUVjF4v9QMYKZnVa5SrSu8ToAwVJWc0=</Parameter>
+  <Parameter ID="UserName" Type="java.lang.String">stepsys</Parameter>
+  <Parameter ID="keyStoreLocation" Type="com.stibo.util.integrationendpoints.ConfigParameter"/>
+  <Parameter ID="trustStoreLocation" Type="com.stibo.util.integrationendpoints.ConfigParameter"/>
+  <Parameter ID="useSSL" Type="java.lang.String">No</Parameter>
 </Parameters>
 
 ErrorReporterPluginConfiguration:
@@ -26,7 +33,7 @@ ErrorReporterPluginConfiguration:
             <Name>LarsTest1</Name>
             <ScheduleSpecification>H4sIAAAAAAAA/7Oxr8jNUShLLSrOzM+zVTLUM1Cyt+OySc0rKcpMLbbjUlAAsysVknMSi4ttlZLzc/WKSzKT8vVKSzJz9IKTM1JTSnNSXVLTMvMyS4BmqMCEXIGGVvpm5pWWpCoBjYGCVJAo0B4lfaAt+jBrADtwci2GAAAA</ScheduleSpecification>
             <DataSourcePluginConfiguration>H4sIAAAAAAAA/62QywrCMBBF935FmL2x3bnoA0QFF4JK/YCxHWoknUiTFPv3pqBVwYULlxfmnnOZJL81WnTUWmU4hVhGIIhLUymuUzgW6+kc8myS7LDFhly4yyZCvKLYLFNYYm8LcyCHilcdsbMgiv5KKVywQ6mRa7lhRzW1kEXJbGx/YdHQ33vytEBXnsOMJ6s0jbROnYz0TmmpBmCLLuwmrq4mZCsXxmhCfshGMmRxFP0u9lxp2pK1WJP9j/7D/RbCO+9hpBTugwEAAA==</DataSourcePluginConfiguration>
-            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAA/22POwvCMBSF9/6KcOmgQ6JuDm0KKqUOFcE6S7DXEsmjpLG0/nrj4gO92wcf55ybZINWpEfXSWtSWLA5EDRnW0vTpHCscrqEjEfJXjih0QePR4S8kWw3KeRS4S4wkGpsMYWr6AVTwjTs4F0IAh5fgmKCQmMvNXZe6HYyhqNlSev6VBRMa9Z1Uxbj4NE81ySzV8ufzrts19YE1f+2rqxVKAxw7274FfMB4ZEHh5dcCP0AAAA=</DeliveryMethodPluginConfiguration>
+            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAA/71TXU/CMBR951csfbdCogkmbGQyScSBwGBGX0zprktn1y5tx4e/3soEIerUF996e88959zb2053nXNnCUozKVzUwk3kgKAyYSJ10XzWP2mjrtfojIkiORiL8xqO8xE614GLerzU9nwlyIJDEoGyfD0pnlhaKmIssUbObFOAi6jMsTZsIXFpGMdMGEgrCIikkDbWuKqMjLIWepJzoG/58DbeiyJvKEUqg0tcaeEjMfzY6pzusV/YDYghC6JhZO92xjKyJJgTkeJKGHn1HHMNqr7eTqTQG11PMyZar6RKPs+neM8UOzzeYQ/GAFM/G72sJ4N2K/PncdY/W15Mhvc3DyIm55GKyvZM+qt4cEebbr2RUkMUhd93M5L19c+wiYxUEEq6fYS/P/hBW/VSRtlt+y8xnx7t73YwW/KQafNTcWC3l6gpFJxQyEGYX27bQWC/2ytuFd8dowMAAA==</DeliveryMethodPluginConfiguration>
             <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

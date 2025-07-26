@@ -8,7 +8,7 @@
 {
   "id" : "CreateAttribute",
   "type" : "BusinessAction",
-  "setupGroups" : [ "LAALRules" ],
+  "setupGroups" : [ "API Additions" ],
   "name" : "Create Attribute",
   "description" : null,
   "scope" : "Global",

@@ -8,7 +8,7 @@
 {
   "id" : "CreatePublications",
   "type" : "BusinessAction",
-  "setupGroups" : [ "Actions" ],
+  "setupGroups" : [ "API Additions" ],
   "name" : "Create Publications",
   "description" : null,
   "scope" : "Global",

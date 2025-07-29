@@ -50,9 +50,10 @@ if (pubGroup) {
 
     myPublication.setName('My Publication');
     const sectionUUID = java.util.UUID.randomUUID().toString();
-    //myPublication.createSection(sectionUUID, 'My Section');
+    const mySection = myPublication.createSection(sectionUUID, 'My Section');
     
-    myPublication.
+    mySection.setName('My Section');
+    
 	
     
 }

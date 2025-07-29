@@ -4,6 +4,7 @@
         <UserType ID="stibo.chgpck.verified" Referenced="true">
             <Name>Change Package (Sealed)</Name>
             <AttributeLink AttributeID="ChangePackageDescription"></AttributeLink>
+            <AttributeLink AttributeID="ChangePackageState"></AttributeLink>
             <AttributeLink AttributeID="ChangePackageTeam"></AttributeLink>
             <AttributeLink AttributeID="GITBranch"></AttributeLink>
         </UserType>

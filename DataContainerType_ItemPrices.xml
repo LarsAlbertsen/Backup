@@ -16,6 +16,10 @@
             <AttributeLink AttributeID="a8"></AttributeLink>
             <AttributeLink AttributeID="a9"></AttributeLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <KeyDefinition>
+                <Attribute ID="ItemPrice"></Attribute>
+                <Attribute ID="ItemPriceFrom"></Attribute>
+            </KeyDefinition>
         </DataContainerType>
     </DataContainerTypes>
 </STEP-ProductInformation>

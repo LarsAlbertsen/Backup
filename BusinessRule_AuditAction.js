@@ -8,7 +8,7 @@
 {
   "id" : "AuditAction",
   "type" : "BusinessAction",
-  "setupGroups" : [ "ApprovalActions" ],
+  "setupGroups" : [ "AMF Actions" ],
   "name" : "AuditAction",
   "description" : null,
   "scope" : "Global",

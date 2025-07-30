@@ -8,7 +8,7 @@
 {
   "id" : "AuditMessaging.WorkflowAuditAction",
   "type" : "BusinessAction",
-  "setupGroups" : [ "Workflow Auditing" ],
+  "setupGroups" : [ "AMF Actions" ],
   "name" : "Workflow Audit Action",
   "description" : null,
   "scope" : "Global",

@@ -47,7 +47,7 @@
 */
 exports.operation0 = function (node,logger,batch) {
 logger.info(batch.size())
-java.lang.Thread.sleep(10000)
+//java.lang.Thread.sleep(10000)
 batch.getEvents().forEach(function(e) {
 	logger.info(e.getNode().getID())
 	return true;

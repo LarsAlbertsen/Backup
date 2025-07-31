@@ -4,7 +4,7 @@
         <User ID="LAAL" EMail="laal@stibosystems.com" Deactivated="false">
             <Name>Lars Albertsen</Name>
             <MetaData>
-                <Value AttributeID="UserLastActivityDate">2025-07-29</Value>
+                <Value AttributeID="UserLastActivityDate">2025-07-30</Value>
                 <MultiValue AttributeID="SCIM.emails">
                     <Value>laal@stibosystems.com</Value>
                 </MultiValue>

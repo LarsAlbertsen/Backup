@@ -5,7 +5,7 @@
             <Name>USERJ</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Info about UserJ entered in LAAL-SAAS</Value>
-                <Value AttributeID="UserLastActivityDate">2025-07-31</Value>
+                <Value AttributeID="UserLastActivityDate">2025-08-01</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Marketing"></UserGroupLink>
             <SystemSetup>

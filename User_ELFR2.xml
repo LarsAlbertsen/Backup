@@ -2,7 +2,7 @@
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
         <User ID="ELFR2" EMail="someone@somewhere.com" Deactivated="true">
-            <Name>ELFR2223</Name>
+            <Name>ELFR222</Name>
             <MetaData>
                 <Value AttributeID="UPN">bb</Value>
                 <Value AttributeID="UserInformation">user Info</Value>

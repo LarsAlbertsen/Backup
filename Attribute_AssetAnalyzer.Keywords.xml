@@ -5,7 +5,7 @@
             <Name>Keywords</Name>
             <Validation BaseType="Text" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
             <MetaData>
-                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+                <Value AttributeID="GetCompleteness">0</Value>
             </MetaData>
             <AttributeGroupLink AttributeGroupID="AssetAnalyzer.Attributes"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Asset user-type root"></UserTypeLink>

@@ -40,10 +40,15 @@ var v = h.getLookupTableValue("My Lookup Table", "MyFrom");
 logger.info("v="+v);
 
 var table = h.getLookupTable("My Lookup Table");
+var v2 = table.getValue("MyFrom", true);
+logger.info("v2="+v2);
+
+
+/*
 var data = table.getSubstitutionData();
 logger.info("data="+data);
 data.put("Hello", "World");
 table.setSubstitutionData(data);
 logger.info("After "+table.getSubstitutionData());
-
+*/
 }

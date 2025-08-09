@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <EventQueues>
-        <EventQueue ID="MyEventQueue" QueueStatus="Read" DaysRetained="0">
+        <EventQueue ID="MyEventQueue" QueueStatus="Discard" DaysRetained="0">
             <Name>MyEventQueue</Name><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

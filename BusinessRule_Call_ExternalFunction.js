@@ -24,9 +24,9 @@
   "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
     "contract" : "BusinessFunctionBindContract",
-    "alias" : "externalFunction",
+    "alias" : "convertFromExcel",
     "parameterClass" : "com.stibo.core.domain.impl.businessrule.function.javascript.reference.BusinessFunctionReferenceImpl",
-    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>ConvertToExcel</BusinessFunction>\n</BusinessFunctionReference>\n",
+    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>ConvertFromExcel</BusinessFunction>\n</BusinessFunctionReference>\n",
     "description" : null
   }, {
     "contract" : "TempStoreBindContract",
@@ -35,64 +35,68 @@
     "value" : null,
     "description" : null
   }, {
-    "contract" : "BusinessFunctionBindContract",
-    "alias" : "convertFromExcel",
-    "parameterClass" : "com.stibo.core.domain.impl.businessrule.function.javascript.reference.BusinessFunctionReferenceImpl",
-    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>ConvertFromExcel2</BusinessFunction>\n</BusinessFunctionReference>\n",
-    "description" : null
-  }, {
     "contract" : "AssetBindContract",
     "alias" : "excelAsset",
     "parameterClass" : "com.stibo.core.domain.impl.FrontAssetImpl$$Generated$$25",
     "value" : "32158417",
+    "description" : null
+  }, {
+    "contract" : "BusinessFunctionBindContract",
+    "alias" : "convertToExcel",
+    "parameterClass" : "com.stibo.core.domain.impl.businessrule.function.javascript.reference.BusinessFunctionReferenceImpl",
+    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>ConvertToExcel</BusinessFunction>\n</BusinessFunctionReference>\n",
     "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (externalFunction,tmpStore,convertFromExcel,excelAsset) {
-/*
-const value = 
-`header1|header2|header3
+exports.operation0 = function (convertFromExcel,tmpStore,excelAsset,convertToExcel) {
+
+{
+    /**
+     * Convert CSV to Excel
+     */
+    const value =
+        `header1|header2|header3
 a1|a2|a3
 b1|b2|b3
 c1|c2|c3
 d1|d2|d3
 e1|e2|e3`
-;
+        ;
 
-const myFile = tmpStore.create("file.tmp");
-myFile.write(value);
-myFile.close();
+    const csvFile = tmpStore.create("file.tmp");
+    csvFile.write(value);
+    csvFile.close();
 
-let args = new java.util.HashMap();
-args.put("booleanParameter2", true);
-args.put("stringParameter2", "Lars");
-args.put("payload", myFile);
-const result = externalFunction.evaluate(args);
+    let args1 = new java.util.HashMap();
+    args1.put("csvFile", csvFile);
+    const result1 = convertToExcel.evaluate(args1);
 
-logger.info("External function executed with arguments: " + JSON.stringify(result));
-*/
+    var resultStream = result1.inputStream();
+    var resultData = resultStream.readAllBytes();
+    logger.info("Excel File: " + resultData);
 
-const myFile = tmpStore.create("file.tmp");
-excelAsset.download(myFile.outputStream())
-myFile.close();
+    /**
+     * Convert Excel to JSON
+     */
 
-let args = new java.util.HashMap();
-args.put("excelFile", myFile);
+    /** {Payload} */
+    const myFile = tmpStore.create("file.tmp");
+    myFile.outputStream().write(resultData);
+    myFile.close();
+    resultStream.close();
 
-let str = convertFromExcel.evaluate(args);
+    let args = new java.util.HashMap();
+    args.put("excelFile", myFile);
 
+    var returnValue = convertFromExcel.evaluate(args);
+    /** @type{Payload) */
+    const jsonPayload = convertFromExcel.evaluate(args);
+    var bytes = jsonPayload.inputStream().readAllBytes();
+    logger.info(new java.lang.String(bytes));
 
-logger.info("Result: " + str);
+}
 
-
-/** @type{Payload) *
-const jsonPayload = convertFromExcel.evaluate(args);
-var bytes = jsonPayload.inputStream().readAllBytes();
-logger.info("Read " + bytes.length + " bytes from JSON payload");
-str = new java.lang.String(bytes, java.nio.charset.StandardCharsets.UTF_8);
-logger.info("Converted JSON: " + str);
-*/
 }

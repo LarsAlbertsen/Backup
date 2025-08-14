@@ -47,18 +47,16 @@
 */
 exports.operation0 = function (manager,processStore,tempStore) {
 
-const name = "Lars-10";
+const name = "MyData";
 
 let processBlob = processStore.get(name);
-logger.info("processBlob = "+processBlob)
 if (processBlob.isEmpty()) {
-	logger.info("Creating new "+name)
 	processBlob = processStore.create(name);
 }
 else {
     processBlob = processBlob.get();
 }
-processBlob.write("Hello " + new Date().toISOString() + "\n");
+processBlob.write("The current times is" + new Date().toISOString() + "\n");
 processBlob.close();
 
 printItAll(name);

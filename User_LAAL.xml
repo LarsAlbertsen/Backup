@@ -5,10 +5,9 @@
             <Name>Lars Albertsen</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Stibo standard user </Value>
-                <Value AttributeID="UserLastActivityDate">2025-08-13</Value>
+                <Value AttributeID="UserLastActivityDate">2025-08-14</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Nothing"></UserGroupLink>
-            <UserGroupLink UserGroupID="ProductPlatform"></UserGroupLink>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <UserGroupLink UserGroupID="Super user"></UserGroupLink>
             <SystemSetup>

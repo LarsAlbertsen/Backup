@@ -9,6 +9,7 @@
             </MetaData>
             <UserTypeLink UserTypeID="Product user-type root"></UserTypeLink>
             <AttributeLink AttributeID="ALCO_TestCP"></AttributeLink>
+            <AttributeLink AttributeID="NewAttr"></AttributeLink>
             <AttributeLink AttributeID="ObjectTypeDescription"></AttributeLink>
         </UserType>
     </UserTypes>

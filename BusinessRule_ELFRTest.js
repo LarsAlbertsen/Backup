@@ -53,4 +53,14 @@
 */
 exports.operation0 = function (node,logger,manager,hov) {
 var doc = <ROOT/>;
+
+
+var lh = manager.getHome(com.stibo.lookuptable.domain.LookupTableHome)
+var startTime = java.lang.System.currentTimeMillis()
+for (var i = 0; i<1000; i++) {
+	manager.getHome(com.stibo.lookuptable.domain.LookupTableHome).getLookupTableValue('TestLookupTable', ''+i)
+}
+logger.info(java.lang.System.currentTimeMillis() - startTime)
+
+
 }

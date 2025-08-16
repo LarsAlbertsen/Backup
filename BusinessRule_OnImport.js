@@ -35,7 +35,8 @@
 */
 exports.operation0 = function (node) {
 logger.info("ImportObject "+node);
-//java.lang.Thread.sleep(10000)
+var randomNumber = Math.floor(Math.random() * (10000 - 100 + 1)) + 100;
+java.lang.Thread.sleep(randomNumber)
 //logger.info("done")
 //throw "OnImport "+node
 

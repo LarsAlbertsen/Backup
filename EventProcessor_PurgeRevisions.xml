@@ -10,7 +10,7 @@ Configuration=
   <simple id="FailRetryPeriod">30d</simple>
   <simple id="HoursToRetainOldProcesses">168</simple>
   <simple id="LinesPerBGP">1000</simple>
-  <simple id="MaxOldProcesses">100</simple>
+  <simple id="MaxOldProcesses">10</simple>
   <simple id="OptimisticLockRetryEnabled">false</simple>
   <simple id="OptimisticLockRetryPeriod"/>
   <simple id="Priority">1</simple>
@@ -22,7 +22,7 @@ PluginConfiguration=
   <simple id="AcrossWorkspaces">true</simple>
   <simple id="KeepFirst">false</simple>
   <simple id="MaximumAge">365</simple>
-  <simple id="MaximumAmount">10</simple>
+  <simple id="MaximumAmount">5</simple>
   <simple id="MaximumProcessingTime">30</simple>
 </plugin>
 ScheduleSpecification=
@@ -31,7 +31,7 @@ ScheduleSpecification=
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>PurgeRevisions</Name>
-            <Configuration>H4sIAAAAAAAA/6VUXW/TMBR936+IAuobTcrENNE2VT9SkGjVkHXAG/KS2+xqjh187Wrl1+M0aSEtWSXIS2znnHuOnXs8lWKDmVFMoxTDweg5584WFJUzt9f1XQdEIlMU2dC9X8/f3Lqj4GpQcJOhcDAduuEWhI6UTIBIqgkjmP5Z0g2uHGdAmBcc9vgYqJCC8IHDPYFyA9JQvPc8YycjC4iXbwdehT+lTphOHu/wJ7hBz/f9NtiM7WgtY9AMxd4duUErOFIoFeqdLdkG+WzAWMnwSxSvpm2gJXte8bQ+B6C9wzbsR2nU0eEJ6+a2jbVAARSBmnyIXt7/nCG3tdUuFMyecuoGWhm4iLalUVrwtZ+2YVeFxhxJY7KQyVNTY8M4tYr8hXiQa6PcJY+QGg7flovvszCKw+l4Hc7coMN1v9GlnR9G6r5t1Wow6mS633nV8/sl0v59hUDHNcc5rO6chDOimp7IvGvtPciu0ci7VIunsEGBZR93D35mx6XXhyXbZGq3RGE0VNVqqfqB8vPBZvXyGia9U5e/z2TgVVGzIyo46iBUSqoYCqk0qH/Jq/XPDNfN2Daqut5RLdrzpv97R8SwxRK9ZIJlkFvlpnwlc3ZVjBMlib5K9UQFS8p4vNTINoGYm3yc2axe37y7BMulEboM0gVgbdJubo15WbqV8AmgmKMifRaGs7/4C7//di12BQAA</Configuration>
+            <Configuration>H4sIAAAAAAAA/6VUXY/aMBB8v18RuRVvJdBTT6cCQXyEViqINMe1fat8ycKtzrFTr42O/vo6JNAGmkNq82J7M7sztnc8UXKNG6u5QSUH/eFzJrwtaCpWrNvuMA9kolKUmwG7X83e3LJhcNXPhd2g9DAdsHAL0kRaJUCk9JgTTP4syYIrz+sTZrmAPT4GypUkfBBwT6BZQAby975v3WLoAPHibd8v8aepY26Sxzv8CSzodjqdJtiU72ilYjAc5V4dsaARHGlUGs3OlWyCfLZgHWX4JYqXkybQgj8vRVqdA1ChsAn6UVl9FHiSdHPblDVHCRSBHn+IXt7+jKNwtfUulNwdcsoCoy1cRLvSqBz4upM2YZe5wQzJYDJXyVOdY80FNZL8JfFA15RylzxCagV8W8y/T8MoDiejVThlQUuYXq1JWz+sMj3XqeVk2NqYXutVt9MrkO7yNQIdY553iO68RHCiKj1RWdvJe1Bta1C0qSJPYY0SizZuH/RMj6HXh5DrMb1boLQGymoVVfVB8fsgsxz8mkj/VOXvM+n7pdPcjHKBJgi1VjqGXGkD+l/s6vRzK0zdtbWqzD+yRfu8yf8+ETFssUAvuOQbyBxznb6kOXspRolWRF+VfqKcJ4U9XmpkZ0DMbDbaOKte37y7BMuUlYYFl3CVRre3FWZF5UbbfQLIZ6jJnHnh7BJ/Ab4jljF0BQAA</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

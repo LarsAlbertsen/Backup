@@ -8,6 +8,7 @@
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>
             <AttributeGroupLink AttributeGroupID="ATG_LAAL"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
         </Attribute>
     </AttributeList>
 </STEP-ProductInformation>

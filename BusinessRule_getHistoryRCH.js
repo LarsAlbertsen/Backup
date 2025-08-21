@@ -10,7 +10,7 @@
   "type" : "BusinessFunction",
   "setupGroups" : [ "Snapshot" ],
   "name" : "getHistory Revision Change Home version",
-  "description" : null,
+  "description" : "Using RevisionChangeHome which is not public",
   "scope" : "Global",
   "validObjectTypes" : [ ],
   "allObjectTypesValid" : true,

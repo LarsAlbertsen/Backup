@@ -63,8 +63,7 @@ a1|a2|a3
 b1|b2|b3
 c1|c2|c3
 d1|d2|d3
-e1|e2|e3`
-        ;
+e1|e2|e3`;
 
     const csvFile = tmpStore.create("file.tmp");
     csvFile.write(value);
@@ -76,7 +75,7 @@ e1|e2|e3`
 
     var resultStream = result1.inputStream();
     var resultData = resultStream.readAllBytes();
-    logger.info("Excel File: " + resultData);
+    logger.info("Excel File size: " + resultData.length);
 
     /**
      * Convert Excel to JSON
@@ -92,10 +91,13 @@ e1|e2|e3`
     args.put("excelFile", myFile);
 
     var returnValue = convertFromExcel.evaluate(args);
+    
     /** @type{Payload) */
     const jsonPayload = convertFromExcel.evaluate(args);
     var bytes = jsonPayload.inputStream().readAllBytes();
-    logger.info(new java.lang.String(bytes));
+    var strResult = new java.lang.String(bytes);
+    var jResult = JSON.parse(strResult);
+    logger.info("JSON Result: " + JSON.stringify(jResult, null, 2));
 
 }
 

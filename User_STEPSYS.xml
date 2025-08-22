@@ -4,7 +4,7 @@
         <User ID="STEPSYS" Deactivated="false">
             <Name>stepsys</Name>
             <MetaData>
-                <Value AttributeID="UserLastActivityDate">2025-08-21</Value>
+                <Value AttributeID="UserLastActivityDate">2025-08-22</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>

@@ -60,5 +60,17 @@ if (currentTranslation!=null) {
 	//currentTranslation.setStatus(
 }
 
+logger.info("Checking");
 
+var currentTranslation = node.getCurrentTranslation()
+if(currentTranslation != null) {
+  var currentTranslationStatus = currentTranslation.getStatus();
+  logger.info("currentTranslationStatus="+currentTranslationStatus)
+
+	var translationStatusDone = currentTranslationStatus.fromValue("dirty");
+  logger.info("translationStatusDone="+translationStatusDone)
+  
+  currentTranslation.setStatus(translationStatusDone)
+  logger.info("done");
+}
 }

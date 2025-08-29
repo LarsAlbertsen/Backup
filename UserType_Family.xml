@@ -51,6 +51,7 @@
             <AttributeLink AttributeID="CountryOfOrigin"></AttributeLink>
             <AttributeLink AttributeID="ELFRFamilyAttr"></AttributeLink>
             <AttributeLink AttributeID="FamilyKey"></AttributeLink>
+            <AttributeLink AttributeID="LangDescription"></AttributeLink>
             <AttributeLink AttributeID="MarketingCopy"></AttributeLink>
             <AttributeLink AttributeID="PortionOfWood"></AttributeLink>
             <AttributeLink AttributeID="PrimaryMfrLocation"></AttributeLink>

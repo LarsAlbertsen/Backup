@@ -55,7 +55,9 @@ NameTriggering=
 ObjectTypeGroupings=
 <ObjectTypeRules>
   <ObjectTypeRules>
+    <ObjectType ObjectTypeID="Family"/>
     <ObjectType ObjectTypeID="Item"/>
+    <ObjectType ObjectTypeID="Variant"/>
   </ObjectTypeRules>
 </ObjectTypeRules>
 ParentTriggering=
@@ -82,8 +84,8 @@ UnitTemplate=
 </STEP-ProductInformation>
 Version=3
 attributeGroup=Attribute group root
-objecttype=Item -->
-                <Configuration>H4sIAAAAAAAA/9VUTXObMBC951douCe000sPyBmPnbTM5MNjk+Qsw5qqERKjlVynv74CJFMbMnFuyY391HvL250igsmgqgUzQJPLXSXIFjRyJWn09eJLREDmquCypNFDdn3+PbqcnCWr7GpxvtCqsLlJ5UbpihlXQZaASmwhlYJLWMIGabRhAiEi10oI9efetda8gJVd++o+42pXK23moPkWiqkxeh+anBGSTBug6LNW/C/Q6JZLXtkqInMlTffATDBEvuF5iydTbZUDAtrRcCVG265f6Bi3zeOuu2MWv0JtkmAtuJk0wPjaGrjh8hkzzcvSIZblcfhTjLTngs0g3iR/NN1PQPEQ8bh8vBwOU0kqc2ELWDCnHOOF48Vy1PSEwaWygN2T0sVPDprp/NfLQDl3rIKB8379G3KTvdTwQytbuwDSpHcurQBsMY34Dryk/0znNEoNVIHNoHTo8mi6WQxAetofXg5JyH7vEfF1Y2ck9ByVi/8LzZ+Nw835/3zEo8rbPxPCQ74h4s2ZVoiDsvakjYcembCAwZozw2aOPHPj1vjWq0nszU49YaYnLEEvHLcJz1gzN8lpXWvlfpVPeZD84+vI0W5wnno0Hz2Bb95mQQLtStO9IkjZ2EQrZXymatfQuDWkzcJ67z/Am/QlsgcAAA==</Configuration>
+objecttype=Family;Item;Variant -->
+                <Configuration>H4sIAAAAAAAA/9VUTXPaMBC951dofE9JppceLDIMhNYzbcOAQ87CXlw1suTZlSn011e2ZTxgt9BbcvN+et/T250QgY0hL5SwwMOHfa7YDpCk0Ty4/3AXMNCJSaXOePAcz28/BQ/jm3AVPy5uF2jSMrGR3hrMhXUVbAlk1A4iraSGJWyJB1uhCAI2N0qZX0+uNcoUVuXGV3cZj/vCoJ0Byh2kE2vxGBrfMBZOqkHJZ63kb+DBN6llXuYBmxltmx9MlSCSW5nU88SmrnKDADoYrsRi2fRrO47q5qOmu0M2+gu0cUiFknZcDSY3pYWvUr9SjDLL3MQ6Ow+/C0o7LFQRcRH8GbvvAOLpxMPy8XI4TWWRTlSZwkI45VgvHC+Ws6ZXEBfpFPYvBtMvElBg8uPQU853kUPP+bT5CYmNDwV8RlMWLkA87JzLUgHVMw34Trys+4xmPJiLXKpDg+dfeZGF/HLWWqAU2rb09Gbpuzy8htweas/jm9dX2Gb/71XydUN3qe05qD//EJVU2kc5uUejQSkff3N8yB7eNuLNKRqiXll9I4dDa6FKoNaaCSumDrxwdCNd+ms48majnpbTK7aqE45brVcqhGNyUhRo3FP5lGct376OHOxqzmuv8NoD+Oht0UqgvhH8qAiWVTZDY6zPNPUaWreGvLkAPf8dr1a+577nfsd95A8taX0ENggAAA==</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

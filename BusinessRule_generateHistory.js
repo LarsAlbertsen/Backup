@@ -50,7 +50,7 @@ exports.operation0 = function (node,getHistory,logger) {
 var sdf = new java.text.SimpleDateFormat("yyyy-MM-dd");
 
 
-var x = getHistory.evaluate({node:node, fromDate:sdf.parse("2023-01-01"), toDate: sdf.parse("2025-07-01")})
+var x = getHistory.evaluate({node:node, fromDate:sdf.parse("2025-06-01"), toDate: sdf.parse("2025-07-01")})
 logger.info(x)
 
 

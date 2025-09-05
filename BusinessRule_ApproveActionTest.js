@@ -10,7 +10,7 @@
   "type" : "BusinessAction",
   "setupGroups" : [ "ApproveActions" ],
   "name" : "ApproveActionTest",
-  "description" : null,
+  "description" : "Generates JSON snippet of approved changes",
   "scope" : "Global",
   "validObjectTypes" : [ "Item" ],
   "allObjectTypesValid" : false,

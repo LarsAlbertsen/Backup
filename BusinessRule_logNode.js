@@ -34,11 +34,17 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
+  }, {
+    "contract" : "ManagerBindContract",
+    "alias" : "manager",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,logger) {
-logger.info('node ' + node)
+exports.operation0 = function (node,logger,manager) {
+logger.info('node ' + node.getID() + ' nodemanagerContext ' + node.getManager().getCurrentContext().getID() + ' managerContext ' + manager.getCurrentContext().getID())
 }

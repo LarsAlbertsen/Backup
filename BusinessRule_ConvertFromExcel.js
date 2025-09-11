@@ -25,7 +25,7 @@
   "parameters" : [ {
     "id" : "ExternalBusinessFunction",
     "type" : "com.stibo.integration.extension.domain.parameter.ExternalBusinessFunctionExtensionConfiguration",
-    "value" : "eyJyZXR1cm5UeXBlIjoiUGF5bG9hZCIsImVuZ2luZUlkIjoiY29udmVydC1leGNlbCIsImlkIjoiQ29udmVydEZyb21FeGNlbCIsInVybCI6Imh0dHA6Ly9leHRlbnNpb24tZW5naW5lLWNvbnZlcnQtZXhjZWwucHJvZHVjdHBsYXRmb3JtLWxhYWwuc3ZjLmNsdXN0ZXIubG9jYWw6ODA4MC9leHRlbnNpb25zL0NvbnZlcnRGcm9tRXhjZWwiLCJwYXJhbWV0ZXJzIjp7ImV4Y2VsRmlsZSI6IlBheWxvYWQifSwidGltZW91dCI6MTAwMDAsImZhaWx1cmVTdHJhdGVneSI6IkZBSUwiLCJzaWduYXR1cmUiOiJiODVkYjQ3ZCJ9"
+    "value" : "eyJyZXR1cm5UeXBlIjoiUGF5bG9hZCIsImVuZ2luZUlkIjoibGFhbC0zIiwiaWQiOiJDb252ZXJ0RnJvbUV4Y2VsIiwidXJsIjoiaHR0cDovL2V4dGVuc2lvbi1lbmdpbmUtbGFhbC0zLnByb2R1Y3RwbGF0Zm9ybS1sYWFsLnN2Yy5jbHVzdGVyLmxvY2FsOjgwODAvYXBpL2V4dGVuc2lvbnMvQ29udmVydEZyb21FeGNlbCIsInBhcmFtZXRlcnMiOnsiZXhjZWxGaWxlIjoiUGF5bG9hZCJ9LCJ0aW1lb3V0IjoxMDAwMCwiZmFpbHVyZVN0cmF0ZWd5IjoiRkFJTCIsInNpZ25hdHVyZSI6ImI4NWRiNDdkIn0="
   } ],
   "pluginType" : "Operation"
 }

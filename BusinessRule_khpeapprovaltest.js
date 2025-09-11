@@ -35,4 +35,6 @@
 */
 exports.operation0 = function (invalidbind) {
 logger.info("Hello");
+
+
 }

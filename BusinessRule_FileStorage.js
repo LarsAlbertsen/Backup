@@ -12,7 +12,7 @@
   "name" : "FileStorage",
   "description" : null,
   "scope" : "Global",
-  "validObjectTypes" : [ "Item" ],
+  "validObjectTypes" : [ "Item", "TestItem" ],
   "allObjectTypesValid" : false,
   "runPrivileged" : false,
   "onApprove" : "Never",
@@ -47,7 +47,7 @@
 */
 exports.operation0 = function (manager,processStore,tempStore) {
 
-const name = "MyData";
+const name = "LAALBlobTest";
 
 let processBlob = processStore.get(name);
 if (processBlob.isEmpty()) {

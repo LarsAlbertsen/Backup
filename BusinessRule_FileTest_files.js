@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "FileTest",
+  "id" : "FileTest_files",
   "type" : "BusinessAction",
   "setupGroups" : [ "API Additions" ],
-  "name" : "FileTest",
+  "name" : "FileTest_files",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ "Item", "TestItem" ],
@@ -34,33 +34,22 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
-  }, {
-    "contract" : "TempStoreBindContract",
-    "alias" : "tmpStore",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,processStore,tmpStore) {
+exports.operation0 = function (node,processStore) {
 
-/*var blob = tmpStore.get("AllItemIDs.txt");
-if (blob.isEmpty()) {
-    logger.info("Creating new blob");
-    blob = tmpStore.create("AllItemIDs.txt");
-}
-else {
-    logger.info("Append to existing blob");
-    blob = blob.get();
-}
-*/
 
-var blob = tmpStore.create("AllItemIDs.txt");
+var f = new java.io.File("/shared/workarea/AllItemIDs.txt");
+var fos = new java.io.FileOutputStream(f);
+
+
 
 var objectID = node.getID();
-blob.write(objectID+"\n");
+var bytes = (new java.lang.String(objectID+"\n")).getBytes();
+fos.write(bytes);
 
+fos.close();
 }

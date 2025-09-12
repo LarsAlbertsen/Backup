@@ -35,8 +35,10 @@
 */
 exports.operation0 = function (processStore) {
 
+const blobName = "AllItemIDs.txt";
+
 var allIDs = new Set();
-var blob = processStore.get("AllItemIDs.txt");
+var blob = processStore.get(blobName);
 if (!blob.isEmpty()) {
     logger.info("Using existing blob");
     var lineStream = blob.get().lines();

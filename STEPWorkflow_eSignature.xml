@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <STEPWorkflows>
+        <STEPWorkflow ID="eSignature" Referenced="true"><!-- Definition:
+<scxml name="eSignature" initial="Start" version="0.9">
+  <assignee id="$current" type="user"/>
+  <datamodel>
+    <data id="codettl"/>
+    <data id="hashedCode"/>
+    <data id="signatory"/>
+  </datamodel>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=250.0 h=240.0  </editorLayout>
+  <final id="End" name="End" discontinued="false">
+    <editorLayout>   node-size-and-position x=20.0 y=194.87570621468927 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="acn-6a945d35-a3cd-44a6-b8af-8f308833c577"/>
+  </final>
+  <state id="Signature" name="Signature" discontinued="false">
+    <transition event="Signoff" target="End"/>
+    <transition event="RequestNewCode">
+      <editorLayout>   edge-path [Signature]  pointx=0.0 pointy=-15.0 offsetx=55.0 offsety=0.0  </editorLayout>
+    </transition>
+    <assignee id="signatory" type="variable"/>
+    <editorLayout>   node-size-and-position x=20.0 y=118.93785310734464 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="acn-a969519d-9fd7-47a6-ae45-61f6d06572f7"/>
+  </state>
+  <state id="Start" name="Start" discontinued="false">
+    <transition businessactionid="acn-fe6288d1-4ab3-4946-82e9-0e9d657d8357" target="Signature"/>
+    <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="acn-7812f6be-cff7-43be-bdb3-8051962a94d2"/>
+  </state>
+</scxml>
+<workflowViews>
+  <restriction displaySequence="0" includeSubgroups="false">
+    <mapping displaySequence="0" stateID="Signature" viewID="main"/>
+  </restriction>
+  <view id="main" automaticSort="false" defaultSortColumn="0">
+    <column name="hashedCode" mandatory="false" readOnly="true">
+      <plugin pluginID="WorkflowVariable">
+        <parameter id="Variable" value="hashedCode"/>
+      </plugin>
+    </column>
+    <column name="signatory" mandatory="false" readOnly="true">
+      <plugin pluginID="WorkflowVariable">
+        <parameter id="Variable" value="signatory"/>
+      </plugin>
+    </column>
+    <column name="codettl" mandatory="false" readOnly="true">
+      <plugin pluginID="WorkflowVariable">
+        <parameter id="Variable" value="codettl"/>
+      </plugin>
+    </column>
+  </view>
+</workflowViews> -->
+            <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
+            <Name>eSignature</Name>
+            <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
+            <Configuration>H4sIAAAAAAAA/81WS4/bNhC+51ewQq+03q+F5Rw2LbBA0S3qpjkEOdDiyEtEolSSstf99R1S8ms3m27TSy6m+Jhv5vuGMzQbTX8nhRHMwL28VYBj1bBWw1IPrTAreIR6NLCulRjML6ITBvhvSuxEC1vQlVHj8WQrtAF5L++6oVcG1PuBPwXT9WPXVks3EOHctpW3NkwZj0jWQeXBWmwlM6MCj+xAadHLygsWpUfQRurKezBmuPH9/X6/2MeLXm39KAhSP8h9B+utlj9QSgiRPQeqxd9AmeR06DV66yV5rIJFQA7ud19FqR0fqiixI6F09YYsMWzWoXWLk2lGBEfHTD8Av8UN9OHb5dWbqwPaRd6rwwv7NZoa0553p3F2hY6ZthAA7vSP9agUSBTGHAYUZtSgrOnxkLPQBiUmXOi6l0bIEdDQCe45jCtlp8m/yhNN+iSxEygMZoHSkz5k2UuMSx3IZtRCgtastrbWIaslzYswarIN0LppcprE+LXhm5gWQRqWWcTKhEeWyIwyiWQUk3MIX0ZtIIuKgoc0YYiVlElGiwhKGkDJszTnRZzmKBVTWzDI9XSJ0NEZ20ruJHuVeOeLOAt4Afo6EcOwWJRxXqRxGORxkmTJt0nKyqxE8TgtG46S5iyjDJKUZmGT8QDpR03+NUlhh+sTgb5pzjL9JPlTgb5s+Tv8NYI2v8J+vv8Tf+BboAMzD+TjSZxPhAy9kGYqNPd5qGhoyaJvDbiRnidTIVoVnodxVQ7n4prrYceUYJsWrmviMr+NkKx9Ob+W/JzZSYdX5rRMFkWe5kEWhUlWlFH+bTnNsBBSHqeUxTWnSYI53RSsoUUTB0URx3WaX+d06TtCjqPtdKu5qe4E7KvlW9tSTw0zXAQeAYkdR8ht5b3/42daeASlkZy1iFh5B9DeW8SSOrrZ9+pz0/b7PxFJT332Bteveq02YtMv6r7zLDdkZ906HTsmpEc4NGxszRpb/23fjp3t2h5h+Lx0zIjarh/VnwAcSO2Ozlm4aLAEHyJ+L9tD5dkXxiOdjdym/zmIAxracSskmYa7d5X34cjpdE2uDCYjptAxPlWOx+kk2bF2vI7Hf+LOnxxdMPEnKi9xu7i+3wO1czj/m9nxVfsueB2D+Y+slr69zfO3wkanhKtV/I9StyOH9bjZqn4c9KmBYFcZWnZY274oa7CX/QK8Y8OAhUdcL7LULv/UoCe7NJfNcxz/GNNFILbon1UqLk4d4B/A7RVhxQkAAA==</Configuration>
+            <LocalBusinessRule ID="acn-6a945d35-a3cd-44a6-b8af-8f308833c577" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (RemoveObjectFromWorkflowAction):
+Workflow=
+Message=
+ -->
+                <Name>Remove from WF</Name>
+                <Configuration>H4sIAAAAAAAA/5WQMY7CMBBFe05hTU8CHYUdBEJIFAgUgraMvGFiGRzbsp2we3sM2UWhoKB9o3nz51vVCqlLbq2S6EtZl5XRtRTURxAy2497xuj8p1GkQ+el0QymyQQI6sqcpBYMjsV6PIN5NqLL1kuN3uetwmxEyBPsHzoynPdos2KQY2M63H2fsQprZ5ov4y61MtdFFeI5uIuias8dbzDEDD0YInLX/K8BKX4tMjjzjieKa5EcgotBIaPpc+ONYxvDcYEfKAbgEYymrz/HVtLXWv4avgEbm6IRgQEAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-7812f6be-cff7-43be-bdb3-8051962a94d2" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (BulkUpdateTriggerStateFlowEvent):
+currentStateID=Start
+eventID=
+processNote=
+stateFlowID=eSignature
+ -->
+                <Configuration>H4sIAAAAAAAA/6WSwU7DMAxA7/uKyHdauHFIOmkak3ZBE+3OVdR5UUaWRE5S4O9JW5g6IcaBW/Rsvzh2vElK21Z6bzSGVh/bztmjVjxkECs/hScm+PL9bFiPFLSzAh6Ke2BoO3fQVgnYN5u7R1hWC75KQVsM4SUZrBaMXcBu1LF5fELbtYBVMq97f5ARG9JKIdUxnzfGvT31aCMMpuzaSZJnjLmJCcwRGzxdIsr5Y/V2Daz58CjgJHtZGGlVUUfK/UKVEyjy8lL8iw6Hy295/lZ4cl1+7rOL+B9N+J7HrW6w1srKmAh/CGdgnB0vr/eSN1der+7rF3wClhiMBCUCAAA=</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-a969519d-9fd7-47a6-ae45-61f6d06572f7" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="gh" type="BusinessFunctionScriptingProxy" contract="BusinessFunctionBindContract">
+      <?xml version="1.0" encoding="UTF-8"?>
+      <BusinessFunctionReference>
+        <BusinessFunction>createCode</BusinessFunction>
+      </BusinessFunctionReference>
+      
+    </binding>
+    <binding alias="cw" type="Workflow" contract="CurrentWorkflowBindContract"/>
+    <binding alias="manager" type="Manager" contract="ManagerBindContract"/>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="logger" type="Logger" contract="LoggerBindContract"/>
+    <binding alias="mailer" type="MailHome" contract="MailHomeBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var wfi = node.getWorkflowInstance(cw)
+var signatory = wfi.getSimpleVariable('signatory');
+var code = gh.evaluate({userid:java.lang.String(signatory)})
+wfi.setSimpleVariable('hashedCode', code.split(':')[1])
+mailer.mail().subject('test').addTo('elfr@stibosystems.com').plainMessage('code ' + code.split(':')[0] + ' node ' + node.getID()).send()
+  </javaScript>
+</config> -->
+                <Name>Set code and notify user</Name>
+                <FunctionDependency FunctionID="createCode"></FunctionDependency>
+                <Configuration>H4sIAAAAAAAA/71WbW/TMBD+3l8RBalJBLjbN7S+sXUgijYxbYV9QNPkJpfUw7GD7bQMxH/n7LysW1W6iYlPjc/P3XP3+OxrwcuMiWtaFJyBvmbpdSxFyrLhYPwj594SlGZSDP19sud7IGKZMJEN/c+z96/f+ONRZ3BUaiZA6/OSQw/XGgOZUVGF/YdYo47ntYYzF85b369M0+Oh/5Eu6UWsWGGa/cPYINElM4sjJhLt21gY7YwqmoPBNCrDusmzkSq0N7stYOjfYFjCqcjIhVGYqD/qctO/V0n3eylNH8upPu5qqtausOpz3M1Mv/tif69vg1ieU1q0Ns9rrB4qZhSNDaZTeTY1vS+Fq8qiJjWopj3kjOoani1qY1vZhFPd7MYyJ9qwuSSxVEASmVMmCMsLTuY1j0JtSVqTESuCdtoSBSkorBDIw5TOm50pBqqIXGk0L/obklljK1u7WJOutVXytcux+2ziOilrgq35bHig0Ft8GmisgBqYyAQaZG8bdCOPDeT2RLoOjkf5qB6YlArDmEupvqVcrna0QLz6WwuIktdn1HsU9ykVNAO1gzOvUM9JXBf9aX4DsdlBL+x5PSP3icx218wd6Hm1ZvyDzGGn2Iw/nbhtufWXZ9Br/be8ie+UkuoUmxrP93+8jScyppz9pHMONesM8FnBS3lUigRnzBNyv5sM2xNfUuWtUuYNPdtEJIP2mk2FNhQvbxivoo6FaZYJaqS6RTC6WOyFfTvhC1XMJhwGLSSI+s4HiwaEZwsCS8pLLCP8VWpQLDl4mEvYOke/o44l0JsEC6oXkNj3KXjlghM3cMPgIIi+7l9Fnao5iP0JI6JLd33CwIA2QURoksxkGABP1Vs3CPStNpBrnAc5bqPOTNSyh4HLPfBebvDsXaExcIK5/Ua56XEYISeIJIw2TmfN4ObvoHd/uuP8793/A1D/l/gDFn9UlaMIAAA=</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-fe6288d1-4ab3-4946-82e9-0e9d657d8357" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (SetWorkflowVariableBusinessAction):
+FromAttribute=
+FromWorkflow=
+FromWorkflowVariableName=
+TextValue=ELFR
+ToWorkflow=eSignature
+ToWorkflowVariableName=signatory
+ -->
+                <Configuration>H4sIAAAAAAAA/62SXUvDMBSG7/crQu5t3Z0XScdEC4LIWOu8LFk9DZlpEvIxt39v1trRIWwTvX3e5Mk55DUycKEqZowU4CrRVLVWjeDEReAz08c9o2S2ayXagnVCK4qnyS1GoGr9LhSn+LXMb+7wLJuQ++CEAueWQUI2QegIFp0OjfMePT1QXIB/0/ajkfpzxaxgawnDwXnt44v44Iq2BbOsBR/H6MEYoYMpt7qde2/FOnjAqNwboHjDtiyRTPGkiIniOCPp8doZ0TDTf3mG3V5i/hdnCTu/YjKckTw+58srRPryilAIrpgPFn7ju25V16m13f9Qj0D31SQ9LVKsWnrate/afgGKuhId1gIAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+        </STEPWorkflow>
+    </STEPWorkflows>
+</STEP-ProductInformation>

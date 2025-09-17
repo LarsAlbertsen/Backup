@@ -34,20 +34,14 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
-  }, {
-    "contract" : "TempStoreBindContract",
-    "alias" : "tmpStore",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,processStore,tmpStore) {
+exports.operation0 = function (node,processStore) {
 
-/*var blob = tmpStore.get("AllItemIDs.txt");
+var blob = tmpStore.get("AllItemIDs.txt");
 if (blob.isEmpty()) {
     logger.info("Creating new blob");
     blob = tmpStore.create("AllItemIDs.txt");
@@ -56,9 +50,6 @@ else {
     logger.info("Append to existing blob");
     blob = blob.get();
 }
-*/
-
-var blob = tmpStore.create("AllItemIDs.txt");
 
 var objectID = node.getID();
 blob.write(objectID+"\n");

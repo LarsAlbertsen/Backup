@@ -9,7 +9,7 @@
     <data id="hashedCode"/>
     <data id="signatory"/>
   </datamodel>
-  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=250.0 h=240.0  </editorLayout>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=249.99999999999997 h=240.00000000000003  </editorLayout>
   <final id="End" name="End" discontinued="false">
     <editorLayout>   node-size-and-position x=20.0 y=194.87570621468927 w=100.0 h=25.0  </editorLayout>
     <onentry businessactionid="acn-6a945d35-a3cd-44a6-b8af-8f308833c577"/>
@@ -20,7 +20,7 @@
       <editorLayout>   edge-path [Signature]  pointx=0.0 pointy=-15.0 offsetx=55.0 offsety=0.0  </editorLayout>
     </transition>
     <assignee id="signatory" type="variable"/>
-    <editorLayout>   node-size-and-position x=20.0 y=118.93785310734464 w=100.0 h=25.0  </editorLayout>
+    <editorLayout>   node-size-and-position x=20.0 y=118.93785310734465 w=100.0 h=25.0  </editorLayout>
     <onentry businessactionid="acn-a969519d-9fd7-47a6-ae45-61f6d06572f7"/>
   </state>
   <state id="Start" name="Start" discontinued="false">
@@ -54,7 +54,7 @@
             <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
             <Name>eSignature</Name>
             <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
-            <Configuration>H4sIAAAAAAAA/81WS4/bNhC+51ewQq+03q+F5Rw2LbBA0S3qpjkEOdDiyEtEolSSstf99R1S8ms3m27TSy6m+Jhv5vuGMzQbTX8nhRHMwL28VYBj1bBWw1IPrTAreIR6NLCulRjML6ITBvhvSuxEC1vQlVHj8WQrtAF5L++6oVcG1PuBPwXT9WPXVks3EOHctpW3NkwZj0jWQeXBWmwlM6MCj+xAadHLygsWpUfQRurKezBmuPH9/X6/2MeLXm39KAhSP8h9B+utlj9QSgiRPQeqxd9AmeR06DV66yV5rIJFQA7ud19FqR0fqiixI6F09YYsMWzWoXWLk2lGBEfHTD8Av8UN9OHb5dWbqwPaRd6rwwv7NZoa0553p3F2hY6ZthAA7vSP9agUSBTGHAYUZtSgrOnxkLPQBiUmXOi6l0bIEdDQCe45jCtlp8m/yhNN+iSxEygMZoHSkz5k2UuMSx3IZtRCgtastrbWIaslzYswarIN0LppcprE+LXhm5gWQRqWWcTKhEeWyIwyiWQUk3MIX0ZtIIuKgoc0YYiVlElGiwhKGkDJszTnRZzmKBVTWzDI9XSJ0NEZ20ruJHuVeOeLOAt4Afo6EcOwWJRxXqRxGORxkmTJt0nKyqxE8TgtG46S5iyjDJKUZmGT8QDpR03+NUlhh+sTgb5pzjL9JPlTgb5s+Tv8NYI2v8J+vv8Tf+BboAMzD+TjSZxPhAy9kGYqNPd5qGhoyaJvDbiRnidTIVoVnodxVQ7n4prrYceUYJsWrmviMr+NkKx9Ob+W/JzZSYdX5rRMFkWe5kEWhUlWlFH+bTnNsBBSHqeUxTWnSYI53RSsoUUTB0URx3WaX+d06TtCjqPtdKu5qe4E7KvlW9tSTw0zXAQeAYkdR8ht5b3/42daeASlkZy1iFh5B9DeW8SSOrrZ9+pz0/b7PxFJT332Bteveq02YtMv6r7zLDdkZ906HTsmpEc4NGxszRpb/23fjp3t2h5h+Lx0zIjarh/VnwAcSO2Ozlm4aLAEHyJ+L9tD5dkXxiOdjdym/zmIAxracSskmYa7d5X34cjpdE2uDCYjptAxPlWOx+kk2bF2vI7Hf+LOnxxdMPEnKi9xu7i+3wO1czj/m9nxVfsueB2D+Y+slr69zfO3wkanhKtV/I9StyOH9bjZqn4c9KmBYFcZWnZY274oa7CX/QK8Y8OAhUdcL7LULv/UoCe7NJfNcxz/GNNFILbon1UqLk4d4B/A7RVhxQkAAA==</Configuration>
+            <Configuration>H4sIAAAAAAAA/81WS2/jNhC+769ghV5pvV+BlT2kLRCgaIq62z0seqDFkUNUolSSsuP++g4p2ZaTTZtuL+uDJT7mm/m+4QzFRtPfS2EEM/Ag7xTgs2pYq2Gth1aYW3iCejSwqZUYzI+iEwb4z0rsRQs70JVR42lnK7QB+SDvu6FXBtSHgT8H0/VT11Zr9yDCuW0rb2OYMh6RrIPKg43YSWZGBR7Zg9Kil5UXrEqPoI3UlfdozHDj+4fDYXWIV73a+VEQpH6Q+w7Wu11/QykhRPYcqBZ/AWWS06HX6K2X5KkKVgE5uv9DFSXlqlz+cvKIk7i4/MWEUHr7jqyREOsQt8XBNCKCY0hMPwK/wwX07tvp23dXG7Tj1KvjK+s1mhrTXlan5+wKHTNtIQDc7m/rUSmQKJk5DijZqEFZ09MmZ6ENik+40HUvjZAjoKFLhecwrjSfBv8qXDQpl8ROujCwQ1QrxcekD1n3EuNSR7IdtZCgNautrXXIaknzIoyabAu0bpqcJjG+bfk2pkWQhmUWsTLhkSUyo0wiGcXkHMLnURvIoqLgIU0YYiVlktEigpIGUPIszXkRpzlKxdQODHI9Hy90dMG2kjvJ3iTe5YjOAi5A3yZiGBarMs6LNA6DPE6SLP0ySVmZlSgep2XDUdKcZZRBktIsbDIeIP2oyf9JUtjj/ESgb5qLTN9L/lygz1v+An+OoM1PcJjP/8Qf+A7owMwj+XQW53dChl5IM5Wgez1WNLRk0bcGXEgvg6lErQovw7gqh0txzfWwZ0qwbQvXNbHMbyMka1/PryU/Z3bS4Y05LZNVkad5kEVhkhVllH9ZTjMshJTHKWVxzWmSYE63BWto0cRBUcRxnebXOV37jpDjaHvg7dxu9wIO1fq9bbbnVhquAo+AxI4j5K7yPvz6Ay08gtJIzlpErLwjaO89Ykkd3Rx69UfT9offEElPHfgG56+6sDZi26/qvvMsN2Rn3TodOyakRzg0bGzNBi+Fu74dO9vPPcLw4umYEbWdP6k/ATiQ2m2ds7BosASvKP4g22Pl2bvHI52N3Kb/JYgDGtpxJySZHvffVd7HE6fzMbkymIyYQsd4iTke551kz9rxOh7/mTt/crRg4k9UXuO2OL5fA7VLOP+b2elW+yp4nYL5j6zWvj3N87vCRqeEq1X8eqnbkcNm3O5UPw763ECwqwwtO25sX5Q12MO+AO/YMGDhEdeLLLXl5w56slNz2bzE8U8xLQKxRf+iUnFy6gB/AwVpIVzfCQAA</Configuration>
             <LocalBusinessRule ID="acn-6a945d35-a3cd-44a6-b8af-8f308833c577" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
 Action #1 (RemoveObjectFromWorkflowAction):
 Workflow=
@@ -71,6 +71,7 @@ eventID=
 processNote=
 stateFlowID=eSignature
  -->
+                <Name>Auto transition to Signature state</Name>
                 <Configuration>H4sIAAAAAAAA/6WSwU7DMAxA7/uKyHdauHFIOmkak3ZBE+3OVdR5UUaWRE5S4O9JW5g6IcaBW/Rsvzh2vElK21Z6bzSGVh/bztmjVjxkECs/hScm+PL9bFiPFLSzAh6Ke2BoO3fQVgnYN5u7R1hWC75KQVsM4SUZrBaMXcBu1LF5fELbtYBVMq97f5ARG9JKIdUxnzfGvT31aCMMpuzaSZJnjLmJCcwRGzxdIsr5Y/V2Daz58CjgJHtZGGlVUUfK/UKVEyjy8lL8iw6Hy295/lZ4cl1+7rOL+B9N+J7HrW6w1srKmAh/CGdgnB0vr/eSN1der+7rF3wClhiMBCUCAAA=</Configuration>
                 <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
             </LocalBusinessRule>
@@ -114,6 +115,7 @@ TextValue=ELFR
 ToWorkflow=eSignature
 ToWorkflowVariableName=signatory
  -->
+                <Name>Set Signatory</Name>
                 <Configuration>H4sIAAAAAAAA/62SXUvDMBSG7/crQu5t3Z0XScdEC4LIWOu8LFk9DZlpEvIxt39v1trRIWwTvX3e5Mk55DUycKEqZowU4CrRVLVWjeDEReAz08c9o2S2ayXagnVCK4qnyS1GoGr9LhSn+LXMb+7wLJuQ++CEAueWQUI2QegIFp0OjfMePT1QXIB/0/ajkfpzxaxgawnDwXnt44v44Iq2BbOsBR/H6MEYoYMpt7qde2/FOnjAqNwboHjDtiyRTPGkiIniOCPp8doZ0TDTf3mG3V5i/hdnCTu/YjKckTw+58srRPryilAIrpgPFn7ju25V16m13f9Qj0D31SQ9LVKsWnrate/afgGKuhId1gIAAA==</Configuration>
                 <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
             </LocalBusinessRule>

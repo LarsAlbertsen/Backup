@@ -3,6 +3,9 @@
     <UserGroupList>
         <UserGroup ID="ReadOnly" ReadOnly="false" MultifactorAuthenticationRequired="false">
             <Name>Read Only</Name>
+            <MetaData>
+                <Value AttributeID="UserGroupMetadata">some info</Value>
+            </MetaData>
             <PrivilegeRule ActionSetID="ViewSetupActions"></PrivilegeRule>
             <PrivilegeRule ActionSetID="ViewUserActions" ClassificationID="Classification 1 root"></PrivilegeRule>
             <PrivilegeRule ActionSetID="ViewUserActions" CollectionGroupID="CollectionGroup root"></PrivilegeRule>

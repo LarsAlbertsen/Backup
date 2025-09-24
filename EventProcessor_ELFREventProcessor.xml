@@ -95,10 +95,10 @@ UnitTemplate=
   <UnitList/>
 </STEP-ProductInformation>
 Version=3
-attribute=Bullet01;Bullet02;Bullet03;Bullet04;Bullet05;Bullet06
-attributeGroup=Attribute group root
-objecttype=Group user-type root;Item;Operator user-type root -->
-                <Configuration>H4sIAAAAAAAA/9VUW2+bMBh976+weM9IetMecKosaSekbYkS2j078AV5NTbyJev262fADg1QNZP60L5hn+92Ph/OTCnQCRQlIxpwdPNUMLQHqajgOJh8GgcIeCoyynMc3Cd3o8/BzfQs2iS3q9FKisykOuY7IQuibQZagxJsDzFnlMMadgoHO8IUBOhOMCZ+L21pSTPYmK3LbiNun0oh9QIk3UM201oeoOkZQtGsGlS5qA39Czj4TjktTBGgheC6aTBnRCm6o2k9TyLqLDsISEvDpmhpmnq+YlgXD5vqlln4ArVppEpG9bQajG6Nhm+UP6pE0jy3E/O8C3+IlbZcVLWIV8l3tvsBKB5PPCwfJ4fjUBTzlJkMVsQqRzvhOLF0ip6wuB+kgJ5WlttfkOrkTwlfpTClBRSO2su1YaDqhgN3R7eo/YwXOIg1FH7UNyi3LEESLSQyCuRIVwFSCP2GHWr6p5bvX7l1Ni/V27J7lHcv1shH/6/Fubwhk/M1B8XsXqWSZugd8bm5hYP/xaGNh/t8PeKOcymU6qXVhjsMPRBmQPnTgmgyt+SJXbdUr3WNQnds1ON3esIv2grnp5CPqiR2k7OylMI+lQu55/T968jSruY81dIfHIELdyZeAviLYQz0eNIFxh457yITj/SKnXvksotceOSqi1x65LqL1H6BD2JFee0flWu4SFE7ROUleMhbelFXuPLM3vU1fsH7XOQ/StnGwTwJAAA=</Configuration>
+attribute=Bullet01;Bullet02;Bullet03;Bullet04;Bullet05;Bullet06;DCValueB;Purpose
+objecttype=Group user-type root;Item;Operator user-type root
+reftype=Accessory -->
+                <Configuration>H4sIAAAAAAAA/9VUTXPaMBC951d4fKdAvpqDRYZA0mGmbRhw0rMwC6NGljy7Ek366ysbKQTbmdCZHJKbpbdfb/X8hkRgUsgLyQ2w5PIxl9EGkIRWLO5/6cURqEwvhVqz+C696VzEl4OjZJ5eTztT1EubmYlaacy5cRnRDEjLDUyUFApmsCIWr7gkiKMbLaX+c+tKo1jC3C589i7i+rHQaMaAYgPLoTH4DA2OoigZloOSj5qLv8DiH0KJ3OZxNNbKbBuMJCcSK5FV86S6ynKDADoaLsWg3dYLFbtV8e62umPWfYXaIKFCCjMoBxMLa+C7UA+Uoliv3cRqXYc/xUp3XKhcxJvka9v9BBT3J26Xj5fDfmg0UZm0S5hypxzjhePFUit6wOJ+8hwaWrld/IbMpE8FfENtCwcQS3aXMyuBqoYtd3u30e5zMmbxxEAeRn2HcrcFIDcaI0uAHVMGoNbmHTtU9A8t37zy69y+VGPL/lE+vFiTEP2/Fufz2kwu1GwVs3+VUprd4Igvza3b+l88twlwk29A/HGEmqiRVhluO3TPpQUKpzE3fOTIc7dupLe6Jl1/3Kon7PSAX3QnnF8aH6jgbpPDokDtnsqH3Cnx8XXkaJdzHmrp957AiT/zIAF2ZaUE0+vXgV5AjutIPyCNYscBOa0jJwE5qyOnATmvI2dsPKpEclVHztnUYqEJPKArqyhNhbWZTCPqKyvNs3F9wV4xQR+JsKp6DLMMiDQ++ft/X9IG6l0JAAA=</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

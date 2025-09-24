@@ -25,7 +25,7 @@
         <SystemSetupValue Type="Config" Name="GDSNExportContext"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="GDSNLanguage"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="GDSNTargetMarket"></SystemSetupValue>
-        <SystemSetupValue Type="Config" Name="ImportCompatibility"></SystemSetupValue>
+        <SystemSetupValue Type="Config" Name="ImportCompatibility">Y</SystemSetupValue>
         <SystemSetupValue Type="Config" Name="IndexWordToProductLinkDependencies"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="LocalizeDates">Y</SystemSetupValue>
         <SystemSetupValue Type="Config" Name="LocalizeThousandDelimiter">Y</SystemSetupValue>

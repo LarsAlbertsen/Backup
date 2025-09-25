@@ -80,7 +80,6 @@ e1|e2|e3`;
     /**
      * Convert Excel to JSON
      */
-
     /** {Payload} */
     const myFile = tmpStore.create("file.tmp");
     myFile.outputStream().write(resultData);

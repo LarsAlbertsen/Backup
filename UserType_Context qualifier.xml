@@ -3,6 +3,7 @@
     <UserTypes>
         <UserType ID="Context qualifier">
             <Name>Context</Name>
+            <AttributeLink AttributeID="ContextMetaData"></AttributeLink>
             <AttributeLink AttributeID="Purpose"></AttributeLink>
         </UserType>
     </UserTypes>

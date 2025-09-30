@@ -42,9 +42,9 @@
 exports.operation0 = function (root,logger) {
 var count = 0;
 root.queryChildren().forEach(function (child) {
-	//logger.info(child)
-	child.setName(child.getTitle() + '.')
-	return count++ < 30000;
+	//child.setName(child.getTitle() + '.')
+	child.getValue('ShortDescription').setSimpleValue('adssf')
+	return count++ < 1000;
 })
 
 }

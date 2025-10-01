@@ -9,6 +9,7 @@
             </MetaData>
             <AttributeGroupLink AttributeGroupID="Global"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Level4"></UserTypeLink>
         </Attribute>
     </AttributeList>
 </STEP-ProductInformation>

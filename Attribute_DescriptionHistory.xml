@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeList>
+        <Attribute ID="DescriptionHistory" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="true" Mandatory="false">
+            <Name>DescriptionHistory</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <ValueTemplate>&lt;derive expr="{ i:=iterate( revisions(), 'concatenate(stepid(),&amp;quot; | &amp;quot;,stepname(),&amp;quot; | &amp;quot;,revisionname(),&amp;quot; | &amp;quot;,if(exact(prodval(&amp;quot;Description&amp;quot;),&amp;quot;&amp;quot;),&amp;quot;N/A&amp;quot;,prodval(&amp;quot;Description&amp;quot;)),&amp;quot; | &amp;quot;,revisioncreatedate(),&amp;quot; | &amp;quot;,revisioneditdate(),&amp;quot; | &amp;quot;,revisioneditedby(),&amp;quot; | &amp;quot;,revisioncomment())' ) }
+
+concatenate(
+&amp;quot;ID | Name | REV Number | Attribute Value | REV Createdate | REV Editdate | REV Editedby | REV Comment&amp;quot;,
+&amp;quot;\n&amp;quot;,
+list(i, &amp;quot;\n&amp;quot;)
+)"/&gt;</ValueTemplate>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="ATG_LAAL"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Item"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

@@ -35,27 +35,21 @@
     "value" : null,
     "description" : null
   }, {
-    "contract" : "WebUiContextBind",
-    "alias" : "webui",
-    "parameterClass" : "null",
-    "value" : null,
+    "contract" : "BusinessFunctionBindContract",
+    "alias" : "fn",
+    "parameterClass" : "com.stibo.core.domain.impl.businessrule.function.javascript.reference.BusinessFunctionReferenceImpl",
+    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>hasOrphanValues</BusinessFunction>\n</BusinessFunctionReference>\n",
     "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,logger,webui) {
+exports.operation0 = function (node,logger,fn) {
 function log(msg) {
 	logger.info('ELFRLog : ' + msg)
 }
 log(node)
-webui.getSelection().toArray().forEach(function(n) {
-	log('Selection ' + n)	
-})
-webui.getSelectedSetOfNodes().toArray().forEach(function(n) {
-	log('getSelectedSetOfNodes ' + n)	
-})
 
-
+fn.evaluate({root:node})
 }

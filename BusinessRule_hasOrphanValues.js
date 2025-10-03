@@ -46,7 +46,6 @@ function log(msg) {
 	logger.info(msg)
 }
 
-logger.info("Lars A...")
 
 var oCount = 0;
 var nodeCount = 0;

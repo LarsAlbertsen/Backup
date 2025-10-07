@@ -4,6 +4,7 @@
         <UserType ID="stibo.businessrule.function" Referenced="true">
             <Name>Business Function Type</Name>
             <UserTypeLink UserTypeID="BusinessRuleGroup"></UserTypeLink>
+            <UserTypeLink UserTypeID="EventProcessors"></UserTypeLink>
             <UserTypeLink UserTypeID="OutboundSetupGroupCategory"></UserTypeLink>
         </UserType>
     </UserTypes>

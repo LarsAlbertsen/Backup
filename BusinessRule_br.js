@@ -8,7 +8,7 @@
 {
   "id" : "br",
   "type" : "BusinessAction",
-  "setupGroups" : [ "dd" ],
+  "setupGroups" : [ "ff" ],
   "name" : "br",
   "description" : null,
   "scope" : "Global",
@@ -19,3 +19,14 @@
   "dependencies" : [ ]
 }
 */
+/*===== business rule plugin definition =====
+{
+  "pluginId" : "JavaScriptBusinessActionWithBinds",
+  "binds" : [ ],
+  "messages" : [ ],
+  "pluginType" : "Operation"
+}
+*/
+exports.operation0 = function () {
+
+}

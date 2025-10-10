@@ -15,7 +15,7 @@
   "validObjectTypes" : [ ],
   "allObjectTypesValid" : true,
   "runPrivileged" : false,
-  "onApprove" : "ValidateBefore",
+  "onApprove" : "Never",
   "dependencies" : [ ]
 }
 */

@@ -37,7 +37,7 @@
   }, {
     "contract" : "AssetBindContract",
     "alias" : "excelAsset",
-    "parameterClass" : "com.stibo.core.domain.impl.FrontAssetImpl$$Generated$$37",
+    "parameterClass" : "com.stibo.core.domain.impl.FrontAssetImpl$$Generated$$30",
     "value" : "32158417",
     "description" : null
   }, {

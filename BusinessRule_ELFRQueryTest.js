@@ -23,12 +23,6 @@
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
-    "contract" : "CurrentObjectBindContract",
-    "alias" : "node",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
-  }, {
     "contract" : "LoggerBindContract",
     "alias" : "logger",
     "parameterClass" : "null",
@@ -46,23 +40,28 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
-  }, {
-    "contract" : "AttributeBindContract",
-    "alias" : "purpose",
-    "parameterClass" : "com.stibo.core.domain.impl.AttributeImpl",
-    "value" : "Purpose",
-    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,logger,manager,QueryHome,purpose) {
+exports.operation0 = function (logger,manager,QueryHome) {
 var c = com.stibo.query.condition.Conditions;
-var querySpecification = QueryHome.queryFor(com.stibo.core.domain.Product).where(
-     c.valueOf(purpose).eq("No")
+var user = manager.getUserHome().getUserByID('ELFR')
+var userNew = manager.getUserHome().getUserByID('ELFR2')
+
+var querySpecification = QueryHome.queryFor(com.stibo.core.domain.state.Task).where(
+     c.assignee().in(user)
 );
 var result = querySpecification.execute();
-logger.info(result)
+var count = 0;
+result.forEach(function(t) {
+	count++
+	logger.info(t)
+	//t.reassign(userNew)
+	return true	
+})
+logger.info(count)
+
 
 }

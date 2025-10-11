@@ -40,8 +40,9 @@
 }
 */
 exports.operation0 = function (logger,node) {
-logger.info(node)
-logger.info(node.getValue('asset.filename').getSimpleValue())
-
-return 'no no no';
+var fn = node.getValue('asset.filename').getSimpleValue() + ''
+if (fn.length > 30) {
+	return 'Invalid Name, too long: ' + fn;
+}
+return true;
 }

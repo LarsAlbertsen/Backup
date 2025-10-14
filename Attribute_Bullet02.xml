@@ -8,9 +8,11 @@
                 <Value AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9">Provide a single product selling feature (255 character limit). Use the categorization path to help you select the proper Data Standard</Value>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>
+            <AttributeGroupLink AttributeGroupID="Category Specific"></AttributeGroupLink>
             <AttributeGroupLink AttributeGroupID="Marketing"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Family"></UserTypeLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Leaf"></UserTypeLink>
             <UserTypeLink UserTypeID="Level4"></UserTypeLink>
             <UserTypeLink UserTypeID="TestItem"></UserTypeLink>
             <UserTypeLink UserTypeID="Variant"></UserTypeLink>

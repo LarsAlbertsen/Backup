@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "TEST",
-  "type" : "BusinessAction",
+  "id" : "GCPAuth",
+  "type" : "BusinessFunction",
   "setupGroups" : [ "GCPPublish" ],
-  "name" : "TEST",
+  "name" : "GCPAuth",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -21,18 +21,12 @@
 */
 /*===== business rule plugin definition =====
 {
-  "pluginId" : "JavaScriptBusinessActionWithBinds",
+  "pluginId" : "JavaScriptBusinessFunctionWithBinds",
   "binds" : [ {
-    "contract" : "LoggerBindContract",
-    "alias" : "logger",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
-  }, {
-    "contract" : "BusinessFunctionBindContract",
-    "alias" : "atg",
-    "parameterClass" : "com.stibo.core.domain.impl.businessrule.function.javascript.reference.BusinessFunctionReferenceImpl",
-    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>AccessTokenGetter</BusinessFunction>\n</BusinessFunctionReference>\n",
+    "contract" : "GatewayBinding",
+    "alias" : "giep",
+    "parameterClass" : "com.stibo.core.domain.impl.integrationendpoint.gateway.FrontGatewayIntegrationEndpointImpl",
+    "value" : "PubSubTest",
     "description" : null
   }, {
     "contract" : "SecretBindContract",
@@ -42,12 +36,11 @@
     "description" : null
   } ],
   "messages" : [ ],
-  "pluginType" : "Operation"
+  "pluginType" : "Operation",
+  "functionReturnType" : "java.util.Map<java.lang.String, java.lang.String>",
+  "functionParameterBinds" : [ ]
 }
 */
-exports.operation0 = function (logger,atg,jwt) {
-logger.info(jwt)
-var x = atg.evaluate({'jwt':jwt})
-logger.info(x)
+exports.operation0 = function (giep,jwt) {
 
 }

@@ -4,7 +4,7 @@
         <EventProcessor ID="GCPPublishEVP" UserTypeID="Event Processor user-type root"><!-- Definition:
 Configuration=
 <plugin id="GCPPublishEVP">
-  <simple id="BatchSize">100</simple>
+  <simple id="BatchSize">50</simple>
   <simple id="DaysToRetainEvents">0</simple>
   <simple id="FailRetryEnabled">true</simple>
   <simple id="FailRetryPeriod">30d</simple>
@@ -31,7 +31,7 @@ ScheduleSpecification=
 </entries> -->
             <SetupGroupLink SetupGroupID="GCPPublish"></SetupGroupLink>
             <Name>GCPPublishEVP</Name>
-            <Configuration>H4sIAAAAAAAA/6VUS4/aMBC+76+I3IpbCahStSoQBCHsHmBJA9vtrTLJEEYYO/VjC/31dQKkDVt3pfZmT77H2JnPoeAbzI2kGgUf9IeHPfOeQapyR7rtDvGApyJDng/I42r67pYMg5t+wUyO3MNsQKJn4DqWIgWlhBxTBeHvkiS48by+wn3BoMInoArBFa4ZPCqQJFAaio++b+xmaAHRbJr0/RPhmjumOt0u8QeQoNvpuFATelQrkYCmyKvuFAmc4FiikKiPVtEF+WTAWMfoc5wsQhdoTg8Llp3vAdRfG7wXRtYdXrE+3LpYM+SgYpDju7hSd8pPKTKrLY8Rp/aWMxJoaeBVtJVGYcHvO5kLuyg07lFpTGci3TU9NpQpp8kfiBc7F2WZbiEzDL7MZ18nUZxE4WgVTUjQYrrXmNLWNyN0z47qaTFs5brXetPt9Eqk/fsSQdU1z7tUj17KqFJneir2bdveWrSNRtZWZ/MMNsixnOP2pZ9JXXp7KT2A7eWk4zfc/Wv7X4ft+6cM2ZUqGOogklLIBAohNch/CaJtjBqmm3lsqBK/dosrXvi/4R8bVU6lGqWlwhPqbWVf5bTZyMnwxWvQFKgfg/W5LO3tlo/CXRhXcveUZwxGPIvNmqHauobHHkzDQdd66WlfSp0/OdP+JOROFTSFmvz9UinpcxvZV6kriXlu55vnJBgVhRTP4MzUcofFBBhoyB5EVr4BV0l6MSk/ASusy/yzBQAA</Configuration>
+            <Configuration>H4sIAAAAAAAA/6VUS4/aMBC+76+I3IpbCahqtSoQxCPsHtglDWy3t8okQxhh7NQPCv31dRJIG7bWSu3NnnyPsTOfJ4JvMDOSahR80B8e98w7gFTFjnTbHeIBT0SKPBuQp9Xs3S0ZBjf9nJkMuYfpgIQH4DqSIgGlhBxTBZM/JUlw43l9hfucQYmPQeWCK1wzeFIgSaA05J9839jN0ALC+Szu+xXhmjumOtku8SeQ4EPHBZrSk1qJGDRFXjanSOAERxKFRH0iQdcF+WzAWMPwSxQvJi7QAz0uWHq+BrCO3Y7T814YWXd4xfp462LNkYOKQI7volLdKT+jyKy2PIWc2ktOSaClgVfRVhqFBb/vpC7sIte4R6UxmYtk1/TYUKacJn8hXuxclGWyhdQw+Pow/zYNozicjFbhlAQtpnuNIW19N0L37KRWi2Er073Wm26nVyDt35cIqq553qV68hJGlTrTE7Fv2/bWom00srY6m6ewQY7FGLcv/Uzr0ttL6RFsL5WO33D3r+1/H7bvVxGyK5Uz1EEopZAx5EJqkP+SQ9sYNUw349hQJX7tFpW8yf9mf2xUMZVqlBQKz6i3pX0Z02YjleGLx6ApUL8F63NZ2tst3oS7SVTK3VOeMhjxNDJrhmrrGh57MA1HXesl1b6QOn9ypv1ZyJ3KaQI1+celUtAfbGRfpa4kZpmdb56RYJTnUhzAmanlDvMpMNCQPoq0eAOukvRiUn4B8etO2rIFAAA=</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

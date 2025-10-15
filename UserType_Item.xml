@@ -61,7 +61,6 @@
             <AttributeLink AttributeID="CostPrice"></AttributeLink>
             <AttributeLink AttributeID="CountryOfOrigin"></AttributeLink>
             <AttributeLink AttributeID="Description"></AttributeLink>
-            <AttributeLink AttributeID="DescriptionHistory"></AttributeLink>
             <AttributeLink AttributeID="ELFRCalc"></AttributeLink>
             <AttributeLink AttributeID="ELFRColor"></AttributeLink>
             <AttributeLink AttributeID="ELFRFraction"></AttributeLink>

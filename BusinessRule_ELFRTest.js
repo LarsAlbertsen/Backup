@@ -60,7 +60,9 @@ var startTime = java.lang.System.currentTimeMillis()
 for (var i = 0; i<1000; i++) {
 	manager.getHome(com.stibo.lookuptable.domain.LookupTableHome).getLookupTableValue('TestLookupTable', ''+i)
 }
-logger.info(java.lang.System.currentTimeMillis() - startTime)
+//logger.info(java.lang.System.currentTimeMillis() - startTime)
 
+
+logger.info(node.getChildren().size())
 
 }

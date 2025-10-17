@@ -22,7 +22,13 @@
 /*===== business rule plugin definition =====
 {
   "pluginId" : "JavaScriptBusinessFunctionWithBinds",
-  "binds" : [ ],
+  "binds" : [ {
+    "contract" : "LoggerBindContract",
+    "alias" : "logger",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
+  } ],
   "messages" : [ ],
   "pluginType" : "Operation",
   "functionReturnType" : "java.util.Map<java.lang.String, java.lang.String>",
@@ -35,10 +41,18 @@
   } ]
 }
 */
-exports.operation0 = function (msg) {
+exports.operation0 = function (logger,msg) {
+/*
 var doc = JSON.parse(msg)
 var map = new java.util.HashMap()
 map.put('MessageKey', doc[0].id)
 map.put('Name', doc[0].name)
 return map
+*/
+
+
+var map = new java.util.HashMap()
+map.put('MessageKey', 'a key')
+return map
+
 }

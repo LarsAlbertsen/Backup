@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <AttributeList>
-        <Attribute ID="CountryOfOrigin" MultiValued="true" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Mandatory="false">
+        <Attribute ID="CountryOfOrigin" MultiValued="true" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" HierarchicalFiltering="true" ClassificationHierarchicalFiltering="false" Mandatory="false">
             <Name>Country of Origin</Name>
             <ListOfValueLink ListOfValueID="bf2ce0c2-399c-4a65-b4d1-e4e13cc4b5b3"></ListOfValueLink>
             <MetaData>

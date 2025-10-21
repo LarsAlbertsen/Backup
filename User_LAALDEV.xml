@@ -5,7 +5,7 @@
             <Name>LAALDEV</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Stibo standard user </Value>
-                <Value AttributeID="UserLastActivityDate">2025-10-17</Value>
+                <Value AttributeID="UserLastActivityDate">2025-10-20</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Normal user"></UserGroupLink>
             <UserGroupLink UserGroupID="Nothing"></UserGroupLink>

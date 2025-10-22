@@ -55,7 +55,7 @@ exports.operation0 = function (LAALExportFunction,tmpStore,manager,itemType) {
 
 
 const numberOfProducts = 10000;
-const maxThreads = 4
+const maxThreads = 8
 
 
 var c = com.stibo.query.condition.Conditions;

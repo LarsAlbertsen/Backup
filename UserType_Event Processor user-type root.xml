@@ -3,6 +3,8 @@
     <UserTypes>
         <UserType ID="Event Processor user-type root" Referenced="true">
             <Name>Event Processor</Name>
+            <UserTypeLink UserTypeID="AI.ImageAnalysis.EP"></UserTypeLink>
+            <UserTypeLink UserTypeID="AI.TextGeneration.EP"></UserTypeLink>
             <UserTypeLink UserTypeID="AssetAnalyzer.SetupGroup"></UserTypeLink>
             <UserTypeLink UserTypeID="ElasticsearchOT"></UserTypeLink>
             <UserTypeLink UserTypeID="EventProcessors"></UserTypeLink>

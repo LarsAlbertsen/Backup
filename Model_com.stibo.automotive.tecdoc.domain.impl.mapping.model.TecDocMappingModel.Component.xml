@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ComponentModels version="2">
+        <Model id="com.stibo.automotive.tecdoc.domain.impl.mapping.model.TecDocMappingModel.Component">
+            <NodeAspectDescriptors>
+                <NodeAspectDescriptor id="com.stibo.automotive.tecdoc.domain.mapping.model.MappingAssembly"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.tecdoc.domain.mapping.model.MappingPart"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.tecdoc.domain.mapping.model.MappingPartType"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.tecdoc.domain.mapping.model.TecDocArticle"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.tecdoc.domain.mapping.model.TecDocGenericArticle"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.tecdoc.domain.mapping.model.TecDocLinkage"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.tecdoc.domain.mapping.model.TecDocTarget"></NodeAspectDescriptor>
+            </NodeAspectDescriptors>
+            <LinkAspectDescriptors>
+                <LinkAspectDescriptor id="com.stibo.automotive.tecdoc.domain.impl.mapping.model.MappingAssemblyToTecDocTarget"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.automotive.tecdoc.domain.impl.mapping.model.MappingPartListToComponentAspect"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.automotive.tecdoc.domain.impl.mapping.model.MappingPartToTecDocArticle"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.automotive.tecdoc.domain.impl.mapping.model.MappingPartTypeToGenericArticle"></LinkAspectDescriptor>
+            </LinkAspectDescriptors>
+            <ValueAspectDescriptors>
+                <ValueAspectDescriptor id="LinkageSourceAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.automotive.tecdoc.domain.impl.mapping.model.ArticleNumberAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.automotive.tecdoc.domain.impl.mapping.model.IsPartListValueAspect"></ValueAspectDescriptor>
+            </ValueAspectDescriptors>
+        </Model>
+    </ComponentModels>
+</STEP-ProductInformation>

@@ -5,6 +5,10 @@
             <Name>Publication</Name>
             <UserTypeLink UserTypeID="Publication group root"></UserTypeLink>
             <UserTypeLink UserTypeID="Publication root"></UserTypeLink>
+            <AttributeLink AttributeID="PRINT_AppToAssyReferenceTypeID"></AttributeLink>
+            <AttributeLink AttributeID="PRINT_AssemblyYearObjectTypeID"></AttributeLink>
+            <AttributeLink AttributeID="PRINT_PartTypeLinkReferenceTypeID"></AttributeLink>
+            <AttributeLink AttributeID="PRINT_StructureMakeID"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

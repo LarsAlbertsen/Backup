@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ComponentModels version="2">
+        <Model id="com.stibo.addressalias.domain.impl.TownAliasAspect.Component">
+            <NodeAspectDescriptors>
+                <NodeAspectDescriptor id="com.stibo.addressalias.domain.TownAlias"></NodeAspectDescriptor>
+            </NodeAspectDescriptors>
+            <LinkAspectDescriptors></LinkAspectDescriptors>
+            <ValueAspectDescriptors>
+                <ValueAspectDescriptor id="com.stibo.addressalias.domain.impl.TownAliasesAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.addressalias.domain.impl.TownCountryISOAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.addressalias.domain.impl.TownMasterAspect"></ValueAspectDescriptor>
+            </ValueAspectDescriptors>
+        </Model>
+    </ComponentModels>
+</STEP-ProductInformation>

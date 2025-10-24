@@ -3,6 +3,12 @@
     <UserTypes>
         <UserType ID="stibo.businessrule.action" Referenced="true">
             <Name>Business Action Type</Name>
+            <UserTypeLink UserTypeID="AI.ImageAnalysis.BA"></UserTypeLink>
+            <UserTypeLink UserTypeID="AI.ImageAnalysis.EP"></UserTypeLink>
+            <UserTypeLink UserTypeID="AI.ImageAnalysis.Endpoint"></UserTypeLink>
+            <UserTypeLink UserTypeID="AI.TextGeneration.BA"></UserTypeLink>
+            <UserTypeLink UserTypeID="AI.TextGeneration.EP"></UserTypeLink>
+            <UserTypeLink UserTypeID="AI.TextGeneration.Endpoint"></UserTypeLink>
             <UserTypeLink UserTypeID="AssetAnalyzer.SetupGroup"></UserTypeLink>
             <UserTypeLink UserTypeID="BusinessRuleGroup"></UserTypeLink>
             <UserTypeLink UserTypeID="EventProcessors"></UserTypeLink>

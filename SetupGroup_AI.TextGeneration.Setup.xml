@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <SetupGroups>
+        <SetupGroup ID="AI.TextGeneration.Setup" UserTypeID="AI.TextGeneration.Setup" ParentID="AI.Setup">
+            <Name>Text Generation</Name>
+        </SetupGroup>
+    </SetupGroups>
+</STEP-ProductInformation>

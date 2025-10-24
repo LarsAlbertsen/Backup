@@ -3,6 +3,8 @@
     <UserTypes>
         <UserType ID="GatewayEndpoint user-type root" Referenced="true">
             <Name>Gateway Integration Endpoint Type</Name>
+            <UserTypeLink UserTypeID="AI.ImageAnalysis.Endpoint"></UserTypeLink>
+            <UserTypeLink UserTypeID="AI.TextGeneration.Endpoint"></UserTypeLink>
             <UserTypeLink UserTypeID="AssetAnalyzer.SetupGroup"></UserTypeLink>
             <UserTypeLink UserTypeID="Gateway Integration Endpoints"></UserTypeLink>
             <AttributeLink AttributeID="Purpose"></AttributeLink>

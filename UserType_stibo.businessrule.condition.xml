@@ -3,6 +3,8 @@
     <UserTypes>
         <UserType ID="stibo.businessrule.condition" Referenced="true">
             <Name>Business Condition Type</Name>
+            <UserTypeLink UserTypeID="AI.ImageAnalysis.EP"></UserTypeLink>
+            <UserTypeLink UserTypeID="AI.TextGeneration.EP"></UserTypeLink>
             <UserTypeLink UserTypeID="AssetAnalyzer.SetupGroup"></UserTypeLink>
             <UserTypeLink UserTypeID="BusinessRuleGroup"></UserTypeLink>
             <UserTypeLink UserTypeID="EventProcessors"></UserTypeLink>

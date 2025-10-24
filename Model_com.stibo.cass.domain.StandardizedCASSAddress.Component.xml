@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ComponentModels version="2">
+        <Model id="com.stibo.cass.domain.StandardizedCASSAddress.Component">
+            <NodeAspectDescriptors>
+                <NodeAspectDescriptor id="com.stibo.cass.domain.StandardizedCASSAddress"></NodeAspectDescriptor>
+            </NodeAspectDescriptors>
+            <LinkAspectDescriptors></LinkAspectDescriptors>
+            <ValueAspectDescriptors>
+                <ValueAspectDescriptor id="com.stibo.cass.domain.impl.CASSCongressionalDistrictAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.cass.domain.impl.CASSDPVConfirmedIndicatorAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.cass.domain.impl.CASSDeliveryPointBarCodeAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.cass.domain.impl.CASSFIPSCountyCodeAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.cass.domain.impl.CASSNoStatIndicatorAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.cass.domain.impl.CASSResidentialDeliveryAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.cass.domain.impl.CASSVacantIndicatorAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.cass.domain.impl.CASSValidationResponseAspect"></ValueAspectDescriptor>
+            </ValueAspectDescriptors>
+        </Model>
+    </ComponentModels>
+</STEP-ProductInformation>

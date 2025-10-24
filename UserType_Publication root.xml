@@ -3,6 +3,10 @@
     <UserTypes>
         <UserType ID="Publication root" ManuallySorted="false" IDPattern="[id]">
             <Name>Publication types</Name>
+            <AttributeLink AttributeID="PRINT_AppToAssyReferenceTypeID"></AttributeLink>
+            <AttributeLink AttributeID="PRINT_AssemblyYearObjectTypeID"></AttributeLink>
+            <AttributeLink AttributeID="PRINT_PartTypeLinkReferenceTypeID"></AttributeLink>
+            <AttributeLink AttributeID="PRINT_StructureMakeID"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

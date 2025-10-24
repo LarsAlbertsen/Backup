@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <CrossReferenceTypes>
+        <ClassificationCrossReferenceType ID="PrintModelToVehicleModel" Inherited="false" Accumulated="false" Revised="true" Mandatory="false" MultiValued="true">
+            <Name>PrintModelToVehicleModel</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <TargetUserTypeLink UserTypeID="AI.ImageConversionConfiguration"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="AssetLevel1"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="AssetLevel2"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="AssetPushConfigurationsRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="AssetRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="AutoClassificationRuleSetsRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="BusinessRulesDownloadsRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Classification 1 user-type root"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="ConfigurationsRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="EclassFolder"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="ExportConfigurationsLevel1"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="ExportConfigurationsLevel2"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="ExportConfigurationsRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="GPC Root"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="IconRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="IllustrationRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="ImportConfigurationsLevel1"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="ImportConfigurationsLevel2"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="ImportConfigurationsRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="InstallationManualRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="LogFiles"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="LogoRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="LookupTablesRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="MSDSRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="OwnersManualRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="PortalConfigurationsLevel1"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="PortalConfigurationsRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="ProductImageRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Profilings"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="RefTypeMetricClass"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="SmartSheetConfigurationsRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Supplier"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="SupplierAssets"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="SupplierClassification"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="SupplierClassificationsRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="SupplierProducts"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="Suppliers"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="SystemChange"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="SystemChangeDate"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="SystemChangeMonth"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="SystemChangeUser"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="SystemChangeYear"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="SystemChangesRoot"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="TestAssets"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="TestAssetsSubFolder"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="TestClassification"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="TestClassifications"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="TransferAssets"></TargetUserTypeLink>
+            <TargetUserTypeLink UserTypeID="VideoRoot"></TargetUserTypeLink>
+        </ClassificationCrossReferenceType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>

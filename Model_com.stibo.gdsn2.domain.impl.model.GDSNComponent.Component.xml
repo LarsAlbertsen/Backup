@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ComponentModels version="2">
+        <Model id="com.stibo.gdsn2.domain.impl.model.GDSNComponent.Component">
+            <NodeAspectDescriptors>
+                <NodeAspectDescriptor id="com.stibo.gdsn2.domain.model.GDSNProduct"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.gdsn2.domain.model.cic.GDSNCIC"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.gdsn2.domain.model.configuration.GDSNFormat"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.gdsn2.domain.model.configuration.GDSNProviderDatapool"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.gdsn2.domain.model.configuration.GDSNRecipient"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.gdsn2.domain.model.configuration.GDSNTargetMarket"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.gdsn2.domain.model.configuration.GDSNXSDAsset"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.gdsn2.domain.model.registration.GDSNRegistration"></NodeAspectDescriptor>
+            </NodeAspectDescriptors>
+            <LinkAspectDescriptors>
+                <LinkAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.CICToRecipientLinkAspect"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.CICToRegistrationLinkAspect"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.DatapoolToFormatLinkAsset"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.FormatToAssetLinkAspect"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.HierarchyLinkAspect"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.RegistrationToProductLinkAspect"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.RegistrationToRecipientLinkAspect"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.RegistrationToTMLinkAspect"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.TargetMarketToContextLinkAspect"></LinkAspectDescriptor>
+            </LinkAspectDescriptors>
+            <ValueAspectDescriptors>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.As2InAttributeAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.As2OutAttributeAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.FormatInboundConfigurationAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.FormatOutboundConfigurationAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.GTINAttributeAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.HierarchyLinkCountAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.HierarchyLinkStatusAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.IPGLNAttributeAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.PackagingLinkRegistrationMessageIDAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.PoolGLNAttributeAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.PublicationMessageIDAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.RecipientGLNAttributeAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.RegistrationEntityGLNAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.RegistrationEntityStatusAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.RegistrationMessageIDAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.RegistrationPendingCommandAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.RegistrationToRecipientCICStatusAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.RegistrationToRecipientStatusAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.TargetMarketNameAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.gdsn2.domain.impl.model.UserNameAttributeAspect"></ValueAspectDescriptor>
+            </ValueAspectDescriptors>
+        </Model>
+    </ComponentModels>
+</STEP-ProductInformation>

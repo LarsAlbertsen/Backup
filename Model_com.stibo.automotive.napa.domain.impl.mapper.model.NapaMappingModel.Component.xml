@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ComponentModels version="2">
+        <Model id="com.stibo.automotive.napa.domain.impl.mapper.model.NapaMappingModel.Component">
+            <NodeAspectDescriptors>
+                <NodeAspectDescriptor id="com.stibo.automotive.napa.domain.mapper.model.NAPAProductLine"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.napa.domain.mapper.model.NapaApplication"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.napa.domain.mapper.model.NapaMappingAssembly"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.napa.domain.mapper.model.NapaMappingPart"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.napa.domain.mapper.model.NapaMappingPartType"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.napa.domain.mapper.model.NapaPart"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.napa.domain.mapper.model.NapaPartType"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.napa.domain.mapper.model.NapaTarget"></NodeAspectDescriptor>
+            </NodeAspectDescriptors>
+            <LinkAspectDescriptors>
+                <LinkAspectDescriptor id="com.stibo.automotive.napa.domain.impl.mapper.model.NAPASourcePartToProductLineAspect"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.automotive.napa.domain.impl.mapper.model.NapaMappingAssemblyToNapaTarget"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.automotive.napa.domain.impl.mapper.model.NapaMappingPartToNapaPart"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.automotive.napa.domain.impl.mapper.model.NapaMappingPartTypeToNapaPartType"></LinkAspectDescriptor>
+            </LinkAspectDescriptors>
+            <ValueAspectDescriptors>
+                <ValueAspectDescriptor id="com.stibo.automotive.napa.domain.impl.mapper.model.NapaApplicationSourceAspect"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.automotive.napa.domain.impl.mapper.model.NapaPartNumberAspect"></ValueAspectDescriptor>
+            </ValueAspectDescriptors>
+        </Model>
+    </ComponentModels>
+</STEP-ProductInformation>

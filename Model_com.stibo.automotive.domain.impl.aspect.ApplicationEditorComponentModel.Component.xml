@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ComponentModels version="2">
+        <Model id="com.stibo.automotive.domain.impl.aspect.ApplicationEditorComponentModel.Component">
+            <NodeAspectDescriptors>
+                <NodeAspectDescriptor id="com.stibo.automotive.domain.impl.aspect.DummyApplication"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.domain.impl.aspect.DummyHasComment"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.domain.impl.aspect.DummyHasPartType"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.domain.model.Application"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.domain.model.Assembly"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.domain.model.Part"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.domain.model.PartType"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.domain.model.PartTypeGroup"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.automotive.domain.model.TextBlock"></NodeAspectDescriptor>
+            </NodeAspectDescriptors>
+            <LinkAspectDescriptors>
+                <LinkAspectDescriptor id="com.stibo.automotive.domain.impl.aspect.ApplicationToAssemblyAspect"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.automotive.domain.impl.aspect.PartRelation"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.automotive.domain.impl.aspect.PartToPartTypeAspect"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.automotive.domain.impl.aspect.PartTypeGroupToPartTypeAspect"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.automotive.domain.impl.aspect.PartTypeRelation"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.automotive.domain.impl.aspect.PartTypeToTextBlockAspect"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.automotive.domain.impl.aspect.TextBlockReferenceAspect"></LinkAspectDescriptor>
+            </LinkAspectDescriptors>
+            <ValueAspectDescriptors></ValueAspectDescriptors>
+        </Model>
+    </ComponentModels>
+</STEP-ProductInformation>

@@ -6,14 +6,14 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "ELFRTrueWithLog",
+  "id" : "Cond",
   "type" : "BusinessCondition",
-  "setupGroups" : [ "ELFRBRGroup" ],
-  "name" : "ELFRTrueWithLog",
+  "setupGroups" : [ "aa" ],
+  "name" : "Cond",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
-  "allObjectTypesValid" : true,
+  "allObjectTypesValid" : false,
   "runPrivileged" : false,
   "onApprove" : "Never",
   "dependencies" : [ ]
@@ -23,20 +23,14 @@
 {
   "pluginId" : "JavaScriptBusinessConditionWithBinds",
   "binds" : [ {
-    "contract" : "LoggerBindContract",
-    "alias" : "logger",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
-  }, {
-    "contract" : "CurrentObjectBindContract",
-    "alias" : "node",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
-  }, {
     "contract" : "WebUiContextBind",
-    "alias" : "ui",
+    "alias" : "web",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
+  }, {
+    "contract" : "DataIssuesContextBind",
+    "alias" : "dis",
     "parameterClass" : "null",
     "value" : null,
     "description" : null
@@ -45,13 +39,6 @@
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (logger,node,ui) {
-for (var i = 7; i<10; i++) {
-	//logger.info(node.getID() + ' Bullet0'+i + '=' + node.getValue('Bullet0' + i).getSimpleValue()) 	
-}
-logger.info('');
-ui.showAlert('INFO','Info message')
-return true
-
+exports.operation0 = function (web,dis) {
 
 }

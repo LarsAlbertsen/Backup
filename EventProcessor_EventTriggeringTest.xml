@@ -58,12 +58,6 @@ ObjectTypeGroupings=
   <ObjectTypeRules ActionID="EventTriggerTestCreateEvent" ConditionID="EventTriggeringTestCondTrue">
     <ObjectType ObjectTypeID="Item"/>
   </ObjectTypeRules>
-  <ObjectTypeRules>
-    <ObjectType ObjectTypeID="Leaf"/>
-  </ObjectTypeRules>
-  <ObjectTypeRules ActionID="EventTriggerTestCreateEvent" ConditionID="EventTriggeringTestCondTrue">
-    <ObjectType ObjectTypeID="MEssage"/>
-  </ObjectTypeRules>
 </ObjectTypeRules>
 ParentTriggering=
 ProductTemplate=
@@ -89,8 +83,8 @@ UnitTemplate=
 </STEP-ProductInformation>
 Version=3
 attributeGroup=Attribute group root
-objecttype=Item;Leaf;MEssage -->
-                <Configuration>H4sIAAAAAAAA/9VVTVPbMBC98ys0vlPD9NKDFSaTBOoZUjKJgbNir42KLHm0chr66ys7UgyxmYRLB27e77ert+sxIpgEykowAzS62paCbEAjV5IGl98uAgIyVRmXBQ3uk+vzH8HV6CxaJbPF+UKrrE5NLHOlS2ZsBFkCKrGBWAouYQk50iBnAiEg10oI9efOptY8g1W9dtGdx2xbKW2moPkGsrExem8anRESjRug6LxW/C/QYM4lL+syIFMlza7ARDBEnvO0xZOoNsoCAW3bsCFG17t8PmPYJg932W1n4TutjSKsBDejBhhf1wZuuXzGRPOisIhlcWj+EiPtesFmEEebP5juF2jxLeJh+jg6vHUlsUxFncGCWeYYRxxHloOkJwwulhlsH5XOfnLQTKdPLz3m/GIl9JR369+QmuSlghut6soakEadclkLwBbTgY6M06Z8PKXBbGPxu8QJoJlosG/WagMyUTLjQ562Uuts7cmrlenKkO6ziY0NlH48J+A7lu4WWP6BdP+93fkMkRXwLsS+yj3ojk69d3bM+fQbFXnvj95hFzd0iX3OwY1zD9EsR+jP9usLHA4u776MN/f79RYnTrRC7IW1f4Vh0wMTNaCXpswwSx7D7Lg1HqsahU7cscfP9IQ70hHHHpNnrJid5NwWdeZ7yT8/h2zLDc5T/zkProHvTmb++duLSPdsIEUjE62UcZ6qXUFjV5A256mnvaDNmempL6nbbmf5B/FdZm4iCQAA</Configuration>
+objecttype=Item -->
+                <Configuration>H4sIAAAAAAAA/9VUTXObMBC951dodE9pp5cewBmP7bTMNI3HJslZhjVVIyRGK1ynv74Llkxi6MS9JTe0n+8tb3eKCC6DqlbCQRJf7SvFdmBRGp3wTx8+cgY6N4XUZcLvsuvLL/xqchGvs8XycmlN0eQu1VtjK+Eog60AjdpBqpXUsIItJnwrFAJn10Yp8/uWSltZwLrZ+Ow+YrGvjXVzsHIHxdQ5e3RNLhiLpy1Q9FFr+QcSfiO1rJqKs7nR7tBgpgSi3Mq8w5OZLouAgCUalOJsc6gXKkZd8ehQnZhF/6A2ibFW0k1aYHLTOPgu9SNmVpYlIdblqftdjLTngu0gXiV/Mt13QPEl4nH5eDm8DGWpzlVTwFKQcpwXjhfLSdEzBpfqAvYPxhbfJFhh859PA+X8EBUMjLebX5C77KmGr9Y0NTkwiXvjqlGAHaYTG5vmbft0nvDFjvD7whmgm1mgf9ZZOZsZXcixSOrUBZM/e7YyfRvWf7a5qYMqjGeAb2jy9A7DHbD2c3zz+opD9P9eJZ83dpdCzVH9+b/QSiUKR+z5PYpGpXxsE9xDvsHjnzNrEAdp3Y0cd90L1QCG11w4QcpxgsZt8bWuceSfB/WEmZ6xVb1waLUesRY0yRtq6t13Wr59DRHlFue5F/jeE/js3yL8/u4+JEc1sLJ9M2uM85GmW0FHK5i0y+qtfwHOOylT/wcAAA==</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

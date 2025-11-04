@@ -53,7 +53,7 @@
 */
 exports.operation0 = function (node,logger,cetw,ceq) {
 var msg = {}
-//msg.time = Date.now()
+msg.time = java.time.ZonedDateTime.now(java.time.ZoneId.of("America/New_York")).format(java.time.format.DateTimeFormatter.ISO_DATE_TIME)
 //msg.eq = ceq.getID()
 //msg.cetw = cetw
 msg.node = node.getID()
@@ -64,6 +64,8 @@ msg.Bullet02 = node.getValue('Bullet02').getSimpleValue()
 
 
 logger.info(JSON.stringify(msg))
+
+
 
 return false
 }

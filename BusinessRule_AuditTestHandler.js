@@ -42,4 +42,9 @@
 exports.operation0 = function (node,logger) {
 logger.info(node.getID() + ' ' + node.getTitle())
 
+
+
+var isoDateTime = java.time.ZonedDateTime.now(java.time.ZoneId.of("America/New_York")).format(java.time.format.DateTimeFormatter.ISO_DATE_TIME);
+logger.info(isoDateTime);
+
 }

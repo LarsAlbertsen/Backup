@@ -9,16 +9,21 @@
   </datamodel>
   <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=238.0  </editorLayout>
   <final id="Final" discontinued="false">
+    <transition event="reject" target="Maintain">
+      <editorLayout>   edge-path [Maintain]  x=60.0 y=168.0  </editorLayout>
+    </transition>
     <editorLayout>   node-size-and-position x=20.0 y=193.0 w=100.0 h=25.0  </editorLayout>
     <onentry businessactionid="RemoveFromWorkflow"/>
   </final>
   <state id="Initial" discontinued="false">
-    <transition target="Maintain"/>
+    <transition event="submit" target="Maintain"/>
     <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
     <onentry businessactionid="LongRunning"/>
   </state>
   <state id="Maintain" discontinued="false">
-    <transition target="Final"/>
+    <transition event="submit" target="Final">
+      <editorLayout>   edge-path [Final]  x=80.0 y=168.0  </editorLayout>
+    </transition>
     <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
   </state>
 </scxml>
@@ -51,7 +56,7 @@
             <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
             <Name>Maintain Item</Name>
             <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
-            <Configuration>H4sIAAAAAAAA/61VXU/bMBR951d41l7TpAU0QEnRxMZUiYmJDvbsJrfBmmNnttO0+/W7dj76RaGb9tA6cXzOuefa95pVVk0kt5xZuJc3GnBM5kwYiE0puB3DEtLKwjTVvLR3vOAWsm+aL7iAHExiddWtFNxYkPdyUpRKW9CPZbZLZtJlIZLYD4R7WZHQRl9QIlkBCf3KuLT4m1goKFmANlzJhEaDS0oQJ01Cn60tr8KwrutBfTpQOg9HUXQeRh9CT03H8bsgIIRIlUFg+G8ImMyCUhkUUpIsk2gQkZX/r5PhmRufk9HpBY4kCMYnJMbQWYFogS/NG2HWaj7DXCR0+owOn5jmbCaAEp7tTo3j0GHGJ83YMiEvM4bnEsBj3qeV1iAtJXZVIm1lQDtot8gjjMUskoybVEnLZQUI9DltdLvkvWl51Hg+O21MR63p894ziZXEYPSKzCrDJRjDUod1KndK5g+VlFzmLsB2oYuPxFYz2apYpnOw6y10a9efXTa8m2N8bVAcZ2w4vDjs7IUYb7n0aTsY4NwtOBxghz8yust/yvsDFGoBt1oVP5T+OReq3kp/HPogfdzu4I/bOltwqJP42lVZXz/DQUQJyFRluIkJffx+G1xQgnZlxgQyJnQFhl4jlzSjq7qVe0Im05TdFc5vlZ6xfKYGqSqoc4E+nGy/eQ5JSQZzVgk7xeK4UaIqXCFTwrDrFMzy1M13WW1IPBEzJaTWU/GMhi9/cd1i61vqBdouslOi2NiyeylW/RYWzrdVerUv78lKUeVckmaYfEpotwHrGt8CNCCmURx7nw9wrb5gotqLKdxRDButDUNh4+iQxY9tm/if7nrON919XpYo8kWrqjS9w0YsPAQO3B3h0S1uf+GOUpc5d9Re5A3XxH+Xzzh0x7V91mCwufuyw3spFVUG02qW+yD7pGIrKAVbTeFXhXUE7iRvkBesLLGyiG8gLqX9teZ03MRGVewzha9R9c3wGK7h61xN3zqGaNQRxeFGflyz2esQONl0nj+bEmbOUAgAAA==</Configuration>
+            <Configuration>H4sIAAAAAAAA/61VXW/TMBR9368wFq9p2m6DbUo6ocHQpKGhlY0HxIOb3GUGxw7+6Ae/nmvno127rgXx0Lp1fM+559g+Yc6qK8ktZxZu5IUGHNMHJgwkphLcjmAOmbMwzjSv7DUvuYX8s+ZTLqAAk1rt2pWCGwvyRl6VldIW9F2Vr4OZbF6KNAkD4YFWpLTmF5RIVkJKPzEuLX6uLJSUTEEbrmRK+71TSrBOmpQ+WludxfFsNuvNDntKF/Gw3z+O+2/jAE1HyasoIoRIlUNk+G+ImMyjShkkUpLM036vTxbhe5YOjvz4mA4PT3AkUTQ6IAm2zkqsFvin/keYtZpP0IuUjh9R4T3TnE0EUMLz9alREvua0UE9NkiIy4zhhQQINa8zpzVIS4ldVAjrDGhf2i4KFcaiiyTnJlPScukAC4OnNW9r3k7Jw1rz0WEtut+IPu40k0RJbEYvyMQZLsEYlvlaz3KtZHHrpOSy8A02C31/JLGayYYFpjifUuMmeE5QFdMF2OWO+tLlam9OELePzBWI/XQOBifbhe5u+ZLLFVMhLyCqmH0k38KD7wSJThqiN+2x2S7uwRdtF/eUbKey03/awlso1RQutSq/Kv3zQajZHjup4Qdkz+/khjPts2DOm13mBEuCS/7GjpqAmHKYpcm5j4fu4g96fUpAZirH05fSuy+X0QklaK7MmcD+U7oAQ88RS5rh2awRd49Ips6LM5x/khnG8onqZaqk3jMU7mm7Y+YrKcnhgTlhx3irL5RwpU8gShjGZcksz/x8u4c1SABipkK/AhTPafz8Ex9zT55lgaCJv7VswUTOb6RYdAem9Lqt0otN+gBWCVdwSerh6n1K2+1ehtOTgrqIaSTH0A4NLtmnTLiNnuI1xrjmWhEU14q2SXzX5Nv/VNdh7lT3YV4hyUetXGU6hTVZvK048i+3UN3UbS5cY2qd80ftWdx4Cfx3fiaxP67Nbw0G30rhkuMLNRMuh7GbFKHJzlQMnkqwxRh+ObxH4E/yCnjJqgpvFglx5S3t3seex0+s3IpNpPglqC4v9sEavIxVp+Q+QMMWKIlX/PFhs5EQOFknzx8wZpt3CQkAAA==</Configuration>
         </STEPWorkflow>
     </STEPWorkflows>
 </STEP-ProductInformation>

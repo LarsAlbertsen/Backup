@@ -58,7 +58,7 @@ var cursor = query.execute()
 
 cursor.forEach(function(task) {
 	logger.info(task.getNode().getID() + ':  ' + task.getWorkflowInstance().getWorkflow().getID() + '.' + task.getState().getID())
-	task.reassign(manager.getUserHome().getUserByID('ELFR2'))
+	task.reassign(manager.getUserHome().getUserByID('ELFR'))
 	return true;	
 })
 

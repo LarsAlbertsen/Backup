@@ -58,7 +58,7 @@ elogger.logInfo('Splitter data length=' + data.length())
 logger.info('Splitter data length=' + data.length())
 var doc = JSON.parse(data)
 doc.data.forEach(function(l) {
-	result.addMessage(l)
+	result.addMessage(JSON.stringify(l))
 })
 var after = java.lang.System.currentTimeMillis();
 elogger.logInfo('Done with splitting ' + (after - before))

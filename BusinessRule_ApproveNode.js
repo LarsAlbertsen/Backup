@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "Handler",
+  "id" : "ApproveNode",
   "type" : "BusinessAction",
-  "setupGroups" : [ "BRIEPTest" ],
-  "name" : "Handler",
+  "setupGroups" : [ "ApproveActions" ],
+  "name" : "ApproveNode",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -23,14 +23,8 @@
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
-    "contract" : "InboundBusinessProcessorImporterSourceBindContract",
-    "alias" : "source",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
-  }, {
-    "contract" : "LoggerBindContract",
-    "alias" : "logger",
+    "contract" : "CurrentObjectBindContract",
+    "alias" : "node",
     "parameterClass" : "null",
     "value" : null,
     "description" : null
@@ -39,11 +33,6 @@
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (source,logger) {
-var data = source.getMessage();
-logger.info(data)
-
-java.lang.Thread.sleep(10000)
-
-
+exports.operation0 = function (node) {
+node.approve()
 }

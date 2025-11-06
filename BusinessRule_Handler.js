@@ -43,7 +43,7 @@ exports.operation0 = function (source,logger) {
 var data = source.getMessage();
 logger.info(data)
 
-java.lang.Thread.sleep(10000)
+java.lang.Thread.sleep(5000)
 
 
 }

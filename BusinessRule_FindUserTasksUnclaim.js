@@ -23,12 +23,6 @@
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
-    "contract" : "CurrentObjectBindContract",
-    "alias" : "user",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
-  }, {
     "contract" : "LoggerBindContract",
     "alias" : "logger",
     "parameterClass" : "null",
@@ -51,14 +45,16 @@
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (user,logger,qh,manager) {
+exports.operation0 = function (logger,qh,manager) {
 var c = com.stibo.query.condition.Conditions;
-var query = qh.queryWorkflowTasks().where(c.assignee().eq(user))
+var from = manager.getUserHome().getUserByID('ELFR2');
+var to = manager.getUserHome().getUserByID('ELFR3');
+var query = qh.queryWorkflowTasks().where(c.assignee().eq(from))
 var cursor = query.execute()
 
 cursor.forEach(function(task) {
 	logger.info(task.getNode().getID() + ':  ' + task.getWorkflowInstance().getWorkflow().getID() + '.' + task.getState().getID())
-	task.reassign(manager.getUserHome().getUserByID('ELFR'))
+	task.reassign(to)
 	return true;	
 })
 

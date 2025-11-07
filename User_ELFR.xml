@@ -9,7 +9,7 @@
             </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup>
-                <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>
+                <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context3</SystemSetupValue>
             </SystemSetup>
         </User>
     </UserList>

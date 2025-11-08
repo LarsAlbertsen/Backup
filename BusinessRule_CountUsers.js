@@ -115,9 +115,9 @@ logger.info('Total users under ' + root.getID() + ' ' + cnt)
 logger.info('Not supplier user count ' + cntNotVendor)
 logger.info('Supplier User Count ' + (cnt-cntNotVendor))
 
-logger.info('About User Count ' + callMethod(manager.getUserHome(), 'getUserCount'))
+//logger.info('About User Count ' + callMethod(manager.getUserHome(), 'getUserCount'))
 
-logger.info('is Supplier ' + callMethod(manager.getUserHome().getUserByID('LAAL_SUP'), ))
+//logger.info('is Supplier ' + callMethod(manager.getUserHome().getUserByID('LAAL_SUP'), ))
 
 
 return '';

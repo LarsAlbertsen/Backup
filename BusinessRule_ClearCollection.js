@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "CreateCollection",
+  "id" : "ClearCollection",
   "type" : "BusinessAction",
   "setupGroups" : [ "LAALRules" ],
-  "name" : "CreateCollection",
+  "name" : "ClearCollection",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ "Product user-type root" ],
@@ -40,7 +40,38 @@
 }
 */
 exports.operation0 = function (manager,itemType) {
-var collection = manager.getNodeCollectionHome().getTopNodeCollectionGroup().createNodeCollection("myCol5");
+var collection = manager.getNodeCollectionHome().getNodeCollectionByID("myCol5");
+
+const batch = new java.util.HashSet();
+let count = 0;
+collection.queryNodes().forEach(function (node) {
+	count++;
+	if ((count % 1000) == 0) {
+		logger.info("count="+count);
+	}
+	batch.add(node);
+	if (batch.size() >= 1000) {
+		//collection.removeNodes(batch);
+		callDelete(collection, batch)
+		batch.clear();
+	}
+	//collection.removeNode(node);
+	return true;
+});
+
+logger.info("Cleared " + count + " nodes from collection")
+
+var itemType = "stibo:product";
+
+
+function callDelete(pCol, pBatch) {
+	const method = pCol.getClass().getMethod("removeNodes");
+	var oo = method.invoke(pBatch);
+}
+
+/*
+
+
 
 var rootProduct = manager.getProductHome().getTopProduct();
 
@@ -89,4 +120,5 @@ query.forEach(function (node) {
 logger.info("Adding Rest " + l.size())
 collection.addNodes(l);
 logger.info("Done")
+*/
 }

@@ -40,7 +40,7 @@
 }
 */
 exports.operation0 = function (manager,itemType) {
-var collection = manager.getNodeCollectionHome().getTopNodeCollectionGroup().createNodeCollection("myCol5");
+var collection = manager.getNodeCollectionHome().getTopNodeCollectionGroup().createNodeCollection("myCol10");
 
 var rootProduct = manager.getProductHome().getTopProduct();
 
@@ -85,6 +85,8 @@ query.forEach(function (node) {
 		return false;
 	}
 });
+
+logger.info("Total "+(Date.now()-begin))
 
 logger.info("Adding Rest " + l.size())
 collection.addNodes(l);

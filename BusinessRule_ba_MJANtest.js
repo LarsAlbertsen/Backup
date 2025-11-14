@@ -21,27 +21,24 @@
 */
 /*===== business rule plugin definition =====
 {
-  "pluginId" : "JavaScriptBusinessActionWithBinds",
-  "binds" : [ {
-    "contract" : "UserBindContract",
-    "alias" : "usr",
-    "parameterClass" : "com.stibo.core.domain.impl.UserImpl",
-    "value" : "SERVICE-ACCOUNT-INTEGRATION",
-    "description" : null
+  "pluginId" : "SendEmailBusinessAction",
+  "parameters" : [ {
+    "id" : "Body",
+    "type" : "java.lang.String",
+    "value" : "test"
   }, {
-    "contract" : "GatewayBinding",
-    "alias" : "gateway",
-    "parameterClass" : "com.stibo.core.domain.impl.integrationendpoint.gateway.FrontGatewayIntegrationEndpointImpl",
-    "value" : "giep_CertCheck",
-    "description" : null
+    "id" : "Recipients",
+    "type" : "java.util.List",
+    "values" : [ "@mjan@stibosystems.com" ]
+  }, {
+    "id" : "Sender",
+    "type" : "com.stibo.util.basictypes.EmailRecipient",
+    "value" : "@mjan@stibosystems.com"
+  }, {
+    "id" : "Subject",
+    "type" : "java.lang.String",
+    "value" : "test"
   } ],
-  "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (usr,gateway) {
-var request = gateway.get();
-var response;
-response = request.invoke();
-logger.info(response);
-}

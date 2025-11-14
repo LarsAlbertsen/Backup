@@ -9,6 +9,7 @@
             <AttributeLink AttributeID="DCValueB"></AttributeLink>
             <AttributeLink AttributeID="URL"></AttributeLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
+            <UserTypeLink UserTypeID="Level4"></UserTypeLink>
             <KeyDefinition>
                 <Attribute ID="DCKey"></Attribute>
             </KeyDefinition>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <EventProcessors>
+        <EventProcessor ID="BusinessRuleChange" UserTypeID="Event Processor user-type root"><!-- Definition:
+Configuration=
+<plugin id="BusinessRuleChange">
+  <simple id="BatchSize">1</simple>
+  <simple id="DaysToRetainEvents">0</simple>
+  <simple id="FailRetryEnabled">true</simple>
+  <simple id="FailRetryPeriod">30d</simple>
+  <simple id="HoursToRetainOldProcesses">10</simple>
+  <simple id="LinesPerBGP">1000</simple>
+  <simple id="MaxOldProcesses">10</simple>
+  <simple id="OptimisticLockRetryEnabled">false</simple>
+  <simple id="OptimisticLockRetryPeriod"/>
+  <simple id="Priority">1</simple>
+  <simple id="Queue">EVPROC</simple>
+  <simple id="ResponsibleUser">step://user?id=STEPSYS</simple>
+</plugin>
+PluginConfiguration=
+<plugin id="BusinessActionWithEventBatchEventProcessorPlugin">
+  <simple id="BusinessAction">step://businessrule?id=BusinessRuleChange</simple>
+  <simple id="Context">step://context?id=Context1</simple>
+  <simple id="SkipDeletedNodes">false</simple>
+  <simple id="Workspace">step://workspace?id=Main</simple>
+  <simple id="WorkspaceTriggering">Approved</simple>
+</plugin>
+ScheduleSpecification=
+<entries>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEverySecond" every="10"/>
+</entries> -->
+            <SetupGroupLink SetupGroupID="BusinessRuleChange"></SetupGroupLink>
+            <Name>BusinessRuleChange</Name>
+            <Configuration>H4sIAAAAAAAA/6VUS5PSQBC+769IjRY3CZQXSyAUhKwewI0J6+rJGpImdDHMxHmw4K93Qh4a1riW5jTT8z16Jt3tC77FzEiqUfDJeHo6MOcIUhU7MuwPiAM8ESnybELu17ev3pCpdzPOmcmQO5hOSHAErkMpElBKyDlV4P8qSbwbxxkrPOQMLvgIVC64wg2DewWSeEpD/tZ1jd1MLSBeB2H8JR67JeeaPqc62cX4HYg37MIs6FmtRQSaIr+kp4g36AKHEoVEff6D3kcDxvoFn8Lozu8CrejpjqXVQ4B1HHZavhdGNgn+LWmJHFQIcv4uLGCDTuAtRWal5Tng1D5ySjwtDTyLttIoLPj1IO3C3uUaD6g0JkuR7NseW8pUp8lviLVdFyVOdpAaBp9Xy6+LIIwCf7YOFsTrMT1qFWnvmxF6ZCu1XEx7mR71XgwHowJp/71EUE3Mcero2UkYVaqiJ+LQt+ltRN9oZH1VmaewRY5FGffrfBZN6GUdsiUmzzEkgqelWmVVfVAc12lWWbqtLN3rNH8+ytgtW82uVM5Qe4GUQkaQC6lB/ku/2gtQw3S7bVuqxG3cwgvP/98ZMTeqqF41SwqFB9S7i/2ll9uJlIZPhkZboJkZmyos7V8oZkcNi+ze31GedVakvZKGk26UknJfiFRHndPgQci9ymkCDfmxjhT0le3pZ6lriVlmO4BnxJvluRRH6Oy6eI/5AhhoSD+ItBgSV732pEZ+ABDURAnUBQAA</Configuration>
+            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
+AssetTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">
+    <Asset/>
+  </Assets>
+</STEP-ProductInformation>
+AttributeTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <AttributeList/>
+</STEP-ProductInformation>
+ClassificationTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Classifications ExportSize="Minimum">
+    <Classification IncludeParent="true"/>
+  </Classifications>
+</STEP-ProductInformation>
+NameTriggering=
+ObjectTypeGroupings=
+<ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="stibo.businessrule.action"/>
+    <ObjectType ObjectTypeID="stibo.businessrule.condition"/>
+    <ObjectType ObjectTypeID="stibo.businessrule.function"/>
+    <ObjectType ObjectTypeID="stibo.businessrule.library"/>
+  </ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="BusinessRuleGroup"/>
+  </ObjectTypeRules>
+</ObjectTypeRules>
+ParentTriggering=
+ProductTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Products DontFollowClassificationToProductReference="true" ExportSize="Minimum">
+    <Product IncludeParent="true">
+      <AssetCrossReference/>
+      <AttributeLink/>
+      <ClassificationReference/>
+      <DataContainers/>
+      <Name/>
+      <OverrideSubProduct/>
+      <OverrideSubProduct/>
+      <ProductCrossReference/>
+      <Values/>
+    </Product>
+  </Products>
+</STEP-ProductInformation>
+TriggeringWorkspace=Approved
+UnitTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <UnitList/>
+</STEP-ProductInformation>
+Version=3
+objecttype=BusinessRuleGroup;stibo.businessrule.action;stibo.businessrule.condition;stibo.businessrule.function;stibo.businessrule.library -->
+                <Configuration>H4sIAAAAAAAA/9VVTVPbMBC98ys0vhNDuXCwwqQJMJmBkkkMPcv2OqMiSx6tlEJ/fWVbjpvYGQLTA9ws6b3dffvlCSKYGIpSMAM0unopBNmARq4kDc5HZwEBmaqMyzUNHuOb08vganwSreLrxelCq8ymZi5zpQtmHIMsAZXYwFwKLmEJOdIgZwIhIDdKCPX7wZnWPIOVTTy7Q1y/lEqbGWi+gWxijN4+jU8IiSZVoOhRK/4HaHDPJS9sEZCZkqZxMBUMkec8reOJVc1ygYB2MhzFaNvYay2GtfGwse6UhQekjSMsBTfjKjCeWANfImdtsHccK6VvqttL3xeQuBvxcH/4eu9CyVymwmawYK41jO8M3w17Ro9I3A9WQKz5eu3ilGt/+ZD8gtTEryXcamVL94A06i6XVgDWDgfudm5J9zmf0QANT9QoseiyiagdZcTSKpom/ndScys/ThY80Uy/foibKpnxznMU/ofUfPcOKnCd9IO2+1e+ak1D9Irpa//pZyJq0e9dlZ43tCxbm4Mz40tSTUDbBf/sHfkcDo7f1s22c3p62xd/nGrl6rpPqxf38NMTExawPc2YYVMnnrl0a3zLaxT6Y9M9bU6P2ARd4/xU+hlL5jI5KUutXKk85FHyz99HTnYV57F/jicv4MKfVT1cxg0X7c1kD3JGD660HvZ8CLtdJT34tyF4u/J66IshtN9xHvwXO4KaxzEJAAA=</Configuration>
+            </EventQueue>
+        </EventProcessor>
+    </EventProcessors>
+</STEP-ProductInformation>

@@ -51,8 +51,8 @@ collection.queryNodes().forEach(function (node) {
 	}
 	batch.add(node);
 	if (batch.size() >= 1000) {
-		//collection.removeNodes(batch);
-		callDelete(collection, batch)
+		collection.removeNodes(batch);
+		//callDelete(collection, batch)
 		batch.clear();
 	}
 	//collection.removeNode(node);
@@ -61,13 +61,8 @@ collection.queryNodes().forEach(function (node) {
 
 logger.info("Cleared " + count + " nodes from collection")
 
-var itemType = "stibo:product";
 
 
-function callDelete(pCol, pBatch) {
-	const method = pCol.getClass().getMethod("removeNodes");
-	var oo = method.invoke(pBatch);
-}
 
 /*
 

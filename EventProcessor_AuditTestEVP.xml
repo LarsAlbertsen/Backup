@@ -33,7 +33,7 @@ ScheduleSpecification=
             <SetupGroupLink SetupGroupID="AuditTest"></SetupGroupLink>
             <Name>AuditTestEVP</Name>
             <Configuration>H4sIAAAAAAAA/6VUW2/aMBR+76+IvIm3EdCkaRoQVCBsD1CyQLu9TcY5pEcYO/Olhf36OQSyhtadtL3FJ98t5nyMpdhgbhU1KMWgP9zvePAASpcn0m13SACCyQxFPiC3q+m7j2QYXfULbnMUAWYDEj+AMImSDLSWakQ1jJ9KkugqCPoadwWHIz4FXUihcc3hVoMikTZQfApD6w5DB4hn07QfVoRL7ogadr/EX0CibqfjQ03oQa9kCoaiOKbTJPKCE4VSoTk4RR/kqwXrHOO7JF2MfaA53S94droH0GVAH/SLtKoOeEH64CPNUIBOQI0+J8eP96pPKXInrQ6xoO6OMxIZZeGvaCeN0oHfdzIfdlEY3KE2yGaSbZseG8q11+QF4tnOR1mye8gsh+/z2Y9JnKTx+HoVT0jU4qbX2NHWTytNzy1q9TBs5abXetPt9Eqk++0Vgq5nQXCeHgLGqdYnOpO7tou3lm1rkLf1yTyDDQost7h9zjOpR2/PoxtwWSqdsOEeXtr/+dh+WDXIPemCo4lipaRKoZDKgPqXGrpg1HLTbGNDlYS1W3Lkjf+3+iOry63U16xUaFpXFs/a36TU5V+fxsrdZ/knQKlvMVxoA3tTM1l1LkmnV94ef5NqqwvKoCY/niclfe7a6KMyyTk1cCOzsqWvLnvtslKY527NRU6i17SXWywmwMFA9rL+s2X5DSMfWkS0BQAA</Configuration>
-            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
+            <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">

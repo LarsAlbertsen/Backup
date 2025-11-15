@@ -35,12 +35,6 @@
     "value" : null,
     "description" : null
   }, {
-    "contract" : "AssetBindContract",
-    "alias" : "excelAsset",
-    "parameterClass" : "com.stibo.core.domain.impl.FrontAssetImpl$$Generated$$31",
-    "value" : "32158417",
-    "description" : null
-  }, {
     "contract" : "BusinessFunctionBindContract",
     "alias" : "convertToExcel",
     "parameterClass" : "com.stibo.core.domain.impl.businessrule.function.javascript.reference.BusinessFunctionReferenceImpl",
@@ -51,7 +45,7 @@
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (convertFromExcel,tmpStore,excelAsset,convertToExcel) {
+exports.operation0 = function (convertFromExcel,tmpStore,convertToExcel) {
 
 {
     /**
@@ -69,6 +63,7 @@ e1|e2|e3`;
     csvFile.write(value);
     csvFile.close();
 
+    // Call the external function
     let args1 = new java.util.HashMap();
     args1.put("csvFile", csvFile);
     const result1 = convertToExcel.evaluate(args1);
@@ -86,9 +81,9 @@ e1|e2|e3`;
     myFile.close();
     resultStream.close();
 
+    // Call the external function
     let args = new java.util.HashMap();
     args.put("excelFile", myFile);
-
     var returnValue = convertFromExcel.evaluate(args);
     
     /** @type{Payload) */

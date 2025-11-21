@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <STEPWorkflows>
+        <STEPWorkflow ID="StreamingNotification" Referenced="true"><!-- Definition:
+<scxml name="StreamingNotification" initial="Start" version="0.9">
+  <assignee id="$current" type="user"/>
+  <datamodel>
+    <data id="Notifications" attribute="WFNotifications"/>
+  </datamodel>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=163.0  </editorLayout>
+  <final id="End" discontinued="false">
+    <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="acn-1119e10d-2947-4759-88ec-aeff48516b35"/>
+  </final>
+  <state id="Start" discontinued="false">
+    <transition target="End"/>
+    <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+  </state>
+</scxml>
+<workflowViews>
+  <restriction displaySequence="0" includeSubgroups="false">
+    <mapping displaySequence="0" stateID="Start" viewID="Main"/>
+    <mapping displaySequence="1" stateID="End" viewID="Main"/>
+  </restriction>
+  <view id="Main" automaticSort="false" defaultSortColumn="0">
+    <aspect id="id"/>
+    <aspect id="name"/>
+    <column name="Notifications" mandatory="false" readOnly="false">
+      <plugin pluginID="WorkflowVariable">
+        <parameter id="Variable" value="Notifications"/>
+      </plugin>
+    </column>
+  </view>
+</workflowViews> -->
+            <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
+            <Name>Streaming Notification</Name>
+            <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
+            <Configuration>H4sIAAAAAAAA/41U23LTMBB971cIDa+O7Vxo0rHTh0JnOgOUmVB4VuR1qkGWjC5xw9ezkp2QJpTyYlmXc3bP6qyYd/pOCSeYg3t1YwDHsmbSQmFbKdwSnoB7BytuROs+ikY4qL4YsRUSNmBLZ/z+pBTWgbpXd02rjQPz0FanZJY/NbIs4kBEDCtLunLMOEoUayBMMIdGqM1n7UQtOHNCK0q2YCz+lDQbLShBuLIlfXSuvUrTrutG3WSkzSYdZ9kszS7TGIEuizdJQghRuoLEil+QMFUlrbYikJKnMhtlZBe/XZlPw/hY5u8mOJIkWV6QAhWwBtESJ/2MMOeMWGNJSvr99jhJS4moSvp8aVmkAbW86MeBC5mZtWKjACLmLffGgMIiuF2LxN6CCdD9oYiohWKSVMJyrZxQHhAYi9vH/aCq1wWPe8V5Pu81Z73m8ewgmRRaYSZmR9beCgXWMh7AIQTjKsnzfAF5ViXjxfQymV7OFsl8DjxhUNfT+Sx/t57MQuoDSxAeE48SrENHvCyhN8L/iphOXtbgDFPDeeTcgNvXJ/2zE1KLCcWfYJjlYNOtgK4sroNJD77LRxkloLiu0Jslffh6m8wpQbyqmESxJd2BpdfIpez4qtPmRy119w2ZbG/XK1x/ZlnrxFqPuG5oSBmTDmFjHT4xgZavoGZeuhU2042Wvgnmp4RhwzZoLh7W99XrCSIJsy1wF2lERdO/74RWe7bHY4ChBU9Mjf1Y3Su5O1xVEzQ7bXbn4SNZK/1GKNIPd++xT/bVYEawtTwF9CBmMDg+GzHBw0myZdKf5ZSeREz7WEeC0l7RUNk0lHb4N2CxgaOn8Qni0lew8uuN0b61B4lo0Vay3Qp+erxzCJU/Im9Y26ILSHRPEDi8YCFKmA73d86R/oskGPQ1inxPUaRHOoKBz1yHi72bfwOIYmBW4wUAAA==</Configuration>
+            <LocalBusinessRule ID="acn-1119e10d-2947-4759-88ec-aeff48516b35" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (RemoveObjectFromWorkflowAction):
+Workflow=
+Message=
+ -->
+                <Configuration>H4sIAAAAAAAA/5WQMY7CMBBFe05hTU8CHYUdBEJIFAgUgraMvGFiGRzbsp2we3sM2UWhoKB9o3nz51vVCqlLbq2S6EtZl5XRtRTURxAy2497xuj8p1GkQ+el0QymyQQI6sqcpBYMjsV6PIN5NqLL1kuN3uetwmxEyBPsHzoynPdos2KQY2M63H2fsQprZ5ov4y61MtdFFeI5uIuias8dbzDEDD0YInLX/K8BKX4tMjjzjieKa5EcgotBIaPpc+ONYxvDcYEfKAbgEYymrz/HVtLXWv4avgEbm6IRgQEAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+        </STEPWorkflow>
+    </STEPWorkflows>
+</STEP-ProductInformation>

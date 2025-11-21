@@ -4,9 +4,13 @@
         <Model id="com.stibo.industrystandard.eclass.domain.impl.aspects.EclassAdvancedModel.Component">
             <NodeAspectDescriptors>
                 <NodeAspectDescriptor id="com.stibo.industrystandard.eclass.domain.interfaces.model.EclassAdvancedProduct"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.industrystandard.eclass.domain.interfaces.model.EclassAdvancedTemplateObjectType"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.industrystandard.eclass.domain.interfaces.model.EclassAdvancedTemplateSchemaObjectType"></NodeAspectDescriptor>
             </NodeAspectDescriptors>
             <LinkAspectDescriptors></LinkAspectDescriptors>
-            <ValueAspectDescriptors></ValueAspectDescriptors>
+            <ValueAspectDescriptors>
+                <ValueAspectDescriptor id="com.stibo.industrystandard.eclass.domain.interfaces.model.EclassAdvancedTemplateStandardAttribute"></ValueAspectDescriptor>
+            </ValueAspectDescriptors>
         </Model>
     </ComponentModels>
 </STEP-ProductInformation>

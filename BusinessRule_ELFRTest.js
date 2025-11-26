@@ -42,18 +42,45 @@
     "description" : null
   }, {
     "contract" : "BusinessFunctionBindContract",
-    "alias" : "hov",
+    "alias" : "toAVRO",
     "parameterClass" : "com.stibo.core.domain.impl.businessrule.function.javascript.reference.BusinessFunctionReferenceImpl",
-    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>hasOrphanValues</BusinessFunction>\n</BusinessFunctionReference>\n",
+    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>ELFRSerializeJsonToAVRO</BusinessFunction>\n</BusinessFunctionReference>\n",
+    "description" : null
+  }, {
+    "contract" : "BusinessFunctionBindContract",
+    "alias" : "toJSON",
+    "parameterClass" : "com.stibo.core.domain.impl.businessrule.function.javascript.reference.BusinessFunctionReferenceImpl",
+    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>ELFRDeserializeAVROtoJSON</BusinessFunction>\n</BusinessFunctionReference>\n",
     "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,logger,manager,hov) {
-var doc = <ROOT/>;
+exports.operation0 = function (node,logger,manager,toAVRO,toJSON) {
+var schema = {
+  "type": "record",
+  "name": "SimpleRecord",
+  "fields": [
+    {
+      "name": "A",
+      "type": "int"
+    },
+    {
+    	name:"B", type:"string"
+    },
+    {
+    	name:"C", type:"string"
+    }
+  ]
+}
 
-logger.info('User Count ' + manager.getUserHome().getUserCount())
+var data = {A : 123, B:"sdf", C:"This is a third value"}
 
+var avroData  = toAVRO.evaluate({json:JSON.stringify(data), schema:JSON.stringify(schema)})
+
+logger.info('avroData [' + avroData + ']');
+
+var jsonString = toJSON.evaluate({avro:avroData, schema:JSON.stringify(schema)})
+logger.info('json ' + jsonString)
 }

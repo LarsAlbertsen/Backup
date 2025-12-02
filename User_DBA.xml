@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="DBA" Deactivated="false">
+        <User ID="DBA" ForceAuthentication="true">
             <Name>DBA</Name>
-            <MetaData>
-                <Value AttributeID="UserLastActivityDate">2025-09-02</Value>
-            </MetaData>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <UserGroupLink UserGroupID="Super user"></UserGroupLink>
             <SystemSetup>

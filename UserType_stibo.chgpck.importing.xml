@@ -4,7 +4,6 @@
         <UserType ID="stibo.chgpck.importing">
             <Name>Re-testing change package</Name>
             <AttributeLink AttributeID="ChangePackageDescription"></AttributeLink>
-            <AttributeLink AttributeID="ChangePackageState"></AttributeLink>
             <AttributeLink AttributeID="ChangePackageTeam"></AttributeLink>
             <AttributeLink AttributeID="GITBranch"></AttributeLink>
         </UserType>

@@ -722,13 +722,14 @@
             <parameter id="UseImmediateSave" value="false"/>
             <parameter id="showTopItemDetailsOnLoad" value="false"/>
             <parameter-list id="Headers">
-              <component id="Headers" type="TitleHeader">
-                <parameter id="EnableLink" value="true"/>
-              </component>
               <component id="Headers" type="IDHeader">
                 <parameter id="EnableLink" value="true"/>
               </component>
+              <component id="Headers" type="TitleHeader">
+                <parameter id="EnableLink" value="true"/>
+              </component>
               <component id="Headers" type="ObjectTypeHeader"/>
+              <component id="Headers" type="NameHeader"/>
             </parameter-list>
           </component>
           <component id="DisplayModes" type="TableDisplayMode">
@@ -759,43 +760,6 @@
         <parameter value="Branch"/>
         <parameter value="ProductRoot"/>
         <parameter value="Item"/>
-        <parameter value="Classification 1 user-type root"/>
-        <parameter value="GPC Root"/>
-        <parameter value="AssetRoot"/>
-        <parameter value="ProductImageRoot"/>
-        <parameter value="AssetLevel1"/>
-        <parameter value="IllustrationRoot"/>
-        <parameter value="AssetLevel2"/>
-        <parameter value="OwnersManualRoot"/>
-        <parameter value="InstallationManualRoot"/>
-        <parameter value="MSDSRoot"/>
-        <parameter value="VideoRoot"/>
-        <parameter value="LogoRoot"/>
-        <parameter value="IconRoot"/>
-        <parameter value="ConfigurationsRoot"/>
-        <parameter value="AssetPushConfigurationsRoot"/>
-        <parameter value="AutoClassificationRuleSetsRoot"/>
-        <parameter value="ImportConfigurationsRoot"/>
-        <parameter value="ImportConfigurationsLevel1"/>
-        <parameter value="BusinessRulesDownloadsRoot"/>
-        <parameter value="PortalConfigurationsRoot"/>
-        <parameter value="PortalConfigurationsLevel1"/>
-        <parameter value="SmartSheetConfigurationsRoot"/>
-        <parameter value="ExportConfigurationsRoot"/>
-        <parameter value="ExportConfigurationsLevel1"/>
-        <parameter value="ExportConfigurationsLevel2"/>
-        <parameter value="SystemChangesRoot"/>
-        <parameter value="SystemChangeYear"/>
-        <parameter value="SystemChangeMonth"/>
-        <parameter value="SystemChangeDate"/>
-        <parameter value="SystemChangeUser"/>
-        <parameter value="SystemChange"/>
-        <parameter value="stibo.IndexWord"/>
-        <parameter value="EclassFolder"/>
-        <parameter value="Suppliers"/>
-        <parameter value="Supplier"/>
-        <parameter value="SupplierProducts"/>
-        <parameter value="SupplierAssets"/>
       </parameter-list>
     </screen>
     <screen id="Initiate_Item" type="InitiateItem">
@@ -920,11 +884,6 @@
                 <component id="Rows" type="NameValue">
                   <parameter id="CssClass" value="stibo-NameValue"/>
                   <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
-                  <parameter id="Mandatory" value="false"/>
-                  <parameter id="ReadOnly" value="false"/>
-                </component>
-                <component id="Rows" type="ObjectType">
-                  <parameter id="Label" value="i18n.stibo.ObjectType.Label"/>
                   <parameter id="Mandatory" value="false"/>
                   <parameter id="ReadOnly" value="false"/>
                 </component>
@@ -1194,36 +1153,7 @@
           <component id="TabPages" type="SubScreenTabPage">
             <parameter id="DetailsScreen" value="MultiRevisionScreen"/>
             <parameter id="Lazy" value="true"/>
-            <parameter id="Title" value="Revisions"/>
-          </component>
-          <component id="TabPages" type="TabPage">
-            <component id="TabContent" type="NodeEditor">
-              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
-              <parameter id="LabelLayout" value="LEFT"/>
-              <parameter-list id="Rows">
-                <component id="Rows" type="ValueGroup">
-                  <parameter id="AttributeGroup" value="Attribute group root"/>
-                  <parameter id="DisplayContextHelp" value="true"/>
-                  <parameter id="DisplayMode" value="Hierarchical"/>
-                  <parameter id="DisplayValueHistory" value="true"/>
-                  <parameter id="EnableLocaleFormatting" value="false"/>
-                  <parameter id="EnableStepTags" value="false"/>
-                  <parameter id="EnableTagConversion" value="true"/>
-                  <parameter id="FilterAttributeType" value="Both"/>
-                  <parameter id="IncludeReferences" value="true"/>
-                  <parameter id="MandatoryGroup" value="false"/>
-                  <parameter id="MaxSuggestions" value="10"/>
-                  <parameter id="ReadOnly" value="false"/>
-                  <parameter id="RichTextEditing" value="Never"/>
-                  <parameter id="ShowLOVIDs" value="false"/>
-                  <parameter id="SortLOVByID" value="false"/>
-                  <parameter id="SuggestOracle" value="false"/>
-                  <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
-                </component>
-              </parameter-list>
-            </component>
-            <parameter id="Lazy" value="true"/>
-            <parameter id="Title" value="Attributes"/>
+            <parameter id="Title" value="i18n.stibo.portal.server.components.tabs.SubScreenTabPageServerComponent.default.title"/>
           </component>
         </parameter-list>
       </component>
@@ -1524,200 +1454,6 @@
       <parameter id="ShowWarning" value="false"/>
       <parameter id="Title" value="Asset"/>
     </screen>
-    <screen id="Screen_AttributeGroupManagement" type="AttributeGroupManagementScreen">
-      <component id="Buttons" type="Buttons">
-        <parameter-list id="Actions">
-          <component id="Actions" type="SaveAction">
-            <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
-            <parameter id="ButtonType" value="TEXT"/>
-            <parameter id="EnforceValidity" value="false"/>
-            <parameter id="ReloadAfterSave" value="true"/>
-          </component>
-          <component id="Actions" type="ResetAction">
-            <parameter id="ButtonLabel" value="i18n.stibo.ResetAction.Label"/>
-            <parameter id="ButtonType" value="TEXT"/>
-          </component>
-          <component id="Actions" type="DeleteAction">
-            <parameter id="ApproveDeletion" value="false"/>
-            <parameter id="ButtonLabel" value="i18n.stibo.DeleteAction.Label"/>
-            <parameter id="ButtonType" value="TEXT"/>
-            <parameter id="CssClass" value="DeleteButton"/>
-            <parameter id="DeleteFromWorkflow" value="false"/>
-          </component>
-          <component id="Actions" type="CreateAttributeAndAttributeGroupAction">
-            <parameter id="ButtonType" value="TEXT"/>
-          </component>
-        </parameter-list>
-      </component>
-      <component id="NodeEditor" type="NodeEditor">
-        <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
-        <parameter id="LabelLayout" value="LEFT"/>
-        <parameter-list id="Rows">
-          <component id="Rows" type="IdValue">
-            <parameter id="CssClass" value="stibo-IdValue"/>
-            <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
-          </component>
-          <component id="Rows" type="NameValue">
-            <parameter id="CssClass" value="stibo-NameValue"/>
-            <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
-            <parameter id="Mandatory" value="false"/>
-            <parameter id="ReadOnly" value="false"/>
-          </component>
-          <component id="Rows" type="LastEditedBy">
-            <parameter id="Label" value="i18n.stibo.LastEditedByValue.Label"/>
-          </component>
-          <component id="Rows" type="ManuallySorted">
-            <parameter id="Label" value="i18n.stibo.ManuallySortedValue.Label"/>
-          </component>
-        </parameter-list>
-      </component>
-      <component id="NodeList" type="NodeList">
-        <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
-        <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
-        <parameter id="DefaultSortingOrder" value="Ascending"/>
-        <parameter id="EnableDefaultSorting" value="true"/>
-        <parameter id="HideSelectAllButton" value="false"/>
-        <parameter id="HideStandardButtons" value="true"/>
-        <parameter id="ID" value="Default"/>
-        <parameter id="IncludeLabels" value="true"/>
-        <parameter id="LookupScreenTypeForNavigation" value="true"/>
-        <parameter id="PageSize" value="50"/>
-        <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
-        <parameter id="ToolbarHeight" value="30"/>
-        <parameter id="UseDetailsOverlay" value="false"/>
-        <parameter-list id="Actions"/>
-        <parameter-list id="DisplayModes">
-          <component id="DisplayModes" type="SequencingDisplayMode">
-            <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.SequenceDisplayMode"/>
-            <parameter id="DisplayModeHeight" value="600"/>
-            <parameter id="EnableFiltering" value="false"/>
-            <parameter id="GroupsInitiallyOpen" value="false"/>
-            <parameter id="ShowEmptyGroupHeaders" value="true"/>
-            <parameter id="ShowGroupHeaders" value="true"/>
-            <parameter id="ShowOnlyValidAttributes" value="false"/>
-            <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.SequenceDisplayMode"/>
-            <parameter-list id="Headers">
-              <component id="Headers" type="IDHeader">
-                <parameter id="EnableLink" value="true"/>
-              </component>
-              <component id="Headers" type="NameHeader"/>
-            </parameter-list>
-          </component>
-        </parameter-list>
-      </component>
-      <parameter id="Title" value="i18n.stibo.AttributeGroupManagementScreen.Title"/>
-    </screen>
-    <screen id="Screen_AttributeManagement" type="AttributeManagementScreen">
-      <component id="Buttons" type="Buttons">
-        <parameter-list id="Actions">
-          <component id="Actions" type="SaveAction">
-            <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
-            <parameter id="ButtonType" value="TEXT"/>
-            <parameter id="EnforceValidity" value="false"/>
-            <parameter id="ReloadAfterSave" value="true"/>
-          </component>
-          <component id="Actions" type="DeleteAction">
-            <parameter id="ApproveDeletion" value="false"/>
-            <parameter id="ButtonLabel" value="i18n.stibo.DeleteAction.Label"/>
-            <parameter id="ButtonType" value="TEXT"/>
-            <parameter id="CssClass" value="DeleteButton"/>
-            <parameter id="DeleteFromWorkflow" value="false"/>
-          </component>
-          <component id="Actions" type="ResetAction">
-            <parameter id="ButtonLabel" value="i18n.stibo.ResetAction.Label"/>
-            <parameter id="ButtonType" value="TEXT"/>
-          </component>
-        </parameter-list>
-      </component>
-      <component id="Main" type="TabControl">
-        <parameter id="DirtyWarning" value="false"/>
-        <parameter-list id="TabPages">
-          <component id="TabPages" type="TabPage">
-            <component id="TabContent" type="NodeEditor">
-              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
-              <parameter id="LabelLayout" value="LEFT"/>
-              <parameter-list id="Rows">
-                <component id="Rows" type="Headline">
-                  <parameter id="CssClass" value="stb-header"/>
-                  <parameter id="HeaderText" value="i18n.stibo.AttributeManagementScreen.Header.Description"/>
-                </component>
-                <component id="Rows" type="Line">
-                  <parameter id="CssClass" value="stb-line"/>
-                </component>
-                <component id="Rows" type="IdValue">
-                  <parameter id="CssClass" value="stibo-IdValue"/>
-                  <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
-                </component>
-                <component id="Rows" type="NameValue">
-                  <parameter id="CssClass" value="stibo-NameValue"/>
-                  <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
-                  <parameter id="Mandatory" value="false"/>
-                  <parameter id="ReadOnly" value="false"/>
-                </component>
-                <component id="Rows" type="LastEditedBy">
-                  <parameter id="Label" value="i18n.stibo.LastEditedByValue.Label"/>
-                </component>
-                <component id="Rows" type="AttributeExternallyMaintained">
-                  <parameter id="Label" value="i18n.stibo.Revise.Label"/>
-                </component>
-                <component id="Rows" type="HierarchicalFiltering">
-                  <parameter id="Label" value="i18n.stibo.HierarchicalFiltering.Label"/>
-                </component>
-                <component id="Rows" type="AttributeCalculated">
-                  <parameter id="Label" value="i18n.stibo.Calculated.Label"/>
-                </component>
-                <component id="Rows" type="ValueTemplate">
-                  <parameter id="Label" value="i18n.stibo.ValueTemplate.Label"/>
-                </component>
-                <component id="Rows" type="AttributeType">
-                  <parameter id="Label" value="i18n.stibo.AttributeTypeValue.Label"/>
-                </component>
-                <component id="Rows" type="AttributeDimensionDependencies">
-                  <parameter id="Label" value="i18n.stibo.DimensionDependencies.Label"/>
-                </component>
-                <component id="Rows" type="MandatoryForApproval">
-                  <parameter id="Label" value="i18n.stibo.MandatoryForApprovalValue.Label"/>
-                </component>
-                <component id="Rows" type="Headline">
-                  <parameter id="CssClass" value="stb-header"/>
-                  <parameter id="HeaderText" value="i18n.stibo.AttributeManagementScreen.Header.Validation"/>
-                </component>
-                <component id="Rows" type="Line">
-                  <parameter id="CssClass" value="stb-line"/>
-                </component>
-                <component id="Rows" type="AttributeValidation"/>
-                <component id="Rows" type="Headline">
-                  <parameter id="CssClass" value="stb-header"/>
-                  <parameter id="HeaderText" value="i18n.stibo.AttributeManagementScreen.Header.Groups"/>
-                </component>
-                <component id="Rows" type="Line">
-                  <parameter id="CssClass" value="stb-line"/>
-                </component>
-                <component id="Rows" type="AttributeGroupsServerComponent">
-                  <parameter id="Label" value="i18n.stibo.AttributeManagementScreenHeader.Label"/>
-                </component>
-              </parameter-list>
-            </component>
-            <parameter id="Lazy" value="false"/>
-            <parameter id="Title" value="i18n.stibo.AttributeManagementScreen.Tab.AttributeDetails"/>
-          </component>
-          <component id="TabPages" type="TabPage">
-            <component id="TabContent" type="AttributeValidityTable">
-              <parameter id="HideDefaultButtons" value="false"/>
-              <parameter id="TableTitle" value="i18n.stibo.Validity.Table.Title"/>
-            </component>
-            <parameter id="Lazy" value="false"/>
-            <parameter id="Title" value="i18n.stibo.AttributeManagementScreen.Tab.Validity"/>
-          </component>
-          <component id="TabPages" type="TabPage">
-            <component id="TabContent" type="AttributeLinkManagement"/>
-            <parameter id="Lazy" value="true"/>
-            <parameter id="Title" value="i18n.stibo.AttributeManagementScreen.Tab.Links"/>
-          </component>
-        </parameter-list>
-      </component>
-      <parameter id="Title" value="i18n.stibo.AttributeManagementScreen.Title"/>
-    </screen>
     <screen id="Screen_BackgroundProcessNodeDetails" type="BackgroundProcessNodeDetails">
       <component id="Main" type="NodeEditor">
         <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
@@ -1791,227 +1527,6 @@
       <parameter id="ShowTitle" value="true"/>
       <parameter id="ShowWarning" value="false"/>
       <parameter id="Title" value="i18n.stibo.NodeDetailsServerComponent.Title"/>
-    </screen>
-    <screen id="Screen_Classification" type="NodeDetails">
-      <component id="Main" type="TabControl">
-        <parameter id="DirtyWarning" value="false"/>
-        <parameter-list id="TabPages">
-          <component id="TabPages" type="TabPage">
-            <component id="TabContent" type="NodeEditor">
-              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
-              <parameter id="LabelLayout" value="LEFT"/>
-              <parameter-list id="Rows">
-                <component id="Rows" type="IdValue">
-                  <parameter id="CssClass" value="stibo-IdValue"/>
-                  <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
-                </component>
-                <component id="Rows" type="NameValue">
-                  <parameter id="CssClass" value="stibo-NameValue"/>
-                  <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
-                  <parameter id="Mandatory" value="false"/>
-                  <parameter id="ReadOnly" value="false"/>
-                </component>
-                <component id="Rows" type="ObjectType">
-                  <parameter id="Label" value="i18n.stibo.ObjectType.Label"/>
-                  <parameter id="Mandatory" value="false"/>
-                  <parameter id="ReadOnly" value="false"/>
-                </component>
-              </parameter-list>
-            </component>
-            <parameter id="Lazy" value="true"/>
-            <parameter id="Title" value="ID"/>
-          </component>
-          <component id="TabPages" type="TabPage">
-            <component id="TabContent" type="NodeEditor">
-              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
-              <parameter id="LabelLayout" value="LEFT"/>
-              <parameter-list id="Rows">
-                <component id="Rows" type="ValueGroup">
-                  <parameter id="AttributeGroup" value="Attribute group root"/>
-                  <parameter id="DisplayContextHelp" value="true"/>
-                  <parameter id="DisplayMode" value="Hierarchical"/>
-                  <parameter id="DisplayValueHistory" value="true"/>
-                  <parameter id="EnableLocaleFormatting" value="false"/>
-                  <parameter id="EnableStepTags" value="false"/>
-                  <parameter id="EnableTagConversion" value="false"/>
-                  <parameter id="FilterAttributeType" value="Both"/>
-                  <parameter id="IncludeReferences" value="true"/>
-                  <parameter id="MandatoryGroup" value="false"/>
-                  <parameter id="MaxSuggestions" value="10"/>
-                  <parameter id="ReadOnly" value="false"/>
-                  <parameter id="RichTextEditing" value="Never"/>
-                  <parameter id="ShowLOVIDs" value="false"/>
-                  <parameter id="SortLOVByID" value="false"/>
-                  <parameter id="SuggestOracle" value="false"/>
-                  <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
-                </component>
-              </parameter-list>
-            </component>
-            <parameter id="Lazy" value="true"/>
-            <parameter id="Title" value="Attributes"/>
-          </component>
-          <component id="TabPages" type="SubScreenTabPage">
-            <parameter id="DetailsScreen" value="Generic_Children"/>
-            <parameter id="Lazy" value="true"/>
-            <parameter id="Title" value="Children"/>
-          </component>
-        </parameter-list>
-      </component>
-      <parameter id="EnforceValidity" value="false"/>
-      <parameter id="ShowTitle" value="true"/>
-      <parameter id="ShowWarning" value="false"/>
-      <parameter id="Title" value="Classification"/>
-    </screen>
-    <screen id="Screen_ListOfValuesGroupManagement" type="ListOfValuesGroupManagementScreen">
-      <component id="Buttons" type="Buttons">
-        <parameter-list id="Actions">
-          <component id="Actions" type="SaveAction">
-            <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
-            <parameter id="ButtonType" value="TEXT"/>
-            <parameter id="EnforceValidity" value="false"/>
-            <parameter id="ReloadAfterSave" value="true"/>
-          </component>
-          <component id="Actions" type="ResetAction">
-            <parameter id="ButtonLabel" value="i18n.stibo.ResetAction.Label"/>
-            <parameter id="ButtonType" value="TEXT"/>
-          </component>
-          <component id="Actions" type="DeleteAction">
-            <parameter id="ApproveDeletion" value="false"/>
-            <parameter id="ButtonLabel" value="i18n.stibo.DeleteAction.Label"/>
-            <parameter id="ButtonType" value="TEXT"/>
-            <parameter id="CssClass" value="DeleteButton"/>
-            <parameter id="DeleteFromWorkflow" value="false"/>
-          </component>
-          <component id="Actions" type="CreateLOVAndLOVGroupAction">
-            <parameter id="ButtonType" value="TEXT"/>
-          </component>
-        </parameter-list>
-      </component>
-      <component id="NodeEditor" type="NodeEditor">
-        <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
-        <parameter id="LabelLayout" value="LEFT"/>
-        <parameter-list id="Rows">
-          <component id="Rows" type="IdValue">
-            <parameter id="CssClass" value="stibo-IdValue"/>
-            <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
-          </component>
-          <component id="Rows" type="NameValue">
-            <parameter id="CssClass" value="stibo-NameValue"/>
-            <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
-            <parameter id="Mandatory" value="false"/>
-            <parameter id="ReadOnly" value="false"/>
-          </component>
-          <component id="Rows" type="LastEditedBy">
-            <parameter id="Label" value="i18n.stibo.LastEditedByValue.Label"/>
-          </component>
-        </parameter-list>
-      </component>
-      <component id="NodeList" type="NodeList">
-        <parameter id="ClearAllFilters" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearAllFilters"/>
-        <parameter id="ClearSelection" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.ClearSelection"/>
-        <parameter id="DefaultSortingOrder" value="Ascending"/>
-        <parameter id="EnableDefaultSorting" value="true"/>
-        <parameter id="HideSelectAllButton" value="false"/>
-        <parameter id="HideStandardButtons" value="true"/>
-        <parameter id="ID" value="Default"/>
-        <parameter id="IncludeLabels" value="true"/>
-        <parameter id="LookupScreenTypeForNavigation" value="true"/>
-        <parameter id="PageSize" value="50"/>
-        <parameter id="SelectAllLabel" value="i18n.stibo.portal.server.components.masterdetail.NodeListServerComponent.default.SelectAllLabel"/>
-        <parameter id="ToolbarHeight" value="30"/>
-        <parameter id="UseDetailsOverlay" value="false"/>
-        <parameter-list id="DisplayModes">
-          <component id="DisplayModes" type="SequencingDisplayMode">
-            <parameter id="ContextHelp" value="i18n.stibo.portal.server.components.masterdetail.SequenceDisplayMode"/>
-            <parameter id="DisplayModeHeight" value="600"/>
-            <parameter id="EnableFiltering" value="false"/>
-            <parameter id="GroupsInitiallyOpen" value="false"/>
-            <parameter id="ShowEmptyGroupHeaders" value="true"/>
-            <parameter id="ShowGroupHeaders" value="true"/>
-            <parameter id="ShowOnlyValidAttributes" value="false"/>
-            <parameter id="Title" value="i18n.stibo.portal.server.components.masterdetail.SequenceDisplayMode"/>
-          </component>
-        </parameter-list>
-      </component>
-      <parameter id="Title" value="i18n.stibo.ListOfValuesGroupManagementScreen.Title"/>
-    </screen>
-    <screen id="Screen_ListOfValuesManagement" type="ListOfValuesManagementScreen">
-      <component id="Buttons" type="Buttons">
-        <parameter-list id="Actions">
-          <component id="Actions" type="SaveAction">
-            <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
-            <parameter id="ButtonType" value="TEXT"/>
-            <parameter id="EnforceValidity" value="false"/>
-            <parameter id="ReloadAfterSave" value="true"/>
-          </component>
-          <component id="Actions" type="DeleteAction">
-            <parameter id="ApproveDeletion" value="false"/>
-            <parameter id="ButtonLabel" value="i18n.stibo.DeleteAction.Label"/>
-            <parameter id="ButtonType" value="TEXT"/>
-            <parameter id="CssClass" value="DeleteButton"/>
-            <parameter id="DeleteFromWorkflow" value="false"/>
-          </component>
-          <component id="Actions" type="ResetAction">
-            <parameter id="ButtonLabel" value="i18n.stibo.ResetAction.Label"/>
-            <parameter id="ButtonType" value="TEXT"/>
-          </component>
-        </parameter-list>
-      </component>
-      <component id="Main" type="TabControl">
-        <parameter id="DirtyWarning" value="false"/>
-        <parameter-list id="TabPages">
-          <component id="TabPages" type="TabPage">
-            <component id="TabContent" type="NodeEditor">
-              <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
-              <parameter id="LabelLayout" value="LEFT"/>
-              <parameter-list id="Rows">
-                <component id="Rows" type="IdValue">
-                  <parameter id="CssClass" value="stibo-IdValue"/>
-                  <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
-                </component>
-                <component id="Rows" type="NameValue">
-                  <parameter id="CssClass" value="stibo-NameValue"/>
-                  <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
-                  <parameter id="Mandatory" value="false"/>
-                  <parameter id="ReadOnly" value="false"/>
-                </component>
-                <component id="Rows" type="LastEditedBy">
-                  <parameter id="Label" value="i18n.stibo.LastEditedByValue.Label"/>
-                </component>
-                <component id="Rows" type="ListOfValuesDimensionDependencies">
-                  <parameter id="Label" value="i18n.stibo.DimensionDependencies.Label"/>
-                </component>
-                <component id="Rows" type="Headline">
-                  <parameter id="CssClass" value="stb-header"/>
-                  <parameter id="HeaderText" value="i18n.stibo.ListOfValuesManagementScreen.Header.Validation"/>
-                </component>
-                <component id="Rows" type="Line">
-                  <parameter id="CssClass" value="stb-line"/>
-                </component>
-                <component id="Rows" type="ListOfValuesValidation"/>
-                <component id="Rows" type="Headline">
-                  <parameter id="CssClass" value="stb-header"/>
-                  <parameter id="HeaderText" value="i18n.stibo.ListOfValuesManagementScreen.Header.Values"/>
-                </component>
-                <component id="Rows" type="Line">
-                  <parameter id="CssClass" value="stb-line"/>
-                </component>
-                <component id="Rows" type="ListOfValuesValueIds"/>
-              </parameter-list>
-            </component>
-            <parameter id="Lazy" value="false"/>
-            <parameter id="Title" value="i18n.stibo.ListOfValuesManagementScreen.Tab.Details.Title"/>
-          </component>
-          <component id="TabPages" type="TabPage">
-            <component id="TabContent" type="ListOfValuesValues">
-              <parameter id="MaxValues" value="5000"/>
-            </component>
-            <parameter id="Lazy" value="false"/>
-            <parameter id="Title" value="i18n.stibo.ListOfValuesManagementScreen.Tab.Values.Title"/>
-          </component>
-        </parameter-list>
-      </component>
-      <parameter id="Title" value="i18n.stibo.ListOfValuesManagementScreen.Title"/>
     </screen>
     <screen id="TaskList_CreateItem" type="TaskList">
       <component id="NodeList" type="NodeList">
@@ -2174,34 +1689,6 @@
                 <parameter value="Final"/>
               </parameter-list>
             </component>
-            <component id="Widgets" type="StatusSelectorHomepageWidget">
-              <parameter id="AutoRefreshInterval" value="2"/>
-              <parameter id="DefaultTaskMode" value="Group"/>
-              <parameter id="DoubleWidth" value="false"/>
-              <parameter id="InitiateLabel" value="Initiate"/>
-              <parameter id="ResultScreen" value="homepage"/>
-              <parameter id="ShowAll" value="true"/>
-              <parameter id="ShowCollectionFilter" value="false"/>
-              <parameter id="ShowGroup" value="true"/>
-              <parameter id="ShowInitiate" value="false"/>
-              <parameter id="ShowStatusFlagHeaders" value="false"/>
-              <parameter id="ShowTotal" value="false"/>
-              <parameter id="ShowUser" value="true"/>
-              <parameter id="StatusFlagsEnabled" value="false"/>
-              <parameter id="TotalLabel" value="Total"/>
-              <parameter id="UseContentIndicator" value="false"/>
-              <parameter id="Workflow" value="TestWF"/>
-              <parameter-list id="States">
-                <parameter value="Initial"/>
-                <parameter value="State-10"/>
-                <parameter value="State-11"/>
-                <parameter value="Initial1"/>
-                <parameter value="Final1"/>
-                <parameter value="Enrich"/>
-                <parameter value="Approve"/>
-                <parameter value="Final"/>
-              </parameter-list>
-            </component>
           </parameter-list>
         </component>
         <component id="Content" type="WidgetGrid">
@@ -2255,11 +1742,6 @@
             <component id="MenuItems" type="GlobalNavigationSearch">
               <parameter id="Icon" value="search"/>
               <parameter id="Label" value="i18n.stibo.GlobalNavigationSearch.GlobalSearch"/>
-              <parameter-list id="ObjectTypesForTypeahead">
-                <parameter value="stibo.grouping attribute"/>
-                <parameter value="stibo.normalattribute"/>
-                <parameter value="Item"/>
-              </parameter-list>
               <parameter-list id="SearchConfigurations">
                 <component id="SearchConfigurations" type="GlobalNavigationSearchConfiguration">
                   <parameter id="Title" value="Name/Id/Attributes"/>
@@ -2278,17 +1760,6 @@
               <parameter id="Label" value="i18n.stibo.webui.primarynavigation.TreeItem.Label"/>
               <parameter id="ShowLeaves" value="false"/>
               <parameter id="showRecycle" value="false"/>
-              <parameter-list id="RootNodeURLs">
-                <parameter value="step://classification?id=AssetsRoot"/>
-                <parameter value="step://classification?id=ConfigurationsRoot"/>
-                <parameter value="step://classification?id=Suppliers"/>
-                <parameter value="step://entity?id=119552"/>
-                <parameter value="step://entity?id=BusinessEntitiesRoot"/>
-                <parameter value="step://entity?id=SystemsRoot"/>
-                <parameter value="step://product?id=Product+hierarchy+root"/>
-                <parameter value="step://attributegroup?id=Attribute+group+root"/>
-                <parameter value="step://ListOfValuesGroup?id=List+Of+Values+group+root"/>
-              </parameter-list>
             </component>
             <component id="MenuItems" type="Task">
               <parameter id="AutoRefreshInterval" value="0"/>
@@ -2336,62 +1807,10 @@
                 </component>
               </parameter-list>
             </component>
-            <component id="MenuItems" type="LinksMenuItemServerComponent">
-              <parameter id="Icon" value="link"/>
-              <parameter id="Label" value="Links"/>
-              <parameter-list id="Children">
-                <component id="Children" type="ScreenNavigation">
-                  <parameter id="Label" value="AttributeGroup"/>
-                  <parameter id="Screen" value="Screen_AttributeGroupManagement"/>
-                </component>
-              </parameter-list>
-            </component>
-            <component id="MenuItems" type="DesignModeTile">
-              <parameter id="Icon" value="build"/>
-              <parameter id="Label" value="i18n.stibo.webui.primarynavigation.designmode.Label"/>
-            </component>
           </parameter-list>
         </component>
       </parameter-list>
       <parameter-list id="Mappings">
-        <component id="Mappings" type="ScreenMapping">
-          <parameter id="Screen" value="Screen_Classification"/>
-          <parameter-list id="Conditions">
-            <component id="Conditions" type="ClassificationCondition"/>
-          </parameter-list>
-        </component>
-        <component id="Mappings" type="ScreenMapping">
-          <parameter id="Screen" value="Screen_ListOfValuesManagement"/>
-          <parameter-list id="Conditions">
-            <component id="Conditions" type="ObjectTypeCondition">
-              <parameter id="ObjectType" value="Domain user-type root"/>
-            </component>
-          </parameter-list>
-        </component>
-        <component id="Mappings" type="ScreenMapping">
-          <parameter id="Screen" value="Screen_ListOfValuesGroupManagement"/>
-          <parameter-list id="Conditions">
-            <component id="Conditions" type="ObjectTypeCondition">
-              <parameter id="ObjectType" value="List Of Values group type"/>
-            </component>
-          </parameter-list>
-        </component>
-        <component id="Mappings" type="ScreenMapping">
-          <parameter id="Screen" value="Screen_AttributeManagement"/>
-          <parameter-list id="Conditions">
-            <component id="Conditions" type="ObjectTypeCondition">
-              <parameter id="ObjectType" value="stibo.normalattribute"/>
-            </component>
-          </parameter-list>
-        </component>
-        <component id="Mappings" type="ScreenMapping">
-          <parameter id="Screen" value="Screen_AttributeGroupManagement"/>
-          <parameter-list id="Conditions">
-            <component id="Conditions" type="ObjectTypeCondition">
-              <parameter id="ObjectType" value="stibo.grouping attribute"/>
-            </component>
-          </parameter-list>
-        </component>
         <component id="Mappings" type="ScreenMapping">
           <parameter id="Screen" value="Entity"/>
           <parameter-list id="Conditions">
@@ -2584,7 +2003,7 @@
 </portal-config> -->
             <SetupGroupLink SetupGroupID="WebUIs"></SetupGroupLink>
             <Name>LAALUI</Name>
-            <Configuration>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</Configuration>
+            <Configuration>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z6QOY1JWrsWYbAkQelj2Que4G3prrIPcGZb4v1rohxoZzosc4pGpiJksTJTfhclNHs6PECQRGUspuYT8PlsGYg5989dsSNTXU3KH1/YUVwa/1VzbtPtW23x22qYNFzPb/nlwMhnM031xQiVdN74ZOf/s3OLvkuRyMuAneDlylr7uu7LXatorktsrktU3grFVvu1ru5SZuu29Xe3pgvZ0wZ6fLvA813Oh58GJKvO9PV5QJHlsdLygvfWriVhJe76gvfWrsYu5FPdsadtQ00YeCrcLamPLK7LMTFg3+D1aIc6aH6NdBIJw4M99afx2HU3/NHEBvvD4ll1zb3FshTiIwzssfvrhDPFtCj1mmNf2j15GafFx03j7s5lomhTYzrNintuL8zS0by/OU85ne3GefDlU8ms1saPH9pl4zvFq224T7F+F++w9UcSmWvdJ6z5p3SeNuk+AN51MwcQFrfekdX+07o/W/bF790d76Xlru7W2W2u7idl5tTP12B/Jhz84zrt0BucQ/4X+XrCNmAzNjYIoPiTF+QBPutf/QohKatOT84cTog8dkrZFdP66//F8TNu9e8k6RLgSEqG6WCR/eId2Bz/98P+ru2UQmmYBAA==</Configuration>
         </PortalConfiguration>
     </PortalConfigurations>
 </STEP-ProductInformation>

@@ -5,7 +5,7 @@
             <Name>MyDataContainerType</Name>
             <AttributeGroupLink AttributeGroupID="Attribute group root"></AttributeGroupLink>
             <AttributeLink AttributeID="DeleteMeViaXML"></AttributeLink>
-            <AttributeLink AttributeID="a4"></AttributeLink>
+            <AttributeLink AttributeID="a1"></AttributeLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
         </DataContainerType>
     </DataContainerTypes>

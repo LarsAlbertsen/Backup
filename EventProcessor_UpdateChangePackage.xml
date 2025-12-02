@@ -23,7 +23,6 @@ PluginConfiguration=
   <simple id="Context">step://context?id=Context1</simple>
   <simple id="SkipDeletedNodes">true</simple>
   <simple id="Workspace">step://workspace?id=Main</simple>
-  <simple id="WorkspaceTriggering">Approved</simple>
 </plugin>
 ScheduleSpecification=
 <entries>
@@ -31,7 +30,7 @@ ScheduleSpecification=
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>Update ChangePackage</Name>
-            <Configuration>H4sIAAAAAAAA/6VUbW/TMBD+vl8RGdRvtKmQ0ES7lL5kgNSy0HaMb8hzbumprh189lj59TgvLbQlDKn5Evv8PM+dz3c31uoBM2e4Ra2u+oOnjQwewVCxY912yAJQQqeosit2u7x+dckG0UU/ly5DFWB6xeJHUDYxWgCRNiNOMP5TkkUXQdAn3OQSSvwcKNeK8F7CLYFhEVnI33Y6zm8GHjAdDqf9TkU45o64FasF/gQWdcMwbIJN+JaWeg6WoyrDIxY1ghOD2qDdeskmyGcHzruMvyTzm3ETaMafbmRaJwKojLAJ+0E7s4/wiPXmsok1RQWUgBm9T/59/2uO0mubbay4T3PKImscPIv20qg9+HWYNmFvcosbJItiqsX6/338hbfz1g1XTayFWEHqJHydTb9N4mQej4fLeMKilrS9g0JtfXfa9ny1VotBK7O91otu2CuQ/v0NAu1tQbCzbgMhOVFNF3rT9hHe67azKNtUO0/hARUWpdzexTPZm17uTL7MzHaGylmo1GpX9QfF8S7M6tc5CLJzHOXvnPQ7Vbf5FeUSbRQbo80ccm0smPNbNt74AjjQPOnZa265LHHDNDWexSLJuXxXpou2voM31Pb5a3rIM6gflZAuhTtulL8QHZfZSXKScjs+d6qNHBXdRkNRKNyhXZVJKwfQYfoqhycpOxTYT7n72mx8zRTTbgFcjldcZZBwseZZYwf5G1l4snshUe0LjfqocXzdabOmnAvYk3/sLAV95mfQs9SlwSzzHasyFg3z3OhHaBwSizXmE5BgIf2kU3j+zX4BLHaA7YQGAAA=</Configuration>
+            <Configuration>H4sIAAAAAAAA/6VU247aMBB95yuiqOKtXFSpWnUhFEJoK0FJgS19q4wzCyOMnXrsLfTr61ygCzTdSuQlmck5Z8bjmQmVfMS11cygkt1Ob78T3hNoyiy/3Wj5HkiuEpTrrv+wGL2+83tBrZMKu0bpYdL1oyeQJtaKA5HSA0YQPpf0g5rndQh3qYAcPwNKlSRcCXgg0H5ABtJ3zaZ1Rs8Bxv3+uNMsCJfcATN8M8df4AftVqtVBRuyAy3UDAxDmadHflAJjjUqjebgJKsgXyxYFzL6Gs+mYRVowvZTkZSFAMozrMJ+VFafMrxgvb2rYo1RAsWgBx/if59/xFA4bX2IJHNlTvzAaAsvop00Kgd+00qqsNPU4A7JIB8rvv3/GH/hHaO1W5sq1pxvILECvk3G34dRPIvC/iIa+kFdmPuzRq3/sMrcu24tPnr1tbmvZSh39xqBctvzjp6DxwUjKmlc7Rous5VqWIOiQWXQBB5RYtbCjWMew5Pr1dHl2ksfJiitgULNhSkfyH4dUytezVNizeeZ/Tl/p1lMlvuiVKAJIq2VnkGqtAF9+3hGO3fZZ5pX8zlihokc108S7Vh+IBgT7/MS0cFN644armZVl3YD9ZPkwiawZFq6A9FlS10VJ87N8NYNNrCUTRb1eaawRLPJi5Yvm/PyFQGvSnYucNpoq9KtXZ9km20OTIQbJtcQM75l68ppcScysDcnIV7YmUb5q3JVLZXeUso4nMg/j56MPnH7pnLatpgOQYCB5LNK4OXy/waClJADOwYAAA==</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

@@ -6,7 +6,6 @@
             <UserTypeLink UserTypeID="AssetAnalyzer.SetupGroup"></UserTypeLink>
             <UserTypeLink UserTypeID="Gateway Integration Endpoints"></UserTypeLink>
             <AttributeLink AttributeID="MyLOV"></AttributeLink>
-            <AttributeLink AttributeID="Purpose"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

@@ -54,11 +54,11 @@
             <AttributeLink AttributeID="9d32fd81-7282-4f86-a350-e031c80cfb78"></AttributeLink>
             <AttributeLink AttributeID="Bullet01"></AttributeLink>
             <AttributeLink AttributeID="9ba4a283-151e-403a-a4db-9b4f0f92aa7c"></AttributeLink>
+            <AttributeLink AttributeID="a3"></AttributeLink>
             <AttributeLink AttributeID="40acb3b4-3368-4aaf-a2c7-cf0c4c6d267c"></AttributeLink>
             <AttributeLink AttributeID="3b26f0b2-60f8-43b8-bfa8-1cb447688907"></AttributeLink>
             <AttributeLink AttributeID="f85abef2-7945-4889-9796-3ebff6d3e348"></AttributeLink>
             <AttributeLink AttributeID="MFGPartNo"></AttributeLink>
-            <AttributeLink AttributeID="newAttr15"></AttributeLink>
             <AttributeLink AttributeID="UPC"></AttributeLink>
             <AttributeLink AttributeID="9456caa0-3856-4dd3-91b9-1d19ff130e2b"></AttributeLink>
             <AttributeLink AttributeID="a7c518bb-4f9a-42fb-be62-787d9e448413"></AttributeLink>
@@ -95,19 +95,14 @@
             <AttributeLink AttributeID="ELFRFraction"></AttributeLink>
             <AttributeLink AttributeID="ItemKey"></AttributeLink>
             <AttributeLink AttributeID="New Attr"></AttributeLink>
-            <AttributeLink AttributeID="CalculatedAttr"></AttributeLink>
-            <AttributeLink AttributeID="ValueFromVG"></AttributeLink>
-            <AttributeLink AttributeID="MyLOV"></AttributeLink>
-            <AttributeLink AttributeID="newAttr666"></AttributeLink>
             <AttributeLink AttributeID="RawLOV"></AttributeLink>
-            <AttributeLink AttributeID="a4"></AttributeLink>
             <AttributeLink AttributeID="LanguageDependant"></AttributeLink>
             <AttributeLink AttributeID="a1"></AttributeLink>
+            <AttributeLink AttributeID="ValueFromVG"></AttributeLink>
             <AttributeLink AttributeID="LAALTestDescriptionAttribute"></AttributeLink>
             <AttributeLink AttributeID="URLAttribute"></AttributeLink>
-            <AttributeLink AttributeID="a3"></AttributeLink>
+            <AttributeLink AttributeID="MyLOV"></AttributeLink>
             <AttributeLink AttributeID="a2"></AttributeLink>
-            <AttributeLink AttributeID="Calc1"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

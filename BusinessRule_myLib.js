@@ -27,17 +27,10 @@
   "pluginType" : "Operation"
 }
 */
-
-/**
- * 
- * @returns My descripyoon
- * @param {string} str 
- */
-function test(str) {
+function test() {
 	var x = 2;
 	return x;
 }
-
 
 /*===== business library exports - this part will not be imported to STEP =====*/
 exports.test = test

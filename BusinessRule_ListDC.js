@@ -35,35 +35,11 @@
 */
 exports.operation0 = function (item) {
 
-item.getDataContainers().forEach(function (arg) {
-    /** @type{DataContainer} */
+item.getDataContainers().forEach(function(arg) {
+    /* @type{DataContainer} */
     var dataContainer = arg;
-
-
-
-    logger.info("Data Container: " + dataContainer);
-
-    if (dataContainer instanceof com.stibo.core.domain.impl.datacontainer.FrontSingleDataContainerImpl) {
-    		/** @type{SingleDataContainer} */
-            const singleDC = dataContainer;
-        logger.info("Single")
-        const dcObj = singleDC.getDataContainerObject();
-        logger.info('dcObj '+dcObj)
-
-        var attr = item.getManager().getAttributeHome().getAttributeByID('LAALDC_Attr_1')
-		const value = dcObj.getValue("LAALDC_Attr_1")
-        
-        //var inlineRefs = value.class.getMethod("getInlineReferences").invoke(value);
-        var inlineRefs = value.getInlineReferences()
-        logger.info('inlineRefs '+inlineRefs)
-    }
-    else if (dataContainer instanceof com.stibo.core.domain.impl.datacontainer.FrontMultiDataContainerImpl) {
-        logger.info("Multi");
-    }
-    else {
-    		logger.info('Unknown '+dataContainer)
-    }
-
+    
+    logger.info("Data Container: " + dataContainer.getDataContainerType() + " isOrphan "+dataContainer.isOrphan());  
 });
 
 

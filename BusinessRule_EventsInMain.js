@@ -38,7 +38,6 @@ log("start "+node.getID());
 /** @type{Product} */
 var p = node;
 
-
 var nonApproved = p.getNonApprovedObjects();
 nonApproved.forEach(element => {
     log(p.getID()+"\t"+element)

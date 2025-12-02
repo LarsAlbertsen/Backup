@@ -13,25 +13,25 @@ Configuration=
   <simple id="MaxOldProcesses">10</simple>
   <simple id="OptimisticLockRetryEnabled">false</simple>
   <simple id="OptimisticLockRetryPeriod"/>
-  <simple id="Priority">0</simple>
+  <simple id="Priority">1</simple>
   <simple id="Queue">EVPROC</simple>
   <simple id="ResponsibleUser">step://user?id=STEPSYS</simple>
 </plugin>
 PluginConfiguration=
 <plugin id="RevisionManagementEventProcessorPlugin">
-  <simple id="AcrossWorkspaces">false</simple>
-  <simple id="KeepFirst">true</simple>
+  <simple id="AcrossWorkspaces">true</simple>
+  <simple id="KeepFirst">false</simple>
   <simple id="MaximumAge">730</simple>
   <simple id="MaximumAmount">10</simple>
   <simple id="MaximumProcessingTime">30</simple>
 </plugin>
 ScheduleSpecification=
 <entries>
-  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleNever"/>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="60"/>
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>PurgeRevisions</Name>
-            <Configuration>H4sIAAAAAAAA/6VU247TMBB936+IDOobTaqVYEXbVL2kINFuQ9rl8oS8yTQ7WscOHrva8vU4vUG6pEjwZo/OmXNsz/FYyTXmVnODSvZ7g6dCeBvQVO1Ypx0wD2SqMpR5n92tpq9u2CC86pXC5ig9zPos2oA0sVYpECk94gTj31uy8MrzeoRFKWCHT4BKJQnvBdwRaBaSgfKt71u3GTjAchXFy6/Lnr/nnNNH3KQPS/wBLOwEQdAEm/AtrVQChqPcOSQWNoJjjUqj2V6AfLRgnWT0KU4W4ybQnD8tRHa4C6DKYRP0vbL6ZPCM9PqmiTVDCRSDHr2LLx9/ylG43nobSe4uOmOh0Rb+inatUTnwdZA1YRelwQLJYDpT6WNdY80FNYr8gXiUa6Is0wfIrIAv89m3SRQn0Xi4iiYsbAnTrQ1q67tVpuumdb8YtHLTbb3oBN0K6R5fI9Cp5nnH6tZLBSc60FNVtJ29e9W2BkWbDuIZrFFiNcrto5/JqfTyWLoF52Xfx6+p++fyvw7b8/cxcisqBZow0lrpBEqlDeh/yaIzxq0w9UjWujL/pBbveOP/zX8CG6zQcy55DoVTrsvvZZ59A8NUK6LPSj9SydNq7i9Oj4sWFrYY5i6Eb64b5/4IK5SV5lL+DsCDS3e6FRZQDX4T4QNAOUVN5jxKz17xJ/6R0zZSBQAA</Configuration>
+            <Configuration>H4sIAAAAAAAA/6VUXW/aMBR951dE1sTbCFWlrhohiI+wSQORBbqPp8lNLulVHTvztVHpr58DgZWyMGnLk+2cc8+xfY/HSq4xt5obVLIfDJ4K4W1AUzVjV50u80CmKkOZ99ndavr2lg3CVlAKm6P0MOuzaAPSxFqlQKT0iBOMX5ZkYcvzAsKiFLDDJ0ClkoT3Au4INAvJQPne962bDBxguYri5fdl4O85r+kjbtKHJT4DC6+63W4TbMK3tFIJGI5y55BY2AiONSqNZutKNkE+W7BOMvoSJ4txE2jOnxYiq88CqHLYBP2orD4afEW6uW1izVACxaBHH+LL259yFK623kaSu4POWGi0hb+iXWlUDnzdzZqwi9JggWQwnan08VRjzQU1ivyBeJBroizTB8isgG/z2Y9JFCfReLiKJixsC9M7adT2T6tMz3XrfjBo56bXqlDu4jUC7eaed1jZeqngRDUtVUXH2bpXHWtQdKgWzWCNEqsW7hx8TI5Lbw5Lrrf0do7SGthXczL1B9WvWuOmduYfnfkvrf0+gMDfR8uNqBRowkhrpRMolTag/yWfzjS3wpzG9KQq849q8Y43/t83IYENVug5lzyHwimfyu9lzp6GYaoV0VelH6nkaZWFS13r0oaFLYa5y+W768YoHGCFstJcimQNrE26za2wgCoLTYRPAOUUNZmzzj+7xV8nRhzqZgUAAA==</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

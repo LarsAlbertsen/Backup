@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="LAAL_SUP" Deactivated="false">
+        <User ID="LAAL_SUP" ForceAuthentication="false">
             <Name>Lars Albertsen(Supplier)</Name>
-            <MetaData>
-                <Value AttributeID="UserLastActivityDate">2025-06-26</Value>
-            </MetaData>
             <UserGroupLink UserGroupID="AcmeSupplier"></UserGroupLink>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
-            <SystemSetup>
-                <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>
-            </SystemSetup>
+            <SystemSetup></SystemSetup>
         </User>
     </UserList>
 </STEP-ProductInformation>

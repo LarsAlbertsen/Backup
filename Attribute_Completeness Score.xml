@@ -6,7 +6,7 @@
         </Qualifier>
     </Qualifiers>
     <AttributeList>
-        <Attribute ID="Completeness Score" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" Mandatory="false">
+        <Attribute ID="Completeness Score" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
             <Name>Completeness Score</Name>
             <Validation BaseType="integer" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
             <MetaData>

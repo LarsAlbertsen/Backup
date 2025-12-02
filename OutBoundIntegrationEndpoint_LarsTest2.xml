@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <IntegrationEndpoints>
-        <OutBoundIntegrationEndpoint ID="LarsTest2" UserTypeID="OutboundEndpoint user-type root" ProcessPluginID="Export" QueueForEndpoint="OutboundQueue" QueueForProcssing="Out" MaxNumberOfActiveBackgroundProcesses="1" MaximumAgeOfFailedBackgroundProcesses="604800000" MaximumNumberOfFailedBackgroundProcesses="100" MaximumAgeOfSucceededBackgroundProcesses="604800000" MaximumNumberOfSucceededBackgroundProcesses="100" TransactionType="STRICT" ResponsibleUserID="STEPSYS" EnableRetry="false" UseCrossContext="false" DataSourcePluginID="EventQueueDataSourcePlugin" DeliveryMethodPluginID="ExternalDelivery" MultiThreadCount="1" RefreshCollections="false"><!-- Definition:
+        <OutBoundIntegrationEndpoint ID="LarsTest2" UserTypeID="OutboundEndpoint user-type root" ProcessPluginID="Export" QueueForEndpoint="OutboundQueue" QueueForProcssing="Out" MaxNumberOfActiveBackgroundProcesses="1" MaximumAgeOfFailedBackgroundProcesses="604800000" MaximumNumberOfFailedBackgroundProcesses="100" MaximumAgeOfSucceededBackgroundProcesses="604800000" MaximumNumberOfSucceededBackgroundProcesses="100" TransactionType="STRICT" ResponsibleUserID="STEPSYS" EnableRetry="false" UseCrossContext="false" DataSourcePluginID="EventQueueDataSourcePlugin" DeliveryMethodPluginID="DirectoryDeliveryPlugin" MultiThreadCount="1" RefreshCollections="false"><!-- Definition:
 ScheduleSpecification:
 <entries>
   <entry class="com.stibo.util.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
@@ -16,7 +16,8 @@ DataSourcePluginConfiguration:
 
 DeliveryMethodPluginConfiguration:
 <Parameters>
-  <Parameter ID="ExternalDelivery" Type="com.stibo.integration.extension.domain.parameter.ExternalDeliveryExtensionConfiguration">eyJlbmdpbmVJZCI6bnVsbCwiaWQiOm51bGwsInVybCI6bnVsbCwicGFyYW1ldGVycyI6e30sInRpbWVvdXQiOjEwMDAwLCJmYWlsdXJlU3RyYXRlZ3kiOiJGQUlMIiwic2lnbmF0dXJlIjpudWxsfQ==</Parameter>
+  <Parameter ID="FileName" Type="java.lang.String">$filename-$timestamp(yyyy-MM-dd_HH.mm.ss).$extension</Parameter>
+  <Parameter ID="zipContent" Type="java.lang.Boolean">true</Parameter>
 </Parameters>
 
 ProcessPluginConfiguration:
@@ -116,7 +117,7 @@ ErrorReporterPluginConfiguration:
             <Name>LarsTest2</Name>
             <ScheduleSpecification>H4sIAAAAAAAA/7Oxr8jNUShLLSrOzM+zVTLUM1Cyt+OySc0rKcpMLbbjUlAAsysVknMSi4ttlZLzc/WKSzKT8vVKSzJz9IKTM1JTSnNSXVLTMvMyS4BmqMCEXIGGVvpm5pWWpCoBjYGCVJAo0B4lfaAt+jBrADtwci2GAAAA</ScheduleSpecification>
             <DataSourcePluginConfiguration>H4sIAAAAAAAA/62QywrCMBBF935FmL2x3bnoA0QFF4JK/YCxHWoknUiTFPv3pqBVwYULlxfmnnOZJL81WnTUWmU4hVhGIIhLUymuUzgW6+kc8myS7LDFhly4yyZCvKLYLFNYYm8LcyCHilcdsbMgiv5KKVywQ6mRa7lhRzW1kEXJbGx/YdHQ33vytEBXnsOMJ6s0jbROnYz0TmmpBmCLLuwmrq4mZCsXxmhCfshGMmRxFP0u9lxp2pK1WJP9j/7D/RbCO+9hpBTugwEAAA==</DataSourcePluginConfiguration>
-            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAA/12Qy26DMBBF9/kK5H0dKGrUBRBVvARqlILCKzuMHeTUNghIwH9fR1HaqLsZzZlzpWttF860KxlG2gkbGFAHGhFNh6lobZAdgpd3sHVW1lc91JxMinNWmva3apFnA39Rk6iZRxhVKgm0g+yJDZqOw3GiqINUTKQd6kmFQKJocYuDuOM1FbB/yOB/kf9A3U6caHu5G4BDZMwQxz3ieXx0ow0S+YjcmdZFQvf8zUDhPEYil+jp1oSBrAqD4TCXjYw2xNQVk/aoyK+4VH9nf955H/OnG/OqYCMuY5aZqazKlB3Nb7qncZhkbBdR5XplAvFAvzHRub/gYhlPiW1b699iVGfr59J+AJCt3N9pAQAA</DeliveryMethodPluginConfiguration>
+            <DeliveryMethodPluginConfiguration>H4sIAAAAAAAA/22POwvCMBSF9/6KcOmgQ6JuDm0KKqUOFcE6S7DXEsmjpLG0/nrj4gO92wcf55ybZINWpEfXSWtSWLA5EDRnW0vTpHCscrqEjEfJXjih0QePR4S8kWw3KeRS4S4wkGpsMYWr6AVTwjTs4F0IAh5fgmKCQmMvNXZe6HYyhqNlSev6VBRMa9Z1Uxbj4NE81ySzV8ufzrts19YE1f+2rqxVKAxw7274FfMB4ZEHh5dcCP0AAAA=</DeliveryMethodPluginConfiguration>
             <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

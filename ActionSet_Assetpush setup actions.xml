@@ -3,7 +3,6 @@
     <ActionSetList>
         <ActionSet ID="Assetpush setup actions" Type="setup">
             <Name>Assetpush setup actions</Name>
-            <ActionLink ActionID="Access Instrumen"></ActionLink>
             <ActionLink ActionID="Access Workbench"></ActionLink>
             <ActionLink ActionID="Maintain business-rule"></ActionLink>
             <ActionLink ActionID="Maintain event queues"></ActionLink>

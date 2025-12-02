@@ -3,7 +3,6 @@
     <ActionSetList>
         <ActionSet ID="NoRemoveFrom WF" Type="setup">
             <Name>NoRemoveFrom WF</Name>
-            <ActionLink ActionID="Access Instrumen"></ActionLink>
             <ActionLink ActionID="Access Web UI"></ActionLink>
             <ActionLink ActionID="Access Workbench"></ActionLink>
             <ActionLink ActionID="Add attribute to attribute group"></ActionLink>

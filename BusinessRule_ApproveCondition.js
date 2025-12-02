@@ -34,8 +34,6 @@
 }
 */
 exports.operation0 = function (node) {
-//throw "STOP"
-
 logger.info("approve "+node.getTitle())
 return true
 

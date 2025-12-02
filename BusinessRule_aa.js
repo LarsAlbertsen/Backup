@@ -23,14 +23,8 @@
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
-    "contract" : "LoggerBindContract",
-    "alias" : "logger",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
-  }, {
-    "contract" : "ManagerBindContract",
-    "alias" : "manager",
+    "contract" : "CurrentObjectBindContract",
+    "alias" : "product",
     "parameterClass" : "null",
     "value" : null,
     "description" : null
@@ -39,7 +33,6 @@
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (logger,manager) {
+exports.operation0 = function (product) {
 
-logger.info('Hello World');
 }

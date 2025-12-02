@@ -5,7 +5,6 @@
             <Name>Change Package</Name>
             <UserTypeLink UserTypeID="ChangePackages"></UserTypeLink>
             <AttributeLink AttributeID="ChangePackageDescription"></AttributeLink>
-            <AttributeLink AttributeID="ChangePackageState"></AttributeLink>
             <AttributeLink AttributeID="GITBranch"></AttributeLink>
         </UserType>
     </UserTypes>

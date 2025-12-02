@@ -6,7 +6,6 @@
             <UserTypeLink UserTypeID="Outbound Integration Endpoints"></UserTypeLink>
             <UserTypeLink UserTypeID="OutboundSetupGroupCategory"></UserTypeLink>
             <UserTypeLink UserTypeID="Wiki Setup Group Type"></UserTypeLink>
-            <AttributeLink AttributeID="Purpose"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

@@ -42,7 +42,7 @@ logger.info('Done')
 
 function setKey() {
 	const a = node.getManager().getAttributeHome().getAttributeByID("ItemKey")
-	
+
 	try {
 		node.setSimpleValue(a, "a unique value 104993");
 		let v = node.getValue(a.getID()).getSimpleValue();

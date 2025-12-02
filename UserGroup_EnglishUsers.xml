@@ -3,7 +3,6 @@
     <UserGroupList>
         <UserGroup ID="EnglishUsers" ReadOnly="false">
             <Name>EnglishUsers</Name>
-            <PrivilegeRule ActionSetID="Edit product data" ObjectCreation="true"></PrivilegeRule>
             <GUISetup>
                 <GUISetupDisabled>/Contexts/step://context?id=Context2</GUISetupDisabled>
                 <GUISetupDisabled>/Contexts/step://context?id=Context3</GUISetupDisabled>

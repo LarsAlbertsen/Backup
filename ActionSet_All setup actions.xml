@@ -3,7 +3,6 @@
     <ActionSetList>
         <ActionSet ID="All setup actions" Type="setup">
             <Name>All Setup Actions</Name>
-            <ActionLink ActionID="Access Instrumen"></ActionLink>
             <ActionLink ActionID="Access Web UI"></ActionLink>
             <ActionLink ActionID="Access Workbench"></ActionLink>
             <ActionLink ActionID="Add attribute to attribute group"></ActionLink>

@@ -61,18 +61,18 @@ if (node != null) {
 
 	/** @type{ChangePackageHome} */
 	var cpHome = manager.getHome(com.stibo.core.domain.changepackage.ChangePackageHome)
-	var cpID = "AutoTransferChanges";
+	var cpID = "ChangedItems-" + node.getManager().getCurrentUser().getID()
 	var cp = cpHome.getChangePackageByID(cpID)
 
 	if (cp == null) {
-		cp = cpHome.createChangePackage("AutoTransferChanges", cpID)
+		cp = cpHome.createChangePackage("AutoUpdateChangePackages", cpID)
 		updateIDValue(setupGroup, cpID)
 		cp.setName(cpID);
 		cp.setSimpleValue(manager.getAttributeHome().getAttributeByID("GITBranch"), cpID)
 	}
 
 	if (!isOpen(cp)) {
-		log.info("AddToChangePackage reOpen")
+		//log.info("AddToChangePackage reOpen")
 		cp.reOpen()
 	}
 
@@ -87,11 +87,11 @@ if (node != null) {
 	}
 	if (node instanceof com.stibo.core.domain.AttributeGroup ||
 		node instanceof com.stibo.core.domain.setupgroup.SetupGroup) {
-		logger.info("Should AddToChangePackage addHierarchy " + node.getClass().getName())
+		//logger.info("AddToChangePackage addHierarchy " + node.getClass().getName())
 		//cp.addHierarchy(node)
 	}
 	else {
-		logger.info("AddToChangePackage addItem " + node.getClass().getName())
+		//logger.info("AddToChangePackage addItem " + node.getClass().getName())
 		cp.addItem(node)
 	}
 }

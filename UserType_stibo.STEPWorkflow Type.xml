@@ -3,7 +3,6 @@
     <UserTypes>
         <UserType ID="stibo.STEPWorkflow Type" Referenced="true">
             <Name>STEP Workflow Type</Name>
-            <UserTypeLink UserTypeID="Uncategorized Setup Group Type"></UserTypeLink>
             <UserTypeLink UserTypeID="Workflows"></UserTypeLink>
         </UserType>
     </UserTypes>

@@ -7,7 +7,6 @@
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>
-            <AttributeGroupLink AttributeGroupID="LegacyFunctionsToCleanUp"></AttributeGroupLink>
             <AttributeGroupLink AttributeGroupID="_LAAL Attributes"></AttributeGroupLink>
         </Attribute>
     </AttributeList>

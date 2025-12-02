@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="en-US">
+            <DimensionPointLink DimensionPointID="en-US"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <AttributeList>
+        <Attribute ID="JIRAKey" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" Mandatory="false">
+            <Name>JIRAKey - Master</Name>
+            <Validation BaseType="regexp" MinValue="" MaxValue="" MaxLength="" InputMask="[A-Z0-9_]{2,14}"></Validation>
+            <MetaData>
+                <Value QualifierID="en-US" AttributeID="AttributeHelpText">Code for Customer in Jira and other systems. Max 14 characters
+Unique for External businesses (customers, partners, suppliers)
+May be shared for Internal business (Stibo)
+
+note that the attribute is 'Jira_Key' on object type 'JiraSystem' - it is 'JIRAKey' on all other object types (External Business, Customer Agreement, BaseLicense)</Value>
+                <Value QualifierID="en-US" AttributeID="AttributeUsedFor">Legal</Value>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeGroupLink AttributeGroupID="AllEmployeeReadOnlyInfo"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="AllEmployeeViewNew"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="AllEmployeesView"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="BusinessEntityInternalAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="CAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="CompanyInformation"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="CustomerDetailPage"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="CustomerInfo"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="EBEAttributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="ExternalBusinesses"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="FinanceModify"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LegalModify"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LicenseTasksValidation_NC"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LicenseTasksValidation_NP"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LicenseTasks_EP"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LicenseTasks_NC"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="LicenseTasks_NP"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PMOApprove"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PMOModify"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="PMOView"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SAattributes"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SYSLegalOperationsValidation_EC"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SYSLegalOperationsValidation_EP"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SYSLegalOperations_EC"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SYSLegalOperations_EP"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SaasLicense"></AttributeGroupLink>
+            <AttributeGroupLink AttributeGroupID="SupportView"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="BusinessEntityExternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternal"></UserTypeLink>
+            <UserTypeLink UserTypeID="BusinessEntityInternalDepartment"></UserTypeLink>
+            <UserTypeLink UserTypeID="PrismBaseLicense"></UserTypeLink>
+        </Attribute>
+    </AttributeList>
+</STEP-ProductInformation>

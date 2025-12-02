@@ -8,6 +8,7 @@
             <UserTypeLink UserTypeID="BusinessEntityInternal"></UserTypeLink>
             <UserTypeLink UserTypeID="BusinessEntityInternalDepartment"></UserTypeLink>
             <AttributeLink AttributeID="BaseLicenseName"></AttributeLink>
+            <AttributeLink AttributeID="JIRAKey"></AttributeLink>
             <AttributeLink AttributeID="PrismBaseLicenseID"></AttributeLink>
             <AttributeLink AttributeID="STEPAgreedFullUserCount"></AttributeLink>
         </UserType>

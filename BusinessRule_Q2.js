@@ -19,28 +19,3 @@
   "dependencies" : [ ]
 }
 */
-/*===== business rule plugin definition =====
-{
-  "pluginId" : "JavaScriptBusinessFunctionWithBinds",
-  "binds" : [ ],
-  "messages" : [ ],
-  "pluginType" : "Operation",
-  "functionReturnType" : "java.lang.String",
-  "functionParameterBinds" : [ {
-    "contract" : "StringBindContract",
-    "alias" : "StringArg",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : "Give me a string"
-  }, {
-    "contract" : "IntegerBindContract",
-    "alias" : "NumberArg",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : "Give me a number"
-  } ]
-}
-*/
-exports.operation0 = function (StringArg,NumberArg) {
-return StringArg + " : "+ NumberArg;
-}

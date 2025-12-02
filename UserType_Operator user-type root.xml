@@ -5,7 +5,6 @@
             <Name>User</Name>
             <AttributeLink AttributeID="SCIM.emails"></AttributeLink>
             <AttributeLink AttributeID="UserInformation"></AttributeLink>
-            <AttributeLink AttributeID="UserLastActivityDate"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

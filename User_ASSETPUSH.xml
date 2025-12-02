@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="ASSETPUSH" Deactivated="false">
+        <User ID="ASSETPUSH" ForceAuthentication="true">
             <Name>assetpush</Name>
             <UserGroupLink UserGroupID="Service Users"></UserGroupLink>
             <SystemSetup></SystemSetup>

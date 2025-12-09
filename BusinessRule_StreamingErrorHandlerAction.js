@@ -105,7 +105,9 @@ try {
 			}
 			var notifications = wfi.getValue('WFNotifications')
 			var msg = headers['STEPErrorReason'].error.replace(/com.stibo.core.domain.businessrule.evaluate.BusinessRuleRejectException: Wrapped com.stibo.core.domain.impl.validation.exception./,'')
-			msg = msg.substring(0,msg.indexOf('(StreamingAction'))
+			if (msg.indexOf('(StreamingAction') > 0) {
+				msg = msg.substring(0,(msg.indexOf('(StreamingAction')))			
+			}
 			notifications.addValue(msg)
 
 		}

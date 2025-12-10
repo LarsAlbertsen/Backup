@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ActionSetList>
+        <ActionSet ID="ShareSearch" Type="user">
+            <Name>ShareSearch</Name>
+            <ActionLink ActionID="Share search with group"></ActionLink>
+        </ActionSet>
+    </ActionSetList>
+</STEP-ProductInformation>

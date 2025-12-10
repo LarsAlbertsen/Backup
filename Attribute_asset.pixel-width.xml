@@ -26,6 +26,7 @@
             <UserTypeLink UserTypeID="ProductImage"></UserTypeLink>
             <UserTypeLink UserTypeID="PublicationTemplatePage"></UserTypeLink>
             <UserTypeLink UserTypeID="Swatch"></UserTypeLink>
+            <UserTypeLink UserTypeID="TIFFImage"></UserTypeLink>
         </Attribute>
     </AttributeList>
 </STEP-ProductInformation>

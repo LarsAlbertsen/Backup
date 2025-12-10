@@ -52,12 +52,18 @@
     "parameterClass" : "com.stibo.core.domain.impl.businessrule.function.javascript.reference.BusinessFunctionReferenceImpl",
     "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>ELFRDeserializeAVROtoJSON</BusinessFunction>\n</BusinessFunctionReference>\n",
     "description" : null
+  }, {
+    "contract" : "BarcodesBindContract",
+    "alias" : "bc",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,logger,manager,toAVRO,toJSON) {
+exports.operation0 = function (node,logger,manager,toAVRO,toJSON,bc) {
 var schema = {
   "type": "record",
   "name": "SimpleRecord",
@@ -83,4 +89,17 @@ logger.info('avroData [' + avroData + ']');
 
 var jsonString = toJSON.evaluate({avro:avroData, schema:JSON.stringify(schema)})
 logger.info('json ' + jsonString)
+
+
+var se = manager.getHome(com.stibo.core.domain.setupentity.SetupEntityHome).getSetupEntityByID('24050006')
+logger.info(se.getObjectType())
+
+logger.info(bc)
+var asset = manager.getAssetHome().getAssetByID('BC')
+logger.info(asset)
+bc.generateQRcode(asset, 'This is a test of the value to put into the QR code', 300, 4, 1)
+
+asset = manager.getAssetHome().getAssetByID('BC2')
+logger.info(asset)
+bc.generateQRcode(asset, 'This is a test of the value to put into the QR code', 100, 4, 1)
 }

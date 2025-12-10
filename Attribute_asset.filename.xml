@@ -26,6 +26,7 @@
             <UserTypeLink UserTypeID="ProductVideo"></UserTypeLink>
             <UserTypeLink UserTypeID="Quark Document"></UserTypeLink>
             <UserTypeLink UserTypeID="Swatch"></UserTypeLink>
+            <UserTypeLink UserTypeID="TIFFImage"></UserTypeLink>
             <UserTypeLink UserTypeID="XML"></UserTypeLink>
         </Attribute>
     </AttributeList>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserGroupList>
+        <UserGroup ID="ShareSearch" ReadOnly="false" MultifactorAuthenticationRequired="false">
+            <Name>ShareSearch</Name>
+            <PrivilegeRule ActionSetID="ShareSearch" GroupID="ShareSearch"></PrivilegeRule>
+        </UserGroup>
+    </UserGroupList>
+</STEP-ProductInformation>

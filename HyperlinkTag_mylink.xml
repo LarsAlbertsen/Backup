@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <TagList>
+        <Tag Start="&lt;mylink&gt;" Stop="&lt;/mylink&gt;"></Tag>
+        <HyperlinkTag ID="mylink" ParentID="Hyperlink tag root" Tag="mylink">
+            <Configuration>H4sIAAAAAAAA/8utzMnMy9bRNURHmel5+UWpOp4oVF5+SXFmXnpOakl+no6hjoFOXmlOjg6Q1gEAIc0BfUgAAAA=</Configuration>
+            <TagFormat Format="HTML3">
+                <FormattingStart>&lt;b&gt;&lt;a href="$target"&gt;</FormattingStart>
+                <FormattingStop>&lt;/a&gt;&lt;/b&gt;</FormattingStop>
+            </TagFormat>
+        </HyperlinkTag>
+    </TagList>
+</STEP-ProductInformation>

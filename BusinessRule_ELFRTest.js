@@ -102,4 +102,8 @@ bc.generateQRcode(asset, 'This is a test of the value to put into the QR code', 
 asset = manager.getAssetHome().getAssetByID('BC2')
 logger.info(asset)
 bc.generateQRcode(asset, 'This is a test of the value to put into the QR code', 100, 4, 1)
+
+
+var headers = {"error":"Error while processing message [Topic: productsXML10, Partition: 2, Offset: 8378, MessageKey: BAProduct-1], Processing finished with errors","messages":["The value for attribute 'Number' on product 'BAProduct-1' isn't valid (Number validator failed: XfBcQWZ3iW) [Topic: productsXML10, Partition: 2, Offset: 8378, MessageKey: ]"]}
+logger.info(headers.error.split(':')[4].split(']')[0].trim())
 }

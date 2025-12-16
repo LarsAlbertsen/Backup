@@ -95,22 +95,36 @@ try {
 	var data = new java.lang.String(message.content());
 
 	//log('DATA: ' + data)
-	log('HEADERS: ' + JSON.stringify(headers))
 	if (data) {
-		var p = manager.getProductHome().getProductByID(JSON.parse(data).id)
-		if (p) {
-			var wfi = p.getWorkflowInstance(setup.wf)
-			if (!wfi) {
-				wfi = setup.wf.start(p, 'Errors encountered')
-			}
-			var notifications = wfi.getValue('WFNotifications')
-			var msg = headers['STEPErrorReason'].error.replace(/com.stibo.core.domain.businessrule.evaluate.BusinessRuleRejectException: Wrapped com.stibo.core.domain.impl.validation.exception./,'')
-			if (msg.indexOf('(StreamingAction') > 0) {
-				msg = msg.substring(0,(msg.indexOf('(StreamingAction')))			
-			}
-			notifications.addValue(msg)
-
+		var p = null;
+		try {
+			p = 	manager.getProductHome().getProductByID(JSON.parse(data).id)
+			if (p) {
+				var wfi = p.getWorkflowInstance(setup.wf)
+				if (!wfi) {
+					wfi = setup.wf.start(p, 'Errors encountered')
+				}
+				var notifications = wfi.getValue('WFNotifications')
+				var msg = headers['STEPErrorReason'].error.replace(/com.stibo.core.domain.businessrule.evaluate.BusinessRuleRejectException: Wrapped com.stibo.core.domain.impl.validation.exception./,'')
+				if (msg.indexOf('(StreamingAction') > 0) {
+					msg = msg.substring(0,(msg.indexOf('(StreamingAction')))			
+				}
+				notifications.addValue(msg)
+			} 
+		} catch (e) {
+			p = manager.getProductHome().getProductByID(headers.STEPErrorReason.error.split(':')[4].split(']')[0].trim())
+			if (p) {
+				var wfi = p.getWorkflowInstance(setup.wf)
+				if (!wfi) {
+					wfi = setup.wf.start(p, 'Errors encountered')
+				}
+				var notifications = wfi.getValue('WFNotifications')
+				headers['STEPErrorReason'].messages.forEach(function(m) {
+					notifications.addValue(m)				
+				})
+			} 
 		}
+		
 	}
 
 } catch (e) {

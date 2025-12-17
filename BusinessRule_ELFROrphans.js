@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "orphanValues",
+  "id" : "ELFROrphans",
   "type" : "BusinessFunction",
   "setupGroups" : [ "ELFRBRGroup" ],
-  "name" : "orphanValues",
+  "name" : "ELFROrphans",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -34,43 +34,19 @@
   "functionReturnType" : "java.lang.String",
   "functionParameterBinds" : [ {
     "contract" : "NodeBindContract",
-    "alias" : "root",
+    "alias" : "node",
     "parameterClass" : "null",
     "value" : null,
-    "description" : "Look here and below"
+    "description" : ""
   } ]
 }
 */
-exports.operation0 = function (logger,root) {
-function log(msg) {
-	logger.info(msg)
-}
-
-
-var nodeCount = 0;
-var seen = new java.util.HashSet();
-function checkNode(n) {
-	nodeCount++
-	n.getValues().toArray().forEach(v => {
-		if (v.isLocal()) {
-			if (v.isOrphan()) {
-				var aid = v.getAttribute().getID() + ''
-				seen.add(aid)
-			}
-		}
-	})
-	
-	n.queryChildren().forEach(child => {
-		checkNode(child)
-		return true;	
-	})
-}
-
-
-
-//############################## MAIN ##############################
-var res = checkNode(root)
-log('Node Count ' + nodeCount)
-return ''+ seen;
-
+exports.operation0 = function (logger,node) {
+var res = []
+node.getValues().toArray().forEach(function(v) {
+	if (!v.isInherited() && v.isOrphan()) {
+		res.push(v.getAttribute().getID())
+	}
+})
+return node.getID() + ' ' + res;
 }

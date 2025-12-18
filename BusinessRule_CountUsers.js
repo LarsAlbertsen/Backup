@@ -104,6 +104,9 @@ var cnt = 0;
 var cntNotVendor = 0;
 
 root.queryAllUsers().forEach(function(u){
+	if (callMethod(u, 'isDeactivated')) {
+		logger.info(u + ' xxx ' + callMethod(u, 'isDeactivated'))
+	}
 	cnt++
 	if (!isSupplierUser(u)) {
 		logger.info(u)

@@ -5,8 +5,6 @@
             <Name>Number</Name>
             <Validation BaseType="number" MinValue="" MaxValue="" MaxLength="" InputMask="">
                 <UnitLink UnitID="unece.unit.CMT"></UnitLink>
-                <UnitLink UnitID="unece.unit.FOT"></UnitLink>
-                <UnitLink UnitID="unece.unit.INH"></UnitLink>
                 <UnitLink UnitID="unece.unit.MMT"></UnitLink>
             </Validation>
             <MetaData>

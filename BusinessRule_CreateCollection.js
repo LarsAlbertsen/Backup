@@ -40,12 +40,12 @@
 }
 */
 exports.operation0 = function (manager,itemType) {
-var collection = manager.getNodeCollectionHome().getTopNodeCollectionGroup().createNodeCollection("myCol10");
+const collectionSize = 1000000
+const progressBatch = 10000
 
+var collection = manager.getNodeCollectionHome().getTopNodeCollectionGroup().createNodeCollection("myCol11");
 var rootProduct = manager.getProductHome().getTopProduct();
-
 var l = new java.util.HashSet()
-//l.add(rootProduct)
 
 
 
@@ -54,27 +54,25 @@ var h = manager.getHome(com.stibo.query.home.QueryHome);
 var querySpecification = h.queryFor(com.stibo.core.domain.Product).where(c.objectType(itemType));;
 var query = querySpecification.execute();
 
-
-const maxProductCount = 1000000;
-const batchSize = 1000;
-
 var count = 0;
 var total = 0;
-const begin = Date.now();
+
+let begin = new Date().getTime();
 
 query.forEach(function (node) {
 	//handle node here
 	count++;
-	if (count < maxProductCount) {
-		if ((count % 1000) == 0) {
-			const now = Date.now();
-			const diff = now - begin;
+	if (count < collectionSize) {
+		if ((count % progressBatch) == 0) {
+			const now = new Date().getTime();
+			const elapsed = now - begin;
+			const timePerCount = elapsed / progressBatch;
+			logger.info("Count: " + count + " Average (ms): " + timePerCount);
 
-			const totalRate = count / (diff / 1000);
-			logger.info("Processed " + count + " nodes in " + (diff / 1000).toFixed(2) + " seconds" + "\tTotal Rate: " + Math.floor(totalRate) + " nodes/sec");
+			begin = new Date().getTime();
 		}
 		l.add(node);
-		if (l.size() > batchSize) {
+		if (l.size() > 1) {
 			total += l.size()
 			collection.addNodes(l);
 			l = new java.util.HashSet()
@@ -85,8 +83,6 @@ query.forEach(function (node) {
 		return false;
 	}
 });
-
-logger.info("Total "+(Date.now()-begin))
 
 logger.info("Adding Rest " + l.size())
 collection.addNodes(l);

@@ -2,7 +2,7 @@
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <ActionSetList>
         <ActionSet ID="Maintain domain values" Type="setup">
-            <ActionLink ActionID="Access Instrumen"></ActionLink>
+            <ActionLink ActionID="Access Instrument"></ActionLink>
             <ActionLink ActionID="Access Workbench"></ActionLink>
             <ActionLink ActionID="Create value in hard domain"></ActionLink>
             <ActionLink ActionID="Create value in medium domain"></ActionLink>

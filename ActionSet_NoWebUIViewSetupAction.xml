@@ -3,7 +3,7 @@
     <ActionSetList>
         <ActionSet ID="NoWebUIViewSetupAction" Type="setup">
             <Name>(No Web UI) View Setup Action</Name>
-            <ActionLink ActionID="Access Instrumen"></ActionLink>
+            <ActionLink ActionID="Access Instrument"></ActionLink>
             <ActionLink ActionID="Access Workbench"></ActionLink>
             <ActionLink ActionID="Enable Value Search/Values in typeahead"></ActionLink>
             <ActionLink ActionID="Maintain STEP Workflow Profile"></ActionLink>

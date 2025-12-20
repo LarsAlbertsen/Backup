@@ -3,7 +3,7 @@
     <ActionSetList>
         <ActionSet ID="ViewSetupActions" Type="setup">
             <Name>View Setup Actions</Name>
-            <ActionLink ActionID="Access Instrumen"></ActionLink>
+            <ActionLink ActionID="Access Instrument"></ActionLink>
             <ActionLink ActionID="Access Web UI"></ActionLink>
             <ActionLink ActionID="Access Workbench"></ActionLink>
             <ActionLink ActionID="Enable Value Search/Values in typeahead"></ActionLink>

@@ -3,7 +3,7 @@
     <ActionSetList>
         <ActionSet ID="Sufficiency" Type="setup">
             <Name>Sufficiency</Name>
-            <ActionLink ActionID="Access Instrumen"></ActionLink>
+            <ActionLink ActionID="Access Instrument"></ActionLink>
             <ActionLink ActionID="Access Web UI"></ActionLink>
             <ActionLink ActionID="Access Workbench"></ActionLink>
             <ActionLink ActionID="Create value in medium domain"></ActionLink>

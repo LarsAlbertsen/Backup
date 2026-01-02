@@ -34,12 +34,18 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
+  }, {
+    "contract" : "ManagerBindContract",
+    "alias" : "manager",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,logger) {
+exports.operation0 = function (node,logger,manager) {
 var revs = []
 node.getRevisions().toArray().every(function(rev) {
 	revs.push(rev)
@@ -48,7 +54,18 @@ node.getRevisions().toArray().every(function(rev) {
 //Putting oldest first, and newest last
 revs = revs.reverse()
 
-
 logger.info(revs.length)
+
+
+manager.executeInWorkspace('Approved', function(aman) {
+	var n = aman.getObjectFromOtherManager(node)
+	var r = []
+	n.getRevisions().toArray().every(function(rev) {
+		r.push(rev)
+		return true
+	})
+	logger.info(r.length)
+	
+})
 
 }

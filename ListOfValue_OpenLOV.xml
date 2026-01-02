@@ -12,6 +12,7 @@
             <DimensionLink DimensionID="Language"></DimensionLink>
             <Value QualifierID="en-US">E 1</Value>
             <Value QualifierID="en-US">E 13</Value>
+            <Value QualifierID="en-US">E 13.</Value>
             <Value QualifierID="en-US">E 2</Value>
             <Value QualifierID="en-US">E 4</Value>
         </ListOfValue>

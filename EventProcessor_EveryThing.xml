@@ -41,7 +41,7 @@ ScheduleSpecification=
                 <Value QualifierID="en-US" AttributeID="Purpose">Alt</Value>
             </MetaData>
             <Configuration>H4sIAAAAAAAA/6VUW2/aMBR+76+IvIm3kaBJUzUgqJB0e4CSEbrL02ScQ3qEiTNfWtivn0MgW2jNpO3NPvluds7xRBRrzI2kGkUxHIx2W+49glTVjvS6AfGgYCLDIh+S++Xtm2syCq8GJTc5Fh5mQxI/QqETKRgoJeSYKpj8KUnCK88bKNyWHA74BahSFApXHO4VSBIqDeV73zd2M7KAdBkn6bd04Necc/qYavaQ4k8gYS8IAhcsonu1FAvQFItDQkVCJziRKCTqvZV0QT4ZMNYy/pws5hMXaEZ3c54d7wLUIaEL+1EY2SQ8Y727drGmWIBKQI4/JJfPf0uRW225jwtqbzojoZYG/oq20igs+G2QubDzUuMWlUY2FWzT9lhTrpwmLxBPdi5Kyh4gMxy+zqbfozhZxJObZRyRsMN1v9WpnR9G6L5t13ox6uS633nVC/oV0v59iaCamuedqnuPcarUkc7EtmvjrUTXaORddTTPYI0FVr3cPeWJmtLrU+kObJZax2+5++f2vw878Os5sitVctRhLKWQCyiF1CD/ZRhtMGq4bs9kS5X4jVty4E3+9wEYG1V1pbphlULburZ49ga0Kc0TsDqWpb3P6imIYGXymS3QHJSrR2x+DTvdiLB6X/GPn5xD/UXIjSopg4b8dKpU9JmdTBeVCc6phjuRVRN7se8bl6XEPLcdX+QkvKSdbrCMgIOG7GX9Z33zC0nlWqnFBQAA</Configuration>
-            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
+            <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">

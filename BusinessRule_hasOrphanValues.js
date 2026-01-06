@@ -28,10 +28,16 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
+  }, {
+    "contract" : "ManagerBindContract",
+    "alias" : "manager",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation",
-  "functionReturnType" : "java.lang.String",
+  "functionReturnType" : "com.stibo.completenessscore.domain.metricresult.MetricBusinessFunctionResult",
   "functionParameterBinds" : [ {
     "contract" : "NodeBindContract",
     "alias" : "root",
@@ -41,7 +47,7 @@
   } ]
 }
 */
-exports.operation0 = function (logger,root) {
+exports.operation0 = function (logger,manager,root) {
 function log(msg) {
 	logger.info(msg)
 }
@@ -80,10 +86,24 @@ function checkNode(n) {
 var res = checkNode(root)
 log('Node Count ' + nodeCount)
 log('Orphan Count ' + oCount)
+log('res ' + JSON.stringify(res))
+
+var result = new com.stibo.completenessscore.domain.metricresult.MetricBusinessFunctionResult();
+if (oCount > 0) {
+	result.withScore(oCount)
+	result.withMessage(root, JSON.stringify(res))
+}
+
+
+
+
+//logger.info(result)
+//logger.info(builder.build())
+
 //log(JSON.stringify(seen))
 //Object.keys(seen).forEach(a=> {
 //	log(a + '\t' + seen[a].length + '\t\t' + seen[a].slice(0,5) + '......')
 //})
-return JSON.stringify(res)
+return result; //JSON.stringify(res)
 
 }

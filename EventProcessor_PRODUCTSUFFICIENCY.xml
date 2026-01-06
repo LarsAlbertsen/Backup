@@ -23,12 +23,12 @@ PluginConfiguration=
 </plugin>
 ScheduleSpecification=
 <entries>
-  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleNever"/>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>Product Sufficiency</Name>
-            <Configuration>H4sIAAAAAAAA/6VU247TMBB936+IDOobTQoSWm3bVDRJYaV2G5KUyxPyOtPsaF07+LLa8vW4TRtoIQuCN3t05pwz4xlHUqyxsooalGI8mjxuuPcASu9uZNAPiAeCyRJFNSarYvbikkzCi1HNbYXCw3JMkgcQJlWSgdZSTamG6GdKEl543kjjpuawx2egayk03nJYaVAk1AbqK9+37jJxgDRbxquoyFez2XV0ndxEn1d5ko38huKcbUoNu8vxG5BwEARBFyymW13IDAxFsTesSdgJThVKhWbrKLsg7y1YJ5l8cG6jLtCCPi55eWgN6L3DLuw7aVXr8Czr9WVX1hwF6BTU9G36dP0zitxxq20iqGt8SUKjLPwR7ahROvCroOzCLmuDG9QG2Vyy+7/X+E3eUW3wsrOOnN1BaTl8Wsy/xEmaJdGbIolJ2ONmeDK6va9WmqGb3+Yw6VVm2Hs2CIY7pHt/haDbmOcdo1uPcar1IZ3JTd85vJV9a5D39UG8hDUK3A13/+gnbkPPj6EbcF4aHv9E3T+X/1HsyG8Wy510zdGEiVJSZVBLZUD9y3Y6Y9Ryc7qkJ6zEb9XSfV70vz9CTA3N7XqNDB1yG1HOLKdGqtZAI/TL1/BRqntdUwaFwqpy0yAqEi7cQjzRoe8HjH83wAQAAA==</Configuration>
-            <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
+            <Configuration>H4sIAAAAAAAA/6VU247TMBB936+IDOobTQoSWtE0FU1SWKml2bTh8oS8zjQ7WtcOvqw2fD1u03ZpIQuCvMSenDnneDLjWIo1VlZRg1KMwvHDhnv3oPR2Rwb9gHggmCxRVCNSrKYvLsk4ughrbisUHpYjkt6DMJmSDLSWakI1xD9TkujC80KNm5rDDp+DrqXQeMOh0KBIpA3Ub3zfus3YAbJ8kRTxallMp1fxVfoh/lIs0zz0W4pztgk17HaJ34FEgyAIumAJbfRK5mAoip1hTaJOcKZQKjSNo+yCXFuwTjL96NzGXaA5fVjwcl8a0DuHXdj30qqjw7Os15ddWTMUoDNQk3fZ0+efUuSOWzWpoK7wJYmMsvBHtKNG6cCvgrILu6gNblAbZDPJ7v5e4zd5B7XBy85zLNktlJbD5/nsa5JmeRq/XaUJiXrcDE9at/fNSjN0/dsuxr3KDHvPBsFwi3T/XyHoY8zzDtHGY5xqvU9nctN3Dm9k3xrkfb0XL2GNArfN3T/4SY6h54eQazPVzFFYAy3bXmr/wPbzwWb78k9M+ucuH2sS+u38uZWuOZooVUqqHGqpDKh/GWLnn1puTmf5hJX4R7Vslxf/78WRUEOXdr1Ghg7ZxJQzy6mR6migFfrlBvkk1Z2uKYOVwqpyTSMqEs3d3DxRoR8yxJuQ5wQAAA==</Configuration>
+            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">

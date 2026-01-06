@@ -73,7 +73,7 @@ function checkNode(n) {
 
 var res = checkNode(source.getNode())
 
-logger.info(source.getNode() + ' ' + res)
+//logger.info(source.getNode() + ' ' + res)
 if (res.length > 0) {
 	result.addMessage(JSON.stringify({'node' : source.getNode().getID(), 'orphans':res}))
 }

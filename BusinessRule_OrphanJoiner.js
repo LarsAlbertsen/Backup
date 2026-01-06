@@ -62,11 +62,13 @@ result.appendToMessage('[')
 var isFirst = true;
 while(source.hasNext()) {
 	var msg = source.getNextMessage();
-	if (!isFirst) {
-		result.appendToMessage('\n' + ',')
+	if (msg && msg.length() > 0) {
+		if (!isFirst) {
+			result.appendToMessage('\n' + ',')
+		}
+		result.appendToMessage(msg)
+		isFirst = false;		
 	}
-	result.appendToMessage(msg)
-	isFirst = false;
 }
 result.appendToMessage(']')
 }

@@ -10,40 +10,40 @@
     <onentry businessactionid="acn-ff494726-6f7b-4c27-a012-83ba2c8317db"/>
   </final>
   <parallel id="State-5" discontinued="false">
-    <transition target="Enrich"/>
-    <editorLayout>   node-size-and-position x=20.0 y=118.0 w=380.0 h=226.0  </editorLayout>
+    <transition event="submit5" target="Enrich"/>
+    <editorLayout>   node-size-and-position x=20.0 y=118.00000000000001 w=380.0 h=226.0  </editorLayout>
     <state id="State-6" discontinued="false" initial="Initial1">
-      <editorLayout>   node-size-and-position x=220.0 y=43.0 w=140.0 h=163.0  </editorLayout>
+      <editorLayout>   node-size-and-position x=220.0 y=42.999999999999986 w=140.0 h=163.0  </editorLayout>
       <final id="Final1" discontinued="false">
         <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
       </final>
       <state id="Initial1" discontinued="false">
-        <transition event="submit" target="Final1"/>
+        <transition event="submitinitial1" target="Final1"/>
         <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
         <onentry businessactionid="acn-0113e186-4829-46c3-9fda-1f9c220baf4b"/>
       </state>
     </state>
     <state id="State-7" discontinued="false" initial="State-10">
-      <editorLayout>   node-size-and-position x=20.0 y=43.0 w=140.0 h=163.0  </editorLayout>
+      <editorLayout>   node-size-and-position x=20.0 y=42.999999999999986 w=140.0 h=163.0  </editorLayout>
       <final id="State-11" discontinued="false">
         <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
       </final>
       <state id="State-10" discontinued="false">
-        <transition event="submit" target="State-11"/>
+        <transition event="submit10" target="State-11"/>
         <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
         <onentry businessactionid="acn-053542c4-74c3-4f0f-8b84-4fc9e5b9f7b0"/>
       </state>
     </state>
   </parallel>
   <state id="Approve" discontinued="false">
-    <transition event="submit" target="Final"/>
+    <transition event="submit-approve" target="Final"/>
     <transition event="reject" target="State-5">
       <editorLayout>   edge-path [State-5]  x=217.0 y=439.0  </editorLayout>
     </transition>
     <editorLayout>   node-size-and-position x=205.0 y=534.0 w=100.0 h=25.0  </editorLayout>
   </state>
   <state id="Enrich" discontinued="false">
-    <transition event="submit" target="Approve"/>
+    <transition event="submitenrich" target="Approve"/>
     <editorLayout>   node-size-and-position x=247.0 y=394.0 w=100.0 h=90.0  </editorLayout>
     <onentry businessactionid="acn-afcb1728-b121-4f43-bd83-bfb314e71218"/>
   </state>
@@ -58,7 +58,7 @@
             <SetupGroupLink SetupGroupID="ProductWorkflows"></SetupGroupLink>
             <Name>TestWF</Name>
             <ValidUserTypeLink UserTypeID="TestItem"></ValidUserTypeLink>
-            <Configuration>H4sIAAAAAAAA/61WTY/bNhC951ewQq60+KWvwjIQBAkQoEACpEUPRQ+UNLJZaCmBpNe7/fWlKDnetb1rdduLKJIazps3b0aUe9d/0cop6eCr/mjAj2UrOwtrO3TKbeAB6r2D77VRg/tF3SkHzTej7lUHW7ClM/vjl52yDvRX/eVu6I0D89vQnB9m64e7rlyHAangtiujyX8XIS3voIx+Bet+/xyhezBW9bqMyKqIkLfQtox2zg0/x/HhcFgd+Ko325gRksQki8Oh0Wb9E8YIId03gK36G7DUDR566130Gj2UZEXQY3geSpEVq4xwUjDBKeM5RbsyTYTfQxhv3qG1tFZtNQBSTRm9r/fGgHYRco+Dx7m3YLy/+PjR5p23sM7HjBpl6147pffgDQMDUTjjLNTj9CZqlk24BQ/AKRmnu5IlP7CitTNSzwZw73F6JvtP2qh65xFLswW/Ms+P/qDZAh6k26E/pp0/kXcm+OSMcerHoVfaTbyF14m8vm0tzMvT+7Q+glnHJygjKdegfZPm+0iVPWELc5xEZ/brOHAa2G2Vlt3L7H4et4/cTpPbzJIkBJuS4mVqe+1Bm0dU7a3SYK2sR+vRpaw1bltRiIylOG2zCouaZVgSynDOK8nqnNOsqcao5lPGkEIgSwRzlrCXwxBZCIMX4lkYBVkchmzrimYsxxVlFItWcFw1uX+0FacCMr+aPwvjembtvvJN4pTWD8Ng+nt4La2DNLLr4JXMnrRxM52BBkrzQAPP52yy9HqlXBTGhXZvJGhClkYX7YwuAMueV7WYwNKUn8AubSlL3N3sITc1QijlQPMUi5wVWKQ1x0XbSEzbovbRVLIV1blGFqkkVCt9RSRoWfUvp+EokQseflTnU+/LZJA9kcG0Qsm/zsubVPBmb29SQcITwWqBM+EFIFrS4rzKhX+rC0iqwrdB8iYVzFH8Nx08OeR/V8I6PvaqJc371PoW/oQSLl7MytIiutbDLk0N/AX1BfPJtZvBvBWuBoxms3qKqz/7J0SF+9hmvvj9A3mRloBnCgAA</Configuration>
+            <Configuration>H4sIAAAAAAAA/61WXY+bOBR9769w0b462Nh8VSHSarUjVarUSu1qH1b7YOCSuGIMsp3JTH99jSGTTCYfVB0eABvse865x9cWW9t9VNJKYeGz+kuDexZWb2Fp+lbaFTxCtbXwtdKyt5/kvbRQf9HyQbawBnP8ZyuNBfVZfbzvO21B/9PXw1yNaM3+F1M93rfF0j+Q9FHbIhjDtwFS4h6K4BsY++9dgB5AG9mpIiCLPEBuhDJFsLG2/xCGu91usWOLTq/DiJA4JGnoJw1Wy/cYI4RUVwM28gdgoWrcd8aF6BR6LMiCoCd/3xU8zRcpYSSPOKMRyyjaFEnM3TeE8eodWgpj5FoBIFkXwR/VVmtQNkD2qXc4twa0ixfuf1q9cyOMdZxRLU3VKSvVFtxAr0Dg5zihum/eRB2lI27OPHBKhuamiOJnrGhptVDTAHhwOJ2S3d9Ky2rjEAu9BtcztffxoF4D7oXdoP/GL/8jF4yzMVjEqHv2nVR21M2/juJ1TWNg6h7fx/4BzDI8QBlEOQfti9BfB6nMAZtv4zg4Gb8MvaZe3UYq0V5W9274vNd2bNxWlsSebELyy9J2yoHWT6jcGqnAGFENo4eQolK4aXjO0yjBSZOWmFdRigWhEc5YKaIqYzSty4HVNMtAyROZY5iThF2mwVNPg+X8BY2czKYhmqqkaZThkkYU84YzXNaZuzUloxxS15u9oHE+s2ZbDkXixHh/9r3uHuBacnuhRdvClfweHHIzqV4MSrMFOb6oU4ZlU4Kj5OriGXnEZ9bOK3vfyOEIOwleVTw6g8lEhUeL/PjKkiHJfKRCE3agMrcGzQl+s+jcNBWhlAHNEsyzKMc8qRjOm1pg2uSV41aKhpenprqSDrnH/pwVv8zpFV+heWVjvhzeVef0eF7Wx9HnmSM9MsfYQ8n8/LydN3499u94I2YxjyqOU+5swRvS4KzMuHurcojL3FVT8gvecKhP9hL6e744muTNnbEM9+Vuzi5wqJ4zd7OY8Yt5uSggFlOYl4vrXMV7PYWG71DZc7v5q6PG9MmfNSKaTj7Kz54ejgTzB7zVdJL8Cc0kO1e3CgAA</Configuration>
             <LocalBusinessRule ID="acn-0113e186-4829-46c3-9fda-1f9c220baf4b" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
 Action #1 (JavaScriptBusinessActionWithBinds):
 <config>

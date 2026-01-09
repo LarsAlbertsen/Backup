@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <EventProcessors>
+        <EventProcessor ID="ep_DaaS" UserTypeID="Event Processor user-type root"><!-- Definition:
+Configuration=
+<plugin id="ep_DaaS">
+  <simple id="BatchSize">1000</simple>
+  <simple id="DaysToRetainEvents">14</simple>
+  <simple id="FailRetryEnabled">true</simple>
+  <simple id="FailRetryPeriod">30d</simple>
+  <simple id="HoursToRetainOldProcesses">168</simple>
+  <simple id="LinesPerBGP">1000</simple>
+  <simple id="MaxOldProcesses">100</simple>
+  <simple id="OptimisticLockRetryEnabled">false</simple>
+  <simple id="OptimisticLockRetryPeriod"/>
+  <simple id="Priority">1</simple>
+  <simple id="Queue">EVPROC</simple>
+  <simple id="ResponsibleUser">step://user?id=STEPSYS</simple>
+</plugin>
+PluginConfiguration=
+<plugin id="DaaSEventProcessorPlugin">
+  <simple id="AssortmentConfig">[{&quot;id&quot;:&quot;All&quot;,&quot;contextIDs&quot;: [&quot;GL&quot;,&quot;Context1&quot;,&quot;Context2&quot;,&quot;Context3&quot;]},{&quot;id&quot;:&quot;Global&quot;,&quot;contextIDs&quot;: [&quot;GL&quot;]},{&quot;id&quot;:&quot;English&quot;,&quot;contextIDs&quot;: [&quot;Context1&quot;]},{&quot;id&quot;:&quot;German&quot;,&quot;contextIDs&quot;: [&quot;Context2&quot;]},{&quot;id&quot;:&quot;Danish&quot;,&quot;contextIDs&quot;: [&quot;Context3&quot;]}]</simple>
+  <simple id="BatchSize">2000</simple>
+  <simple id="DaaSProvider">DaaSProvider=step://GatewayIntegrationEndpoint?id=giep_DaaS&lt;split&gt;</simple>
+  <simple id="DaaSTagConversion" null="true"/>
+  <simple id="lastPublishedAttribute" null="true"/>
+  <simplelist id="InheritFromObjectTypes"/>
+</plugin>
+ScheduleSpecification=
+<entries>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEverySecond" every="60"/>
+</entries> -->
+            <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
+            <Name>Data as a Service</Name>
+            <Configuration>H4sIAAAAAAAA/6VU227aQBB9z1dYbsVTiiGpoiiAEcEORSLCxaRqFUXRYk/Mtutddy9p3Kr/3vWNxgS3hfoB7w5n5syMz8yY0QccKY4kZnTQHz7FxHgELrKb2W13TANowEJMo4F5s7x6c24O7aN+QlSEqYHDgek+ApUeZwEIwfglEjB+HtK0jwyjL3CcEMjxCxAJowKvCNwI4KYtJCQXlqX0ZagB/tL1/E9+3yp8tt0vkQzWPv4Opt3tdDpNMAelYskWIBGmeYZC4982oT2OGccy1ZgmyHsFSnO6H7zFfNwEukZPcxKWzQCRp9iEfccU36S45XV23uQ1wxSEB/xy4v25AVcIEx2bpy5FutWhaUuu4K9oHRozDT7thE3YeSJxjIXEwYwFX+ocD4iIRpIdjhVdk4sfrCFUBD5ez+4d11u449HSdUy7RWSvJtXWV8VkT+u1OAxbkey1XnU7vQypPz/HIDY2w6isqREQJETpHrC4rdNbsbaSmLRFSR7CA6Y4E3O7ysfZmF5XJq0ynvoQMBoW0Uqq8oHs75LnrMzSqmVpbaf5uyl9qxg4fRIJwdJ2OWd8AQnjEvghU6sLQIrI+vDWoprWhs3L/cb/uykchPw6YRH4xYrIgBrziMNsPzy/DcplMUESvqF0SiVERUIuDROGqcxWSIQhuc/csrbmJWQ9bV4VyF+iSJdXVmMaVBEyMLOBybrQuIBOds8f0RrPoVO61vqWV5zF89VnCOQyTfR8vwg5ynohY92ZosemfZsL4Eel1lwtuNTVRXkfEVIcjmswLUAJT3LqiAp+Wxwmswqev8YFrrvLeLLLeFrc7nK2n8f/kOGEsBU6LMk9WFwa6Y6v96KpF79PScBjRA/hOtmby0H0wLrqnyr/vWuSv95/0lOrrIUQjqReQSslYXsGXmygX2IPgHM4CAAA</Configuration>
+            <EventQueue QueueStatus="Read" DaysRetained="14"><!-- Definition:
+AssetTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">
+    <Asset/>
+  </Assets>
+</STEP-ProductInformation>
+AttributeLinksTriggering=
+AttributeTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <AttributeList/>
+</STEP-ProductInformation>
+ClassificationTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Classifications ExportSize="Minimum">
+    <Classification IncludeParent="true"/>
+  </Classifications>
+</STEP-ProductInformation>
+IndexWordHierarchyTriggering=
+NameTriggering=
+ObjectTypeGroupings=
+<ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="Branch"/>
+    <ObjectType ObjectTypeID="DiscontinuedProducts"/>
+    <ObjectType ObjectTypeID="Family"/>
+    <ObjectType ObjectTypeID="GoldenRecords"/>
+    <ObjectType ObjectTypeID="Item"/>
+    <ObjectType ObjectTypeID="Leaf"/>
+    <ObjectType ObjectTypeID="Level1"/>
+    <ObjectType ObjectTypeID="Level2"/>
+    <ObjectType ObjectTypeID="Level3"/>
+    <ObjectType ObjectTypeID="Level4"/>
+    <ObjectType ObjectTypeID="OverrideLevel1"/>
+    <ObjectType ObjectTypeID="OverrideLevel2"/>
+    <ObjectType ObjectTypeID="Products"/>
+    <ObjectType ObjectTypeID="SKU"/>
+    <ObjectType ObjectTypeID="Variant"/>
+    <ObjectType ObjectTypeID="std.AdaptorType"/>
+  </ObjectTypeRules>
+</ObjectTypeRules>
+ParentTriggering=
+ProductTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <Products DontFollowClassificationToProductReference="true" ExportSize="Minimum">
+    <Product IncludeParent="true">
+      <AssetCrossReference/>
+      <AttributeLink/>
+      <ClassificationReference/>
+      <DataContainers/>
+      <Name/>
+      <OverrideSubProduct/>
+      <OverrideSubProduct/>
+      <ProductCrossReference/>
+      <Values/>
+    </Product>
+  </Products>
+</STEP-ProductInformation>
+TriggeringWorkspace=Approved
+UnitTemplate=
+<STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
+  <UnitList/>
+</STEP-ProductInformation>
+Version=3
+attributeGroup=Attribute group root
+objecttype=Branch;DiscontinuedProducts;Family;GoldenRecords;Item;Leaf;Level1;Level2;Level3;Level4;OverrideLevel1;OverrideLevel2;Products;SKU;Variant;std.AdaptorType -->
+                <Configuration>H4sIAAAAAAAA/9VVS3PaMBC+51d4fE94tk1nLDIUQso0aRgw9CzshaiRJY8kU+ivr2zLMEamdm7JTdr9drXfah9DKUH5EMUUK0De3T6izg6EJJwht3PTdh1gAQ8J2yJ36U+ub927wZW38O9n1zPBwyRQU7bhIsJKWzhzkJzuYMooYTCHjUTuBlMJrjPhlPI/z9q1ICEskrWxPiHu9zEXagyC7CAcKiWOqsGV43jDNFBpUAvyF5D7RBiJksh1xpyp/IERxVKSDQmyeHyeWelAQGga2kSJJPdXeGxlzlu5d82sdYHawJMxJWqQBkbWiYJHwl6lL8h2qyNm23P1h0jpiYtME1FL/iy7H4BiOeLq8jHlUIY6UxbQJIQZ1pWjTOGYYjlz2iBxUxbC/hcX4XcCAovg5WBVzk8cgSV8Xv+GQPmHGB4ET2KtkMg7CecJBZnFVCErSZ3TcTpG7pjIQPcMYQmERUpzdv+z+iYwC17qcY+AN/WoqYKoHrX4sawHrbAgmKl6oFThzTDEseIiFdUbFKX3CDug3TfiO/X45smf4IjQQ5Pk65d7DXH9hrgGzJsyfuA0BDaHQHeDLDrKKl9bZDoi70erUUwe3/1I8gr0WxeZsataZYXPypFlviOdLsXXlFZYq3L6HZ85fqfFt9CY60hwKS2zbK1Wq1aYJiCL2xgrPNLksU63kHWvei1zzaunyGmDQXwqHD2NX2WMdSaHcSy4/ioDWTLy/utI007jbLq4V4ZAz9xxUQLZWkHHinC26d0RnCuD5FkbKt2GKB//lryNqraJBeugfILZijYqT1kb0UGX3XaRXhG2uIfMUrBVfXS2BixIF5WmlKXvoXR5WeI+SjefJf6E8tloKT6jC4S/5IqepbjNFX1L8bWcw+Ktf5rK/SPeCwAA</Configuration>
+            </EventQueue>
+        </EventProcessor>
+    </EventProcessors>
+</STEP-ProductInformation>

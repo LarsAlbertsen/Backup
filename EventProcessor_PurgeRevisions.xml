@@ -32,7 +32,7 @@ ScheduleSpecification=
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>PurgeRevisions</Name>
             <Configuration>H4sIAAAAAAAA/6WU247TMBCG7/cpIoN6R5OCQCvapuohCxItDdkucIe8yTQ7WscOHrva7tPj9ARpSSvBnT36Zv7f9ozHSi4xt5obVLLfGzwVwluBpmrHOu2AeSBTlaHM++xucfPqmg3Cq14pbI7Sw6zPohVIE2uVApHSI04w/rMkC688r0dYlAI2fAJUKkl4L+COQLOQDJTvfd+6zcAByex1z9/yx6kjbtKHW3wGFnaCIGjCJnxNC5WA4Sg37oiFjXCsUWk0a1eyCfliwTrJ6GuczMdN0Iw/zUW2uwegymET+lFZfTB4lPTuuilrihIoBj36EJ8//g1H4WrrdSS5u+SMhUZbuEi70qgc/CbImth5abBAMphOVfpY11hyQY0if0ncyzWl3KYPkFkB32fTH5MoTqLxcBFNWNgSpltr0tZPq0zXdep2MWjlptt60Qm6FekeXyPQIeZ5++jaSwUn2qWnqmg7e/eqbQ2KNu3EM1iixKqN23s/k0Po5T70GZyXbR2/pu4fy/8+bM/fjpBbUSnQhJHWSidQKm1A/8scOmPcClMfx1pV5h/U4k3e+H9nP4EVVvSMS55D4ZTr8luZky9gmGpF9E3pRyp5WvX9uQ51k4WFLYY5VM15iSqUlYaFby9wO4vuaAsszhb+BFDeoCZz0uMnb/gLTO6J7EwFAAA=</Configuration>
-            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
+            <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">

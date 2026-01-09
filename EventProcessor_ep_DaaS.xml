@@ -70,6 +70,7 @@ ObjectTypeGroupings=
     <ObjectType ObjectTypeID="OverrideLevel2"/>
     <ObjectType ObjectTypeID="Products"/>
     <ObjectType ObjectTypeID="SKU"/>
+    <ObjectType ObjectTypeID="Tree"/>
     <ObjectType ObjectTypeID="Variant"/>
     <ObjectType ObjectTypeID="std.AdaptorType"/>
   </ObjectTypeRules>
@@ -98,8 +99,8 @@ UnitTemplate=
 </STEP-ProductInformation>
 Version=3
 attributeGroup=Attribute group root
-objecttype=Branch;DiscontinuedProducts;Family;GoldenRecords;Item;Leaf;Level1;Level2;Level3;Level4;OverrideLevel1;OverrideLevel2;Products;SKU;Variant;std.AdaptorType -->
-                <Configuration>H4sIAAAAAAAA/9VVS3PaMBC+51d4fE94tk1nLDIUQso0aRgw9CzshaiRJY8kU+ivr2zLMEamdm7JTdr9drXfah9DKUH5EMUUK0De3T6izg6EJJwht3PTdh1gAQ8J2yJ36U+ub927wZW38O9n1zPBwyRQU7bhIsJKWzhzkJzuYMooYTCHjUTuBlMJrjPhlPI/z9q1ICEskrWxPiHu9zEXagyC7CAcKiWOqsGV43jDNFBpUAvyF5D7RBiJksh1xpyp/IERxVKSDQmyeHyeWelAQGga2kSJJPdXeGxlzlu5d82sdYHawJMxJWqQBkbWiYJHwl6lL8h2qyNm23P1h0jpiYtME1FL/iy7H4BiOeLq8jHlUIY6UxbQJIQZ1pWjTOGYYjlz2iBxUxbC/hcX4XcCAovg5WBVzk8cgSV8Xv+GQPmHGB4ET2KtkMg7CecJBZnFVCErSZ3TcTpG7pjIQPcMYQmERUpzdv+z+iYwC17qcY+AN/WoqYKoHrX4sawHrbAgmKl6oFThzTDEseIiFdUbFKX3CDug3TfiO/X45smf4IjQQ5Pk65d7DXH9hrgGzJsyfuA0BDaHQHeDLDrKKl9bZDoi70erUUwe3/1I8gr0WxeZsataZYXPypFlviOdLsXXlFZYq3L6HZ85fqfFt9CY60hwKS2zbK1Wq1aYJiCL2xgrPNLksU63kHWvei1zzaunyGmDQXwqHD2NX2WMdSaHcSy4/ioDWTLy/utI007jbLq4V4ZAz9xxUQLZWkHHinC26d0RnCuD5FkbKt2GKB//lryNqraJBeugfILZijYqT1kb0UGX3XaRXhG2uIfMUrBVfXS2BixIF5WmlKXvoXR5WeI+SjefJf6E8tloKT6jC4S/5IqepbjNFX1L8bWcw+Ktf5rK/SPeCwAA</Configuration>
+objecttype=Branch;DiscontinuedProducts;Family;GoldenRecords;Item;Leaf;Level1;Level2;Level3;Level4;OverrideLevel1;OverrideLevel2;Products;SKU;Tree;Variant;std.AdaptorType -->
+                <Configuration>H4sIAAAAAAAA/9VV33PaMAx+71+Ry3vLz27dXUyPQem4dSsHgT2bRFCvjp2zHQb76+ckDlxwWNK39s2WPsmSLOkbSgnKhyimWAHy7vcRdXYgJOEMuZ2btusAC3hI2Ba5S39yfefeD668hf8wu54JHiaBmrINFxFW2sKZg+R0B1NGCYM5bCRyN5hKcJ0Jp5T/edauBQlhkayN9QnxsI+5UGMQZAfhUClxVA2uHMcbpoFKg1qQv4DcH4SRKIlcZ8yZyh8YUSwl2ZAgi8fnmZUOBIROQ5sokeT+Co+tzHkr964za11IbeDJmBI1SAMj60TBE2Gv0hdku9URs+25+kOU9JSLTAtRm/xZdT9AiuWIq9vHtEMZ6kxZQJMQZlh3jjKNY5rlzGmDwk1ZCPtfXITfCAgsgpeD1Tk/cQSW8Hn9GwLlH2J4FDyJtUIi7yScJxRkFlOFrCR1TsfpGLljIgM9M4QlEBYlzbP7n9VXgVnwUo/zBUA96gnwph41VRDVoxbfl/WgFRYEM1UPlCq8GYY4VlykonqDokGfYAe0+0Z8px7f/IsmOCL00KT4+uVeQ1y/Ia5B5k0zfuQ0BDaHQM+MLObOanJbZOYmn1prnEwd3/3i8gr0W+nO2FURXuGzcrGZ70h3UPE1JaJrVe7I4zPH77TyLTTmOhJcSsssI99q1QrTBGRxG2OFRzp5rMstZN2rXstc8+4patpgXZ8aR+/sVxljXclhHAuuv8pAloy8/z7SaadxNqX3lUmgZ+64aIGMfNCxI5xtencE58ogeTaGSo8hyknCkrdRFedYsA7KN5itaKPylrURHXTZbRdpirDFPZRylS3vI0MWtuoWndGDBemi0vay9D2Ukpol7qOUES3xLcp3pqX4hC4U4nOu6FmKu1zRtxRfyrUt3voHnzIyUxwMAAA=</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

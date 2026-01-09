@@ -64,6 +64,26 @@
 }
 */
 exports.operation0 = function (node,logger,manager,toAVRO,toJSON,bc) {
+
+
+
+var x = '#REMOVETHIS#3074457345619883785#REMOVETHIS#'
+var xx = {
+	xx : x
+}
+
+var str = JSON.stringify(xx).replace('"#REMOVETHIS#','').replace('#REMOVETHIS#"','')
+
+
+var json = JSON.parse(str)
+
+logger.info('x' + str + 'x')
+logger.info(json.xx)
+
+
+
+/*
+
 var schema = {
   "type": "record",
   "name": "SimpleRecord",
@@ -106,4 +126,6 @@ bc.generateQRcode(asset, 'This is a test of the value to put into the QR code', 
 
 var headers = {"error":"Error while processing message [Topic: productsXML10, Partition: 2, Offset: 8378, MessageKey: BAProduct-1], Processing finished with errors","messages":["The value for attribute 'Number' on product 'BAProduct-1' isn't valid (Number validator failed: XfBcQWZ3iW) [Topic: productsXML10, Partition: 2, Offset: 8378, MessageKey: ]"]}
 logger.info(headers.error.split(':')[4].split(']')[0].trim())
+
+*/
 }

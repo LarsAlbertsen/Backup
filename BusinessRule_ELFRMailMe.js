@@ -25,7 +25,7 @@
   "parameters" : [ {
     "id" : "Body",
     "type" : "java.lang.String",
-    "value" : "Hello"
+    "value" : "Message body from plugin"
   }, {
     "id" : "Recipients",
     "type" : "java.util.List",

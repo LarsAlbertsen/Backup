@@ -50,6 +50,8 @@
             <AttributeLink AttributeID="Bullet08"></AttributeLink>
             <AttributeLink AttributeID="Bullet09"></AttributeLink>
             <AttributeLink AttributeID="Bullet10"></AttributeLink>
+            <AttributeLink AttributeID="Bullet11"></AttributeLink>
+            <AttributeLink AttributeID="Bullet12"></AttributeLink>
             <AttributeLink AttributeID="ContainWood"></AttributeLink>
             <AttributeLink AttributeID="CostPrice"></AttributeLink>
             <AttributeLink AttributeID="CountryOfOrigin"></AttributeLink>

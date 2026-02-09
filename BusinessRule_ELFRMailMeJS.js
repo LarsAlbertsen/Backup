@@ -6,14 +6,14 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "PrintName",
+  "id" : "ELFRMailMeJS",
   "type" : "BusinessAction",
-  "setupGroups" : [ "LAALRules" ],
-  "name" : "PrintName",
+  "setupGroups" : [ "ELFRBRGroup" ],
+  "name" : "ELFRMailMeJS",
   "description" : null,
   "scope" : "Global",
-  "validObjectTypes" : [ "Family", "Item", "Variant" ],
-  "allObjectTypesValid" : false,
+  "validObjectTypes" : [ ],
+  "allObjectTypesValid" : true,
   "runPrivileged" : false,
   "onApprove" : "Never",
   "dependencies" : [ ]
@@ -23,8 +23,8 @@
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
-    "contract" : "CurrentObjectBindContract",
-    "alias" : "node",
+    "contract" : "MailHomeBindContract",
+    "alias" : "mailhome",
     "parameterClass" : "null",
     "value" : null,
     "description" : null
@@ -33,12 +33,6 @@
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node) {
-
-logger.info("Name: "+node.getName());
-logger.info("Lars Albertsen");
-
-logger.info("Name: "+node.getObjectType().getName());
-
-
+exports.operation0 = function (mailhome) {
+mailhome.mail().addTo('elfr@xstibosystems.com').plainMessage('Mail body from js').subject('Mail From js').send()
 }

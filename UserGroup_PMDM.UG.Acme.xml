@@ -3,6 +3,9 @@
     <UserGroupList>
         <UserGroup ID="PMDM.UG.Acme" ParentID="Suppliers" ReadOnly="false" VendorRoot="PMDM.UG.Acme" MultifactorAuthenticationRequired="false">
             <Name>Acme</Name>
+            <GUISetup>
+                <GUISetupDisabled>/RevisionHistoryEditorRevisionsFlipper</GUISetupDisabled>
+            </GUISetup>
         </UserGroup>
     </UserGroupList>
 </STEP-ProductInformation>

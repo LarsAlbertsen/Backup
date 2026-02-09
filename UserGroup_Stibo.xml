@@ -10,6 +10,9 @@
             <PrivilegeRule ActionSetID="All user actions" ProductID="Product hierarchy root"></PrivilegeRule>
             <PrivilegeRule ActionSetID="All user actions" PublicationGroupID="Publication hierarchy root"></PrivilegeRule>
             <PrivilegeRule ActionSetID="All user actions" TradingTermsID="eCatalog root"></PrivilegeRule>
+            <GUISetup>
+                <GUISetupDisabled>/Contexts/step://context?id=sldkhfslfkhdslk</GUISetupDisabled>
+            </GUISetup>
         </UserGroup>
     </UserGroupList>
 </STEP-ProductInformation>

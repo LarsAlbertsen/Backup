@@ -4,6 +4,7 @@
         <User ID="DUPLAAL" EMail="laal@stibosystems.com" Deactivated="false">
             <Name>DUPLAAL</Name>
             <MetaData>
+                <Value AttributeID="UPN">qq</Value>
                 <Value AttributeID="UserInformation">Stibo standard user</Value>
                 <Value AttributeID="UserLastActivityDate">2025-02-13</Value>
             </MetaData>

@@ -32,12 +32,25 @@
   "messages" : [ ],
   "pluginType" : "Operation",
   "functionReturnType" : "java.util.Date",
-  "functionParameterBinds" : [ ]
+  "functionParameterBinds" : [ {
+    "contract" : "DateBindContract",
+    "alias" : "afterDate",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : ""
+  } ]
 }
 */
-exports.operation0 = function (logger) {
+exports.operation0 = function (logger,afterDate) {
+afterDate = new java.util.Date()
+logger.info('afterDate ' + afterDate)
 var calendar = java.util.Calendar.getInstance();
+calendar.setTime(afterDate);
+
 calendar.add(java.util.Calendar.MINUTE, 5);
 return calendar.getTime();
+
+
+
 
 }

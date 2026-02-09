@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "ELFRLog",
+  "id" : "ELFRPrintSecurityLog",
   "type" : "BusinessAction",
   "setupGroups" : [ "ELFRBRGroup" ],
-  "name" : "ELFRLog",
+  "name" : "ELFRPrintSecurityLog",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -36,21 +36,15 @@
     "description" : null
   }, {
     "contract" : "BusinessFunctionBindContract",
-    "alias" : "fn",
+    "alias" : "ls",
     "parameterClass" : "com.stibo.core.domain.impl.businessrule.function.javascript.reference.BusinessFunctionReferenceImpl",
-    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>hasOrphanValues</BusinessFunction>\n</BusinessFunctionReference>\n",
+    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>ELFRLS</BusinessFunction>\n</BusinessFunctionReference>\n",
     "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,logger,fn) {
-function log(msg) {
-	logger.info('ELFRLog : ' + msg)
-}
-log(node)
-
-fn.evaluate({root:node})
-
+exports.operation0 = function (node,logger,ls) {
+ls.evaluate({fn:'/opt/stibo/step/diag/security/events/security_events.0.log', justCount:false})
 }

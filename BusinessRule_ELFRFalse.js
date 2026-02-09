@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "khpeapprovaltest",
-  "type" : "BusinessAction",
-  "setupGroups" : [ "GlobalBusinessRulesRoot" ],
-  "name" : "khpeapprovaltest",
+  "id" : "ELFRFalse",
+  "type" : "BusinessCondition",
+  "setupGroups" : [ "ELFRBRGroup" ],
+  "name" : "ELFRFalse",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -21,14 +21,12 @@
 */
 /*===== business rule plugin definition =====
 {
-  "pluginId" : "JavaScriptBusinessActionWithBinds",
+  "pluginId" : "JavaScriptBusinessConditionWithBinds",
   "binds" : [ ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
 exports.operation0 = function () {
-logger.info("Hello");
-
-
+return "this is false"
 }

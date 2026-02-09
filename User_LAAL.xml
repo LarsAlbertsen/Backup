@@ -5,10 +5,10 @@
             <Name>Lars Albertsen</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">Stibo standard user </Value>
-                <Value AttributeID="UserLastActivityDate">2026-01-12</Value>
+                <Value AttributeID="UserLastActivityDate">2026-02-09</Value>
             </MetaData>
+            <UserGroupLink UserGroupID="Service Users"></UserGroupLink>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
-            <UserGroupLink UserGroupID="Super user"></UserGroupLink>
             <SystemSetup>
                 <SystemSetupValue Type="BasketView" Name="BasketView.Default">&lt;View Name="Default"&gt;&lt;Plugin ID="TermsList"&gt;&lt;Parameter ID="termslisttype"&gt;Price&lt;/Parameter&gt;&lt;Parameter ID="breakno"&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID="ID"/&gt;&lt;Plugin ID="Name"/&gt;&lt;Plugin ID="Image"&gt;&lt;Parameter ID="reftype"&gt;Primary Image&lt;/Parameter&gt;&lt;Parameter ID="pipeline"&gt;smallThumbnail&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID="OnPages"/&gt;&lt;Plugin ID="TermsList"&gt;&lt;Parameter ID="termslisttype"&gt;Price&lt;/Parameter&gt;&lt;Parameter ID="breakno"&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;/View&gt;</SystemSetupValue>
                 <SystemSetupValue Type="BasketView" Name="BasketView.Student X">&lt;View Name="Student X"&gt;&lt;Plugin ID="TermsList"&gt;&lt;Parameter ID="termslisttype"&gt;Price&lt;/Parameter&gt;&lt;Parameter ID="breakno"&gt;1&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID="ID"/&gt;&lt;Plugin ID="Name"/&gt;&lt;Plugin ID="Image"&gt;&lt;Parameter ID="reftype"&gt;Primary Image&lt;/Parameter&gt;&lt;Parameter ID="pipeline"&gt;smallThumbnail&lt;/Parameter&gt;&lt;/Plugin&gt;&lt;Plugin ID="OnPages"/&gt;&lt;/View&gt;</SystemSetupValue>

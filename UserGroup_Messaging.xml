@@ -3,6 +3,9 @@
     <UserGroupList>
         <UserGroup ID="Messaging" ReadOnly="false" MultifactorAuthenticationRequired="false">
             <Name>Messaging</Name>
+            <GUISetup>
+                <GUISetupDisabled>/Contexts/step://context?id=Context3</GUISetupDisabled>
+            </GUISetup>
         </UserGroup>
     </UserGroupList>
 </STEP-ProductInformation>

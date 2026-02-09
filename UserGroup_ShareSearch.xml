@@ -4,6 +4,9 @@
         <UserGroup ID="ShareSearch" ReadOnly="false" MultifactorAuthenticationRequired="false">
             <Name>ShareSearch</Name>
             <PrivilegeRule ActionSetID="ShareSearch" GroupID="ShareSearch"></PrivilegeRule>
+            <GUISetup>
+                <GUISetupDisabled>/Contexts/step://context?id=Context_xusenglish</GUISetupDisabled>
+            </GUISetup>
         </UserGroup>
     </UserGroupList>
 </STEP-ProductInformation>

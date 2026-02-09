@@ -5,7 +5,7 @@
             <Name>Integration User</Name>
             <MetaData>
                 <Value AttributeID="UserInformation">User running all integrations</Value>
-                <Value AttributeID="UserLastActivityDate">2025-12-15</Value>
+                <Value AttributeID="UserLastActivityDate">2026-02-03</Value>
             </MetaData>
             <UserGroupLink UserGroupID="Integration"></UserGroupLink>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>

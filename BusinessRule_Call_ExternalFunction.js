@@ -48,6 +48,7 @@
 exports.operation0 = function (convertFromExcel,tmpStore,convertToExcel) {
 
 {
+    const begin = new Date().getTime();
     /**
      * Convert CSV to Excel
      */
@@ -68,10 +69,12 @@ e1|e2|e3`;
     args1.put("csvFile", csvFile);
     const result1 = convertToExcel.evaluate(args1);
 
+    const after1 = new Date().getTime();
+    logger.info("CSV to Excel Time: " + (after1 - begin) + " ms");
+
     var resultStream = result1.inputStream();
     var resultData = resultStream.readAllBytes();
     logger.info("Excel File size: " + resultData.length);
-
     /**
      * Convert Excel to JSON
      */
@@ -85,6 +88,8 @@ e1|e2|e3`;
     let args = new java.util.HashMap();
     args.put("excelFile", myFile);
     var returnValue = convertFromExcel.evaluate(args);
+    const after2 = new Date().getTime();
+    logger.info("Excel to JSON Time: " + (after2 - after1) + " ms");
     
     /** @type{Payload) */
     const jsonPayload = convertFromExcel.evaluate(args);

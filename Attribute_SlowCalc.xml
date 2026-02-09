@@ -9,6 +9,7 @@
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>
             <AttributeGroupLink AttributeGroupID="Category Specific"></AttributeGroupLink>
+            <UserTypeLink UserTypeID="Family"></UserTypeLink>
             <UserTypeLink UserTypeID="Leaf"></UserTypeLink>
         </Attribute>
     </AttributeList>

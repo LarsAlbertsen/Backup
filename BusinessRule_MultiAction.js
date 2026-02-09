@@ -6,19 +6,35 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "ELFRLog",
+  "id" : "MultiAction",
   "type" : "BusinessAction",
-  "setupGroups" : [ "ELFRBRGroup" ],
-  "name" : "ELFRLog",
+  "setupGroups" : [ "Actions" ],
+  "name" : "MultiAction",
   "description" : null,
   "scope" : "Global",
-  "validObjectTypes" : [ ],
-  "allObjectTypesValid" : true,
+  "validObjectTypes" : [ "Item", "Variant" ],
+  "allObjectTypesValid" : false,
   "runPrivileged" : false,
   "onApprove" : "Never",
   "dependencies" : [ ]
 }
 */
+/*===== business rule plugin definition =====
+{
+  "pluginId" : "BulkUpdateSetObjectType",
+  "parameters" : [ {
+    "id" : "Formula",
+    "type" : "java.lang.String",
+    "value" : ""
+  }, {
+    "id" : "Value",
+    "type" : "java.lang.String",
+    "value" : "Item"
+  } ],
+  "pluginType" : "Operation"
+}
+*/
+
 /*===== business rule plugin definition =====
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
@@ -34,23 +50,11 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
-  }, {
-    "contract" : "BusinessFunctionBindContract",
-    "alias" : "fn",
-    "parameterClass" : "com.stibo.core.domain.impl.businessrule.function.javascript.reference.BusinessFunctionReferenceImpl",
-    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>hasOrphanValues</BusinessFunction>\n</BusinessFunctionReference>\n",
-    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,logger,fn) {
-function log(msg) {
-	logger.info('ELFRLog : ' + msg)
-}
-log(node)
-
-fn.evaluate({root:node})
-
+exports.operation1 = function (node,logger) {
+logger.info("Name: "+node.getName())
 }

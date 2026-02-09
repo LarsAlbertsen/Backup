@@ -46,6 +46,8 @@
             <AttributeLink AttributeID="Bullet08"></AttributeLink>
             <AttributeLink AttributeID="Bullet09"></AttributeLink>
             <AttributeLink AttributeID="Bullet10"></AttributeLink>
+            <AttributeLink AttributeID="Bullet11"></AttributeLink>
+            <AttributeLink AttributeID="Bullet12"></AttributeLink>
             <AttributeLink AttributeID="ContainWood"></AttributeLink>
             <AttributeLink AttributeID="CostPrice"></AttributeLink>
             <AttributeLink AttributeID="CountryOfOrigin"></AttributeLink>
@@ -59,6 +61,7 @@
             <AttributeLink AttributeID="ProductName"></AttributeLink>
             <AttributeLink AttributeID="RetailPrice"></AttributeLink>
             <AttributeLink AttributeID="ShortDescription"></AttributeLink>
+            <AttributeLink AttributeID="SlowCalc"></AttributeLink>
             <AttributeLink AttributeID="a3c6966e-2f12-411e-8c44-7b73674cc1f8"></AttributeLink>
             <AttributeLink AttributeID="a6dd167b-b650-415b-95b1-da14acd9a2ba"></AttributeLink>
             <AttributeLink AttributeID="a7c518bb-4f9a-42fb-be62-787d9e448413"></AttributeLink>

@@ -35,7 +35,7 @@
 */
 exports.operation0 = function (node) {
 var count = countProduct(node)
-logger.info("Products below "+node.getTitle()+" " +count)
+logger.info("Products belowxxx "+node.getTitle()+" " +count)
 
 
 

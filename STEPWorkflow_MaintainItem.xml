@@ -56,6 +56,7 @@
             <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
             <Name>Maintain Item</Name>
             <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
+            <StartCondition ID="ELFRFalse"></StartCondition>
             <Configuration>H4sIAAAAAAAA/61VXW/TMBR9368wFq9p2m6DbUo6ocHQpKGhlY0HxIOb3GUGxw7+6Ae/nmvno127rgXx0Lp1fM+559g+Yc6qK8ktZxZu5IUGHNMHJgwkphLcjmAOmbMwzjSv7DUvuYX8s+ZTLqAAk1rt2pWCGwvyRl6VldIW9F2Vr4OZbF6KNAkD4YFWpLTmF5RIVkJKPzEuLX6uLJSUTEEbrmRK+71TSrBOmpQ+WludxfFsNuvNDntKF/Gw3z+O+2/jAE1HyasoIoRIlUNk+G+ImMyjShkkUpLM036vTxbhe5YOjvz4mA4PT3AkUTQ6IAm2zkqsFvin/keYtZpP0IuUjh9R4T3TnE0EUMLz9alREvua0UE9NkiIy4zhhQQINa8zpzVIS4ldVAjrDGhf2i4KFcaiiyTnJlPScukAC4OnNW9r3k7Jw1rz0WEtut+IPu40k0RJbEYvyMQZLsEYlvlaz3KtZHHrpOSy8A02C31/JLGayYYFpjifUuMmeE5QFdMF2OWO+tLlam9OELePzBWI/XQOBifbhe5u+ZLLFVMhLyCqmH0k38KD7wSJThqiN+2x2S7uwRdtF/eUbKey03/awlso1RQutSq/Kv3zQajZHjup4Qdkz+/khjPts2DOm13mBEuCS/7GjpqAmHKYpcm5j4fu4g96fUpAZirH05fSuy+X0QklaK7MmcD+U7oAQ88RS5rh2awRd49Ips6LM5x/khnG8onqZaqk3jMU7mm7Y+YrKcnhgTlhx3irL5RwpU8gShjGZcksz/x8u4c1SABipkK/AhTPafz8Ex9zT55lgaCJv7VswUTOb6RYdAem9Lqt0otN+gBWCVdwSerh6n1K2+1ehtOTgrqIaSTH0A4NLtmnTLiNnuI1xrjmWhEU14q2SXzX5Nv/VNdh7lT3YV4hyUetXGU6hTVZvK048i+3UN3UbS5cY2qd80ftWdx4Cfx3fiaxP67Nbw0G30rhkuMLNRMuh7GbFKHJzlQMnkqwxRh+ObxH4E/yCnjJqgpvFglx5S3t3seex0+s3IpNpPglqC4v9sEavIxVp+Q+QMMWKIlX/PFhs5EQOFknzx8wZpt3CQkAAA==</Configuration>
         </STEPWorkflow>
     </STEPWorkflows>

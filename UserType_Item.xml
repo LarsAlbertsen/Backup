@@ -56,6 +56,8 @@
             <AttributeLink AttributeID="Bullet08"></AttributeLink>
             <AttributeLink AttributeID="Bullet09"></AttributeLink>
             <AttributeLink AttributeID="Bullet10"></AttributeLink>
+            <AttributeLink AttributeID="Bullet11"></AttributeLink>
+            <AttributeLink AttributeID="Bullet12"></AttributeLink>
             <AttributeLink AttributeID="CalculatedAttr"></AttributeLink>
             <AttributeLink AttributeID="ContainWood"></AttributeLink>
             <AttributeLink AttributeID="CostPrice"></AttributeLink>
@@ -84,6 +86,7 @@
             <AttributeLink AttributeID="MarketingCopy"></AttributeLink>
             <AttributeLink AttributeID="MultiTextLang"></AttributeLink>
             <AttributeLink AttributeID="MultiValueLOV"></AttributeLink>
+            <AttributeLink AttributeID="New Attr"></AttributeLink>
             <AttributeLink AttributeID="Number"></AttributeLink>
             <AttributeLink AttributeID="NumericText"></AttributeLink>
             <AttributeLink AttributeID="OpenLOVAttr"></AttributeLink>
@@ -131,6 +134,7 @@
             <AttributeLink AttributeID="fac03a00-67f9-402b-a121-fb9448fc552d"></AttributeLink>
             <AttributeLink AttributeID="isodatetime"></AttributeLink>
             <AttributeLink AttributeID="laal_number"></AttributeLink>
+            <AttributeLink AttributeID="newAttr666"></AttributeLink>
             <AttributeLink AttributeID="nifemetadata"></AttributeLink>
             <AttributeLink AttributeID="triggeringAttribute"></AttributeLink>
         </UserType>

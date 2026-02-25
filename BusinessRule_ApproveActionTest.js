@@ -112,8 +112,10 @@ function handleReferencePartObject(po, nodeBefore, nodeAfter) {
 		type : po,
 		refType : po.getReferenceType(),
 		targetID : po.getTargetID(),
-		state : a&&b?'Update':(a&&!b?'New':'Delete'),
-		values : []
+		state : a&&b?'Update':(a&&!b?'New':'Delete')
+		,userid : nodeAfter.getEditRevision(po).getUserID() //getEditRevision accesses data not in-memory, and makes the BR run 6 times slower
+		,time : new Date(nodeAfter.getEditRevision(po).getEditedDate()).toISOString()
+		,values : []
 	}
 	if (po instanceof com.stibo.core.domain.partobject.AssetReferencePartObject) {
 		doc.type = 'AssetReference'

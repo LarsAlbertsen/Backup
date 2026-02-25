@@ -57,11 +57,41 @@ var result = querySpecification.execute();
 var count = 0;
 result.forEach(function(t) {
 	count++
-	logger.info(t)
+	//logger.info(t)
 	//t.reassign(userNew)
 	return true	
 })
 logger.info(count)
 
+
+var color = manager.getAttributeHome().getAttributeByID('Color');
+var length = manager.getAttributeHome().getAttributeByID('Length');
+var width = manager.getAttributeHome().getAttributeByID('Width');
+var height = manager.getAttributeHome().getAttributeByID('Height');
+
+
+//logger.info(c.valueOf(length).numeric().gt('1'))
+
+
+
+
+
+var co = c.valueOf(color).eq('Blue')
+var l = c.valueOf(length).numeric().gt('1')
+var w = c.valueOf(width).numeric().gt('1')
+var h2 = c.valueOf(height).numeric().eq('2')
+var h3 = c.valueOf(height).numeric().eq('3')
+
+var cond1 = co.and(l).and(w).and(h2)
+var cond2 = co.and(l).and(w).and(h3)
+
+var qs = QueryHome.queryFor(com.stibo.core.domain.Product).where(
+	cond1.or(cond2)
+).execute()
+
+qs.forEach(function(x) {
+	logger.info(x)
+	return true
+})
 
 }

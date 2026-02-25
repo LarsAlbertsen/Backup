@@ -3,12 +3,18 @@
     <ComponentModels version="2">
         <Model id="com.stibo.bmecat.domain.interfaces.BMECatComponentModel.Component">
             <NodeAspectDescriptors>
-                <NodeAspectDescriptor id="com.stibo.bmecat.domain.aspects.BMECatTemplateObjectType"></NodeAspectDescriptor>
-                <NodeAspectDescriptor id="com.stibo.bmecat.domain.aspects.BMECatTemplateSchemaObjectType"></NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.bmecat.domain.aspects.BMECatTemplateObjectType">
+                    <UserTypeLink UserTypeID="Configuration"></UserTypeLink>
+                </NodeAspectDescriptor>
+                <NodeAspectDescriptor id="com.stibo.bmecat.domain.aspects.BMECatTemplateSchemaObjectType">
+                    <UserTypeLink UserTypeID="Configuration"></UserTypeLink>
+                </NodeAspectDescriptor>
             </NodeAspectDescriptors>
             <LinkAspectDescriptors></LinkAspectDescriptors>
             <ValueAspectDescriptors>
-                <ValueAspectDescriptor id="com.stibo.bmecat.domain.aspects.BMECatTemplateStandardAttribute"></ValueAspectDescriptor>
+                <ValueAspectDescriptor id="com.stibo.bmecat.domain.aspects.BMECatTemplateStandardAttribute">
+                    <AttributeLink AttributeID="AssetAttribute"></AttributeLink>
+                </ValueAspectDescriptor>
             </ValueAspectDescriptors>
         </Model>
     </ComponentModels>

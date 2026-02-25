@@ -33,7 +33,7 @@
   }, {
     "id" : "Sender",
     "type" : "com.stibo.util.basictypes.EmailRecipient",
-    "value" : "@ScheduleBulkUpdTest@stibosystems.com"
+    "value" : "@ELFRMailMe@stibosystems.com"
   }, {
     "id" : "Subject",
     "type" : "java.lang.String",

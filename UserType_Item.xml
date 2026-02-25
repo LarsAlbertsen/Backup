@@ -59,6 +59,7 @@
             <AttributeLink AttributeID="Bullet11"></AttributeLink>
             <AttributeLink AttributeID="Bullet12"></AttributeLink>
             <AttributeLink AttributeID="CalculatedAttr"></AttributeLink>
+            <AttributeLink AttributeID="Color"></AttributeLink>
             <AttributeLink AttributeID="ContainWood"></AttributeLink>
             <AttributeLink AttributeID="CostPrice"></AttributeLink>
             <AttributeLink AttributeID="CountryOfOrigin"></AttributeLink>
@@ -72,6 +73,7 @@
             <AttributeLink AttributeID="ELFRTESTSPEC"></AttributeLink>
             <AttributeLink AttributeID="GTIN"></AttributeLink>
             <AttributeLink AttributeID="GenerateProof"></AttributeLink>
+            <AttributeLink AttributeID="Height"></AttributeLink>
             <AttributeLink AttributeID="ISODateAttribute"></AttributeLink>
             <AttributeLink AttributeID="IsActive"></AttributeLink>
             <AttributeLink AttributeID="ItemBulletCalc"></AttributeLink>
@@ -82,6 +84,7 @@
             <AttributeLink AttributeID="LangDescription"></AttributeLink>
             <AttributeLink AttributeID="LanguageDependant"></AttributeLink>
             <AttributeLink AttributeID="LastEdited"></AttributeLink>
+            <AttributeLink AttributeID="Length"></AttributeLink>
             <AttributeLink AttributeID="MFGPartNo"></AttributeLink>
             <AttributeLink AttributeID="MarketingCopy"></AttributeLink>
             <AttributeLink AttributeID="MultiTextLang"></AttributeLink>
@@ -102,6 +105,7 @@
             <AttributeLink AttributeID="UPC"></AttributeLink>
             <AttributeLink AttributeID="URL"></AttributeLink>
             <AttributeLink AttributeID="ValueFromVG"></AttributeLink>
+            <AttributeLink AttributeID="Width"></AttributeLink>
             <AttributeLink AttributeID="a1"></AttributeLink>
             <AttributeLink AttributeID="a2"></AttributeLink>
             <AttributeLink AttributeID="a3"></AttributeLink>

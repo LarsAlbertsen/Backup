@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "MyFunc",
+  "id" : "ConvertToAsset",
   "type" : "BusinessFunction",
   "setupGroups" : [ "Extensions" ],
-  "name" : "MyFunc",
+  "name" : "ConvertToAsset",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -25,7 +25,7 @@
   "parameters" : [ {
     "id" : "ExternalBusinessFunction",
     "type" : "com.stibo.integration.extension.domain.parameter.ExternalBusinessFunctionExtensionConfiguration",
-    "value" : "eyJyZXR1cm5UeXBlIjoiUGF5bG9hZCIsImVuZ2luZUlkIjoibXlleHR0IiwiaWQiOiJDb252ZXJ0RnJvbUV4Y2VsIiwidXJsIjoiaHR0cDovL2V4dGVuc2lvbi1lbmdpbmUtbXlleHR0OjgwODAvYXBpL2V4dGVuc2lvbnMvQ29udmVydEZyb21FeGNlbCIsInBhcmFtZXRlcnMiOnsiZXhjZWxGaWxlIjoiUGF5bG9hZCJ9LCJ0aW1lb3V0IjoxMDAwMCwiZmFpbHVyZVN0cmF0ZWd5IjoiRkFJTCIsInNpZ25hdHVyZSI6ImI4NWRiNDdkIn0="
+    "value" : "eyJyZXR1cm5UeXBlIjoiU3RyaW5nIiwiZW5naW5lSWQiOiJteS1tc3AiLCJpZCI6IkNvbnZlcnRUb0V4Y2VsIiwidXJsIjoiaHR0cDovL2V4dGVuc2lvbi1lbmdpbmUtbXktbXNwOjgwODAvYXBpL2V4dGVuc2lvbnMvQ29udmVydFRvRXhjZWwiLCJwYXJhbWV0ZXJzIjp7ImNzdkZpbGUiOiJQYXlsb2FkIn0sInRpbWVvdXQiOjEwMDAwLCJmYWlsdXJlU3RyYXRlZ3kiOiJGQUlMIiwic2lnbmF0dXJlIjoiMTk5OTY2MWIifQ=="
   } ],
   "pluginType" : "Operation"
 }

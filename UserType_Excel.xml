@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserTypes>
-        <UserType ID="Excel" ReferenceTargetLockPolicy="Relaxed">
+        <UserType ID="Excel" ReferenceTargetLockPolicy="Relaxed" IDPattern="[id]">
             <Name>Excel</Name>
             <Icon>H4sIAAAAAAAA/11VsXLbMAzd8xU8da5MwhQF9uIMVa/noV49eOvFbuw7184lbpzPLwCSoKRFhKgH8AF4oB7fP17M/bS/HVcN+MYcD6eX4y3ZH6fD/fv1c9VYYw14w3t/TufzqrlcL4fGfP49X95XzfF2e/22WNzv9/a+bK9vLwuw1i4ocPP08Pj6+3YUr69v/86HVXP4OFyu+31jns+n1/neftVswMBgW4ydXzoDfHJ6IctvwQ604VpnfTAZZYBc6LEGGGCZPvGWVyCbdusHXotPAQp0DbsNtGBwgNYywCB96duYMX2Lv8CElg6gZ0IUJH0nz7AOLQ4hewTTK44t2FKEodeIBYdkocE1RdhteuMsnSALuyrKWYE5yzhlSLugULGAODpHB8lCvp2SdCAsHUxo0m6vULFwy3F2myjgIVb3qMBYgUNUBrHSEme7dp6Oooc40bbrFJxM2ApbfsmhFQ1sIvONTMf1iQ+tyZ/eKnM3oj64Wj9FW5MCUAGlPE45waiEMOIEoxI65cTezImjUY2Yo5TAz0rgUwn8rARe8va1BJ6P63IJulkJQi5B4BLUTgSuf6ed6Dhvz3REIqH2ljVYgH0Fsr78TF8+6ctP9eUNKFQs0VeX9NXN9JWmwMkY0CwZhzIstCT/gsOEw6kOkRlmqFhUlygTQ4scVKCQZgGmswAyCxkqFs8rx5E2YWoTztqEqU04axNKb7C2SenwS5y2iU6WNhGhcZtoOypWLKo+ViljlTKKfstx4+xdTb+gIUsZZlKGJOVSAagnipRLF5ymmKSMWcrpLdTJkBtUmwwj+cBIFDq1OZyXcDU1L/n4mloVfNWmokOe0iCp5UoFjcaf9VJ19VZ19VotUEyRcFoj5ET0TpdLfRtSRnqnZ2hICYVcHulwVYgIRM/sNJDrKj9fAonvdIZ5hAswah5RQxZc0meS5678er8sf/ofHTQL+rfyP/bp4T9HhXRmwwcAAA==</Icon>
             <UserTypeLink UserTypeID="Asset user-type root"></UserTypeLink>

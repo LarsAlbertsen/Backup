@@ -41,6 +41,7 @@
 */
 exports.operation0 = function (myFunc,tmpStore) {
 
+
 const value =
         `header1|header2|header3
 a1|a2|a3
@@ -49,13 +50,15 @@ c1|c2|c3
 d1|d2|d3
 e1|e2|e3`;
 
+// Create file in tmp store
 const csvFile = tmpStore.create("file.tmp");
 csvFile.write(value);
 csvFile.close();
 
+// Call the external function
 let args1 = new java.util.HashMap();
 args1.put("csvFile", csvFile);
 const assetID = myFunc.evaluate(args1);
-
+logger.info(assetID);
 
 }

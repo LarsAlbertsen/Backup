@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "myFunc2",
+  "id" : "myFunc3",
   "type" : "BusinessFunction",
   "setupGroups" : [ "Extensions" ],
-  "name" : "myFunc2",
+  "name" : "myFunc3",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],

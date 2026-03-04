@@ -69,6 +69,16 @@ var res = {
 	objectType: node.getObjectType().getID()
 }
 
+/**
+ * Handles changes to the parent of the node in a revision.
+ * Adds a history entry to the result object for each parent change, recording the previous and new parent IDs,
+ * the creation and edit dates, revision name, and user ID. It checks if the parent history array exists and creates it if needed.
+ * The function extracts the parent ID from the predecessor (if available) and the current node, formats the dates,
+ * and appends the change to the history array.
+ *
+ * @param {Object} rev - The revision object.
+ * @param {Object} po - The part object representing the parent change.
+ */
 function handleParent(rev, po) {
 	if (!res.parent) {
 		res.parent = {
@@ -88,6 +98,15 @@ function handleParent(rev, po) {
 
 }
 
+/**
+ * Handles changes to the title of the node in a revision.
+ * Ensures a title history array exists in the result object, then appends a new entry for each title change.
+ * The entry records the previous and new titles, creation and edit dates, revision name, and user ID.
+ * It retrieves the previous title from the predecessor (if available) and the current title from the node.
+ *
+ * @param {Object} rev - The revision object.
+ * @param {Object} po - The part object representing the title change.
+ */
 function handleTitle(rev, po) {
 	if (!res.title) {
 		res.title = {
@@ -106,6 +125,16 @@ function handleTitle(rev, po) {
 
 }
 
+/**
+ * Safely retrieves the value of an attribute from a node.
+ * Checks if the attribute exists in the manager's attribute home. If not, logs a warning and returns an empty string.
+ * If the attribute exists, attempts to get its value from the node. If a value is present and has a simple value,
+ * returns it; otherwise, returns an empty string. This prevents errors from missing or undefined attributes.
+ *
+ * @param {Object} n - The node object.
+ * @param {string} aid - The attribute ID.
+ * @returns {string} The simple value of the attribute, or an empty string if not found.
+ */
 function getValSafe(n, aid) {
 	
 	if (!manager.getAttributeHome().getAttributeByID(aid)) {
@@ -119,6 +148,15 @@ function getValSafe(n, aid) {
 	return ''
 }
 
+/**
+ * Handles changes to attribute values in a revision.
+ * Ensures a values object and an array for the specific attribute ID exist in the result object.
+ * For each value change, appends an entry with the previous and new values (using getValSafe),
+ * creation and edit dates, revision name, and user ID. This builds a history of changes for each attribute.
+ *
+ * @param {Object} rev - The revision object.
+ * @param {Object} po - The part object representing the value change.
+ */
 function handleValue(rev, po) {
 	if (!res.values) {
 		res.values = {}
@@ -136,6 +174,16 @@ function handleValue(rev, po) {
 	})
 }
 
+/**
+ * Checks if a reference of a given type exists from the source node to the target ID.
+ * Queries all references of the specified type from the source node, iterating through them to see if any
+ * reference's target matches the given target ID. Returns true if found, otherwise false. Stops searching early if found.
+ *
+ * @param {Object} source - The source node.
+ * @param {string} targetID - The target node ID.
+ * @param {string} type - The reference type ID.
+ * @returns {boolean} True if the reference exists, false otherwise.
+ */
 function hasRef(source, targetID, type) {
 	var found = false;
 	source.queryReferences(manager.getReferenceTypeHome().getReferenceTypeByID(type)).forEach(function (ref) {
@@ -145,6 +193,16 @@ function hasRef(source, targetID, type) {
 	return found;
 }
 
+/**
+ * Handles changes to references in a revision.
+ * Ensures a references object and an array for the specific reference type exist in the result object.
+ * For each reference change, determines the operation (Create, Update, or Delete) by checking if the reference
+ * exists in the current and predecessor nodes. Appends an entry with the target ID, operation, creation and edit dates,
+ * revision name, and user ID. This builds a history of reference changes for each reference type.
+ *
+ * @param {Object} rev - The revision object.
+ * @param {Object} po - The part object representing the reference change.
+ */
 function handleReference(rev, po) {
 	if (po instanceof com.stibo.core.domain.partobject.ProductReferencePartObject) {
 		

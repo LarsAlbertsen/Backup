@@ -32,7 +32,7 @@
     "contract" : "BusinessFunctionBindContract",
     "alias" : "myFunc",
     "parameterClass" : "com.stibo.core.domain.impl.businessrule.function.javascript.reference.BusinessFunctionReferenceImpl",
-    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>myFunc3</BusinessFunction>\n</BusinessFunctionReference>\n",
+    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>myFunc5</BusinessFunction>\n</BusinessFunctionReference>\n",
     "description" : null
   } ],
   "messages" : [ ],

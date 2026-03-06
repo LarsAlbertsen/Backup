@@ -41,9 +41,19 @@
 */
 exports.operation0 = function (source,logger) {
 var data = source.getMessage();
-logger.info(data)
 
-java.lang.Thread.sleep(5000)
+var json = JSON.parse(data)
+
+if (json.sleeptime) {
+	logger.info(data)
+	java.lang.Thread.sleep(json.sleeptime)
+	
+} else {
+	logger.info(data)
+	logger.info('NO SLEEP')
+}
+
+
 
 
 }

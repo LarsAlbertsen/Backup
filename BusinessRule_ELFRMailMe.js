@@ -29,7 +29,7 @@
   }, {
     "id" : "Recipients",
     "type" : "java.util.List",
-    "values" : [ "@ELFR@stibosystems.com" ]
+    "values" : [ "@ELFR+Thisis&test@stibosystems.com" ]
   }, {
     "id" : "Sender",
     "type" : "com.stibo.util.basictypes.EmailRecipient",

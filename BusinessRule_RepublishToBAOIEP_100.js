@@ -46,10 +46,10 @@
 }
 */
 exports.operation0 = function (manager,eq,logger) {
-eq.republish(manager.getProductHome().getProductByID('BAProduct-BEGIN'))
-for (var ix = 1; ix <=98; ix++) {
+//eq.republish(manager.getProductHome().getProductByID('BAProduct-BEGIN'))
+for (var ix = 1; ix <=100; ix++) {
 	var randomNum = Math.floor(Math.random() * 1000) + 1;
 	eq.republish(manager.getProductHome().getProductByID('BAProduct-'+randomNum))
 }
-eq.republish(manager.getProductHome().getProductByID('BAProduct-END'))
+//eq.republish(manager.getProductHome().getProductByID('BAProduct-END'))
 }

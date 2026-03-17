@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "isReadUser",
+  "id" : "isReadGroup",
   "type" : "BusinessFunction",
   "setupGroups" : [ "ELFRBRGroup" ],
-  "name" : "isReadUser",
+  "name" : "isReadGroup",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -111,40 +111,34 @@ var result = {
 		
 	};
 
-var group = manager.getGroupHome().getGroupBy(groupID)
+var group = manager.getGroupHome().getGroupByID(groupID)
 
-
-/*
-root.queryAllUsers().forEach(function(u){
-	if (callMethod(u, 'isDeactivated')) {
-		logger.info(u + ' xxx ' + callMethod(u, 'isDeactivated'))
-	}
-	return true;	
-})
-*/
-/*
-user.getGroups().toArray().forEach(function (grp) {
-	result[grp.getID()] = {};	
-	var privilegeRules = callMethod(grp, 'getPrivilegeRules')
-	privilegeRules.toArray().forEach(function(pr) {
-		var actionSet = callMethod(pr, 'getActionSet')
-		var actionSetID = (actionSet + '').split(':')[1].trim()
-		if (!Object.keys(result[grp.getID()]).includes(actionSetID)) {
-			result[grp.getID()][actionSetID] = []
- 		     var actions = callMethod(actionSet, 'getActions')
-			actions.toArray().forEach(function(action) {
-				var actionID = callMethod(action, 'getActionId')
-				var isViewAction = callMethod(action, 'isViewAction')
-				
-				logger.info(actionID + ' is View Action ' + isViewAction)
-				if (!isViewAction) {
-					result[grp.getID()][actionSetID].push(actionID)
-				}
-			})
+var privilegeRules = callMethod(group, 'getPrivilegeRules')
+privilegeRules.toArray().forEach(function(pr) {
+	var actionSet = callMethod(pr, 'getActionSet')
+	var actionSetID = (actionSet + '').split(':')[1].trim()
+	logger.info('ACTIONSETID ' + actionSetID)
+	if (!Object.keys(result).includes(actionSetID)) {
+		result[actionSetID] = {
+			readActions : [],
+			writeActions : []
 		}
-	})
+		var actions = callMethod(actionSet, 'getActions')
+		actions.toArray().forEach(function(action) {
+			var actionID = callMethod(action, 'getActionId')
+			var isViewAction = callMethod(action, 'isViewAction')
+				
+			//logger.info(actionID + ' is View Action ' + isViewAction)
+			if (!isViewAction) {
+				result[actionSetID].writeActions.push(actionID + ' ' + action)
+			} else {
+				result[actionSetID].readActions.push(actionID + ' ' + action)
+			}
+		})
+
+	}
 })
-*/
+
 
 
 return JSON.stringify(result,null,2);

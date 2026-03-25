@@ -12,7 +12,7 @@ Configuration=
   <simple id="BatchSize">1000</simple>
   <simple id="DaysToRetainEvents">10</simple>
   <simple id="FailRetryEnabled">true</simple>
-  <simple id="FailRetryPeriod">30d</simple>
+  <simple id="FailRetryPeriod">30m</simple>
   <simple id="HoursToRetainOldProcesses">168</simple>
   <simple id="LinesPerBGP">1000</simple>
   <simple id="MaxOldProcesses">100</simple>
@@ -33,14 +33,14 @@ PluginConfiguration=
 </plugin>
 ScheduleSpecification=
 <entries>
-  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleNever"/>
+  <entry class="com.stibo.util.scheduledefinition.ScheduleDefinition$ScheduleEveryMinute" every="1"/>
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>ELFREventProcessor</Name>
             <MetaData>
                 <Value QualifierID="en-US" AttributeID="Purpose">test</Value>
             </MetaData>
-            <Configuration>H4sIAAAAAAAA/6VUXY/SQBR931/RjIY3aYmJ2QiU8FH0AZZaWPXNDNNL94ahU+djBX+9U0qrZXfWRN86t+fcc3t7zkxFvsPMSKpR5MPB6Hjg3iNIVZ5IrxsQD3ImUsyzIbnfzN/cklF4Myi4yTD3MB2S6BFyHUvBQCkhJ1TB9M+WJLzxvIHCQ8HhjE9AFSJXuOVwr0CSUGko3vu+sYeRBUSLeTLwK8I1d0I1e1jjTyBhLwgCF2xGT2ojEtAU8/N4qsS70LFEIVGfLMYF+WTAWM3oc5yspi7Qkh5XPL1sAs6STs2PwshmxCvWu1sXa4E5qBjk5EP88gLmFLntLU9RTu2eUxJqaeCvaNsahQW/DVIXdlVoPKDSyBaC7dsaO8qVU+QZYi3noqzZA6SGw9fl4tssipNoOt5EMxJ2uO63fNr5boTuW7NWD6NOpvudV72gXyLt75cIqql5Xl09eYxTpS50Jg5dO95WdI1G3lUX8RR2mGPp5G49z6wpva5Ld2Bnqfr4LXX/Wv73xw78KkX2SRUcdRhJKWQChZAa5L9E0Q5GDdftRLa6Er9Ri8+86f/Gf2JU6Uo1ZmWHtnQl8eQGaFOaC2B7KUu7z/oisImbSJc/7OwajrppwKpzyb28cgb6i5B7VVAGDflHXSnpS5tKF5UJzqmGO5GWaX3R843KRmKWWbfnGQnHRSHFIzgTtt5jMQMOGtLnNZ745hdndPdLwwUAAA==</Configuration>
+            <Configuration>H4sIAAAAAAAA/6VUTXPTMBC991d4BJMbcTrMMB2SOOTDAWYSatKUcmNUeeNqKktmJZWGX48cf4CTqhzqi631e/t2nnZ3ruSOZxap4UqOR5PHXAQPgLo8kfP+gAQgmUq5zMbkert8c0Em0dmoEDbjMuDpmMQPIE2CioHWCmdUw/zflCQ6C4KR5nkh4IDfgC6U1PxWwLUGJJE2ULwPQ+sOEweIV8vNKKwIx9wZNezuiv8GEp0PBgMfbEH3eqs2YCiXh/J0ifehE+QKudk7jA/y1YJ1mvG3ZHM594HW9PFSpLUTcJD0an5SFtsSj1jvLnysFZegE8DZx+R5A5aUC5cb97GkzueURAYt/BftUnPlwG8HuQ97WRiec204Wyl239XYUaG9Ik8QGzkf5YrdQWoFfF+vfiziZBPPp9t4QaKeMMNOn/Z+WmWGrlmrj0kvM8Peq/PBsES660cOuo0FQRPdB0xQrWs6U3nflXer+tZw0de1eAo7LnnZyf2mnkUbet2EXJfhfs2lNVBlq6XqB8rfTZnVK+wUGR5X+deTUVgNm/vSheAmihEVbqBQaABfPrFx7q6/k/NkZJfUUHHATdMUHYtEIHb44WCX3rsBznXf+ee7yA41kFaIMSkbkoTHyM+SCZvCDUXp6tfHfXviRXI4zl+6w2ZWl6Olp6zM0PWnkjjxpEtpt9htHUbXFM02c2tjhj5vXO0GHk2bgFXnklv/8m6lG4X3uqAMWvKvJlLS1261+KhMCUENfFFpuXKeHdxWZYs8y9zIyoxE06JA9QCpd3TvebEAAQbSpzVObvIPo4AqYYgGAAA=</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="10"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">

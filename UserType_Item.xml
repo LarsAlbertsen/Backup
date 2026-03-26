@@ -87,6 +87,8 @@
             <AttributeLink AttributeID="LanguageDependant"></AttributeLink>
             <AttributeLink AttributeID="LastEdited"></AttributeLink>
             <AttributeLink AttributeID="Length"></AttributeLink>
+            <AttributeLink AttributeID="LengthA"></AttributeLink>
+            <AttributeLink AttributeID="LengthB"></AttributeLink>
             <AttributeLink AttributeID="MFGPartNo"></AttributeLink>
             <AttributeLink AttributeID="MarketingCopy"></AttributeLink>
             <AttributeLink AttributeID="MultiTextLang"></AttributeLink>

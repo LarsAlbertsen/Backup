@@ -47,4 +47,5 @@
 */
 exports.operation0 = function (node,logger,manager) {
 logger.info('node ' + node.getID() + ' nodemanagerContext ' + node.getManager().getCurrentContext().getID() + ' managerContext ' + manager.getCurrentContext().getID())
+logger.info(manager.getSystemInformation().getSystemName())
 }

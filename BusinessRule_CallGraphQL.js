@@ -6,10 +6,10 @@
 */
 /*===== business rule definition =====
 {
-  "id" : "LAALExportFunction",
+  "id" : "CallGraphQL",
   "type" : "BusinessFunction",
-  "setupGroups" : [ "LAALExport" ],
-  "name" : "LAALExportFunction",
+  "setupGroups" : [ "Extensions" ],
+  "name" : "CallGraphQL",
   "description" : null,
   "scope" : "Global",
   "validObjectTypes" : [ ],
@@ -25,7 +25,7 @@
   "parameters" : [ {
     "id" : "ExternalBusinessFunction",
     "type" : "com.stibo.integration.extension.domain.parameter.ExternalBusinessFunctionExtensionConfiguration",
-    "value" : "eyJyZXR1cm5UeXBlIjoiUGF5bG9hZCIsImVuZ2luZUlkIjoibGFhbC1leHQiLCJpZCI6IkxBQUxFeHBvcnQiLCJ1cmwiOiJodHRwOi8vZXh0ZW5zaW9uLWVuZ2luZS1sYWFsLWV4dDo4MDgwL2FwaS9leHRlbnNpb25zL0xBQUxFeHBvcnQiLCJwYXJhbWV0ZXJzIjp7ImludGVnZXJQYXJhbWV0ZXJJZCI6IkludGVnZXIiLCJ0aHJlYWRzIjoiSW50ZWdlciIsImRhdGFGaWxlIjoiUGF5bG9hZCJ9LCJ0aW1lb3V0IjoxMTAwMDAsImZhaWx1cmVTdHJhdGVneSI6IkZBSUwiLCJzaWduYXR1cmUiOiI3YjFiMjY5NSJ9"
+    "value" : "eyJyZXR1cm5UeXBlIjoiU3RyaW5nIiwiZW5naW5lSWQiOiJsYWFsLWV4dCIsImlkIjoiQ2FsbEdyYXBoUUwiLCJ1cmwiOiJodHRwOi8vZXh0ZW5zaW9uLWVuZ2luZS1sYWFsLWV4dDo4MDgwL2FwaS9leHRlbnNpb25zL0NhbGxHcmFwaFFMIiwicGFyYW1ldGVycyI6eyJxdWVyeSI6IlN0cmluZyIsImZpcnN0IjoiSW50ZWdlciIsInNlY29uZCI6IkludGVnZXIifSwidGltZW91dCI6MTAwMDAsImZhaWx1cmVTdHJhdGVneSI6IkZBSUwiLCJzaWduYXR1cmUiOiIxYmFmYjJkOCJ9"
   } ],
   "pluginType" : "Operation"
 }

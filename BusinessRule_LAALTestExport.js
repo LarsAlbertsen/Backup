@@ -26,7 +26,7 @@
     "contract" : "BusinessFunctionBindContract",
     "alias" : "LAALExportFunction",
     "parameterClass" : "com.stibo.core.domain.impl.businessrule.function.javascript.reference.BusinessFunctionReferenceImpl",
-    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>LAALExportFunction3</BusinessFunction>\n</BusinessFunctionReference>\n",
+    "value" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<BusinessFunctionReference>\n  <BusinessFunction>LAALExp-ExportFunction</BusinessFunction>\n</BusinessFunctionReference>\n",
     "description" : null
   }, {
     "contract" : "TempStoreBindContract",
@@ -54,7 +54,7 @@
 exports.operation0 = function (LAALExportFunction,tmpStore,manager,itemType) {
 
 
-const numberOfProducts = 10000;
+const numberOfProducts = 10;
 const maxThreads = 5
 
 

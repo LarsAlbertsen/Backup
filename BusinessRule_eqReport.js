@@ -50,10 +50,16 @@
   "messages" : [ ],
   "pluginType" : "Operation",
   "functionReturnType" : "java.lang.String",
-  "functionParameterBinds" : [ ]
+  "functionParameterBinds" : [ {
+    "contract" : "StringBindContract",
+    "alias" : "eqID",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : "Optional"
+  } ]
 }
 */
-exports.operation0 = function (root,logger,manager,xx) {
+exports.operation0 = function (root,logger,manager,xx,eqID) {
 function listMethods(cls) {
 	cls.class.getMethods().forEach(function(m) {
 		if ('getTranslationTargets' == m.getName()) {
@@ -97,14 +103,30 @@ var result = {
 var eqh = callMethod(manager, 'getEventQueueHome')
 var eventQueues = callMethod(eqh, 'getAllEventQueues')
 eventQueues.toArray().forEach(function(eq) {
-	result[eq.getID()] = {
-		retainedSize : callMethod(eq, 'getRetainedSize')
-		,oldest : callMethod(eq, 'getOldestUnreadEventDate')
-		,countUnreadEventsExactly : callMethod(eq, 'countUnreadEventsExactly')
-		//,countUnreadEvents : callMethod(eq, 'countUnreadEvents')
-	};
-		
+	logger.info(eqID + ' : ' + eq.getID())
+	if (eq.getID().equals(eqID) || !eqID) {
+		result[eq.getID()] = {
+			retainedSize : callMethod(eq, 'getRetainedSize')
+			,oldest : callMethod(eq, 'getOldestUnreadEventDate')
+			,countUnreadEventsExactly : callMethod(eq, 'countUnreadEventsExactly')
+			,countUnreadEvents : callMethod(eq, 'countUnreadEvents')
+		};
+	}
 })
+
+
+
+var evphome = manager.getHome(com.stibo.core.domain.eventprocessor.EventProcessorHome)
+var evp = callMethod(evphome, 'getEventProcessorByID', [{type: java.lang.String, value : eqID}])
+var eq = callMethod(evp, 'getEventQueue')
+result[eqID] = {
+			retainedSize : callMethod(eq, 'getRetainedSize')
+			,oldest : callMethod(eq, 'getOldestUnreadEventDate')
+			,countUnreadEventsExactly : callMethod(eq, 'countUnreadEventsExactly')
+			,countUnreadEvents : callMethod(eq, 'countUnreadEvents')
+	
+}
+
 
 
 return JSON.stringify(result,null,2);

@@ -4,11 +4,13 @@
         <Model id="com.stibo.packaging.domain.model.PackagingComponent.Component">
             <NodeAspectDescriptors>
                 <NodeAspectDescriptor id="com.stibo.packaging.domain.model.PackagingProduct">
-                    <UserTypeLink UserTypeID="TestItem"></UserTypeLink>
+                    <UserTypeLink UserTypeID="Item"></UserTypeLink>
                 </NodeAspectDescriptor>
             </NodeAspectDescriptors>
             <LinkAspectDescriptors>
-                <LinkAspectDescriptor id="com.stibo.packaging.domain.impl.model.PackagingLinkAspect"></LinkAspectDescriptor>
+                <LinkAspectDescriptor id="com.stibo.packaging.domain.impl.model.PackagingLinkAspect">
+                    <ProductCrossReferenceTypeLink LinkTypeID="Packaging"></ProductCrossReferenceTypeLink>
+                </LinkAspectDescriptor>
             </LinkAspectDescriptors>
             <ValueAspectDescriptors>
                 <ValueAspectDescriptor id="com.stibo.packaging.domain.impl.model.QuantityLevelAspect">

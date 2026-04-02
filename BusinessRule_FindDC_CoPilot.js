@@ -34,55 +34,85 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
+  }, {
+    "contract" : "CurrentObjectBindContract",
+    "alias" : "node",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (manager,logger) {
+exports.operation0 = function (manager,logger,node) {
+// Business Rule Type: BusinessAction
 
-const DATA_CONTAINER_TYPE_ID = "LAALDC";
-const ATTRIBUTE_ID = "LAALDC_Attr_1"; // Replace with actual attribute ID in the data container
-const SEARCH_VALUE = "ABC";
+// Bind - key: CurrentObjectBindContract, alias: currentObject, parameterClass: null
+let currentObject;
+// Bind - key: ManagerBindContract, alias: manager, parameterClass: null
+let manager;
+// Bind - key: LoggerBindContract, alias: log, parameterClass: null
+let log;
 
-// Get references to the data container type and attribute
-const dataContainerTypeHome = manager.getHome(com.stibo.core.domain.datacontainertype.DataContainerTypeHome);
-const dataContainerType = dataContainerTypeHome.getDataContainerTypeByID(DATA_CONTAINER_TYPE_ID);
+/**
+ * Business Action: Approve Current Object if Not Already Approved
+ * 
+ * This business action checks if the current object is already approved.
+ * If not approved, it attempts to approve the object.
+ * 
+ * @author Generated Rules
+ * @version 1.0
+ */
 
-if (dataContainerType == null) {
-    logger.info("Data container type '" + DATA_CONTAINER_TYPE_ID + "' not found");
-    return;
+try {
+    // Check if the current object exists
+    if (currentObject == null) {
+        log.info("No current object found. Cannot proceed with approval.");
+        return;
+    }
+    
+    // Log the object being processed
+    log.info("Processing approval for object: " + String(currentObject.getID()));
+    
+    // Get the current approval status
+    const approvalStatus = currentObject.getApprovalStatus();
+    
+    // Check if the object is already approved
+    // Using Java string comparison per copilot-instructions.md
+    if ("APPROVED".equals(String(approvalStatus))) {
+        log.info("Object " + String(currentObject.getID()) + " is already approved. No action needed.");
+        return;
+    }
+    
+    log.info("Object " + String(currentObject.getID()) + " approval status: " + String(approvalStatus) + ". Proceeding with approval.");
+    
+    // Get all parts that need to be approved
+    // For a simple approval, we can pass an empty set to approve all eligible parts
+    const partObjectsSet = manager.newHashSet();
+    
+    // Attempt to approve the object
+    currentObject.approve(partObjectsSet);
+    
+    log.info("Successfully approved object: " + String(currentObject.getID()));
+    
+} catch (e) {
+    // Handle specific approval exceptions
+    if (e instanceof ApprovalStatus.ApproveBulkValidationException) {
+        log.error("Bulk validation failed during approval of object " + String(currentObject.getID()) + ": " + String(e.getMessage()));
+        const validationExceptions = e.getValidatorExceptions();
+        validationExceptions.forEach(function(validatorException) {
+            log.error("Validation error: " + String(validatorException.getMessage()));
+        });
+        throw e;
+    } else if (e instanceof ApprovalStatus.ApproveValidationException) {
+        log.error("Validation failed during approval of object " + String(currentObject.getID()) + ": " + String(e.getMessage()));
+        throw e;
+    } else {
+        // Handle any other unexpected exceptions
+        log.error("Unexpected error during approval of object " + String(currentObject.getID()) + ": " + String(e.getMessage()));
+        throw e;
+    }
 }
-
-const attribute = manager.getAttributeHome().getAttributeByID(ATTRIBUTE_ID);
-if (attribute == null) {
-    logger.info("Attribute '" + ATTRIBUTE_ID + "' not found");
-    return;
-}
-
-// Build query using Conditions API
-const queryHome = manager.getHome(com.stibo.query.home.QueryHome);
-const c = com.stibo.query.condition.Conditions;
-
-// Build data container condition: find products with LAALDC containing value 'ABC'
-const dataContainerCondition = c.hasDataContainer(dataContainerType)
-    .where(c.valueOf(attribute).eq(SEARCH_VALUE));
-
-// Execute query for Products
-const querySpecification = queryHome
-    .queryFor(com.stibo.core.domain.Product)
-    .where(dataContainerCondition);
-
-const result = querySpecification.execute();
-
-// Process results
-let count = 0;
-result.forEach(function(product) {
-    logger.info("Found product: " + product.getID() + " - " + product.getName());
-    count++;
-    return true;
-});
-
-logger.info("Total products found with " + DATA_CONTAINER_TYPE_ID + " containing '" + SEARCH_VALUE + "': " + count);
 
 }

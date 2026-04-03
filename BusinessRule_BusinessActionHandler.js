@@ -68,10 +68,10 @@ function log(msg) {
 	logger.info(msg)
 }
 
-var replacer = function(key, value) {
+var replacer = function (key, value) {
 	var returnValue = value;
 	try {
-		if (value.getClass() !== null) { 
+		if (value.getClass() !== null) {
 			if (value instanceof java.lang.String) {
 				returnValue = '' + value;
 			} else {
@@ -110,9 +110,10 @@ function checkNode(n) {
 
 var startTime = java.lang.System.currentTimeMillis()
 result.addMessage(JSON.stringify(
-	{id:source.getNode().getID(), 
-	name:source.getNode().getTitle()
-	}, replacer))	
+	{
+		id: source.getNode().getID(),
+		name: source.getNode().getTitle()
+	}, replacer))
 log('handled ' + source.getNode() + ' in ' + (java.lang.System.currentTimeMillis() - startTime) + ' ms ' + java.lang.System.currentTimeMillis())
 
 

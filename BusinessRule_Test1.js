@@ -40,47 +40,29 @@
 }
 */
 exports.operation0 = function (manager,node) {
-/**
- * Business Action: Set FirstApprovalDate
- * 
- * This action sets the "FirstApprovalDate" attribute to the current date
- * if the product has not been approved before (i.e., the FirstApprovalDate is null).
- * 
- * Following copilot instructions:
- * - Uses const/let instead of var
- * - Uses proper string comparison for STIBO values with + ""
- * - Checks for null values before setting
- * - Uses setSimpleValue() for setting attribute values
- */
+const conditions = com.stibo.query.condition.Conditions;
 
-const logger = step.getLogger();
+const acmeProductsClassification = manager.getClassificationHome().getClassificationByID("AcmeProducts");
+const itemObjType = manager.getObjectTypeHome().getObjectTypeByID("Item");
+const colorAttr = manager.getAttributeHome().getAttributeByID("Color");
+const priceAttr = manager.getAttributeHome().getAttributeByID("Price");
 
-try {
-    // Get current date in ISO format (YYYY-MM-DD)
-    const currentDate = new Date();
-    const isoDate = currentDate.toISOString().slice(0, 10);
-    
-    logger.info("Starting FirstApprovalDate business action for node: " + node.getID());
-    
-    // Check if the product has an existing FirstApprovalDate
-    const existingFirstApprovalDate = node.getValue("FirstApprovalDate").getSimpleValue();
-    
-    // Only set FirstApprovalDate if it's currently null (product not approved before)
-    if (existingFirstApprovalDate == null) {
-        // Set FirstApprovalDate to current date
-        node.getValue("FirstApprovalDate").setSimpleValue(isoDate);
-        
-        logger.info("FirstApprovalDate set to: " + isoDate + " for product: " + node.getID());
-        logger.info("Product approval status: " + node.getApprovalStatus().toString() + "");
-    } else {
-        logger.info("FirstApprovalDate already exists (" + existingFirstApprovalDate + ") for product: " + node.getID() + ", no action taken");
-    }
-    
-} catch (error) {
-    logger.error("Error in FirstApprovalDate business action: " + error.message);
-    
-    // Re-throw the error for proper error handling
-    throw error;
-}
+const isItemType = conditions.objectType(itemObjType);
+const isUnderAcmeProducts = conditions.hierarchy().simpleBelow(acmeProductsClassification);
+const isColorNotRed = conditions.valueOf(colorAttr).neq("Red");
+const isPriceAbove10 = conditions.valueOf(priceAttr).numeric().gt("10", null);
+
+const queryHome = manager.getHome(com.stibo.query.home.QueryHome);
+const querySpecification = queryHome.queryFor(com.stibo.core.domain.Product).where(
+    isItemType.and(isUnderAcmeProducts).and(isColorNotRed).and(isPriceAbove10)
+);
+
+let count = 0;
+querySpecification.execute().forEach(function (product) {
+    count++;
+    return true;
+});
+
+logger.info("Products of type 'Item' linked to 'AcmeProducts' with Color != 'Red': " + count);
 
 }

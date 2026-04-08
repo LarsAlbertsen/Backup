@@ -3,7 +3,6 @@
     <UserTypes>
         <UserType ID="GlossaryHolderType">
             <Name>Glossary Holder Type</Name>
-            <UserTypeLink UserTypeID="SetupEntity user-type root"></UserTypeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

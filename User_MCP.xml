@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="PRODUCTSUFFICIENCYUSER" Deactivated="false">
-            <Name>Product Sufficiency User</Name>
+        <User ID="MCP" Deactivated="false">
+            <Name>MCP</Name>
             <MetaData>
-                <Value AttributeID="UserLastActivityDate">2026-04-16</Value>
+                <Value AttributeID="UserLastActivityDate">2026-04-15</Value>
             </MetaData>
-            <UserGroupLink UserGroupID="Service Users"></UserGroupLink>
+            <UserGroupLink UserGroupID="Super user"></UserGroupLink>
             <SystemSetup></SystemSetup>
         </User>
     </UserList>

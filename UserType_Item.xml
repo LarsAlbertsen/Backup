@@ -82,6 +82,7 @@
             <AttributeLink AttributeID="ItemKey"></AttributeLink>
             <AttributeLink AttributeID="ItemUniqueID"></AttributeLink>
             <AttributeLink AttributeID="LAALDummyAttr"></AttributeLink>
+            <AttributeLink AttributeID="LFSCAttrTest"></AttributeLink>
             <AttributeLink AttributeID="LOVWithIDAttr"></AttributeLink>
             <AttributeLink AttributeID="LangDescription"></AttributeLink>
             <AttributeLink AttributeID="LanguageDependant"></AttributeLink>

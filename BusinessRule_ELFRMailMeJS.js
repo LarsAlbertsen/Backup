@@ -34,5 +34,5 @@
 }
 */
 exports.operation0 = function (mailhome) {
-mailhome.mail().from('someone@stibosystems.com','hellome').addTo('elfr@stibosystems.com').plainMessage('Mail body from js').subject('Mail From js').send()
+mailhome.mail().from('someone@stibosystems.com','hellome').addTo('someonex@stibosystems.com').plainMessage('Mail body from js').subject('Mail From js').send()
 }

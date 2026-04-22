@@ -25,15 +25,15 @@
   "parameters" : [ {
     "id" : "Body",
     "type" : "java.lang.String",
-    "value" : "Message body from plugin"
+    "value" : "Message body from plugin 2"
   }, {
     "id" : "Recipients",
     "type" : "java.util.List",
-    "values" : [ "@ELFR+Thisis&test@stibosystems.com" ]
+    "values" : [ "@ELFR@stibosystems.com" ]
   }, {
     "id" : "Sender",
     "type" : "com.stibo.util.basictypes.EmailRecipient",
-    "value" : "@ELFRMailMe@stibosystems.com"
+    "value" : "@ELFRMailMe+Thisis&test@stibosystems.com"
   }, {
     "id" : "Subject",
     "type" : "java.lang.String",

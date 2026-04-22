@@ -5,6 +5,7 @@
             <Name>Unit</Name>
             <UserTypeLink UserTypeID="Unit Group"></UserTypeLink>
             <UserTypeLink UserTypeID="Unit user-type root"></UserTypeLink>
+            <AttributeLink AttributeID="UnitAltID"></AttributeLink>
             <AttributeLink AttributeID="UnitDescription"></AttributeLink>
         </UserType>
     </UserTypes>

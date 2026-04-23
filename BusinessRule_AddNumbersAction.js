@@ -34,7 +34,7 @@
 }
 */
 exports.operation0 = function (add) {
-const numberOfCalls = 10000;
+const numberOfCalls = 10;
 
 const param = new java.util.HashMap();
 param.put("first", new java.lang.Integer(1))

@@ -82,6 +82,19 @@ logger.info(json.xx)
 
 
 
+var u = manager.getUserHome().getUserByID('STIBO.I.02DDF019FC14FE8B91C3B78EDFED245C')
+logger.info(u)
+logger.info(u.getGroups())
+
+var grps = u.getGroups()
+grps.toArray().forEach(function(g) {
+	logger.info(g)	
+	g.getUsers().toArray().forEach(function(uu) {
+		logger.info('     ' + uu)	
+	})
+})
+
+
 /*
 
 var schema = {

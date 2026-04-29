@@ -52,32 +52,10 @@
 }
 */
 exports.operation0 = function (obj,manager,logger,classificationType) {
-/**
-Add classification links
-**/
+// Business Rule Type: BusinessAction
+// Bind - key: CurrentObjectBindContract, alias: node, parameterClass: null
+let node;
 
-var classificationID = "Display";
-var classification = manager.getClassificationHome().getClassificationByID(classificationID);
-
-
-logger.info("Classification ID: " + classificationID);
-
-var exists;
-var linksQuery = obj.queryClassificationProductLinks(classificationType);
-
-linksQuery.forEach(function(node) {
-     var target = node.getClassification();
-     if (target.getID().equals(classificationID)) {
-     	exists = true;
-     }
-     return true;
- });
-
-if (!exists) {
-	obj.createClassificationProductLink(classification, classificationType);
-	logger.info("The specifc Classification link has been created.");
-} else {
-	logger.info("A link to the Classification exists");
-}
+log.info("Current Name: " + node.getName());
 
 }

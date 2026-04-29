@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <STEPWorkflows>
+        <STEPWorkflow ID="CallStackWF" Referenced="true"><!-- Definition:
+<scxml name="CallStackWF" initial="Initial" version="0.9">
+  <assignee id="$current" type="user"/>
+  <datamodel>
+    <data id="CallStackVar"/>
+  </datamodel>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=238.0  </editorLayout>
+  <final id="End" name="End" discontinued="false">
+    <editorLayout>   node-size-and-position x=20.0 y=193.0 w=100.0 h=25.0  </editorLayout>
+  </final>
+  <state id="Initial" name="Initial" discontinued="false">
+    <transition target="Work"/>
+    <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="acn-5c72c5e9-fcb9-4106-a946-1371193bc777"/>
+  </state>
+  <state id="Work" name="Work" discontinued="false">
+    <transition target="End"/>
+    <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="acn-7f95b9e6-3208-40c5-ab3e-dae5e45b72e6"/>
+  </state>
+</scxml> -->
+            <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
+            <Name>CAllStackWF</Name>
+            <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
+            <Configuration>H4sIAAAAAAAA/52TT2vcMBDF7/kUquhVa/nfel0sX0ILgUIKoc1Zlmc3IrJkJDm7209fWfamJZB26cWD0Lz35jdGfPLmTksvuYd7fWshVLbnykHjRiV9CycQk4cHYeXov8pBeui/WfkiFRzAMW+nS6eSzoO+13fDaKwH+33s35o5cRoUa2JBMsYqhpd8hZHmAzB8y5V68Fw8P37B6AWsk0YzTDc1RkGmHcNP3o+fkuR4PG6O+cbYQ5JRWia0SqIzbpsPhCCEtOmBOPkTCNc9GY0LOUajE6Mbis7xe2RpMdcnluW7UBEh7Q1qwuR8CGoVDssJyf6P0X5wG1KS+aK9WeraHsTcOXnQAFHyUUzWgvYY+fMY6CYHUXppigrnw6ZQL50w2ks9QRDGveHo8WZBl+M/MbOFs8gXULqClq+cqDE6zGbPqJuc1OAcF7N2DuVCk1JUmSihJnvR1aRI6ZbwutiSNK/StM47UVXVDLO6zCyo8ZbrdQTP7QE8w4/GPs99v6/mrUXqa/ijfIVfra4jT9Pd/6JX+7rsatiSPKM7UlBREt7lQHoOJRRlV2WwvQb9s+7/Rr6Xmqv3yWf1Cr4YXcldv/PLmyQGxhnmp9KuD/MX1XkvxgcEAAA=</Configuration>
+            <LocalBusinessRule ID="acn-5c72c5e9-fcb9-4106-a946-1371193bc777" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="logger" type="Logger" contract="LoggerBindContract"/>
+    <binding alias="wf" type="Workflow" contract="CurrentWorkflowBindContract"/>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var instance = node.getWorkflowInstance(wf)
+logger.info('Init OnEntry ' + instance.getSimpleVariable('CallStackVar'))
+  </javaScript>
+</config>
+Action #2 (BulkUpdateTriggerStateFlowEvent):
+currentStateID=Initial
+eventID=
+processNote=
+stateFlowID=CallStackWF
+ -->
+                <Name>Init OnEntry</Name>
+                <Configuration>H4sIAAAAAAAA/71VXW/aMBR951dYmcSHqiXt2yQIqFCQmNq1GnQ8ItfcZC7GzmwH1v36Xcch0FUUump7c861zzn3w04m8pTLOc0ywcHMeTJnSiY8jTu9nytB1qANVzIOLsLzgIBkasFlGgf309HHT0GvW+v0c8MlGPM1FxDht0Ei28087Tu4ujVCKuCuoCP7cQ+Nr+LgM13TCdM8s9v4JbMoNOP2e5/LhQkcF7LdUU1XYNGGB/Yh4pj8bjJ9yiAOHpE2FFSm4cRqNBp068K2n2VS/5Er28Z0/GKXk/8uEvPLXj217fqHi/O2I3E6NzSrMEK2KMGKWU2ZRTv+5LVKU9AuNihDpdil4NSUm0SxqQxUOQ0ENdsdMhfCr6KTZAe51iDtTOllItTmiP4m+Qfatw+PwOwRZakW8FZtpxz92YNOVJ0/MB1DrZW+wfGiKfyPKblWjAr+iz4IKFWnsMoEtdDP5QJv2xu87+7IYeNrqgmXxlLJgMTEVTZMoRqBcRlqbpJWzQ9cyGWimo2x5JbcyiE26Yk0yFnF4o5POHqGb1Rzl0izMaBCTCxlS4QardYL63tAcU070fNH4PR3oZ+L5X22wHpNNXd2UdbCCFMZrnG8Tn4VmB/H4vT46nD9XBk4FcebAU7+NabjFJlWDBP+oiy8h8ZsK/Kam6pjs9FfdGuH+Fe9/EH8BhPSJLh4BgAA</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="acn-7f95b9e6-3208-40c5-ab3e-dae5e45b72e6" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
+<config>
+  <bindings>
+    <binding alias="logger" type="Logger" contract="LoggerBindContract"/>
+    <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
+    <binding alias="wf" type="Workflow" contract="CurrentWorkflowBindContract"/>
+  </bindings>
+  <messages/>
+  <javaScript>
+var instance = node.getWorkflowInstance(wf)
+logger.info('Work OnEntry ' + instance.getSimpleVariable('CallStackVar'))
+  </javaScript>
+</config> -->
+                <Name>Work OnEntry</Name>
+                <Configuration>H4sIAAAAAAAA/71UXU8bMRB8z6+wrlI+VPUO3ioll4ikVKICgZq0PEaLs+caNvbV9iWFX187vhwJCAFC8OabXc/M3q63pEpINYeyJIl2Los516qQIh+M/i2JrdBYqVWeHKYHCUPF9UIqkSe/Zt+/fE1Gw9ZgXFmp0NqfFWHmv60ncsMy0r6Ba9hirAEuNnRsNx6hk2958gNWMOVGlm4bP+LOC11K92cs1cImgcuzXYCBJTpvIwK7EAtMMZvNbkvMk2tPmxIokU6d8UaTYZtcf6+S9t9Ku74vJx7ua4rfm8LicdQWrt/+dHjQDyRB5wzKBmNsizL/x5wB7rydePNUC4EmxCZ1qBY7Igm2TqJNUh1oapoQ2G2GqojiKXuR7KQyBpU7v7pG7p5RV3qB76B9qc1NQXr9jPq6eK12UM4e9mCQNfefmI5jY7Q58+MFAj9iSk41B5J3cEVYq85wWRI4HFdq4V/bK7zfv5Gnja/AMKmsA8WR5Sx0NRXYtOGkDnXXRa8VBy6VqtDdTshg5+rYt+iWddjnhiVcn0rvGX+DkaGQbmcCRFMH/MZDnV7vkfUdYPNMB9n+EvBrItvfE/XK+Q8fFBZHygQAAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+        </STEPWorkflow>
+    </STEPWorkflows>
+</STEP-ProductInformation>

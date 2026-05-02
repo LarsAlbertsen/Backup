@@ -16,9 +16,8 @@
     <onentry businessactionid="RemoveFromWorkflow"/>
   </final>
   <state id="Initial" discontinued="false">
-    <transition event="submit" target="Maintain"/>
+    <transition businessactionid="acn-d34292f2-96cd-4a1b-8005-d2ac6b261d89" event="submit" target="Maintain"/>
     <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
-    <onentry businessactionid="LongRunning"/>
   </state>
   <state id="Maintain" discontinued="false">
     <transition event="submit" target="Final">
@@ -51,13 +50,20 @@
     </column>
   </view>
 </workflowViews> -->
-            <BusinessRuleLink ID="LongRunning"></BusinessRuleLink>
             <BusinessRuleLink ID="RemoveFromWorkflow"></BusinessRuleLink>
             <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
             <Name>Maintain Item</Name>
             <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
-            <StartCondition ID="ELFRFalse"></StartCondition>
-            <Configuration>H4sIAAAAAAAA/61VXW/TMBR9368wFq9p2m6DbUo6ocHQpKGhlY0HxIOb3GUGxw7+6Ae/nmvno127rgXx0Lp1fM+559g+Yc6qK8ktZxZu5IUGHNMHJgwkphLcjmAOmbMwzjSv7DUvuYX8s+ZTLqAAk1rt2pWCGwvyRl6VldIW9F2Vr4OZbF6KNAkD4YFWpLTmF5RIVkJKPzEuLX6uLJSUTEEbrmRK+71TSrBOmpQ+WludxfFsNuvNDntKF/Gw3z+O+2/jAE1HyasoIoRIlUNk+G+ImMyjShkkUpLM036vTxbhe5YOjvz4mA4PT3AkUTQ6IAm2zkqsFvin/keYtZpP0IuUjh9R4T3TnE0EUMLz9alREvua0UE9NkiIy4zhhQQINa8zpzVIS4ldVAjrDGhf2i4KFcaiiyTnJlPScukAC4OnNW9r3k7Jw1rz0WEtut+IPu40k0RJbEYvyMQZLsEYlvlaz3KtZHHrpOSy8A02C31/JLGayYYFpjifUuMmeE5QFdMF2OWO+tLlam9OELePzBWI/XQOBifbhe5u+ZLLFVMhLyCqmH0k38KD7wSJThqiN+2x2S7uwRdtF/eUbKey03/awlso1RQutSq/Kv3zQajZHjup4Qdkz+/khjPts2DOm13mBEuCS/7GjpqAmHKYpcm5j4fu4g96fUpAZirH05fSuy+X0QklaK7MmcD+U7oAQ88RS5rh2awRd49Ips6LM5x/khnG8onqZaqk3jMU7mm7Y+YrKcnhgTlhx3irL5RwpU8gShjGZcksz/x8u4c1SABipkK/AhTPafz8Ex9zT55lgaCJv7VswUTOb6RYdAem9Lqt0otN+gBWCVdwSerh6n1K2+1ehtOTgrqIaSTH0A4NLtmnTLiNnuI1xrjmWhEU14q2SXzX5Nv/VNdh7lT3YV4hyUetXGU6hTVZvK048i+3UN3UbS5cY2qd80ftWdx4Cfx3fiaxP67Nbw0G30rhkuMLNRMuh7GbFKHJzlQMnkqwxRh+ObxH4E/yCnjJqgpvFglx5S3t3seex0+s3IpNpPglqC4v9sEavIxVp+Q+QMMWKIlX/PFhs5EQOFknzx8wZpt3CQkAAA==</Configuration>
+            <Configuration>H4sIAAAAAAAA/61VXW/TMBR951cYi9c0bTZKNyWd0GBoEmiIsvGAeHDj287g2MF22pVfz7Xz0a4fW5F42NzYvuf4HNvHrHL6WgknmIMbdWkA22zGpIXUllK4MTxAXjmY5EaU7qMohAP+2YiFkDAHmzlTtTOlsA7UjbouSm0cmNuSb4PZ/KGQWRoaIgKtzGjNLylRrICMfmJCOfy7dlBQsgBjhVYZ7ffOKME6ZTN671x5HsfL5bK3POlpM4+Tfv913H8TB2g6Tl9GESFEaQ6RFX8gYopHpbZIpBV5yPq9PlmF/8tscOrb+yw5GWFLomj8gqS4dFZgtcSP+osw54yYohcZndyjwjtmBJtKoETw7a5xGvua8Yu6bZAQl1kr5gog1LzKK2NAOUrcqkTYyoLxpe2kUGEduki4sLlWTqgKsDB4WvO25j0rOak1n57UovuN6NedZpI6w1Qzf1pZocBalvtPT8RyFfGT0+QsmSXR2TDn0SkbTKMRGh/xhOXDaTIc8BFuEixQU0ZtNcXTgtqYmYNb76tXuGbyFgWJx4jdgDhO7WAwOkrugSVfCbVhLfA5RCVz9+R7GPhBkGjUEA3bw3NY3MwXHRb3mOxZZWdPbKRWKMes9uziFyj0Aq6MLr5p82sm9dJvRzPfr3KfLQZ+Qr5/J3ecaceCOcPnzAmWBJf8vR03MbEQsMzSCx8S3fUf9Pp4slSuuVDzjN5+vYpGlKC5ijOJ68/oCiy9QCxlk/NlI+4OkWydGufY/yg5rBNT3ct1Qb1nKNzTdsfMV1LCYcYq6SZ4ty+1rAqfQ5QwDM2COZH7/nYPa5AAxGyJfgUowWm8f8SH3aOxPBA0IbiVMJjL/EbJVXdgCq/babPapQ9gpazmQpG6uX6X0Xa71xH1qKAuYgbJMbrDAtfsCyarnTXFW4xxzbUhKK4VHZL4tkm5/6muw3xW3fuHEkk+GF2VtlNYk8WHiiP/xIXqpm534hZT65w/antx4zXwv/mZxv64Nr8NWHybwiXHZzWXFYdJNZ2HRXamYvCUkq0m8LvCewT+JG+AF6ws8WaREFfe0u5V9jy+Y+NW7CLFT0F1eXEM1uBprDoljwFKWqA03vDHh81OQmBnnTx/AYg63fEPCQAA</Configuration>
+            <LocalBusinessRule ID="acn-d34292f2-96cd-4a1b-8005-d2ac6b261d89" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (BulkUpdateSetName):
+Formula=concatenate(stepName(),'A') 
+Value=
+ -->
+                <Name>set Name</Name>
+                <Configuration>H4sIAAAAAAAA/3WQTYvCMBCG7/6KMBcVtF1ve0gqigheFvHrWoY6luymaWgS2f33O7UiFfGQQ57hffJmnImltjk6ZzT5XF/yorYXXUrPIGSuG3dMyflvZcSVGq9rq2CWfIAgW9RnbUsFx8N6+gnzbCCX0WtL3u+ioWwgxANsbzrRn3dos1KwjObn6M4YaE/hCyuCNsvpLTZ8C/xsB/pItMl13VTRIIjDnyMF33jFxKAtk31ouBpk3L9gr+Uz8oFcax+NJ8PFcCxk+pC90Z/QRHovfxH0wK2xTJ//zxtKn1d03/Y/ei7mHY0BAAA=</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
         </STEPWorkflow>
     </STEPWorkflows>
 </STEP-ProductInformation>

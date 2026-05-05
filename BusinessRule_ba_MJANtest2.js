@@ -23,23 +23,17 @@
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
-    "contract" : "UserBindContract",
-    "alias" : "usr",
-    "parameterClass" : "com.stibo.core.domain.impl.UserImpl",
-    "value" : "SERVICE-ACCOUNT-INTEGRATION",
-    "description" : null
-  }, {
     "contract" : "GatewayBinding",
     "alias" : "gateway",
     "parameterClass" : "com.stibo.core.domain.impl.integrationendpoint.gateway.FrontGatewayIntegrationEndpointImpl",
-    "value" : "giep_SelfSignedCert",
+    "value" : "giep_CertCheck",
     "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (usr,gateway) {
+exports.operation0 = function (gateway) {
 var request = gateway.post();
 var response;
 response = request.invoke();

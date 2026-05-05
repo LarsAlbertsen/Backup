@@ -5,8 +5,11 @@
             <Name>Asset References</Name>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+                <MultiValue AttributeID="LinkedAttributeGroups">
+                    <Value>_LAAL Attributes</Value>
+                </MultiValue>
             </MetaData>
-            <Configuration>H4sIAAAAAAAA/32Puw7CMAxF935FlA8gsDeVoAXEwIa6p62LLKVJFTtC/Xv6gLCx+VzdY8v5kTlgExmuwcexRnhV0KNDRu/ExYfBcA2BZtLysNvLIhMi/1VIPEx4Aqc1VBp3gnOHDJ2WvbEEUq1S6W0cHC3zTEnYYpH4Vml5n0pj2zXb5EWgEVr+tlfQskbCBi3y9Dmi0pVc/XutyN4o6eMR+gAAAA==</Configuration>
+            <Configuration>H4sIAAAAAAAA/32QzQ6CMBCE7zxF0wcQuVMSBDUmejGGe4HFbISWdJcY3l5+tN647TeZmUw2TpkdlgPD2dmhLxDeOTRokNEacbKu01yAo4mUjHZ7mQRCxH8LiYd2T2BfQ5k2BzjWyFAryW4AGS6ZzLZDZ2i+J/L+VRaeL7mStzHTbbVoa3gOUA8V/9wLKFkgYYkt8uh9VzSvzfKUCPgOzSxG322hHxeHWw9Jgg9VRSlzMAEAAA==</Configuration>
         </AttributeGroup>
     </AttributeGroupList>
 </STEP-ProductInformation>

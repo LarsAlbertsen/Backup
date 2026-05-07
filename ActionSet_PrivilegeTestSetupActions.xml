@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ActionSetList>
+        <ActionSet ID="PrivilegeTestSetupActions" Type="setup">
+            <Name>PrivilegeTestSetupActions</Name>
+            <ActionLink ActionID="Maintain Derived Event Types"></ActionLink>
+            <ActionLink ActionID="Update Web UI configuration"></ActionLink>
+        </ActionSet>
+    </ActionSetList>
+</STEP-ProductInformation>

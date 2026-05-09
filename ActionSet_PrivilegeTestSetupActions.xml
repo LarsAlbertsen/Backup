@@ -3,8 +3,6 @@
     <ActionSetList>
         <ActionSet ID="PrivilegeTestSetupActions" Type="setup">
             <Name>PrivilegeTestSetupActions</Name>
-            <ActionLink ActionID="Maintain Derived Event Types"></ActionLink>
-            <ActionLink ActionID="Update Web UI configuration"></ActionLink>
         </ActionSet>
     </ActionSetList>
 </STEP-ProductInformation>

@@ -12,6 +12,7 @@
             <UserTypeLink UserTypeID="ProductImageRoot"></UserTypeLink>
             <UserTypeLink UserTypeID="VideoRoot"></UserTypeLink>
             <AttributeLink AttributeID="Purpose"></AttributeLink>
+            <AttributeLink AttributeID="aaaaaa"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

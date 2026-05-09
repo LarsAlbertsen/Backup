@@ -4,6 +4,7 @@
         <UserGroup ID="PrivilegeTest" ReadOnly="false" MultifactorAuthenticationRequired="false">
             <Name>PrivilegeTest</Name>
             <PrivilegeRule ActionSetID="PrivilegeTestSetupActions"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="PrivilegeTestUserActions" ClassificationID="Classification 1 root"></PrivilegeRule>
             <PrivilegeRule ActionSetID="PrivilegeTestUserActions" ProductID="Product hierarchy root"></PrivilegeRule>
         </UserGroup>
     </UserGroupList>

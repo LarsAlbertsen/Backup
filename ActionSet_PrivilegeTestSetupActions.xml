@@ -3,6 +3,11 @@
     <ActionSetList>
         <ActionSet ID="PrivilegeTestSetupActions" Type="setup">
             <Name>PrivilegeTestSetupActions</Name>
+            <ActionLink ActionID="Access Instrument"></ActionLink>
+            <ActionLink ActionID="Access Web UI"></ActionLink>
+            <ActionLink ActionID="Access Workbench"></ActionLink>
+            <ActionLink ActionID="System Administration"></ActionLink>
+            <ActionLink ActionID="Use tag"></ActionLink>
         </ActionSet>
     </ActionSetList>
 </STEP-ProductInformation>

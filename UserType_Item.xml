@@ -60,6 +60,7 @@
             <AttributeLink AttributeID="Bullet10"></AttributeLink>
             <AttributeLink AttributeID="Bullet11"></AttributeLink>
             <AttributeLink AttributeID="Bullet12"></AttributeLink>
+            <AttributeLink AttributeID="CalcLinked"></AttributeLink>
             <AttributeLink AttributeID="CalculatedAttr"></AttributeLink>
             <AttributeLink AttributeID="Color"></AttributeLink>
             <AttributeLink AttributeID="ContainWood"></AttributeLink>

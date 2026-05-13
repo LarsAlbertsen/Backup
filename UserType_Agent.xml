@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="Agent" IDPattern="[uuid]">
+            <Name>Agent</Name>
+            <UserTypeLink UserTypeID="Agents"></UserTypeLink>
+            <AttributeLink AttributeID="AgenticUser"></AttributeLink>
+            <AttributeLink AttributeID="TemplateUUID"></AttributeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

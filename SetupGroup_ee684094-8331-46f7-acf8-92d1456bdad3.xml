@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <SetupGroups>
+        <SetupGroup ID="ee684094-8331-46f7-acf8-92d1456bdad3" UserTypeID="Skill" ParentID="49700337-af47-4ee7-b862-a9d90b2f20e8">
+            <Name>Translate</Name>
+        </SetupGroup>
+    </SetupGroups>
+</STEP-ProductInformation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <SetupGroups>
+        <SetupGroup ID="bd7936ba-92f8-4285-908e-a6f1b8196066" UserTypeID="Skill" ParentID="9c4dd14c-1682-4508-87c3-508170ff58b2">
+            <Name>Read APi</Name>
+            <MetaData>
+                <Value AttributeID="STEP-Version">2026.3</Value>
+            </MetaData>
+        </SetupGroup>
+    </SetupGroups>
+</STEP-ProductInformation>

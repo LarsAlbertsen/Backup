@@ -23,18 +23,6 @@
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
-    "contract" : "CurrentObjectBindContract",
-    "alias" : "oiep",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
-  }, {
-    "contract" : "ManagerBindContract",
-    "alias" : "manager",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
-  }, {
     "contract" : "LoggerBindContract",
     "alias" : "logger",
     "parameterClass" : "null",
@@ -52,12 +40,18 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
+  }, {
+    "contract" : "ManagerBindContract",
+    "alias" : "manager",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (oiep,manager,logger,source,result) {
+exports.operation0 = function (logger,source,result,manager) {
 function checkNode(n) {
 	var orphans = []
 	n.getValues().toArray().forEach(v => {
@@ -71,11 +65,29 @@ function checkNode(n) {
 	return orphans
 }
 
-var res = checkNode(source.getNode())
+var fullResult = null;
 
-//logger.info(source.getNode() + ' ' + res)
-if (res.length > 0) {
-	result.addMessage(JSON.stringify({'node' : source.getNode().getID(), 'orphans':res}))
+manager.getContextHome().getContexts().forEach(function(context) {
+	manager.executeInContext(context.getID(), function(ctxman) {
+		var n = ctxman.getObjectFromOtherManager(source.getNode())
+		var res = checkNode(n)
+		if (res.length > 0) {
+			if (!fullResult) {
+				fullResult = {'node':n.getID()}
+			}
+			fullResult[context.getID()] = res
+		}
+	})
+	return true
+})
+
+
+
+
+
+if (fullResult) {
+	//logger.info(JSON.stringify(fullResult))
+	result.addMessage(JSON.stringify(fullResult))
 }
 
 }

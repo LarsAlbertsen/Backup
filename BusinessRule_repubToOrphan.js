@@ -40,19 +40,28 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
+  }, {
+    "contract" : "LoggerBindContract",
+    "alias" : "logger",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (manager,eq,root) {
-for (var x = 1; x <=10000; x++) {
-	//eq.republish(manager.getProductHome().getProductByID('BAProduct-'+x))
-}
+exports.operation0 = function (manager,eq,root,logger) {
+//for (var x = 1; x <=10000; x++) {
+//	eq.republish(manager.getProductHome().getProductByID('TKProduct-'+x))
+//}
 
 
+var cnt = 0
 root.queryChildren().forEach(function(child) {
+	cnt++
 	eq.republish(child)
 	return true;
 })
+logger.info('republished ' + cnt)
 }

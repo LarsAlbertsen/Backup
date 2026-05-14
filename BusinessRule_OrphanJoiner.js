@@ -23,18 +23,6 @@
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
-    "contract" : "CurrentObjectBindContract",
-    "alias" : "node",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
-  }, {
-    "contract" : "ManagerBindContract",
-    "alias" : "manager",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
-  }, {
     "contract" : "LoggerBindContract",
     "alias" : "logger",
     "parameterClass" : "null",
@@ -57,12 +45,16 @@
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,manager,logger,result,source) {
+exports.operation0 = function (logger,result,source) {
 result.appendToMessage('[')
+var sss = 0;
+var cnt = 0;
 var isFirst = true;
 while(source.hasNext()) {
 	var msg = source.getNextMessage();
 	if (msg && msg.length() > 0) {
+		cnt++
+		sss = sss + msg.length();
 		if (!isFirst) {
 			result.appendToMessage('\n' + ',')
 		}
@@ -71,4 +63,6 @@ while(source.hasNext()) {
 	}
 }
 result.appendToMessage(']')
+logger.info(cnt + '  ' + sss)
+
 }

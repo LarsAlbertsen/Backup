@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="ELFR2" EMail="someone@somewhere2.com" Deactivated="true">
+        <User ID="ELFR2" EMail="someone@somewhere2.com" Deactivated="false">
             <Name>ELFR22</Name>
             <MetaData>
                 <Value AttributeID="UPN">bb</Value>
                 <Value AttributeID="UserInformation">user Info</Value>
-                <Value AttributeID="UserLastActivityDate">2025-11-18</Value>
+                <Value AttributeID="UserLastActivityDate">2026-05-19</Value>
             </MetaData>
             <UserGroupLink UserGroupID="ReadOnly"></UserGroupLink>
             <SystemSetup>

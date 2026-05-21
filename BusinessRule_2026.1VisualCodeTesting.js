@@ -56,6 +56,50 @@ exports.operation0 = function (obj,manager,logger,classificationType) {
 // Bind - key: CurrentObjectBindContract, alias: node, parameterClass: null
 let node;
 
-log.info("Current Name: " + node.getName());
+const attributeGroupHome = node.getManager().getAttributeGroupHome();
+const textsAttributeGroup = attributeGroupHome.getAttributeGroupByID("Texts");
+
+if (textsAttributeGroup == null) {
+	throw new java.lang.IllegalArgumentException("Attribute group 'Texts' was not found.");
+}
+
+const textsAttributeGroupID = textsAttributeGroup.getID() + "";
+const values = node.getValues();
+const valueIterator = values.iterator();
+
+while (valueIterator.hasNext()) {
+	const value = valueIterator.next();
+	const attribute = value.getAttribute();
+
+	if (!isInAttributeGroup(attribute, textsAttributeGroupID)) {
+		continue;
+	}
+
+	const simpleValue = value.getSimpleValue();
+	if (simpleValue == null) {
+		continue;
+	}
+
+	const attributeID = attribute.getID() + "";
+	log.info(attributeID + ": " + (simpleValue + ""));
+}
+
+function isInAttributeGroup(attribute, targetGroupID) {
+	const attributeGroups = attribute.getAttributeGroups();
+	const groupIterator = attributeGroups.iterator();
+
+	while (groupIterator.hasNext()) {
+		let currentGroup = groupIterator.next();
+		while (currentGroup != null) {
+			const currentGroupID = currentGroup.getID() + "";
+			if (targetGroupID === currentGroupID) {
+				return true;
+			}
+			currentGroup = currentGroup.getParent();
+		}
+	}
+
+	return false;
+}
 
 }

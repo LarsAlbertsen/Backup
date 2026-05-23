@@ -54,6 +54,7 @@
 exports.operation0 = function (logger,source,result,elogger) {
 var data = source.getContentAsString();
 var before = java.lang.System.currentTimeMillis();
+elogger.logInfo(data)
 elogger.logInfo('Splitter data length=' + data.length())
 logger.info('Splitter data length=' + data.length())
 var doc = JSON.parse(data)

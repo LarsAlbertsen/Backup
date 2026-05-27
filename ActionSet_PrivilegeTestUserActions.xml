@@ -3,6 +3,13 @@
     <ActionSetList>
         <ActionSet ID="PrivilegeTestUserActions" Type="user">
             <Name>PrivilegeTestUserActions</Name>
+            <ActionLink ActionID="Create Collection Group"></ActionLink>
+            <ActionLink ActionID="Create Collection"></ActionLink>
+            <ActionLink ActionID="Delete Collection Group"></ActionLink>
+            <ActionLink ActionID="Delete Collection"></ActionLink>
+            <ActionLink ActionID="Download DTP Template Document"></ActionLink>
+            <ActionLink ActionID="Download Publication Document"></ActionLink>
+            <ActionLink ActionID="Share search with group"></ActionLink>
         </ActionSet>
     </ActionSetList>
 </STEP-ProductInformation>

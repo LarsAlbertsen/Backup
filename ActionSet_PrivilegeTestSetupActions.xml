@@ -3,7 +3,11 @@
     <ActionSetList>
         <ActionSet ID="PrivilegeTestSetupActions" Type="setup">
             <Name>PrivilegeTestSetupActions</Name>
+            <ActionLink ActionID="Access Instrument"></ActionLink>
+            <ActionLink ActionID="Access Web UI"></ActionLink>
+            <ActionLink ActionID="Access Workbench"></ActionLink>
             <ActionLink ActionID="Enable Value Search/Values in typeahead"></ActionLink>
+            <ActionLink ActionID="Maintain STEP Workflow Profile"></ActionLink>
             <ActionLink ActionID="Run Reports"></ActionLink>
             <ActionLink ActionID="Share user settings"></ActionLink>
         </ActionSet>

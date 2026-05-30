@@ -52,54 +52,45 @@
 }
 */
 exports.operation0 = function (obj,manager,logger,classificationType) {
-// Business Rule Type: BusinessAction
-// Bind - key: CurrentObjectBindContract, alias: node, parameterClass: null
-let node;
+const queryHome = manager.getHome(com.stibo.query.home.QueryHome);
+const conditions = com.stibo.query.condition.Conditions;
 
-const attributeGroupHome = node.getManager().getAttributeGroupHome();
-const textsAttributeGroup = attributeGroupHome.getAttributeGroupByID("Texts");
+const classification = manager.getClassificationHome().getClassificationByID("AcmeProducts");
+const toolsProduct = manager.getProductHome().getProductByID("Tools");
+const itemObjectType = manager.getObjectTypeHome().getObjectTypeByID("Item");
 
-if (textsAttributeGroup == null) {
-	throw new java.lang.IllegalArgumentException("Attribute group 'Texts' was not found.");
+if (classification == null) {
+	throw new java.lang.IllegalArgumentException("Classification not found: AcmeProducts");
 }
 
-const textsAttributeGroupID = textsAttributeGroup.getID() + "";
-const values = node.getValues();
-const valueIterator = values.iterator();
-
-while (valueIterator.hasNext()) {
-	const value = valueIterator.next();
-	const attribute = value.getAttribute();
-
-	if (!isInAttributeGroup(attribute, textsAttributeGroupID)) {
-		continue;
-	}
-
-	const simpleValue = value.getSimpleValue();
-	if (simpleValue == null) {
-		continue;
-	}
-
-	const attributeID = attribute.getID() + "";
-	log.info(attributeID + ": " + (simpleValue + ""));
+if (itemObjectType == null) {
+	throw new java.lang.IllegalArgumentException("Object type not found: Item");
 }
 
-function isInAttributeGroup(attribute, targetGroupID) {
-	const attributeGroups = attribute.getAttributeGroups();
-	const groupIterator = attributeGroups.iterator();
-
-	while (groupIterator.hasNext()) {
-		let currentGroup = groupIterator.next();
-		while (currentGroup != null) {
-			const currentGroupID = currentGroup.getID() + "";
-			if (targetGroupID === currentGroupID) {
-				return true;
-			}
-			currentGroup = currentGroup.getParent();
-		}
-	}
-
-	return false;
+if (toolsProduct == null) {
+	throw new java.lang.IllegalArgumentException("Product not found: Tools");
 }
+
+const isBelowAcmeProducts = conditions.hierarchy().simpleBelow(classification);
+const isBelowToolsProduct = conditions.hierarchy().simpleBelow(toolsProduct);
+const isItemObjectType = conditions.objectType(itemObjectType);
+const isItemBelowAcmeProductsAndTools = isBelowAcmeProducts
+	.and(isBelowToolsProduct)
+	.and(isItemObjectType);
+
+const query = queryHome
+	.queryFor(com.stibo.core.domain.Product)
+	.where(isItemBelowAcmeProductsAndTools)
+	.execute();
+
+let matchedProducts = 0;
+
+query.forEach(function(product) {
+	matchedProducts += 1;
+	logger.info("Matched product: " + product.getID());
+	return true;
+});
+
+logger.info("Total matched products: " + matchedProducts);
 
 }

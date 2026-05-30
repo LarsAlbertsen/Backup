@@ -11,6 +11,7 @@
             <AttributeLink AttributeID="PDS Status Details"></AttributeLink>
             <AttributeLink AttributeID="PDS Status"></AttributeLink>
             <AttributeLink AttributeID="PDX Channel ID"></AttributeLink>
+            <AttributeLink AttributeID="PDX External ID"></AttributeLink>
         </DataContainerType>
     </DataContainerTypes>
 </STEP-ProductInformation>

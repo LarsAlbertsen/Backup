@@ -3,7 +3,7 @@
     <SystemSetup>
         <SystemSetupValue Type="Config" Name="AssetStorageConfiguration"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="AttributeDisplaySequenceAttributeID">DisplaySequence</SystemSetupValue>
-        <SystemSetupValue Type="Config" Name="BlockLargeAttributeGroups"></SystemSetupValue>
+        <SystemSetupValue Type="Config" Name="BlockLargeAttributeGroups">N</SystemSetupValue>
         <SystemSetupValue Type="Config" Name="ClassificationDimensionDependencies"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="ConditionalValidityAttribute"></SystemSetupValue>
         <SystemSetupValue Type="Config" Name="ControlOverrideMetaAttribute"></SystemSetupValue>

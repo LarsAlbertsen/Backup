@@ -46,35 +46,5 @@
 }
 */
 exports.operation0 = function (node,manager,logger) {
-/**
- * Business Action: Find products of object type Item below classification AcmeSupplier.
- * Uses QueryHome with hierarchy().simpleBelow() — no manual tree traversal.
- */
-/** bindings:
-- ManagerBindContract: manager
-- LoggerBindContract: logger
- */
-
-const c = com.stibo.query.condition.Conditions;
-const Product = com.stibo.core.domain.Product;
-const queryHome = manager.getHome(com.stibo.query.home.QueryHome);
-
-const acmeSupplierRoot = manager.getClassificationHome().getClassificationByID("AcmeSupplier");
-const itemType = manager.getObjectTypeHome().getObjectTypeByID("Item");
-
-if (acmeSupplierRoot == null) {
-    logger.info("Classification AcmeSupplier not found");
-} else if (itemType == null) {
-    logger.info("Object type Item not found");
-} else {
-    const isBelowAcmeSupplier = c.hierarchy().simpleBelow(acmeSupplierRoot);
-    const isItemType = c.objectType(itemType);
-    const matchingCondition = isBelowAcmeSupplier.and(isItemType);
-
-    queryHome.queryFor(Product).where(matchingCondition).execute().forEach(function (product) {
-        logger.info(String(product.getID()) + " - " + String(product.getName()));
-        return true;
-    });
-}
 
 }

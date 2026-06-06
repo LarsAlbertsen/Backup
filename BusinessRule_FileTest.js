@@ -41,10 +41,10 @@
 */
 exports.operation0 = function (node,processStore) {
 
-var blob = tmpStore.get("AllItemIDs.txt");
+var blob = processStore.get("AllItemIDs.txt");
 if (blob.isEmpty()) {
     logger.info("Creating new blob");
-    blob = tmpStore.create("AllItemIDs.txt");
+    blob = processStore.create("AllItemIDs.txt");
 }
 else {
     logger.info("Append to existing blob");

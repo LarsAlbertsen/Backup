@@ -55,10 +55,16 @@ exports.operation0 = function (node,logger,fn,secret) {
 function log(msg) {
 	logger.info('ELFRLog : ' + msg)
 }
-log(node)
 
-fn.evaluate({root:node})
 
-logger.info(secret)
+for (var x=0; x<100; x++) {
+	log('A ' + x + ' ' + Date.now())
+
+}
+
+
+//fn.evaluate({root:node})
+
+//logger.info(secret)
 
 }

@@ -60,17 +60,17 @@ function createUser(id, supplierid) {
 	logger.info(res.getStatusCode())
 }
 
-for (var i = 100; i<200; i++) {
-	createUser(i, 'SupplierA')
+for (var i = 1; i<1000; i++) {
+//	createUser(i, 'SupplierA')
 	createUser(i, 'SupplierB')
 	createUser(i, 'SupplierC')
 	createUser(i, 'SupplierD')
 	createUser(i, 'SupplierE')
-	createUser(i, 'SupplierF')
-	createUser(i, 'SupplierG')
-	createUser(i, 'SupplierH')
-	createUser(i, 'SupplierI')
-	createUser(i, 'SupplierJ')
+//	createUser(i, 'SupplierF')
+//	createUser(i, 'SupplierG')
+//	createUser(i, 'SupplierH')
+//	createUser(i, 'SupplierI')
+//	createUser(i, 'SupplierJ')
 }
 
 	

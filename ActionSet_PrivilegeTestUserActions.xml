@@ -3,6 +3,7 @@
     <ActionSetList>
         <ActionSet ID="PrivilegeTestUserActions" Type="user">
             <Name>PrivilegeTestUserActions</Name>
+            <ActionLink ActionID="Approve Modify"></ActionLink>
             <ActionLink ActionID="Create Collection Group"></ActionLink>
             <ActionLink ActionID="Create Collection"></ActionLink>
             <ActionLink ActionID="Delete Collection Group"></ActionLink>

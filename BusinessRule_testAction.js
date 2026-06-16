@@ -111,7 +111,15 @@ var result = {
 		
 	};
 
-var group = manager.getGroupHome().getGroupBy(groupID)
+var group = manager.getGroupHome().getGroupByID(groupID)
+var pRules = callMethod(group, 'getPrivilegeRules')
+pRules.toArray().forEach(function(pr) {
+	var as = callMethod(pr, 'getActionSet')
+	var actions = callMethod(as, 'getActions')
+	actions.toArray().forEach(function(a) {
+		logger.info(a.getID())			
+	})
+})
 
 
 /*

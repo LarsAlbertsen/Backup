@@ -60,7 +60,7 @@ function generateUUID() { // Public Domain/MIT
 
 var doc = JSON.parse(msg)
 var map = new java.util.HashMap()
-map.put('MessageKey', generateUUID())
+//map.put('MessageKey', generateUUID())
 return map
 
 

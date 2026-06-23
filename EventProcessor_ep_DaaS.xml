@@ -74,6 +74,10 @@ ObjectTypeGroupings=
     <ObjectType ObjectTypeID="Variant"/>
     <ObjectType ObjectTypeID="std.AdaptorType"/>
   </ObjectTypeRules>
+  <ObjectTypeRules>
+    <ObjectType ObjectTypeID="stibo.grouping attribute"/>
+    <ObjectType ObjectTypeID="stibo.normalattribute"/>
+  </ObjectTypeRules>
 </ObjectTypeRules>
 ParentTriggering=
 ProductTemplate=
@@ -99,8 +103,8 @@ UnitTemplate=
 </STEP-ProductInformation>
 Version=3
 attributeGroup=Attribute group root
-objecttype=Branch;DiscontinuedProducts;Family;GoldenRecords;Item;Leaf;Level1;Level2;Level3;Level4;OverrideLevel1;OverrideLevel2;Products;SKU;Tree;Variant;std.AdaptorType -->
-                <Configuration>H4sIAAAAAAAA/9VV33PaMAx+71+Ry3vLz27dXUyPQem4dSsHgT2bRFCvjp2zHQb76+ckDlxwWNK39s2WPsmSLOkbSgnKhyimWAHy7vcRdXYgJOEMuZ2btusAC3hI2Ba5S39yfefeD668hf8wu54JHiaBmrINFxFW2sKZg+R0B1NGCYM5bCRyN5hKcJ0Jp5T/edauBQlhkayN9QnxsI+5UGMQZAfhUClxVA2uHMcbpoFKg1qQv4DcH4SRKIlcZ8yZyh8YUSwl2ZAgi8fnmZUOBIROQ5sokeT+Co+tzHkr964za11IbeDJmBI1SAMj60TBE2Gv0hdku9URs+25+kOU9JSLTAtRm/xZdT9AiuWIq9vHtEMZ6kxZQJMQZlh3jjKNY5rlzGmDwk1ZCPtfXITfCAgsgpeD1Tk/cQSW8Hn9GwLlH2J4FDyJtUIi7yScJxRkFlOFrCR1TsfpGLljIgM9M4QlEBYlzbP7n9VXgVnwUo/zBUA96gnwph41VRDVoxbfl/WgFRYEM1UPlCq8GYY4VlykonqDokGfYAe0+0Z8px7f/IsmOCL00KT4+uVeQ1y/Ia5B5k0zfuQ0BDaHQM+MLObOanJbZOYmn1prnEwd3/3i8gr0W+nO2FURXuGzcrGZ70h3UPE1JaJrVe7I4zPH77TyLTTmOhJcSsssI99q1QrTBGRxG2OFRzp5rMstZN2rXstc8+4patpgXZ8aR+/sVxljXclhHAuuv8pAloy8/z7SaadxNqX3lUmgZ+64aIGMfNCxI5xtencE58ogeTaGSo8hyknCkrdRFedYsA7KN5itaKPylrURHXTZbRdpirDFPZRylS3vI0MWtuoWndGDBemi0vay9D2Ukpol7qOUES3xLcp3pqX4hC4U4nOu6FmKu1zRtxRfyrUt3voHnzIyUxwMAAA=</Configuration>
+objecttype=Branch;DiscontinuedProducts;Family;GoldenRecords;Item;Leaf;Level1;Level2;Level3;Level4;OverrideLevel1;OverrideLevel2;Products;SKU;Tree;Variant;std.AdaptorType;stibo.grouping attribute;stibo.normalattribute -->
+                <Configuration>H4sIAAAAAAAA/9VWS3PaMBC+51d4fA+ERx6dscjQEFKmScOASc/CXogaWfJIMoX++sq2DGNkamemh+Rm7X672l3t7uehlKB8iGKKFSDvdhtRZwNCEs6Q22lduA6wgIeErZG78MfnN+7t4Myb+/fT86ngYRKoCVtxEWGlLZwZSE43MGGUMJjBSiJ3hakE1xlzSvnvZ+1akBDmydJYHxD325gLNQJBNhAOlRJ71eDMcbxhGqg0qDn5A8h9IoxESeQ6I85UfsEdxVKSFQmyeHyeWelAQOg0tIkSSe6v8NjOnLdz7zqz9onUBp6MKVGDNDCyTBQ8EvYmfUHWax0xWx+rP0VJD7nItBC1yR9V9xOkWI64un1MO5ShzoQFNAlhinXnKNM4plmOnDYo3ISFsP3JRfiNgMAieN1ZnfMDR2AJn5e/IFD+LoYHwZNYKyTyDsJZQkFmMVXISlLn8DkZIXdEZKBnhrAEwqKkeXb/svoqMAte63G+AKhHPQJe1aMmCqJ61Pz7oh70ggXBTNUDpQpbwxDHiotUVG9QNOgjbIB234nv1OObP9EYR4TumhRf39xriOs3xDXIvGnGD5yGwGYQ6JmRxdz9h8aXiix5i6XzqVeXWX9NOiI1W5sZdI4sKyKzRWai831iDbp54Q+/Ur0C/V4iNnZVVFz4rFy55mXS7Vi8UomC25Xbe3/N/mWtfAuNOd4JLqVllv0WVKteME1AFqcRVvhOJ491uYWsu9Vrm2PePUVNGxDJoXE0m7zJGOtKDuNYcP1UBrJg5OP3kU47jbPpj8eLSaBnzvsBzGgR7TvCyUbUEZwrg+TZGCo9hiinL0t+garY0IJ1UL5bbcUFKu9/G9FBp912kSYvW9xDKYva8j4yNGarLtERcdmQK3Rqk9nYa1S5LC1gF5WWtaXvoZTDLXEfpT8AlvgS5RRhKa7Qiepe54qepbjJFX1L8aX8YMVdfwFRqR41Cw0AAA==</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

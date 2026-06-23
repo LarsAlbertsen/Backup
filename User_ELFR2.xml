@@ -8,6 +8,7 @@
                 <Value AttributeID="UserInformation">user Info</Value>
                 <Value AttributeID="UserLastActivityDate">2026-05-20</Value>
             </MetaData>
+            <UserGroupLink UserGroupID="Read Only"></UserGroupLink>
             <UserGroupLink UserGroupID="ReadOnly"></UserGroupLink>
             <SystemSetup>
                 <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context3</SystemSetupValue>

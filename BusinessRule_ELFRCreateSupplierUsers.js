@@ -61,11 +61,12 @@ function createUser(id, supplierid) {
 }
 
 for (var i = 1; i<1000; i++) {
+	createUser(i, 'ShareSearch')
 //	createUser(i, 'SupplierA')
-	createUser(i, 'SupplierB')
-	createUser(i, 'SupplierC')
-	createUser(i, 'SupplierD')
-	createUser(i, 'SupplierE')
+//	createUser(i, 'SupplierB')
+//	createUser(i, 'SupplierC')
+//	createUser(i, 'SupplierD')
+//	createUser(i, 'SupplierE')
 //	createUser(i, 'SupplierF')
 //	createUser(i, 'SupplierG')
 //	createUser(i, 'SupplierH')

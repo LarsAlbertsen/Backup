@@ -3,6 +3,9 @@
     <UserGroupList>
         <UserGroup ID="Stibo" ReadOnly="false" MultifactorAuthenticationRequired="false">
             <Name>Stibo Users</Name>
+            <MetaData>
+                <Value AttributeID="UserGroupMetadata">cc</Value>
+            </MetaData>
             <PrivilegeRule ActionSetID="All setup actions"></PrivilegeRule>
             <PrivilegeRule ActionSetID="All user actions" ClassificationID="Classification 1 root"></PrivilegeRule>
             <PrivilegeRule ActionSetID="All user actions" CollectionGroupID="CollectionGroup root"></PrivilegeRule>

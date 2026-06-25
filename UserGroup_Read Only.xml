@@ -4,6 +4,7 @@
         <UserGroup ID="Read Only" ReadOnly="false" MultifactorAuthenticationRequired="false">
             <Name>Read Only (restricted)</Name>
             <PrivilegeRule ActionSetID="NoWebUIViewSetupAction"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="ViewUserActions" ProductID="Product hierarchy root"></PrivilegeRule>
         </UserGroup>
     </UserGroupList>
 </STEP-ProductInformation>

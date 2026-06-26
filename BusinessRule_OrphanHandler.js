@@ -67,20 +67,26 @@ function checkNode(n) {
 
 var fullResult = null;
 
+function handleNode(n, contextID) {
+	var res = checkNode(n)
+	if (res.length > 0) {
+		if (!fullResult) {
+			fullResult = {'node':n.getID()}
+		}
+		fullResult[contextID] = res
+	}
+}
+
+handleNode(source.getNode(), 'Context1')
+
+/*
 manager.getContextHome().getContexts().forEach(function(context) {
 	manager.executeInContext(context.getID(), function(ctxman) {
-		var n = ctxman.getObjectFromOtherManager(source.getNode())
-		var res = checkNode(n)
-		if (res.length > 0) {
-			if (!fullResult) {
-				fullResult = {'node':n.getID()}
-			}
-			fullResult[context.getID()] = res
-		}
+		handleNode(ctxman.getObjectFromOtherManager(source.getNode()), context.getID())
 	})
 	return true
 })
-
+*/
 
 
 

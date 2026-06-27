@@ -12,6 +12,7 @@
             <UserTypeLink UserTypeID="General user-type root"></UserTypeLink>
             <UserTypeLink UserTypeID="GoldenRecords"></UserTypeLink>
             <UserTypeLink UserTypeID="Product user-type root"></UserTypeLink>
+            <UserTypeLink UserTypeID="Reference-Type user-type root"></UserTypeLink>
         </Attribute>
     </AttributeList>
 </STEP-ProductInformation>

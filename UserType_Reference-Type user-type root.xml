@@ -5,6 +5,7 @@
             <Name>Reference-Type</Name>
             <AttributeLink AttributeID="Completeness Score"></AttributeLink>
             <AttributeLink AttributeID="GetCompleteness"></AttributeLink>
+            <AttributeLink AttributeID="ObjectTypeDescription"></AttributeLink>
             <AttributeLink AttributeID="Purpose"></AttributeLink>
         </UserType>
     </UserTypes>

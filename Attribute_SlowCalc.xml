@@ -4,7 +4,7 @@
         <Attribute ID="SlowCalc" MultiValued="false" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="true" Mandatory="false">
             <Name>SlowCalc</Name>
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
-            <ValueTemplate>&lt;derive expr="Iterate(SubProducts(), stepid())"/&gt;</ValueTemplate>
+            <ValueTemplate>&lt;derive expr="concatenate('aaa',Iterate(SubProducts(), stepid()))"/&gt;</ValueTemplate>
             <MetaData>
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>

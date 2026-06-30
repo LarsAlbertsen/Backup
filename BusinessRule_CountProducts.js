@@ -23,8 +23,20 @@
 {
   "pluginId" : "JavaScriptBusinessActionWithBinds",
   "binds" : [ {
-    "contract" : "CurrentObjectBindContract",
-    "alias" : "node",
+    "contract" : "ManagerBindContract",
+    "alias" : "manager",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
+  }, {
+    "contract" : "LoggerBindContract",
+    "alias" : "logger",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
+  }, {
+    "contract" : "QueryHomeBindContract",
+    "alias" : "queryHome",
     "parameterClass" : "null",
     "value" : null,
     "description" : null
@@ -33,27 +45,46 @@
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node) {
-var count = countProduct(node)
-logger.info("Products belowxxx "+node.getTitle()+" " +count)
-
-
-
+exports.operation0 = function (manager,logger,queryHome) {
 /**
- * Counts the number of products under the given top product node.
+ * Business Action: Count products by object type and print totals.
  *
- * @param {Product} topProduct - The top product node to count products under.
- * @returns {number} The count of products under the top product node.
+ * Bindings:
+ * - ManagerBindContract: manager
+ * - LoggerBindContract: logger
  */
-function countProduct(topProduct) {
-    var count = 0;
-    count++
-    var children = topProduct.getChildren();
-    if (children!=null) {
-        for (var i = 0; i < children.size(); i++) {
-            count += countProduct(children.get(i));
-        }       
-    }
-    return count;
-}
+
+const queryHome = manager.getHome(com.stibo.query.home.QueryHome);
+const Conditions = com.stibo.query.condition.Conditions;
+const Product = com.stibo.core.domain.Product;
+
+const topProduct = manager.getProductHome().getTopProduct();
+const isInProductHierarchy = Conditions.hierarchy().simpleBelow(topProduct);
+
+const productQuery = queryHome.queryFor(Product).where(isInProductHierarchy).execute();
+const countsByObjectType = {};
+
+productQuery.forEach(function (product) {
+	const objectType = product.getObjectType();
+	const objectTypeId = String(objectType.getID());
+
+	if (countsByObjectType[objectTypeId] == null) {
+		countsByObjectType[objectTypeId] = 0;
+	}
+	countsByObjectType[objectTypeId] = countsByObjectType[objectTypeId] + 1;
+
+	return true;
+});
+
+const objectTypeIds = Object.keys(countsByObjectType).sort(function (a, b) {
+	const countDiff = countsByObjectType[b] - countsByObjectType[a];
+	if (countDiff !== 0) {
+		return countDiff;
+	}
+	return a.localeCompare(b);
+});
+objectTypeIds.forEach(function (objectTypeId) {
+	logger.info(objectTypeId + ": " + countsByObjectType[objectTypeId]);
+});
+
 }

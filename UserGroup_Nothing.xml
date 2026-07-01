@@ -3,6 +3,7 @@
     <UserGroupList>
         <UserGroup ID="Nothing" ReadOnly="false" MultifactorAuthenticationRequired="false">
             <Name>Nothing</Name>
+            <PrivilegeRule ActionSetID="Maintain classifications" PublicationGroupID="Publication hierarchy root"></PrivilegeRule>
         </UserGroup>
     </UserGroupList>
 </STEP-ProductInformation>

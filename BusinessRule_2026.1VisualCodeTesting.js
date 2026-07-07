@@ -47,42 +47,37 @@
 */
 exports.operation0 = function (node,manager,logger) {
 /**
- * Business Action: Find products of object type "Item"
+ * Create a short description of the current product from its attribute values,
+ * then print it to the logger.
  *
- * Bindings required:
- * - ManagerBindContract: manager
- * - LoggerBindContract: logger
+ * Bindings:
+ * - Current Object: node
+ * - Logger: logger
  */
 
-const queryHome = manager.getHome(com.stibo.query.home.QueryHome);
-const Conditions = com.stibo.query.condition.Conditions;
-const Product = com.stibo.core.domain.Product;
 
-const itemType = manager.getObjectTypeHome().getObjectTypeByID("Item");
 
-if (itemType == null) {
-    logger.info("Object type 'Item' not found");
-} else {
-    const specification = queryHome.queryFor(Product).where(
-        Conditions.objectType(itemType)
-    );
 
-    let count = 0;
-    specification.execute().forEach(function (product) {
-        if (count >= 10) {
-            return false;
-        }
-        const parts = [];
-        let current = product;
-        while (current != null) {
-            parts.unshift(String(current.getID()));
-            current = current.getParent();
-        }
-        const path = parts.join("/");
-        logger.info(count + 1 + ". " + path + ", " + String(product.getName()));
-        count++;
-        return true;
-    });
+const productId = String(node.getID());
+const productName = String(node.getName());
+
+const valueParts = [];
+const maxValuesInDescription = 4;
+const valueIterator = node.getValues().iterator();
+
+while (valueIterator.hasNext() && valueParts.length < maxValuesInDescription) {
+    const value = valueIterator.next();
+    const simpleValue = value.getSimpleValue();
+    logger.info("Attribute " + String(value.getAttribute().getID()) + " has value: " + String(simpleValue));
+    if (simpleValue != null && String(simpleValue).length > 0) {
+        const attributeId = String(value.getAttribute().getID());
+        valueParts.push(attributeId + "=" + String(simpleValue));
+    }
 }
+
+const attributeSummary = valueParts.length > 0 ? valueParts.join(", ") : "no attribute values";
+const description = "Product " + productName + " (" + productId + "): " + attributeSummary;
+
+logger.info(description);
 
 }

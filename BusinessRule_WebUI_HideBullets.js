@@ -84,10 +84,14 @@ if (bullet01A==null || bullet02A==null) {
 mandatory.setMandatory(currentNode, bullet01A);
 mandatory.setMandatory(currentNode, bullet02A);
 
+
 logger.info("WebUI_HideBullets_3");
+const bullet01V = currentNode.getValue(bullet01A.getID()).getSimpleValue();
+const bullet02V = currentNode.getValue(bullet02A.getID()).getSimpleValue();
+const bullet03V = currentNode.getValue(bullet03A.getID()).getSimpleValue();
 
 if (bullet01V==null) {
-	logger.info("Hiding Bullet02");
+	logger.info("Hiding Bullet02 ["+bullet01V+"]");
 	hidden.setHidden(currentNode, bullet02A)
 }
 if (bullet02V==null) {

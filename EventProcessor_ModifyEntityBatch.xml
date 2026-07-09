@@ -5,7 +5,7 @@
 Configuration=
 <plugin id="ModifyEntityBatch">
   <simple id="BatchSize">1000</simple>
-  <simple id="DaysToRetainEvents">10</simple>
+  <simple id="DaysToRetainEvents">0</simple>
   <simple id="FailRetryEnabled">true</simple>
   <simple id="FailRetryPeriod">30d</simple>
   <simple id="HoursToRetainOldProcesses">168</simple>
@@ -31,8 +31,8 @@ ScheduleSpecification=
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>ModifyEntityBatch</Name>
-            <Configuration>H4sIAAAAAAAA/6VUS4/aMBC+76+I0opbCajSalUgCEh2e4CSErbbnirjDGGEsVM/KPTX13mQNmzTldpcYk++x9iZmZngW0yNJBoFHw3HpwNzjiBVvnP73Z7rAKciQZ6O3Mf1/Zs7d+zfDDNmUuQOJiM3PALXkRQUlBJyShTMfpd0/RvHGSo8ZAwK/ApUJrjCDYNHBdL1lYbsnecZuxlbQLwOo/hLPPRKzjV9SjTdxfgDXL/f6/XaYAE5q7VYgSbIiwxVjm9DRxKFRH22mDbIRwPGeoafotVy1gZakNOSJdVlQGHZ6vleGFmneMW6vWtjzZGDikBOH6K/X8A9QWa15TnkxF514vpaGngRbaVRWPDbXtKGXWYaD6g00rmg+6bHljDVavIH4sWujRLTHSSGwefF/GsQRqtwNlmHget3mB40SrXzzQg9sPVaLsadVA86r/q9QY60v18iqDrmOJfo2aGMKFXRqTh0bXob0TUaWVdV5glskWNezN1LPkEden0J2SqT5xio4EmpVllVD+SfK5/bKkuvkaV3neavSxl6ZcPZlcoYaj+UUsgVZEJqkP/StfYAxDDdbN6GquvVblHBm/3vpJgalVevmtBc4Qn1rrAvOrqZSGn4bHQ0BerJsanC0v6FfIKYLCEawgR1YN+FfFt92TNpOOlaipb7XOVh3kZ6EnKvMkKhpn2/RHLiwvbzi9S1xDS1xc9T159kmRRHaG24eI9ZAAw0JB9Ekg+IZis/q46flS+9wdQFAAA=</Configuration>
-            <EventQueue QueueStatus="Read" DaysRetained="10"><!-- Definition:
+            <Configuration>H4sIAAAAAAAA/6VUS4/aMBC+76+I3IpbCajSalUgCEh2e4CSErbbniqTDGGEsVM/KPTX13mQNmzTldpcYk++x9iZmZngW0yNpBoFHw3HpwNzjiBVviP9bo84wGORIE9H5HF9/+aOjL2bYcZMitzBZESCI3AdShGDUkJOqYLZ75LEu3GcocJDxqDAr0BlgivcMHhUIImnNGTvXNfYzdgConUQRl+ioVtyrulTquNdhD+AeP1er9cG8+lZrcUKNEVeZKiI1woOJQqJ+mwl2yAfDRhrGXwKV8tZG2hBT0uWVHcBqsiwDfteGFlneMW6vWtjzZGDCkFOH8K/n/+eIrPa8hxwam86IZ6WBl5EW2kUFvy2l7Rhl5nGAyqN8VzE+6bHljLVavIH4sWujRLFO0gMg8+L+Vc/CFfBbLIOfOJ1mB40KrXzzQg9sOVaLsadVA86r/q9QY60f18iqDrmOJfo2YkZVaqix+LQteltRNdoZF1VmSewRY55LXcv+fh16PUlZItMniOIBU9KtcqqeiD/XPncVlm6jSzd6zR/XcrQLfvNrlTGUHuBlEKuIBNSg/yXprUHoIbpZu82VIlbu4UFb/a/g2JqVF69ahLnCk+od4V90dDNRErDZ5OjKVAPjk0VlvYv5APEZAnVECSoffsu5Nvqy55Jw0nXUnG5z1Ue5m2kJyH3KqMx1LTvl0hOXNh+fpG6lpimtvh5SrxJlklxhNaGi/aY+cBAQ/JBJPmAaLbys+r4Cecy5CbTBQAA</Configuration>
+            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">

@@ -5,6 +5,7 @@
 <scxml name="CreateItem" initial="Initial" version="0.9">
   <assignee id="$current" type="user"/>
   <datamodel>
+    <attachment id="MyWFAttachment" multivalued="false"/>
     <data id="SubmitMessage"/>
   </datamodel>
   <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=239.88636363636363  </editorLayout>
@@ -19,6 +20,7 @@
     </transition>
     <transition businessactionid="acn-8ad3cdd7-7c57-4426-aaf6-665566e64b71" event="resubmit"/>
     <editorLayout>   node-size-and-position x=20.0 y=119.94318181818183 w=100.0 h=25.0  </editorLayout>
+    <onentry businessactionid="acn-c2de7232-f273-4ea9-b77b-38afa0b5d147"/>
   </state>
   <state id="Initial" discontinued="false">
     <transition businessactionid="acn-81e11a0c-4f51-47e8-be22-1114613a97c8" businessconditionid="con-7b96603d-4e10-4ea0-9f2e-2d264a78ca97" event="submit" target="Enrich">
@@ -57,7 +59,7 @@
             <SetupGroupLink SetupGroupID="ProductWorkflows"></SetupGroupLink>
             <Name>Create Item</Name>
             <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
-            <Configuration>H4sIAAAAAAAA/81WTW/jNhC9769giV5pfVqWAsuLxXZTBOgiRdPdHhZ7oKmxw1aiVJKy4/76DinZ6zhx4qI9FAZMU+S8mfdGfDTvbXujpJXcwq16rwHHcsVrA3PT1dIu4AFEb+FOaNnZn2QjLVQ/a7mRNazBlFb3+521NBbUrbppulZb0J+66hTMiIemLud+INKnrUs65K8pUbyBkg5F3FhoKNmANrJVJQ0nBSUYpUxJ763troJgu91Otsmk1esgDsNpEM4CD0wX8+8YI4SotgJm5F/AuKpY1xpM0yryUIaTkOz897aMUjfel3FSTPI8S759CGFs8YbMkQVvEKrGyTAjsirpXb9EMT6CMXwNmDNwK4s3wzjux2hujFwrAB/zvei1BmUpsbsOqfYGtAvdb/IRxiJ9UkkjWmWl6gEDvYjUY+zVepVlPNBMk4FnOPKc4jAwI3OruRr3L3sjlSMj3NQl4kKxPIIo4qFg6WoasXQGOVtCHLMoitIsSngxEzk9xGLBldyH44TNlkWWhUnFUohC/OIhK1YxsLiKs5TPcoEAlMAGJSmp8YKiNFyvAecflJbi/sATqjWwjtt78mVY+UqQZBQNLItwpDUPvpFy3fBqXqLrSbrXZI2iYlKkSZTvP8kFIp9hei2Vb+ij0s/054nGCefFahbn2KJixtI8z1kuipRVnE/jsMrEMoSDxhp+B3GU+fRlOhJ5XPIqZ6PIyWT6jMiXvUm8SkRVzdhMTLHMNM4Y56uMZdl0mmWQpctZdFTmKNEL7Vw50c63c6/phd0s0tPTf6abrcIK9e4Zlr9A027gWrfNb63+Y1W3W1f+uN/V7iv2JJxNLUZP3EjYlvO3zhEPbhdNQtRCibaSal3ST79eMzxmyF1VvEbEku7A0LeIpUx8tR3TfUYkM5jkFT5/ZJTGymU7EW1DHQvk4dJ6oT5yqVwkJRWseF/bO3Tv923dN852KeF4QzTcSuGe7yUeQDwQNx2+Uh5KVjR4fsU5+6M14ROMjn9j3qGKG+wcWn91q+rdoZWNo2xbvXua2eN0db+WigzDzQ8l3Wv/mWvJl/VpwBDENebFK8rXdthJNrzuj8sJTpIFQ5ojGsHA4xyx/e3w/+D1+Mb61+TejZfWf8nugPkquw8PHSb5Ubd9Zw4Mh2T/kNk8cGdh/I3OY/Ee8O4glaj7ClC2tU9zoIem09V8dwd/9nhIwR2TI/CGdx0eW+KtypEbbxbi0rj50Yl7ChS8hHT4p3QBVPQy1OCPlwDFe6B5cKSO87En5oMPB1P7G8QrLMlXCgAA</Configuration>
+            <Configuration>H4sIAAAAAAAA/81WTW/jNhC951ewQq+0Pq2PwPIi2G6KAF2kaLq7h6IHmhw7bCVKFSk77q/vkJIVx1knWbSHwoBliuR7fG+GM2a9aW6UNJIZuFXvO8BnuWaVhoVuK2mW8AC8N3DHO9man2QtDYifO7mVFWxAl6brDysrqQ2oW3VTt01noPvUilMwzR/qqly4B5GOtiq9gb/yiGI1lN5wiBsDtUe20GnZqNILZoVHcJfSpXdvTHvp+7vdbraLZ0238aMgmPtB5jtgb7n4jlJCiGoEUC3/BsqUoG2jkaZR5KEMZgHZu+9dGSb2eV9GcTHL8zR+/BBC6fKCLFAFqxGqwsEwIlKU3l2/QjM+gtZsA8jp25nlhV3DjGH8vgZl3MqP+y/XV9Mrj9R9ZeSWVT3gpLPHbn/ctLwYwEZSPALTWm4UgIP7nvdd54DMvkW/eg2dAxgXuR3aoIdESM0bZaQ6onIYB8tftSoavEriwaxgNGuOj8EesjAdU+P6Va+lso5wO7REjCuahxCGLOA0Wc9DmmSQ0xVEEQ3DMEnDmBUZz71pLx5YyMN2HNBsVaRpEAuaQBjgFwtosY6ARiJKE5blHAE8Alu0pPS0iwpaw7oN4PiD6iS/n3SC2ABtmbknvw0zvxMUGYaDyiIYZS38R1E2Gs7Nt/h6QvearWFYzIokDvPDJz5ncqNQXrc/4zCPBGRRHNF1lMXWooKusmxF45ytWbCaizDJbIqMKEOWHsXtjHnXUrkceeLGmZA/C1vMWLHOohyjXmQ0yfOc5rxIqGBsHgUi5asAprB18AfwI+bT/DyK2zjlApeOcYtn86/E7W3JyUTMhchoxud4zCRKKWPrlKbpfJ6mkCarLDw65mjRCxmytqadz5CDp29MkCI5rUrfnCC/QN1s4bpr6i9N9+e6anZPUmHhuxM7EbZ8LsdavZWwKxfvbKWeqnA4C9ALxRsh1ab0Pv16TfHmonYlWIWIpbcH7b1DLKWjy91I9xmR9FC8L/H9kwKujVw1M97UnlWBOiztUDWZVHanRwSsGZbMO+wq75uqr2078AjDzlUzI7l9P9VRB+KAmG4xpRyUFJ7/9RnbcZ7McUcwdqIbfYUubjFy2JLErar2UyhrK9k03f45s8Npq34jFRkeNz+U3sH7z6yTbFWdbhg2sQ55sXW6s00riesVR8fxT8j8geZIhj/oOCfs0LX+H7qedtJ/Le5q7IP/pboJ81V1Hx5aJPmxa/pWTwoHsm9UtvDtXRh/Y+Ux2FpcdZCKV70AtG3jaCZ5WHTaiu3v4K8eLynYa3IEXrO2xWtLXKmy4sZmRSyNHR/duOdA/ktI0z+4N0CFL0MN9fEtQNEBaOEfuWPr2LPigy+HovYPD3eNne8KAAA=</Configuration>
             <LocalBusinessRule ID="acn-81e11a0c-4f51-47e8-be22-1114613a97c8" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
 Action #1 (SetWorkflowVariableBusinessAction):
 FromAttribute=
@@ -97,32 +99,73 @@ wfi.setSimpleVariable('SubmitMessage', wfVar)
                 <Configuration>H4sIAAAAAAAA/71UbW/aMBD+nl/hZRJJtC0he+0UAgK2SZ1arRps/YhMcFIzY6e2A21/fc9xCLCpQmjTEimxH989z519vpJVBeUzXJaMEjWj+SwTPKdF2hvcrRhaE6mo4Kkbh10XEZ6JBeVF6v6Yfnl15g76Tm9UKcqJUt8rRiKYKyDS/dLS/gVX30GoBa5qOrS/bqHzT6n7Fa/xJJO01Nv1YaZB6JrqmxHlC+UaLmC7whKviIYwLLAPIcNkrdH0viSpuwTakGFehBMtIVC332E6Ocikc1sJnUA6drDLyc7rxOxw0Cl00nkedxNDYnQucdliCG1RBDumJc40hGM9x5WUhOtrIX/lTGyM0bixaVSHjGLVWGebvEHbzMYMq+0yrxizo+gU8W/zJcn0EWkuFuRfal+IoiDyiCirjU6VNaLR74fQi1r/J8rjs5RCXkJ94YL8jzK5EBlm9AHPGWlUp2RVMqzJqOILuG4nxL67JE8H7qyxRJucohSZwwwL0pbdOVca84z4UGCBY3c9pDwXPtgHjeNP+KaGwHhOKIRKAKImft+bVPMV1U0eXuDQHPnPap+gdfW8xIkiQ3YHs6GU+N6Pu/DEQbgUlPte/PrN23fvP5x97AKFs5M0/xf2nxzCISO80Dew6sHb2hymsLOrWWmojiXw0hIFf+z8HlC3mV502MSgzUWHfa5pmY+0rMuIigUAAA==</Configuration>
                 <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
             </LocalBusinessRule>
-            <LocalBusinessRule ID="con-3aa9f728-4f97-4888-8c94-daa520d6cb0e" Scope="Local" Type="Condition" RunPrivileged="false"><!-- Definition:
-Condition #1 (JavaScriptBusinessConditionWithBinds):
+            <LocalBusinessRule ID="acn-c2de7232-f273-4ea9-b77b-38afa0b5d147" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+Action #1 (JavaScriptBusinessActionWithBinds):
 <config>
   <bindings>
+    <binding alias="logger" type="Logger" contract="LoggerBindContract"/>
+    <binding alias="wf" type="Workflow" contract="CurrentWorkflowBindContract"/>
     <binding alias="node" type="Node" contract="CurrentObjectBindContract"/>
-    <binding alias="web" type="WebUiContext" contract="WebUiContextBind"/>
-    <binding alias="dir" type="DataIssuesContext" contract="DataIssuesContextBind"/>
-    <binding alias="bc1" type="BusinessCondition" contract="BusinessConditionBindContract">
-      BC1
-    </binding>
-    <binding alias="attr" type="Attribute" contract="AttributeBindContract">
-      Bullet01
+    <binding alias="assetType" type="ObjectType" contract="ObjectTypeBindContract">
+      Configuration
     </binding>
   </bindings>
   <messages/>
   <javaScript>
-//web.showAlert('WARNING', 'Headline', 'hello 1')
-dir.addWarning("Warning 1", node, attr);
-dir.addError("Warning 2", node, attr);
-dir.addWarning("Warning 3", node, attr);
+logger.info("checkMyAttachment");
 
-return dir;
+var i = 0;
+
+const wfI = node.getWorkflowInstance(wf);
+logger.info("checkMyAttachment wfI: " + wfI);
+/** @type{WorkflowAttachment} */
+const attachment = wfI.getAttachmentByID("MyWFAttachment");
+logger.info("checkMyAttachment attachment: " + attachment.getID());
+
+/** @type {JavaUtilSetOfWorkflowAttachmentContent} */
+const attachmentContent = attachment.getContent();
+attachmentContent.forEach(function (/** @type {WorkflowAttachmentContent} */ content) {
+    logger.info("checkMyAttachment content: " + content.getID());
+    /** @type{JavaIoInputStream} */
+    const ss = content.getStream();
+    let zis = new java.util.zip.ZipInputStream(ss);
+    let zipCount = 0;
+    let zipEntry = zis.getNextEntry();
+    while (zipEntry != null) {
+        const fileName = zipEntry.getName();
+        logger.info("2 checkMyAttachment fileName: " + fileName);
+        zis.closeEntry();
+        var asset = testClassification.createAsset(new java.util.UUID.randomUUID().toString(), assetType.getID());
+        logger.info("New Asset " + asset.getID());
+        asset.setName(fileName);
+
+        if (zis instanceof java.io.InputStream) {
+            logger.info("zis is instanceof java.io.InputStream");
+            asset.upload(zis, fileName);
+            logger.info("Done uploading");
+        }
+
+        zis.closeEntry();
+        logger.info("Done closeEntry");
+        zipEntry = zis.getNextEntry();
+        logger.info("Done getNextEntry");
+
+        if (++zipCount > 10) {
+            logger.info("checkMyAttachment zipCount > 10");
+            break;
+        }
+
+    }
+});
   </javaScript>
 </config> -->
+                <Name>checkMyAttachment</Name>
+                <Configuration>H4sIAAAAAAAA/71XXU8rNxB9v7/CTSW0gdtN6FNVCBQCSKluuFcFhNQXZDbexRfH3tpecgPiv3dm7ex6s/nqZx6i9XjmnDNjjy3nosi4fKB5LjgzDzx9SJRMeTY4Pv02FeSFacOVHHQO436HMJmoCZfZoHN3e/XDT53Tkw/H54XhkhnzWyFYD8YGgOxJ7mD/AdbJB0Iqw5cSjoTzzjS6GHR+pS/0JtE8t4v5s8QC0T23T+dcTkwHsQDtC9V0yizIcIbQRBDJeZPbec4Gna8AGwsqs/jGahDaOdkT9qiRyd4fhbJHkI77qHNy4zIx93m6l9mjve8P+0cIgjxjmlc2QhZWAhWzmiYW5LjITyrLmMa5oZ/yZGeCU+OdROnkJ6qchoKahYcshHBfvZ1oh4XWTNp7pZ9ToWZb+Gfpf8D9+fErS+wWZqkm7F/lxlie8oTiFtpCbpmxzYBNUhI1jY3ljypOlGbxRE0plzGf5iK+0kDSRBqB3cWh7vH8FrhQdg817ZSKqx9u5i1pAC0r/f6m+pqoKXpYdn+hXWVa2itL2ArHvYp9TZNeaq30GLqcZuz/aNZPKqGCv9JHwTzrLYM0qWXnhZzAofcXtNdH1XrhrpdjLlMV+dI/seR5PD+zliZPU+gMZ+56jfj3QjXhZED6gQ02hLFklo7Ajm0SZ6zq5xFMUZmwaJZ6mB1oEetn4st3gCMf29vfJ79YyOdtgV8HvZP9XiCH1mgDREBRtfP5fHTh2cfz+6s1Ge8iteYJFNdGpAWqbljDKgvyhut0Z7m4YfZz2s4Je2lTan4eMmwyenvkWVsBcar0JZiitJDlFUaiQNRGHWX7w3eXvPmDgZBd6uTDgiJ5y1KFEK9eZqzPSI1kXljYtoxOq1KgnyuHMZB/AOYcowBPMEteObpJNiNlJxRQ9PiV5/HvPA/gI2NacflQFWWN+62ZSzjq5jAD4Mh8zb7Z0hSSz564YCSqvL8DFXBXhPWrc0nB9xr6uMR0ASUwmELM1UX/kbTLvgAM6r4wLeFhDolQhrUywB/2fXl8g7L2bRQnUDzLztAhatb47m50EWsq4RzHz6gbW+VOoKj7kVQ3wopdsDrJa0AveYJuw+EaADdnfAmXUm948hQXyRDuTyyVuiy4ioMNsrxsq0WWONugGkdNiOc0F7lQdIKSPq5bstXkF0oy4qKhyitZ3tvpb17+NSx1wEqaHTtkA0EY0r6MwqU7OKg6Fe9JctjfbanaLbOMs3adHmEVnzcW1g3fu+0bOzCUj4TjXvMJAo+UXvOV4h88fwJhqKWLSA0AAA==</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+            <LocalBusinessRule ID="con-3aa9f728-4f97-4888-8c94-daa520d6cb0e" Scope="Local" Type="Condition" RunPrivileged="false">
                 <Name>CheckReject</Name>
-                <Configuration>H4sIAAAAAAAA/7VVTW/bMAy9+1cIPiQtkMnNdhmQLyTpumVYu6JNkWMg26yjQpE8SW67/fpRluPmq8mwdTeRIt97pCk6F0XG5ZzlueBg5vx+nih5z7Ned/C8FOQRtOFK9sI2PQsJyESlXGa98G568e5jOOgH3VFhuARjbgoBEdoGgWw/97D/gNUPCKkd1yUcWb/3rsl5L/zKHtltonluV/djJVNukWvG7WLEZWpCB4eA10yzJVhU4h3rLuLAfDSZ/syhFz4gMhVMZvTWatQa9hvCdjaKafwolO1gRf7wUpa3y9r8cdDIbCdwAI7jkuWlTcjKQ7BZVrPEogyfMS60Bmm/xw+QWBcyriIqrqHgzFSxUqVQueuCxoKZ+r4Qwp+io7wziO+444LnknYP3RPEb8V2ziybGFOAOUyZcv1WlDtzcqS5cdI+RJ2oJTWWx4omSgNN1ZJxSfkyFzSumDROLL3QSLHDPcE4j+N0j8Ztpzsqm3CsjqHFsYwLC0f0M4z7ywJqii2Z2G2wZ1taa2s13d2o5nvlvX3SWulL7AfL4H+/u28qYYL/YrGAinEKWBXD/hUyxfX1h5pfFs7rgoMgivCRULNQT0MB2p40Z8Obq8nV52aLNL8ASwWOgTsvQAhF2s3TACecsjSdMS0R46R6jN4i1QS2iHvpLeI+6WlnlVJ2cSvh/aGE/Rwf9qYEGmyhJcHUzk5z1hzlSu1Gmzsbt3q0udarP8RvRQRDgHkGAAA=</Configuration>
+                <Configuration>H4sIAAAAAAAA/yvIKU3PzItPLCjIyUwtjs9Mi0/Oz0vLTLe1sa/IzVEoSy0qzszPs1Uy1DNQUkjNS85PycxLt1UKDXHTtVCyt+OycSotzsxLLS4OKs1J1Qfyi4EGldgVQIylilkAXZPq16MAAAA=</Configuration>
                 <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
             </LocalBusinessRule>
             <LocalBusinessRule ID="con-7b96603d-4e10-4ea0-9f2e-2d264a78ca97" Scope="Local" Type="Condition" RunPrivileged="false"><!-- Definition:

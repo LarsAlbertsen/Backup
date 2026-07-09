@@ -102,13 +102,13 @@ else {
 	mandatory.setMandatory(currentNode, primaryspeciesA)
 }
 
-if (containwoodvar == "No" || containwoodvar==null) {
+/*if (containwoodvar == "No" || containwoodvar==null) {
 	logger.info("Hiding PrimaryMfrLocation");
 	hidden.setHidden(currentNode, primarymfrA)
 }
 else {
 	mandatory.setMandatory(currentNode, primarymfrA);
-}
+}*/
 
 return true;
 

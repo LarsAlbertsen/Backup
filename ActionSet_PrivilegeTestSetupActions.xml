@@ -7,9 +7,16 @@
             <ActionLink ActionID="Access Web UI"></ActionLink>
             <ActionLink ActionID="Access Workbench"></ActionLink>
             <ActionLink ActionID="Enable Value Search/Values in typeahead"></ActionLink>
+            <ActionLink ActionID="Initiate Item in STEP Workflow"></ActionLink>
+            <ActionLink ActionID="Maintain Derived Event Types"></ActionLink>
             <ActionLink ActionID="Maintain STEP Workflow Profile"></ActionLink>
+            <ActionLink ActionID="Maintain Value Generator"></ActionLink>
+            <ActionLink ActionID="Maintain business-rule"></ActionLink>
+            <ActionLink ActionID="Remove Item from STEP Workflow"></ActionLink>
             <ActionLink ActionID="Run Reports"></ActionLink>
             <ActionLink ActionID="Share user settings"></ActionLink>
+            <ActionLink ActionID="Update Web UI configuration"></ActionLink>
+            <ActionLink ActionID="Web UI Administration"></ActionLink>
         </ActionSet>
     </ActionSetList>
 </STEP-ProductInformation>

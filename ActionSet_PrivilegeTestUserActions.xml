@@ -10,7 +10,10 @@
             <ActionLink ActionID="Delete Collection"></ActionLink>
             <ActionLink ActionID="Download DTP Template Document"></ActionLink>
             <ActionLink ActionID="Download Publication Document"></ActionLink>
+            <ActionLink ActionID="Maintain GDSN publications"></ActionLink>
+            <ActionLink ActionID="Maintain GDSN registrations"></ActionLink>
             <ActionLink ActionID="Share search with group"></ActionLink>
+            <ActionLink ActionID="View attribute to classification link"></ActionLink>
         </ActionSet>
     </ActionSetList>
 </STEP-ProductInformation>

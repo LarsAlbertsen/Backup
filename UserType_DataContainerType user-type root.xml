@@ -3,6 +3,7 @@
     <UserTypes>
         <UserType ID="DataContainerType user-type root">
             <Name>Data Container Type</Name>
+            <AttributeLink AttributeID="aaaaaa"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

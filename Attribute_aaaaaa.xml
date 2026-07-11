@@ -9,6 +9,8 @@
             </MetaData>
             <AttributeGroupLink AttributeGroupID="cpg.impact.ATG_ALCO"></AttributeGroupLink>
             <UserTypeLink UserTypeID="AssetLevel1"></UserTypeLink>
+            <UserTypeLink UserTypeID="DataContainerType user-type root"></UserTypeLink>
+            <UserTypeLink UserTypeID="Reference-Type user-type root"></UserTypeLink>
         </Attribute>
     </AttributeList>
 </STEP-ProductInformation>

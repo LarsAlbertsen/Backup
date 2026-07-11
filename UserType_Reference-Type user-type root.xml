@@ -7,6 +7,7 @@
             <AttributeLink AttributeID="GetCompleteness"></AttributeLink>
             <AttributeLink AttributeID="ObjectTypeDescription"></AttributeLink>
             <AttributeLink AttributeID="Purpose"></AttributeLink>
+            <AttributeLink AttributeID="aaaaaa"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

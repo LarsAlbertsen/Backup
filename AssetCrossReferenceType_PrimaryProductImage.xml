@@ -12,6 +12,7 @@
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
                 <Value QualifierID="en-US" AttributeID="Purpose">Used for the single product image that is the primary image to show in STEP and potentially in downstream systems</Value>
             </MetaData>
+            <UserTypeLink UserTypeID="Family"></UserTypeLink>
             <UserTypeLink UserTypeID="Item"></UserTypeLink>
             <TargetUserTypeLink UserTypeID="ProductImage"></TargetUserTypeLink>
         </AssetCrossReferenceType>

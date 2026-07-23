@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="OtherOption2">
+            <Name>Simple recolor</Name>
+            <Icon>H4sIAAAAAAAA/41STVPCMBC98yvWeNFD0y+aFqTMCOoJx5MXb6Vd22homDRQ+PduC1S8mWSTN5u3m81LZs2+hMNG1U3KKmu3U9dt25a3IdemdAPP81xiMNhLbBf6kDIPPPAFDQatLGyVsg5WKMvKnrDRClMmNxSVGZk5KlujStljibWVObw3aMBgrpU2bD4CmN04DrxtrdQ1+FNosg1CI1Wld2gtPsBa7RCsNo2Gu1pTaOEeUSnduqVBrO/Bcfo028xWUKTsNeARxGQrPxxQwAPwxx0MeXJCHww+paLKbv1JLJ4CBo01+hs7x6LrF4dzvqjHxeBSssYvLeuUGb2rC+b2JdC1LJBIgkcMjimL+a9M4ZVKfEwydWLyYCjipW/nRLk0uULIiZMwyCnVuI+hNNwfQp6TRTIR/6rb/StRRHKEZMuI01vyGHyPjy8g6bdWhDqSgOWEpoBMEKdbo54irhU8HUynzLr/Mh/9AJG4CYhYAgAA</Icon>
+            <UserTypeLink UserTypeID="ManualAgenticUser"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="ManualAgenticUser">
+            <Name>AgenticUser Icons - bot Option</Name>
+            <Icon>H4sIAAAAAAAA/41TTXOCMBC9+yu26bFDICCgVpyRqic7PfXSG0IKaTFxYhT8900EqR+djgMDm519b9++nYy3+xzqdcm3ESqU2oxsu6oqXHlYyNx2HcexdQWCPaNVLOoIOeAACfSLoGKZKiJkwoKyvFBNLEVJI8TWGpVIllhlsqJlhKY55Yql8L6lElZCoUkPYPxgWfC2UUxw8EaQU7GmSuqqgiYZPEHCFeU8eYZVuaMalR3Aso7ATaIKyCL06mIfBtiFJfG6yNVf0tfHpYcHTfSB4JOVWscjGYbBzEWwVVJ8U5OIzXNKWO1YDg66VMk4/RKMR0iKHc+QfZQgaapAWxJgzXaI0AD3O1M8fO6KKZDGPBO0MuJ4Nl/ELZVpADXRHJqJtIjabc765/6K+UdweCE4TTaXelMm05JCWh9p04NpQ7QwAx34nbAwJovpPf70/Ssj+saAQ6u2LQvNJCcjfFNgjCDY6/rNX+aLBblrHzdzBNhvJvGxcztJu+kb1PB+1PWOjw3/2rGDfb9b8hlZM4smG5uLNOn9AOCLKSZxAwAA</Icon>
+            <UserTypeLink UserTypeID="AI.Setup"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

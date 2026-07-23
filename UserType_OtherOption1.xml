@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="OtherOption1">
+            <Name>Badge</Name>
+            <Icon>H4sIAAAAAAAA/41TTVOkMBC9+yt643GLkITha5xY5bjraSxPe/HGMBHiIJkKGZn999sBRFerVCBJ89LdvH5pVt1zBaenpu0kqZ07LMOw73vaR9TYKhSMsRA9CDxr1a/NSRIGDHiCD4Fe71wtiTdrpavajbY1jZJEP2FUYXURNMVWNZJcVap1uoQ/nbKwLXaVIpdnAKsfQQB3B6dNC2IJR7/7E7pDYfeNGv0uYNscFThjOwNBMEQdClfDTpJbQQWkNIEN5zSbLEZT4Asawyai0WjdE3jQDdI453ma/BIEOmfNXnlg7e8XIJiqYjSZoUa36tHoVhJrju2OhAMFq0oHqEhMMwJ/JUlpOmsiPDaLQiNUxWtHxUzjZrimVKW2JVZbnnwW9CkxHbLGKEkiyuag39k6y5NvcQ//l8lr4MW4XtAcOI4cgXHNh41NjlOEwl1nOAkc8bzyYeONhONXP3Dngi5G8miJif2Hkr9mH8fv6fvMA9UNWjky5zTB48WjxZP2LfCCI+F4eFlMHeDb4hVnWMvkP+JDntfK0jW/ufpOc0TxZ92x8j/N5dk/b51xm10DAAA=</Icon>
+            <UserTypeLink UserTypeID="ManualAgenticUser"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

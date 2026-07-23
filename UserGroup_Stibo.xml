@@ -10,6 +10,7 @@
             <PrivilegeRule ActionSetID="All user actions" ClassificationID="Classification 1 root"></PrivilegeRule>
             <PrivilegeRule ActionSetID="All user actions" CollectionGroupID="CollectionGroup root"></PrivilegeRule>
             <PrivilegeRule ActionSetID="All user actions" EntityID="Entity hierarchy root"></PrivilegeRule>
+            <PrivilegeRule ActionSetID="All user actions" GroupID="Marketing"></PrivilegeRule>
             <PrivilegeRule ActionSetID="All user actions" GroupID="Stibo"></PrivilegeRule>
             <PrivilegeRule ActionSetID="All user actions" GroupID="Suppliers"></PrivilegeRule>
             <PrivilegeRule ActionSetID="All user actions" ProductID="Product hierarchy root"></PrivilegeRule>

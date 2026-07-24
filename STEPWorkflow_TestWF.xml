@@ -4,14 +4,14 @@
         <STEPWorkflow ID="TestWF" Referenced="true"><!-- Definition:
 <scxml name="TestWF" initial="Initial" version="0.9">
   <assignee id="$current" type="user"/>
-  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=479.7030924312381 h=654.0  </editorLayout>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=640.0 h=654.0  </editorLayout>
   <final id="Final" name="Final" discontinued="false">
     <editorLayout>   node-size-and-position x=205.0 y=609.0 w=100.0 h=25.0  </editorLayout>
     <onentry businessactionid="acn-ff494726-6f7b-4c27-a012-83ba2c8317db"/>
   </final>
   <parallel id="State-5" discontinued="false">
     <transition event="submit5" target="Enrich"/>
-    <editorLayout>   node-size-and-position x=20.0 y=118.00000000000001 w=380.0 h=226.0  </editorLayout>
+    <editorLayout>   node-size-and-position x=20.0 y=118.00000000000001 w=560.0 h=226.0  </editorLayout>
     <state id="State-6" discontinued="false" initial="Initial1">
       <editorLayout>   node-size-and-position x=220.0 y=42.999999999999986 w=140.0 h=163.0  </editorLayout>
       <final id="Final1" discontinued="false">
@@ -32,6 +32,16 @@
         <transition event="submit10" target="State-11"/>
         <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
         <onentry businessactionid="acn-053542c4-74c3-4f0f-8b84-4fc9e5b9f7b0"/>
+      </state>
+    </state>
+    <state id="State-8" discontinued="false" initial="State-12">
+      <editorLayout>   node-size-and-position x=420.0 y=42.999999999999986 w=140.0 h=163.0  </editorLayout>
+      <final id="State-13" discontinued="false">
+        <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
+      </final>
+      <state id="State-12" discontinued="false">
+        <transition event="submit12" target="State-13"/>
+        <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
       </state>
     </state>
   </parallel>
@@ -58,7 +68,7 @@
             <SetupGroupLink SetupGroupID="ProductWorkflows"></SetupGroupLink>
             <Name>TestWF</Name>
             <ValidUserTypeLink UserTypeID="TestItem"></ValidUserTypeLink>
-            <Configuration>H4sIAAAAAAAA/61WXY+bOBR9769w0b462Nh8VSHSarUjVarUSu1qH1b7YOCSuGIMsp3JTH99jSGTTCYfVB0eABvse865x9cWW9t9VNJKYeGz+kuDexZWb2Fp+lbaFTxCtbXwtdKyt5/kvbRQf9HyQbawBnP8ZyuNBfVZfbzvO21B/9PXw1yNaM3+F1M93rfF0j+Q9FHbIhjDtwFS4h6K4BsY++9dgB5AG9mpIiCLPEBuhDJFsLG2/xCGu91usWOLTq/DiJA4JGnoJw1Wy/cYI4RUVwM28gdgoWrcd8aF6BR6LMiCoCd/3xU8zRcpYSSPOKMRyyjaFEnM3TeE8eodWgpj5FoBIFkXwR/VVmtQNkD2qXc4twa0ixfuf1q9cyOMdZxRLU3VKSvVFtxAr0Dg5zihum/eRB2lI27OPHBKhuamiOJnrGhptVDTAHhwOJ2S3d9Ky2rjEAu9BtcztffxoF4D7oXdoP/GL/8jF4yzMVjEqHv2nVR21M2/juJ1TWNg6h7fx/4BzDI8QBlEOQfti9BfB6nMAZtv4zg4Gb8MvaZe3UYq0V5W9274vNd2bNxWlsSebELyy9J2yoHWT6jcGqnAGFENo4eQolK4aXjO0yjBSZOWmFdRigWhEc5YKaIqYzSty4HVNMtAyROZY5iThF2mwVNPg+X8BY2czKYhmqqkaZThkkYU84YzXNaZuzUloxxS15u9oHE+s2ZbDkXixHh/9r3uHuBacnuhRdvClfweHHIzqV4MSrMFOb6oU4ZlU4Kj5OriGXnEZ9bOK3vfyOEIOwleVTw6g8lEhUeL/PjKkiHJfKRCE3agMrcGzQl+s+jcNBWhlAHNEsyzKMc8qRjOm1pg2uSV41aKhpenprqSDrnH/pwVv8zpFV+heWVjvhzeVef0eF7Wx9HnmSM9MsfYQ8n8/LydN3499u94I2YxjyqOU+5swRvS4KzMuHurcojL3FVT8gvecKhP9hL6e744muTNnbEM9+Vuzi5wqJ4zd7OY8Yt5uSggFlOYl4vrXMV7PYWG71DZc7v5q6PG9MmfNSKaTj7Kz54ejgTzB7zVdJL8Cc0kO1e3CgAA</Configuration>
+            <Configuration>H4sIAAAAAAAA/8VXXW+bMBR936/w0F4dsDFfU4g0TZs0aVIrbdMepj0YuKSeqEG207T79TOGNGk+qdZpecBgsO855x5fO3xl2k9SGMENXMn3CmybG7WCue4aYRZwD+XKwJdSic58FrfCQHWtxJ1oYAl698tGaAPySn667VplQH3rqn6umjd684ku72+bfO4aJFzUJveG8I2HJL+F3PsK2nz/6KE7UFq0MveCWeYhO0Lq3Lsxpnvr++v1erYOZ61a+jQIIj9IfDept5i/xhghJNsKsBa/AXNZ4a7VNkQr0X0ezAL04K7rPGZ9e5PHEbMtwnjxCs251mIpAZCocu9NuVIKpPGQeegstpUGZWP4m48Wr+wIbSxPVAldttIIuQI70LH23Bx79DaPF5HSZMDKQgeWBANYGj1iRXOjuBwHwJ3FadVrP0glyhuLmKsl2J7xeRMPqiXgjpsb9GN48xPZYCwcgtGQ2LZrhTSDVu52EKytaw1j93A/9Pdg5v4WSi/KMWjXXH3ppdJbbO4ZR97e+LnvNHXq1kLy5rS6H/vXG22Hh8vKBpEjGwfZaWlbaUGrB1SstJCgNS/70X1IXkpc1yxjCY1xXCcFZiVNMA8IxWlYcFqmIUmqomc1ztJTckSmGGYvYadpsMTRCDP2hEYWTKbB67IgCU1xQSjBrGYhLqrUXuoiJAwS25s+oXE8s3pV9IVhz3jvuk61d3AuuR1XvGngTH63DrmYVCcGIeks2P0Rq0wUjwmm8dnFM/CIjqydA3tfyOEAO/YOqhyZwGSkwugs2/2lcZ/ksWaRONxSmVqDpgS/WHQumiogJASSxpilNMMsLkOc1RXHpM5Ky63gNSv2TXUmHWKD/TErbpmTM75C08rGdDmcq47p8bisd6NPM0eyY46hhwTT8/Ny3nh+7L/xRhRGjJYMJ8zagtVBjdMiZfauzCAqMltNg2d4w6Le20vI3/liZ5L/54z00Bn0MiD2z6wxIfgka5zMIj3IYvgSWQz/RRbn/mbTmrKXb/fAiWeSKGQnJTwpIOZjmKcl8ti+dTiFgl9QmmNnsoMD4/jKnRgpScaUZ0fPgDuCuaP5YvwP8AfDUhX6cQwAAA==</Configuration>
             <LocalBusinessRule ID="acn-0113e186-4829-46c3-9fda-1f9c220baf4b" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
 Action #1 (JavaScriptBusinessActionWithBinds):
 <config>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <PortalConfigurations>
+        <PortalConfiguration ID="NewWebUI"><!-- Definition:
+<portal-config portalId="newwebui" xmlns="http://stibosystems.com/step/portal-config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <screens>
+    <loginscreen>
+      <parameter id="PortalTitle" value="New Web UI"/>
+    </loginscreen>
+    <screen id="ProductScreen" type="NodeDetails">
+      <component id="Buttons" type="Buttons">
+        <parameter-list id="Actions">
+          <component id="Actions" type="SaveAction">
+            <parameter id="ButtonLabel" value="i18n.stibo.SaveAction.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+            <parameter id="EnforceValidity" value="false"/>
+            <parameter id="ReloadAfterSave" value="true"/>
+          </component>
+          <component id="Actions" type="ResetAction">
+            <parameter id="ButtonLabel" value="i18n.stibo.ResetAction.Label"/>
+            <parameter id="ButtonType" value="TEXT"/>
+          </component>
+        </parameter-list>
+      </component>
+      <component id="Main" type="NodeEditor">
+        <parameter id="ContextHelpMode" value="SHOWBELOWINPUT"/>
+        <parameter id="LabelLayout" value="LEFT"/>
+        <parameter-list id="Rows">
+          <component id="Rows" type="IdValue">
+            <parameter id="CssClass" value="stibo-IdValue"/>
+            <parameter id="Label" value="i18n.stibo.IdValue.Label"/>
+          </component>
+          <component id="Rows" type="NameValue">
+            <parameter id="CssClass" value="stibo-NameValue"/>
+            <parameter id="Label" value="i18n.stibo.NameValue.Label"/>
+            <parameter id="Mandatory" value="false"/>
+            <parameter id="ReadOnly" value="false"/>
+          </component>
+          <component id="Rows" type="ValueGroup">
+            <parameter id="AttributeGroup" value="Global"/>
+            <parameter id="DisplayContextHelp" value="true"/>
+            <parameter id="DisplayMode" value="Merged"/>
+            <parameter id="DisplayValueHistory" value="true"/>
+            <parameter id="EnableLocaleFormatting" value="false"/>
+            <parameter id="EnableStepTags" value="false"/>
+            <parameter id="EnableTagConversion" value="false"/>
+            <parameter id="FilterAttributeType" value="Both"/>
+            <parameter id="IncludeReferences" value="true"/>
+            <parameter id="MandatoryGroup" value="false"/>
+            <parameter id="MaxSuggestions" value="10"/>
+            <parameter id="ReadOnly" value="false"/>
+            <parameter id="RichTextEditing" value="Never"/>
+            <parameter id="ShowLOVIDs" value="false"/>
+            <parameter id="SortLOVByID" value="false"/>
+            <parameter id="SuggestOracle" value="false"/>
+            <parameter id="UseGlobalOverrideControlTypeRules" value="true"/>
+          </component>
+        </parameter-list>
+      </component>
+      <parameter id="EnforceValidity" value="false"/>
+      <parameter id="ShowTitle" value="true"/>
+      <parameter id="ShowWarning" value="false"/>
+      <parameter id="Title" value="Product"/>
+    </screen>
+    <screen id="homepage" type="HomePage">
+      <parameter id="CssClass" value="stibo-HomePage"/>
+      <parameter id="DisableTitle" value="true"/>
+      <parameter id="PagingEnabled" value="false"/>
+      <parameter id="Title" value=""/>
+      <parameter-list id="Content"/>
+    </screen>
+    <screen id="main" type="Main">
+      <parameter id="BottomHeight" value="64"/>
+      <parameter id="DefaultSidePanel" value="SHOWN"/>
+      <parameter id="InfoAlertCloseDelay" value="3"/>
+      <parameter id="LeftWidth" value="-1"/>
+      <parameter id="Resizeable" value="true"/>
+      <parameter id="RightWidth" value="120"/>
+      <parameter id="TopHeight" value="64"/>
+      <parameter-list id="Left">
+        <component id="Left" type="PrimaryNavigation">
+          <parameter-list id="MenuItems">
+            <component id="MenuItems" type="TreeItem">
+              <parameter id="HideLeaves" value="false"/>
+              <parameter id="Icon" value="account_tree"/>
+              <parameter id="Label" value="Products"/>
+              <parameter id="ShowLeaves" value="true"/>
+              <parameter id="showRecycle" value="false"/>
+              <parameter-list id="RootNodeURLs">
+                <parameter value="step://product?id=Product+hierarchy+root"/>
+              </parameter-list>
+            </component>
+          </parameter-list>
+        </component>
+      </parameter-list>
+      <parameter-list id="Mappings">
+        <component id="Mappings" type="ScreenMapping">
+          <parameter id="Screen" value="ProductScreen"/>
+          <parameter-list id="Conditions">
+            <component id="Conditions" type="ProductCondition"/>
+          </parameter-list>
+        </component>
+      </parameter-list>
+    </screen>
+  </screens>
+</portal-config> -->
+            <SetupGroupLink SetupGroupID="WebUIs"></SetupGroupLink>
+            <Name>NewWebUI</Name>
+            <Configuration>H4sIAAAAAAAA/61YW2/iOBR+n1+B8jqCtDOr1WhEW/VCByRuAtrO28okh2DJ2JHtlLK/fo+TYJKAQ5juG3HOd+7+zglxsmRUrSG86d59bFjrHaSigt94150rrwU8ECHl0Y33snhu//BaShMeEiY43HhceHe3X7qxkJqwdiD4ikYt1MHVjbfWOv7p+0rTpVA7pWGjOoHY4AHEfgnhZZCfH4pa2Ha77Wy/d4SM/G9XV9f+79FwHqxhQ9qUGw8C8FqZkkGIfsB2C8uEerdfWq2uCiQAV+Y3PjERISQ9yk7wLCaSbECDbFFET1M9C6oZKn0nLMHIxrBtvcGy9TLw/FyRX9KUnWVPqZa12EBMIlShdzFq6OPz1Dw7rD5RRZYMyma1TGBv8NhPgvajHjew0EJWhCk3pqzeKfao1CMjSlnJtGxtG8MJXBubRmdgwTVwfUiUM0dTKcIk0PP0ZJ+osQjhCTShTLlyNV+L7QWJKovmRp3SPb4SMoBXwmhI9a5hYo1Lb0RyrIgTge0e4z3hWZpGhJZi7qE1IW3IxzUxaf3QfWDxCMWtlXl/8vbQG07eBuPpy+Jg7kjBkCyBDclOJNqCh71nB+RQz5nYqoJbR4Gk7/NABuGrUVwSP+2IdYFe/+CdtL86ObqTCfi1ShwtunegBO761uOGcYzRUoNIZkDCCWfOJrksfGv0Mwk4eF4PHxnaxoar9f3yxKWmf0mRxPWZy2hrQSJs63zCXJTEP8p8ZnSOEwcNq4ugSM8xI7s0vD7ejGLiyuRzEj7HmTKcvD7sBk8Xmb3XWtJlovOU7qG/mFiScw0yo8F6gYxhiKVIS2PAhJ/BvijIbExQVtIQDPtIwRZY5FnCQF0SfJ67AoH9AbrEeSOQEc68cx3+MU+iCPBeCH5w+PrqXK2QyrFWg6fLOiRrrqEICINnITdE65phcFLFgAcsCWEGK5C4aF2W5TzWiSRBYdo1MWupoNxkTaDPlOFP26WmPSz+Qeh1Azrp+uWZY8flsXCFdx4SrdPKZtSzf6yfZvdB1g41fLYXyfXOyTtkR/WUltl3svtBTSN6b7iG1HhSKsai93txllKZIOH9Cp+NrzW912wsVNI4AwX6f8hjQU+jRDZKxuc6s2bF3RS2vHTjc+2oIu4DjdaH1ezvv5zLJt4sLTbN5TFl9F8w9NRsYX6CFUmYniPvTwkvlMHsmmMnbIAte89A6kcmFO7wyNoW+d3tnInijYZIFpaiv105xYewqki3r+u/RwyiSArlLk3f5gWaSrohcjcm7zQiR416SvcIeDIw37LVlq7s+lYst7TABjEHFdiZXTH/dFHVjj+CKRxhMwh2ZyfBcQ2DwiJGgkAkXP+j0duzyHRsAhJH/dRyfWMIbT6CXmbDaiorpuyyC+Z/gTjLyB3qyJPzdU1BEhmsd18lKj1h3nGrHWH18RJUwjpNwQ5OdFo7Nd9chHOq80gc436h3J1tJfZzLGWl/NTR2Vkl8+/xctflp/65K4Frnlk4qzP2yL2CnL1+qSH7okrRn87kgacPv9Xtl275/yc8wI2T6tv/AGLoERQKEwAA</Configuration>
+        </PortalConfiguration>
+    </PortalConfigurations>
+</STEP-ProductInformation>

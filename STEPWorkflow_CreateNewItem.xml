@@ -28,7 +28,7 @@
       <final id="State-11" discontinued="false">
         <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
       </final>
-      <state id="State-10" discontinued="false">
+      <state id="State-10" name="Enrich Descriptions" discontinued="false">
         <transition event="submit" target="State-11"/>
         <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
         <onentry businessactionid="acn-ec647937-2030-4377-8872-f2ccaa67d1d9"/>
@@ -59,7 +59,7 @@
             <Name>Create New Item</Name>
             <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
             <ValidUserTypeLink UserTypeID="TestItem"></ValidUserTypeLink>
-            <Configuration>H4sIAAAAAAAA/61WTY/TMBC98ytMxNWN7XyjphJCIK2EWCTghDi4zqQ1Sp3Idre7/HocJ6W7bXebXbgksZ3xvHnzZmy+te2VklZyC9fqvQb3LmveGJibrpF2Abcgtha+Ci07+0lupIXqi5Y3soEVmNLq7f7PRhoL6lpdbbpWW9Dfu+p4MyNuN0059y8kvdumDAb/TYAU30AZDCA+w+7KwiZAN6CNbFUZkFkRIGeoTBmsre3ehuFut5vtolmrVyEjJAlJFvq9g8X8NcYIIdVWgI38DZirCnetcZ5ahW5LMiPozj93ZZwVs4xEpGBxRFmUU7Qu0yR2awjjxSs058bIlQJAsiqDN2KrNSgbIHvXObhbA9r5C/c/LV45C2NdCKiSRrTKSrUFZ+iJCPweRxHvhxdRs2zAHUceOCX9cF2y5C9WNLeaq9EAbhzOMvjWflBairVDzPUK3Mw43vuDagW443aNfgwrP5FzFkeDMxZR9+5aqezAm/8cyGvr2sA4PXwP8z2YeXiA0pNyDtoXrr/2VJkDNj/GSXBkPw89p57dWirePM7ux355z+0wuMwsSXywKSkep7ZVDrS+Q8utkQqM4aK37l1yoTATlNC4iDCtuMBxnmU4T1mKax7xuiLVEtKsj2rcpQ/JBzJFMEcJezyMOPNhREX8IIyCTA6jgFRkkAIuOGU4jgTH+bIQuK6TKK6TJF/G+YMwzmfWbJeuVxzS+q7rdHsDT6W145o3DTyR2YM2LqbT00Bp7mmI8jGbLD1fKSeFcaLdCwkakKXBSVejE8Cyh1UdD2BpGh3ATm0pU9xd7CEXNUJTBjUrapzFkdMIzRgukmWFXasgpEpTVwbxsUYmqcRXK31CJGha9U+nYS+REx7+Vud979NkkN2TwTBDybPz8iIVvNjbS1QAInVHZ5Rh5g5P1yn6hpc7KdRMCM7TrKJV8SIVjFH8mw7ubfLflTAP971qSvM+tL6Jh5BrtM85388W0bkedmqq4ReIE+aTczeDcclfDRjNRvUUZw/7e0T5+9hivP/9AZyIXz9uCgAA</Configuration>
+            <Configuration>H4sIAAAAAAAA/71W247TMBB95ytMxKsb27mjphLiIq2EAAl4Qjy4zqQ1Sp3Idre7fD2Ok2532+42XMRLEtsZz5kzZ8bmW9teKWklt/BRvdbg3mXNGwNz0zXSLuAGxNbCZ6FlZ9/LjbRQfdLyWjawAlNavd3/2UhjQX1UV5uu1Rb016463syIm01Tzv0LSe+2KYPBfxMgxTdQBgOID7C7srAJ0DVoI1tVBmRWBMgZKlMGa2u7l2G42+1mu2jW6lXICElCkoV+72Axf44xQki1FWAjfwLmqsJda5ynVqGbkswIuvXPXRlnxSwjESlYHFEW5RStyzSJ3RrCePEMzbkxcqUAkKzK4IXYag3KBsjedg7u1oB2/sL9T4tnzsJYFwKqpBGtslJtwRl6IgK/x1HE++FF1CwbcMeRB05JP1yXLLnDiuZWczUawLXDWQZf2rdKS7F2iLlegZsZx3t/UK0Ad9yu0bdh5TtyzuJocMYi6t5dK5UdePOfA3ltXRsYp4fvYb4HMw8PUHpSzkH7xPXnnipzwObHOAmO7Oeh59SzW0vFm8fZfdcv77kdBpeZJYkPNiXF49S2yoHWt2i5NVKBMVz01r1LLhRmghIaFxGmFRc4zrMM5ylLcc0jXlekWkKa9VGNu/Qh+UCmCOYoYY+HEWc+jKiIH4RRkMlhFJCKDFLABacMx5HgOF8WAtd1EsV1kuTLOH8QxvnMmu3S9YpDWl91nW6v4am0dlzzpoEnMnvQxsV0ehoozT0NUT5mk6XnK+WkME60eyFBA7I0OOlqdAJY9rCq4wEsTaMD2KktZYq7iz3kokZoyqBmRY2zOHIaoRnDRbKssGsVhFRp6sogPtbIJJX4aqVPiARNq/7pNOwlcsLDXXXe9z5NBtk9GQwzlPx2Xv5IBXfexu436Bm9AePPb+fI/BeBgEjdqRplmLlz1TWRvhfmTiU1E4LzNKtoVfyRQMYA/04i9zb55yKZh/s2NqWvH7rixPPJ9eDfOfrP1te59nZqquEHiBPmk3OXhnHJ3xoYzUb1FGfvAfeI8le1xXg1/AXn/ZnniQoAAA==</Configuration>
             <LocalBusinessRule ID="acn-162ef29f-7432-4172-95bd-23100d661494" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
 Action #1 (JavaScriptBusinessActionWithBinds):
 <config>

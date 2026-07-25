@@ -4,16 +4,26 @@
         <STEPWorkflow ID="TestWF" Referenced="true"><!-- Definition:
 <scxml name="TestWF" initial="Initial" version="0.9">
   <assignee id="$current" type="user"/>
-  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=640.0 h=654.0  </editorLayout>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=879.9470938562571 h=654.0  </editorLayout>
   <final id="Final" name="Final" discontinued="false">
-    <editorLayout>   node-size-and-position x=205.0 y=609.0 w=100.0 h=25.0  </editorLayout>
+    <editorLayout>   node-size-and-position x=476.0 y=609.0 w=100.0 h=25.0  </editorLayout>
     <onentry businessactionid="acn-ff494726-6f7b-4c27-a012-83ba2c8317db"/>
   </final>
   <parallel id="State-5" discontinued="false">
     <transition event="submit5" target="Enrich"/>
-    <editorLayout>   node-size-and-position x=20.0 y=118.00000000000001 w=560.0 h=226.0  </editorLayout>
+    <editorLayout>   node-size-and-position x=20.0 y=118.0 w=780.0 h=226.0  </editorLayout>
+    <state id="State-16" discontinued="false" initial="State-17">
+      <editorLayout>   node-size-and-position x=220.0 y=43.0 w=140.0 h=163.0  </editorLayout>
+      <final id="State-18" discontinued="false">
+        <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
+      </final>
+      <state id="State-17" discontinued="false">
+        <transition target="State-18"/>
+        <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+      </state>
+    </state>
     <state id="State-6" discontinued="false" initial="Initial1">
-      <editorLayout>   node-size-and-position x=220.0 y=42.999999999999986 w=140.0 h=163.0  </editorLayout>
+      <editorLayout>   node-size-and-position x=620.0 y=43.0 w=140.0 h=163.0  </editorLayout>
       <final id="Final1" discontinued="false">
         <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
       </final>
@@ -24,7 +34,7 @@
       </state>
     </state>
     <state id="State-7" discontinued="false" initial="State-10">
-      <editorLayout>   node-size-and-position x=20.0 y=42.999999999999986 w=140.0 h=163.0  </editorLayout>
+      <editorLayout>   node-size-and-position x=20.0 y=43.0 w=140.0 h=163.0  </editorLayout>
       <final id="State-11" discontinued="false">
         <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
       </final>
@@ -35,7 +45,7 @@
       </state>
     </state>
     <state id="State-8" discontinued="false" initial="State-12">
-      <editorLayout>   node-size-and-position x=420.0 y=42.999999999999986 w=140.0 h=163.0  </editorLayout>
+      <editorLayout>   node-size-and-position x=420.0 y=43.0 w=140.0 h=163.0  </editorLayout>
       <final id="State-13" discontinued="false">
         <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
       </final>
@@ -46,29 +56,45 @@
     </state>
   </parallel>
   <state id="Approve" discontinued="false">
-    <transition event="submit-approve" target="Final"/>
-    <transition event="reject" target="State-5">
-      <editorLayout>   edge-path [State-5]  x=217.0 y=439.0  </editorLayout>
+    <transition event="submit-approve" target="Final">
+      <editorLayout>   edge-path [Final]  pointx=0.0 pointy=0.0 offsetx=0.0 offsety=-17.0  </editorLayout>
     </transition>
-    <editorLayout>   node-size-and-position x=205.0 y=534.0 w=100.0 h=25.0  </editorLayout>
+    <transition event="reject" target="State-5">
+      <editorLayout>   edge-path [State-5]  x=467.0 y=439.0  </editorLayout>
+    </transition>
+    <editorLayout>   node-size-and-position x=476.0 y=534.0 w=100.0 h=25.0  </editorLayout>
   </state>
   <state id="Enrich" discontinued="false">
     <transition event="submitenrich" target="Approve"/>
-    <editorLayout>   node-size-and-position x=247.0 y=394.0 w=100.0 h=90.0  </editorLayout>
+    <editorLayout>   node-size-and-position x=537.0 y=394.0 w=100.0 h=90.0  </editorLayout>
     <onentry businessactionid="acn-afcb1728-b121-4f43-bd83-bfb314e71218"/>
   </state>
   <state id="Initial" name="Initial" discontinued="false">
     <transition event="ToEnrich" target="Enrich">
-      <editorLayout>   edge-path [Enrich]  x=430.0 y=231.0 pointx=0.0 pointy=0.0 offsetx=0.0 offsety=0.0  </editorLayout>
+      <editorLayout>   edge-path [Enrich]  x=830.0 y=231.0 pointx=0.0 pointy=0.0 offsetx=0.0 offsety=0.0  </editorLayout>
     </transition>
     <transition event="ParStates" target="State-5"/>
-    <editorLayout>   node-size-and-position x=270.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+    <editorLayout>   node-size-and-position x=570.0 y=43.0 w=100.0 h=25.0  </editorLayout>
   </state>
-</scxml> -->
+</scxml>
+<workflowViews>
+  <restriction displaySequence="0" includeSubgroups="false">
+    <mapping displaySequence="0" stateID="State-10" viewID="Main"/>
+    <mapping displaySequence="1" stateID="State-12" viewID="Main"/>
+    <mapping displaySequence="2" stateID="Initial1" viewID="Main"/>
+    <mapping displaySequence="3" stateID="Initial" viewID="Main"/>
+    <mapping displaySequence="4" stateID="State-17" viewID="Main"/>
+  </restriction>
+  <view id="Main" automaticSort="false" defaultSortColumn="0">
+    <aspect id="id"/>
+    <aspect id="name"/>
+  </view>
+</workflowViews> -->
             <SetupGroupLink SetupGroupID="ProductWorkflows"></SetupGroupLink>
             <Name>TestWF</Name>
+            <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
             <ValidUserTypeLink UserTypeID="TestItem"></ValidUserTypeLink>
-            <Configuration>H4sIAAAAAAAA/8VXXW+bMBR936/w0F4dsDFfU4g0TZs0aVIrbdMepj0YuKSeqEG207T79TOGNGk+qdZpecBgsO855x5fO3xl2k9SGMENXMn3CmybG7WCue4aYRZwD+XKwJdSic58FrfCQHWtxJ1oYAl698tGaAPySn667VplQH3rqn6umjd684ku72+bfO4aJFzUJveG8I2HJL+F3PsK2nz/6KE7UFq0MveCWeYhO0Lq3Lsxpnvr++v1erYOZ61a+jQIIj9IfDept5i/xhghJNsKsBa/AXNZ4a7VNkQr0X0ezAL04K7rPGZ9e5PHEbMtwnjxCs251mIpAZCocu9NuVIKpPGQeegstpUGZWP4m48Wr+wIbSxPVAldttIIuQI70LH23Bx79DaPF5HSZMDKQgeWBANYGj1iRXOjuBwHwJ3FadVrP0glyhuLmKsl2J7xeRMPqiXgjpsb9GN48xPZYCwcgtGQ2LZrhTSDVu52EKytaw1j93A/9Pdg5v4WSi/KMWjXXH3ppdJbbO4ZR97e+LnvNHXq1kLy5rS6H/vXG22Hh8vKBpEjGwfZaWlbaUGrB1SstJCgNS/70X1IXkpc1yxjCY1xXCcFZiVNMA8IxWlYcFqmIUmqomc1ztJTckSmGGYvYadpsMTRCDP2hEYWTKbB67IgCU1xQSjBrGYhLqrUXuoiJAwS25s+oXE8s3pV9IVhz3jvuk61d3AuuR1XvGngTH63DrmYVCcGIeks2P0Rq0wUjwmm8dnFM/CIjqydA3tfyOEAO/YOqhyZwGSkwugs2/2lcZ/ksWaRONxSmVqDpgS/WHQumiogJASSxpilNMMsLkOc1RXHpM5Ky63gNSv2TXUmHWKD/TErbpmTM75C08rGdDmcq47p8bisd6NPM0eyY46hhwTT8/Ny3nh+7L/xRhRGjJYMJ8zagtVBjdMiZfauzCAqMltNg2d4w6Le20vI3/liZ5L/54z00Bn0MiD2z6wxIfgka5zMIj3IYvgSWQz/RRbn/mbTmrKXb/fAiWeSKGQnJTwpIOZjmKcl8ti+dTiFgl9QmmNnsoMD4/jKnRgpScaUZ0fPgDuCuaP5YvwP8AfDUhX6cQwAAA==</Configuration>
+            <Configuration>H4sIAAAAAAAA/8VX2W7cNhR9z1ewQl85EilqM0YOirQGDLRIACftQ5AHSqLGbDWUSlIeu19fktIsnlV2XeRFCyne5ZxD6l7a6/ZWcM2pZh/FB8nMPdeyZ3PVNVxfs0dW9prdlZJ3+le+5JpVnyR/4A1bMLX7ZcOVZuKjuF12rdRMfukqa6umjVp/osrHZZPP3Q1w57XJvcF94wFBlyz3PjOl/7jxwAOTirci94JZ5gGzQqjcu9e6u/L91Wo1W4WzVi58HASRHyS+M+pdz3+AEAAg2opBxf9hkIoKdq0yLloBHvNgFoAnd13laZLNMpIEWZhGMY4SBO7zOCJmDkB4/Q7MqVJ8IRgDvMq9H8teSia0B/RTZ+LsFZPGn7/+6PqdWaG0yRlUXJWt0Fz0zCx0CHjOxl6q69eLUUfJEDcJXeAosK/3OY42sYK5llSMC9iDidMg2f4iJC/vTcRULpgZGd/X/li1YLCj+h58HWa+AeMsDQdnOETm3rVc6AE39ziA19a1YuPw8DyM22Dm/jYUC8qx0D5ReWehUtvY3DuMvL31c99h6tCtuaDNaXRv7PQa2+HlIrIkiV2ycZCdhrYVJmj5BIpeccGUoqVdbV3SUsC6JkZFOIZxnRSQlDiBNEAYpmFBcZmGKKkKm9VoxabkEpkimD3CTgskTFwaYUaepZEFk9OgdVmgBKewQBhBUpMQFlVqLnURIsISM5o+S+M4s6ov7CGxJ7yfuk62D+wcuR2VtGnYGX63CrmABh4EjFDqwEjSkVMcn90vQ+jRke1yoOgLtA2Rxt7BIYcuBx/j53udDMGjONwGP/WgmeAOXzxZLionQChkKI0hSXEGSVyGMKsrClGdlRgHBa1Jsa+cMwTwdewbHtxeRmfEA6adDdPhWEvnAI/N3t31Pk0OyY4chhEUvJifV6nh1d5epYYojAguCUyIEQKpgxqmRUrMU5mxqMjMIRm8QA0m6r1fBPpvStgx8v20kB5qAU/4Wb2hGCa4mySGk7zhA97Ct+At/K68ofiQuGRCRG9I3BR3LyRuj6f0LXhK/w+e5v66SphSPG2LjolFYBSSk4idFDqko5vnv6tjRbabMDX29Jra0P2CqlqyP1mpj5XUB6GMU67gJ3Ey6iU76mwHftdlXY/t3ANnq3z+3jZzm2bNtAweYKJsKy4Wuffl840968x6UdHGHPm592SK/vfGllD4atXKv+qmXf1uLKmhx7sy48/6PKV50c7KdumNwrVuHb+/US48ULGa9o2+M03nh7bpl7Zj9AA1fe2Sal7a8bUqBgPOCFWdgcqZ4ZXnH5+xncR6bu5bv+OzND2qKQ0d9lyUTV+xu75YyLbv1EaCRpddQ5/u2N+9AYTZsHbcLI1sDETAQXv7885PGlhHdmTM79CMP8EOvmgHnbezKSEv2cGT7Fw0E05KK7loh2wZ26HJivdAcWZwUPK/V7QgHAYRAAA=</Configuration>
             <LocalBusinessRule ID="acn-0113e186-4829-46c3-9fda-1f9c220baf4b" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
 Action #1 (JavaScriptBusinessActionWithBinds):
 <config>

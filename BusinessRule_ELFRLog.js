@@ -57,7 +57,7 @@ function log(msg) {
 }
 
 
-for (var x=0; x<100; x++) {
+for (var x=0; x<10; x++) {
 	log('A ' + x + ' ' + Date.now())
 
 }

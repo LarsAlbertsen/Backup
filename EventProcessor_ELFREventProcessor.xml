@@ -41,7 +41,7 @@ ScheduleSpecification=
                 <Value QualifierID="en-US" AttributeID="Purpose">test</Value>
             </MetaData>
             <Configuration>H4sIAAAAAAAA/6VUTXPTMBC991d4BJMbcTrMMB2SOOTDAWYSatKUcmNUeeNqKktmJZWGX48cf4CTqhyai631e/teVrs7V3LHM4vUcCXHo8ljLoIHQF2eyHl/QAKQTKVcZmNyvV2+uSCT6GxUCJtxGfB0TOIHkCZBxUBrhTOqYf5vShKdBcFI87wQcMBvQBdKan4r4FoDkkgbKN6HoXWHiQPEq+VmFFaEY+6MGnZ3xX8Dic4Hg4EPtqB7vVUbMJTLgz1NIi84Qa6Qm71L6YN8tWCdZPwt2VzOfaA1fbwUaV0I0AeHPuwnZbF1eMR6d+FjrbgEnQDOPibP//8l5cLlxn0sqStzSiKDFv6Ldqm5cuC3g9yHvSwMz7k2nK0Uu+9q7KjQXpEniI2cj3LF7iC1Ar6vVz8WcbKJ59NtvCBRT5hhp017P60yQ9er1cukl5lh79X5YFgi3e0jB93GgqCJ7gMmqNY1nam87+zdqr41XPR1LZ7CjkteNnK/8bNoQ6+bkGsy3K+5tAaqbLVU/YPyc2OzeoQdk+Gxy781GYXVrLk3XQhuohhR4QYKhQbw5QMb5+76OzlPJnZJDRUH3DRN0bFIBGKHHw7l0ns3v7nuu/r5LrJDDaQVYkzKhiThMfKzZMKmcENROv/6uG9PapEcjvOXrrCZ1eVo6SkrM3TrU0mc1KRLaZfYbR1G1xTNMnNrY4a+2jjvBh5Nm4BV55Jbf/JupRuF97qgDFryryZS0tdutfioTAlBDXxRablynh3cVmWLPMvcyMqMRNOiQPUAqXd073mxAAEG0qc1Tm7yDxFK9sSHBgAA</Configuration>
-            <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
+            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">

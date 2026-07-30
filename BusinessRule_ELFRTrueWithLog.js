@@ -34,23 +34,17 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
-  }, {
-    "contract" : "WebUiContextBind",
-    "alias" : "ui",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (logger,node,ui) {
+exports.operation0 = function (logger,node) {
 for (var i = 7; i<10; i++) {
 	//logger.info(node.getID() + ' Bullet0'+i + '=' + node.getValue('Bullet0' + i).getSimpleValue()) 	
 }
 logger.info('');
-ui.showAlert('INFO','Info message')
+
 return true
 
 

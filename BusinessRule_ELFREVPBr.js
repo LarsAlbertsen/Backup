@@ -34,6 +34,6 @@
 }
 */
 exports.operation0 = function (node) {
-logger.info(node + ' ' + java.lang.System.currentTimeMillis());
+logger.info(node + ' ' + java.lang.System.currentTimeMillis();
 
 }

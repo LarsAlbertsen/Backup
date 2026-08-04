@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="OSVALDOARDILES" EMail="scooby.doo@somecompany.com" Deactivated="true">
+        <User ID="OSVALDOARDILES" EMail="scooby.doo@somecompany.com" Deactivated="false">
             <Name>Osvaldo Ardiles</Name>
             <MetaData>
                 <Value AttributeID="UPN">Osvaldo.Ardiles@Argentina.org</Value>
             </MetaData>
             <UserGroupLink UserGroupID="ReadOnly"></UserGroupLink>
-            <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup></SystemSetup>
         </User>
     </UserList>

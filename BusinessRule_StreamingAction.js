@@ -100,7 +100,7 @@ function getCreateRef(/** @type{Product} */ src, tgt, type) {
 
 //############################## MAIN ##############################
 //Access to headers and basic message information
-logMeta()
+//logMeta()
 
 var topic = message.metadata().topic()
 var partition = message.metadata().partition()

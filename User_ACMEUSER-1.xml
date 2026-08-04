@@ -4,6 +4,7 @@
         <User ID="ACMEUSER-1" Deactivated="false">
             <Name>AcmeUser-1</Name>
             <UserGroupLink UserGroupID="PMDM.UG.Acme"></UserGroupLink>
+            <UserGroupLink UserGroupID="Supplier1"></UserGroupLink>
             <SystemSetup></SystemSetup>
         </User>
     </UserList>

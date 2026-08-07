@@ -52,6 +52,6 @@ function log(msg) {
 
 //node.getValue('Bullet08').deleteCurrent();
 //node.setSimpleValue(manager.getAttributeHome().getAttributeByID('Bullet08'), '');
-node.setSimpleValue(manager.getAttributeHome().getAttributeByID('Bullet08'), '8');
-
+//node.setSimpleValue(manager.getAttributeHome().getAttributeByID('Bullet08'), '8');
+node.getValue('Bullet09').deleteCurrent();
 }

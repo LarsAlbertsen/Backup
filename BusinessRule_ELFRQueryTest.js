@@ -34,64 +34,35 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
-  }, {
-    "contract" : "QueryHomeBindContract",
-    "alias" : "QueryHome",
-    "parameterClass" : "null",
-    "value" : null,
-    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (logger,manager,QueryHome) {
-var c = com.stibo.query.condition.Conditions;
-var user = manager.getUserHome().getUserByID('ELFR')
-var userNew = manager.getUserHome().getUserByID('ELFR2')
+exports.operation0 = function (logger,manager) {
+const queryHome = manager.getHome(com.stibo.query.home.QueryHome);
+const Conditions = com.stibo.query.condition.Conditions;
+const Product = com.stibo.core.domain.Product;
 
-var querySpecification = QueryHome.queryFor(com.stibo.core.domain.state.Task).where(
-     c.assignee().in(user)
-);
-var result = querySpecification.execute();
-var count = 0;
-result.forEach(function(t) {
-	count++
-	//logger.info(t)
-	//t.reassign(userNew)
-	return true	
-})
-logger.info(count)
+const objectTypeHome = manager.getObjectTypeHome();
+const attributeHome = manager.getAttributeHome();
 
+const itemType = objectTypeHome.getObjectTypeByID("Item");
+const bullet01Attribute = attributeHome.getAttributeByID("Bullet01");
 
-var color = manager.getAttributeHome().getAttributeByID('Color');
-var length = manager.getAttributeHome().getAttributeByID('Length');
-var width = manager.getAttributeHome().getAttributeByID('Width');
-var height = manager.getAttributeHome().getAttributeByID('Height');
+if (itemType == null) {
+	logger.info("Object type Item not found");
+} else if (bullet01Attribute == null) {
+	logger.info("Attribute Bullet01 not found");
+} else {
+	const isItemType = Conditions.objectType(itemType);
+	const bullet01StartsWithHello = Conditions.valueOf(bullet01Attribute).like("Bullet*");
+	const matchesTypeAndBullet = isItemType.and(bullet01StartsWithHello);
 
-
-//logger.info(c.valueOf(length).numeric().gt('1'))
-
-
-
-
-
-var co = c.valueOf(color).eq('Blue')
-var l = c.valueOf(length).numeric().gt('1')
-var w = c.valueOf(width).numeric().gt('1')
-var h2 = c.valueOf(height).numeric().eq('2')
-var h3 = c.valueOf(height).numeric().eq('3')
-
-var cond1 = co.and(l).and(w).and(h2)
-var cond2 = co.and(l).and(w).and(h3)
-
-var qs = QueryHome.queryFor(com.stibo.core.domain.Product).where(
-	cond1.or(cond2)
-).execute()
-
-qs.forEach(function(x) {
-	logger.info(x)
-	return true
-})
-
+	const query = queryHome.queryFor(Product).where(matchesTypeAndBullet).execute();
+	query.forEach(function (product) {
+		logger.info(String(product.getID()));
+		return true;
+	});
+}
 }

@@ -106,6 +106,8 @@
             <AttributeLink AttributeID="ProductName"></AttributeLink>
             <AttributeLink AttributeID="Quantity"></AttributeLink>
             <AttributeLink AttributeID="RetailPrice"></AttributeLink>
+            <AttributeLink AttributeID="SAAttr-1"></AttributeLink>
+            <AttributeLink AttributeID="SATriggerAttr"></AttributeLink>
             <AttributeLink AttributeID="ShortDescription"></AttributeLink>
             <AttributeLink AttributeID="TestAttribute"></AttributeLink>
             <AttributeLink AttributeID="UPC"></AttributeLink>

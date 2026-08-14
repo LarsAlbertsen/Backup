@@ -39,6 +39,7 @@
             <AttributeLink AttributeID="LeafType"></AttributeLink>
             <AttributeLink AttributeID="SAAttr-1"></AttributeLink>
             <AttributeLink AttributeID="SATriggerAttr"></AttributeLink>
+            <AttributeLink AttributeID="SATriggerAttr-2"></AttributeLink>
             <AttributeLink AttributeID="a3c6966e-2f12-411e-8c44-7b73674cc1f8"></AttributeLink>
             <AttributeLink AttributeID="a6dd167b-b650-415b-95b1-da14acd9a2ba"></AttributeLink>
             <AttributeLink AttributeID="a7c518bb-4f9a-42fb-be62-787d9e448413"></AttributeLink>

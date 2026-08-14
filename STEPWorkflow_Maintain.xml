@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <STEPWorkflows>
-        <STEPWorkflow ID="MaintainItem" Referenced="true"><!-- Definition:
-<scxml name="MaintainItem" initial="Initial" version="0.9">
+        <STEPWorkflow ID="Maintain" Referenced="true"><!-- Definition:
+<scxml name="Maintain" initial="Initial" version="0.9">
   <assignee id="$current" type="user"/>
   <datamodel>
     <data id="ShortVariable" attribute="ShortVariable"/>
@@ -16,7 +16,7 @@
     <onentry businessactionid="RemoveFromWorkflow"/>
   </final>
   <state id="Initial" discontinued="false">
-    <transition businessactionid="acn-d34292f2-96cd-4a1b-8005-d2ac6b261d89" event="submit" target="Maintain"/>
+    <transition businessactionid="acn-b71cce95-1045-4d25-ac09-a7d5e4ae9559" event="submit" target="Maintain"/>
     <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
   </state>
   <state id="Maintain" discontinued="false">
@@ -53,10 +53,10 @@
 </workflowViews> -->
             <BusinessRuleLink ID="RemoveFromWorkflow"></BusinessRuleLink>
             <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
-            <Name>Maintain Item</Name>
+            <Name>Maintain</Name>
             <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
-            <Configuration>H4sIAAAAAAAA/61VXW/bIBR9769gaK+OE7fN0ipOVXXrVGlTp6XtHqY9EHPjsmHwACfNfv0u2HHSfLTRtIeWGLjncA5wYJXTN0o4wRzcqisD2KZTJi0MbSmFG8ETZJWDcWZE6T6JQjjgX4yYCQk52NSZajlTCutA3aqbotTGgbkv+SaYzZ4KmQ5DQ0SglSmt+SUlihWQ0s9MKId/Nw4KSmZgrNAqpd3OGSVYp2xKH50rz+N4Pp935scdbfI46XZP4+67OEDT0fBNFBFClOYQWfEHIqZ4VGqLRFqRp7Tb6ZJF+D9Peye+fUyT4wG2JIpGR2SIS2cFVkv8qL8Ic86ICXqR0vEjKnxgRrCJBEoE3+waDWNfMzqq2wYJcZm1IlcAoeZtVhkDylHiFiXCVhaML11OChXWoYuEC5tp5YSqAAuDpzXv0rxXJSe15pPjWnS3EX3aaiZDZ5hq5k8qKxRYyzL/6YlYpiJ+fJKcJdMkOutnPDphvUk0QOMjnrCsP0n6PT7ATYIZakqprSZ4WlAbMzm41b56hSsmb1GQeIjYNYjD1PZ6g4Pk7lnytVBr1gLPISqZeyTfw8APgkSDhqi/PDz7xU190X5xz8leVXb2wkZqhXLMYscufoVCz+Da6OKbNr+mUs/9djTz/Sp32WLgJ2S7d3LLmeVYMKf/mjnBkuCSv7ejJiZmAubp8MKHRHv9e50uniyVaS5UntL7u+toQAmaqziTuP6ULsDSC8RSNjmfN+IeEMnWqXGO/c+Swzox0Z1MF9R7hsI9bXvMfCUlHKaskm6Md/tKy6rwOUQJw9AsmBOZ71/uYQ0SgJgt0a8AJTiNd4/4sHs2lgWCJgQ3EgZzmd8quWgPTOF1O20W2/QBrJRVLhSpm5v3KV1u9yqinhXURcwgOUZ3WOCKfcZktbWmeIMxrrnWBMW1on0SL5uU+5/qWsxX1X14KpHko9FVaVuFNVm8rzjyT1yobuq2J24wLZ3zR20nbrwC/gc/2yepfoIu74zIczCX2H2Iq82ChrE/+c1vAxYxQ17gC53JisO4muRBb4uEGVZKthjD7wqvJPhLsbaqgpUlXlISks/vTvvAex7fsXbBtpHil6Da6DkEq/cyVh24hwAlK6vW/PG5tRU22FmH2F+wVPMmWgkAAA==</Configuration>
-            <LocalBusinessRule ID="acn-d34292f2-96cd-4a1b-8005-d2ac6b261d89" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
+            <Configuration>H4sIAAAAAAAA/61WXU/bMBR951d41l7TpKUdBTVFiI0JaRPTCuxh2oObXII3x85sp2n363ftpGnpB62mPYCJ7XuOz7F9DCutupXccmbhTl5rwDZ+YsLAyBSC2zHMISktTBLNC/uJ59xC+kXzGReQgYmtLpczBTcW5J28zQulLeiHIt0EM8k8F/HIN4R7WhHTml9QIlkOMf3MuLT4Q8kMtOFKxjTqnFOCNdLE9Nna4iIMq6rqVKcdpbOwF0WDMDoLPSwdj94EASFEqhQCw/9AwGQaFMogiZJkHkediCz87yru9l37HPdOh9iSIBifkBEum+VYLfCj/iLMWs2n6ENMJ8+o7pFpzqYCKOHpZtd4FLqa8UndNkiIy4zhmQTwNW+TUmuQlhK7KBC2NKBd6XKSrzAWHSQpN4mSlssSsND7WfMujTsouVdr7p/WoqNG9KDVTEZWM9nMn5aGSzCGJe7TEbFEBtOzbpLA+SDoRv1B0E97g4Al0XnAztIB9BmODHCTYIaaYmrKKZ4U1MZ0BnZtT1HhislZ5CUeI3YN4ji13e7wKLl7lnzD5Zq1kGYQFMw+k+9+4AdBomFD9G55ePaLe3JF+8W9JDuo7PyVjVQS5ejFjl38CrmawY1W+Telfz0JVbntaOa7Ve6yRcNPSHbv5JYzyzFvzrtD5nhLvEvu3o6biJhxqOLRpQuI9vp3OxGeLJmolMsspg/3N8GQEjRXpkzg+mO6AEMvEUua3kXViHtEJFOnxgX2v0gOY/lUdRKVU+cZCne07TFzlZSk8MRKYSd4t6+VKHOXQ5QwDMycWZ64/uUe1iAeiJkC/fJQPKXh7hEXdC/GEk/QBOBGwmAmp3dSLNoDkzvdVunFNr0HK0SZcUnq5vZ9TJfbvYqoFwV1EdNIjrHtF7hinzFRbq0p3GAMa641QWGtaJ/Eqybl/qe6FvOgug/zAkk+alUWplVYk4X7igP3vPnqpm574gbT0jl31Hbihivgf/CzfZLqJ+jqXvMsA32F3ce42ixoFLqT3/ytwSCmzwt8nRNRpjApp5nX2yJhhhWCLSbwu8QrCe5SrK0qZ0WBl5T45HO70z7ujsd1rF2wbaTwNai1fwwOY3Vfx6oD9xig3sqqNX9cbm2FDXbWIfYXiv7vnVYJAAA=</Configuration>
+            <LocalBusinessRule ID="acn-b71cce95-1045-4d25-ac09-a7d5e4ae9559" Scope="Local" Type="Action" RunPrivileged="false"><!-- Definition:
 Action #1 (BulkUpdateSetName):
 Formula=concatenate(stepName(),'A') 
 Value=

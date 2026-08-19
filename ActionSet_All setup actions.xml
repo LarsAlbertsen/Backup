@@ -41,6 +41,7 @@
             <ActionLink ActionID="Maintain Integration Endpoint"></ActionLink>
             <ActionLink ActionID="Maintain Link Type"></ActionLink>
             <ActionLink ActionID="Maintain Possible Duplicates"></ActionLink>
+            <ActionLink ActionID="Maintain Prompts"></ActionLink>
             <ActionLink ActionID="Maintain STEP Workflow Profile"></ActionLink>
             <ActionLink ActionID="Maintain STEP Workflow"></ActionLink>
             <ActionLink ActionID="Maintain Setup Entity"></ActionLink>

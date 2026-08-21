@@ -67,5 +67,5 @@ logger.info(JSON.stringify(msg))
 
 
 
-return false
+return true
 }

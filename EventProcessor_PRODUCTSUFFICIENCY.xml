@@ -19,7 +19,7 @@ Configuration=
 </plugin>
 PluginConfiguration=
 <plugin id="DataSufficiencyCalculatorProcessorPlugin">
-  <simple id="WorkspaceTriggering">Main</simple>
+  <simple id="WorkspaceTriggering">Approved</simple>
 </plugin>
 ScheduleSpecification=
 <entries>
@@ -27,8 +27,8 @@ ScheduleSpecification=
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>Product Sufficiency</Name>
-            <Configuration>H4sIAAAAAAAA/6VU247TMBB936+IDOobTQoSWtE0FU1SWKml2bTh8oS8zjQ7WtcOvqw2fD1u03ZpIQuCvMSenDnneDLjWIo1VlZRg1KMwvHDhnv3oPR2Rwb9gHggmCxRVCNSrKYvLsk4ughrbisUHpYjkt6DMJmSDLSWakI1xD9TkujC80KNm5rDDp+DrqXQeMOh0KBIpA3Ub3zfus3YAbJ8kRTxallMp1fxVfoh/lIs0zz0W4pztgk17HaJ34FEgyAIumAJbfRK5mAoip1hTaJOcKZQKjSNo+yCXFuwTjL96NzGXaA5fVjwcl8a0DuHXdj30qqjw7Os15ddWTMUoDNQk3fZ0+efUuSOWzWpoK7wJYmMsvBHtKNG6cCvgrILu6gNblAbZDPJ7v5e4zd5B7XBy85zLNktlJbD5/nsa5JmeRq/XaUJiXrcDE9at/fNSjN0/dsuxr3KDHvPBsFwi3T/XyHoY8zzDtHGY5xqvU9nctN3Dm9k3xrkfb0XL2GNArfN3T/4SY6h54eQazPVzFFYAy3bXmr/wPbzwWb78k9M+ucuH2sS+u38uZWuOZooVUqqHGqpDKh/GWLnn1puTmf5hJX4R7Vslxf/78WRUEOXdr1Ghg7ZxJQzy6mR6migFfrlBvkk1Z2uKYOVwqpyTSMqEs3d3DxRoR8yxJuQ5wQAAA==</Configuration>
-            <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
+            <Configuration>H4sIAAAAAAAA/6VUXY/aMBB8v18RuRVvJaGVqlOBoCMJ7UnHkQbox1PlS5bc6oydrm106a+vIUALba5Vm5fYm9mZ8WbXkZIrLC1xg0oOB6PHtfA2QHq7Y71uwDyQuSpQlkO2XExeXLJReDGohC1RelgMWbIBaVJSOWitaMw1RD9TsvDC8wYa15WAHT4DXSmp8U7AUgOxUBuo3vi+dZuRA6TZLF5Gi/lyMrmOrpPb6PNynmQDv6E4Zxtzk9/P8RuwsBcEQRss5rVeqAwMR7kzrFnYCk4JFaGpHWUb5L0F6ySTD85t1Aaa8seZKPalAb1z2IZ9pywdHZ5lvb5sy7pBCToFGr9Nnz7/hKNw3FQnkrvCFyw0ZOGPaEeNyoFfBUUbdlYZXKM2mN+o/OHvNX6Td1DrvWw9xzy/h8IK+DS9+RInaZZEV4skZmFHmP5J63a+WmX6rn+bxahTmn7nWS/ob5Hu/xOCPsY87xCtvVxwrffpuVp3ncM71bUGRVfvxQtYocRtc3cPfuJj6Pkh5NqM6ilKa6Bh20vtH9h+PthsXv6JSf/c5Y+aDPxm/txKVwJNmBApyqBSZID+ZYidf26FOZ3lE1bmH9XSXV70vxdHzA2f29UKc3TIOuIit4IbRUcDjdAvN8hHRQ+64jksCMvSNY0sWXhVVaQ2UDxRpe/Tgn9i6wQAAA==</Configuration>
+            <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <Assets DontFollowClassificationToAssetReference="true" ExportSize="Minimum">
@@ -71,7 +71,7 @@ ProductTemplate=
     </Product>
   </Products>
 </STEP-ProductInformation>
-TriggeringWorkspace=Main
+TriggeringWorkspace=Approved
 UnitTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <UnitList/>
@@ -79,7 +79,7 @@ UnitTemplate=
 Version=3
 attributeGroup=Attribute group root
 objecttype=Item -->
-                <Configuration>H4sIAAAAAAAA/9VUTXObMBC951douCe0k0sOyBmPnbTM5MNjk/Qsw5qqERKjlVynv74CJFMbOnFuyY391HvL250igsmgqgUzQJPrXSXIFjRyJWn09eJLREDmquCypNFTdnt+FV1PzpJVdrM4X2hV2NykcqN0xYyrIEtAJbaQSsElLGGDNNowgRCRWyWE+v3oWmtewMqufXWfcbOrlTZz0HwLxdQYvQ9NzghJpg1Q9Fkr/gdodM8lr2wVkbmSpntgJhgi3/C8xZOptsoBAe1ouBKjbdcvdIzb5nHX3TGL/0NtkmAtuJk0wPjaGrjj8gUzzcvSIZblcfhTjLTngs0g3iR/NN1PQPEQ8bh8vBwOU0kqc2ELWDCnHOOF48Vy1PSEwaWygN0PpYvvHDTT+c/XgXIeWAUD5+P6F+Qme63hm1a2dgGkSe9cWgHYYhrxHXhJ/5nOaZQaqAKbQenQ5dF0sxiA9LQ/vBySkP3eI+Lrxs5I6DkqF/8Xmj8bh5vz7/mIR5W3fyaEh3xDxJszrRAHZe1JGw89M2EBgzVnhs0ceebGrfGtV5PYm516wkxPWIJeOG4TXrBmbpL37lEffpL842vIUW5wnnownz2BS2+z8PvbdaZ7NZCysYlWyvhM1a6gcStIm2X13r9Gi3qurgcAAA==</Configuration>
+                <Configuration>H4sIAAAAAAAA/9VUTXObMBC951douCe000sPyBmPnbTM5MNjk+Qsw5qqERKjlVynv74CJFMbMnFuyY391HvL250igsmgqgUzQJPLXSXIFjRyJWn09eJLREDmquCypNFDdn3+PbqcnCWr7GpxvtCqsLlJ5UbpihlXQZaASmwhlYJLWMIGabRhAiEi10oI9efetda8gJVd++o+42pXK23moPkWiqkxeh+anBGSTBug6LNW/C/Q6JZLXtkqInMlTffATDBEvuF5iydTbZUDAtrRcCVG265f6Bi3zeOuu2MWv0JtkmAtuJk0wPjaGrjh8hkzzcvSIZblcfhTjLTngs0g3iR/NN1PQPEQ8bh8vBwOU0kqc2ELWDCnHOOF48Vy1PSEwaWygN2T0sVPDprp/NfLQDl3rIKB8379G3KTvdTwQytbuwDSpHcurQBsMY34Dryk/0znNEoNVIHNoHTo8mi6WQxAetofXg5JyH7vEfF1Y2ck9ByVi/8LzZ+Nw835/3zEo8rbPxPCQ74h4s2ZVoiDsvakjYcembCAwZozw2aOPHPj1vjWq0nszU49YaYnLEEvHLcJz1gzN8lpXWvlfpVPeZD84+vI0W5wnno0Hz2Bb95mQQLtStO9IkjZ2EQrZXymatfQuDWkzcJ67z/Am/QlsgcAAA==</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

@@ -58,14 +58,11 @@ msg.time = java.time.ZonedDateTime.now(java.time.ZoneId.of("America/New_York")).
 //msg.cetw = cetw
 msg.node = node.getID()
 
-msg.Bullet01 = node.getValue('Bullet01').getSimpleValue()
-msg.Bullet02 = node.getValue('Bullet02').getSimpleValue()
-
-
+msg.Bullet01 = node.getValue('Bullet01').getSimpleValue() +''
+msg.Bullet02 = node.getValue('Bullet02').getSimpleValue() +''
+msg.BulletExt = node.getValue('BulletExtAttr').getSimpleValue() +''
 
 logger.info(JSON.stringify(msg))
-
-
 
 return true
 }

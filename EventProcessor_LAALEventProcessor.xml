@@ -23,7 +23,7 @@ PluginConfiguration=
   <simple id="Context">step://context?id=Context1</simple>
   <simple id="SkipDeletedNodes">false</simple>
   <simple id="Workspace">step://workspace?id=Main</simple>
-  <simple id="WorkspaceTriggering">MainAndApproved</simple>
+  <simple id="WorkspaceTriggering">Approved</simple>
   <simple id="collateNodes">false</simple>
 </plugin>
 ScheduleSpecification=
@@ -32,7 +32,7 @@ ScheduleSpecification=
 </entries> -->
             <SetupGroupLink SetupGroupID="EventProcessors"></SetupGroupLink>
             <Name>LAALEventProcessor</Name>
-            <Configuration>H4sIAAAAAAAA/6VUWY/aMBB+318RuRVvJaBK1apAEEe2fYCSErbHU2WSITvC2KkPCv31dcjRhl1vpTYvicffMXZmZib4DjMjqUbBR8Px6cC8I0hVrEi/2yMe8ESkyLMRud/cvbol4+BmmDOTIfcwHZHwCFxHUiSglJBTqmD2pyQJbjxvqPCQM7jg16BywRVuGdwrkCRQGvK3vm/sYmwB8SaM4q/x0C851/Qp1clDjD+BBP1er+eCzelZbcQaNEV+yVCRwAmOJAqJ+mwlXZCPBoy1DD9F69XMBVrS04ql1V2AumTowr4XRjYZXrHe3LpYC+SgIpDTd9Hz57+jyKy2PIec2ptOSaClgb+irTQKC37dS13YVa7xgEpjshDJvu2xo0w5TZ4g1nYuSpw8QGoYfFkuvs3DaB3OJptwToIO04NWpXa+G6EHtlzLj3En04POi35vUCDt35cIqol5Xh09ewmjSlX0RBy6Nr2t6BqNrKsq8xR2yLGo5W6dz7wJvaxDtsjkeYncaCjVKqvqgWK7TrN8+a0k/essf9/J0C/bzX6pnKEOQimFXEMupAb5Lz1r86eG6XbrtlSJ37hFF97sf+fE1KiieNUkKRTa1qXFo1HRpjSTYluFpb32YmKU/d2IlWhXSdlzaDjpRiwp14VOteWcAZ+F3KucJtCQf9SRgr60jeyiJoIxquGDSIsGf7ZNGpeNxCyzDcIzEhTaE55O8lyKIzh7M95jPgcGGtKnrR6V0i/Fo0PM/wUAAA==</Configuration>
+            <Configuration>H4sIAAAAAAAA/6VUWY/aMBB+318RuRVvJaBK1apAEEe2fYCSErbHU2WSITvC2KkPCv31dcjRhl1vpTYvicffMXZmZib4DjMjqUbBR8Px6cC8I0hVrEi/2yMe8ESkyLMRud/cvbol4+BmmDOTIfcwHZHwCFxHUiSglJBTqmD2pyQJbjxvqPCQM7jg16BywRVuGdwrkCRQGvK3vm/sYmwB8SaM4q/x0C851/Qp1clDjD+BBP1er+eCzelZbcQaNEV+yVCRwAmOJAqJ+mwlXZCPBoy1DD9F69XMBVrS04ql1V2AumTowr4XRjYZXrHe3LpYC+SgIpDTd9Hz57+jyKy2PIec2ptOSaClgb+irTQKC37dS13YVa7xgEpjshDJvu2xo0w5TZ4g1nYuSpw8QGoYfFkuvs3DaB3OJptwToIO04NWpXa+G6EHtlzLj3En04POi35vUCDt35cIqol5Xh09ewmjSlX0RBy6Nr2t6BqNrKsq8xR2yLGo5W6dz7wJvaxDtsjkeYncaCjVKqvqgWK7TrN8+a0k/essf9/J0C/bzX6pnKEOQimFXEMupAb5Lz1r86eG6XbrtlSJ37hFF97sf+fE1KiieNUkKRTa1qXFo1HRpjSTYluFpb32YmKU/d2IlWhXSdlzaDjpRiwp14VOteWcAZ+F3KucJtCQf9SRgr60jeyiJoIxquGDSIsGf7ZNGpeNxCyzDcIzEkzyXIojOJsy3mM+BwYa0qc9HtXQL7IzagX4BQAA</Configuration>
             <EventQueue QueueStatus="Read" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
@@ -76,14 +76,14 @@ ProductTemplate=
     </Product>
   </Products>
 </STEP-ProductInformation>
-TriggeringWorkspace=MainAndApproved
+TriggeringWorkspace=Approved
 UnitTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <UnitList/>
 </STEP-ProductInformation>
 Version=3
 objecttype=Item -->
-                <Configuration>H4sIAAAAAAAA/9VUTXPTMBC991dodC+G4cLBTseTD/AMpZnELWfF3gRRWfJo5ZDy61nbUk3iMA239mZpv957ftoUEVwOVa2EgyS+OVSK7cGiNDrhH9695wx0YUqpdwm/zxfXn/jN5Cpe5/Pl9dKasilcprfGVsJRBVsBGrWHTCupYQVbTPhWKATOFkYp8+uOWltZwrrZ+OohY36ojXUzsHIPZeqcfQ5NrhiL0xYo+qy1/A0Jv5VaVk3F2cxo1w+YKoEot7Lo8OSmqyIgYIkGlTjb9P1Cx6hrHvXdiVn0D2qTGGsl3aQFJjeNg69SP2Ju5W5HiPXuNPwmJB24YCvEi+RP1H0DFI8Rn7ePt8NxKst0oZoSloKc47xxvFlOml4gXKZLOHw3tvwiwQpb/HgaOeebqGB0ebf5CYXLn2r4bE1TUwCTeLhcNQqww3Ryx9KiHZ/NEj7fE34kaAUgGtsHOJsaXcrjnIVUDmyQY+jIhs82OXNQBSVGUMZXnkmv44igl+zVWykO2f+7gHzduRUUep61mv8LrSuisK/+Xj3RWdc+jwnhMd8Q8cepNYijsm4dng89CNUAhtNMOEFWcoLktvjS1Djyx949QdMLHtBgHHpFj1gLUvKWhqa6TOvaGvpjPvNey9dvJ2Lf4rx07z54Ah/92XRvzNEbS9rX6G//AAr1+A3LBwAA</Configuration>
+                <Configuration>H4sIAAAAAAAA/9VUTXPTMBC991dodC+G4cLBTieTD/AM0EzitmfF3gRRWfLsyiHl1yPbUk1iMw239mbtl957ftopEdgMykoJC0l8cywVOwCSNDrhH9695wx0bgqp9wm/y5bXn/jN5CreZIvV9QpNUec21TuDpbCug62BjDpAqpXUsIYdJXwnFAFnS6OU+XXrRqMsYFNvfXdfsThWBu0cUB6gmFqLz6nJFWPxtAFKvmojf0PCv0kty7rkbG607S6YKUEkdzJv8WSm7XJAAB0N12Kx7uaFiVE7POqmO2bRP6hNYqqUtJMGmNzWFr5K/UgZyv3eIdb78/SbkLTnQo0QL5I/U/cNUDxFPG4fb4fTUpbqXNUFrIRzjvXG8WY5G3qBcKku4PhgsPgiAQXmP54GzvkuShgEb7c/IbfZUwWf0dSVS1AS98F1rYBaTGcxNs2b69N5whcHh58ctByIDHYJzmZGF/K0ZimVBQxy9BNZ/9kUpxbKoMQAyjDkmXQ6Dgh6yV69leJQ/b8LyPeNraAwc9Rq/i80rojCvvp79USjrn2+JqSHfEPGH2doiAZt7TocT90LVQOF01xY4axkhZMb6aVb48gfO/cETS94QL1x3Ct6pEo4JadVhcb9Kl9yp+Xr95Gj3eC8dOHeewIf/dm0j8u6x5U0z9BH/wAdG6ZxxAcAAA==</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

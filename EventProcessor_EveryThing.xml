@@ -28,7 +28,7 @@ PluginConfiguration=
   <simple id="Context">step://context?id=Context1</simple>
   <simple id="SkipDeletedNodes">false</simple>
   <simple id="Workspace">step://workspace?id=Main</simple>
-  <simple id="WorkspaceTriggering">Main</simple>
+  <simple id="WorkspaceTriggering">Approved</simple>
   <simple id="collateNodes">false</simple>
 </plugin>
 ScheduleSpecification=
@@ -40,7 +40,7 @@ ScheduleSpecification=
             <MetaData>
                 <Value QualifierID="en-US" AttributeID="Purpose">Alt</Value>
             </MetaData>
-            <Configuration>H4sIAAAAAAAA/6VUW2/aMBR+76+IvIm3kaBJUzUgqJB0e4CSEbrL02ScQ3qEiTNfWtivn0MgW2jNpO3NPvluds7xRBRrzI2kGkUxHIx2W+49glTVjvS6AfGgYCLDIh+S++Xtm2syCq8GJTc5Fh5mQxI/QqETKRgoJeSYKpj8KUnCK88bKNyWHA74BahSFApXHO4VSBIqDeV73zd2M7KAdBkn6bd04Necc/qYavaQ4k8gYS8IAhcsonu1FAvQFItDQkVCJziRKCTqvZV0QT4ZMNYy/pws5hMXaEZ3c54d7wLUIaEL+1EY2SQ8Y727drGmWIBKQI4/JJfPf0uRW225jwtqbzojoZYG/oq20igs+G2QubDzUuMWlUY2FWzT9lhTrpwmLxBPdi5Kyh4gMxy+zqbfozhZxJObZRyRsMN1v9WpnR9G6L5t13ox6uS633nVC/oV0v59iaCamuedqnuPcarUkc7EtmvjrUTXaORddTTPYI0FVr3cPeWJmtLrU+kObJZax2+5++f2vw878Os5sitVctRhLKWQCyiF1CD/ZRhtMGq4bs9kS5X4jVty4E3+9wEYG1V1pbphlULburZ49ga0Kc0TsDqWpb3P6imIYGXymS3QHJSrR2x+DTvdiLB6X/GPn5xD/UXIjSopg4b8dKpU9JmdTBeVCc6phjuRVRN7se8bl6XEPLcdX+QkvKSdbrCMgIOG7GX9Z33zC0nlWqnFBQAA</Configuration>
+            <Configuration>H4sIAAAAAAAA/6VUW2/aMBR+76+IvIm3kaBJUzUgCEi6PZSSEbrL02SSQ3qEsTNfKOzXzyGQLbTupO3NPvkux853PBV8jYWRVKPgw8Fov2XeDqSqdqTXDYgHPBM58mJI7pc3b67JKLwalMwUyD3MhyTeAdeJFBkoJeSEKpj+KUnCK88bKNyWDI74BahScIUrBvcKJAmVhvK97xu7GVlAuoyT9Fs68GvOJX1CdfaQ4k8gYS8IAhcsoge1FAvQFPmxQ0VCJziRKCTqg5V0QT4ZMNYy/pws5lMXaEb3c5af7gLUsUMX9qMwsunwgvXu2sW6RQ4qATn5kLx8/huKzGrLQ8ypvemchFoa+CvaSqOw4LdB7sLOS41bVBqzW5Ft2h5rypTT5Bni2c5FSbMHyA2Dr7Pb71GcLOLpeBlHJOww3W8ltfPDCN23ca0Xo06h+51XvaBfIe3flwiqqXneuXrwMkaVOtEzse3a9laiazSyrjqZ57BGjlWWu+d+oqb0+ly6A9tLreO33P1L+9+HHfj1HNmVKhnqMJZSyAWUQmqQ/zKMtjFqmG7PZEuV+I1bcuRN//cBmBhVpVKNs0qhbV1bPHkD2pTmCVidytLeZ/UURLAyxcwWaAHKlRHbv4a9bkSyel/xT5+cQ/1FyI0qaQYN+fFcqegzO5kuaiYYoxruRF5N7Iu5b1yWEovCJp4XJByXpRQ7cE5ZusEyAgYa8uc9nmTnFzS+alvJBQAA</Configuration>
             <EventQueue QueueStatus="Discard" DaysRetained="0"><!-- Definition:
 AssetTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
@@ -97,7 +97,7 @@ ProductTemplate=
     </Product>
   </Products>
 </STEP-ProductInformation>
-TriggeringWorkspace=Main
+TriggeringWorkspace=Approved
 UnitTemplate=
 <STEP-ProductInformation ExportDerivedAttrs="false" FollowOverrideSubProducts="false" ResolveInlineRefs="false">
   <UnitList/>
@@ -105,7 +105,7 @@ UnitTemplate=
 Version=3
 attributeGroup=Attribute group root
 objecttype=BusinessRuleGroup;GlobalBusinessRules;Group user-type root;Item;Operator user-type root;stibo.businessrule.action -->
-                <Configuration>H4sIAAAAAAAA/9VVy3LaMBTd5ys03gNJ00UXFhkKSeqZpjDgpGvZvlA1suTRg5J+fSVbhoJMQ2dYJDtL93muzj0eKQU6hbJiRAOObzYlQ2uQigqOo6v+ZYSA56KgfIWjx/Su9ym6GV7Ei/R21ptJUZhcJ3wpZEm0jUBzUIKtIeGMcpjDUuFoSZiCCN0JxsSvqU0taQELk/noncftphJST0DSNRQjreXWNLxAKB65RpX3WtDfgKMHymlpyghNBNdNgTEjStElzet+UlFH2UZAWhg2REvT5GszDurkgya7RTY4Am0Yq4pRPXSN0cxo+Er5s0olXa1sx3x1aH4XI91hUW4Qr4I/mO47gLjfcTd9PB32XVHCc2YKmBHLHO2J48lykPSEwSW8gM13IYsvFCSR+Y+XgDnfSAnB5TT7CblOXyq4l8JU1qBwvLucGwaq7qnjbu8W7T6TCY7umcgI+2yUHbhSdUgL7gzZ/85b933G3ErTTPQzX0HakD7J3ajPWGNa2UfSQiKjQPa0c5BC6KbCP8fqwHZGnaWvREN5NF145TnUMDiglifrm1/iuPX+X+n3cV3i3+bsXHL/Cm4f2wffE/1Bp15sy2xJEuBtLf44lsKuyGFY/SPqNj0RZkC1pwnRZGzBEztuqV6rGg/8sWFPO9MTpGtHHKtfz6oidpIPtqg3P3L69jlkIbs+T/3NPXkA1/5M2uev9xtv2YBW9b67Lfeeol5Bt/s4EMHA5RJ3yHDgdYW7VCVw+4CdOgTX1/iImAWeH/FRafW+fwAyq2EaKwoAAA==</Configuration>
+                <Configuration>H4sIAAAAAAAA/9VVTXPaMBC951dofAeSpoceLDIUktQzbWHASc+yvVA1suTRByX99ZVsGQIyDZ3hkNys1duPt3q7HikFOoWyYkQDjm82JUNrkIoKjqOr/mWEgOeioHyFo4f0rvcpuhlexIv0dtabSVGYXCd8KWRJtPVAc1CCrSHhjHKYw1LhaEmYggjdCcbE76kNLWkBC5N57x3idlMJqScg6RqKkdZyezW8QCgeuUKVRy3oH8DRN8ppacoITQTXTYIxI0rRJc3relJRe9lCQFoa1kVL08RrIw7q4IMmumU2OEJtGKuKUT10hdHMaPhK+ZNKJV2tbMV8dXj9Llq646JcI14lf9Ddd0Bxv+Ju+Xg57ENRwnNmCpgRqxzthePFchD0hMYlvIDNDyGLLxQkkfnP50A530kJgXGa/YJcp88V3EthKnuhcLwzzg0DVdfUYduzot1nMsHRPRMZYZ+Nsg1XqnZpyZ0h+su4dd1njK00zUQ/8xmkdemT3LX6jDmmlX0kLSQyCmRPO4AUQjcZ/tlWR7bT6yx1JRrKo+FCk9dQo+BAWl6sb36I4xb9v6vf+3Ut/zZm55D7V3Dz2D743tIfdO6LbZqtSAK+7Y0/jqWwI3LoVv+Iuq8eCTOg2tOEaDK25Iltt1SvZY0H/tiop+3pCatrJxy7v55URWwnR1UlhX0qD3ng9O3ryNJ2dZ76q3v0BK79mbQSqGccbxWBVvXMu0n3SFGPoZt/HCzCAHKJO1ZxgLrCXZslgH3AbkME5mt8ZKEFyI/46Hr12L+dWsRGLwoAAA==</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

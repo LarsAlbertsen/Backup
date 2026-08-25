@@ -12,7 +12,7 @@
   "name" : "RandomUpdates",
   "description" : null,
   "scope" : "Global",
-  "validObjectTypes" : [ "MEssage", "Message_WorkspaceRevisable" ],
+  "validObjectTypes" : [ ],
   "allObjectTypesValid" : true,
   "runPrivileged" : false,
   "onApprove" : "Never",

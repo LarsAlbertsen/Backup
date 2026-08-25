@@ -12,7 +12,7 @@
   "name" : "ModifyEntity_OnChange",
   "description" : null,
   "scope" : "Global",
-  "validObjectTypes" : [ "MEssage", "Message_WorkspaceRevisable" ],
+  "validObjectTypes" : [ ],
   "allObjectTypesValid" : false,
   "runPrivileged" : false,
   "onApprove" : "Never",

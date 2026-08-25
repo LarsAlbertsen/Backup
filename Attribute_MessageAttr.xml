@@ -8,8 +8,6 @@
                 <Value Derived="true" AttributeID="GetCompleteness">0</Value>
             </MetaData>
             <AttributeGroupLink AttributeGroupID="_LAAL Attributes"></AttributeGroupLink>
-            <UserTypeLink UserTypeID="MEssage"></UserTypeLink>
-            <UserTypeLink UserTypeID="Message_WorkspaceRevisable"></UserTypeLink>
         </Attribute>
     </AttributeList>
 </STEP-ProductInformation>

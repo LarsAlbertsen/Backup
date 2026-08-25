@@ -82,9 +82,8 @@ UnitTemplate=
   <UnitList/>
 </STEP-ProductInformation>
 Version=3
-attributeGroup=Attribute group root
-objecttype=MEssage;Message_WorkspaceRevisable -->
-                <Configuration>H4sIAAAAAAAA/9VUTU/jMBC98yus3CGsuOwhLqragirxUbUBjis3mUZeHDvy2F12f/06iZ2oTVi6N7h5PJ/v+XmmiGBSKCvBDNDk+q0UZA8auZI0+nZxGRGQmcq5LGj0lN6cf4+uJ2fJJl2szlda5TYzS7lTumTGZZA1oBJ7WErBJaxhhzTaMYEQkRslhPr16EprnsPGbn12H7F4q5Q2c9B8D/nUGN25JmeEJNN6UPRRG/4HaHTPJS9tGZG5kqZtMBMMke941syTqibLDQLawXApRtu2XqgYN8XjtrpDFr8DbZJgJbiZ1IPxrTVwx+UrppoXhZtYFsfuL0FpjwVrIj4Ef8TuF4B4OPG4fLwcDkPJUmbC5rBiTjnGC8eL5ajoCcQ9sBIGWnnc/oTMpL8ruNXKVs6BNOkv11YANg1H7g5uSX9czh0uQGQF/HhR+hUrljlK9xzZVngA/8xdNLkB6aDz8MqDaXkaYPSUfHqpJCH6fxeMzxtbMaHmqJT8Q9TCCI9ysFriUVV2bbqHHOANHm/OtEIcpDXrbtz1zIQFDNacGTZz4JmjW+NHXZPYm616AqcnfJBeOJ1q6bSqtHJP5UOeJP/8OnKw6zlPXajPHsCVt1mQQLMRaKcIUtQ20UoZH6mab2jcN6T+zw4cl/T9TeCD/wIYGhxD/gcAAA==</Configuration>
+attributeGroup=Attribute group root -->
+                <Configuration>H4sIAAAAAAAA/9VUTW+jMBC951dY3Ft2tZceIFGUpFWkdhslpD1WDkyQW2Mjj53N7q9fAzYogW6zt/bGeD7fm8dMEUEnUJScaoijybHg5AAKmRRx8P36W0BApDJjIo+DbXJ7dRNMxqNokyxWVyslM5PqpdhLVVBtM8gaUPIDLAVnAtawxzjYU44QkFvJufz1aEsrlsHG7Fx2F7E4llLpOSh2gGyqtWpd4xEh0bQaFF3Uhv2BOHhgghWmCMhcCt00mHGKyPYsredJZJ1lBwFlYdgUrUxTz1cM6+JhU90iC9+BNo6w5EyPq8HYzmi4Z+INE8Xy3E4s8nP3l6C0w4IVER+CP2P3C0A8nXhYPk4Op6FkKVJuMlhRqxzthOPEclb0AuJ+0gJ6WnncvUKqk98l3ClpSuvAOOoe14YD1g0H3k5eSfe5nFtcgEhzeHmW6g1LmlpKDwzpjjsA/8xd1Lkeaa9z/8mBaXjqYXSUfHqpRD76fw+Myxs6Mb7moJTcIiph+KWcnJZwUJVtm3aRPbze48yZkoi9tPrcDbueKDeA3ppTTWcWPLV0K/yoaxQ6s1GP5/SCH6QTTqvaeFqWStpVuZCtYJ9fRxZ2NeelB/XJAfjhbOolUF+EuFUEySubKCm1i/wLuK5ZfbgHAAA=</Configuration>
             </EventQueue>
         </EventProcessor>
     </EventProcessors>

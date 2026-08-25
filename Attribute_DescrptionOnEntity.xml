@@ -10,11 +10,8 @@
             <AttributeGroupLink AttributeGroupID="ATG_LAAL"></AttributeGroupLink>
             <UserTypeLink UserTypeID="AutoTest"></UserTypeLink>
             <UserTypeLink UserTypeID="IndividualCustomerRoot"></UserTypeLink>
-            <UserTypeLink UserTypeID="MEssage"></UserTypeLink>
             <UserTypeLink UserTypeID="Merge_Golden_Record"></UserTypeLink>
             <UserTypeLink UserTypeID="Merge_Golden_Record_Root"></UserTypeLink>
-            <UserTypeLink UserTypeID="Message_WorkspaceRevisable"></UserTypeLink>
-            <UserTypeLink UserTypeID="Messages"></UserTypeLink>
             <UserTypeLink UserTypeID="MyEntities"></UserTypeLink>
             <UserTypeLink UserTypeID="MyEntity"></UserTypeLink>
             <UserTypeLink UserTypeID="Source_System"></UserTypeLink>

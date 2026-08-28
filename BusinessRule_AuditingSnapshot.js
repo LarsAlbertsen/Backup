@@ -108,6 +108,7 @@ function getData(n) {
 	res.time = getJSDate(n.getRevision().getEditedDate()).toISOString();
 	res.revision = n.getRevision().getName();
 	res.type = 'Product';
+	res.objecttype = n.getObjectType().getID()
 	res.id = n.getID();
 
 	res.values = getValues(n);

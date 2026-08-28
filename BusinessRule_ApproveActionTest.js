@@ -13,7 +13,7 @@
   "description" : "Generates JSON snippet of approved changes and marks user responsible for individual changes",
   "scope" : "Global",
   "validObjectTypes" : [ "Item" ],
-  "allObjectTypesValid" : false,
+  "allObjectTypesValid" : true,
   "runPrivileged" : false,
   "onApprove" : "Trigger",
   "dependencies" : [ ]
@@ -164,6 +164,9 @@ function getNodeState(ac) {
 
 //############################## MAIN ##############################
 //NOTE: Rule is not invoked when approving a deletion (i.e., approve in Recycle Bin
+if (node === getBase(node)) {
+	return;
+}
 var data = {
 	type: getBase(node),
 	id: node.getID(),

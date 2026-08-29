@@ -14,6 +14,8 @@
             <Value ID="2" QualifierID="en-US">Two</Value>
             <Value ID="3" QualifierID="en-US">Three</Value>
             <Value ID="33314767" QualifierID="en-US">sss</Value>
+            <Value ID="33321228" QualifierID="en-US">aaa</Value>
+            <Value ID="33321229" QualifierID="en-US">aa</Value>
         </ListOfValue>
     </ListsOfValues>
 </STEP-ProductInformation>

@@ -4,11 +4,13 @@
         <User ID="ELFR3" Deactivated="false">
             <Name>ELFR3</Name>
             <MetaData>
-                <Value AttributeID="UserLastActivityDate">2025-12-09</Value>
+                <Value AttributeID="UserLastActivityDate">2026-08-28</Value>
             </MetaData>
             <UserGroupLink UserGroupID="ShareSearch"></UserGroupLink>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
-            <SystemSetup></SystemSetup>
+            <SystemSetup>
+                <SystemSetupValue Type="WB_USERSET" Name="CurrentContext">Context1</SystemSetupValue>
+            </SystemSetup>
         </User>
     </UserList>
 </STEP-ProductInformation>

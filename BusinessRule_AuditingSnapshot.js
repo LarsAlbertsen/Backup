@@ -8,7 +8,7 @@
 {
   "id" : "AuditingSnapshot",
   "type" : "BusinessAction",
-  "setupGroups" : [ "Snapshot" ],
+  "setupGroups" : [ "Auditing" ],
   "name" : "AuditingSnapshot",
   "description" : null,
   "scope" : "Global",
@@ -110,6 +110,7 @@ function getData(n) {
 	res.type = 'Product';
 	res.objecttype = n.getObjectType().getID()
 	res.id = n.getID();
+	res.name = n.getName() == null ? '(' + n.getTitle() + ')' : n.getName();
 
 	res.values = getValues(n);
 

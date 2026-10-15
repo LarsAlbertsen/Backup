@@ -40,12 +40,18 @@
     "parameterClass" : "com.stibo.core.domain.impl.integrationendpoint.gateway.FrontGatewayIntegrationEndpointImpl",
     "value" : "SELF",
     "description" : null
+  }, {
+    "contract" : "UserGroupBindContract",
+    "alias" : "ug",
+    "parameterClass" : "com.stibo.core.domain.impl.GroupImpl",
+    "value" : "Supplier2",
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,logger,gw) {
+exports.operation0 = function (node,logger,gw,ug) {
 
 function createUser(id, supplierid) {
 	var put = gw.put();
@@ -59,11 +65,14 @@ function createUser(id, supplierid) {
 	var res = put.invokeWithDetails()
 	logger.info(res.getStatusCode())
 }
+ug.createUser('stibo.test')
 
-for (var i = 1; i<1000; i++) {
-	createUser(i, 'ShareSearch')
-//	createUser(i, 'SupplierA')
-//	createUser(i, 'SupplierB')
+
+
+for (var i = 1; i<101; i++) {
+//	createUser(i, 'Supplier3')
+//	createUser(i, 'Supplier4')
+//	createUser(i, 'Supplier5')
 //	createUser(i, 'SupplierC')
 //	createUser(i, 'SupplierD')
 //	createUser(i, 'SupplierE')

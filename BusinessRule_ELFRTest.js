@@ -58,15 +58,30 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
+  }, {
+    "contract" : "GatewayBinding",
+    "alias" : "gw",
+    "parameterClass" : "com.stibo.core.domain.impl.integrationendpoint.gateway.FrontGatewayIntegrationEndpointImpl",
+    "value" : "SELF",
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,logger,manager,toAVRO,toJSON,bc) {
+exports.operation0 = function (node,logger,manager,toAVRO,toJSON,bc,gw) {
+var u = manager.getUserHome().getUserByID('STIBO.I.F172CC68D84BC17B4DCAFA36D5AD75DC')
+logger.info(u)
+logger.info(u.getName())
+logger.info(u.getTitle())
+
+u = manager.getUserHome().getUserByID('BB582AA9-0077-4066-A6C2-04AA3B857DD4')
+logger.info(u)
+logger.info(u.getName())
+logger.info(u.getTitle())
 
 
-
+/*
 var x = '#REMOVETHIS#3074457345619883785#REMOVETHIS#'
 var xx = {
 	xx : x
@@ -81,10 +96,12 @@ logger.info('x' + str + 'x')
 logger.info(json.xx)
 
 
-
 var u = manager.getUserHome().getUserByID('STIBO.I.02DDF019FC14FE8B91C3B78EDFED245C')
 logger.info(u)
 logger.info(u.getGroups())
+
+
+
 
 var grps = u.getGroups()
 grps.toArray().forEach(function(g) {
@@ -95,7 +112,7 @@ grps.toArray().forEach(function(g) {
 })
 
 
-/*
+
 
 var schema = {
   "type": "record",

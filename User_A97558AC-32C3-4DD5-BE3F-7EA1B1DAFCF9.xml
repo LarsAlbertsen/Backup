@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserList>
+        <User ID="A97558AC-32C3-4DD5-BE3F-7EA1B1DAFCF9" Deactivated="false" Agentic="true">
+            <Name>UpdateBusinessRule</Name>
+            <UserGroupLink UserGroupID="AI.AgenticUsers"></UserGroupLink>
+            <SystemSetup></SystemSetup>
+        </User>
+    </UserList>
+</STEP-ProductInformation>

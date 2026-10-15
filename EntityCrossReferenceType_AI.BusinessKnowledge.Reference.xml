@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <CrossReferenceTypes>
+        <EntityCrossReferenceType ID="AI.BusinessKnowledge.Reference" Inherited="true" Accumulated="false" Revised="false" Mandatory="false" ParentChildRelation="NONE" MultiValued="false">
+            <Name>Business Knowledge</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <AttributeLink AttributeID="AI.BusinessKnowledge.InputAttributes"></AttributeLink>
+            <AttributeLink AttributeID="AI.BusinessKnowledge.OutputAttributes"></AttributeLink>
+            <AttributeGroupLink AttributeGroupID="AI.BusinessKnowledge.AttributeGroup"></AttributeGroupLink>
+            <TargetUserTypeLink UserTypeID="AI.BusinessKnowledge"></TargetUserTypeLink>
+        </EntityCrossReferenceType>
+    </CrossReferenceTypes>
+</STEP-ProductInformation>

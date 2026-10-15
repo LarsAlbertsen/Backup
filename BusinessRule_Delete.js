@@ -28,14 +28,18 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
+  }, {
+    "contract" : "ManagerBindContract",
+    "alias" : "manager",
+    "parameterClass" : "null",
+    "value" : null,
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node) {
-if (node!=null) {
-	node.delete();
-}
-
+exports.operation0 = function (node,manager) {
+const bgp = manager.getBackgroundProcessHome().getBackgroundProcessByID("BGP_33375885");
+logger.info("Background process retrieved: " + bgp);
 }

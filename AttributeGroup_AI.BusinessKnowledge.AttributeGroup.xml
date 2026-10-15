@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <AttributeGroupList>
+        <AttributeGroup ID="AI.BusinessKnowledge.AttributeGroup" ShowInWorkbench="true" ManuallySorted="false" Referenced="true">
+            <Name>Business Knowledge Attributes</Name>
+            <MetaData>
+                <Value Derived="true" AttributeID="GetCompleteness">0</Value>
+            </MetaData>
+            <Configuration>H4sIAAAAAAAA/52QTQrCQAxG955imAO0up8W+qNSFNxI95WmJdhmyiRDr2+1MLoQF+7ySL6XEJOJOLx5gaOzfqoR5hI6JBS0pA7WjY3U4HihRO+irU43Spn3CKtr43qQoOGioRz2LQq0ie6agUHHr1BhBz8SP+uFzkj3EFpbKnBVJjqrotwzEjCfyM4DtD1EFU3+Y9dq/tt28fJFZ+JwqYl/vSd9AC61YS09AQAA</Configuration>
+        </AttributeGroup>
+    </AttributeGroupList>
+</STEP-ProductInformation>

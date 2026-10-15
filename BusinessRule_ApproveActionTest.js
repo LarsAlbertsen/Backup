@@ -8,7 +8,7 @@
 {
   "id" : "ApproveActionTest",
   "type" : "BusinessAction",
-  "setupGroups" : [ "ApproveActions" ],
+  "setupGroups" : [ "Auditing" ],
   "name" : "ApproveActionTest",
   "description" : "Generates JSON snippet of approved changes and marks user responsible for individual changes",
   "scope" : "Global",
@@ -46,12 +46,18 @@
     "parameterClass" : "null",
     "value" : null,
     "description" : null
+  }, {
+    "contract" : "BusinessActionBindContract",
+    "alias" : "snapshot",
+    "parameterClass" : "com.stibo.core.domain.impl.businessrule.FrontBusinessActionImpl",
+    "value" : "AuditingSnapshot",
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,logger,ac,manager) {
+exports.operation0 = function (node,logger,ac,manager,snapshot) {
 function nvl(v) {
 	return v?v:''
 }
@@ -140,12 +146,27 @@ function handleReferencePartObject(po, nodeBefore, nodeAfter) {
 	return doc;
 }
 function handleClassificationLinkPartObject(po, nodeBefore, nodeAfter) {
+	function getOperation(nodeBefore, nodeAfter, linkTypeID, classificationID) {
+		function hasLink(n, linkType, targetID) {
+			var qry = n.queryClassificationProductLinks(n.getManager().getLinkTypeHome().getClassificationProductLinkTypeByID(linkType))
+			var found = false;
+			qry.forEach(function(l) {
+				found = targetID == l.getClassification().getID();
+				return !found	
+			})
+			return found;
+		}
+		var hasBefore = hasLink(nodeBefore, linkTypeID, classificationID);
+		var hasAfter  = hasLink(nodeAfter, linkTypeID, classificationID);
+		return (hasAfter && hasBefore) ? 'Update' : (hasAfter && !hasBefore) ? 'New' : 'Delete'
+	}
 	var doc = {
 		type : 'ClassificationLink',
 		linkType : po.getLinkTypeID(),
 		classID : po.getClassificationID()
 		,userid : nodeAfter.getEditRevision(po).getUserID()
 		,time : new Date(nodeAfter.getEditRevision(po).getEditedDate()).toISOString()
+		,state: getOperation(nodeBefore, nodeAfter, po.getLinkTypeID(), po.getClassificationID())
 		//TODO, check if new, update or delete
 	}
 	return doc;
@@ -161,19 +182,38 @@ function getBase(n) {
 function getNodeState(ac) {
 	return ac.getApprovedNode() ? 'Update' : 'New'
 }
+function getRev(n) {
+	var rn = n.getRevision().getName()+'';
+	var parts = rn.split(/\./);
+	var ix = parts.length -1;
+	parts[ix] = Number(parts[ix]) + 1
+	return parts.join('.')
+}
 
 //############################## MAIN ##############################
 //NOTE: Rule is not invoked when approving a deletion (i.e., approve in Recycle Bin
 if (node === getBase(node)) {
 	return;
 }
+
+if (ac.getApprovedNode()) {
+	var revCount = ac.getApprovedNode().getRevisions().size()
+	if (revCount == 1 || revCount % 10 == 0) {
+		snapshot.execute(node)
+	} 
+}
+
+
+
 var data = {
 	type: getBase(node),
+	objecttype: node.getObjectType().getID(),
 	id: node.getID(),
 	ctx: manager.getCurrentContext().getID(),
 	user: manager.getCurrentUser().getID(),
 	time: new Date(Date.now()).toISOString(),
 	state: getNodeState(ac),
+	rev: getRev(node),
 	changes: []
 }
 
@@ -200,4 +240,11 @@ ac.getPartObjects().forEach(function (po) {
 })
 
 logger.info(JSON.stringify(data))
+
+//logger.info('ac.getApprovedNodeBeforeApproval()' + ac.getApprovedNodeBeforeApproval().getRevisions().get(0).getName())
+//logger.info('ac.getApprovedNode' + ac.getApprovedNode().getRevisions().get(0).getName())
+//logger.info('ac.getMainNode' + ac.getMainNode().getRevisions().get(0).getName())
+//logger.info('node' + node.getRevisions().get(0).getName())
+//logger.info('sdf')
+
 }

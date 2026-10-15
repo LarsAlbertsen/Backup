@@ -25,11 +25,28 @@
     </transition>
     <editorLayout>   node-size-and-position x=20.0 y=42.99999999999999 w=100.0 h=25.0  </editorLayout>
   </state>
-</scxml> -->
+</scxml>
+<workflowViews>
+  <restriction displaySequence="0" includeSubgroups="false">
+    <mapping displaySequence="0" stateID="Approve" viewID="main"/>
+    <mapping displaySequence="1" stateID="BeforeDone" viewID="main"/>
+    <mapping displaySequence="2" stateID="Enrich" viewID="main"/>
+    <mapping displaySequence="3" stateID="Final" viewID="main"/>
+  </restriction>
+  <view id="main" automaticSort="false" defaultSortColumn="0">
+    <aspect id="id"/>
+    <aspect id="name"/>
+    <column name="assignee" mandatory="false" readOnly="false">
+      <plugin pluginID="WorkflowAssignee">
+        <parameter id="ExpandGroups" value="false"/>
+      </plugin>
+    </column>
+  </view>
+</workflowViews> -->
             <SetupGroupLink SetupGroupID="Workflows"></SetupGroupLink>
             <Name>NewItem</Name>
             <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
-            <Configuration>H4sIAAAAAAAA/52US4+bMBSF9/kVrtUtLxMIVBipTylS1alUzWrUhQs3xBXYlm1Cpr++jknamWimg8qCK2T7nvOdC7DRyq3gljMLN+K9BlfpjvUGKqN6bms4QjNa+NZoruxnPnAL7VfND7yHDgy1erzs7LmxIG7EdlBSW9C3qr1uZprj0NPKF8S9bE/xR6F5s8dIsAEo/gLT1sKA0QG04VJQHIclRu6EMBTvrVVvomiapnBKQ6m7iMRxFsWbyDfFdfUqCBBCQrYQGP4LAibaQEnjtKRARxqHMbr394km61Pd0zTJw3KzyUgRF2VRbPI1QkFQr1DFjOGdAEC8pfh1M2oNwmJk75VzOhrQTjC6bKpX7oSxDhq13DRSWC5GcAd9BNj3OLO+aJPMPtckLB9dJ9fx7Jpkrsw+UWU1E+fDcHAeKTbjDzcs55XpDtzzW6W0PMAfaWg7CBSze3R3XvqOnHAxC5dpmPnmVfS3db2qIs+3hPRa7yXUJCnDlGTFmuRlnpOSJMtZNfyE5gHrVcoPUOcVT5r/k3RZqO9gJzV8kOLE+WxSOy5Y/3xSn07Li3Mim+T6ZX0ipyryoksG9Yhh4azKLMyzJC+ytPQzy/7/vbzQP51eNX/X9fkH8hv+0NyirwQAAA==</Configuration>
+            <Configuration>H4sIAAAAAAAA/51VXW/bNhR9z6/giL3q05FtBZKLrl2HAMNSIE37UOyBka4dthLJkZQV79fvkpJS20ljY34wbVI8555zySPWWXktuOXMwo14pwHHcs0aA4VRDbcreISqs3Bbaa7sn7zlFuqPmm95AxswpdXd9GTDjQVxI65bJbUFfafqYzBTPbZNWfiBcE/blPR3oXn1QIlgLZT0L+ivLbSUbEEbLkVJ4zCnBHcIU9IHa9VVFPV9H/azUOpNlMZxFsWLyIPSVfFLEBBChKwhMPxfCJioAyUNcklBHss4jMnOf/dlcunGh3KWzMN8scjSZbzMl8vF/JKQIFhdkIIZwzcCgPC6pL9WndYgLCV2p7DSzoBGwmh6aHWBO4xF0aTmppLCctEBbvQWUI8xaj1ZZjrUeZmG+cHHVR0PVacZDkOdpLCaiXEzbLHGkpruHpuFtTK9Afz/Viktt/BEDfUGAsXsA/k6Lv1NkHg5EOezMPPgRfQDenVRRF7fOUqP+U5JTZI8nKXZ8jKd5/N5mqfJ+Vo1fINqT+uRy3tShxWvdP6q0vNM/Q3WUsN7KZzOnzq15oI1P3fqg1s+26d0kRwf1hd8KiJPek6jDjSc2as8C+dZMl9ms9z3LPv/53JS/7J7xXCvV2OAbDn0ZfHGxcdTPCRhTAmIStZcbEp69+lDsKQE94uaNaiqpDsw9A1iCZNe9VJ/Xzey/4xIZkiVK5w/SBZj+b0MK9lSpwFVOFrvVcu4oKSGNesae4sx9042XesyihKGUdoyyys3Pzk8AHgQZhQeUg/Daxq9vOIy8GCt8gRjNk5JQwkGdX0jmt1TJ1sn10q9e87scVTTbbggw3D9vqRfRiPeTpiHG4ZNTCMvZvmQXY8KSf7QslMG45k1HUxk0RFbNPDs6YgGIaOhkXN0/K3BWLyU/oxwUTVdDbfd/cbTPMnD06satruFfzpsNTjD98BbphQ2n/hD48RN4UMcj5sYG/ccJXoNZu9qnEJKXkea3nEnUNLXUYa7cgpkNoEU0Z637i49uwA4OVys/wBKEj9pCAgAAA==</Configuration>
         </STEPWorkflow>
     </STEPWorkflows>
 </STEP-ProductInformation>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <STEPWorkflows>
+        <STEPWorkflow ID="AMFTest" Referenced="true"><!-- Definition:
+<scxml name="AMFTest" initial="Initial" version="0.9">
+  <assignee id="$current" type="user"/>
+  <auditaction businessactionid="WholeWFAction"/>
+  <editorLayout>   node-size-and-position x=0.0 y=0.0 w=140.0 h=238.0  </editorLayout>
+  <final id="End" discontinued="false">
+    <editorLayout>   node-size-and-position x=20.0 y=193.0 w=100.0 h=25.0  </editorLayout>
+  </final>
+  <state id="Initial" discontinued="false">
+    <transition target="work"/>
+    <editorLayout>   node-size-and-position x=20.0 y=43.0 w=100.0 h=25.0  </editorLayout>
+  </state>
+  <state id="work" discontinued="false">
+    <transition businessconditionid="con-23fd9918-03f4-4142-a660-d9a4a9251102" target="End"/>
+    <editorLayout>   node-size-and-position x=20.0 y=118.0 w=100.0 h=25.0  </editorLayout>
+  </state>
+</scxml> -->
+            <BusinessRuleLink ID="WholeWFAction"></BusinessRuleLink>
+            <SetupGroupLink SetupGroupID="AMFTest"></SetupGroupLink>
+            <Name>AMFTest</Name>
+            <ValidUserTypeLink UserTypeID="Item"></ValidUserTypeLink>
+            <Configuration>H4sIAAAAAAAA/41T32vbMBB+z1+hib0qlh2ni4dlKGOFwkYH3eizZl2SY45kpHOd7q+fIsctjJbmxYek++77IVkP5G4tEmqCO/vFQ6xqq7sAdeg7pAaO0A4E963Hnr7hAQnMD4+P2MEOgiI/zJ0dBgJ7Z28PvfME/ldv/h8W2uOhU3UqDBNtp/jE33Fm9QEUv/5+8xMCcfYIPqCzistlxVmE2KD4nqj/nGXjOC7H1dL5XVZIuc7kpyxN5U39QQjGmHUGRMC/ILQ1onchcjjLjkouJXtK31Hl5anuVbHaxMqEaBas1iHgzgIwNIp/bAfvwUY19NRHcUMAHzmyualZnBCDQdJtIvg9BLQQwrQ8jXjYuw4ebq7TRsK+tCd4oJgTMxhaZwntABGUUuNJwhzPu86KyVq5mrzJs7f1szVWk9f23E/a74AUH53/c1L1ctQs6ixpSuq2aHX3trqv1lysLK/ekFZnieWSNM5yLyTMNxdlMV9apDQ431tciGK1NVWVb4RcbUtR5mUh9NWVFKbSpa6KdZ7Lgj9HOWXxepL19D6b85/wD+74ED14AwAA</Configuration>
+            <LocalBusinessRule ID="con-23fd9918-03f4-4142-a660-d9a4a9251102" Scope="Local" Type="Condition" RunPrivileged="false"><!-- Definition:
+Condition #1 (JavaScriptBusinessConditionWithBinds):
+<config>
+  <bindings/>
+  <messages/>
+  <javaScript>
+return "no no no"
+  </javaScript>
+</config> -->
+                <Configuration>H4sIAAAAAAAA/4WSX0vDMBTF3/cpQgZ9s93ehP6DOQWFwXATH0tos3glu4lJOvTbmzbatYwp5CH53XDuObnRshWAFdNaArcVHKpa4QFEZj1whQ7lwPKs/DxKcuLGgsKcLuMFJRxr1QCKnL7sH25uaVnMslVrAbm1z63kxYyQAWx7OTKuB/S4zukTO7FdbUC73/qdwgac7/UK7m0F2FjayXnBLTPsyJ13EsAYkU4s3Cb7L81z+u6VY8lQxDtnvFdaRNKlkzDRR6tc6hOFzTlWOPfZwraMhEuj+XKRdiJdnw3TyQCzZDByxdq9McpsfDwm+B8W/xc6P9h1FcNda5AE66hIv8LposEI9M+aJdO5+ckm09H+/JJvGnr4F0UCAAA=</Configuration>
+                <ValidObjectTypes AllObjectTypesValid="true"></ValidObjectTypes>
+            </LocalBusinessRule>
+        </STEPWorkflow>
+    </STEPWorkflows>
+</STEP-ProductInformation>

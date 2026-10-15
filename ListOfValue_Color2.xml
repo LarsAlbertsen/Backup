@@ -11,7 +11,7 @@
             <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
             <Value ID="32053917">Dark Green</Value>
             <Value ID="32053918">Blue</Value>
-            <Value ID="32053919">Yellow</Value>
+            <Value ID="32053919">Yellow2</Value>
         </ListOfValue>
     </ListsOfValues>
 </STEP-ProductInformation>

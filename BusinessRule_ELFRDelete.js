@@ -46,9 +46,10 @@
 }
 */
 exports.operation0 = function (logger,manager,node) {
-var x = node.delete()
-x.approve()
-//x.delete()
-logger.info(x)
 
+
+var bgp = manager.getBackgroundProcessHome().getBackgroundProcessByID("BGP_33292109");
+if (bgp) {
+  bgp.delete();
+}
 }

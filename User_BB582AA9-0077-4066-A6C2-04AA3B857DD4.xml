@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserList>
+        <User ID="BB582AA9-0077-4066-A6C2-04AA3B857DD4" Deactivated="false" Agentic="true">
+            <Name>Marketing Copy updater</Name>
+            <UserGroupLink UserGroupID="AI.AgenticUsers"></UserGroupLink>
+            <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
+            <SystemSetup></SystemSetup>
+        </User>
+    </UserList>
+</STEP-ProductInformation>

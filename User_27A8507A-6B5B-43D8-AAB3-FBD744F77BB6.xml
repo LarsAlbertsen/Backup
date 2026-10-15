@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserList>
+        <User ID="27A8507A-6B5B-43D8-AAB3-FBD744F77BB6" Deactivated="false" Agentic="true">
+            <Name>Content Optimizer</Name>
+            <UserGroupLink UserGroupID="AI.AgenticUsers"></UserGroupLink>
+            <SystemSetup></SystemSetup>
+        </User>
+    </UserList>
+</STEP-ProductInformation>

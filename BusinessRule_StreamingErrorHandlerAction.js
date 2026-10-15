@@ -57,7 +57,7 @@ var setup = {
 }
 function log(msg) {
 	logger.info(msg)
-	execLogger.logInfo(msg)
+	execLogger.logError(msg)
 }
 
 function logMeta() {
@@ -75,12 +75,14 @@ function logMeta() {
 	}
 }
 
+//logMeta()
 //############################## MAIN ##############################
 //Access to headers and basic message information
 //logMeta()
 //var topic = message.metadata().topic()
 //var partition = message.metadata().partition()
 //var offset = message.metadata().offset()
+/*
 try {
 	var it = message.metadata().headers().iterator()
 	var headers = {}
@@ -130,5 +132,5 @@ try {
 } catch (e) {
 	log('Error processing message: ' + e)
 }
-
+*/
 }

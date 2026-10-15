@@ -46,12 +46,18 @@
     "parameterClass" : "com.stibo.passwordparameter.PasswordParameter",
     "value" : "eRAjNzxQJ81jAUVjF4v9QKYh6xLvP9orVbX4DWDI+7s=",
     "description" : null
+  }, {
+    "contract" : "AIAgentBindContract",
+    "alias" : "agent",
+    "parameterClass" : "com.stibo.ai.engine.runtime.domain.agent.Agent",
+    "value" : "6a445042-b2a1-4cca-bb1d-bb11ba7866f8",
+    "description" : null
   } ],
   "messages" : [ ],
   "pluginType" : "Operation"
 }
 */
-exports.operation0 = function (node,logger,fn,secret) {
+exports.operation0 = function (node,logger,fn,secret,agent) {
 function log(msg) {
 	logger.info('ELFRLog : ' + msg)
 }
@@ -61,6 +67,8 @@ for (var x=0; x<10; x++) {
 	log('A ' + x + ' ' + Date.now())
 
 }
+
+logger.info(agent.run("Eli")
 
 
 //fn.evaluate({root:node})

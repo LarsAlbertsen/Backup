@@ -3,6 +3,7 @@
     <UserTypes>
         <UserType ID="Entity user-type root" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Strict" Referenced="true">
             <Name>Entity user-type root</Name>
+            <AttributeLink AttributeID="aaaaaa"></AttributeLink>
         </UserType>
     </UserTypes>
 </STEP-ProductInformation>

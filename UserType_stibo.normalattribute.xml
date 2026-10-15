@@ -5,6 +5,7 @@
             <Name>Attribute</Name>
             <UserTypeLink UserTypeID="stibo.grouping attribute"></UserTypeLink>
             <AttributeLink AttributeID="27715ad5-b32c-46de-9819-a6f4d2916ef9"></AttributeLink>
+            <AttributeLink AttributeID="AI.Prompt.Metadata"></AttributeLink>
             <AttributeLink AttributeID="AttributeHelpText"></AttributeLink>
             <AttributeLink AttributeID="Completeness Score"></AttributeLink>
             <AttributeLink AttributeID="DisplaySequence"></AttributeLink>

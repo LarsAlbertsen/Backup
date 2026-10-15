@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="AI.Prompt.ModelLOV" ParentID="AI.Service.LOVGroup" AllowUserValueAddition="false" UseValueID="true" IDPattern="Model-[id]">
+            <Name QualifierID="std.lang.all">Prompt Model</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value ID="Default">Default</Value>
+            <Value ID="Model-33321701">gpt-5.4-nano</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

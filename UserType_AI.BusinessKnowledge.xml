@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <UserTypes>
+        <UserType ID="AI.BusinessKnowledge" AllowInDesignTemplate="false" AllowQuarkTemplate="false" Revisability="Global" IsCategory="false" ReferenceTargetLockPolicy="Relaxed" IDPattern="BusinessKnowledge_[id]">
+            <Name>Business Knowledge</Name>
+            <UserTypeLink UserTypeID="AI.BusinessKnowledge.Group"></UserTypeLink>
+        </UserType>
+    </UserTypes>
+</STEP-ProductInformation>

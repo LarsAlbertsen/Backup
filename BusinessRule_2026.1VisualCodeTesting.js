@@ -46,9 +46,20 @@
 }
 */
 exports.operation0 = function (node,manager,logger) {
-// Bind: node (Product), logger (Logger)
+const queryHome = manager.getHome(com.stibo.query.home.QueryHome);
+const Conditions = com.stibo.query.condition.Conditions;
+const Product = com.stibo.core.domain.Product;
+const acmeProducts = manager.getClassificationHome().getClassificationByID("AcmeSupplierProducts");
 
-const name = node.getName();
-logger.info("Productsss name: " + name);
+if (acmeProducts == null) {
+	throw new Error("Classification 'AcmeProducts' does not exist.");
+}
+
+const isBelowAcmeProducts = Conditions.hierarchy().simpleBelow(acmeProducts);
+
+queryHome.queryFor(Product).where(isBelowAcmeProducts).execute().forEach(function (product) {
+	logger.info(String(product.getName()));
+	return true;
+});
 
 }

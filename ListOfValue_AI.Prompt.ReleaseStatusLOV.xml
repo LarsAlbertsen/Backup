@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <Qualifiers>
+        <Qualifier ID="std.lang.all">
+            <DimensionPointLink DimensionPointID="std.lang.all"></DimensionPointLink>
+        </Qualifier>
+    </Qualifiers>
+    <ListsOfValues>
+        <ListOfValue ID="AI.Prompt.ReleaseStatusLOV" ParentID="AI.Service.LOVGroup" AllowUserValueAddition="false" UseValueID="false">
+            <Name QualifierID="std.lang.all">Prompt Release Status</Name>
+            <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""></Validation>
+            <Value>Draft</Value>
+            <Value>Released</Value>
+        </ListOfValue>
+    </ListsOfValues>
+</STEP-ProductInformation>

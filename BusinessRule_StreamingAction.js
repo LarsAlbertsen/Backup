@@ -112,6 +112,8 @@ while (it.hasNext()) {
 	var v = h.value()
 }
 
+logger.info('MetaData ' + message.metadata())
+//execLogger.logError('eMetaData ' + message.metadata())
 //Content can for example be JSON
 var data = new java.lang.String(message.content());
 var doc = JSON.parse(data)

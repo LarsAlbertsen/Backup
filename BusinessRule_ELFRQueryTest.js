@@ -40,29 +40,67 @@
 }
 */
 exports.operation0 = function (logger,manager) {
-const queryHome = manager.getHome(com.stibo.query.home.QueryHome);
-const Conditions = com.stibo.query.condition.Conditions;
-const Product = com.stibo.core.domain.Product;
-
-const objectTypeHome = manager.getObjectTypeHome();
-const attributeHome = manager.getAttributeHome();
-
-const itemType = objectTypeHome.getObjectTypeByID("Item");
-const bullet01Attribute = attributeHome.getAttributeByID("Bullet01");
-
-if (itemType == null) {
-	logger.info("Object type Item not found");
-} else if (bullet01Attribute == null) {
-	logger.info("Attribute Bullet01 not found");
-} else {
-	const isItemType = Conditions.objectType(itemType);
-	const bullet01StartsWithHello = Conditions.valueOf(bullet01Attribute).like("Bullet*");
-	const matchesTypeAndBullet = isItemType.and(bullet01StartsWithHello);
-
-	const query = queryHome.queryFor(Product).where(matchesTypeAndBullet).execute();
-	query.forEach(function (product) {
-		logger.info(String(product.getID()));
-		return true;
-	});
+function nowMs() {
+    return java.lang.System.currentTimeMillis();
 }
+
+function queryViaQueryHome(attributeId, value) {
+    var attr = manager.getAttributeHome().getAttributeByID(attributeId)
+    var conditions = com.stibo.query.condition.Conditions;
+    var queryHome = manager.getHome(com.stibo.query.home.QueryHome);
+    var where = conditions.valueOf(attr).eq(String(value));
+    var spec = queryHome.queryFor(com.stibo.core.domain.Product).where(where);
+    var result = spec.execute();
+    var out = [];
+    result.forEach(function (product) {
+        if (out.length < 25) {
+            out.push(product);
+            return true;
+        }
+        return false;
+    });
+    return out;
+}
+
+function queryViaSingleAttribute(attributeId, value) {
+    try {
+        var attr = manager.getAttributeHome().getAttributeByID(attributeId)
+        var spec = new com.stibo.core.domain.singleattributequery.SingleAttributeQueryHome.SingleAttributeQuerySpecification(
+            com.stibo.core.domain.Product,
+            attr,
+            String(value)
+        );
+        var list = manager.getHome(com.stibo.core.domain.singleattributequery.SingleAttributeQueryHome).querySingleAttribute(spec).asList(25);
+        var out = [];
+        var it = list.iterator();
+        while (it.hasNext()) {
+            out.push(it.next());
+        }
+        return out;
+    } catch (e) {
+        logger.info("SingleAttributeQuery failed attr=" + attributeId + " value=" + value + " error=" + (e.message || e));
+        return [];
+    }
+}
+var val  = 'KOqqDEJmd6QPImWtXIV3ZmqHGvTFEJ';
+
+
+var startTime = nowMs()
+for (var i = 0; i < 100; i++) {
+	for (var x = 1; x < 10; x++) {
+		queryViaQueryHome('Bullet0'+x, val)
+	}
+}
+logger.info(nowMs() - startTime)
+
+
+startTime = nowMs()
+for (var i = 0; i < 100; i++) {
+	for (var x = 1; x < 10; x++) {
+		queryViaSingleAttribute('Bullet0'+ x, val)
+	}
+}
+logger.info(nowMs() - startTime)
+
+
 }

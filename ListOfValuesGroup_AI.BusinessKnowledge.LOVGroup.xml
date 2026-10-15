@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
+    <ListOfValuesGroupList>
+        <ListOfValuesGroup ID="AI.BusinessKnowledge.LOVGroup" ParentID="List Of Values group root">
+            <Name>Business Knowledge LOVs</Name>
+        </ListOfValuesGroup>
+    </ListOfValuesGroupList>
+</STEP-ProductInformation>

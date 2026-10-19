@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <STEP-ProductInformation ContextID="Context1" WorkspaceID="Approved" UseContextLocale="false">
     <UserList>
-        <User ID="ALCO2" Deactivated="false">
-            <Name>ALCO2</Name>
-            <MetaData>
-                <Value AttributeID="UserLastActivityDate">2026-04-09</Value>
-            </MetaData>
+        <User ID="E97B4D62-CF28-4A9B-8FB6-701E14B30FA3" Deactivated="false" Agentic="true">
+            <Name>Maintenance MCP Agent</Name>
+            <UserGroupLink UserGroupID="AI.AgenticUsers"></UserGroupLink>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
             <SystemSetup></SystemSetup>
         </User>

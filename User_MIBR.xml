@@ -4,7 +4,7 @@
         <User ID="MIBR" Deactivated="false">
             <Name>MIBR</Name>
             <MetaData>
-                <Value AttributeID="UserLastActivityDate">2026-09-15</Value>
+                <Value AttributeID="UserLastActivityDate">2026-10-16</Value>
             </MetaData>
             <UserGroupLink UserGroupID="ProductPlatform"></UserGroupLink>
             <UserGroupLink UserGroupID="Stibo"></UserGroupLink>
